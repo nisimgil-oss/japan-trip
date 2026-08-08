@@ -9,6 +9,7 @@
   const tripKey = (lang) => 'japanTrip.v3.' + lang;
   const LS_CHECK = 'japanTrip.checklist.v3';
   const LS_PREFS = 'japanTrip.prefs.v3';
+  const LS_HOTELS = 'japanTrip.hotels.v1';
 
   let lang = localStorage.getItem(LS_LANG) || 'he';
   if (LANGS.indexOf(lang) < 0) lang = 'he';
@@ -24,6 +25,7 @@
   const TYPE_ICON = { transport: '🚄', food: '🍜', sightseeing: '⛩️', experience: '✨', culture: '🎎', anime: '🎮', onsen: '♨️', nightlife: '🌈', shopping: '🛍️', rest: '☕', checkin: '🛎️', birthday: '🎂' };
   const TYPES = ['sightseeing', 'food', 'experience', 'culture', 'anime', 'onsen', 'nightlife', 'shopping', 'transport', 'rest', 'checkin', 'birthday'];
   const CITY_EMOJI = [['tokyo', '🗼'], ['טוקיו', '🗼'], ['tokio', '🗼'], ['hakone', '♨️'], ['האקונה', '♨️'], ['kyoto', '⛩️'], ['kioto', '⛩️'], ['קיוטו', '⛩️'], ['osaka', '🍢'], ['אוסקה', '🍢'], ['nara', '🦌'], ['נארה', '🦌']];
+  const CITY_LATIN = [['tokyo', 'Tokyo'], ['טוקיו', 'Tokyo'], ['tokio', 'Tokyo'], ['hakone', 'Hakone'], ['האקונה', 'Hakone'], ['kyoto', 'Kyoto'], ['kioto', 'Kyoto'], ['קיוטו', 'Kyoto'], ['osaka', 'Osaka'], ['אוסקה', 'Osaka'], ['nara', 'Nara'], ['נארה', 'Nara']];
 
   // ---------- i18n ----------
   const T = {
@@ -43,7 +45,12 @@
       cdBefore: (n) => '✈️ עוד <b>' + n + '</b> ימים', cdDuring: (n) => '🎌 יום <b>' + n + '</b> בטיול!', cdAfter: '🌸 <b>おかえり</b>',
       flights: '✈️ הטיסות שלכם', outbound: 'הלוך', ret: 'חזור', seat: 'מושב', airline: 'חברת תעופה', baggage: 'כבודה', passenger: 'נוסע',
       restAll: 'הכל', rWhy: 'למה מיוחד', rDish: 'לא לפספס', rPrice: 'מחיר', rBook: 'הזמנה', rReserve: 'צריך להזמין', jump: 'לפרטים ביום ↗',
-      loading: 'נטען…', types: { sightseeing: 'אתר / תצפית', food: 'אוכל', experience: 'חוויה', culture: 'תרבות', anime: 'אנימה/מנגה', onsen: 'אונסן', nightlife: 'חיי לילה', shopping: 'קניות', transport: 'נסיעה', rest: 'מנוחה', checkin: 'צ׳ק-אין', birthday: 'יומולדת' },
+      loading: 'נטען…',
+      'tab.hotels': 'מלונות', 'hotels.title': '🏨 בחירת מלונות',
+      hSelected: '✓ נבחר', hChoose: 'בחרו מלון זה', hPerNight: 'ללילה', hPerCouple: 'לזוג · חצי פנסיון', hBook: 'להזמנה ↗', hNights: (n) => n === 1 ? 'לילה אחד' : n + ' לילות', hStayHotel: 'המלון שנבחר', hPickHint: 'בחרו מלון בטאב ״מלונות״',
+      mapsDay: '🗺️ מסלול היום במפות', mapsOpen: 'פתח במפות ↗',
+      tags: { mid: 'מחיר בינוני', value: 'תמורה מעולה', splurge: 'פינוק', gayfriendly: 'גיי-פרנדלי', laundry: 'כביסה בחדר', anime: 'לחובבי אנימה', birthday: 'ליומולדת', privateonsen: 'אונסן פרטי', rooftopbath: 'אמבט על הגג', central: 'מרכזי', views: 'נוף' },
+      types: { sightseeing: 'אתר / תצפית', food: 'אוכל', experience: 'חוויה', culture: 'תרבות', anime: 'אנימה/מנגה', onsen: 'אונסן', nightlife: 'חיי לילה', shopping: 'קניות', transport: 'נסיעה', rest: 'מנוחה', checkin: 'צ׳ק-אין', birthday: 'יומולדת' },
       dow: { Fri: 'שישי', Sat: 'שבת', Sun: 'ראשון', Mon: 'שני', Tue: 'שלישי', Wed: 'רביעי', Thu: 'חמישי' },
     },
     es: {
@@ -62,7 +69,12 @@
       cdBefore: (n) => '✈️ faltan <b>' + n + '</b> días', cdDuring: (n) => '🎌 ¡día <b>' + n + '</b> del viaje!', cdAfter: '🌸 <b>¡bienvenidos!</b>',
       flights: '✈️ Sus vuelos', outbound: 'Ida', ret: 'Vuelta', seat: 'Asiento', airline: 'Aerolínea', baggage: 'Equipaje', passenger: 'Pasajero',
       restAll: 'Todos', rWhy: 'Por qué es especial', rDish: 'No te pierdas', rPrice: 'Precio', rBook: 'Reserva', rReserve: 'Hay que reservar', jump: 'Ver en el día ↗',
-      loading: 'Cargando…', types: { sightseeing: 'Lugar / mirador', food: 'Comida', experience: 'Experiencia', culture: 'Cultura', anime: 'Anime/manga', onsen: 'Onsen', nightlife: 'Vida nocturna', shopping: 'Compras', transport: 'Traslado', rest: 'Descanso', checkin: 'Check-in', birthday: 'Cumpleaños' },
+      loading: 'Cargando…',
+      'tab.hotels': 'Hoteles', 'hotels.title': '🏨 Elegí tu hotel',
+      hSelected: '✓ Elegido', hChoose: 'Elegir este hotel', hPerNight: 'por noche', hPerCouple: 'por pareja · media pensión', hBook: 'Reservar ↗', hNights: (n) => n === 1 ? '1 noche' : n + ' noches', hStayHotel: 'Hotel elegido', hPickHint: 'Elegí un hotel en la pestaña "Hoteles"',
+      mapsDay: '🗺️ Recorrido del día en Maps', mapsOpen: 'Abrir en Maps ↗',
+      tags: { mid: 'gama media', value: 'buen precio', splurge: 'lujo', gayfriendly: 'gay-friendly', laundry: 'lavarropas', anime: 'para fans del anime', birthday: 'para el cumple', privateonsen: 'onsen privado', rooftopbath: 'baño en la terraza', central: 'céntrico', views: 'con vista' },
+      types: { sightseeing: 'Lugar / mirador', food: 'Comida', experience: 'Experiencia', culture: 'Cultura', anime: 'Anime/manga', onsen: 'Onsen', nightlife: 'Vida nocturna', shopping: 'Compras', transport: 'Traslado', rest: 'Descanso', checkin: 'Check-in', birthday: 'Cumpleaños' },
       dow: { Fri: 'vie', Sat: 'sáb', Sun: 'dom', Mon: 'lun', Tue: 'mar', Wed: 'mié', Thu: 'jue' },
     },
   };
@@ -106,11 +118,18 @@
   // ---------- day view ----------
   function renderDay() {
     const d = state.days[curDay]; if (!d) return;
+    const stay = stayForDate(d.date); const selOpt = selectedOption(stay);
+    const hotelName = selOpt ? selOpt.name : (d.hotel || '');
+    const hotelArea = selOpt && selOpt[lang] && selOpt[lang].area ? ' · ' + selOpt[lang].area : '';
+    const hotelUrl = hotelName ? placeUrl(hotelName + ' ' + cityLatin(d.city)) : null;
+    const routeUrl = dayRouteUrl(d);
     $('#dayHead').innerHTML =
       `<div><div class="dh-city">${cityEmoji(d.city)} ${escapeHtml(d.city || '')} · ${dowT(d.dow)} ${fmtDate(d.date)}${d.birthday ? ' · 🎂 ' + t('bday') : ''}</div>` +
       `<div class="dh-title">${escapeHtml(d.title || '')}</div>` +
       (d.summary ? `<div class="dh-sum">${escapeHtml(d.summary)}</div>` : '') +
-      (d.hotel ? `<div class="dh-hotel">🛏️ ${t('night')}: <b>${escapeHtml(d.hotel)}</b></div>` : '') + `</div>`;
+      (hotelName ? `<div class="dh-hotel">🛏️ ${t('night')}: <b dir="auto">${escapeHtml(hotelName)}</b>${escapeHtml(hotelArea)}${hotelUrl ? ` <a class="dh-maplink" href="${hotelUrl}" target="_blank" rel="noopener">🗺️</a>` : ''}${selOpt ? ` <span class="dh-picked">${t('hSelected')}</span>` : ''}</div>` : '') +
+      (routeUrl ? `<div class="dh-actions"><a class="btn btn-ghost btn-sm" href="${routeUrl}" target="_blank" rel="noopener">${t('mapsDay')}</a></div>` : '') +
+      `</div>`;
     const tl = $('#timeline'); tl.innerHTML = '<div class="tl-line"></div>';
     const evs = sortEvents(d.events || []);
     if (!evs.length) { const e = document.createElement('div'); e.style.cssText = 'padding:20px 0 6px;color:var(--cream-faint);padding-inline-start:88px'; e.textContent = t('empty'); tl.appendChild(e); }
@@ -119,6 +138,7 @@
 
   function eventEl(e) {
     const wrap = document.createElement('div'); wrap.className = 'ev t-' + (e.type || 'sightseeing');
+    const city = (state.days[curDay] || {}).city;
     const meta = [];
     if (e.highlight) meta.push(`<span class="chip hl">${t('highlight')}</span>`);
     if (e.cost) meta.push('<span class="chip cost">' + escapeHtml(e.cost) + '</span>');
@@ -127,7 +147,7 @@
       `<div class="ev-time">${escapeHtml(e.start || '')}${e.end ? `<span class="end">${escapeHtml(e.end)}</span>` : ''}</div><div class="ev-node"></div>` +
       `<div class="ev-card${e.done ? ' done' : ''}"><div class="ev-actions"><button class="iconbtn" data-act="edit">✎</button><button class="iconbtn" data-act="del">🗑</button></div>` +
       `<div class="ev-top"><span class="ev-ic">${TYPE_ICON[e.type] || '📍'}</span><span class="ev-title">${escapeHtml(e.title || '')}</span></div>` +
-      (e.area ? `<div class="ev-area">${escapeHtml(e.area)}</div>` : '') +
+      (e.area ? `<a class="ev-area" href="${placeUrl(placeQuery(e, city))}" target="_blank" rel="noopener" title="${t('mapsOpen')}">${escapeHtml(e.area)}</a>` : '') +
       (e.desc ? `<div class="ev-desc">${escapeHtml(e.desc)}</div>` : '') +
       (e.tips ? `<div class="ev-tip">${escapeHtml(e.tips)}</div>` : '') +
       (e.note ? `<div class="ev-note">${escapeHtml(e.note)}</div>` : '') +
@@ -247,6 +267,60 @@
     if (!shown.length) body.innerHTML = `<div class="panel">${t('loading')}</div>`;
   }
 
+  // ---------- google maps ----------
+  function cityLatin(city) { if (!city) return ''; const k = city.toLowerCase(); for (const [key, v] of CITY_LATIN) if (k.includes(key)) return v; return city; }
+  function placeQuery(e, city) {
+    let s = (e.area || e.title || '').trim();
+    const m = s.match(/\(([^)]+)\)/); if (m) s = m[1];
+    s = s.replace(/\s*(→|->|—| to )\s*/g, '|');
+    if (s.indexOf('|') >= 0) { const p = s.split('|'); s = (e.type === 'transport' ? p[p.length - 1] : p[0]); }
+    s = s.replace(/\s*\/\s*/g, ' ').replace(/[!?.]$/, '').trim();
+    const cl = cityLatin(city);
+    if (cl && s.toLowerCase().indexOf(cl.toLowerCase()) < 0) s += ', ' + cl;
+    return (s + ', Japan').replace(/^,\s*/, '');
+  }
+  const placeUrl = (q) => 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q);
+  function dayRouteUrl(d) {
+    const qs = []; sortEvents(d.events || []).forEach(e => { const q = placeQuery(e, d.city); if (q && q.length > 8 && qs[qs.length - 1] !== q) qs.push(q); });
+    if (!qs.length) return null;
+    if (qs.length === 1) return placeUrl(qs[0]);
+    const stops = qs.slice(0, 10); const origin = stops.shift(), destination = stops.pop();
+    let u = 'https://www.google.com/maps/dir/?api=1&travelmode=transit&origin=' + encodeURIComponent(origin) + '&destination=' + encodeURIComponent(destination);
+    const wp = stops.slice(0, 8).map(encodeURIComponent).join('%7C'); if (wp) u += '&waypoints=' + wp;
+    return u;
+  }
+
+  // ---------- hotels ----------
+  const stays = () => (window.TRIP_DATA && window.TRIP_DATA.stays) || [];
+  const loadHotels = () => safeParse(localStorage.getItem(LS_HOTELS)) || {};
+  const saveHotels = (h) => localStorage.setItem(LS_HOTELS, JSON.stringify(h));
+  const stayForDate = (iso) => stays().find(s => (s.dates || []).indexOf(iso) >= 0);
+  const selectedOption = (stay) => { if (!stay) return null; const i = loadHotels()[stay.id]; return (i != null && stay.options[i]) ? stay.options[i] : null; };
+  function renderHotels() {
+    const box = $('#hotelsBody'); box.innerHTML = ''; const sel = loadHotels();
+    stays().forEach(s => {
+      const city = s['city' + (lang === 'he' ? 'He' : 'Es')];
+      const opts = s.options.map((o, i) => {
+        const chosen = sel[s.id] === i; const loc = o[lang] || {};
+        const tags = (o.tags || []).map(tg => `<span class="htag">${T[lang].tags[tg] || tg}</span>`).join('');
+        const unit = s.priceUnit === 'couple' ? t('hPerCouple') : t('hPerNight');
+        return `<div class="hcard${chosen ? ' chosen' : ''}">` +
+          `<div class="hc-top"><span class="hc-name" dir="auto">${escapeHtml(o.name)}</span>${chosen ? `<span class="hc-badge">${t('hSelected')}</span>` : ''}</div>` +
+          `<div class="hc-sub">📍 ${escapeHtml(loc.area || '')} · <b>${escapeHtml(o.price)}</b> <span class="hc-unit">${unit}</span></div>` +
+          (loc.why ? `<div class="hc-why" dir="auto">${escapeHtml(loc.why)}</div>` : '') +
+          (tags ? `<div class="hc-tags">${tags}</div>` : '') +
+          `<div class="hc-actions"><button class="btn btn-sm hpick ${chosen ? 'hpick-on' : 'btn-primary'}" data-s="${s.id}" data-i="${i}">${chosen ? t('hSelected') : t('hChoose')}</button>` +
+          `<a class="hc-link" href="${o.url}" target="_blank" rel="noopener">${t('hBook')}</a>` +
+          `<a class="hc-link" href="${placeUrl(o.name + ' ' + (loc.area || '') + ' ' + cityLatin(city))}" target="_blank" rel="noopener">${t('mapsOpen')}</a></div></div>`;
+      }).join('');
+      const wrap = document.createElement('div'); wrap.className = 'stay' + (s.birthday ? ' bday' : '');
+      wrap.innerHTML = `<div class="stay-head"><span class="stay-cover">${s.cover}</span><span class="stay-city">${escapeHtml(city)} · ${escapeHtml(s.area)}</span><span class="stay-dates">${escapeHtml(s.datesLabel)} · ${t('hNights')(s.nights)}${s.birthday ? ' · 🎂' : ''}</span></div>` +
+        (s.note && s.note[lang] ? `<div class="stay-note" dir="auto">${escapeHtml(s.note[lang])}</div>` : '') + `<div class="hcards">${opts}</div>`;
+      box.appendChild(wrap);
+    });
+    $$('.hpick', box).forEach(b => b.onclick = () => { const h = loadHotels(); const id = b.dataset.s, i = +b.dataset.i; if (h[id] === i) delete h[id]; else h[id] = i; saveHotels(h); renderHotels(); if (state) renderDay(); toast(t('saved')); });
+  }
+
   // ---------- prep ----------
   const DEFAULT_CHECK = {
     he: {
@@ -282,10 +356,11 @@
   }
 
   // ---------- views ----------
-  const VIEWS = ['itinerary', 'overview', 'guide', 'food', 'restaurants', 'prep'];
+  const VIEWS = ['itinerary', 'overview', 'hotels', 'guide', 'food', 'restaurants', 'prep'];
   function showView(v) {
     VIEWS.forEach(x => $('#view-' + x).classList.toggle('hidden', x !== v));
     $$('.tab').forEach(tb => tb.classList.toggle('active', tb.dataset.view === v));
+    if (v === 'hotels') renderHotels();
     if (v === 'overview') renderOverview();
     if (v === 'guide') renderGuide();
     if (v === 'food') renderFood();

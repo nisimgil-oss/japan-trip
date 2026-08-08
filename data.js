@@ -46,6 +46,372 @@ window.TRIP_DATA = {
    }
   ]
  },
+ "stays": [
+  {
+   "id": "tokyo1",
+   "cover": "🗼",
+   "cityHe": "טוקיו",
+   "cityEs": "Tokio",
+   "area": "Shinjuku",
+   "datesLabel": "18–22.9",
+   "nights": 5,
+   "priceUnit": "night",
+   "dates": [
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22"
+   ],
+   "note": {
+    "he": "בסיס מושלם: צומת תחבורה ענק ו-5–15 דק׳ הליכה מ-Ni-chome (רובע הגייז). נוח גם לסיורים וגם לסצנה.",
+    "es": "Base ideal: nudo de transporte enorme y a 5–15 min a pie de Ni-chome (el barrio gay). Cómodo para pasear y para la noche."
+   },
+   "options": [
+    {
+     "name": "Tokyu Stay Shinjuku",
+     "price": "¥22–30k",
+     "url": "https://www.google.com/search?q=Tokyu%20Stay%20Shinjuku%20hotel%20booking",
+     "tags": [
+      "mid",
+      "laundry",
+      "gayfriendly"
+     ],
+     "he": {
+      "area": "Shinjuku-Sanchome",
+      "why": "מכונת כביסה-מייבש בחדר, נקי ואמין, ~3 דק׳ לברים Arty Farty/Dragon Men."
+     },
+     "es": {
+      "area": "Shinjuku-Sanchome",
+      "why": "Lavarropas-secadora en la habitación, prolijo y confiable, ~3 min a Arty Farty/Dragon Men."
+     }
+    },
+    {
+     "name": "Sotetsu Fresa Inn Shinjuku-Sanchome",
+     "price": "¥16–22k",
+     "url": "https://www.google.com/search?q=Sotetsu%20Fresa%20Inn%20Shinjuku%20Sanchome%20hotel%20booking",
+     "tags": [
+      "value",
+      "gayfriendly"
+     ],
+     "he": {
+      "area": "Shinjuku-Sanchome",
+      "why": "תמורה מצוינת, 3 דק׳ הליכה מ-Ni-chome. פשוט ונוח."
+     },
+     "es": {
+      "area": "Shinjuku-Sanchome",
+      "why": "Excelente precio, a 3 min de Ni-chome. Simple y cómodo."
+     }
+    },
+    {
+     "name": "Hotel Gracery Shinjuku",
+     "price": "¥24–34k",
+     "url": "https://www.google.com/search?q=Hotel%20Gracery%20Shinjuku%20hotel%20booking",
+     "tags": [
+      "mid",
+      "anime",
+      "central"
+     ],
+     "he": {
+      "area": "Kabukicho",
+      "why": "מלון ה-Godzilla בקבוקיצ׳ו — כיף, מרכזי ומושלם לחובב האנימה."
+     },
+     "es": {
+      "area": "Kabukicho",
+      "why": "El hotel de Godzilla en Kabukicho — divertido, céntrico e ideal para el fan del anime."
+     }
+    }
+   ]
+  },
+  {
+   "id": "hakone",
+   "cover": "♨️",
+   "cityHe": "האקונה",
+   "cityEs": "Hakone",
+   "area": "Gora",
+   "datesLabel": "23.9",
+   "nights": 1,
+   "priceUnit": "couple",
+   "birthday": true,
+   "dates": [
+    "2026-09-23"
+   ],
+   "note": {
+    "he": "לילת יום ההולדת 🎂 — ריוקאן עם אונסן פרטי בחדר וארוחת kaiseki. הזמינו כבר עכשיו (שבוע הזהב!). המחיר לזוג כולל חצי-פנסיון.",
+    "es": "La noche del cumpleaños 🎂 — ryokan con onsen privado en la habitación y cena kaiseki. Reservá ya (¡Silver Week!). Precio por pareja con media pensión."
+   },
+   "options": [
+    {
+     "name": "Gora Hanaougi",
+     "price": "¥90–150k",
+     "url": "https://www.google.com/search?q=Gora%20Hanaougi%20ryokan%20Hakone%20hotel%20booking",
+     "tags": [
+      "privateonsen",
+      "birthday",
+      "mid"
+     ],
+     "he": {
+      "area": "Gora",
+      "why": "בכל חדר אמבט אונסן פרטי פתוח; kaiseki בתאים פרטיים. הבחירה הרומנטית והמאוזנת ל-40."
+     },
+     "es": {
+      "area": "Gora",
+      "why": "Cada habitación con onsen privado al aire libre; kaiseki en privado. La opción romántica y equilibrada para los 40."
+     }
+    },
+    {
+     "name": "Hakone Ginyu",
+     "price": "¥110–170k",
+     "url": "https://www.google.com/search?q=Hakone%20Ginyu%20ryokan%20hotel%20booking",
+     "tags": [
+      "privateonsen",
+      "views",
+      "splurge"
+     ],
+     "he": {
+      "area": "Miyanoshita/Gora",
+      "why": "למבוגרים בלבד, נוף לגורג׳, אמבט פתוח פרטי בכל חדר — פינוק דרמטי."
+     },
+     "es": {
+      "area": "Miyanoshita/Gora",
+      "why": "Solo adultos, vista al cañón, baño privado al aire libre en cada cuarto — un lujo dramático."
+     }
+    },
+    {
+     "name": "Yama no Chaya",
+     "price": "¥70–110k",
+     "url": "https://www.google.com/search?q=Yama%20no%20Chaya%20Hakone%20Tonosawa%20hotel%20booking",
+     "tags": [
+      "privateonsen",
+      "value"
+     ],
+     "he": {
+      "area": "Tonosawa",
+      "why": "ריוקאן קלאסי על הנהר, אמבטיות פרטיות, אווירה של יפן ישנה — במחיר עדין יותר."
+     },
+     "es": {
+      "area": "Tonosawa",
+      "why": "Ryokan clásico junto al río, baños privados, aire de Japón antiguo — a un precio más amable."
+     }
+    }
+   ]
+  },
+  {
+   "id": "kyoto",
+   "cover": "⛩️",
+   "cityHe": "קיוטו",
+   "cityEs": "Kioto",
+   "area": "Kawaramachi",
+   "datesLabel": "24–27.9",
+   "nights": 4,
+   "priceUnit": "night",
+   "dates": [
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-27"
+   ],
+   "note": {
+    "he": "Kawaramachi/Pontocho — מרכזי, הליכה ל-Nishiki, Gion והמסעדות. בקשו מיטה זוגית (״daburu״) בהזמנה.",
+    "es": "Kawaramachi/Pontocho — céntrico, a pie de Nishiki, Gion y los restaurantes. Pedí cama matrimonial (\"daburu\") al reservar."
+   },
+   "options": [
+    {
+     "name": "Hotel Resol Kyoto Kawaramachi Sanjo",
+     "price": "¥22–30k",
+     "url": "https://www.google.com/search?q=Hotel%20Resol%20Kyoto%20Kawaramachi%20Sanjo%20hotel%20booking",
+     "tags": [
+      "mid",
+      "central"
+     ],
+     "he": {
+      "area": "Kawaramachi",
+      "why": "מודרני, נקי ומרכזי במחיר הוגן — הכי נוח לזוג הזה."
+     },
+     "es": {
+      "area": "Kawaramachi",
+      "why": "Moderno, limpio y céntrico a buen precio — lo más cómodo para esta pareja."
+     }
+    },
+    {
+     "name": "Cross Hotel Kyoto",
+     "price": "¥28–38k",
+     "url": "https://www.google.com/search?q=Cross%20Hotel%20Kyoto%20hotel%20booking",
+     "tags": [
+      "mid",
+      "central",
+      "rooftopbath"
+     ],
+     "he": {
+      "area": "Kawaramachi",
+      "why": "עיצובי וסטייליסטי על רצועת המסעדות של Kawaramachi."
+     },
+     "es": {
+      "area": "Kawaramachi",
+      "why": "De diseño y con onda, sobre la franja gastronómica de Kawaramachi."
+     }
+    },
+    {
+     "name": "Mitsui Garden Kyoto Shinmachi Bettei",
+     "price": "¥18–25k",
+     "url": "https://www.google.com/search?q=Mitsui%20Garden%20Kyoto%20Shinmachi%20Bettei%20hotel%20booking",
+     "tags": [
+      "value",
+      "rooftopbath"
+     ],
+     "he": {
+      "area": "Karasuma",
+      "why": "אמבט על הגג, מרכזי ובמחיר טוב."
+     },
+     "es": {
+      "area": "Karasuma",
+      "why": "Baño en la terraza, céntrico y a buen precio."
+     }
+    }
+   ]
+  },
+  {
+   "id": "osaka",
+   "cover": "🍢",
+   "cityHe": "אוסקה",
+   "cityEs": "Osaka",
+   "area": "Namba / Shinsaibashi",
+   "datesLabel": "28–29.9",
+   "nights": 2,
+   "priceUnit": "night",
+   "dates": [
+    "2026-09-28",
+    "2026-09-29"
+   ],
+   "note": {
+    "he": "Minami (Namba/Shinsaibashi) — לב האוכל והכיף, קו Kintetsu ל-Nara מהדלת. לא Umeda.",
+    "es": "Minami (Namba/Shinsaibashi) — el corazón de la comida y la movida, con la línea Kintetsu a Nara en la puerta. No Umeda."
+   },
+   "options": [
+    {
+     "name": "Cross Hotel Osaka",
+     "price": "¥22–30k",
+     "url": "https://www.google.com/search?q=Cross%20Hotel%20Osaka%20hotel%20booking",
+     "tags": [
+      "mid",
+      "central"
+     ],
+     "he": {
+      "area": "Shinsaibashi",
+      "why": "על ארקייד Shinsaibashi, 3 דק׳ מ-Dotonbori — הכי במרכז."
+     },
+     "es": {
+      "area": "Shinsaibashi",
+      "why": "Sobre la galería Shinsaibashi, a 3 min de Dotonbori — lo más central."
+     }
+    },
+    {
+     "name": "Namba Oriental Hotel",
+     "price": "¥18–26k",
+     "url": "https://www.google.com/search?q=Namba%20Oriental%20Hotel%20hotel%20booking",
+     "tags": [
+      "mid",
+      "value"
+     ],
+     "he": {
+      "area": "Namba",
+      "why": "דקות מתחנת Namba ומ-Dotonbori, אמין ונוח."
+     },
+     "es": {
+      "area": "Namba",
+      "why": "A minutos de la estación Namba y de Dotonbori, confiable y cómodo."
+     }
+    },
+    {
+     "name": "Candeo Hotels Osaka Namba",
+     "price": "¥14–20k",
+     "url": "https://www.google.com/search?q=Candeo%20Hotels%20Osaka%20Namba%20hotel%20booking",
+     "tags": [
+      "value",
+      "rooftopbath"
+     ],
+     "he": {
+      "area": "Namba",
+      "why": "תמורה מצוינת + אמבט אונסן בקומה העליונה."
+     },
+     "es": {
+      "area": "Namba",
+      "why": "Excelente precio + baño onsen en el último piso."
+     }
+    }
+   ]
+  },
+  {
+   "id": "tokyo2",
+   "cover": "🗼",
+   "cityHe": "טוקיו",
+   "cityEs": "Tokio",
+   "area": "Shinjuku / Shibuya",
+   "datesLabel": "30.9–1.10",
+   "nights": 2,
+   "priceUnit": "night",
+   "dates": [
+    "2026-09-30",
+    "2026-10-01"
+   ],
+   "note": {
+    "he": "חזרה לטוקיו לסיום — בסיס עם גישה קלה ל-N'EX לנאריטה בבוקר היציאה.",
+    "es": "Vuelta a Tokio para cerrar — base con acceso fácil al N'EX a Narita la mañana de la salida."
+   },
+   "options": [
+    {
+     "name": "Tokyu Stay Shinjuku",
+     "price": "¥22–30k",
+     "url": "https://www.google.com/search?q=Tokyu%20Stay%20Shinjuku%20hotel%20booking",
+     "tags": [
+      "mid",
+      "laundry"
+     ],
+     "he": {
+      "area": "Shinjuku-Sanchome",
+      "why": "מוכר ונוח, כביסה בחדר לסוף הטיול, N'EX ישיר לנאריטה."
+     },
+     "es": {
+      "area": "Shinjuku-Sanchome",
+      "why": "Conocido y cómodo, lavarropas para el final del viaje, N'EX directo a Narita."
+     }
+    },
+    {
+     "name": "Shibuya Stream Excel Hotel Tokyu",
+     "price": "¥28–38k",
+     "url": "https://www.google.com/search?q=Shibuya%20Stream%20Excel%20Hotel%20Tokyu%20hotel%20booking",
+     "tags": [
+      "mid",
+      "central"
+     ],
+     "he": {
+      "area": "Shibuya",
+      "why": "מעל תחנת Shibuya, קרוב ל-Ghibli/Shibuya לשופינג האחרון."
+     },
+     "es": {
+      "area": "Shibuya",
+      "why": "Encima de la estación Shibuya, cerca de Ghibli/Shibuya para las últimas compras."
+     }
+    },
+    {
+     "name": "Sotetsu Fresa Inn Shinjuku-Sanchome",
+     "price": "¥16–22k",
+     "url": "https://www.google.com/search?q=Sotetsu%20Fresa%20Inn%20Shinjuku%20Sanchome%20hotel%20booking",
+     "tags": [
+      "value"
+     ],
+     "he": {
+      "area": "Shinjuku-Sanchome",
+      "why": "תמורה טובה עם גישת N'EX נוחה."
+     },
+     "es": {
+      "area": "Shinjuku-Sanchome",
+      "why": "Buen precio con acceso cómodo al N'EX."
+     }
+    }
+   ]
+  }
+ ],
  "he": {
   "days": [
    {
