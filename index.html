@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1830">
+<title>יפן 2026 · חגיגות 40</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@500;700&family=Shippori+Mincho:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="petals" id="petals" aria-hidden="true"></div>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="hero-media">
+    <img src="assets/couple.jpg" alt="" id="heroImg">
+    <div class="hero-scrim"></div>
+    <div class="hero-inner">
+      <div class="kanji-badge">日本の旅</div>
+      <button class="lang-toggle" id="langToggle" title="language">🇦🇷 Español</button>
+      <h1><span data-i18n="hero.japan">יפן</span> <span class="n">2026</span></h1>
+      <div class="sub" data-i18n="hero.sub">🏮 חגיגות 40 · מסע אהבה, אוכל ותרבות 🌸</div>
+      <div class="meta">
+        <span>🛬 <b>18.9</b> <span data-i18n="hero.arrive">נחיתה בטוקיו 18:25</span></span>
+        <span>🛫 <b>2.10</b> <span data-i18n="hero.depart">המראה 12:00</span></span>
+        <span data-i18n="hero.cities">🗾 טוקיו · האקונה · קיוטו · אוסקה · נארה</span>
+        <span class="countdown" id="countdown">✈️ <b>—</b></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== TABS ===== -->
+<nav class="tabs" id="tabs">
+  <button class="tab active" data-view="itinerary"><span>🗓️</span> <span data-i18n="tab.itinerary">היומן</span></button>
+  <button class="tab" data-view="overview"><span>🗾</span> <span data-i18n="tab.overview">מבט־על</span></button>
+  <button class="tab" data-view="guide"><span>📖</span> <span data-i18n="tab.guide">מדריך</span></button>
+  <button class="tab" data-view="food"><span>🍜</span> <span data-i18n="tab.food">אוכל</span></button>
+  <button class="tab" data-view="restaurants"><span>🍣</span> <span data-i18n="tab.restaurants">מסעדות</span></button>
+  <button class="tab" data-view="prep"><span>✅</span> <span data-i18n="tab.prep">הכנות</span></button>
+</nav>
+
+<main class="wrap">
+
+  <!-- ITINERARY -->
+  <section id="view-itinerary">
+    <div class="day-rail" id="dayRail"></div>
+    <div class="day-head" id="dayHead"></div>
+    <div class="timeline" id="timeline"><div class="tl-line"></div></div>
+    <div class="tl-add">
+      <button class="btn btn-ghost btn-sm" id="addEventBtn" data-i18n="toolbar.addEvent">＋ הוסף פעילות ליום הזה</button>
+    </div>
+    <div class="toolbar">
+      <div class="grp">
+        <button class="btn btn-ghost btn-sm" id="exportBtn" data-i18n="toolbar.backup">⬇️ גיבוי</button>
+        <button class="btn btn-ghost btn-sm" id="importBtn" data-i18n="toolbar.restore">⬆️ שחזור</button>
+        <input type="file" id="importFile" accept="application/json" class="hidden">
+      </div>
+      <div class="grp">
+        <button class="btn btn-ghost btn-sm" id="petalsBtn" data-i18n="toolbar.petals">🌸 פרחים</button>
+        <button class="btn btn-ghost btn-sm" id="resetBtn" data-i18n="toolbar.reset">↺ אפס תכנון</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW / AGENDA + FLIGHTS -->
+  <section id="view-overview" class="hidden">
+    <div id="flightsPanel"></div>
+    <h2 class="section-h" data-i18n="overview.title">🗾 כל הטיול במבט אחד</h2>
+    <div id="agenda"></div>
+  </section>
+
+  <!-- GUIDE -->
+  <section id="view-guide" class="hidden">
+    <div class="guide-nav" id="guideNav"></div>
+    <div class="guide-grid" id="guideBody"></div>
+  </section>
+
+  <!-- FOOD -->
+  <section id="view-food" class="hidden">
+    <div class="guide-grid" id="foodBody"></div>
+  </section>
+
+  <!-- RESTAURANTS -->
+  <section id="view-restaurants" class="hidden">
+    <h2 class="section-h" data-i18n="restaurants.title">🍣 מקומות מיוחדים לאכול</h2>
+    <div class="rest-filter" id="restFilter"></div>
+    <div class="rest-grid" id="restBody"></div>
+  </section>
+
+  <!-- PREP -->
+  <section id="view-prep" class="hidden">
+    <div class="prep" id="prepBody"></div>
+  </section>
+
+  <div class="foot" data-i18n="foot">נבנה באהבה עבורכם ❤️ · תכנון גמיש — שנו, הוסיפו וסמנו ✓ · いってらっしゃい</div>
+</main>
+
+<!-- ===== EVENT MODAL ===== -->
+<div class="modal" id="modal">
+  <div class="modal-card">
+    <h3 id="modalTitle">עריכת פעילות</h3>
+    <div class="form">
+      <div class="field row2">
+        <div class="field"><label data-i18n="f.start">משעה</label><input type="time" id="f-start"></div>
+        <div class="field"><label data-i18n="f.end">עד שעה</label><input type="time" id="f-end"></div>
+      </div>
+      <div class="field"><label data-i18n="f.title">כותרת</label><input type="text" id="f-title"></div>
+      <div class="field row2">
+        <div class="field"><label data-i18n="f.type">סוג</label>
+          <select id="f-type"></select>
+        </div>
+        <div class="field"><label data-i18n="f.area">אזור / מיקום</label><input type="text" id="f-area"></div>
+      </div>
+      <div class="field"><label data-i18n="f.desc">תיאור</label><textarea id="f-desc"></textarea></div>
+      <div class="field"><label data-i18n="f.tips">טיפ</label><input type="text" id="f-tips"></div>
+      <div class="field row2">
+        <div class="field"><label data-i18n="f.cost">עלות</label><input type="text" id="f-cost"></div>
+        <div class="field"><label data-i18n="f.booking">הזמנה מראש</label><input type="text" id="f-booking"></div>
+      </div>
+      <div class="field"><label data-i18n="f.note">הערה אישית שלכם</label><textarea id="f-note"></textarea></div>
+      <div class="form-actions">
+        <button class="btn btn-ghost" id="modalDelete" style="color:#b3352a;border-color:#e2b2ab" data-i18n="f.delete">🗑️ מחק</button>
+        <div style="display:flex;gap:10px">
+          <button class="btn btn-ghost" id="modalCancel" data-i18n="f.cancel">ביטול</button>
+          <button class="btn btn-primary" id="modalSave" data-i18n="f.save">שמירה</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
