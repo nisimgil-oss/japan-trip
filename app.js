@@ -49,6 +49,8 @@
       'tab.hotels': 'מלונות', 'hotels.title': '🏨 בחירת מלונות',
       hSelected: '✓ נבחר', hChoose: 'בחרו מלון זה', hPerNight: 'ללילה', hPerCouple: 'לזוג · חצי פנסיון', hBook: 'להזמנה ↗', hNights: (n) => n === 1 ? 'לילה אחד' : n + ' לילות', hStayHotel: 'המלון שנבחר', hPickHint: 'בחרו מלון בטאב ״מלונות״',
       mapsDay: '🗺️ מסלול היום במפות', mapsOpen: 'פתח במפות ↗',
+      'tab.experiences': 'חוויות', 'experiences.title': '✨ עוד חוויות מיוחדות',
+      budgetTitle: '💴 כמה יעלה הטיול (בערך)', budgetTotal: 'סה״כ מוערך לזוג', budgetPerPerson: 'לאדם', budgetNote: 'הערכה בלבד — לא כולל קניות גדולות/בלת״מ. הטיסות כבר שולמו.',
       tags: { mid: 'מחיר בינוני', value: 'תמורה מעולה', splurge: 'פינוק', gayfriendly: 'גיי-פרנדלי', laundry: 'כביסה בחדר', anime: 'לחובבי אנימה', birthday: 'ליומולדת', privateonsen: 'אונסן פרטי', rooftopbath: 'אמבט על הגג', central: 'מרכזי', views: 'נוף' },
       types: { sightseeing: 'אתר / תצפית', food: 'אוכל', experience: 'חוויה', culture: 'תרבות', anime: 'אנימה/מנגה', onsen: 'אונסן', nightlife: 'חיי לילה', shopping: 'קניות', transport: 'נסיעה', rest: 'מנוחה', checkin: 'צ׳ק-אין', birthday: 'יומולדת' },
       dow: { Fri: 'שישי', Sat: 'שבת', Sun: 'ראשון', Mon: 'שני', Tue: 'שלישי', Wed: 'רביעי', Thu: 'חמישי' },
@@ -73,6 +75,8 @@
       'tab.hotels': 'Hoteles', 'hotels.title': '🏨 Elegí tu hotel',
       hSelected: '✓ Elegido', hChoose: 'Elegir este hotel', hPerNight: 'por noche', hPerCouple: 'por pareja · media pensión', hBook: 'Reservar ↗', hNights: (n) => n === 1 ? '1 noche' : n + ' noches', hStayHotel: 'Hotel elegido', hPickHint: 'Elegí un hotel en la pestaña "Hoteles"',
       mapsDay: '🗺️ Recorrido del día en Maps', mapsOpen: 'Abrir en Maps ↗',
+      'tab.experiences': 'Experiencias', 'experiences.title': '✨ Más experiencias especiales',
+      budgetTitle: '💴 Cuánto sale el viaje (aprox.)', budgetTotal: 'Total estimado (pareja)', budgetPerPerson: 'por persona', budgetNote: 'Solo una estimación — sin compras grandes/imprevistos. Los vuelos ya están pagos.',
       tags: { mid: 'gama media', value: 'buen precio', splurge: 'lujo', gayfriendly: 'gay-friendly', laundry: 'lavarropas', anime: 'para fans del anime', birthday: 'para el cumple', privateonsen: 'onsen privado', rooftopbath: 'baño en la terraza', central: 'céntrico', views: 'con vista' },
       types: { sightseeing: 'Lugar / mirador', food: 'Comida', experience: 'Experiencia', culture: 'Cultura', anime: 'Anime/manga', onsen: 'Onsen', nightlife: 'Vida nocturna', shopping: 'Compras', transport: 'Traslado', rest: 'Descanso', checkin: 'Check-in', birthday: 'Cumpleaños' },
       dow: { Fri: 'vie', Sat: 'sáb', Sun: 'dom', Mon: 'lun', Tue: 'mar', Wed: 'mié', Thu: 'jue' },
@@ -245,7 +249,7 @@
       box.appendChild(card);
     });
   }
-  function renderOverview() { renderFlights(); renderAgenda(); }
+  function renderOverview() { renderFlights(); renderAgenda(); renderBudget(); }
 
   // ---------- restaurants ----------
   let restCity = 'all';
@@ -265,6 +269,43 @@
         `<div class="rc-meta">${r.price ? `<span class="chip cost">${escapeHtml(r.price)}</span>` : ''}${r.reservation ? `<span class="chip book" dir="auto">${escapeHtml(r.reservation)}</span>` : ''}</div></div>`;
     }).join('');
     if (!shown.length) body.innerHTML = `<div class="panel">${t('loading')}</div>`;
+  }
+
+  // ---------- experiences (attractions) ----------
+  const attractions = () => (data().attractions) || [];
+  let expCity = 'all';
+  function broadCity(c) { const cl = cityLatin(c); return ['Tokyo', 'Kyoto', 'Osaka', 'Nara', 'Hakone'].indexOf(cl) >= 0 ? cl : (lang === 'he' ? 'טיולי יום' : 'Excursiones'); }
+  function renderExperiences() {
+    const list = attractions(); const filt = $('#expFilter'), body = $('#expBody');
+    const cities = []; list.forEach(r => { const b = broadCity(r.city); if (cities.indexOf(b) < 0) cities.push(b); });
+    filt.innerHTML = [`<button class="rchip${expCity === 'all' ? ' active' : ''}" data-c="all">${t('restAll')}</button>`].concat(cities.map(c => `<button class="rchip${expCity === c ? ' active' : ''}" data-c="${escapeAttr(c)}">${cityEmoji(c)} ${escapeHtml(c)}</button>`)).join('');
+    $$('.rchip', filt).forEach(b => b.onclick = () => { expCity = b.dataset.c; renderExperiences(); });
+    const shown = list.filter(r => expCity === 'all' || broadCity(r.city) === expCity);
+    body.innerHTML = shown.map(r => {
+      const tags = (r.tags || []).map(tg => `<span class="chip">${escapeHtml(tg)}</span>`).join('');
+      return `<div class="rcard"><div class="rc-top"><span class="rc-name" dir="auto">${escapeHtml(r.name)}</span></div>` +
+        `<div class="rc-sub">${cityEmoji(r.city)} ${escapeHtml(r.city || '')}${r.area ? ' · ' + escapeHtml(r.area) : ''}</div>` +
+        `<div class="rc-cuisine" dir="auto">✨ ${escapeHtml(r.category || '')}</div>` +
+        (r.why ? `<div class="rc-why" dir="auto">${escapeHtml(r.why)}</div>` : '') +
+        `<div class="rc-meta">${r.cost ? `<span class="chip cost">${escapeHtml(r.cost)}</span>` : ''}${r.duration ? `<span class="chip">⏱️ ${escapeHtml(r.duration)}</span>` : ''}${r.booking ? `<span class="chip book" dir="auto">${escapeHtml(r.booking)}</span>` : ''}</div>` +
+        (tags ? `<div class="rc-meta">${tags}</div>` : '') + `</div>`;
+    }).join('');
+    if (!shown.length) body.innerHTML = `<div class="panel">${t('loading')}</div>`;
+  }
+
+  // ---------- budget ----------
+  const budgetData = () => (window.TRIP_DATA && window.TRIP_DATA.budget) || null;
+  const pick = (x) => (x && typeof x === 'object') ? (x[lang] != null ? x[lang] : (x.he || '')) : (x == null ? '' : x);
+  const fmtNum = (n) => (n == null ? '' : Number(n).toLocaleString('en-US'));
+  function renderBudget() {
+    const b = budgetData(); const box = $('#budgetPanel'); if (!box) return;
+    if (!b || !b.lines) { box.innerHTML = ''; return; }
+    const rows = b.lines.map(l => `<tr><td class="bl-cat" dir="auto">${escapeHtml(pick(l.cat))}${l.note ? `<span class="bl-note" dir="auto"> · ${escapeHtml(pick(l.note))}</span>` : ''}</td><td class="bl-amt">¥${fmtNum(l.low)}–${fmtNum(l.high)}</td></tr>`).join('');
+    box.innerHTML = `<div class="panel budget"><h2>${t('budgetTitle')}</h2><table class="btable"><tbody>${rows}` +
+      `<tr class="bl-total"><td>${t('budgetTotal')}</td><td>¥${fmtNum(b.totalLow)}–${fmtNum(b.totalHigh)}${(b.totalUSDLow != null) ? `<br><span class="bl-usd">≈ US$${fmtNum(b.totalUSDLow)}–${fmtNum(b.totalUSDHigh)}</span>` : ''}</td></tr></tbody></table>` +
+      `${b.perPerson ? `<div class="budget-pp">${t('budgetPerPerson')}: ${escapeHtml(pick(b.perPerson))}</div>` : ''}` +
+      `${b.summary ? `<div class="budget-sum" dir="auto">${escapeHtml(pick(b.summary))}</div>` : ''}` +
+      `<div class="budget-note">${t('budgetNote')}${b.fx ? ` · ${escapeHtml(pick(b.fx))}` : ''}</div></div>`;
   }
 
   // ---------- google maps ----------
@@ -356,7 +397,7 @@
   }
 
   // ---------- views ----------
-  const VIEWS = ['itinerary', 'overview', 'hotels', 'guide', 'food', 'restaurants', 'prep'];
+  const VIEWS = ['itinerary', 'overview', 'hotels', 'guide', 'food', 'restaurants', 'experiences', 'prep'];
   function showView(v) {
     VIEWS.forEach(x => $('#view-' + x).classList.toggle('hidden', x !== v));
     $$('.tab').forEach(tb => tb.classList.toggle('active', tb.dataset.view === v));
@@ -365,6 +406,7 @@
     if (v === 'guide') renderGuide();
     if (v === 'food') renderFood();
     if (v === 'restaurants') renderRestaurants();
+    if (v === 'experiences') renderExperiences();
     if (v === 'prep') renderPrep();
     window.scrollTo({ top: 0, behavior: 'smooth' }); savePrefs(v);
   }

@@ -399,3 +399,16 @@ a{color:var(--gold-soft)}
 .dh-picked{font-size:11px;background:var(--red);color:#fff;border-radius:999px;padding:1px 8px;margin-inline-start:4px}
 a.ev-area{color:var(--ink-soft);text-decoration:none;display:inline-block}
 a.ev-area:hover{color:var(--red);text-decoration:underline}
+
+/* ---------- budget panel ---------- */
+.budget{margin-top:20px}
+.btable{width:100%;border-collapse:collapse;margin-top:6px}
+.btable td{padding:7px 4px;border-bottom:1px dashed var(--paper-edge);font-size:14px;vertical-align:top}
+.bl-cat{color:var(--ink)}
+.bl-note{color:var(--ink-faint);font-size:12px}
+.bl-amt{text-align:end;white-space:nowrap;font-family:var(--serif);color:var(--red-deep)}
+.bl-total td{border-top:2px solid var(--red);border-bottom:none;font-weight:700;font-size:16px;padding-top:10px}
+.bl-usd{font-size:12px;color:var(--ink-soft);font-weight:400}
+.budget-pp{font-size:13px;color:var(--ink-soft);margin-top:8px}
+.budget-sum{font-size:14px;color:#40382f;margin-top:8px;unicode-bidi:plaintext}
+.budget-note{font-size:12px;color:var(--ink-faint);margin-top:8px}
