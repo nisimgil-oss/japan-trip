@@ -390,7 +390,11 @@
   function ensureMap() {
     if (_map) return _map;
     _map = L.map('tripMap', { scrollWheelZoom: true }).setView([35.0, 137.3], 6);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© OpenStreetMap' }).addTo(_map);
+    // English labels (hl=en) — Google road & satellite tiles, like the site's aerial maps
+    const gOpts = { subdomains: ['0', '1', '2', '3'], maxZoom: 20, attribution: '© Google' };
+    const gRoad = L.tileLayer('https://mt{s}.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}', gOpts).addTo(_map);
+    const gSat = L.tileLayer('https://mt{s}.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}', gOpts);
+    L.control.layers({ 'מפה · Mapa': gRoad, 'לוויין · Satélite': gSat }, null, { position: 'topright' }).addTo(_map);
     return _map;
   }
   function buildDayLayer(d, di) {
