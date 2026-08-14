@@ -335,6 +335,24 @@ a{color:var(--gold-soft)}
 .cmp-table th{background:var(--paper-2);color:var(--red-deep);font-weight:700}
 .cmp-divider{height:1px;background:var(--indigo-line);margin:20px 2px}
 
+/* ---------- booked (hotels to close) ---------- */
+.booked-hint{color:var(--ink-soft);font-size:13.5px;line-height:1.5}
+.booked-prog{font-family:var(--serif);color:var(--red-deep);font-weight:700;margin-top:8px;font-size:15px}
+.bkcard{position:relative}
+.bkcard.bkdone{border-inline-start:5px solid #3c9a5f}
+.bk-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.bk-cover{font-size:23px}
+.bk-city{font-weight:700;color:var(--ink);font-size:16px}
+.bk-dates{color:var(--ink-soft);font-size:13px;margin-inline-start:auto;white-space:nowrap}
+.bk-sug{font-size:13px;color:var(--ink-soft);margin-bottom:9px}
+.bk-sug a{text-decoration:none}
+.bk-fields{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.bk-hotel,.bk-ref{flex:1;min-width:170px;padding:10px 12px;border:1px solid var(--paper-edge);border-radius:10px;
+  font-family:inherit;font-size:14px;background:#fff;color:var(--ink)}
+.bk-hotel:focus,.bk-ref:focus{outline:none;border-color:var(--gold)}
+.bk-check{display:flex;align-items:center;gap:7px;white-space:nowrap;color:var(--ink);font-size:14px;cursor:pointer;font-weight:600}
+.bk-check input{width:18px;height:18px;accent-color:#3c9a5f}
+
 /* ---------- flights panel ---------- */
 .panel.flights h2{color:#fff}
 .flights{background:linear-gradient(180deg,var(--kon),var(--night-2));color:var(--cream);border:1px solid var(--indigo-line);margin-top:18px}

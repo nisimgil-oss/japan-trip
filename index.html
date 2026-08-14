@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@500;700&family=Shippori+Mincho:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="styles.css?v=20260814c">
+<link rel="stylesheet" href="styles.css?v=20260814d">
 </head>
 <body>
 <div class="petals" id="petals" aria-hidden="true"></div>
@@ -41,6 +41,7 @@
   <button class="tab" data-view="map"><span>🗺️</span> <span data-i18n="tab.map">מפה</span></button>
   <button class="tab" data-view="compare"><span>⚖️</span> <span data-i18n="tab.compare">השוואה</span></button>
   <button class="tab" data-view="hotels"><span>🏨</span> <span data-i18n="tab.hotels">מלונות</span></button>
+  <button class="tab" data-view="booked"><span>🔖</span> <span data-i18n="tab.booked">לסגור</span></button>
   <button class="tab" data-view="guide"><span>📖</span> <span data-i18n="tab.guide">מדריך</span></button>
   <button class="tab" data-view="food"><span>🍜</span> <span data-i18n="tab.food">אוכל</span></button>
   <button class="tab" data-view="restaurants"><span>🍣</span> <span data-i18n="tab.restaurants">מסעדות</span></button>
@@ -85,6 +86,11 @@
     <div class="map-hint" id="mapHint" data-i18n="map.hint">לחצו על יום כדי להציג/להסתיר את המסלול שלו</div>
     <div class="map-legend" id="mapLegend"></div>
     <div id="tripMap"></div>
+  </section>
+
+  <!-- BOOKED — hotels-to-close tracker -->
+  <section id="view-booked" class="hidden">
+    <div id="bookedBody"></div>
   </section>
 
   <!-- COMPARE — itinerary vs. Excel -->
@@ -168,7 +174,7 @@
 <div class="toast" id="toast"></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="data.js?v=20260814c"></script>
-<script src="app.js?v=20260814c"></script>
+<script src="data.js?v=20260814d"></script>
+<script src="app.js?v=20260814d"></script>
 </body>
 </html>

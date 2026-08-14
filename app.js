@@ -47,6 +47,9 @@
       restAll: 'הכל', rWhy: 'למה מיוחד', rDish: 'לא לפספס', rPrice: 'מחיר', rBook: 'הזמנה', rReserve: 'צריך להזמין', jump: 'לפרטים ביום ↗',
       loading: 'נטען…',
       'tab.hotels': 'מלונות', 'hotels.title': '🏨 בחירת מלונות',
+      'tab.booked': 'לסגור', bookedTitle: '🔖 מלונות לסגור', bookedHint: 'לכל לילה — התאריכים והמקום. כתבו את המלון שסגרתם וסמנו ✓. נשמר במכשיר שלכם.',
+      bookedSug: 'ההצעה שבחרתם', bookedHotelPh: 'המלון שסגרתי…', bookedRefPh: 'מס\' הזמנה / הערה (אופציונלי)', bookedDone: 'נסגר ✓',
+      bookedProgress: (n, m) => `${n}/${m} נסגרו`,
       hSelected: '✓ נבחר', hChoose: 'בחרו מלון זה', hPerNight: 'ללילה', hPerCouple: 'לזוג · חצי פנסיון', hBook: 'להזמנה ↗', hNights: (n) => n === 1 ? 'לילה אחד' : n + ' לילות', hStayHotel: 'המלון שנבחר', hPickHint: 'בחרו מלון בטאב ״מלונות״',
       mapsDay: '🗺️ מסלול היום במפות', mapsOpen: 'פתח במפות ↗',
       'tab.experiences': 'חוויות', 'experiences.title': '✨ עוד חוויות מיוחדות',
@@ -75,6 +78,9 @@
       restAll: 'Todos', rWhy: 'Por qué es especial', rDish: 'No te pierdas', rPrice: 'Precio', rBook: 'Reserva', rReserve: 'Hay que reservar', jump: 'Ver en el día ↗',
       loading: 'Cargando…',
       'tab.hotels': 'Hoteles', 'hotels.title': '🏨 Elegí tu hotel',
+      'tab.booked': 'Por reservar', bookedTitle: '🔖 Hoteles por reservar', bookedHint: 'Para cada noche — las fechas y el lugar. Escribí el hotel que reservaste y marcá ✓. Se guarda en tu dispositivo.',
+      bookedSug: 'La opción que elegiste', bookedHotelPh: 'El hotel que reservé…', bookedRefPh: 'N.º de reserva / nota (opcional)', bookedDone: 'Reservado ✓',
+      bookedProgress: (n, m) => `${n}/${m} reservados`,
       hSelected: '✓ Elegido', hChoose: 'Elegir este hotel', hPerNight: 'por noche', hPerCouple: 'por pareja · media pensión', hBook: 'Reservar ↗', hNights: (n) => n === 1 ? '1 noche' : n + ' noches', hStayHotel: 'Hotel elegido', hPickHint: 'Elegí un hotel en la pestaña "Hoteles"',
       mapsDay: '🗺️ Recorrido del día en Maps', mapsOpen: 'Abrir en Maps ↗',
       'tab.experiences': 'Experiencias', 'experiences.title': '✨ Más experiencias especiales',
@@ -576,6 +582,46 @@
     $$('.hpick', box).forEach(b => b.onclick = () => { const h = loadHotels(); const id = b.dataset.s, i = +b.dataset.i; if (h[id] === i) delete h[id]; else h[id] = i; saveHotels(h); renderHotels(); if (state) renderDay(); toast(t('saved')); });
   }
 
+  // ---------- booked (hotels to close) ----------
+  const LS_BOOKED = 'japanTrip.booked.v1';
+  const loadBooked = () => safeParse(localStorage.getItem(LS_BOOKED)) || {};
+  const saveBooked = (b) => localStorage.setItem(LS_BOOKED, JSON.stringify(b));
+  function updateBookedProg() {
+    const el = $('#bookedProg'); if (!el) return;
+    const b = loadBooked(); const list = stays();
+    el.textContent = t('bookedProgress')(list.filter(s => b[s.id] && b[s.id].done).length, list.length);
+  }
+  function renderBooked() {
+    const box = $('#bookedBody'); box.innerHTML = ''; const saved = loadBooked();
+    const intro = document.createElement('div'); intro.className = 'panel';
+    intro.innerHTML = `<h2>${t('bookedTitle')}</h2><div class="booked-hint">${t('bookedHint')}</div><div class="booked-prog" id="bookedProg"></div>`;
+    box.appendChild(intro);
+    stays().forEach(s => {
+      const city = s['city' + (lang === 'he' ? 'He' : 'Es')];
+      const sel = selectedOption(s); const rec = saved[s.id] || {};
+      const card = document.createElement('div'); card.className = 'panel bkcard' + (rec.done ? ' bkdone' : '');
+      card.innerHTML =
+        `<div class="bk-head"><span class="bk-cover">${s.cover || '🏨'}</span>` +
+        `<span class="bk-city" dir="auto">${escapeHtml(city)}${s.area ? ' · ' + escapeHtml(s.area) : ''}</span>` +
+        `<span class="bk-dates">${escapeHtml(s.datesLabel)} · ${t('hNights')(s.nights)}${s.birthday ? ' 🎂' : ''}</span></div>` +
+        (sel ? `<div class="bk-sug">${t('bookedSug')}: <b dir="auto">${escapeHtml(sel.name)}</b> <a href="${placeUrl(sel.name + ' ' + cityLatin(city))}" target="_blank" rel="noopener">🗺️</a></div>` : '') +
+        `<div class="bk-fields">` +
+        `<input class="bk-hotel" type="text" placeholder="${escapeAttr(t('bookedHotelPh'))}" value="${escapeAttr(rec.hotel || '')}">` +
+        `<input class="bk-ref" type="text" placeholder="${escapeAttr(t('bookedRefPh'))}" value="${escapeAttr(rec.ref || '')}">` +
+        `<label class="bk-check"><input type="checkbox" ${rec.done ? 'checked' : ''}> ${t('bookedDone')}</label></div>`;
+      const persist = () => {
+        const b = loadBooked();
+        b[s.id] = { hotel: card.querySelector('.bk-hotel').value, ref: card.querySelector('.bk-ref').value, done: card.querySelector('.bk-check input').checked };
+        saveBooked(b); card.classList.toggle('bkdone', b[s.id].done); updateBookedProg();
+      };
+      card.querySelector('.bk-hotel').addEventListener('input', persist);
+      card.querySelector('.bk-ref').addEventListener('input', persist);
+      card.querySelector('.bk-check input').addEventListener('change', () => { persist(); toast(t('saved')); });
+      box.appendChild(card);
+    });
+    updateBookedProg();
+  }
+
   // ---------- prep ----------
   const DEFAULT_CHECK = {
     he: {
@@ -663,13 +709,14 @@
   }
 
   // ---------- views ----------
-  const VIEWS = ['itinerary', 'overview', 'map', 'compare', 'hotels', 'guide', 'food', 'restaurants', 'experiences', 'prep'];
+  const VIEWS = ['itinerary', 'overview', 'map', 'compare', 'hotels', 'booked', 'guide', 'food', 'restaurants', 'experiences', 'prep'];
   function showView(v) {
     VIEWS.forEach(x => $('#view-' + x).classList.toggle('hidden', x !== v));
     $$('.tab').forEach(tb => tb.classList.toggle('active', tb.dataset.view === v));
     if (v === 'map') renderMap();
     if (v === 'compare') renderCompare();
     if (v === 'hotels') renderHotels();
+    if (v === 'booked') renderBooked();
     if (v === 'overview') renderOverview();
     if (v === 'guide') renderGuide();
     if (v === 'food') renderFood();
