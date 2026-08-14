@@ -49,7 +49,7 @@
       'tab.hotels': 'מלונות', 'hotels.title': '🏨 בחירת מלונות',
       'tab.booked': 'לסגור', bookedTitle: '🔖 מלונות לסגור', bookedHint: 'לכל לילה — התאריכים והמקום. כתבו את המלון שסגרתם וסמנו ✓. נשמר במכשיר שלכם.',
       bookedSug: 'ההצעה שבחרתם', bookedHotelPh: 'המלון שסגרתי…', bookedRefPh: 'מס\' הזמנה / הערה (אופציונלי)', bookedDone: 'נסגר ✓',
-      bookedProgress: (n, m) => `${n}/${m} נסגרו`, bookedStay: 'כניסה → יציאה',
+      bookedProgress: (n, m) => `${n}/${m} נסגרו`, bookedStay: 'כניסה → יציאה', bookedCostPh: 'עלות (¥/₪)', bookedCancelLabel: 'ביטול חינם עד',
       hSelected: '✓ נבחר', hChoose: 'בחרו מלון זה', hPerNight: 'ללילה', hPerCouple: 'לזוג · חצי פנסיון', hBook: 'להזמנה ↗', hNights: (n) => n === 1 ? 'לילה אחד' : n + ' לילות', hStayHotel: 'המלון שנבחר', hPickHint: 'בחרו מלון בטאב ״מלונות״',
       mapsDay: '🗺️ מסלול היום במפות', mapsOpen: 'פתח במפות ↗',
       'tab.experiences': 'חוויות', 'experiences.title': '✨ עוד חוויות מיוחדות',
@@ -80,7 +80,7 @@
       'tab.hotels': 'Hoteles', 'hotels.title': '🏨 Elegí tu hotel',
       'tab.booked': 'Por reservar', bookedTitle: '🔖 Hoteles por reservar', bookedHint: 'Para cada noche — las fechas y el lugar. Escribí el hotel que reservaste y marcá ✓. Se guarda en tu dispositivo.',
       bookedSug: 'La opción que elegiste', bookedHotelPh: 'El hotel que reservé…', bookedRefPh: 'N.º de reserva / nota (opcional)', bookedDone: 'Reservado ✓',
-      bookedProgress: (n, m) => `${n}/${m} reservados`, bookedStay: 'Entrada → salida',
+      bookedProgress: (n, m) => `${n}/${m} reservados`, bookedStay: 'Entrada → salida', bookedCostPh: 'Costo (¥/₪)', bookedCancelLabel: 'Cancelación gratis hasta',
       hSelected: '✓ Elegido', hChoose: 'Elegir este hotel', hPerNight: 'por noche', hPerCouple: 'por pareja · media pensión', hBook: 'Reservar ↗', hNights: (n) => n === 1 ? '1 noche' : n + ' noches', hStayHotel: 'Hotel elegido', hPickHint: 'Elegí un hotel en la pestaña "Hoteles"',
       mapsDay: '🗺️ Recorrido del día en Maps', mapsOpen: 'Abrir en Maps ↗',
       'tab.experiences': 'Experiencias', 'experiences.title': '✨ Más experiencias especiales',
@@ -587,10 +587,22 @@
   const LS_BOOKED = 'japanTrip.booked.v1';
   const loadBooked = () => safeParse(localStorage.getItem(LS_BOOKED)) || {};
   const saveBooked = (b) => localStorage.setItem(LS_BOOKED, JSON.stringify(b));
+  // מלונות שכבר נסגרו (מתוך אישורי ההזמנה) — baseline נשמר בקוד, ניתן לעריכה מקומית
+  const BOOKED = {
+    'tokyo-shinjuku': { hotel: 'HOTEL AMANEK Shinjuku Kabukicho', ref: 'אישור 5909.616.873 · PIN 7682', cost: '¥114,759 · ~₪2,136', checkin: '2026-09-18', checkout: '2026-09-21', cancelBy: '2026-09-10', done: true,
+      note: { he: '⚠️ הזמנה ל-3 לילות (יציאה 21.9) — לילה אחד פחות מהמסלול (18→22). ביטול חינם עד 10.9.', es: '⚠️ Reserva de 3 noches (salida 21/9) — una noche menos que el itinerario (18→22). Cancelación gratis hasta 10/9.' } },
+    'magome-kiso': { hotel: 'Yanagiya Iri (柳屋入) — Magome', ref: 'אישור 6345.413.867 · PIN 8707', cost: '¥53,600 · ~₪998', checkin: '2026-09-23', checkout: '2026-09-24', cancelBy: '2026-09-17', done: true,
+      note: { he: 'וילה עם מטבח — ארוחות לא כלולות. לתכנן ארוחת ערב במאגומה או בישול עצמי.', es: 'Villa con cocina — sin comidas. Planear la cena en Magome o cocinar.' } },
+    'tsumago-kiso': { hotel: 'AKARI — Nagiso (ליד צומאגו)', ref: 'אישור 6492.468.419 · PIN 9018', cost: '¥44,000 · ~₪819', checkin: '2026-09-24', checkout: '2026-09-25', cancelBy: '2026-09-18', done: true,
+      note: { he: '🎂 לילה יום ההולדת בנאגיסו (~10 דק׳ מצומאגו) — וילה עם מטבח, בלי ארוחות. לתכנן ארוחת יום הולדת (מסעדה בצומאגו/נאגיסו או בישול).', es: '🎂 Noche del cumpleaños en Nagiso (~10 min de Tsumago) — villa con cocina, sin comidas. Planear la cena de cumpleaños.' } },
+    'osaka': { hotel: 'Onyado Nono Namba (御宿 野乃 なんば)', ref: 'אישור 5969.435.283 · PIN 2411', cost: '¥51,699 · ~₪962', checkin: '2026-09-28', checkout: '2026-09-30', cancelBy: '2026-09-26', done: true,
+      note: { he: 'אונסן טבעי בבית המלון · ⚠️ אסורה כניסה עם קעקועים גלויים למרחצאות (מדבקות כיסוי).', es: 'Onsen natural en el hotel · ⚠️ prohibido tatuajes visibles en los baños (usar stickers).' } },
+  };
+  const bookedFor = (id) => Object.assign({}, BOOKED[id] || {}, loadBooked()[id] || {});
   function updateBookedProg() {
     const el = $('#bookedProg'); if (!el) return;
-    const b = loadBooked(); const list = stays();
-    el.textContent = t('bookedProgress')(list.filter(s => b[s.id] && b[s.id].done).length, list.length);
+    const list = stays();
+    el.textContent = t('bookedProgress')(list.filter(s => bookedFor(s.id).done).length, list.length);
   }
   function renderBooked() {
     const box = $('#bookedBody'); box.innerHTML = ''; const saved = loadBooked();
@@ -599,25 +611,33 @@
     box.appendChild(intro);
     stays().forEach(s => {
       const city = s['city' + (lang === 'he' ? 'He' : 'Es')];
-      const sel = selectedOption(s); const rec = saved[s.id] || {};
-      const ci = s.dates[0], co = isoPlusDays(s.dates[s.dates.length - 1], 1);
+      const rec = bookedFor(s.id);
+      const ci = rec.checkin || s.dates[0];
+      const co = rec.checkout || isoPlusDays(s.dates[s.dates.length - 1], 1);
+      const nights = rec.checkin ? Math.max(1, Math.round((new Date(co) - new Date(ci)) / 864e5)) : s.nights;
+      const note = rec.note ? (rec.note[lang] || rec.note.he || '') : '';
       const card = document.createElement('div'); card.className = 'panel bkcard' + (rec.done ? ' bkdone' : '');
       card.innerHTML =
         `<div class="bk-head"><span class="bk-cover">${s.cover || '🏨'}</span>` +
         `<span class="bk-city" dir="auto">${escapeHtml(city)}${s.area ? ' · ' + escapeHtml(s.area) : ''}</span>` +
-        `<span class="bk-dates"><span class="bk-cio">${t('bookedStay')}</span> <b>${fmtDate(ci)} → ${fmtDate(co)}</b> · ${t('hNights')(s.nights)}${s.birthday ? ' 🎂' : ''}</span></div>` +
-        (sel ? `<div class="bk-sug">${t('bookedSug')}: <b dir="auto">${escapeHtml(sel.name)}</b> <a href="${placeUrl(sel.name + ' ' + cityLatin(city))}" target="_blank" rel="noopener">🗺️</a></div>` : '') +
+        `<span class="bk-dates"><span class="bk-cio">${t('bookedStay')}</span> <b>${fmtDate(ci)} → ${fmtDate(co)}</b> · ${t('hNights')(nights)}${s.birthday ? ' 🎂' : ''}</span></div>` +
+        (note ? `<div class="bk-note" dir="auto">ℹ️ ${escapeHtml(note)}</div>` : '') +
         `<div class="bk-fields">` +
         `<input class="bk-hotel" type="text" placeholder="${escapeAttr(t('bookedHotelPh'))}" value="${escapeAttr(rec.hotel || '')}">` +
+        `<input class="bk-cost" type="text" placeholder="${escapeAttr(t('bookedCostPh'))}" value="${escapeAttr(rec.cost || '')}">` +
+        `<label class="bk-datewrap"><span>${t('bookedCancelLabel')}</span><input class="bk-cancel-in" type="date" value="${escapeAttr(rec.cancelBy || '')}"></label>` +
         `<input class="bk-ref" type="text" placeholder="${escapeAttr(t('bookedRefPh'))}" value="${escapeAttr(rec.ref || '')}">` +
         `<label class="bk-check"><input type="checkbox" ${rec.done ? 'checked' : ''}> ${t('bookedDone')}</label></div>`;
       const persist = () => {
         const b = loadBooked();
-        b[s.id] = { hotel: card.querySelector('.bk-hotel').value, ref: card.querySelector('.bk-ref').value, done: card.querySelector('.bk-check input').checked };
+        b[s.id] = Object.assign({}, BOOKED[s.id] || {}, {
+          hotel: card.querySelector('.bk-hotel').value, cost: card.querySelector('.bk-cost').value,
+          cancelBy: card.querySelector('.bk-cancel-in').value, ref: card.querySelector('.bk-ref').value,
+          done: card.querySelector('.bk-check input').checked,
+        });
         saveBooked(b); card.classList.toggle('bkdone', b[s.id].done); updateBookedProg();
       };
-      card.querySelector('.bk-hotel').addEventListener('input', persist);
-      card.querySelector('.bk-ref').addEventListener('input', persist);
+      ['.bk-hotel', '.bk-cost', '.bk-cancel-in', '.bk-ref'].forEach(sel => card.querySelector(sel).addEventListener('input', persist));
       card.querySelector('.bk-check input').addEventListener('change', () => { persist(); toast(t('saved')); });
       box.appendChild(card);
     });

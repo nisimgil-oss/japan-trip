@@ -353,6 +353,11 @@ a{color:var(--gold-soft)}
 .bk-hotel:focus,.bk-ref:focus{outline:none;border-color:var(--gold)}
 .bk-check{display:flex;align-items:center;gap:7px;white-space:nowrap;color:var(--ink);font-size:14px;cursor:pointer;font-weight:600}
 .bk-check input{width:18px;height:18px;accent-color:#3c9a5f}
+.bk-cost{flex:0 1 150px;min-width:120px;padding:10px 12px;border:1px solid var(--paper-edge);border-radius:10px;font-family:inherit;font-size:14px;background:#fff;color:var(--ink)}
+.bk-cost:focus{outline:none;border-color:var(--gold)}
+.bk-datewrap{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--ink-soft);white-space:nowrap}
+.bk-cancel-in{padding:8px 10px;border:1px solid var(--paper-edge);border-radius:9px;font-family:inherit;font-size:13px;background:#fff;color:var(--ink)}
+.bk-note{font-size:12.5px;color:var(--ink);background:#fff8e6;border:1px solid #f0e2b8;border-radius:9px;padding:7px 11px;margin:2px 0 9px;line-height:1.5}
 
 /* ---------- flights panel ---------- */
 .panel.flights h2{color:#fff}
