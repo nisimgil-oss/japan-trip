@@ -50,6 +50,7 @@
       hSelected: '✓ נבחר', hChoose: 'בחרו מלון זה', hPerNight: 'ללילה', hPerCouple: 'לזוג · חצי פנסיון', hBook: 'להזמנה ↗', hNights: (n) => n === 1 ? 'לילה אחד' : n + ' לילות', hStayHotel: 'המלון שנבחר', hPickHint: 'בחרו מלון בטאב ״מלונות״',
       mapsDay: '🗺️ מסלול היום במפות', mapsOpen: 'פתח במפות ↗',
       'tab.experiences': 'חוויות', 'experiences.title': '✨ עוד חוויות מיוחדות',
+      'tab.map': 'מפה', 'map.title': '🗺️ מפת כל הימים', 'map.hint': 'כל יום במסלול צבע משלו — לחצו על יום במקרא כדי להציג/להסתיר אותו. לחצו על נקודה לפרטים.', mapAll: 'הצג הכל', mapNone: 'נקה',
       budgetTitle: '💴 כמה יעלה הטיול (בערך)', budgetTotal: 'סה״כ מוערך לזוג', budgetPerPerson: 'לאדם', budgetNote: 'הערכה בלבד — לא כולל קניות גדולות/בלת״מ. הטיסות כבר שולמו.',
       tags: { mid: 'מחיר בינוני', value: 'תמורה מעולה', splurge: 'פינוק', gayfriendly: 'גיי-פרנדלי', laundry: 'כביסה בחדר', anime: 'לחובבי אנימה', birthday: 'ליומולדת', privateonsen: 'אונסן פרטי', rooftopbath: 'אמבט על הגג', central: 'מרכזי', views: 'נוף' },
       types: { sightseeing: 'אתר / תצפית', food: 'אוכל', experience: 'חוויה', culture: 'תרבות', anime: 'אנימה/מנגה', onsen: 'אונסן', nightlife: 'חיי לילה', shopping: 'קניות', transport: 'נסיעה', rest: 'מנוחה', checkin: 'צ׳ק-אין', birthday: 'יומולדת' },
@@ -76,6 +77,7 @@
       hSelected: '✓ Elegido', hChoose: 'Elegir este hotel', hPerNight: 'por noche', hPerCouple: 'por pareja · media pensión', hBook: 'Reservar ↗', hNights: (n) => n === 1 ? '1 noche' : n + ' noches', hStayHotel: 'Hotel elegido', hPickHint: 'Elegí un hotel en la pestaña "Hoteles"',
       mapsDay: '🗺️ Recorrido del día en Maps', mapsOpen: 'Abrir en Maps ↗',
       'tab.experiences': 'Experiencias', 'experiences.title': '✨ Más experiencias especiales',
+      'tab.map': 'Mapa', 'map.title': '🗺️ Mapa de todos los días', 'map.hint': 'Cada día tiene su propio color — tocá un día en la leyenda para mostrarlo/ocultarlo. Tocá un punto para ver detalles.', mapAll: 'Mostrar todo', mapNone: 'Limpiar',
       budgetTitle: '💴 Cuánto sale el viaje (aprox.)', budgetTotal: 'Total estimado (pareja)', budgetPerPerson: 'por persona', budgetNote: 'Solo una estimación — sin compras grandes/imprevistos. Los vuelos ya están pagos.',
       tags: { mid: 'gama media', value: 'buen precio', splurge: 'lujo', gayfriendly: 'gay-friendly', laundry: 'lavarropas', anime: 'para fans del anime', birthday: 'para el cumple', privateonsen: 'onsen privado', rooftopbath: 'baño en la terraza', central: 'céntrico', views: 'con vista' },
       types: { sightseeing: 'Lugar / mirador', food: 'Comida', experience: 'Experiencia', culture: 'Cultura', anime: 'Anime/manga', onsen: 'Onsen', nightlife: 'Vida nocturna', shopping: 'Compras', transport: 'Traslado', rest: 'Descanso', checkin: 'Check-in', birthday: 'Cumpleaños' },
@@ -331,6 +333,123 @@
     return u;
   }
 
+  // ---------- trip map (all days on one map) ----------
+  // Gazetteer: neighborhood / landmark keyword → [lat, lng]. Ordered specific → general
+  // (first match wins), so "Kyoto (Gion)" resolves to Gion, not Kyoto centre.
+  const CITY_GEO = { Tokyo: [35.6812, 139.7671], Hakone: [35.232, 139.106], Kyoto: [34.9858, 135.7588], Osaka: [34.6937, 135.5023], Nara: [34.6851, 135.843] };
+  const GEO = [
+    // — Tokyo & day-trips —
+    ['omoide', [35.6931, 139.6994]], ['kabukicho', [35.6938, 139.7034]],
+    ['ni-chome', [35.6913, 139.7085]], ['nichome', [35.6913, 139.7085]], ['sanchome', [35.6906, 139.7057]],
+    ['shinjuku', [35.6896, 139.7006]],
+    ['shibuya sky', [35.6580, 139.7016]], ['scramble', [35.6595, 139.7005]], ['parco', [35.6626, 139.6982]], ['shibuya', [35.6595, 139.7005]],
+    ['harajuku', [35.6702, 139.7027]], ['tsukiji', [35.6655, 139.7707]],
+    ['toyosu', [35.6553, 139.7959]], ['teamlab', [35.6553, 139.7959]],
+    ['asakusa', [35.7148, 139.7967]], ['senso', [35.7148, 139.7967]], ['nakamise', [35.7135, 139.7960]],
+    ['akihabara', [35.6984, 139.7731]], ['nakano', [35.7076, 139.6657]],
+    ['ryogoku', [35.6967, 139.7933]], ['skytree', [35.7101, 139.8107]], ['oshiage', [35.7101, 139.8107]], ['sumida', [35.7100, 139.8010]],
+    ['tsukishima', [35.6647, 139.7841]], ['yurakucho', [35.6749, 139.7630]], ['forum', [35.6772, 139.7630]], ['ginza', [35.6717, 139.7650]],
+    ['yanaka', [35.7278, 139.7660]], ['nippori', [35.7281, 139.7708]], ['shimokita', [35.6613, 139.6680]],
+    ['mitaka', [35.6962, 139.5704]], ['ghibli', [35.6962, 139.5704]],
+    ['narita', [35.7647, 140.3863]], ['nrt', [35.7647, 140.3863]],
+    ['kamakura', [35.3192, 139.5468]], ['hase', [35.3169, 139.5355]], ['komachi', [35.3210, 139.5510]], ['enoshima', [35.2996, 139.4802]],
+    // — Hakone —
+    ['hakone-yumoto', [35.2328, 139.1069]], ['yumoto', [35.2328, 139.1069]], ['gora', [35.2470, 139.0490]],
+    ['motohakone', [35.2005, 139.0256]], ['ninotaira', [35.2418, 139.0399]], ['odawara', [35.2564, 139.1553]], ['hakone', [35.232, 139.106]],
+    // — Kyoto —
+    ['fushimi', [34.9671, 135.7727]], ['inari', [34.9671, 135.7727]], ['arashiyama', [35.0094, 135.6737]], ['nishiki', [35.0050, 135.7649]],
+    ['pontocho', [35.0048, 135.7706]], ['kiyamachi', [35.0036, 135.7690]], ['kamogawa', [35.0036, 135.7690]],
+    ['gion', [35.0037, 135.7752]], ['higashiyama', [34.9948, 135.7850]], ['kiyomizu', [34.9948, 135.7850]],
+    ['kinkaku', [35.0394, 135.7292]], ['golden pavilion', [35.0394, 135.7292]], ['northwest', [35.0394, 135.7292]], ['kyoto', [34.9858, 135.7588]],
+    // — Osaka —
+    ['dotonbori', [34.6687, 135.5013]], ['namba', [34.6659, 135.5010]], ['shinsaibashi', [34.6723, 135.5007]], ['nipponbashi', [34.6624, 135.5069]],
+    ['doyama', [34.7048, 135.5010]], ['shinsekai', [34.6524, 135.5062]], ['umeda', [34.7025, 135.4959]],
+    ['osakajo', [34.6873, 135.5259]], ['osaka castle', [34.6873, 135.5259]], ['shin-osaka', [34.7333, 135.5003]], ['osaka', [34.6937, 135.5023]],
+    // — Nara —
+    ['naramachi', [34.6790, 135.8290]], ['sanjo', [34.6810, 135.8260]], ['nara', [34.6851, 135.8430]],
+    // — general fallback —
+    ['tokyo', [35.6812, 139.7671]],
+  ];
+  const DAY_COLORS = ['#e6194B', '#f58231', '#ffe119', '#3cb44b', '#42d4f4', '#4363d8', '#911eb4', '#f032e6',
+    '#bfa100', '#469990', '#9A6324', '#800000', '#008080', '#e05fa0', '#000075'];
+
+  function geoFor(e, city) {
+    const area = e.area || '', title = e.title || '';
+    const scan = (str) => { const s = str.toLowerCase(); for (const [k, ll] of GEO) if (s.indexOf(k) >= 0) return ll; return null; };
+    // split "A → B" / "A עד B" / "A ל-B"; for transport prefer the destination side
+    const segs = area.split(/→|->|—|\s+to\s+|עד|ל-/i).map(s => s.trim()).filter(Boolean);
+    const ordered = (e.type === 'transport' && segs.length > 1) ? segs.slice().reverse() : segs;
+    for (const seg of ordered) { const hit = scan(seg); if (hit) return hit; }
+    const hit = scan(area + ' ' + title); if (hit) return hit;
+    return CITY_GEO[cityLatin(city)] || null;
+  }
+
+  let _map = null, _dayLayers = [], _visible = null;
+  function ensureMap() {
+    if (_map) return _map;
+    _map = L.map('tripMap', { scrollWheelZoom: true }).setView([35.0, 137.3], 6);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© OpenStreetMap' }).addTo(_map);
+    return _map;
+  }
+  function buildDayLayer(d, di) {
+    const evs = sortEvents(d.events || []);
+    const pts = [], seen = {};
+    evs.forEach(e => {
+      let ll = geoFor(e, d.city); if (!ll) return;
+      const key = ll[0] + ',' + ll[1];
+      if (seen[key] != null) { const n = ++seen[key]; ll = [ll[0] + 0.0006 * n, ll[1] + 0.0007 * n]; } else seen[key] = 0;
+      pts.push({ ll, e });
+    });
+    if (!pts.length) return null;
+    const color = DAY_COLORS[di % DAY_COLORS.length];
+    const group = L.layerGroup();
+    if (pts.length > 1) L.polyline(pts.map(p => p.ll), { color, weight: 3, opacity: .82 }).addTo(group);
+    pts.forEach((p, idx) => {
+      L.circleMarker(p.ll, { radius: 7, color: '#fff', weight: 2, fillColor: color, fillOpacity: 1 })
+        .bindPopup(`<b>${t('day')} ${di + 1} · ${escapeHtml(d.city || '')} · ${fmtDate(d.date)}</b><br>` +
+          `${escapeHtml(p.e.start || '')} <b dir="auto">${escapeHtml(p.e.title || '')}</b>` +
+          (p.e.area ? `<br><span style="color:#666" dir="auto">📍 ${escapeHtml(p.e.area)}</span>` : ''), { autoPan: false })
+        .addTo(group);
+    });
+    return { group, color, bounds: L.latLngBounds(pts.map(p => p.ll)) };
+  }
+  function applyMapVisibility() {
+    const map = ensureMap(), b = L.latLngBounds([]);
+    _dayLayers.forEach((ly, di) => {
+      if (!ly) return;
+      if (_visible.has(di)) { ly.group.addTo(map); if (ly.bounds.isValid()) b.extend(ly.bounds); }
+      else map.removeLayer(ly.group);
+    });
+    if (b.isValid()) map.fitBounds(b.pad(0.12));
+  }
+  function renderMapLegend() {
+    const box = $('#mapLegend'); if (!box) return;
+    const ctrl = `<span class="mlchip mlctrl" data-act="all">${t('mapAll')}</span><span class="mlchip mlctrl" data-act="none">${t('mapNone')}</span>`;
+    box.innerHTML = ctrl + state.days.map((d, i) => {
+      if (!_dayLayers[i]) return '';
+      const off = _visible.has(i) ? '' : ' off';
+      return `<span class="mlchip${off}" data-day="${i}"><span class="mldot" style="background:${DAY_COLORS[i % DAY_COLORS.length]}"></span>${t('day')} ${i + 1} · ${cityEmoji(d.city)} ${escapeHtml(d.city || '')}</span>`;
+    }).join('');
+    $$('.mlchip[data-day]', box).forEach(c => c.onclick = () => {
+      const i = +c.dataset.day; if (_visible.has(i)) _visible.delete(i); else _visible.add(i);
+      renderMapLegend(); applyMapVisibility();
+    });
+    $$('.mlctrl', box).forEach(c => c.onclick = () => {
+      _visible = c.dataset.act === 'all' ? new Set(state.days.map((_, i) => i)) : new Set();
+      renderMapLegend(); applyMapVisibility();
+    });
+  }
+  function renderMap() {
+    if (typeof L === 'undefined') { $('#tripMap').innerHTML = '<div class="panel">🗺️ ' + t('loading') + '</div>'; return; }
+    const map = ensureMap();
+    _dayLayers.forEach(ly => ly && map.removeLayer(ly.group));
+    _dayLayers = state.days.map((d, di) => buildDayLayer(d, di));
+    if (_visible == null) _visible = new Set(state.days.map((_, i) => i));
+    renderMapLegend();
+    applyMapVisibility();
+    setTimeout(() => { map.invalidateSize(); applyMapVisibility(); }, 80);
+  }
+
   // ---------- hotels ----------
   const stays = () => (window.TRIP_DATA && window.TRIP_DATA.stays) || [];
   const loadHotels = () => safeParse(localStorage.getItem(LS_HOTELS)) || {};
@@ -397,10 +516,11 @@
   }
 
   // ---------- views ----------
-  const VIEWS = ['itinerary', 'overview', 'hotels', 'guide', 'food', 'restaurants', 'experiences', 'prep'];
+  const VIEWS = ['itinerary', 'overview', 'map', 'hotels', 'guide', 'food', 'restaurants', 'experiences', 'prep'];
   function showView(v) {
     VIEWS.forEach(x => $('#view-' + x).classList.toggle('hidden', x !== v));
     $$('.tab').forEach(tb => tb.classList.toggle('active', tb.dataset.view === v));
+    if (v === 'map') renderMap();
     if (v === 'hotels') renderHotels();
     if (v === 'overview') renderOverview();
     if (v === 'guide') renderGuide();
