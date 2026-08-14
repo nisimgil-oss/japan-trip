@@ -320,6 +320,21 @@ a{color:var(--gold-soft)}
 .leaflet-popup-content{font-family:var(--sans,system-ui);font-size:13px;line-height:1.5}
 .leaflet-popup-content b{color:var(--red-deep)}
 
+/* ---------- compare (itinerary vs Excel) ---------- */
+.cmp{margin-bottom:6px}
+.cmp h2{font-size:20px}
+.cmp h3{color:var(--red-deep);font-family:var(--serif);margin:16px 0 6px;font-size:17px}
+.cmp p,.cmp li{color:var(--ink);font-size:14.5px;line-height:1.65}
+.cmp ul,.cmp ol{padding-inline-start:22px;margin:4px 0}
+.cmp li{margin:4px 0}
+.cmp-lang{display:inline-block;font-family:var(--serif);font-size:12px;background:var(--kon);color:var(--cream);
+  padding:3px 11px;border-radius:999px;margin-bottom:8px;border:1px solid var(--indigo-line)}
+.cmp-note{background:rgba(215,65,47,.08);border-inline-start:3px solid var(--red);padding:9px 13px;border-radius:8px;margin:2px 0 6px}
+.cmp-table{width:100%;border-collapse:collapse;margin:6px 0 4px;font-size:13.5px}
+.cmp-table th,.cmp-table td{border:1px solid var(--paper-edge);padding:7px 9px;text-align:start;vertical-align:top;color:var(--ink)}
+.cmp-table th{background:var(--paper-2);color:var(--red-deep);font-weight:700}
+.cmp-divider{height:1px;background:var(--indigo-line);margin:20px 2px}
+
 /* ---------- flights panel ---------- */
 .panel.flights h2{color:#fff}
 .flights{background:linear-gradient(180deg,var(--kon),var(--night-2));color:var(--cream);border:1px solid var(--indigo-line);margin-top:18px}

@@ -51,6 +51,7 @@
       mapsDay: '🗺️ מסלול היום במפות', mapsOpen: 'פתח במפות ↗',
       'tab.experiences': 'חוויות', 'experiences.title': '✨ עוד חוויות מיוחדות',
       'tab.map': 'מפה', 'map.title': '🗺️ מפת כל הימים', 'map.hint': 'כל יום במסלול צבע משלו — לחצו על יום במקרא כדי להציג/להסתיר אותו. לחצו על נקודה לפרטים.', mapAll: 'הצג הכל', mapNone: 'נקה',
+      'tab.compare': 'השוואה',
       budgetTitle: '💴 כמה יעלה הטיול (בערך)', budgetTotal: 'סה״כ מוערך לזוג', budgetPerPerson: 'לאדם', budgetNote: 'הערכה בלבד — לא כולל קניות גדולות/בלת״מ. הטיסות כבר שולמו.',
       tags: { mid: 'מחיר בינוני', value: 'תמורה מעולה', splurge: 'פינוק', gayfriendly: 'גיי-פרנדלי', laundry: 'כביסה בחדר', anime: 'לחובבי אנימה', birthday: 'ליומולדת', privateonsen: 'אונסן פרטי', rooftopbath: 'אמבט על הגג', central: 'מרכזי', views: 'נוף' },
       types: { sightseeing: 'אתר / תצפית', food: 'אוכל', experience: 'חוויה', culture: 'תרבות', anime: 'אנימה/מנגה', onsen: 'אונסן', nightlife: 'חיי לילה', shopping: 'קניות', transport: 'נסיעה', rest: 'מנוחה', checkin: 'צ׳ק-אין', birthday: 'יומולדת' },
@@ -78,6 +79,7 @@
       mapsDay: '🗺️ Recorrido del día en Maps', mapsOpen: 'Abrir en Maps ↗',
       'tab.experiences': 'Experiencias', 'experiences.title': '✨ Más experiencias especiales',
       'tab.map': 'Mapa', 'map.title': '🗺️ Mapa de todos los días', 'map.hint': 'Cada día tiene su propio color — tocá un día en la leyenda para mostrarlo/ocultarlo. Tocá un punto para ver detalles.', mapAll: 'Mostrar todo', mapNone: 'Limpiar',
+      'tab.compare': 'Comparación',
       budgetTitle: '💴 Cuánto sale el viaje (aprox.)', budgetTotal: 'Total estimado (pareja)', budgetPerPerson: 'por persona', budgetNote: 'Solo una estimación — sin compras grandes/imprevistos. Los vuelos ya están pagos.',
       tags: { mid: 'gama media', value: 'buen precio', splurge: 'lujo', gayfriendly: 'gay-friendly', laundry: 'lavarropas', anime: 'para fans del anime', birthday: 'para el cumple', privateonsen: 'onsen privado', rooftopbath: 'baño en la terraza', central: 'céntrico', views: 'con vista' },
       types: { sightseeing: 'Lugar / mirador', food: 'Comida', experience: 'Experiencia', culture: 'Cultura', anime: 'Anime/manga', onsen: 'Onsen', nightlife: 'Vida nocturna', shopping: 'Compras', transport: 'Traslado', rest: 'Descanso', checkin: 'Check-in', birthday: 'Cumpleaños' },
@@ -450,6 +452,90 @@
     setTimeout(() => { map.invalidateSize(); applyMapVisibility(); }, 80);
   }
 
+  // ---------- compare (itinerary vs Excel) ----------
+  const CMP_HE = {
+    dir: 'rtl', tag: '🇮🇱 עברית',
+    title: '⚖️ השוואת מסלולים — האתר מול קובץ האקסל',
+    note: '<b>יישור תאריכים:</b> האקסל הוא 16 ימים (17.9–2.10) ומניח נחיתה בטוקיו כבר ב-17.9 אחה"צ, אבל לפי הטיסות שהוזמנו (LOT) נוחתים ב-NRT רק ב-18.9 בערב (18:25) — כך שיום 1 של האקסל אינו אפשרי ("יום רפאים"). האתר תואם לטיסות: 15 ימים, 18.9–2.10.',
+    hPhil: 'הבדל התפיסה', colSite: 'האתר (שבנינו)', colXls: 'האקסל',
+    rows: [
+      ['גישה', 'פחות בסיסים, לעומק ורגוע', '"סיבוב גדול" — לראות את כל יפן'],
+      ['בסיסים', 'טוקיו · האקונה · קיוטו · אוסקה · טוקיו', '+ עמק קיסו · מיאג\'ימה · הירושימה'],
+      ['קצב', 'מתון, רומנטי, הרבה מנוחה', 'עמוס, הרבה שינקנסן, לינות של לילה בודד'],
+      ['טיולי יום', 'קמאקורה + נארה', 'אין (במקום — יעדים מרוחקים)'],
+    ],
+    hXls: 'רק באקסל (חסר באתר)',
+    onlyXls: [
+      '<b>עמק קיסו — מסלול נקאסֶנדו</b> (הליכה 8–9 ק"מ מגומה↔צומאגו, 2 לינות בעיירות אֶדו)',
+      '<b>מיאג\'ימה</b> (השער הצף איטסוקושימה) + <b>הירושימה</b> (פארק השלום)',
+      'אוג\'י (תרבות המאצ\'ה) · נגויה (עצירת אוכל)',
+      'מייג\'י ג\'ינגו · קיומיזו-דרה + מדרונות נִינֶנזָקָה',
+    ],
+    hSite: 'רק באתר (חסר באקסל)',
+    onlySite: [
+      '<b>נארה</b> (פארק הצבאים) · <b>קמאקורה</b> (הבודהה הגדול, אנושימה)',
+      'Shibuya Sky בשקיעה · שוק צוקיג\'י · מוזיאון ג\'יבלי · יאנקה · נקאנו · מונג\'ה · חוויית קימונו',
+    ],
+    hAgree: 'מוסכם על שניהם',
+    agree: 'אסקוסה/סנסו-ג\'י · אקיהברה · <b>סומו</b> · <b>Ni-chome</b> · <b>ריוקאן אונסן בהאקונה</b> · פושימי אינארי (שחר) · ארשיאמה · מאיקו/גיישה · ארוחת מישלן · דוטונבורי · דויאמה-צ\'ו · teamLab · <b>יום הולדת 40 ב-24.9</b> · חזרה לטוקיו לטיסה.',
+    hConcl: 'מסקנות',
+    concl: [
+      '<b>יום ההולדת — אותו תאריך (24.9), מיקום שונה:</b> אצלנו בריוקאן אונסן בהאקונה (אינטימי, מפנק); באקסל בקיוטו (מאיקו + מישלן, תרבותי-מפואר).',
+      '<b>האתר ריאלי ותואם-טיסות; האקסל שאפתני מדי לזמן הנתון</b> — קשת ענקית עם המון נסיעות, ועם יום פתיחה שלא קיים.',
+      'אפשר לשלב <b>יעד מרכזי אחד</b> מהאקסל (הירושימה+מיאג\'ימה <b>או</b> טרק נקאסֶנדו) תמורת ויתור על יום — לא את שניהם.',
+      'האקסל מפספס שתי פנינות קלות שכבר יש באתר: <b>נארה</b> ו<b>קמאקורה</b>.',
+      '<b>בשורה תחתונה:</b> שלד האתר קוהרנטי יותר לטיול יום-הולדת זוגי; האקסל הוא "תפריט" מצוין של תוספות.',
+    ],
+  };
+  const CMP_ES = {
+    dir: 'ltr', tag: '🇦🇷 Español',
+    title: '⚖️ Comparación de itinerarios — el sitio vs. el Excel',
+    note: '<b>Alineación de fechas:</b> el Excel son 16 días (17/9–2/10) y asume llegada a Tokio el 17/9 a la tarde, pero según los vuelos reservados (LOT) recién aterrizan en NRT el 18/9 a la noche (18:25) — así que el Día 1 del Excel no es posible ("día fantasma"). El sitio coincide con los vuelos: 15 días, 18/9–2/10.',
+    hPhil: 'La diferencia de enfoque', colSite: 'El sitio (que armamos)', colXls: 'El Excel',
+    rows: [
+      ['Enfoque', 'Menos bases, más profundo y relajado', '"Gran tour" — ver toda Japón'],
+      ['Bases', 'Tokio · Hakone · Kioto · Osaka · Tokio', '+ Valle de Kiso · Miyajima · Hiroshima'],
+      ['Ritmo', 'Tranquilo, romántico, con descanso', 'Cargado, mucho shinkansen, noches sueltas'],
+      ['Excursiones', 'Kamakura + Nara', 'Ninguna (en su lugar, destinos lejanos)'],
+    ],
+    hXls: 'Solo en el Excel (falta en el sitio)',
+    onlyXls: [
+      '<b>Valle de Kiso — sendero Nakasendo</b> (caminata 8–9 km Magome↔Tsumago, 2 noches en pueblos Edo)',
+      '<b>Miyajima</b> (torii flotante de Itsukushima) + <b>Hiroshima</b> (Parque de la Paz)',
+      'Uji (cultura del matcha) · Nagoya (parada gastronómica)',
+      'Meiji Jingu · Kiyomizu-dera + cuestas Ninenzaka',
+    ],
+    hSite: 'Solo en el sitio (falta en el Excel)',
+    onlySite: [
+      '<b>Nara</b> (parque de los ciervos) · <b>Kamakura</b> (Gran Buda, Enoshima)',
+      'Shibuya Sky al atardecer · mercado Tsukiji · Museo Ghibli · Yanaka · Nakano · Monja · experiencia de kimono',
+    ],
+    hAgree: 'En lo que coinciden',
+    agree: 'Asakusa/Senso-ji · Akihabara · <b>sumo</b> · <b>Ni-chome</b> · <b>ryokan onsen en Hakone</b> · Fushimi Inari (al amanecer) · Arashiyama · maiko/geisha · cena Michelin · Dotonbori · Doyama-cho · teamLab · <b>cumpleaños 40 el 24/9</b> · regreso a Tokio para el vuelo.',
+    hConcl: 'Conclusiones',
+    concl: [
+      '<b>El cumpleaños — misma fecha (24/9), lugar distinto:</b> en el sitio, ryokan onsen en Hakone (íntimo, mimoso); en el Excel, Kioto (maiko + Michelin, cultural y lujoso).',
+      '<b>El sitio es realista y coincide con los vuelos; el Excel es demasiado ambicioso</b> para el tiempo — un arco enorme con muchísimos traslados y un "día 1 fantasma".',
+      'Se puede sumar <b>UN destino estrella</b> del Excel (Hiroshima+Miyajima <b>o</b> el trekking Nakasendo) resignando un día — no los dos.',
+      'El Excel se pierde dos joyas fáciles que el sitio ya tiene: <b>Nara</b> y <b>Kamakura</b>.',
+      '<b>En resumen:</b> la estructura del sitio es más coherente para un viaje de cumpleaños en pareja; el Excel es un excelente "menú" de extras.',
+    ],
+  };
+  function compareBlock(L) {
+    return `<div class="panel cmp" dir="${L.dir}"><span class="cmp-lang">${L.tag}</span><h2>${L.title}</h2>` +
+      `<p class="cmp-note">${L.note}</p>` +
+      `<h3>${L.hPhil}</h3><table class="cmp-table"><thead><tr><th></th><th>${L.colSite}</th><th>${L.colXls}</th></tr></thead><tbody>` +
+      L.rows.map(r => `<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('') + `</tbody></table>` +
+      `<h3>${L.hXls}</h3><ul>${L.onlyXls.map(x => `<li>${x}</li>`).join('')}</ul>` +
+      `<h3>${L.hSite}</h3><ul>${L.onlySite.map(x => `<li>${x}</li>`).join('')}</ul>` +
+      `<h3>${L.hAgree}</h3><p>${L.agree}</p>` +
+      `<h3>${L.hConcl}</h3><ol>${L.concl.map(x => `<li>${x}</li>`).join('')}</ol></div>`;
+  }
+  function renderCompare() {
+    const box = $('#compareBody'); if (!box) return;
+    box.innerHTML = compareBlock(CMP_HE) + '<div class="cmp-divider"></div>' + compareBlock(CMP_ES);
+  }
+
   // ---------- hotels ----------
   const stays = () => (window.TRIP_DATA && window.TRIP_DATA.stays) || [];
   const loadHotels = () => safeParse(localStorage.getItem(LS_HOTELS)) || {};
@@ -516,11 +602,12 @@
   }
 
   // ---------- views ----------
-  const VIEWS = ['itinerary', 'overview', 'map', 'hotels', 'guide', 'food', 'restaurants', 'experiences', 'prep'];
+  const VIEWS = ['itinerary', 'overview', 'map', 'compare', 'hotels', 'guide', 'food', 'restaurants', 'experiences', 'prep'];
   function showView(v) {
     VIEWS.forEach(x => $('#view-' + x).classList.toggle('hidden', x !== v));
     $$('.tab').forEach(tb => tb.classList.toggle('active', tb.dataset.view === v));
     if (v === 'map') renderMap();
+    if (v === 'compare') renderCompare();
     if (v === 'hotels') renderHotels();
     if (v === 'overview') renderOverview();
     if (v === 'guide') renderGuide();
