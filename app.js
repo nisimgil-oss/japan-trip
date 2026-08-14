@@ -49,7 +49,7 @@
       'tab.hotels': 'מלונות', 'hotels.title': '🏨 בחירת מלונות',
       'tab.booked': 'לסגור', bookedTitle: '🔖 מלונות לסגור', bookedHint: 'לכל לילה — התאריכים והמקום. כתבו את המלון שסגרתם וסמנו ✓. נשמר במכשיר שלכם.',
       bookedSug: 'ההצעה שבחרתם', bookedHotelPh: 'המלון שסגרתי…', bookedRefPh: 'מס\' הזמנה / הערה (אופציונלי)', bookedDone: 'נסגר ✓',
-      bookedProgress: (n, m) => `${n}/${m} נסגרו`,
+      bookedProgress: (n, m) => `${n}/${m} נסגרו`, bookedStay: 'כניסה → יציאה',
       hSelected: '✓ נבחר', hChoose: 'בחרו מלון זה', hPerNight: 'ללילה', hPerCouple: 'לזוג · חצי פנסיון', hBook: 'להזמנה ↗', hNights: (n) => n === 1 ? 'לילה אחד' : n + ' לילות', hStayHotel: 'המלון שנבחר', hPickHint: 'בחרו מלון בטאב ״מלונות״',
       mapsDay: '🗺️ מסלול היום במפות', mapsOpen: 'פתח במפות ↗',
       'tab.experiences': 'חוויות', 'experiences.title': '✨ עוד חוויות מיוחדות',
@@ -80,7 +80,7 @@
       'tab.hotels': 'Hoteles', 'hotels.title': '🏨 Elegí tu hotel',
       'tab.booked': 'Por reservar', bookedTitle: '🔖 Hoteles por reservar', bookedHint: 'Para cada noche — las fechas y el lugar. Escribí el hotel que reservaste y marcá ✓. Se guarda en tu dispositivo.',
       bookedSug: 'La opción que elegiste', bookedHotelPh: 'El hotel que reservé…', bookedRefPh: 'N.º de reserva / nota (opcional)', bookedDone: 'Reservado ✓',
-      bookedProgress: (n, m) => `${n}/${m} reservados`,
+      bookedProgress: (n, m) => `${n}/${m} reservados`, bookedStay: 'Entrada → salida',
       hSelected: '✓ Elegido', hChoose: 'Elegir este hotel', hPerNight: 'por noche', hPerCouple: 'por pareja · media pensión', hBook: 'Reservar ↗', hNights: (n) => n === 1 ? '1 noche' : n + ' noches', hStayHotel: 'Hotel elegido', hPickHint: 'Elegí un hotel en la pestaña "Hoteles"',
       mapsDay: '🗺️ Recorrido del día en Maps', mapsOpen: 'Abrir en Maps ↗',
       'tab.experiences': 'Experiencias', 'experiences.title': '✨ Más experiencias especiales',
@@ -112,6 +112,7 @@
   // ---------- helpers ----------
   function cityEmoji(city) { if (!city) return '📍'; const k = city.toLowerCase(); for (const [key, e] of CITY_EMOJI) if (k.includes(key)) return e; return '📍'; }
   const fmtDate = (iso) => { const p = iso.split('-'); return parseInt(p[2], 10) + '.' + parseInt(p[1], 10); };
+  const isoPlusDays = (iso, n) => { const d = new Date(iso + 'T00:00:00'); d.setDate(d.getDate() + n); const p = x => String(x).padStart(2, '0'); return d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()); };
   const sortEvents = (evs) => evs.slice().sort((a, b) => (a.start || '').localeCompare(b.start || ''));
   function toast(msg) { const el = $('#toast'); el.innerHTML = msg; el.classList.add('show'); clearTimeout(toast._t); toast._t = setTimeout(() => el.classList.remove('show'), 1900); }
   const dowT = (d) => (T[lang].dow[d] || d);
@@ -599,11 +600,12 @@
     stays().forEach(s => {
       const city = s['city' + (lang === 'he' ? 'He' : 'Es')];
       const sel = selectedOption(s); const rec = saved[s.id] || {};
+      const ci = s.dates[0], co = isoPlusDays(s.dates[s.dates.length - 1], 1);
       const card = document.createElement('div'); card.className = 'panel bkcard' + (rec.done ? ' bkdone' : '');
       card.innerHTML =
         `<div class="bk-head"><span class="bk-cover">${s.cover || '🏨'}</span>` +
         `<span class="bk-city" dir="auto">${escapeHtml(city)}${s.area ? ' · ' + escapeHtml(s.area) : ''}</span>` +
-        `<span class="bk-dates">${escapeHtml(s.datesLabel)} · ${t('hNights')(s.nights)}${s.birthday ? ' 🎂' : ''}</span></div>` +
+        `<span class="bk-dates"><span class="bk-cio">${t('bookedStay')}</span> <b>${fmtDate(ci)} → ${fmtDate(co)}</b> · ${t('hNights')(s.nights)}${s.birthday ? ' 🎂' : ''}</span></div>` +
         (sel ? `<div class="bk-sug">${t('bookedSug')}: <b dir="auto">${escapeHtml(sel.name)}</b> <a href="${placeUrl(sel.name + ' ' + cityLatin(city))}" target="_blank" rel="noopener">🗺️</a></div>` : '') +
         `<div class="bk-fields">` +
         `<input class="bk-hotel" type="text" placeholder="${escapeAttr(t('bookedHotelPh'))}" value="${escapeAttr(rec.hotel || '')}">` +
