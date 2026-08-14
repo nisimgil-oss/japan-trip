@@ -32,7 +32,7 @@
     he: {
       _title: 'יפן 2026 · חגיגות 40', dir: 'rtl',
       'hero.japan': 'יפן', 'hero.sub': '🏮 חגיגות 40 · מסע אהבה, אוכל ותרבות 🌸',
-      'hero.arrive': 'נחיתה בטוקיו 18:25', 'hero.depart': 'המראה 12:00', 'hero.cities': '🗾 טוקיו · האקונה · קיוטו · אוסקה · נארה',
+      'hero.arrive': 'נחיתה בטוקיו 18:25', 'hero.depart': 'המראה 12:00', 'hero.cities': '🗾 טוקיו · האקונה · קיסו · קיוטו · אוסקה · נארה',
       'tab.itinerary': 'היומן', 'tab.overview': 'מבט־על', 'tab.guide': 'מדריך', 'tab.food': 'אוכל', 'tab.restaurants': 'מסעדות', 'tab.prep': 'הכנות',
       'toolbar.addEvent': '＋ הוסף פעילות ליום הזה', 'toolbar.backup': '⬇️ גיבוי', 'toolbar.restore': '⬆️ שחזור', 'toolbar.petals': '🌸 פרחים', 'toolbar.reset': '↺ אפס תכנון',
       'overview.title': '🗾 כל הטיול במבט אחד', 'restaurants.title': '🍣 מקומות מיוחדים לאכול',
@@ -60,7 +60,7 @@
     es: {
       _title: 'Japón 2026 · Cumple 40', dir: 'ltr',
       'hero.japan': 'Japón', 'hero.sub': '🏮 Cumpleaños 40 · un viaje de amor, comida y cultura 🌸',
-      'hero.arrive': 'Llegada a Tokio 18:25', 'hero.depart': 'Despegue 12:00', 'hero.cities': '🗾 Tokio · Hakone · Kioto · Osaka · Nara',
+      'hero.arrive': 'Llegada a Tokio 18:25', 'hero.depart': 'Despegue 12:00', 'hero.cities': '🗾 Tokio · Hakone · Kiso · Kioto · Osaka · Nara',
       'tab.itinerary': 'Itinerario', 'tab.overview': 'Vista general', 'tab.guide': 'Guía', 'tab.food': 'Comida', 'tab.restaurants': 'Restaurantes', 'tab.prep': 'Preparativos',
       'toolbar.addEvent': '＋ Agregar actividad a este día', 'toolbar.backup': '⬇️ Respaldo', 'toolbar.restore': '⬆️ Restaurar', 'toolbar.petals': '🌸 Pétalos', 'toolbar.reset': '↺ Reiniciar plan',
       'overview.title': '🗾 Todo el viaje de un vistazo', 'restaurants.title': '🍣 Lugares especiales para comer',
@@ -364,11 +364,16 @@
     ['gion', [35.0037, 135.7752]], ['higashiyama', [34.9948, 135.7850]], ['kiyomizu', [34.9948, 135.7850]],
     ['kinkaku', [35.0394, 135.7292]], ['golden pavilion', [35.0394, 135.7292]], ['northwest', [35.0394, 135.7292]], ['kyoto', [34.9858, 135.7588]],
     // — Osaka —
-    ['dotonbori', [34.6687, 135.5013]], ['namba', [34.6659, 135.5010]], ['shinsaibashi', [34.6723, 135.5007]], ['nipponbashi', [34.6624, 135.5069]],
+    ['dotonbori', [34.6687, 135.5013]], ['namba', [34.6659, 135.5010]], ['shinsaibashi', [34.6723, 135.5007]],
+    ['kuromon', [34.6656, 135.5061]], ['den den', [34.6624, 135.5069]], ['nipponbashi', [34.6624, 135.5069]],
     ['doyama', [34.7048, 135.5010]], ['shinsekai', [34.6524, 135.5062]], ['umeda', [34.7025, 135.4959]],
     ['osakajo', [34.6873, 135.5259]], ['osaka castle', [34.6873, 135.5259]], ['shin-osaka', [34.7333, 135.5003]], ['osaka', [34.6937, 135.5023]],
     // — Nara —
     ['naramachi', [34.6790, 135.8290]], ['sanjo', [34.6810, 135.8260]], ['nara', [34.6851, 135.8430]],
+    // — Kiso Valley (Nakasendo) + transit + extra Tokyo/Osaka spots —
+    ['nakasendo', [35.5770, 137.5850]], ['magome', [35.5769, 137.5717]], ['tsumago', [35.5772, 137.5953]],
+    ['nagiso', [35.5936, 137.6069]], ['nakatsugawa', [35.4972, 137.5006]], ['nagoya', [35.1706, 136.8816]], ['kiso', [35.5770, 137.5900]],
+    ['makuhari', [35.6480, 140.0347]], ['ebisu', [35.6467, 139.7101]], ['kichijoji', [35.7030, 139.5800]], ['inokashira', [35.7000, 139.5700]],
     // — general fallback —
     ['tokyo', [35.6812, 139.7671]],
   ];
@@ -460,7 +465,7 @@
   const CMP_HE = {
     dir: 'rtl', tag: '🇮🇱 עברית',
     title: '⚖️ השוואת מסלולים — האתר מול קובץ האקסל',
-    note: '<b>יישור תאריכים:</b> האקסל הוא 16 ימים (17.9–2.10) ומניח נחיתה בטוקיו כבר ב-17.9 אחה"צ, אבל לפי הטיסות שהוזמנו (LOT) נוחתים ב-NRT רק ב-18.9 בערב (18:25) — כך שיום 1 של האקסל אינו אפשרי ("יום רפאים"). האתר תואם לטיסות: 15 ימים, 18.9–2.10.',
+    note: '<b>✅ עודכן:</b> המסלול באתר נבנה מחדש לאופציה A — משלב עכשיו את <b>עמק קיסו</b> (מאגומה/צומאגו + הליכת נקאסֶנדו), <b>Tokyo Game Show</b> ומופע <b>סומו</b>, ויום ההולדת עבר לצומאגו. ההשוואה שלהלן משקפת את השיקולים המקוריים (אתר מול אקסל).<br><br><b>יישור תאריכים:</b> האקסל הוא 16 ימים (17.9–2.10) ומניח נחיתה כבר ב-17.9, אבל לפי הטיסות נוחתים ב-NRT רק ב-18.9 בערב — כך שיום 1 של האקסל אינו אפשרי. האתר תואם לטיסות: 15 ימים, 18.9–2.10.',
     hPhil: 'הבדל התפיסה', colSite: 'האתר (שבנינו)', colXls: 'האקסל',
     rows: [
       ['גישה', 'פחות בסיסים, לעומק ורגוע', '"סיבוב גדול" — לראות את כל יפן'],
@@ -494,7 +499,7 @@
   const CMP_ES = {
     dir: 'ltr', tag: '🇦🇷 Español',
     title: '⚖️ Comparación de itinerarios — el sitio vs. el Excel',
-    note: '<b>Alineación de fechas:</b> el Excel son 16 días (17/9–2/10) y asume llegada a Tokio el 17/9 a la tarde, pero según los vuelos reservados (LOT) recién aterrizan en NRT el 18/9 a la noche (18:25) — así que el Día 1 del Excel no es posible ("día fantasma"). El sitio coincide con los vuelos: 15 días, 18/9–2/10.',
+    note: '<b>✅ Actualizado:</b> el itinerario del sitio se rehízo en la Opción A — ahora integra el <b>Valle de Kiso</b> (Magome/Tsumago + caminata Nakasendo), el <b>Tokyo Game Show</b> y el <b>sumo</b>, y el cumpleaños pasó a Tsumago. La comparación de abajo refleja el análisis original (sitio vs Excel).<br><br><b>Alineación de fechas:</b> el Excel son 16 días (17/9–2/10) y asume llegada el 17/9, pero según los vuelos recién aterrizan en NRT el 18/9 a la noche — así que el Día 1 del Excel no es posible. El sitio coincide con los vuelos: 15 días, 18/9–2/10.',
     hPhil: 'La diferencia de enfoque', colSite: 'El sitio (que armamos)', colXls: 'El Excel',
     rows: [
       ['Enfoque', 'Menos bases, más profundo y relajado', '"Gran tour" — ver toda Japón'],
@@ -574,14 +579,66 @@
   // ---------- prep ----------
   const DEFAULT_CHECK = {
     he: {
-      'הזמנות דחופות (עכשיו!)': ['כרטיסי סומו (21.9) — המכירה נפתחה ~8.8', 'ריוקאן + Romancecar להאקונה (23.9, שבוע הזהב)', 'מושבי שינקנסן (אודוארה→קיוטו, אוסקה→טוקיו) ב-SmartEX', 'מוזיאון גיבלי — 10.9 בשעה 10:00 יפן ב-Lawson', 'teamLab, Shibuya Sky (שקיעה), ארוחת מאיקו, מסעדות טובות'],
-      'כרטיסים ותחבורה': ['Suica/Pasmo בארנק הדיגיטלי', 'להחליט: JR Pass מול כרטיסים נקודתיים', 'Hakone Free Pass', 'eSIM לשני הטלפונים', 'N\'EX הלוך-חזור (כולל חזרה לנאריטה ב-2.10)'],
-      'לארוז': ['נעליים נוחות להליכה (הרבה!)', 'שכבות + מטרייה מתקפלת (סוף ספטמבר לח, סיכון טייפון)', 'מדבקות כיסוי לקעקועים (לאונסן)', 'מטען נייד + מתאם (תקע A, 100V)', 'מזומן ¥'],
+      'הזמנות דחופות (עכשיו!)': [
+        'כרטיסי סומו — Aki Basho (21.9), המכירה נפתחה ~8.8 · סופ״ש/חג נחטפים',
+        'ריוקאן בהאקונה + Romancecar (22.9) — Silver Week, לשריין מיד',
+        'מינשוקו במאגומה + ריוקאן בצומאגו (23–24.9) — פונדקים זעירים בשבוע חג',
+        'כרטיסי Tokyo Game Show 2026 — יום ראשון 20.9, דרך אתר הכרטיסים הרשמי',
+        'מוזיאון ג׳יבלי — 10.9 בשעה 10:00 (שעון יפן) ב-Lawson',
+        'מושבי שינקנסן (נגויה↔קיוטו, שין-אוסקה→טוקיו) ב-SmartEX — שבוע חג',
+        'Shibuya Sky (סלוט שקיעה), teamLab Planets, חוויית מאיקו, סדנת תה+קימונו, סדנת סושי',
+        'מסעדות: ארוחת יום ההולדת בצומאגו, ארוחת הפרידה (אומקסה/קאיסקי)',
+      ],
+      'כרטיסים ותחבורה': [
+        'Suica/Pasmo בארנק הדיגיטלי (טעינה ~¥3,000)',
+        'N\'EX הלוך-חזור (כולל חזרה לנאריטה ב-2.10)',
+        'העברת מזוודות (takkyubin): טוקיו→קיוטו, קיוטו→אוסקה',
+        'העברת כבודה מאגומה↔צומאגו לפני הליכת נקאסֶנדו',
+        'Hakone Free Pass · eSIM לשני הטלפונים',
+      ],
+      'לארוז': [
+        'נעליים נוחות + נעלי הליכה לטרק נקאסֶנדו (~8 ק"מ)',
+        'תיק לילה קטן (להאקונה ולקיסו — המזוודות נשלחות קדימה)',
+        'שכבות + מטרייה מתקפלת (סוף ספטמבר לח, סיכון טייפון)',
+        'מדבקות כיסוי לקעקועים (לאונסן)',
+        'מטען נייד + מתאם (תקע A, 100V) · מזומן ¥',
+      ],
+      'טוב לדעת': [
+        'Silver Week 21–23.9 — חופשה לאומית, האקונה/שינקנסן/קיסו עמוסים; להזמין הכל מראש',
+        'יום ההולדת 24.9 בצומאגו — הליכת נקאסֶנדו + ריוקאן מסורתי',
+        'לילות גאים: Ni-chome (טוקיו) · Doyama-cho (אוסקה)',
+      ],
     },
     es: {
-      'Reservas urgentes (¡ya!)': ['Entradas de sumo (21/9) — venta abrió ~8/8', 'Ryokan + Romancecar a Hakone (23/9, Silver Week)', 'Asientos de shinkansen (Odawara→Kioto, Osaka→Tokio) en SmartEX', 'Museo Ghibli — 10/9 a las 10:00 JST en Lawson', 'teamLab, Shibuya Sky (atardecer), cena con maiko, buenos restaurantes'],
-      'Pasajes y transporte': ['Suica/Pasmo en la billetera del celular', 'Decidir: JR Pass vs. pasajes sueltos', 'Hakone Free Pass', 'eSIM para los dos celulares', 'N\'EX ida y vuelta (incluye la vuelta a Narita el 2/10)'],
-      'Para la valija': ['Zapatillas cómodas para caminar (¡mucho!)', 'Capas + paraguas plegable (fin de septiembre húmedo, riesgo de tifón)', 'Stickers para tapar tatuajes (para el onsen)', 'Batería portátil + adaptador (enchufe tipo A, 100V)', 'Efectivo en ¥'],
+      'Reservas urgentes (¡ya!)': [
+        'Entradas de sumo — Aki Basho (21/9), venta desde ~8/8 · findes/feriados vuelan',
+        'Ryokan en Hakone + Romancecar (22/9) — Silver Week, reservá ya',
+        'Minshuku en Magome + ryokan en Tsumago (23–24/9) — posadas chicas en feriado',
+        'Entradas Tokyo Game Show 2026 — domingo 20/9, por el portal oficial',
+        'Museo Ghibli — 10/9 a las 10:00 (hora Japón) en Lawson',
+        'Asientos de shinkansen (Nagoya↔Kioto, Shin-Osaka→Tokio) en SmartEX — feriado',
+        'Shibuya Sky (slot atardecer), teamLab Planets, experiencia maiko, taller de té+kimono, clase de sushi',
+        'Restaurantes: cena de cumpleaños en Tsumago, cena de despedida (omakase/kaiseki)',
+      ],
+      'Pasajes y transporte': [
+        'Suica/Pasmo en la billetera del celular (cargar ~¥3.000)',
+        'N\'EX ida y vuelta (incluye la vuelta a Narita el 2/10)',
+        'Envío de valijas (takkyubin): Tokio→Kioto, Kioto→Osaka',
+        'Envío de equipaje Magome↔Tsumago antes de la caminata Nakasendo',
+        'Hakone Free Pass · eSIM para los dos celulares',
+      ],
+      'Para la valija': [
+        'Zapatillas cómodas + calzado para el trekking Nakasendo (~8 km)',
+        'Bolso de una noche (para Hakone y Kiso — las valijas van por delante)',
+        'Capas + paraguas plegable (fin de septiembre húmedo, riesgo de tifón)',
+        'Stickers para tapar tatuajes (para el onsen)',
+        'Batería portátil + adaptador (tipo A, 100V) · efectivo en ¥',
+      ],
+      'Bueno saber': [
+        'Silver Week 21–23/9 — feriado nacional; Hakone/shinkansen/Kiso llenos: reservá todo',
+        'El cumpleaños 24/9 en Tsumago — caminata Nakasendo + ryokan tradicional',
+        'Noches gay: Ni-chome (Tokio) · Doyama-cho (Osaka)',
+      ],
     },
   };
   const loadCheck = () => safeParse(localStorage.getItem(LS_CHECK)) || { done: {}, custom: {} };
