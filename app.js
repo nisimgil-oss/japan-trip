@@ -53,7 +53,7 @@
       bookedSug: 'ההצעה שבחרתם', bookedHotelPh: 'המלון שסגרתי…', bookedRefPh: 'מס\' הזמנה / הערה (אופציונלי)', bookedDone: 'נסגר ✓',
       bookedProgress: (n, m) => `${n}/${m} נסגרו`, bookedStay: 'כניסה → יציאה', bookedCostPh: 'עלות (¥/₪)', bookedCancelLabel: 'ביטול חינם עד',
       bookedTrains: '🚄 רכבות לסגור', bookedEvents: '🎟️ כרטיסים לאירועים', bookedSalesOpen: 'מכירה נפתחת', bookedSalesOpenNow: '✓ פתוח למכירה', bookedBook: 'הזמנה',
-      bookedOpensToday: 'נפתח היום!', bookedOpensTomorrow: 'נפתח מחר', bookedOpensIn: (n) => `נפתח בעוד ${n} ימים`, bookedPax: '2 בוגרים', bookedMapLink: 'מסלול וזמנים', bookedItemNotePh: 'הערה חופשית…',
+      bookedOpensToday: 'נפתח היום!', bookedOpensTomorrow: 'נפתח מחר', bookedOpensIn: (n) => `נפתח בעוד ${n} ימים`, bookedPax: '2 בוגרים', bookedMapLink: 'מסלול וזמנים', bookedItemNotePh: 'הערה חופשית…', bookedSalesTime: 'ב-10:00 שעון יפן',
       hSelected: '✓ נבחר', hChoose: 'בחרו מלון זה', hPerNight: 'ללילה', hPerCouple: 'לזוג · חצי פנסיון', hBook: 'להזמנה ↗', hNights: (n) => n === 1 ? 'לילה אחד' : n + ' לילות', hStayHotel: 'המלון שנבחר', hPickHint: 'בחרו מלון בטאב ״מלונות״',
       mapsDay: '🗺️ מסלול היום במפות', mapsOpen: 'פתח במפות ↗',
       'tab.experiences': 'חוויות', 'experiences.title': '✨ עוד חוויות מיוחדות',
@@ -88,7 +88,7 @@
       bookedSug: 'La opción que elegiste', bookedHotelPh: 'El hotel que reservé…', bookedRefPh: 'N.º de reserva / nota (opcional)', bookedDone: 'Reservado ✓',
       bookedProgress: (n, m) => `${n}/${m} reservados`, bookedStay: 'Entrada → salida', bookedCostPh: 'Costo (¥/₪)', bookedCancelLabel: 'Cancelación gratis hasta',
       bookedTrains: '🚄 Trenes por reservar', bookedEvents: '🎟️ Entradas a eventos', bookedSalesOpen: 'Venta abre', bookedSalesOpenNow: '✓ Ya a la venta', bookedBook: 'Reservar',
-      bookedOpensToday: '¡Abre hoy!', bookedOpensTomorrow: 'Abre mañana', bookedOpensIn: (n) => `Abre en ${n} días`, bookedPax: '2 adultos', bookedMapLink: 'Ruta y horarios', bookedItemNotePh: 'Nota libre…',
+      bookedOpensToday: '¡Abre hoy!', bookedOpensTomorrow: 'Abre mañana', bookedOpensIn: (n) => `Abre en ${n} días`, bookedPax: '2 adultos', bookedMapLink: 'Ruta y horarios', bookedItemNotePh: 'Nota libre…', bookedSalesTime: 'a las 10:00 hora Japón',
       hSelected: '✓ Elegido', hChoose: 'Elegir este hotel', hPerNight: 'por noche', hPerCouple: 'por pareja · media pensión', hBook: 'Reservar ↗', hNights: (n) => n === 1 ? '1 noche' : n + ' noches', hStayHotel: 'Hotel elegido', hPickHint: 'Elegí un hotel en la pestaña "Hoteles"',
       mapsDay: '🗺️ Recorrido del día en Maps', mapsOpen: 'Abrir en Maps ↗',
       'tab.experiences': 'Experiencias', 'experiences.title': '✨ Más experiencias especiales',
@@ -676,7 +676,7 @@
     { id: 'e-shibuyasky', date: '2026-09-19', salesOpen: '2026-08-22', url: 'https://www.shibuya-scramble-square.com/sky/',
       title: { he: "🌇 Shibuya Sky — סלוט שקיעה", es: "🌇 Shibuya Sky — slot atardecer" },
       note: { he: "סלוט השקיעה נחטף — נפתח ~4 שבועות מראש.", es: "El slot del atardecer se agota — abre ~4 semanas antes." } },
-    { id: 'e-ghibli', date: '2026-10-01', salesOpen: '2026-09-10', url: 'https://l-tike.com/ghibli/',
+    { id: 'e-ghibli', date: '2026-10-01', salesOpen: '2026-09-10', salesTime: true, url: 'https://l-tike.com/ghibli/',
       title: { he: "🎬 מוזיאון ג'יבלי (Mitaka)", es: "🎬 Museo Ghibli (Mitaka)" },
       note: { he: "ה-10 לחודש הקודם בדיוק, ב-10:00 שעון יפן, ב-Lawson — נחטף בדקות.", es: "El día 10 del mes anterior exacto, 10:00 hora Japón, en Lawson — se agota en minutos." } },
     { id: 'e-teamlab', date: '2026-10-01', salesOpen: '2026-08-01', url: 'https://www.teamlab.art/e/planets/',
@@ -744,7 +744,8 @@
       if (info) {
         if (info.state === 'open') chip = `<span class="bi-sales open">${t('bookedSalesOpenNow')}</span>`;
         else { const lbl = info.days <= 0 ? t('bookedOpensToday') : info.days === 1 ? t('bookedOpensTomorrow') : t('bookedOpensIn')(info.days);
-          chip = `<span class="bi-sales soon">🔔 ${lbl} · ${fmtDate(item.salesOpen)}</span>`; }
+          const tm = (item.from || item.salesTime) ? ' ' + t('bookedSalesTime') : '';
+          chip = `<span class="bi-sales soon">🔔 ${lbl} · ${fmtDate(item.salesOpen)}${tm}</span>`; }
       }
       const mapUrl = (item.from && item.to) ? transitMapUrl(item.from, item.to) : '';
       const card = document.createElement('div'); card.className = 'panel bkitem' + (done ? ' bkdone' : '');
