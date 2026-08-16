@@ -1,6 +1,6 @@
 /* data.js — Option A · booked hotels + luggage logistics per day. bilingual he/es. */
 window.TRIP_DATA = {
- "v": "bi-optA-8",
+ "v": "bi-optA-9",
  "flights": {
   "airline": "LOT Polish Airlines",
   "passenger": "Ezequiel",
@@ -1074,19 +1074,19 @@ window.TRIP_DATA = {
     "date": "2026-09-23",
     "dow": "Wed",
     "city": "Magome",
-    "title": "יום 6 — אל תוך עמק קיסו",
-    "summary": "פרידה מהאקונה עם ארוחת בוקר ביפנית מסורתית, ואז מסע ארוך ומרהיב לתוך יפן האדו הכפרית — אל מגומה, עיירת הדואר הסמויה בין ההרים.",
-    "hotel": "🏨 Yanagiya Iri (✓ נסגר) · וילה עם מטבח, בלי ארוחות",
+    "title": "🎂 יום ההולדת ה-40 — מגומה (עמק קיסו)",
+    "summary": "מסע מהאקונה לעמק קיסו, ערב בעיירת אֶדו מגומה, וארוחת יום הולדת בווילה/מסעדה מקומית.",
+    "hotel": "🏨 Yanagiya Iri — וילה במגומה (✓ נסגר) · מטבח, בלי ארוחות · 🎂",
     "events": [
      {
       "start": "08:00",
       "end": "09:00",
       "type": "food",
       "area": "Hakone (Gora)",
-      "title": "ארוחת בוקר ביפנית וטבילה אחרונה",
-      "desc": "ארוחת בוקר טרדישיונלית ברויוקן: דגים על האש, מיסו, מנות מקומיות קטנות, וקצת אורז. אחריה — עוד ביקור קסום במעיינות הטבעיים לפני שיוצאים לדרך.",
-      "tips": "אל תפספסו את הבריכה החיצונית בשעת הבוקר — פחות עומס, ונוף אחר לגמרי.",
-      "cost": "כלול בלינה",
+      "title": "ארוחת בוקר וטבילה אחרונה בהאקונה",
+      "desc": "ארוחת בוקר יפנית וטבילת אונסן אחרונה לפני היציאה.",
+      "tips": "",
+      "cost": "",
       "booking": ""
      },
      {
@@ -1094,21 +1094,21 @@ window.TRIP_DATA = {
       "end": "13:00",
       "type": "transport",
       "area": "Hakone עד Nagoya עד Magome",
-      "title": "מסע לב יפן — האקונה עד מגומה",
-      "desc": "נסיעה מרתקת שחוצה את יפן: האקונה → אודאוורה → שינקנסן → נגויה → JR עד נקצוגאווה → אוטובוס למגומה. בדרך הנוף משתנה מדרמטי להררי ועד כפרי בלתי ניתן לתיאור.",
-      "tips": "שמרו על מקומות בשינקנסן דרך SmartEX מראש — שבוע ה-Silver Week עמוס במיוחד; הירכבו בצד ימין לנוף הכי טוב על הר פוג'י.",
-      "cost": "¥8,000–12,000 לאדם (JR Pass מכסה את רוב הדרך)",
-      "booking": "הזמינו מקומות בשינקנסן דרך SmartEX — שבוע חופשה עמוס"
+      "title": "מסע לעמק קיסו — האקונה → מגומה",
+      "desc": "האקונה→אודוארה→שינקנסן→נגויה→נקאטסוגאווה→אוטובוס למגומה; ירידה נופית אל יפן הכפרית.",
+      "tips": "המזוודה הראשית כבר בדרך לקיוטו — נוסעים עם תיק-לילה.",
+      "cost": "",
+      "booking": ""
      },
      {
       "start": "13:00",
       "end": "14:00",
       "type": "food",
       "area": "Magome",
-      "title": "צהריים: סובה שינשו וגוהיי-מוצ'י",
-      "desc": "הגעתם! מגומה קוראת לכם לנוח ולאכול: מיד חפשו מסעדה קטנה עם סובה שינשו טרי ועם גוהיי-מוצ'י — כדורי אורז קלויים עם ציפוי מיסו מתוק-מלוח על שיפוד. מאכל הרים נשכח ואהוב.",
-      "tips": "הגוהיי-מוצ'י מוגש חם מיד מהאש — אכלו אותו על הספסל בצד השביל, עם המראה שמסביב.",
-      "cost": "¥1,000–1,800 לאדם",
+      "title": "צהריים במגומה — סובה וגוהיי-מוצ׳י",
+      "desc": "סובה שינשו וגוהיי-מוצ׳י (אורז צלוי ברוטב מיסו-אגוז) — הטעם של הנקאסֶנדו.",
+      "tips": "",
+      "cost": "כ-¥1,000–1,800 לאדם",
       "booking": ""
      },
      {
@@ -1116,53 +1116,65 @@ window.TRIP_DATA = {
       "end": "16:30",
       "type": "sightseeing",
       "area": "Magome",
-      "title": "טיול בעיירת הדואר מגומה",
-      "desc": "מגומה היא פסגת יפן הבלתי-נגועה: שביל אבן תלול עם בתי אדו, גלגלי מים מסתובבים, ומרפסות שנשקפות אל עמק קיסו הירוק. הטיול בעיירה הוא חוויה שהזמן נעצר בה.",
-      "tips": "הגיעו עד נקודת התצפית בראש השביל — הנוף עם ריח העץ ותרועת הציפורים שווה כל עייפות.",
+      "title": "מגומה — עיירת אֶדו על מדרון ההר",
+      "desc": "המדרון המרוצף, גלגלי-מים ונקודות תצפית על עמק Ena. אווירת אֶדו משומרת.",
+      "tips": "",
       "cost": "חינם",
       "booking": "",
       "highlight": true
      },
      {
       "start": "16:30",
-      "end": "18:00",
+      "end": "17:30",
       "type": "checkin",
       "area": "Magome",
-      "title": "צ'ק-אין במינשוקו משפחתי",
-      "desc": "כניסה לאחד המינשוקו הקטנים שבמגומה — אירוח משפחתי עם חדר טטמי, שמיכות פוטון, ואנשים שרוצים שתרגישו כמו בבית. בתים כאלו הם לב יפן האמיתית.",
-      "tips": "הזמינו הרבה מראש — Silver Week ממלאת את המינשוקו הנדירים מהר מאוד.",
-      "cost": "¥8,000–13,000 לאדם (כולל ארוחות)",
-      "booking": "הזמינו את המינשוקו במגומה מוקדם מאוד — אכסניות קטנות, שבוע Silver Week"
+      "title": "צ׳ק-אין בווילה Yanagiya Iri",
+      "desc": "וילה עם מטבח וטאטמי בלב מגומה (בלי ארוחות).",
+      "tips": "",
+      "cost": "¥53,600 · נסגר",
+      "booking": ""
      },
      {
-      "start": "18:00",
-      "end": "20:00",
-      "type": "food",
+      "start": "17:30",
+      "end": "18:30",
+      "type": "sightseeing",
       "area": "Magome",
-      "title": "ארוחת ערב הרי-בית במינשוקו",
-      "desc": "ארוחת ערב ביתית שמוגשת בידי המארחים: ירקות מהגינה, פטריות הרים, מנות מרק, ואולי חזיר-בר שנצוד בקרבת מקום. אכילה שקטה ועמוקה, ללא תפריט — רק מה שביישלו היום.",
-      "tips": "אל תחמיצו לשאול את המארחת על המנות — הסיפורים מאחורי האוכל הם חלק מהחוויה.",
-      "cost": "כלול בלרוב בלינה",
+      "title": "מגומה בין-הערביים",
+      "desc": "כשתיירי-היום עוזבים, המדרון לאור פנסים נרגע — רגע יפה.",
+      "tips": "",
+      "cost": "חינם",
       "booking": ""
+     },
+     {
+      "start": "18:30",
+      "end": "21:00",
+      "type": "birthday",
+      "area": "Magome",
+      "title": "🎂 ארוחת יום ההולדת ה-40",
+      "desc": "הווילה בלי ארוחות — לחגוג במסעדה/פונדק במגומה (להזמין מראש, אפשרויות ערב מוגבלות) או ארוחה חגיגית במטבח הווילה עם sake מקומי.",
+      "tips": "להזמין מסעדה מראש, או לקנות מצרכים + sake בנקאטסוגאווה/מגומה.",
+      "cost": "לפי הבחירה",
+      "booking": "מסעדה — להזמין מראש",
+      "highlight": true
      }
-    ]
+    ],
+    "birthday": true
    },
    {
     "date": "2026-09-24",
     "dow": "Thu",
     "city": "Tsumago",
-    "birthday": true,
-    "title": "יום הולדת 40 — שביל הנקאסנדו וצומאגו",
-    "summary": "יום ההולדת ה-40: הליכת הנקאסֶנדו למגומה→צומאגו, ערב קסום בכפר אֶדו, ולינה בווילה בנאגיסו (ארוחת חג במסעדה או בישול בווילה).",
-    "hotel": "🏨 AKARI — וילה בנאגיסו (✓ נסגר · ~10 דק׳ מצומאגו) · מטבח, בלי ארוחות · 🎂",
+    "title": "עמק קיסו — הליכת הנקאסֶנדו וצומאגו",
+    "summary": "הליכת הנקאסֶנדו מגומה→צומאגו, ערב קסום בכפר אֶדו, ולינה בווילה בנאגיסו.",
+    "hotel": "🏨 AKARI — וילה בנאגיסו (✓ נסגר · ~10 דק׳ מצומאגו) · מטבח, בלי ארוחות",
     "events": [
      {
       "start": "08:00",
       "end": "09:00",
       "type": "food",
       "area": "Magome",
-      "title": "ארוחת בוקר בפונדק במגומה",
-      "desc": "ארוחת בוקר לפני היציאה לשביל.",
+      "title": "ארוחת בוקר בווילה במגומה",
+      "desc": "קפה וארוחה קלה במטבח הווילה לפני היציאה לשביל.",
       "tips": "",
       "cost": "",
       "booking": ""
@@ -1173,8 +1185,8 @@ window.TRIP_DATA = {
       "type": "experience",
       "area": "Nakasendo Trail (Magome->Tsumago)",
       "title": "הליכת הנקאסֶנדו — מגומה → צומאגו",
-      "desc": "~8 ק\"מ בשביל אֶדו עתיק דרך יער, מפלים ובית-תה — יום ההולדת הכי יפה שאפשר.",
-      "tips": "מסרתם את תיק-הלילה במגומה עד ~11:30 → מחכה בצומאגו.",
+      "desc": "~8 ק\"מ בשביל אֶדו עתיק דרך יער, מפלים ובית-תה.",
+      "tips": "מסרו את תיק-הלילה במגומה עד ~11:30 → מחכה בצומאגו.",
       "cost": "חינם",
       "booking": "",
       "highlight": true
@@ -1208,7 +1220,7 @@ window.TRIP_DATA = {
       "type": "sightseeing",
       "area": "Tsumago",
       "title": "צומאגו בשעת בין-הערביים",
-      "desc": "כשתיירי-היום עוזבים הכפר נרגע לגמרי — הרגע הכי קסום, לאור פנסים.",
+      "desc": "כשתיירי-היום עוזבים, הכפר נרגע לגמרי — הרגע הכי קסום, לאור פנסים.",
       "tips": "",
       "cost": "חינם",
       "booking": ""
@@ -1226,15 +1238,14 @@ window.TRIP_DATA = {
      },
      {
       "start": "18:30",
-      "end": "21:00",
-      "type": "birthday",
+      "end": "20:30",
+      "type": "food",
       "area": "Nagiso",
-      "title": "🎂 ארוחת יום ההולדת ה-40",
-      "desc": "הווילה AKARI ללא ארוחות — לחגוג במסעדה בנאגיסו/צומאגו (להזמין מראש, אפשרויות ערב מוגבלות) או ארוחה חגיגית שמבשלים יחד במטבח הווילה, עם sake מקומי.",
-      "tips": "להזמין מסעדה מראש, או לקנות מצרכים + sake בדרך.",
+      "title": "ארוחת ערב בנאגיסו",
+      "desc": "הווילה בלי ארוחות — מסעדה מקומית בנאגיסו/צומאגו או בישול נינוח במטבח הווילה.",
+      "tips": "לבדוק שעות מסעדה מראש (כפר קטן).",
       "cost": "לפי הבחירה",
-      "booking": "מסעדה — להזמין מראש",
-      "highlight": true
+      "booking": ""
      }
     ],
     "logistics": {
@@ -3626,19 +3637,19 @@ window.TRIP_DATA = {
     "date": "2026-09-23",
     "dow": "Wed",
     "city": "Magome",
-    "title": "Día 6 — Adentro del Valle de Kiso",
-    "summary": "Despedida de Hakone con un desayuno ryokan y un último onsen, y luego un viaje largo y cinematográfico hasta Magome, el pueblo postal de la era Edo escondido entre montañas.",
-    "hotel": "🏨 Yanagiya Iri (✓ reservado) · villa con cocina, sin comidas",
+    "title": "🎂 Cumpleaños 40 — Magome (Valle de Kiso)",
+    "summary": "Viaje de Hakone al Valle de Kiso, atardecer en la aldea Edo de Magome, y cena de cumpleaños en la villa o un restaurante local.",
+    "hotel": "🏨 Yanagiya Iri — villa en Magome (✓ reservado) · cocina, sin comidas · 🎂",
     "events": [
      {
       "start": "08:00",
       "end": "09:00",
       "type": "food",
       "area": "Hakone (Gora)",
-      "title": "Desayuno japonés tradicional y último onsen",
-      "desc": "Desayuno ryokan completo: pescado a la parrilla, sopa miso, pequeñas porciones de temporada y arroz. Después, una última inmersión en las aguas termales antes de salir camino a Magome.",
-      "tips": "Aprovechá la pileta exterior a la mañana temprano — hay menos gente y la atmósfera es completamente distinta.",
-      "cost": "Incluido en el alojamiento",
+      "title": "Desayuno y último baño en Hakone",
+      "desc": "Desayuno japonés y un último onsen antes de partir.",
+      "tips": "",
+      "cost": "",
       "booking": ""
      },
      {
@@ -3646,20 +3657,20 @@ window.TRIP_DATA = {
       "end": "13:00",
       "type": "transport",
       "area": "Hakone עד Nagoya עד Magome",
-      "title": "Viaje al corazón del Japón — Hakone a Magome",
-      "desc": "Un recorrido que atraviesa el país: Hakone → Odawara → Shinkansen → Nagoya → JR hasta Nakatsugawa → colectivo a Magome. El paisaje cambia de dramático a montañoso a rural, con una belleza que no tiene nombre.",
-      "tips": "Reservá los asientos del Shinkansen por SmartEX con anticipación — la Silver Week es una semana muy concurrida; sentate del lado derecho para ver el monte Fuji.",
-      "cost": "¥8.000–12.000 por persona (el JR Pass cubre la mayor parte)",
-      "booking": "Reservá los asientos del Shinkansen por SmartEX — semana de feriados, va lleno"
+      "title": "Viaje al Valle de Kiso — Hakone → Magome",
+      "desc": "Hakone→Odawara→shinkansen→Nagoya→Nakatsugawa→bus a Magome; un descenso escénico al Japón rural.",
+      "tips": "La valija principal ya va camino a Kioto — viajan con bolso de una noche.",
+      "cost": "",
+      "booking": ""
      },
      {
       "start": "13:00",
       "end": "14:00",
       "type": "food",
       "area": "Magome",
-      "title": "Almuerzo: soba Shinshu y gohei-mochi",
-      "desc": "¡Llegaron! Magome te recibe con mesas sencillas y sabores honestos: soba Shinshu recién hecho y gohei-mochi — bolitas de arroz a las brasas bañadas en miso dulce-salado sobre un palito. Comida de montaña que no se olvida.",
-      "tips": "El gohei-mochi sale directo del fuego — comelo sentado en un banco al costado del camino, con la vista que te rodea.",
+      "title": "Almuerzo en Magome — soba y gohei-mochi",
+      "desc": "Soba shinshu y gohei-mochi (arroz a la brasa con miso y nueces) — el sabor del Nakasendo.",
+      "tips": "",
       "cost": "¥1.000–1.800 por persona",
       "booking": ""
      },
@@ -3668,53 +3679,65 @@ window.TRIP_DATA = {
       "end": "16:30",
       "type": "sightseeing",
       "area": "Magome",
-      "title": "Recorrido por el pueblo postal de Magome",
-      "desc": "Magome es el Japón que querías encontrar: un sendero de piedra empinado flanqueado por casas de época Edo, ruedas de agua girando despacio, y miradores sobre el verde del Valle de Kiso. Acá el tiempo para.",
-      "tips": "Subí hasta el mirador en lo alto del sendero — el panorama con olor a madera y canto de pájaros vale cada paso.",
-      "cost": "gratis",
+      "title": "Magome — pueblo Edo en la ladera",
+      "desc": "La cuesta empedrada, ruedas de agua y miradores sobre el valle de Ena. Ambiente Edo preservado.",
+      "tips": "",
+      "cost": "Gratis",
       "booking": "",
       "highlight": true
      },
      {
       "start": "16:30",
-      "end": "18:00",
+      "end": "17:30",
       "type": "checkin",
       "area": "Magome",
-      "title": "Check-in en el minshuku familiar",
-      "desc": "Entrás a uno de los pequeños minshuku de Magome — alojamiento familiar con habitación de tatami, futones en el piso, y gente que genuinamente quiere que te sientas como en casa. Esto es el Japón de verdad.",
-      "tips": "Reservá con mucha anticipación — la Silver Week llena rapidísimo los pocos minshuku que hay en el pueblo.",
-      "cost": "¥8.000–13.000 por persona (incluye comidas)",
-      "booking": "Reservá el minshuku en Magome con mucha anticipación — son pocos y la Silver Week los llena rápido"
+      "title": "Check-in en la villa Yanagiya Iri",
+      "desc": "Villa con cocina y tatami en el corazón de Magome (sin comidas).",
+      "tips": "",
+      "cost": "¥53.600 · reservado",
+      "booking": ""
      },
      {
-      "start": "18:00",
-      "end": "20:00",
-      "type": "food",
+      "start": "17:30",
+      "end": "18:30",
+      "type": "sightseeing",
       "area": "Magome",
-      "title": "Cena casera de montaña en el minshuku",
-      "desc": "La anfitriona sirve lo que cocinó hoy: verduras del huerto, hongos silvestres, caldos reconfortantes, y quizás algo de jabalí cazado cerca. Sin carta, sin poses — solo lo que la montaña dio.",
-      "tips": "Preguntale a la anfitriona por los platos — las historias detrás de la comida son parte de la experiencia.",
-      "cost": "Incluido en el alojamiento (en la mayoría de los minshuku)",
+      "title": "Magome al atardecer",
+      "desc": "Cuando se van los excursionistas, la cuesta a la luz de los faroles se aquieta — un momento hermoso.",
+      "tips": "",
+      "cost": "Gratis",
       "booking": ""
+     },
+     {
+      "start": "18:30",
+      "end": "21:00",
+      "type": "birthday",
+      "area": "Magome",
+      "title": "🎂 Cena de cumpleaños 40",
+      "desc": "La villa no incluye comidas — festejar en un restaurante/posada de Magome (reservar antes, opciones limitadas de noche) o una cena especial en la cocina de la villa con sake local.",
+      "tips": "Reservar restaurante antes, o comprar ingredientes + sake en Nakatsugawa/Magome.",
+      "cost": "Según elijan",
+      "booking": "Restaurante — reservar antes",
+      "highlight": true
      }
-    ]
+    ],
+    "birthday": true
    },
    {
     "date": "2026-09-24",
     "dow": "Thu",
     "city": "Tsumago",
-    "birthday": true,
-    "title": "Cumpleaños 40 — El Nakasendo y Tsumago",
-    "summary": "Cumpleaños 40: caminata Nakasendo Magome→Tsumago, atardecer mágico en la aldea Edo, y noche en la villa de Nagiso (cena festiva en restaurante o cocinando en la villa).",
-    "hotel": "🏨 AKARI — villa en Nagiso (✓ reservado · ~10 min de Tsumago) · cocina, sin comidas · 🎂",
+    "title": "Valle de Kiso — caminata Nakasendo y Tsumago",
+    "summary": "Caminata Nakasendo Magome→Tsumago, atardecer mágico en la aldea Edo, y noche en la villa de Nagiso.",
+    "hotel": "🏨 AKARI — villa en Nagiso (✓ reservado · ~10 min de Tsumago) · cocina, sin comidas",
     "events": [
      {
       "start": "08:00",
       "end": "09:00",
       "type": "food",
       "area": "Magome",
-      "title": "Desayuno en la posada de Magome",
-      "desc": "Desayuno antes de salir al sendero.",
+      "title": "Desayuno en la villa de Magome",
+      "desc": "Café y algo liviano en la cocina de la villa antes de salir al sendero.",
       "tips": "",
       "cost": "",
       "booking": ""
@@ -3725,8 +3748,8 @@ window.TRIP_DATA = {
       "type": "experience",
       "area": "Nakasendo Trail (Magome->Tsumago)",
       "title": "Caminata Nakasendo — Magome → Tsumago",
-      "desc": "~8 km por el camino Edo entre bosque, cascadas y una casa de té — el cumpleaños más lindo posible.",
-      "tips": "Dejaron el bolso en Magome antes de las ~11:30 → los espera en Tsumago.",
+      "desc": "~8 km por el camino Edo entre bosque, cascadas y una casa de té.",
+      "tips": "Dejen el bolso en Magome antes de las ~11:30 → los espera en Tsumago.",
       "cost": "Gratis",
       "booking": "",
       "highlight": true
@@ -3778,15 +3801,14 @@ window.TRIP_DATA = {
      },
      {
       "start": "18:30",
-      "end": "21:00",
-      "type": "birthday",
+      "end": "20:30",
+      "type": "food",
       "area": "Nagiso",
-      "title": "🎂 Cena de cumpleaños 40",
-      "desc": "La villa AKARI no incluye comidas — festejar en un restaurante de Nagiso/Tsumago (reservar antes, opciones de noche limitadas) o una cena especial cocinando juntos en la cocina de la villa, con sake local.",
-      "tips": "Reservar restaurante antes, o comprar ingredientes + sake en el camino.",
+      "title": "Cena en Nagiso",
+      "desc": "La villa no incluye comidas — un restaurante local en Nagiso/Tsumago o cocinar tranquilo en la villa.",
+      "tips": "Chequear horarios del restaurante antes (pueblo chico).",
       "cost": "Según elijan",
-      "booking": "Restaurante — reservar antes",
-      "highlight": true
+      "booking": ""
      }
     ],
     "logistics": {
