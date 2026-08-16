@@ -5,6 +5,7 @@
 
 - **אתר חי:** https://nisimgil-oss.github.io/japan-trip
 - **Repo:** `github.com/nisimgil-oss/japan-trip` · branch `main` (מקור-האמת)
+- **📓 יומן מלא של כל מה שעשינו + החלטות + מה פתוח:** ראו [`PROJECT_LOG.md`](./PROJECT_LOG.md)
 
 ## הרצה מקומית
 סטטי לחלוטין — פותחים את `index.html` בדפדפן, או מגישים דרך שרת סטטי.
