@@ -505,7 +505,7 @@
   const CMP_HE = {
     dir: 'rtl', tag: '🇮🇱 עברית',
     title: '⚖️ השוואת מסלולים — האתר מול קובץ האקסל',
-    note: '<b>✅ עודכן:</b> המסלול באתר נבנה מחדש לאופציה A — משלב עכשיו את <b>עמק קיסו</b> (מאגומה/צומאגו + הליכת נקאסֶנדו), <b>Tokyo Game Show</b> ומופע <b>סומו</b>, ויום ההולדת עבר לצומאגו. ההשוואה שלהלן משקפת את השיקולים המקוריים (אתר מול אקסל).<br><br><b>יישור תאריכים:</b> האקסל הוא 16 ימים (17.9–2.10) ומניח נחיתה כבר ב-17.9, אבל לפי הטיסות נוחתים ב-NRT רק ב-18.9 בערב — כך שיום 1 של האקסל אינו אפשרי. האתר תואם לטיסות: 15 ימים, 18.9–2.10.',
+    note: '<b>✅ עודכן:</b> המסלול באתר נבנה מחדש לאופציה A — משלב עכשיו את <b>עמק קיסו</b> (מאגומה/צומאגו + הליכת נקאסֶנדו), מופע <b>סומו</b> באוסקה, ויום ההולדת עבר לצומאגו. ההשוואה שלהלן משקפת את השיקולים המקוריים (אתר מול אקסל).<br><br><b>יישור תאריכים:</b> האקסל הוא 16 ימים (17.9–2.10) ומניח נחיתה כבר ב-17.9, אבל לפי הטיסות נוחתים ב-NRT רק ב-18.9 בערב — כך שיום 1 של האקסל אינו אפשרי. האתר תואם לטיסות: 15 ימים, 18.9–2.10.',
     hPhil: 'הבדל התפיסה', colSite: 'האתר (שבנינו)', colXls: 'האקסל',
     rows: [
       ['גישה', 'פחות בסיסים, לעומק ורגוע', '"סיבוב גדול" — לראות את כל יפן'],
@@ -539,7 +539,7 @@
   const CMP_ES = {
     dir: 'ltr', tag: '🇦🇷 Español',
     title: '⚖️ Comparación de itinerarios — el sitio vs. el Excel',
-    note: '<b>✅ Actualizado:</b> el itinerario del sitio se rehízo en la Opción A — ahora integra el <b>Valle de Kiso</b> (Magome/Tsumago + caminata Nakasendo), el <b>Tokyo Game Show</b> y el <b>sumo</b>, y el cumpleaños pasó a Tsumago. La comparación de abajo refleja el análisis original (sitio vs Excel).<br><br><b>Alineación de fechas:</b> el Excel son 16 días (17/9–2/10) y asume llegada el 17/9, pero según los vuelos recién aterrizan en NRT el 18/9 a la noche — así que el Día 1 del Excel no es posible. El sitio coincide con los vuelos: 15 días, 18/9–2/10.',
+    note: '<b>✅ Actualizado:</b> el itinerario del sitio se rehízo en la Opción A — ahora integra el <b>Valle de Kiso</b> (Magome/Tsumago + caminata Nakasendo), el <b>sumo</b> en Osaka, y el cumpleaños pasó a Tsumago. La comparación de abajo refleja el análisis original (sitio vs Excel).<br><br><b>Alineación de fechas:</b> el Excel son 16 días (17/9–2/10) y asume llegada el 17/9, pero según los vuelos recién aterrizan en NRT el 18/9 a la noche — así que el Día 1 del Excel no es posible. El sitio coincide con los vuelos: 15 días, 18/9–2/10.',
     hPhil: 'La diferencia de enfoque', colSite: 'El sitio (que armamos)', colXls: 'El Excel',
     rows: [
       ['Enfoque', 'Menos bases, más profundo y relajado', '"Gran tour" — ver toda Japón'],
@@ -667,12 +667,9 @@
   ];
   // כרטיסים לאירועים לסגור
   const EVENTS = [
-    { id: 'e-sumo', date: '2026-09-19', salesOpen: '2026-08-08', url: 'https://sumo.pia.jp/en/',
-      title: { he: "🥋 סומו — Aki Basho (Ryogoku)", es: "🥋 Sumo — Aki Basho (Ryogoku)" },
-      note: { he: "19–21.9 לפי המסלול · מושבי זוגות (masu) נחטפים — המכירה כבר פתוחה.", es: "19–21/9 según el itinerario · los asientos para parejas (masu) vuelan — ya a la venta." } },
-    { id: 'e-tgs', date: '2026-09-20', salesOpen: '2026-08-01', url: 'https://tgs.cesa.or.jp/2026/en/',
-      title: { he: "🎮 Tokyo Game Show 2026 (Makuhari)", es: "🎮 Tokyo Game Show 2026 (Makuhari)" },
-      note: { he: "כרטיס יום ציבורי (א׳ 20.9) — לקנות מראש בפורטל הרשמי.", es: "Entrada de día público (dom 20/9) — comprá con anticipación en el portal oficial." } },
+    { id: 'e-sumo', date: '2026-09-28', done: true, url: 'https://www.google.com/search?q=The+Sumo+Hall+Hirakuza+Osaka',
+      title: { he: "🥋 מופע סומו — Sumo Hall Hirakuza (Osaka)", es: "🥋 Show de sumo — Sumo Hall Hirakuza (Osaka)" },
+      note: { he: "✓ נסגר · 28.9 בשעה 17:00 · מושב סטנדרט + בנטו + משקה · 2 מבוגרים · הזמנה PFB554612.", es: "✓ Reservado · 28/9 a las 17:00 · asiento estándar + bento + bebida · 2 adultos · reserva PFB554612." } },
     { id: 'e-shibuyasky', date: '2026-09-19', salesOpen: '2026-08-22', url: 'https://www.shibuya-scramble-square.com/sky/',
       title: { he: "🌇 Shibuya Sky — סלוט שקיעה", es: "🌇 Shibuya Sky — slot atardecer" },
       note: { he: "סלוט השקיעה נחטף — נפתח ~4 שבועות מראש.", es: "El slot del atardecer se agota — abre ~4 semanas antes." } },
@@ -739,7 +736,8 @@
     // ── רכבות + כרטיסים לאירועים ──
     const secCount = (items) => items.filter(i => (loadBooked()[i.id] || {}).done).length + '/' + items.length;
     const itemCard = (item) => {
-      const done = !!(loadBooked()[item.id] || {}).done;
+      const _lb = loadBooked()[item.id] || {};
+      const done = _lb.done !== undefined ? _lb.done : !!item.done;
       const info = salesInfo(item.salesOpen);
       let chip = '';
       if (info) {
@@ -788,10 +786,8 @@
   const DEFAULT_CHECK = {
     he: {
       'הזמנות דחופות (עכשיו!)': [
-        'כרטיסי סומו — Aki Basho (21.9), המכירה נפתחה ~8.8 · סופ״ש/חג נחטפים',
-        'ריוקאן בהאקונה + Romancecar (22.9) — Silver Week, לשריין מיד',
-        'מינשוקו במאגומה + ריוקאן בצומאגו (23–24.9) — פונדקים זעירים בשבוע חג',
-        'כרטיסי Tokyo Game Show 2026 — יום ראשון 20.9, דרך אתר הכרטיסים הרשמי',
+        '✓ כל 7 המלונות + מופע הסומו (Osaka Hirakuza, 28.9) — נסגרו',
+        'Romancecar שינג׳וקו→האקונה (22.9) — Silver Week, לשריין',
         'מוזיאון ג׳יבלי — 10.9 בשעה 10:00 (שעון יפן) ב-Lawson',
         'מושבי שינקנסן (נגויה↔קיוטו, שין-אוסקה→טוקיו) ב-SmartEX — שבוע חג',
         'Shibuya Sky (סלוט שקיעה), teamLab Planets, חוויית מאיקו, סדנת תה+קימונו, סדנת סושי',
@@ -819,10 +815,8 @@
     },
     es: {
       'Reservas urgentes (¡ya!)': [
-        'Entradas de sumo — Aki Basho (21/9), venta desde ~8/8 · findes/feriados vuelan',
-        'Ryokan en Hakone + Romancecar (22/9) — Silver Week, reservá ya',
-        'Minshuku en Magome + ryokan en Tsumago (23–24/9) — posadas chicas en feriado',
-        'Entradas Tokyo Game Show 2026 — domingo 20/9, por el portal oficial',
+        '✓ Los 7 hoteles + el show de sumo (Osaka Hirakuza, 28/9) — reservados',
+        'Romancecar Shinjuku→Hakone (22/9) — Silver Week, reservá',
         'Museo Ghibli — 10/9 a las 10:00 (hora Japón) en Lawson',
         'Asientos de shinkansen (Nagoya↔Kioto, Shin-Osaka→Tokio) en SmartEX — feriado',
         'Shibuya Sky (slot atardecer), teamLab Planets, experiencia maiko, taller de té+kimono, clase de sushi',

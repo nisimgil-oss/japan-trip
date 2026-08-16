@@ -1,6 +1,6 @@
 /* data.js — Option A · booked hotels + luggage logistics per day. bilingual he/es. */
 window.TRIP_DATA = {
- "v": "bi-optA-5",
+ "v": "bi-optA-7",
  "flights": {
   "airline": "LOT Polish Airlines",
   "passenger": "Ezequiel",
@@ -848,20 +848,43 @@ window.TRIP_DATA = {
     "date": "2026-09-20",
     "dow": "Sun",
     "city": "Tokyo",
-    "title": "יום המשחקים הגדול — Makuhari Messe ו-Akihabara",
-    "summary": "יום שלם של גיימינג, קוספליי ואנימה — מה-Tokyo Game Show הענקי בMakuhari Messe ועד הרחובות הנוצצים של Akihabara בלילה. יום מושלם לחגוג עשורים של אהבה ופיקסלים.",
+    "title": "טוקיו — יום אנימה: Nakano ו-Akihabara",
+    "summary": "יום שלם באנימה: קומות Mandarake ב-Nakano, ארקייד וגאצ׳פון ב-Akihabara, ופיגורות עד מאוחר.",
     "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ נסגר · 18→22, 4 לילות)",
     "events": [
      {
-      "start": "09:30",
-      "end": "16:30",
+      "start": "10:00",
+      "end": "13:00",
       "type": "anime",
-      "area": "Makuhari Messe (Chiba)",
-      "title": "Tokyo Game Show 2026 — יום ציבורי",
-      "desc": "Makuhari Messe הופכת לעולם אחר: מאות משחקים חדשים, אולמות רטרו ואינדי, קוספליי מרהיב ותורים שאפשר לנהל בחוכמה. זה האירוע הגדול ביותר לגיימרים בעולם — ויום שני בשבוע הציבורי הוא חגיגי במיוחד. הגיעו מוקדם עם קו Keiyo מתחנת Tokyo Station — כ-40 דקות.",
-      "tips": "הורידו את האפליקציה הרשמית של TGS מראש למפת הדוכנים. החזיקו בקבוק מים — הנה עצום ומאוורר חלקית בלבד.",
-      "cost": "¥2,500–3,500 לאדם",
-      "booking": "כרטיס ליום ציבורי (ראשון) של TGS 2026 — רכשו מראש בפורטל הכרטיסים הרשמי של Tokyo Game Show",
+      "area": "Nakano",
+      "title": "Nakano Broadway — מכה לאספני אנימה",
+      "desc": "קומות של Mandarake: מנגה יד-שנייה, פיגורות נדירות, משחקי רטרו, שעונים ואספנות. גן עדן לחובבים, פחות תיירי ובמחירים הוגנים.",
+      "tips": "הקומות 2–4 הכי שוות; קחו מזומן. אל תפספסו את דוכני הרטרו-גיים.",
+      "cost": "חינם (קניות לפי טעם)",
+      "booking": "",
+      "highlight": true
+     },
+     {
+      "start": "13:00",
+      "end": "14:00",
+      "type": "food",
+      "area": "Nakano",
+      "title": "צהריים ב-Nakano",
+      "desc": "ראמן או קארי בסמטאות שמסביב ל-Broadway.",
+      "tips": "",
+      "cost": "כ-¥900–1,600 לאדם",
+      "booking": ""
+     },
+     {
+      "start": "14:30",
+      "end": "17:30",
+      "type": "anime",
+      "area": "Akihabara",
+      "title": "Akihabara — ארקייד, גאצ׳פון ופיגורות",
+      "desc": "קומות ארקייד (GiGO/Taito), קירות מכונות גאצ׳פון, חנויות פיגורות ומנגה, ואולי בית קפה נושאתי. הלב הפועם של תרבות האנימה.",
+      "tips": "קחו מזומן ל-UFO catchers ולחנויות הישנות; Super Potato לרטרו-גיים.",
+      "cost": "כ-¥1,000–3,000 לאדם",
+      "booking": "",
       "highlight": true
      },
      {
@@ -869,23 +892,22 @@ window.TRIP_DATA = {
       "end": "19:00",
       "type": "food",
       "area": "Akihabara",
-      "title": "ארוחת ערב בAkihabara",
-      "desc": "אחרי יום ארוך ב-TGS, Akihabara מקבלת אתכם בחמימות ובריח קארי ורמן. בחרו בין מסעדת קארי קלאסית, בית רמן מקומי, או בית קפה תמאטי לחוויה ייחודית. הרחוב הראשי מלא אפשרויות — הסתובבו ותנו לבטן להחליט.",
-      "tips": "בית הקפה התמאטי מחייב לרוב הזמנה מראש — אם לא הזמנתם, צ'ל-ברגר בסגנון רטרו או רמן מקומי הם בחירה מצוינת. הימנעו מאזורי תיירים יקרים ממש מתחת לרכבת.",
-      "cost": "¥1,200–2,500 לאדם",
+      "title": "ארוחת ערב ב-Akihabara",
+      "desc": "קארי יפני קלאסי, ראמן, או בית קפה נושאתי (להזמין מראש).",
+      "tips": "",
+      "cost": "כ-¥1,200–2,500 לאדם",
       "booking": ""
      },
      {
       "start": "19:00",
-      "end": "21:30",
+      "end": "21:00",
       "type": "anime",
       "area": "Akihabara",
-      "title": "Akihabara בלילה — אורות, גאצ'פון ורטרו",
-      "desc": "Akihabara מנצנצת מיוחד אחרי השקיעה: קומות שלמות של מכונות גאצ'פון, ארקייד קלאסי עם UFO-קאצ'רים, חנויות פיגורות ומנגה פתוחות עד מאוחר. זה הזמן לחפש את ה-collectible שתמיד חלמתם עליו ולנצח יחד במשחקי לחימה קלאסיים. הרחוב נהפך לסינמסקופ של ניאון ונוסטלגיה.",
-      "tips": "קחו מעט מזומן — מכונות גאצ'פון ובחנויות ישנות יותר לא תמיד מקבלים כרטיס. הארקייד של Taito Station ושל Sega הם עצירות חובה.",
-      "cost": "¥1,000–3,000 לאדם (תלוי בגאצ'פון וארקייד)",
-      "booking": "",
-      "highlight": true
+      "title": "ערב ב-Akihabara — עוד ארקייד",
+      "desc": "סיבוב אחרון בקומות המשחקים המוארות, ואולי בר קטן לסיום.",
+      "tips": "",
+      "cost": "",
+      "booking": ""
      }
     ]
    },
@@ -893,8 +915,8 @@ window.TRIP_DATA = {
     "date": "2026-09-21",
     "dow": "Mon",
     "city": "Tokyo",
-    "title": "סדנה, מאבקי סומו וחנקו",
-    "summary": "בוקר יוצרים — מגלגלים סושי (או מכינים ממתקי וואגאשי) בסדנה אינטימית לזוגות. אחר הצהריים ממריאים אל ריוגוקו לחוות את טורניר הסומו הגדול, ובערב מסיימים בחנקו-נאבה, מרק החלבונים האגדי של ספורט המאבק.",
+    "title": "טוקיו — סדנה, Harajuku ו-Shibuya",
+    "summary": "בוקר יוצרים בסדנת בישול, אופנת קוואיי ב-Harajuku, רוגע ביער Meiji, וקניות בשיבויה — יום טוקיו אחרון לפני האקונה.",
     "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ נסגר · 18→22, 4 לילות)",
     "events": [
      {
@@ -903,54 +925,65 @@ window.TRIP_DATA = {
       "type": "experience",
       "area": "Tokyo",
       "title": "סדנת בישול זוגית",
-      "desc": "בסדנה קטנה ואינטימית לומדים לגלגל מקיס ויצור ניגירי, או לעצב ממתקי וואגאשי יפניים עתיקי-יומין — כיף אמיתי כשעושים את זה ביחד. המדריך מסביר באנגלית, ומסיום הסדנה יוצאים עם מגש שהכנתם בידיים שלכם.",
-      "tips": "בואו עם תיאבון — חלק מהתוצרים אוכלים במקום. לבשו נוח; סינרים יסופקו.",
-      "cost": "¥5,000–9,000 לאדם",
-      "booking": "כדאי להזמין את סדנת הבישול / וואגאשי מראש, במיוחד בעונת תיירות"
+      "desc": "מגלגלים סושי או מכינים ממתקי וואגאשי לצד שף — כיף לעשות ביחד, ויוצאים עם מגש שהכנתם.",
+      "tips": "בואו רעבים; סינרים מסופקים.",
+      "cost": "כ-¥5,000–9,000 לאדם",
+      "booking": "להזמין מראש"
      },
      {
-      "start": "12:30",
+      "start": "12:00",
       "end": "13:30",
       "type": "food",
-      "area": "Ryogoku",
-      "title": "ארוחת צהריים קלה בריוגוקו",
-      "desc": "מגיעים לשכונת ריוגוקו — מחוז הסומו של טוקיו — ואוכלים ארוחה קלה לפני אחרי הצהריים הכבד. מסעדות קטנות בסמטאות סביב הקוקוגיקאן מציעות רמן, אובה או צ'אה-האן במחירים סבירים.",
-      "tips": "אל תאכלו יותר מדי — ארוחת הערב תהיה עשירה. נסו לאתר בית-אוכל שיש בחלון שלו בובות-סומו.",
-      "cost": "¥800–1,500 לאדם",
+      "area": "Harajuku",
+      "title": "צהריים ב-Harajuku",
+      "desc": "אוכל צבעוני ברחוב Takeshita או ביסטרו נחמד ב-Omotesando.",
+      "tips": "",
+      "cost": "כ-¥1,500–3,000 לאדם",
       "booking": ""
      },
      {
-      "start": "14:00",
-      "end": "18:00",
-      "type": "experience",
-      "area": "Ryogoku Kokugikan",
-      "title": "Aki Basho — טורניר הסומו הגדול",
-      "desc": "Ryogoku Kokugikan הוא הבית הרוחני של הסומו, וה-Aki Basho הוא אחד מששת הטורנירים הגדולים בשנה — רק הבריחמות הגדולות ביותר (מאקואוצ'י) על הדוהיו. האווירה חגיגית, הקהל מתלהב, והמאבקים, שנמשכים לרגעים ספורים, מכילים מאות שנים של טקס וכבוד.",
-      "tips": "הגיעו עשרות דקות מוקדם — הכניסה כוללת קומות תצוגה ומוצרים ייחודיים. קנו את תיבת ה-Masu Box (ריבוע על הרצפה) לחוויה מסורתית.",
-      "cost": "¥3,800–14,800 לאדם",
-      "booking": "כרטיסי Aki Basho — משתחררים ב-8 באוגוסט; מושבים לחגים נגמרים מהר",
+      "start": "13:30",
+      "end": "16:00",
+      "type": "sightseeing",
+      "area": "Harajuku",
+      "title": "Harajuku ו-Meiji Jingu",
+      "desc": "רחוב Takeshita הצבעוני, קרפים, אופנת קוואיי, ואז רוגע ביער המקדש Meiji Jingu.",
+      "tips": "Meiji Jingu חינם ורגוע גם בשעות עמוסות.",
+      "cost": "חינם–¥1,000",
+      "booking": "",
       "highlight": true
      },
      {
-      "start": "18:30",
-      "end": "20:00",
-      "type": "food",
-      "area": "Ryogoku",
-      "title": "ארוחת חנקו-נאבה",
-      "desc": "חנקו-נאבה הוא מרק החלבונים שעל גביו גדלים מאמני הסומו — ציר עמוק עם עוף, טופו, ירקות ואטריות, מוגש בסיר גדול על האש. בריוגוקו יש מסעדות חנקו אותנטיות שחלקן מנוהלות על-ידי סומו-ריקישי לשעבר.",
-      "tips": "הזמינו מראש אם בוחרים במסעדה מוכרת כמו Tomoegata — היא מתמלאת מהר בימי טורניר.",
-      "cost": "¥2,500–4,500 לאדם",
+      "start": "16:30",
+      "end": "18:30",
+      "type": "shopping",
+      "area": "Shibuya",
+      "title": "Shibuya — קניות וצומת מפורסמת",
+      "desc": "חנויות הדגל של Shibuya, מעבר החציה Scramble, ואווירת העיר הגדולה.",
+      "tips": "",
+      "cost": "",
       "booking": ""
      },
      {
-      "start": "20:30",
-      "end": "22:00",
+      "start": "19:00",
+      "end": "21:00",
+      "type": "food",
+      "area": "Shibuya",
+      "title": "ארוחת ערב ב-Shibuya",
+      "desc": "איזאקאיה של מנות קטנות או יאקיטורי לפני הלילה.",
+      "tips": "",
+      "cost": "כ-¥2,500–4,000 לאדם",
+      "booking": ""
+     },
+     {
+      "start": "21:00",
+      "end": "22:30",
       "type": "nightlife",
       "area": "Shinjuku Ni-chome",
-      "title": "לילה אחרון בני-שומה",
-      "desc": "ני-שומה (Shinjuku Ni-chome) הוא אחד ממרכזי הקהילה הגאה הגדולים בעולם — מאות ברים קטנים, חמים ומפורסמים בפתיחות. זה הלילה האחרון בטוקיו לפני המסע לקנות, ולכן סיבוב קצר ומשמח הוא המתכון הנכון.",
-      "tips": "הברים קטנים ורבים — כנסו לכמה. Advocates Bar ו-AiiRO CAFE ידועים בפתיחות לאורחים מחו\"ל.",
-      "cost": "¥1,000–3,000 לאדם",
+      "title": "לילה אחרון בטוקיו — Ni-chome",
+      "desc": "סיבוב ברים ברובע הגאה לפני שממשיכים מחר להאקונה, ואז אורזים תיק-לילה.",
+      "tips": "זכרו: מחר בבוקר שולחים את המזוודה הראשית לקיוטו.",
+      "cost": "",
       "booking": ""
      }
     ]
@@ -1206,8 +1239,8 @@ window.TRIP_DATA = {
      }
     ],
     "logistics": {
-     "he": "בבוקר: מסרו את תיק-הלילה במרכז המידע במגומה עד ~11:30 להעברה לצומאגו (¥1,000/תיק, מחכה ~13:00). כך הולכים את הנקאסֶנדו בלי משא.",
-     "es": "A la mañana: dejen el bolso en la oficina de turismo de Magome antes de las ~11:30 para enviarlo a Tsumago (¥1.000/bolso, llega ~13:00). Así caminan el Nakasendo sin peso."
+     "he": "בבוקר: מסרו את תיק-הלילה במרכז המידע במגומה עד ~11:30 להעברה לצומאגו (¥1,000/תיק). אספו בצומאגו לפני ההמשך לנאגיסו (10 דק׳).",
+     "es": "A la mañana: dejen el bolso en la oficina de turismo de Magome antes de las ~11:30 para enviarlo a Tsumago (¥1.000/bolso). Retírenlo en Tsumago antes de seguir a Nagiso (10 min)."
     }
    },
    {
@@ -1451,7 +1484,7 @@ window.TRIP_DATA = {
     "date": "2026-09-28",
     "dow": "Mon",
     "city": "Osaka",
-    "title": "יום 11 — אוסקה: טירות, אנימה ולילה של אוכל",
+    "title": "אוסקה — טירה, סומו ודוטונבורי",
     "summary": "עוברים לאוסקה — עיר של אנרגיה, ניאון ורחובות שמריחים כמו גן עדן. יום שמשלב היסטוריה מרהיבה, שכונת האנימה האגדית ולילה של אכילה בלתי נשכחת לאורך הדוטונבורי.",
     "hotel": "🏨 Onyado Nono Namba (✓ נסגר) · אונסן טבעי · אסור קעקועים גלויים במרחצאות",
     "events": [
@@ -1501,14 +1534,15 @@ window.TRIP_DATA = {
      },
      {
       "start": "17:00",
-      "end": "19:00",
-      "type": "rest",
-      "area": "Osaka",
-      "title": "הפסקה במלון לפני לילה הגדול",
-      "desc": "שעתיים של מנוחה, מקלחת ולבוש מחדש לפני שיוצאים לכבוש את הדוטונבורי. אוסקה בלילה דורשת אנרגיות — כדאי להגיע רעננים. הזמן הזה הוא מתנה לעצמכם.",
-      "tips": "הכינו מקום בקיבה. ממש. לילה הזה הוא האכילה הגדולה של הטיול.",
-      "cost": "חינם",
-      "booking": ""
+      "end": "18:30",
+      "type": "experience",
+      "area": "Osaka (Namba)",
+      "title": "🥋 מופע סומו — Sumo Hall Hirakuza",
+      "desc": "מופע סומו חוויתי בלב נמבה: מתאבקים לשעבר בהדגמות, הסברים וצילומים — כולל בנטו ומשקה. ✓ נסגר (28.9 17:00).",
+      "tips": "להגיע ~15 דק׳ לפני. אחרי המופע — ישר לדוטונבורי.",
+      "cost": "✓ שולם (₪537.90 לזוג)",
+      "booking": "✓ נסגר — הזמנה PFB554612",
+      "highlight": true
      },
      {
       "start": "19:00",
@@ -1682,7 +1716,11 @@ window.TRIP_DATA = {
       "booking": "",
       "highlight": true
      }
-    ]
+    ],
+    "logistics": {
+     "he": "לוקחים את המזוודות בשינקנסן לטוקיו (הזמינו מושב \"מטען גדול\" אם מזוודה מעל 160 ס\"מ). שליחת takkyubin מאוסקה מגיעה רק למחרת.",
+     "es": "Llevan las valijas en el shinkansen a Tokio (reserven asiento \"equipaje grande\" si la valija supera 160 cm). El envío takkyubin desde Osaka llega recién al día siguiente."
+    }
    },
    {
     "date": "2026-10-01",
@@ -2668,6 +2706,23 @@ window.TRIP_DATA = {
     ]
    },
    {
+    "name": "Nakano Broadway",
+    "city": "Tokyo",
+    "area": "Nakano",
+    "category": "אנימה ואספנות",
+    "why": "קומות של Mandarake — מנגה יד-שנייה, פיגורות נדירות, משחקי רטרו ואספנות. מכה לחובבי אנימה, פחות תיירי ובמחירים הוגנים.",
+    "cost": "חינם (כניסה)",
+    "duration": "2–3 שעות",
+    "booking": "",
+    "tags": [
+     "אנימה",
+     "אספנות",
+     "רטרו",
+     "קניות"
+    ],
+    "highlight": true
+   },
+   {
     "name": "teamLab Borderless — MORI Building Digital Art Museum",
     "city": "טוקיו — Azabudai Hills, Minato",
     "area": "Azabudai Hills (Kamiyacho Station, Hibiya Line — הליכה של 2 דקות)",
@@ -3078,24 +3133,6 @@ window.TRIP_DATA = {
     ]
    },
    {
-    "name": "Tokyo Game Show 2026",
-    "city": "Tokyo",
-    "area": "Makuhari Messe, Chiba",
-    "category": "אנימה וגיימינג",
-    "why": "התערוכה הגדולה ביותר לגיימינג ביפן — שלושה ימים של הדגמות בלעדיות, קוספליי ועולמות אנימה שקמים לחיים. חוויה שתזכרו לעשרות שנים.",
-    "cost": "¥2,500–3,000 לאדם (כרטיס יומי)",
-    "duration": "4–8 שעות",
-    "booking": "הזמינו כרטיסים דרך האתר הרשמי (tgs.cesa.or.jp) מיד עם פתיחת המכירות — נגמרים מהר.",
-    "tags": [
-     "גיימינג",
-     "אנימה",
-     "קוספליי",
-     "חוויה",
-     "חגיגה"
-    ],
-    "highlight": true
-   },
-   {
     "name": "Grand Sumo Aki Basho",
     "city": "Tokyo",
     "area": "Ryogoku Kokugikan",
@@ -3364,20 +3401,43 @@ window.TRIP_DATA = {
     "date": "2026-09-20",
     "dow": "Sun",
     "city": "Tokyo",
-    "title": "El gran día gamer — Makuhari Messe y Akihabara",
-    "summary": "Un día entero de videojuegos, cosplay y anime: desde el monumental Tokyo Game Show en Makuhari Messe hasta las calles brillantes de Akihabara de noche. La excusa perfecta para festejar décadas de amor y píxeles.",
+    "title": "Tokio — día otaku: Nakano y Akihabara",
+    "summary": "Un día entero de anime: los pisos de Mandarake en Nakano, arcades y gachapon en Akihabara, y figuras hasta tarde.",
     "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ reservado · 18→22, 4 noches)",
     "events": [
      {
-      "start": "09:30",
-      "end": "16:30",
+      "start": "10:00",
+      "end": "13:00",
       "type": "anime",
-      "area": "Makuhari Messe (Chiba)",
-      "title": "Tokyo Game Show 2026 — Día público",
-      "desc": "Makuhari Messe se convierte en otro mundo: cientos de juegos nuevos, salones retro e indie, cosplay impresionante y filas que se pueden manejar con estrategia. Es el evento gamer más grande del mundo, y el domingo público es especialmente festivo. Lleguen temprano tomando la línea Keiyo desde Tokyo Station — unos 40 minutos.",
-      "tips": "Bajen la app oficial de TGS antes de ir para tener el mapa de stands. Lleváte una botella de agua — el lugar es enorme y tiene ventilación parcial solamente.",
-      "cost": "¥2.500–3.500 por persona",
-      "booking": "Entrada para el día público (domingo) del TGS 2026 — comprala con anticipación en el portal oficial de Tokyo Game Show",
+      "area": "Nakano",
+      "title": "Nakano Broadway — meca del anime",
+      "desc": "Pisos de Mandarake: manga usada, figuras raras, juegos retro, relojes y coleccionables. Paraíso otaku, menos turístico y con buenos precios.",
+      "tips": "Los pisos 2–4 son los mejores; llevá efectivo. No te pierdas el retro-gaming.",
+      "cost": "Gratis (compras a gusto)",
+      "booking": "",
+      "highlight": true
+     },
+     {
+      "start": "13:00",
+      "end": "14:00",
+      "type": "food",
+      "area": "Nakano",
+      "title": "Almuerzo en Nakano",
+      "desc": "Ramen o curry en las callecitas alrededor del Broadway.",
+      "tips": "",
+      "cost": "¥900–1.600 por persona",
+      "booking": ""
+     },
+     {
+      "start": "14:30",
+      "end": "17:30",
+      "type": "anime",
+      "area": "Akihabara",
+      "title": "Akihabara — arcades, gachapon y figuras",
+      "desc": "Pisos de arcade (GiGO/Taito), paredes de gachapon, tiendas de figuras y manga, y quizás un café temático. El corazón del anime.",
+      "tips": "Efectivo para las UFO catchers y las tiendas viejas; Super Potato para retro-gaming.",
+      "cost": "¥1.000–3.000 por persona",
+      "booking": "",
       "highlight": true
      },
      {
@@ -3386,22 +3446,21 @@ window.TRIP_DATA = {
       "type": "food",
       "area": "Akihabara",
       "title": "Cena en Akihabara",
-      "desc": "Después de un día largo en el TGS, Akihabara los recibe con olor a curry y ramen. Podés elegir entre un clásico restaurante de curry japonés, un local de ramen de barrio, o un café temático para una experiencia única. La calle principal está llena de opciones — caminá y dejá que el estómago decida.",
-      "tips": "Los cafés temáticos suelen pedir reserva — si no reservaste, un buen ramen local o un curry retro son elecciones geniales. Evitá los locales turísticos caros justo debajo de las vías del tren.",
+      "desc": "Curry japonés clásico, ramen o un café temático (reservá antes).",
+      "tips": "",
       "cost": "¥1.200–2.500 por persona",
       "booking": ""
      },
      {
       "start": "19:00",
-      "end": "21:30",
+      "end": "21:00",
       "type": "anime",
       "area": "Akihabara",
-      "title": "Akihabara de noche — luces, gachapon y retro",
-      "desc": "Akihabara brilla especial después del atardecer: pisos enteros de máquinas gachapon, arcades clásicos con UFO-catchers, tiendas de figuras y manga abiertas hasta tarde. Es el momento de buscar ese coleccionable con el que siempre soñaron y ganarse al otro en peleas de Street Fighter clásico. La calle se convierte en un cinemascope de neón y nostalgia.",
-      "tips": "Llevá algo de efectivo — las máquinas gachapon y las tiendas más antiguas no siempre aceptan tarjeta. El arcade de Taito Station y el de Sega son paradas obligadas.",
-      "cost": "¥1.000–3.000 por persona (dependiendo de gachapon y arcade)",
-      "booking": "",
-      "highlight": true
+      "title": "Noche en Akihabara — más arcade",
+      "desc": "Última vuelta por los pisos iluminados de juegos y quizás un bar chico para cerrar.",
+      "tips": "",
+      "cost": "",
+      "booking": ""
      }
     ]
    },
@@ -3409,8 +3468,8 @@ window.TRIP_DATA = {
     "date": "2026-09-21",
     "dow": "Mon",
     "city": "Tokyo",
-    "title": "Taller, Gran Sumo y chanko",
-    "summary": "La mañana arranca con un taller íntimo de sushi o dulces wagashi, perfecto para hacer en pareja. A la tarde, el Ryogoku Kokugikan los recibe para vivir el Aki Basho en vivo, y la noche cierra con el legendario chanko-nabe, el guiso proteico de los luchadores.",
+    "title": "Tokio — taller, Harajuku y Shibuya",
+    "summary": "Mañana creativa en un taller de cocina, moda kawaii en Harajuku, la calma del bosque Meiji y compras en Shibuya — último día en Tokio antes de Hakone.",
     "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ reservado · 18→22, 4 noches)",
     "events": [
      {
@@ -3419,54 +3478,65 @@ window.TRIP_DATA = {
       "type": "experience",
       "area": "Tokyo",
       "title": "Taller de cocina en pareja",
-      "desc": "En un taller íntimo y con grupos chicos, aprenden a armar makis y nigiris, o a moldear dulces japoneses wagashi con técnicas centenarias — una actividad ideal para hacer juntos. El instructor explica en inglés y al final se van con un plato preparado por ustedes mismos.",
-      "tips": "Lleguen con hambre porque van a probar lo que hagan. Ropa cómoda; los delantales están incluidos.",
+      "desc": "Enrollan sushi o preparan dulces wagashi junto a un chef — divertido para hacer juntos, y se van con lo que prepararon.",
+      "tips": "Vengan con hambre; dan delantales.",
       "cost": "¥5.000–9.000 por persona",
-      "booking": "Reservá el taller de cocina / wagashi con anticipación, especialmente en temporada alta"
+      "booking": "Reservar con anticipación"
      },
      {
-      "start": "12:30",
+      "start": "12:00",
       "end": "13:30",
       "type": "food",
-      "area": "Ryogoku",
-      "title": "Almuerzo liviano en Ryogoku",
-      "desc": "Lleguen al barrio de Ryogoku — el corazón del sumo en Tokio — y hagan una parada liviana antes de la gran tarde. Los restaurantitos en las callejuelas cerca del Kokugikan ofrecen ramen, udon o chahan a precios muy accesibles.",
-      "tips": "No coman de más — la cena va a ser contundente. Fijense si algún local tiene muñecos de sumo en la vidriera.",
-      "cost": "¥800–1.500 por persona",
+      "area": "Harajuku",
+      "title": "Almuerzo en Harajuku",
+      "desc": "Comida colorida en Takeshita o un bistró lindo en Omotesando.",
+      "tips": "",
+      "cost": "¥1.500–3.000 por persona",
       "booking": ""
      },
      {
-      "start": "14:00",
-      "end": "18:00",
-      "type": "experience",
-      "area": "Ryogoku Kokugikan",
-      "title": "Aki Basho — Gran Torneo de Sumo",
-      "desc": "El Ryogoku Kokugikan es la casa espiritual del sumo, y el Aki Basho es uno de los seis grandes torneos anuales — solo los luchadores de la división máxima (Makuuchi) suben al dohyo. El ambiente es festivo, el público vibra, y cada combate, que dura apenas segundos, concentra siglos de ritual y honor.",
-      "tips": "Lleguen con tiempo — hay exposiciones y productos exclusivos en las plantas altas. Busquen el Masu Box (asiento cuadrado en el piso) para la experiencia más tradicional.",
-      "cost": "¥3.800–14.800 por persona",
-      "booking": "Entradas Aki Basho — salen a la venta el 8 de agosto; los asientos para días festivos y fines de semana se agotan rápido",
+      "start": "13:30",
+      "end": "16:00",
+      "type": "sightseeing",
+      "area": "Harajuku",
+      "title": "Harajuku y Meiji Jingu",
+      "desc": "La colorida Takeshita, crepes, moda kawaii, y después la calma del bosque del santuario Meiji Jingu.",
+      "tips": "Meiji Jingu es gratis y tranquilo aun en horas pico.",
+      "cost": "Gratis–¥1.000",
+      "booking": "",
       "highlight": true
      },
      {
-      "start": "18:30",
-      "end": "20:00",
-      "type": "food",
-      "area": "Ryogoku",
-      "title": "Cena de chanko-nabe",
-      "desc": "El chanko-nabe es el guiso proteico con el que se alimentan los luchadores de sumo — caldo profundo con pollo, tofu, verduras y fideos, servido en una olla humeante en la mesa. En Ryogoku hay restaurantes auténticos, algunos manejados por ex-rikishi.",
-      "tips": "Si eligen un lugar conocido como Tomoegata, conviene reservar — se llena rápido en días de torneo.",
-      "cost": "¥2.500–4.500 por persona",
+      "start": "16:30",
+      "end": "18:30",
+      "type": "shopping",
+      "area": "Shibuya",
+      "title": "Shibuya — compras y el cruce famoso",
+      "desc": "Las flagship de Shibuya, el cruce Scramble y la vibra de la gran ciudad.",
+      "tips": "",
+      "cost": "",
       "booking": ""
      },
      {
-      "start": "20:30",
-      "end": "22:00",
+      "start": "19:00",
+      "end": "21:00",
+      "type": "food",
+      "area": "Shibuya",
+      "title": "Cena en Shibuya",
+      "desc": "Izakaya de platos chicos o yakitori antes de la noche.",
+      "tips": "",
+      "cost": "¥2.500–4.000 por persona",
+      "booking": ""
+     },
+     {
+      "start": "21:00",
+      "end": "22:30",
       "type": "nightlife",
       "area": "Shinjuku Ni-chome",
-      "title": "Última noche en Ni-chome",
-      "desc": "Shinjuku Ni-chome es uno de los mayores centros de la comunidad gay del mundo — cientos de bares chicos, cálidos y famosos por su apertura. Es la última noche en Tokio antes de partir hacia Hakone, así que una vuelta corta y alegre es la receta perfecta.",
-      "tips": "Los bares son chicos y hay muchos — entren a varios. Advocates Bar y AiiRO CAFE son conocidos por su bienvenida a visitantes de afuera.",
-      "cost": "¥1.000–3.000 por persona",
+      "title": "Última noche en Tokio — Ni-chome",
+      "desc": "Vuelta de bares por el barrio gay antes de seguir mañana a Hakone; después arman el bolso de una noche.",
+      "tips": "Recuerden: mañana envían la valija principal a Kioto.",
+      "cost": "",
       "booking": ""
      }
     ]
@@ -3722,8 +3792,8 @@ window.TRIP_DATA = {
      }
     ],
     "logistics": {
-     "he": "בבוקר: מסרו את תיק-הלילה במרכז המידע במגומה עד ~11:30 להעברה לצומאגו (¥1,000/תיק, מחכה ~13:00). כך הולכים את הנקאסֶנדו בלי משא.",
-     "es": "A la mañana: dejen el bolso en la oficina de turismo de Magome antes de las ~11:30 para enviarlo a Tsumago (¥1.000/bolso, llega ~13:00). Así caminan el Nakasendo sin peso."
+     "he": "בבוקר: מסרו את תיק-הלילה במרכז המידע במגומה עד ~11:30 להעברה לצומאגו (¥1,000/תיק). אספו בצומאגו לפני ההמשך לנאגיסו (10 דק׳).",
+     "es": "A la mañana: dejen el bolso en la oficina de turismo de Magome antes de las ~11:30 para enviarlo a Tsumago (¥1.000/bolso). Retírenlo en Tsumago antes de seguir a Nagiso (10 min)."
     }
    },
    {
@@ -3967,7 +4037,7 @@ window.TRIP_DATA = {
     "date": "2026-09-28",
     "dow": "Mon",
     "city": "Osaka",
-    "title": "Día 11 — Osaka: castillos, anime y una noche de comida épica",
+    "title": "Osaka — castillo, sumo y Dotonbori",
     "summary": "Se mudan a Osaka, la ciudad más sabrosa y ruidosa de Japón. Un día que mezcla historia imponente, el paraíso del anime de Nipponbashi y una noche de atracones gloriosos por el Dotonbori.",
     "hotel": "🏨 Onyado Nono Namba (✓ reservado) · onsen natural · sin tatuajes visibles",
     "events": [
@@ -4017,14 +4087,15 @@ window.TRIP_DATA = {
      },
      {
       "start": "17:00",
-      "end": "19:00",
-      "type": "rest",
-      "area": "Osaka",
-      "title": "Pausa en el hotel antes de la noche grande",
-      "desc": "Dos horas de descanso, ducha y cambio de ropa antes de salir a conquistar el Dotonbori. Osaka de noche pide energía y apetito — lleguen frescos y con el estómago vacío. Este rato es un regalo que se hacen a ustedes mismos.",
-      "tips": "Preparensé físicamente. En serio. Esta noche es la comida más grande del viaje.",
-      "cost": "gratis",
-      "booking": ""
+      "end": "18:30",
+      "type": "experience",
+      "area": "Osaka (Namba)",
+      "title": "🥋 Show de sumo — Sumo Hall Hirakuza",
+      "desc": "Show de sumo en pleno Namba: ex-luchadores en demostraciones, explicaciones y fotos — incluye bento y bebida. ✓ Reservado (28/9 17:00).",
+      "tips": "Llegar ~15 min antes. Después del show — directo a Dotonbori.",
+      "cost": "✓ Pagado (₪537,90 la pareja)",
+      "booking": "✓ Reservado — reserva PFB554612",
+      "highlight": true
      },
      {
       "start": "19:00",
@@ -4198,7 +4269,11 @@ window.TRIP_DATA = {
       "booking": "",
       "highlight": true
      }
-    ]
+    ],
+    "logistics": {
+     "he": "לוקחים את המזוודות בשינקנסן לטוקיו (הזמינו מושב \"מטען גדול\" אם מזוודה מעל 160 ס\"מ). שליחת takkyubin מאוסקה מגיעה רק למחרת.",
+     "es": "Llevan las valijas en el shinkansen a Tokio (reserven asiento \"equipaje grande\" si la valija supera 160 cm). El envío takkyubin desde Osaka llega recién al día siguiente."
+    }
    },
    {
     "date": "2026-10-01",
@@ -5184,6 +5259,23 @@ window.TRIP_DATA = {
     ]
    },
    {
+    "name": "Nakano Broadway",
+    "city": "Tokyo",
+    "area": "Nakano",
+    "category": "Anime y coleccionables",
+    "why": "Pisos de Mandarake — manga usada, figuras raras, juegos retro y coleccionables. Meca otaku, menos turística y con buenos precios.",
+    "cost": "Gratis (entrada)",
+    "duration": "2–3 horas",
+    "booking": "",
+    "tags": [
+     "anime",
+     "coleccionables",
+     "retro",
+     "compras"
+    ],
+    "highlight": true
+   },
+   {
     "name": "teamLab Borderless — MORI Building Digital Art Museum",
     "city": "Tokio — Azabudai Hills, Minato",
     "area": "Azabudai Hills (Kamiyacho Station, Hibiya Line — 2 min caminando)",
@@ -5592,24 +5684,6 @@ window.TRIP_DATA = {
      "lujo extremo",
      "lujo"
     ]
-   },
-   {
-    "name": "Tokyo Game Show 2026",
-    "city": "Tokyo",
-    "area": "Makuhari Messe, Chiba",
-    "category": "Anime y gaming",
-    "why": "La feria de videojuegos más grande de Japón — tres días de demos exclusivas, cosplay y mundos de anime que cobran vida real. Una experiencia que van a recordar por décadas.",
-    "cost": "¥2.500–3.000 por persona (entrada diaria)",
-    "duration": "4–8 horas",
-    "booking": "Reservá las entradas en el sitio oficial (tgs.cesa.or.jp) en cuanto abran las ventas — se agotan rápido.",
-    "tags": [
-     "gaming",
-     "anime",
-     "cosplay",
-     "experiencia",
-     "cumpleaños"
-    ],
-    "highlight": true
    },
    {
     "name": "Grand Sumo Aki Basho",
