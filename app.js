@@ -53,6 +53,7 @@
       bookedSug: 'ההצעה שבחרתם', bookedHotelPh: 'המלון שסגרתי…', bookedRefPh: 'מס\' הזמנה / הערה (אופציונלי)', bookedDone: 'נסגר ✓',
       bookedProgress: (n, m) => `${n}/${m} נסגרו`, bookedStay: 'כניסה → יציאה', bookedCostPh: 'עלות (¥/₪)', bookedCancelLabel: 'ביטול חינם עד',
       bookedTrains: '🚄 רכבות לסגור', bookedEvents: '🎟️ כרטיסים לאירועים', bookedSalesOpen: 'מכירה נפתחת', bookedSalesOpenNow: '✓ פתוח למכירה', bookedBook: 'הזמנה',
+      bookedOpensToday: 'נפתח היום!', bookedOpensTomorrow: 'נפתח מחר', bookedOpensIn: (n) => `נפתח בעוד ${n} ימים`, bookedPax: '2 בוגרים', bookedMapLink: 'מסלול וזמנים',
       hSelected: '✓ נבחר', hChoose: 'בחרו מלון זה', hPerNight: 'ללילה', hPerCouple: 'לזוג · חצי פנסיון', hBook: 'להזמנה ↗', hNights: (n) => n === 1 ? 'לילה אחד' : n + ' לילות', hStayHotel: 'המלון שנבחר', hPickHint: 'בחרו מלון בטאב ״מלונות״',
       mapsDay: '🗺️ מסלול היום במפות', mapsOpen: 'פתח במפות ↗',
       'tab.experiences': 'חוויות', 'experiences.title': '✨ עוד חוויות מיוחדות',
@@ -87,6 +88,7 @@
       bookedSug: 'La opción que elegiste', bookedHotelPh: 'El hotel que reservé…', bookedRefPh: 'N.º de reserva / nota (opcional)', bookedDone: 'Reservado ✓',
       bookedProgress: (n, m) => `${n}/${m} reservados`, bookedStay: 'Entrada → salida', bookedCostPh: 'Costo (¥/₪)', bookedCancelLabel: 'Cancelación gratis hasta',
       bookedTrains: '🚄 Trenes por reservar', bookedEvents: '🎟️ Entradas a eventos', bookedSalesOpen: 'Venta abre', bookedSalesOpenNow: '✓ Ya a la venta', bookedBook: 'Reservar',
+      bookedOpensToday: '¡Abre hoy!', bookedOpensTomorrow: 'Abre mañana', bookedOpensIn: (n) => `Abre en ${n} días`, bookedPax: '2 adultos', bookedMapLink: 'Ruta y horarios',
       hSelected: '✓ Elegido', hChoose: 'Elegir este hotel', hPerNight: 'por noche', hPerCouple: 'por pareja · media pensión', hBook: 'Reservar ↗', hNights: (n) => n === 1 ? '1 noche' : n + ' noches', hStayHotel: 'Hotel elegido', hPickHint: 'Elegí un hotel en la pestaña "Hoteles"',
       mapsDay: '🗺️ Recorrido del día en Maps', mapsOpen: 'Abrir en Maps ↗',
       'tab.experiences': 'Experiencias', 'experiences.title': '✨ Más experiencias especiales',
@@ -120,6 +122,16 @@
   const fmtDate = (iso) => { const p = iso.split('-'); return parseInt(p[2], 10) + '.' + parseInt(p[1], 10); };
   const isoPlusDays = (iso, n) => { const d = new Date(iso + 'T00:00:00'); d.setDate(d.getDate() + n); const p = x => String(x).padStart(2, '0'); return d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()); };
   const salesState = (iso) => { if (!iso) return null; const td = new Date(); td.setHours(0, 0, 0, 0); return new Date(iso + 'T00:00:00') <= td ? 'open' : 'soon'; };
+  // ספירה לאחור לפתיחת המכירה (~10:00 שעון יפן = 01:00 UTC)
+  const salesInfo = (iso) => {
+    if (!iso) return null;
+    const now = new Date();
+    if (now >= new Date(iso + 'T01:00:00Z')) return { state: 'open' };
+    const t0 = new Date(iso + 'T00:00:00'); const today = new Date(); today.setHours(0, 0, 0, 0);
+    return { state: 'soon', days: Math.max(0, Math.round((t0 - today) / 86400000)) };
+  };
+  const transitMapUrl = (from, to) => 'https://www.google.com/maps/dir/?api=1&travelmode=transit&origin=' +
+    encodeURIComponent(from + ', Japan') + '&destination=' + encodeURIComponent(to + ', Japan');
   const sortEvents = (evs) => evs.slice().sort((a, b) => (a.start || '').localeCompare(b.start || ''));
   function toast(msg) { const el = $('#toast'); el.innerHTML = msg; el.classList.add('show'); clearTimeout(toast._t); toast._t = setTimeout(() => el.classList.remove('show'), 1900); }
   const dowT = (d) => (T[lang].dow[d] || d);
@@ -621,28 +633,28 @@
   const bookedFor = (id) => Object.assign({}, BOOKED[id] || {}, loadBooked()[id] || {});
   // רכבות לסגור (מושבים שמורים / כרטיסים) — לפי תאריכי המסלול. salesOpen ≈ חודש לפני הנסיעה.
   const TRAINS = [
-    { id: 't-nex-in', date: '2026-09-18', salesOpen: '2026-08-18', url: 'https://www.jreast.co.jp/multi/en/ticket/',
+    { id: 't-nex-in', date: '2026-09-18', salesOpen: '2026-08-18', from: 'Narita Airport Terminal 1', to: 'Shinjuku Station', url: 'https://www.jreast.co.jp/multi/en/ticket/',
       title: { he: "N'EX: נריטה → שינג'וקו", es: "N'EX: Narita → Shinjuku" },
       note: { he: "כרטיס הלוך-חזור (¥5,000, כולל את החזרה לנריטה ב-2.10) + שמירת מקום.", es: "Boleto ida y vuelta (¥5.000, incluye la vuelta a Narita el 2/10) + asiento reservado." } },
-    { id: 't-romancecar', date: '2026-09-21', salesOpen: '2026-08-21', url: 'https://www.odakyu.jp/english/romancecar/',
+    { id: 't-romancecar', date: '2026-09-21', salesOpen: '2026-08-21', from: 'Shinjuku Station', to: 'Hakone-Yumoto Station', url: 'https://www.odakyu.jp/english/romancecar/',
       title: { he: "Romancecar: שינג'וקו → Hakone-Yumoto", es: "Romancecar: Shinjuku → Hakone-Yumoto" },
       note: { he: "21–22.9 לפי המסלול הסופי · מושב שמור · Silver Week — לשריין מיד.", es: "21–22/9 según el itinerario final · asiento reservado · Silver Week — reservá ya." } },
-    { id: 't-tokaido-kiso', date: '2026-09-23', salesOpen: '2026-08-23', url: 'https://smart-ex.jp/en/',
+    { id: 't-tokaido-kiso', date: '2026-09-23', salesOpen: '2026-08-23', from: 'Odawara Station', to: 'Nagoya Station', url: 'https://smart-ex.jp/en/',
       title: { he: "שינקנסן: Odawara → Nagoya", es: "Shinkansen: Odawara → Nagoya" },
       note: { he: "בדרך לעמק קיסו (קו Tokaido) · SmartEX.", es: "Rumbo al Valle de Kiso (línea Tokaido) · SmartEX." } },
-    { id: 't-shinano-in', date: '2026-09-23', salesOpen: '2026-08-23', url: 'https://www.jr-odekake.net/en/',
+    { id: 't-shinano-in', date: '2026-09-23', salesOpen: '2026-08-23', from: 'Nagoya Station', to: 'Nakatsugawa Station', url: 'https://www.jr-odekake.net/en/',
       title: { he: "Ltd.Exp. Shinano: Nagoya → Nakatsugawa", es: "Ltd.Exp. Shinano: Nagoya → Nakatsugawa" },
       note: { he: "ואז אוטובוס למאגומה (~30 דק').", es: "Y después bus a Magome (~30 min)." } },
-    { id: 't-shinano-out', date: '2026-09-25', salesOpen: '2026-08-25', url: 'https://www.jr-odekake.net/en/',
+    { id: 't-shinano-out', date: '2026-09-25', salesOpen: '2026-08-25', from: 'Nagiso Station', to: 'Nagoya Station', url: 'https://www.jr-odekake.net/en/',
       title: { he: "Ltd.Exp. Shinano: Nagiso → Nagoya", es: "Ltd.Exp. Shinano: Nagiso → Nagoya" },
       note: { he: "מהקיסו חזרה לנגויה (אוטובוס מצומאגו ל-Nagiso).", es: "Del Kiso de vuelta a Nagoya (bus de Tsumago a Nagiso)." } },
-    { id: 't-tokaido-kyoto', date: '2026-09-25', salesOpen: '2026-08-25', url: 'https://smart-ex.jp/en/',
+    { id: 't-tokaido-kyoto', date: '2026-09-25', salesOpen: '2026-08-25', from: 'Nagoya Station', to: 'Kyoto Station', url: 'https://smart-ex.jp/en/',
       title: { he: "שינקנסן: Nagoya → Kyoto", es: "Shinkansen: Nagoya → Kioto" },
       note: { he: "קו Tokaido · SmartEX.", es: "Línea Tokaido · SmartEX." } },
-    { id: 't-osaka-tokyo', date: '2026-09-30', salesOpen: '2026-08-30', url: 'https://smart-ex.jp/en/',
+    { id: 't-osaka-tokyo', date: '2026-09-30', salesOpen: '2026-08-30', from: 'Shin-Osaka Station', to: 'Tokyo Station', url: 'https://smart-ex.jp/en/',
       title: { he: "שינקנסן: Shin-Osaka → Tokyo", es: "Shinkansen: Shin-Osaka → Tokio" },
       note: { he: "חזרה לטוקיו (Nozomi/Hikari) · SmartEX.", es: "Vuelta a Tokio (Nozomi/Hikari) · SmartEX." } },
-    { id: 't-nex-out', date: '2026-10-02', salesOpen: '2026-09-02', url: 'https://www.jreast.co.jp/multi/en/ticket/',
+    { id: 't-nex-out', date: '2026-10-02', salesOpen: '2026-09-02', from: 'Shinjuku Station', to: 'Narita Airport Terminal 1', url: 'https://www.jreast.co.jp/multi/en/ticket/',
       title: { he: "N'EX: שינג'וקו → נריטה", es: "N'EX: Shinjuku → Narita" },
       note: { he: "הרגל השנייה של כרטיס ההלוך-חזור · לשמור מקום לטיסה 12:00.", es: "La segunda pierna del ida y vuelta · reservá asiento para el vuelo de las 12:00." } },
   ];
@@ -720,15 +732,23 @@
     const secCount = (items) => items.filter(i => (loadBooked()[i.id] || {}).done).length + '/' + items.length;
     const itemCard = (item) => {
       const done = !!(loadBooked()[item.id] || {}).done;
-      const ss = salesState(item.salesOpen);
+      const info = salesInfo(item.salesOpen);
+      let chip = '';
+      if (info) {
+        if (info.state === 'open') chip = `<span class="bi-sales open">${t('bookedSalesOpenNow')}</span>`;
+        else { const lbl = info.days <= 0 ? t('bookedOpensToday') : info.days === 1 ? t('bookedOpensTomorrow') : t('bookedOpensIn')(info.days);
+          chip = `<span class="bi-sales soon">🔔 ${lbl} · ${fmtDate(item.salesOpen)}</span>`; }
+      }
+      const mapUrl = (item.from && item.to) ? transitMapUrl(item.from, item.to) : '';
       const card = document.createElement('div'); card.className = 'panel bkitem' + (done ? ' bkdone' : '');
       card.innerHTML =
         `<label class="bk-check bi-check"><input type="checkbox" ${done ? 'checked' : ''}></label>` +
         `<div class="bi-main"><div class="bi-title" dir="auto">${escapeHtml(item.title[lang] || item.title.he)}` +
-        (item.date ? ` <span class="bi-date">${fmtDate(item.date)}</span>` : '') + `</div>` +
+        (item.date ? ` <span class="bi-date">${fmtDate(item.date)}</span>` : '') +
+        (item.from ? ` <span class="bi-pax">👥 ${t('bookedPax')}</span>` : '') + `</div>` +
         (item.note ? `<div class="bi-note" dir="auto">${escapeHtml(item.note[lang] || item.note.he)}</div>` : '') +
-        `<div class="bi-meta">` +
-        (ss ? `<span class="bi-sales ${ss}">${ss === 'open' ? t('bookedSalesOpenNow') : t('bookedSalesOpen') + ' ' + fmtDate(item.salesOpen)}</span>` : '') +
+        `<div class="bi-meta">` + chip +
+        (mapUrl ? `<a class="bi-link ghost" href="${mapUrl}" target="_blank" rel="noopener">🗺️ ${t('bookedMapLink')}</a>` : '') +
         (item.url ? `<a class="bi-link" href="${item.url}" target="_blank" rel="noopener">${t('bookedBook')} ↗</a>` : '') +
         `</div></div>`;
       card.querySelector('input').addEventListener('change', (e) => {
