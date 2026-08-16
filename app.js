@@ -39,6 +39,8 @@
       'foot': 'נבנה באהבה עבורכם ❤️ · תכנון גמיש — שנו, הוסיפו וסמנו ✓ · いってらっしゃい',
       'f.start': 'משעה', 'f.end': 'עד שעה', 'f.title': 'כותרת', 'f.type': 'סוג', 'f.area': 'אזור / מיקום', 'f.desc': 'תיאור', 'f.tips': 'טיפ', 'f.cost': 'עלות', 'f.booking': 'הזמנה מראש', 'f.note': 'הערה אישית שלכם', 'f.delete': '🗑️ מחק', 'f.cancel': 'ביטול', 'f.save': 'שמירה',
       langToggle: '🇦🇷 Español', day: 'יום', night: 'לינה', bday: 'יום ההולדת!', addTitle: 'פעילות חדשה', editTitle: 'עריכת פעילות',
+      langWarnMsg: '✏️ שינויים ביומן (סימוני ✓, שעות, הוספה/מחיקה ועריכות) נשמרים בנפרד לעברית ולספרדית. הטאב "לסגור" (מלונות/רכבות/כרטיסים) כן משותף בין השפות.',
+      langWarnShort: '💡 השינוי נשמר בגרסה העברית בלבד — לא יופיע בספרדית.',
       highlight: 'מומלץ במיוחד', empty: 'אין עדיין פעילויות ליום הזה — הוסיפו אחת ↓',
       saved: 'נשמר ✓', deleted: 'נמחק', resetDone: 'אופס לתכנון המקורי', backedup: 'גובה ✓', restored: 'שוחזר ✓', badfile: 'קובץ לא תקין', verChanged: 'התכנון עודכן לגרסה חדשה ✨',
       confirmDel: (t) => 'למחוק את "' + t + '"?', confirmReset: 'לאפס את כל השינויים ולחזור לתכנון המקורי?',
@@ -71,6 +73,8 @@
       'foot': 'Hecho con amor para ustedes ❤️ · plan flexible — cambiá, agregá y marcá ✓ · いってらっしゃい',
       'f.start': 'Desde', 'f.end': 'Hasta', 'f.title': 'Título', 'f.type': 'Tipo', 'f.area': 'Zona / lugar', 'f.desc': 'Descripción', 'f.tips': 'Tip', 'f.cost': 'Costo', 'f.booking': 'Reserva previa', 'f.note': 'Nota personal', 'f.delete': '🗑️ Borrar', 'f.cancel': 'Cancelar', 'f.save': 'Guardar',
       langToggle: '🇮🇱 עברית', day: 'Día', night: 'Alojamiento', bday: '¡el cumpleaños!', addTitle: 'Nueva actividad', editTitle: 'Editar actividad',
+      langWarnMsg: '✏️ Los cambios del itinerario (✓, horarios, agregar/borrar y ediciones) se guardan por separado en hebreo y español. La pestaña "Por reservar" (hoteles/trenes/entradas) sí se comparte entre idiomas.',
+      langWarnShort: '💡 El cambio se guarda solo en la versión en español — no aparece en hebreo.',
       highlight: 'Muy recomendado', empty: 'Todavía no hay actividades este día — agregá una ↓',
       saved: 'Guardado ✓', deleted: 'Borrado', resetDone: 'Plan reiniciado', backedup: 'Respaldo listo ✓', restored: 'Restaurado ✓', badfile: 'Archivo inválido', verChanged: 'El plan se actualizó ✨',
       confirmDel: (t) => '¿Borrar "' + t + '"?', confirmReset: '¿Reiniciar todos los cambios y volver al plan original?',
@@ -119,6 +123,19 @@
   const sortEvents = (evs) => evs.slice().sort((a, b) => (a.start || '').localeCompare(b.start || ''));
   function toast(msg) { const el = $('#toast'); el.innerHTML = msg; el.classList.add('show'); clearTimeout(toast._t); toast._t = setTimeout(() => el.classList.remove('show'), 1900); }
   const dowT = (d) => (T[lang].dow[d] || d);
+
+  // ── אזהרת שפות: עריכות ביומן נשמרות בנפרד לעברית/ספרדית ──
+  const LS_LANGWARN = 'japanTrip.langWarn.dismissed';
+  let _langWarned = false;
+  function renderLangWarn() {
+    const el = $('#langWarn'); if (!el) return;
+    el.hidden = localStorage.getItem(LS_LANGWARN) === '1';
+    const txt = $('#langWarnTxt'); if (txt) txt.textContent = t('langWarnMsg');
+  }
+  function warnLangOnce() {
+    if (_langWarned || localStorage.getItem(LS_LANGWARN) === '1') return;
+    _langWarned = true; toast(t('langWarnShort'));
+  }
 
   // ---------- day rail ----------
   function renderRail() {
@@ -173,13 +190,13 @@
       `<label class="ev-check"><input type="checkbox" ${e.done ? 'checked' : ''}></label></div>`;
     wrap.querySelector('[data-act=edit]').onclick = () => openModal(curDay, e.id);
     wrap.querySelector('[data-act=del]').onclick = () => { if (confirm(t('confirmDel')(e.title || ''))) deleteEvent(curDay, e.id); };
-    wrap.querySelector('.ev-check input').onchange = (ev) => { e.done = ev.target.checked; save(); renderDay(); };
+    wrap.querySelector('.ev-check input').onchange = (ev) => { e.done = ev.target.checked; save(); renderDay(); warnLangOnce(); };
     return wrap;
   }
 
   // ---------- CRUD ----------
   const findEvent = (day, id) => (state.days[day].events || []).find(x => x.id === id);
-  function deleteEvent(day, id) { state.days[day].events = state.days[day].events.filter(x => x.id !== id); save(); renderDay(); toast(t('deleted')); }
+  function deleteEvent(day, id) { state.days[day].events = state.days[day].events.filter(x => x.id !== id); save(); renderDay(); toast(t('deleted')); warnLangOnce(); }
   function typeOptions(sel) { return TYPES.map(ty => `<option value="${ty}"${ty === sel ? ' selected' : ''}>${TYPE_ICON[ty]} ${T[lang].types[ty]}</option>`).join(''); }
   function openModal(day, id) {
     editing = { day, id };
@@ -197,7 +214,7 @@
     const { day, id } = editing; if (day === null) return;
     const dta = { start: $('#f-start').value || '00:00', end: $('#f-end').value, title: $('#f-title').value.trim() || '—', type: $('#f-type').value, area: $('#f-area').value.trim(), desc: $('#f-desc').value.trim(), tips: $('#f-tips').value.trim(), cost: $('#f-cost').value.trim(), booking: $('#f-booking').value.trim(), note: $('#f-note').value.trim() };
     if (id) Object.assign(findEvent(day, id), dta); else state.days[day].events.push({ id: uid(), done: false, ...dta });
-    save(); closeModal(); renderDay(); toast(t('saved'));
+    save(); closeModal(); renderDay(); toast(t('saved')); warnLangOnce();
   }
 
   // ---------- markdown ----------
@@ -865,7 +882,7 @@
     lang = lang === 'he' ? 'es' : 'he'; localStorage.setItem(LS_LANG, lang);
     applyI18n(); initState();
     curDay = Math.min(curDay, state.days.length - 1); if (curDay < 0) curDay = 0;
-    renderCountdown(); renderRail(); renderDay();
+    renderCountdown(); renderRail(); renderDay(); renderLangWarn();
     const cur = VIEWS.find(v => !$('#view-' + v).classList.contains('hidden')) || 'itinerary';
     showView(cur);
   }
@@ -882,13 +899,14 @@
     $('#resetBtn').onclick = () => { if (confirm(t('confirmReset'))) { localStorage.removeItem(tripKey(lang)); initState(); curDay = 0; renderRail(); renderDay(); toast(t('resetDone')); } };
     $('#exportBtn').onclick = exportJSON; $('#importBtn').onclick = () => $('#importFile').click();
     $('#importFile').onchange = e => { if (e.target.files[0]) importJSON(e.target.files[0]); };
+    $('#langWarnX').onclick = () => { localStorage.setItem(LS_LANGWARN, '1'); $('#langWarn').hidden = true; };
     let petalsOn = loadPrefs().petals !== false; buildPetals(petalsOn);
     $('#petalsBtn').onclick = () => { petalsOn = !petalsOn; buildPetals(petalsOn); const p = loadPrefs(); p.petals = petalsOn; localStorage.setItem(LS_PREFS, JSON.stringify(p)); };
   }
   function boot() {
     applyI18n(); initState();
     const prefs = loadPrefs(); curDay = Math.min(prefs.day || 0, state.days.length - 1); if (curDay < 0) curDay = 0;
-    bind(); renderCountdown(); renderRail(); renderDay();
+    bind(); renderCountdown(); renderRail(); renderDay(); renderLangWarn();
     if (prefs.view && prefs.view !== 'itinerary') showView(prefs.view);
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();

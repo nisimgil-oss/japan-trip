@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@500;700&family=Shippori+Mincho:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="styles.css?v=20260816a">
+<link rel="stylesheet" href="styles.css?v=20260816b">
 </head>
 <body>
 <div class="petals" id="petals" aria-hidden="true"></div>
@@ -53,6 +53,7 @@
 
   <!-- ITINERARY -->
   <section id="view-itinerary">
+    <div class="lang-warn" id="langWarn" hidden><span class="lw-txt" id="langWarnTxt"></span><button class="lw-x" id="langWarnX" title="OK">✕</button></div>
     <div class="day-rail" id="dayRail"></div>
     <div class="day-head" id="dayHead"></div>
     <div class="timeline" id="timeline"><div class="tl-line"></div></div>
@@ -174,7 +175,7 @@
 <div class="toast" id="toast"></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="data.js?v=20260816a"></script>
-<script src="app.js?v=20260816a"></script>
+<script src="data.js?v=20260816b"></script>
+<script src="app.js?v=20260816b"></script>
 </body>
 </html>

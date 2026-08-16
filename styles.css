@@ -304,6 +304,13 @@ a{color:var(--gold-soft)}
 .section-h{font-family:var(--serif);color:#fff;font-size:clamp(20px,4vw,27px);margin:18px 2px 4px;
   padding-bottom:8px;border-bottom:1px solid var(--indigo-line)}
 
+/* ---------- language-difference warning ---------- */
+.lang-warn{display:flex;align-items:flex-start;gap:10px;background:rgba(212,175,95,.14);border:1px solid var(--gold);
+  color:var(--cream);border-radius:12px;padding:9px 13px;margin:0 2px 12px;font-size:13px;line-height:1.55}
+.lw-txt{flex:1}
+.lw-x{background:none;border:none;color:var(--cream-dim);font-size:15px;cursor:pointer;padding:2px 7px;border-radius:6px;flex:0 0 auto}
+.lw-x:hover{color:#fff;background:rgba(255,255,255,.1)}
+
 /* ---------- trip map ---------- */
 .map-hint{color:var(--cream-faint);font-size:13px;margin:6px 2px 10px}
 #tripMap{height:min(72vh,640px);width:100%;border-radius:var(--radius);border:1px solid var(--indigo-line);
