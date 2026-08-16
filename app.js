@@ -53,7 +53,7 @@
       bookedSug: 'ההצעה שבחרתם', bookedHotelPh: 'המלון שסגרתי…', bookedRefPh: 'מס\' הזמנה / הערה (אופציונלי)', bookedDone: 'נסגר ✓',
       bookedProgress: (n, m) => `${n}/${m} נסגרו`, bookedStay: 'כניסה → יציאה', bookedCostPh: 'עלות (¥/₪)', bookedCancelLabel: 'ביטול חינם עד',
       bookedTrains: '🚄 רכבות לסגור', bookedEvents: '🎟️ כרטיסים לאירועים', bookedSalesOpen: 'מכירה נפתחת', bookedSalesOpenNow: '✓ פתוח למכירה', bookedBook: 'הזמנה',
-      bookedOpensToday: 'נפתח היום!', bookedOpensTomorrow: 'נפתח מחר', bookedOpensIn: (n) => `נפתח בעוד ${n} ימים`, bookedPax: '2 בוגרים', bookedMapLink: 'מסלול וזמנים', bookedItemNotePh: 'הערה חופשית…', bookedSalesTime: 'ב-10:00 שעון יפן',
+      bookedOpensToday: 'נפתח היום!', bookedOpensTomorrow: 'נפתח מחר', bookedOpensIn: (n) => `נפתח בעוד ${n} ימים`, bookedPax: '2 בוגרים', bookedMapLink: 'מסלול וזמנים', bookedItemNotePh: 'הערה חופשית…', bookedSalesTime: 'ב-10:00 שעון יפן (04:00 בישראל)', bookedManage: 'פתח ב-Booking.com',
       hSelected: '✓ נבחר', hChoose: 'בחרו מלון זה', hPerNight: 'ללילה', hPerCouple: 'לזוג · חצי פנסיון', hBook: 'להזמנה ↗', hNights: (n) => n === 1 ? 'לילה אחד' : n + ' לילות', hStayHotel: 'המלון שנבחר', hPickHint: 'בחרו מלון בטאב ״מלונות״',
       mapsDay: '🗺️ מסלול היום במפות', mapsOpen: 'פתח במפות ↗',
       'tab.experiences': 'חוויות', 'experiences.title': '✨ עוד חוויות מיוחדות',
@@ -88,7 +88,7 @@
       bookedSug: 'La opción que elegiste', bookedHotelPh: 'El hotel que reservé…', bookedRefPh: 'N.º de reserva / nota (opcional)', bookedDone: 'Reservado ✓',
       bookedProgress: (n, m) => `${n}/${m} reservados`, bookedStay: 'Entrada → salida', bookedCostPh: 'Costo (¥/₪)', bookedCancelLabel: 'Cancelación gratis hasta',
       bookedTrains: '🚄 Trenes por reservar', bookedEvents: '🎟️ Entradas a eventos', bookedSalesOpen: 'Venta abre', bookedSalesOpenNow: '✓ Ya a la venta', bookedBook: 'Reservar',
-      bookedOpensToday: '¡Abre hoy!', bookedOpensTomorrow: 'Abre mañana', bookedOpensIn: (n) => `Abre en ${n} días`, bookedPax: '2 adultos', bookedMapLink: 'Ruta y horarios', bookedItemNotePh: 'Nota libre…', bookedSalesTime: 'a las 10:00 hora Japón',
+      bookedOpensToday: '¡Abre hoy!', bookedOpensTomorrow: 'Abre mañana', bookedOpensIn: (n) => `Abre en ${n} días`, bookedPax: '2 adultos', bookedMapLink: 'Ruta y horarios', bookedItemNotePh: 'Nota libre…', bookedSalesTime: 'a las 10:00 hora Japón (22:00 del día anterior en Argentina)', bookedManage: 'Abrir en Booking.com',
       hSelected: '✓ Elegido', hChoose: 'Elegir este hotel', hPerNight: 'por noche', hPerCouple: 'por pareja · media pensión', hBook: 'Reservar ↗', hNights: (n) => n === 1 ? '1 noche' : n + ' noches', hStayHotel: 'Hotel elegido', hPickHint: 'Elegí un hotel en la pestaña "Hoteles"',
       mapsDay: '🗺️ Recorrido del día en Maps', mapsOpen: 'Abrir en Maps ↗',
       'tab.experiences': 'Experiencias', 'experiences.title': '✨ Más experiencias especiales',
@@ -720,7 +720,8 @@
         `<input class="bk-cost" type="text" placeholder="${escapeAttr(t('bookedCostPh'))}" value="${escapeAttr(rec.cost || '')}">` +
         `<label class="bk-datewrap"><span>${t('bookedCancelLabel')}</span><input class="bk-cancel-in" type="date" value="${escapeAttr(rec.cancelBy || '')}"></label>` +
         `<input class="bk-ref" type="text" placeholder="${escapeAttr(t('bookedRefPh'))}" value="${escapeAttr(rec.ref || '')}">` +
-        `<label class="bk-check"><input type="checkbox" ${rec.done ? 'checked' : ''}> ${t('bookedDone')}</label></div>`;
+        `<label class="bk-check"><input type="checkbox" ${rec.done ? 'checked' : ''}> ${t('bookedDone')}</label></div>` +
+        (rec.done ? `<a class="bk-manage" href="https://www.booking.com/mytrips" target="_blank" rel="noopener">📄 ${t('bookedManage')} ↗</a>` : '');
       const persist = () => {
         const b = loadBooked();
         b[s.id] = Object.assign({}, BOOKED[s.id] || {}, {

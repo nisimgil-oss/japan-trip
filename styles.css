@@ -387,6 +387,8 @@ a{color:var(--gold-soft)}
 .bi-note-in{margin-top:9px;width:100%;padding:8px 11px;border:1px solid var(--paper-edge);border-radius:9px;font-family:inherit;font-size:13px;background:#fff;color:var(--ink);box-sizing:border-box}
 .bi-note-in:focus{outline:none;border-color:var(--gold)}
 .dh-logistics{margin-top:7px;font-size:13px;color:#f4e3b8;background:rgba(212,175,95,.14);border:1px solid var(--gold);border-radius:9px;padding:7px 11px;line-height:1.55}
+.bk-manage{display:inline-block;margin-top:10px;font-size:12.5px;text-decoration:none;color:#fff;background:#0a5ad6;padding:5px 12px;border-radius:999px;font-family:var(--serif)}
+.bk-manage:hover{background:#084bb0}
 .bkitem.bkdone{border-inline-start:5px solid #3c9a5f}
 .bkitem.bkdone .bi-title{text-decoration:line-through;opacity:.72}
 
