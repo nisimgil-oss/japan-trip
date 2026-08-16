@@ -632,6 +632,10 @@
       note: { he: '🎂 לילה יום ההולדת בנאגיסו (~10 דק׳ מצומאגו) — וילה עם מטבח, בלי ארוחות. לתכנן ארוחת יום הולדת (מסעדה בצומאגו/נאגיסו או בישול).', es: '🎂 Noche del cumpleaños en Nagiso (~10 min de Tsumago) — villa con cocina, sin comidas. Planear la cena de cumpleaños.' } },
     'osaka': { hotel: 'Onyado Nono Namba (御宿 野乃 なんば)', ref: 'אישור 5969.435.283 · PIN 2411', cost: '¥51,699 · ~₪962', checkin: '2026-09-28', checkout: '2026-09-30', cancelBy: '2026-09-26', done: true,
       note: { he: 'אונסן טבעי בבית המלון · ⚠️ אסורה כניסה עם קעקועים גלויים למרחצאות (מדבקות כיסוי).', es: 'Onsen natural en el hotel · ⚠️ prohibido tatuajes visibles en los baños (usar stickers).' } },
+    'kyoto': { hotel: 'Candeo Hotels Kyoto Karasuma Rokkaku', ref: 'אישור 5969.429.196 · PIN 6293', cost: '¥74,593 · ~US$469', checkin: '2026-09-25', checkout: '2026-09-28', cancelBy: '2026-09-24', done: true,
+      note: { he: 'מלון 4★ במרכז קיוטו (Karasuma/Rokkaku) · בלי ארוחות · עבודות בנייה בצד מזרח 08:30–18:00 (ייתכן רעש).', es: 'Hotel 4★ en el centro de Kioto (Karasuma/Rokkaku) · sin comidas · obras en el lado este 08:30–18:00 (posible ruido).' } },
+    'tokyo-return': { hotel: 'Tokyu Stay Shinjuku', ref: 'אישור 5484.171.579 · PIN 3023', cost: '¥77,648 · ~US$488', checkin: '2026-09-30', checkout: '2026-10-02', cancelBy: '2026-09-28', done: true,
+      note: { he: "שינג'וקו · חדר Superior עם מכונת כביסה-מייבש ו-Netflix · תשלום מלא בצ'ק-אין · אין ניקיון יומי (עד 6 לילות).", es: 'Shinjuku · habitación Superior con lavarropas-secarropas y Netflix · pago total al check-in · sin limpieza diaria (hasta 6 noches).' } },
   };
   const bookedFor = (id) => Object.assign({}, BOOKED[id] || {}, loadBooked()[id] || {});
   // רכבות לסגור (מושבים שמורים / כרטיסים) — לפי תאריכי המסלול. salesOpen ≈ חודש לפני הנסיעה.

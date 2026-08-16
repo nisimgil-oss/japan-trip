@@ -1,6 +1,6 @@
 /* data.js — Option A · booked hotels + luggage logistics per day. bilingual he/es. */
 window.TRIP_DATA = {
- "v": "bi-optA-4",
+ "v": "bi-optA-5",
  "flights": {
   "airline": "LOT Polish Airlines",
   "passenger": "Ezequiel",
@@ -1216,7 +1216,7 @@ window.TRIP_DATA = {
     "city": "Kyoto",
     "title": "מצומאגו לקיוטו: עיר הגיישות מחכה",
     "summary": "יום של מעברים יפים — הפרידה מהכפר השקט של צומאגו ועלייה לקיוטו הדרמטית. הערב: פנסי גיון ושדרות פונטוצ'ו שמחממות את הלב.",
-    "hotel": "🏨 קיוטו — עדיין לא סגור",
+    "hotel": "🏨 Candeo Hotels Kyoto Karasuma Rokkaku (✓ נסגר · 25→28) · מרכז קיוטו, 4★",
     "events": [
      {
       "start": "08:00",
@@ -1286,7 +1286,7 @@ window.TRIP_DATA = {
     "city": "Kyoto",
     "title": "שחר בין הטוריי — יום 9",
     "summary": "יום שלם של קיוטו במיטבה: עלייה לפנות בוקר בין אלפי שערי הטוריי הארגמניים של פושימי אינארי, ואחר כך יערות הבמבוק ואמהות הוואבי-סאבי של אראשיימה — והכל נחתם בטיול טעימות בשוק ניישיקי ובארוחת שחיטה מפנקת לשניים.",
-    "hotel": "🏨 קיוטו — עדיין לא סגור",
+    "hotel": "🏨 Candeo Hotels Kyoto Karasuma Rokkaku (✓ נסגר · 25→28) · מרכז קיוטו, 4★",
     "events": [
      {
       "start": "06:45",
@@ -1375,7 +1375,7 @@ window.TRIP_DATA = {
     "city": "Kyoto",
     "title": "יום 10 — ציפוי זהב וטקס תה בקיוטו",
     "summary": "יום שלם של קיוטו בצורתה הטהורה ביותר: ביקור בביתן הזהוב עם שחר, טיול בין אבני המדרכה ההיסטוריות של הייגשימה, סדנת תה וקימונו לשניים, וערב מלכותי עם מאיקו לצד עריסת קייסקי.",
-    "hotel": "🏨 קיוטו — עדיין לא סגור",
+    "hotel": "🏨 Candeo Hotels Kyoto Karasuma Rokkaku (✓ נסגר · 25→28) · מרכז קיוטו, 4★",
     "events": [
      {
       "start": "08:30",
@@ -1623,7 +1623,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "יום 13 — שוב טוקיו: יאנאקה הרומנטית",
     "summary": "נפרדים מאוסקה בארוחת בוקר אחרונה ויוצאים בשינקנסן לטוקיו. אחר הצהריים — שוטטות רכה בין חתולים ומקדשים ביאנאקה, ואחריה קניות בשיבויה לפני ארוחת ערב מפנקת באביסו.",
-    "hotel": "🏨 טוקיו (חזרה) — עדיין לא סגור",
+    "hotel": "🏨 Tokyu Stay Shinjuku (✓ נסגר · 30→2.10) · שינג'וקו · מכונת כביסה בחדר",
     "events": [
      {
       "start": "09:00",
@@ -1690,7 +1690,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "יום 14 — גיבלי, אור ופרידה בטוקיו",
     "summary": "יום הפרידה הגדול: בוקר של פלאים בגיבלי, אחר צהריים שקוע בתוך יצירת האמנות של teamLab Planets, וערב חגיגי עם אומאקאסה שמסכם עשרים שנה ויום הולדת 40 עם כוסית פרידה ב-Ni-chome. טוקיו נפרדת מכם בגדול.",
-    "hotel": "🏨 טוקיו (חזרה) — עדיין לא סגור",
+    "hotel": "🏨 Tokyu Stay Shinjuku (✓ נסגר · 30→2.10) · שינג'וקו · מכונת כביסה בחדר",
     "events": [
      {
       "start": "09:30",
@@ -3732,7 +3732,7 @@ window.TRIP_DATA = {
     "city": "Kyoto",
     "title": "De Tsumago a Kioto: la ciudad de las geishas te espera",
     "summary": "Un día de tránsitos hermosos — la despedida del pueblito sereno de Tsumago y la llegada dramática a Kioto. Por la noche: los faroles de Gion y el callejón de Pontocho que te abrazan el alma.",
-    "hotel": "🏨 Kioto — sin reservar aún",
+    "hotel": "🏨 Candeo Hotels Kyoto Karasuma Rokkaku (✓ reservado · 25→28) · centro de Kioto, 4★",
     "events": [
      {
       "start": "08:00",
@@ -3802,7 +3802,7 @@ window.TRIP_DATA = {
     "city": "Kyoto",
     "title": "Amanecer entre torii — Día 9",
     "summary": "Un día entero con lo mejor de Kioto: subida al alba entre miles de torii bermejos en Fushimi Inari, el bosque de bambú y la serenidad zen de Arashiyama, y el cierre perfecto con un recorrido de degustación por el Mercado Nishiki y una cena de sukiyaki para los dos.",
-    "hotel": "🏨 Kioto — sin reservar aún",
+    "hotel": "🏨 Candeo Hotels Kyoto Karasuma Rokkaku (✓ reservado · 25→28) · centro de Kioto, 4★",
     "events": [
      {
       "start": "06:45",
@@ -3891,7 +3891,7 @@ window.TRIP_DATA = {
     "city": "Kyoto",
     "title": "Día 10 — Oro, Kimono y Maiko en Kioto",
     "summary": "Un día completo en la Kioto más auténtica: el pabellón dorado al amanecer, las calles empedradas de Higashiyama, una ceremonia del té en kimono para los dos, y una noche de magia con una Maiko y kaiseki refinado.",
-    "hotel": "🏨 Kioto — sin reservar aún",
+    "hotel": "🏨 Candeo Hotels Kyoto Karasuma Rokkaku (✓ reservado · 25→28) · centro de Kioto, 4★",
     "events": [
      {
       "start": "08:30",
@@ -4139,7 +4139,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "Día 13 — De vuelta a Tokyo: Yanaka eterna",
     "summary": "Se despiden de Osaka con un desayuno tranquilo y toman el Shinkansen de regreso a Tokyo. La tarde los espera con los gatos y el encanto retro de Yanaka, compras en Shibuya y una cena íntima en Ebisu para celebrar.",
-    "hotel": "🏨 Tokio (regreso) — sin reservar aún",
+    "hotel": "🏨 Tokyu Stay Shinjuku (✓ reservado · 30→2.10) · Shinjuku · lavarropas en la habitación",
     "events": [
      {
       "start": "09:00",
@@ -4206,7 +4206,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "Día 14 — Ghibli, luz y despedida en Tokio",
     "summary": "El día más emotivo del viaje: una mañana de fantasía en el Museo Ghibli, una tarde sumergidos en el arte digital de teamLab Planets y una cena de celebración con omakase que cierra con broche de oro el cumpleaños 40 de Ezequiel. Tokio se despide a lo grande.",
-    "hotel": "🏨 Tokio (regreso) — sin reservar aún",
+    "hotel": "🏨 Tokyu Stay Shinjuku (✓ reservado · 30→2.10) · Shinjuku · lavarropas en la habitación",
     "events": [
      {
       "start": "09:30",
