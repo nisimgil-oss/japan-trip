@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@500;700&family=Shippori+Mincho:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="styles.css?v=20260816n">
+<link rel="stylesheet" href="styles.css?v=20260816o">
 </head>
 <body>
 <div class="petals" id="petals" aria-hidden="true"></div>
@@ -39,8 +39,6 @@
   <button class="tab active" data-view="itinerary"><span>🗓️</span> <span data-i18n="tab.itinerary">היומן</span></button>
   <button class="tab" data-view="overview"><span>🗾</span> <span data-i18n="tab.overview">מבט־על</span></button>
   <button class="tab" data-view="map"><span>🗺️</span> <span data-i18n="tab.map">מפה</span></button>
-  <button class="tab" data-view="compare"><span>⚖️</span> <span data-i18n="tab.compare">השוואה</span></button>
-  <button class="tab" data-view="hotels"><span>🏨</span> <span data-i18n="tab.hotels">מלונות</span></button>
   <button class="tab" data-view="booked"><span>🔖</span> <span data-i18n="tab.booked">לסגור</span></button>
   <button class="tab" data-view="guide"><span>📖</span> <span data-i18n="tab.guide">מדריך</span></button>
   <button class="tab" data-view="food"><span>🍜</span> <span data-i18n="tab.food">אוכל</span></button>
@@ -94,22 +92,11 @@
     <div id="bookedBody"></div>
   </section>
 
-  <!-- COMPARE — itinerary vs. Excel -->
-  <section id="view-compare" class="hidden">
-    <div id="compareBody"></div>
-  </section>
-
   <!-- EXPERIENCES -->
   <section id="view-experiences" class="hidden">
     <h2 class="section-h" data-i18n="experiences.title">✨ עוד חוויות מיוחדות</h2>
     <div class="rest-filter" id="expFilter"></div>
     <div class="rest-grid" id="expBody"></div>
-  </section>
-
-  <!-- HOTELS -->
-  <section id="view-hotels" class="hidden">
-    <h2 class="section-h" data-i18n="hotels.title">🏨 בחירת מלונות</h2>
-    <div id="hotelsBody"></div>
   </section>
 
   <!-- GUIDE -->
@@ -175,7 +162,7 @@
 <div class="toast" id="toast"></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="data.js?v=20260816n"></script>
-<script src="app.js?v=20260816n"></script>
+<script src="data.js?v=20260816o"></script>
+<script src="app.js?v=20260816o"></script>
 </body>
 </html>

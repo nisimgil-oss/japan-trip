@@ -165,16 +165,14 @@
   // ---------- day view ----------
   function renderDay() {
     const d = state.days[curDay]; if (!d) return;
-    const stay = stayForDate(d.date); const selOpt = selectedOption(stay);
-    const hotelName = selOpt ? selOpt.name : (d.hotel || '');
-    const hotelArea = selOpt && selOpt[lang] && selOpt[lang].area ? ' · ' + selOpt[lang].area : '';
+    const hotelName = d.hotel || '';
     const hotelUrl = hotelName ? placeUrl(hotelName + ' ' + cityLatin(d.city)) : null;
     const routeUrl = dayRouteUrl(d);
     $('#dayHead').innerHTML =
       `<div><div class="dh-city">${cityEmoji(d.city)} ${escapeHtml(d.city || '')} · ${dowT(d.dow)} ${fmtDate(d.date)}${d.birthday ? ' · 🎂 ' + t('bday') : ''}</div>` +
       `<div class="dh-title">${escapeHtml(d.title || '')}</div>` +
       (d.summary ? `<div class="dh-sum">${escapeHtml(d.summary)}</div>` : '') +
-      (hotelName ? `<div class="dh-hotel">🛏️ ${t('night')}: <b dir="auto">${escapeHtml(hotelName)}</b>${escapeHtml(hotelArea)}${hotelUrl ? ` <a class="dh-maplink" href="${hotelUrl}" target="_blank" rel="noopener">🗺️</a>` : ''}${selOpt ? ` <span class="dh-picked">${t('hSelected')}</span>` : ''}</div>` : '') +
+      (hotelName ? `<div class="dh-hotel">🛏️ ${t('night')}: <b dir="auto">${escapeHtml(hotelName)}</b>${hotelUrl ? ` <a class="dh-maplink" href="${hotelUrl}" target="_blank" rel="noopener">🗺️</a>` : ''}</div>` : '') +
       (d.logistics ? `<div class="dh-logistics" dir="auto">📦 ${escapeHtml(d.logistics[lang] || d.logistics.he)}</div>` : '') +
       (routeUrl ? `<div class="dh-actions"><a class="btn btn-ghost btn-sm" href="${routeUrl}" target="_blank" rel="noopener">${t('mapsDay')}</a></div>` : '') +
       `</div>`;
@@ -867,13 +865,12 @@
   }
 
   // ---------- views ----------
-  const VIEWS = ['itinerary', 'overview', 'map', 'compare', 'hotels', 'booked', 'guide', 'food', 'restaurants', 'experiences', 'prep'];
+  const VIEWS = ['itinerary', 'overview', 'map', 'booked', 'guide', 'food', 'restaurants', 'experiences', 'prep'];
   function showView(v) {
+    if (!VIEWS.includes(v)) v = 'itinerary';
     VIEWS.forEach(x => $('#view-' + x).classList.toggle('hidden', x !== v));
     $$('.tab').forEach(tb => tb.classList.toggle('active', tb.dataset.view === v));
     if (v === 'map') renderMap();
-    if (v === 'compare') renderCompare();
-    if (v === 'hotels') renderHotels();
     if (v === 'booked') renderBooked();
     if (v === 'overview') renderOverview();
     if (v === 'guide') renderGuide();
