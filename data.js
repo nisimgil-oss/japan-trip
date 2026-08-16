@@ -1,6 +1,6 @@
 /* data.js — Option A · booked hotels + luggage logistics per day. bilingual he/es. */
 window.TRIP_DATA = {
- "v": "bi-optA-3",
+ "v": "bi-optA-4",
  "flights": {
   "airline": "LOT Polish Airlines",
   "passenger": "Ezequiel",
@@ -716,7 +716,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "יום 1 — נאון בטוקיו",
     "summary": "נחיתה בנריטה, רכבת-הבזק לשינג'וקו, וצלילה ישירה לחום הרחובות המוארים. הלילה הראשון ביפן נחגג עם שיפוד ועשן ואורות שלא נכבים.",
-    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ נסגר · 18→21)",
+    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ נסגר · 18→22, 4 לילות)",
     "events": [
      {
       "start": "18:25",
@@ -771,7 +771,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "טוקיו מהשוק ועד השמיים",
     "summary": "יום של חושים וצבעים: שוק טסוקיג'י, מקדש אסאקוסה, שקיעה אגדית מ-Shibuya Sky ולילה רועש ב-Ni-chome. ביום הזה טוקיו מתגלה בשלמותה.",
-    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ נסגר · 18→21)",
+    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ נסגר · 18→22, 4 לילות)",
     "events": [
      {
       "start": "08:00",
@@ -850,7 +850,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "יום המשחקים הגדול — Makuhari Messe ו-Akihabara",
     "summary": "יום שלם של גיימינג, קוספליי ואנימה — מה-Tokyo Game Show הענקי בMakuhari Messe ועד הרחובות הנוצצים של Akihabara בלילה. יום מושלם לחגוג עשורים של אהבה ופיקסלים.",
-    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ נסגר · 18→21)",
+    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ נסגר · 18→22, 4 לילות)",
     "events": [
      {
       "start": "09:30",
@@ -895,7 +895,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "סדנה, מאבקי סומו וחנקו",
     "summary": "בוקר יוצרים — מגלגלים סושי (או מכינים ממתקי וואגאשי) בסדנה אינטימית לזוגות. אחר הצהריים ממריאים אל ריוגוקו לחוות את טורניר הסומו הגדול, ובערב מסיימים בחנקו-נאבה, מרק החלבונים האגדי של ספורט המאבק.",
-    "hotel": "🏨 HOTEL AMANEK Shinjuku (✓ לילות 18–20) — הלילה (21.9) דורש הארכת ההזמנה ללילה 4 (צ'ק-אאוט 22.9) · חינם עד 10.9",
+    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ נסגר · 18→22, 4 לילות)",
     "events": [
      {
       "start": "09:30",
@@ -3232,7 +3232,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "Día 1 — Neón en Tokio",
     "summary": "Aterrizaje en Narita, el expreso hasta Shinjuku y una inmersión directa en el calor de las calles iluminadas. La primera noche en Japón se celebra con brochetas, humo y luces que no se apagan.",
-    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ reservado · 18→21)",
+    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ reservado · 18→22, 4 noches)",
     "events": [
      {
       "start": "18:25",
@@ -3287,7 +3287,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "Tokio del mercado al cielo",
     "summary": "Un día de sabores y alturas: el mercado de Tsukiji, el templo de Asakusa, una puesta de sol épica desde Shibuya Sky y la noche más intensa de Ni-chome. Así se presenta Tokio de verdad.",
-    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ reservado · 18→21)",
+    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ reservado · 18→22, 4 noches)",
     "events": [
      {
       "start": "08:00",
@@ -3366,7 +3366,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "El gran día gamer — Makuhari Messe y Akihabara",
     "summary": "Un día entero de videojuegos, cosplay y anime: desde el monumental Tokyo Game Show en Makuhari Messe hasta las calles brillantes de Akihabara de noche. La excusa perfecta para festejar décadas de amor y píxeles.",
-    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ reservado · 18→21)",
+    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ reservado · 18→22, 4 noches)",
     "events": [
      {
       "start": "09:30",
@@ -3411,7 +3411,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "Taller, Gran Sumo y chanko",
     "summary": "La mañana arranca con un taller íntimo de sushi o dulces wagashi, perfecto para hacer en pareja. A la tarde, el Ryogoku Kokugikan los recibe para vivir el Aki Basho en vivo, y la noche cierra con el legendario chanko-nabe, el guiso proteico de los luchadores.",
-    "hotel": "🏨 HOTEL AMANEK Shinjuku (✓ noches 18–20) — esta noche (21/9) requiere extender la reserva a 4 noches (check-out 22/9) · gratis hasta 10/9",
+    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ reservado · 18→22, 4 noches)",
     "events": [
      {
       "start": "09:30",

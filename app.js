@@ -622,8 +622,8 @@
   const saveBooked = (b) => localStorage.setItem(LS_BOOKED, JSON.stringify(b));
   // מלונות שכבר נסגרו (מתוך אישורי ההזמנה) — baseline נשמר בקוד, ניתן לעריכה מקומית
   const BOOKED = {
-    'tokyo-shinjuku': { hotel: 'HOTEL AMANEK Shinjuku Kabukicho', ref: 'אישור 5909.616.873 · PIN 7682', cost: '¥114,759 · ~₪2,136', checkin: '2026-09-18', checkout: '2026-09-21', cancelBy: '2026-09-10', done: true,
-      note: { he: '⚠️ הזמנה ל-3 לילות (יציאה 21.9). המסלול דורש 4 לילות (יציאה 22.9, לפני האקונה) — יש להאריך לילה נוסף · שינוי/ביטול חינם עד 10.9.', es: '⚠️ Reserva de 3 noches (salida 21/9). El itinerario necesita 4 noches (salida 22/9, antes de Hakone) — hay que extender una noche · cambio gratis hasta 10/9.' } },
+    'tokyo-shinjuku': { hotel: 'HOTEL AMANEK Shinjuku Kabukicho', ref: 'אישור 6689.941.344 · PIN 0592', cost: '¥153,115 · ~₪2,845', checkin: '2026-09-18', checkout: '2026-09-22', cancelBy: '2026-09-10', done: true,
+      note: { he: '✓ 4 לילות (18→22) · Standard Queen · ביטול חינם עד 10.9.', es: '✓ 4 noches (18→22) · Standard Queen · cancelación gratis hasta 10/9.' } },
     'hakone-gora': { hotel: 'Hakone Onsen Ryokan Yaeikan', ref: '', cost: '', checkin: '2026-09-22', checkout: '2026-09-23', cancelBy: '', done: true,
       note: { he: 'אונסן ריוקאן בהאקונה · מלאו עלות ותאריך ביטול מאישור ההזמנה.', es: 'Onsen ryokan en Hakone · completá costo y fecha de cancelación desde la confirmación.' } },
     'magome-kiso': { hotel: 'Yanagiya Iri (柳屋入) — Magome', ref: 'אישור 6345.413.867 · PIN 8707', cost: '¥53,600 · ~₪998', checkin: '2026-09-23', checkout: '2026-09-24', cancelBy: '2026-09-17', done: true,
