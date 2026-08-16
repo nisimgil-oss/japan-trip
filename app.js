@@ -189,6 +189,7 @@
     const city = (state.days[curDay] || {}).city;
     const meta = [];
     if (e.highlight) meta.push(`<span class="chip hl">${t('highlight')}</span>`);
+    if (e.dur) meta.push('<span class="chip dur">🚆 ' + escapeHtml(e.dur) + '</span>');
     if (e.cost) meta.push('<span class="chip cost">' + escapeHtml(e.cost) + '</span>');
     if (e.booking) meta.push('<span class="chip book">' + escapeHtml(e.booking) + '</span>');
     wrap.innerHTML =
@@ -620,21 +621,22 @@
   const LS_BOOKED = 'japanTrip.booked.v1';
   const loadBooked = () => safeParse(localStorage.getItem(LS_BOOKED)) || {};
   const saveBooked = (b) => localStorage.setItem(LS_BOOKED, JSON.stringify(b));
-  // מלונות שכבר נסגרו (מתוך אישורי ההזמנה) — baseline נשמר בקוד, ניתן לעריכה מקומית
+  // מלונות שכבר נסגרו — baseline בקוד. מספרי אישור/PIN לא נשמרים כאן (repo ציבורי):
+  // מזינים אותם בשדה "אסמכתא" בטאב "לסגור" → נשמרים מקומית בדפדפן בלבד (localStorage).
   const BOOKED = {
-    'tokyo-shinjuku': { hotel: 'HOTEL AMANEK Shinjuku Kabukicho', ref: 'אישור 6689.941.344 · PIN 0592', cost: '¥153,115 · ~₪2,845', checkin: '2026-09-18', checkout: '2026-09-22', cancelBy: '2026-09-10', done: true,
+    'tokyo-shinjuku': { hotel: 'HOTEL AMANEK Shinjuku Kabukicho', ref: '', cost: '¥153,115 · ~₪2,845', checkin: '2026-09-18', checkout: '2026-09-22', cancelBy: '2026-09-10', done: true,
       note: { he: '✓ 4 לילות (18→22) · Standard Queen · ביטול חינם עד 10.9.', es: '✓ 4 noches (18→22) · Standard Queen · cancelación gratis hasta 10/9.' } },
     'hakone-gora': { hotel: 'Hakone Onsen Ryokan Yaeikan', ref: '', cost: '', checkin: '2026-09-22', checkout: '2026-09-23', cancelBy: '', done: true,
       note: { he: 'אונסן ריוקאן בהאקונה · מלאו עלות ותאריך ביטול מאישור ההזמנה.', es: 'Onsen ryokan en Hakone · completá costo y fecha de cancelación desde la confirmación.' } },
-    'magome-kiso': { hotel: 'Yanagiya Iri (柳屋入) — Magome', ref: 'אישור 6345.413.867 · PIN 8707', cost: '¥53,600 · ~₪998', checkin: '2026-09-23', checkout: '2026-09-24', cancelBy: '2026-09-17', done: true,
+    'magome-kiso': { hotel: 'Yanagiya Iri (柳屋入) — Magome', ref: '', cost: '¥53,600 · ~₪998', checkin: '2026-09-23', checkout: '2026-09-24', cancelBy: '2026-09-17', done: true,
       note: { he: '🎂 לילה יום ההולדת ה-40 במאגומה — וילה עם מטבח, בלי ארוחות. לתכנן ארוחת יום הולדת (מסעדה במאגומה או בישול בווילה).', es: '🎂 Noche del cumpleaños 40 en Magome — villa con cocina, sin comidas. Planear la cena de cumpleaños (restaurante en Magome o cocinar en la villa).' } },
-    'tsumago-kiso': { hotel: 'AKARI — Nagiso (ליד צומאגו)', ref: 'אישור 6492.468.419 · PIN 9018', cost: '¥44,000 · ~₪819', checkin: '2026-09-24', checkout: '2026-09-25', cancelBy: '2026-09-18', done: true,
+    'tsumago-kiso': { hotel: 'AKARI — Nagiso (ליד צומאגו)', ref: '', cost: '¥44,000 · ~₪819', checkin: '2026-09-24', checkout: '2026-09-25', cancelBy: '2026-09-18', done: true,
       note: { he: 'לילה בנאגיסו (~10 דק׳ מצומאגו) — וילה עם מטבח, בלי ארוחות. ארוחת ערב במסעדה מקומית או בישול בווילה.', es: 'Noche en Nagiso (~10 min de Tsumago) — villa con cocina, sin comidas. Cena en un restaurante local o cocinar en la villa.' } },
-    'osaka': { hotel: 'Onyado Nono Namba (御宿 野乃 なんば)', ref: 'אישור 5969.435.283 · PIN 2411', cost: '¥51,699 · ~₪962', checkin: '2026-09-28', checkout: '2026-09-30', cancelBy: '2026-09-26', done: true,
+    'osaka': { hotel: 'Onyado Nono Namba (御宿 野乃 なんば)', ref: '', cost: '¥51,699 · ~₪962', checkin: '2026-09-28', checkout: '2026-09-30', cancelBy: '2026-09-26', done: true,
       note: { he: 'אונסן טבעי בבית המלון · ⚠️ אסורה כניסה עם קעקועים גלויים למרחצאות (מדבקות כיסוי).', es: 'Onsen natural en el hotel · ⚠️ prohibido tatuajes visibles en los baños (usar stickers).' } },
-    'kyoto': { hotel: 'Candeo Hotels Kyoto Karasuma Rokkaku', ref: 'אישור 5969.429.196 · PIN 6293', cost: '¥74,593 · ~US$469', checkin: '2026-09-25', checkout: '2026-09-28', cancelBy: '2026-09-24', done: true,
+    'kyoto': { hotel: 'Candeo Hotels Kyoto Karasuma Rokkaku', ref: '', cost: '¥74,593 · ~US$469', checkin: '2026-09-25', checkout: '2026-09-28', cancelBy: '2026-09-24', done: true,
       note: { he: 'מלון 4★ במרכז קיוטו (Karasuma/Rokkaku) · בלי ארוחות · עבודות בנייה בצד מזרח 08:30–18:00 (ייתכן רעש).', es: 'Hotel 4★ en el centro de Kioto (Karasuma/Rokkaku) · sin comidas · obras en el lado este 08:30–18:00 (posible ruido).' } },
-    'tokyo-return': { hotel: 'Tokyu Stay Shinjuku', ref: 'אישור 5484.171.579 · PIN 3023', cost: '¥77,648 · ~US$488', checkin: '2026-09-30', checkout: '2026-10-02', cancelBy: '2026-09-28', done: true,
+    'tokyo-return': { hotel: 'Tokyu Stay Shinjuku', ref: '', cost: '¥77,648 · ~US$488', checkin: '2026-09-30', checkout: '2026-10-02', cancelBy: '2026-09-28', done: true,
       note: { he: "שינג'וקו · חדר Superior עם מכונת כביסה-מייבש ו-Netflix · תשלום מלא בצ'ק-אין · אין ניקיון יומי (עד 6 לילות).", es: 'Shinjuku · habitación Superior con lavarropas-secarropas y Netflix · pago total al check-in · sin limpieza diaria (hasta 6 noches).' } },
   };
   const bookedFor = (id) => Object.assign({}, BOOKED[id] || {}, loadBooked()[id] || {});

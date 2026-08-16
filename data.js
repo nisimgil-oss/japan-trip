@@ -1,6 +1,6 @@
 /* data.js — Option A · booked hotels + luggage logistics per day. bilingual he/es. */
 window.TRIP_DATA = {
- "v": "bi-optA-9",
+ "v": "bi-optA-10",
  "flights": {
   "airline": "LOT Polish Airlines",
   "passenger": "Ezequiel",
@@ -738,7 +738,8 @@ window.TRIP_DATA = {
       "desc": "הנריטה אקספרס (N'EX) לוקח כ-80 דקות ומשחרר אתכם ישירות בשינג'וקו — זרקו את המזוודות בחדר ותצאו.",
       "tips": "קנו כרטיס הלוך-חזור (round-trip) — הוא כולל גם את החזרה לנריטה ביום 15 וחוסך כסף.",
       "cost": "¥3,000–4,000 לאדם",
-      "booking": "כרטיס הלוך-חזור N'EX — כדאי לרכוש מראש אונליין או בדלפק JR בנמל התעופה"
+      "booking": "כרטיס הלוך-חזור N'EX — כדאי לרכוש מראש אונליין או בדלפק JR בנמל התעופה",
+      "dur": "~80 דק׳"
      },
      {
       "start": "21:15",
@@ -1016,7 +1017,8 @@ window.TRIP_DATA = {
       "desc": "רכבת הרומנסקאר של אודקיו מגיעה מסינג'וקו ישירות אל Hakone-Yumoto עם חלונות פנורמיים ונוף מדהים. קנו גם את Hakone Free Pass שיחסוך לכם כסף בכל התחבורה המקומית ביום הזה ולמחרת.",
       "tips": "הרומנסקאר מתמלאת מהר בשבוע הכסף — הזמינו מושבות באתר Odakyu (odakyu.jp) מספר ימים מראש. בחרו מושבות בכיוון A לנוף הטוב ביותר.",
       "cost": "¥2,470 רומנסקאר + ¥6,500–7,000 Hakone Free Pass לאדם",
-      "booking": "הזמנת מושבות ברומנסקאר + Hakone Free Pass — הזמינו מוקדם, שבוע הכסף עמוס"
+      "booking": "הזמנת מושבות ברומנסקאר + Hakone Free Pass — הזמינו מוקדם, שבוע הכסף עמוס",
+      "dur": "~85 דק׳"
      },
      {
       "start": "12:00",
@@ -1095,10 +1097,11 @@ window.TRIP_DATA = {
       "type": "transport",
       "area": "Hakone עד Nagoya עד Magome",
       "title": "מסע לעמק קיסו — האקונה → מגומה",
-      "desc": "האקונה→אודוארה→שינקנסן→נגויה→נקאטסוגאווה→אוטובוס למגומה; ירידה נופית אל יפן הכפרית.",
+      "desc": "האקונה→אודוארה (~15 דק׳) · שינקנסן אודוארה→נגויה (~1:05) · Ltd.Exp שינאנו נגויה→נקאטסוגאווה (~50 דק׳) · אוטובוס→מגומה (~30 דק׳). ירידה נופית אל יפן הכפרית.",
       "tips": "המזוודה הראשית כבר בדרך לקיוטו — נוסעים עם תיק-לילה.",
       "cost": "",
-      "booking": ""
+      "booking": "",
+      "dur": "~3–3.5 שעות · 4 קטעים"
      },
      {
       "start": "13:00",
@@ -1278,10 +1281,11 @@ window.TRIP_DATA = {
       "type": "transport",
       "area": "Tsumago עד Kyoto",
       "title": "מסע חזרה: צומאגו → קיוטו",
-      "desc": "אוטובוס מצומאגו לנאגיסו → רכבת JR לנגויה → שינקנסן מהיר לקיוטו. המזוודות שנשלחו מראש כבר מחכות בחדר.",
+      "desc": "אוטובוס צומאגו→נאגיסו (~10 דק׳) · Ltd.Exp שינאנו נאגיסו→נגויה (~1:20) · שינקנסן נגויה→קיוטו (~35 דק׳). המזוודות שנשלחו מראש כבר מחכות בחדר.",
       "tips": "הזמינו מראש ב-SmartEX — המושבים ליד החלון בצד ימין בדרך לקיוטו נותנים נוף לאורך המסע.",
       "cost": "¥4,000–6,000 לאדם",
-      "booking": "שינקנסן נגויה → קיוטו — הזמינו ב-SmartEX"
+      "booking": "שינקנסן נגויה → קיוטו — הזמינו ב-SmartEX",
+      "dur": "~2.5 שעות · 3 קטעים"
      },
      {
       "start": "14:00",
@@ -1507,7 +1511,8 @@ window.TRIP_DATA = {
       "desc": "רכבת מהירה ונוחה לאוסקה — המרחק קטן והמעבר חלק. שולחים מזוודות קדימה למלון ומנצלים את שעות הבוקר ביעילות. הצ'ק-אין מחכה בסיום.",
       "tips": "שירות Forward Luggage דרך ה-Airporter או הקונסיירז' של המלון — מסירים עומס מהכתפיים ומהראש. ורייקאן ורוב מלונות ה-Business מקבלים מזוודות גם בבוקר.",
       "cost": "¥1,400–1,800 לאדם (Shinkansen/JR Express)",
-      "booking": ""
+      "booking": "",
+      "dur": "~15–30 דק׳"
      },
      {
       "start": "11:00",
@@ -1589,7 +1594,8 @@ window.TRIP_DATA = {
       "desc": "מסע נוח ברכבת מאוסקה ישירות לנארה — כ-45 דקות בקינטטסו או JR. הבוקר רענן ויפה, מושלם לצאת בשעה טובה.",
       "tips": "קחו את קינטטסו מ-Namba — מהיר יותר ונוח יותר מ-JR. שמרו את כרטיסי ה-JR Pass ל-JR בלבד.",
       "cost": "¥1,000–1,200 לאדם",
-      "booking": ""
+      "booking": "",
+      "dur": "~45 דק׳"
      },
      {
       "start": "09:30",
@@ -1689,7 +1695,8 @@ window.TRIP_DATA = {
       "desc": "רכבת Nozomi מ-Shin-Osaka מגיעה לטוקיו תוך כ-2.5 שעות — גלו את היופי שבמעבר הזריז בין שתי מטרופולינים. תיהנו מהנוף המשתנה ומכוס קפה מהקיוסק.",
       "tips": "שמרו את מזוודות הצד בתא העליון ואת הגב למטה — הנסיעה חלקה ונוחה לעבודה או לנמנום.",
       "cost": "כלול ב-JR Pass",
-      "booking": "הזמינו מושבים Shin-Osaka → Tokyo ב-SmartEX מראש"
+      "booking": "הזמינו מושבים Shin-Osaka → Tokyo ב-SmartEX מראש",
+      "dur": "~2:30 שעות"
      },
      {
       "start": "14:00",
@@ -1828,7 +1835,8 @@ window.TRIP_DATA = {
       "desc": "ה-Narita Express מ-Shinjuku מגיע ל-Narita T1 בכ-90 דקות — ישיבות שמורות, מרווח לכבודה גדולה, ונוף עירוני שמפנה מקום לשדות. זה הסיום שיפן ראויה לו: מסודר, בזמן, ויפה.",
       "tips": "רכשו כרטיסי N'EX מראש דרך אתר JR-East או אוטומטים בתחנה; קחו רכבת שמגיעה לפחות שלוש שעות לפני הטיסה.",
       "cost": "¥3,070 לאדם (Shinjuku→Narita T1)",
-      "booking": ""
+      "booking": "",
+      "dur": "~90 דק׳"
      },
      {
       "start": "09:00",
@@ -3301,7 +3309,8 @@ window.TRIP_DATA = {
       "desc": "El Narita Express tarda unos 80 minutos y te deja directo en Shinjuku — dejás las valijas en el cuarto y ya estás afuera.",
       "tips": "Comprá el ticket de ida y vuelta (round-trip): incluye el regreso a Narita el día 15 y sale más barato que dos boletos separados.",
       "cost": "¥3.000–4.000 por persona",
-      "booking": "Ticket de ida y vuelta N'EX — conviene comprarlo online o en el mostrador JR del aeropuerto"
+      "booking": "Ticket de ida y vuelta N'EX — conviene comprarlo online o en el mostrador JR del aeropuerto",
+      "dur": "~80 min"
      },
      {
       "start": "21:15",
@@ -3579,7 +3588,8 @@ window.TRIP_DATA = {
       "desc": "El Romancecar de Odakyu sale de Shinjuku directo a Hakone-Yumoto con ventanales panorámicos y paisajes increíbles. Comprá también el Hakone Free Pass que te ahorra plata en todo el transporte local de hoy y mañana.",
       "tips": "El Romancecar se llena rápido en la Semana de Plata — reservá los asientos en el sitio de Odakyu (odakyu.jp) con varios días de anticipación. Elegí asientos del lado A para la mejor vista.",
       "cost": "¥2.470 Romancecar + ¥6.500–7.000 Hakone Free Pass por persona",
-      "booking": "Reservar asientos en el Romancecar + Hakone Free Pass — reservar con anticipación, la Semana de Plata está muy concurrida"
+      "booking": "Reservar asientos en el Romancecar + Hakone Free Pass — reservar con anticipación, la Semana de Plata está muy concurrida",
+      "dur": "~85 min"
      },
      {
       "start": "12:00",
@@ -3658,10 +3668,11 @@ window.TRIP_DATA = {
       "type": "transport",
       "area": "Hakone עד Nagoya עד Magome",
       "title": "Viaje al Valle de Kiso — Hakone → Magome",
-      "desc": "Hakone→Odawara→shinkansen→Nagoya→Nakatsugawa→bus a Magome; un descenso escénico al Japón rural.",
+      "desc": "Hakone→Odawara (~15 min) · shinkansen Odawara→Nagoya (~1:05) · Ltd.Exp Shinano Nagoya→Nakatsugawa (~50 min) · bus→Magome (~30 min). Un descenso escénico al Japón rural.",
       "tips": "La valija principal ya va camino a Kioto — viajan con bolso de una noche.",
       "cost": "",
-      "booking": ""
+      "booking": "",
+      "dur": "~3–3,5 h · 4 tramos"
      },
      {
       "start": "13:00",
@@ -3841,10 +3852,11 @@ window.TRIP_DATA = {
       "type": "transport",
       "area": "Tsumago עד Kyoto",
       "title": "Viaje de regreso: Tsumago → Kioto",
-      "desc": "Colectivo de Tsumago a Nagiso → JR hasta Nagoya → Shinkansen directo a Kioto. Las valijas que mandaron adelantadas ya los esperan en el cuarto del hotel.",
+      "desc": "Bus Tsumago→Nagiso (~10 min) · Ltd.Exp Shinano Nagiso→Nagoya (~1:20) · shinkansen Nagoya→Kioto (~35 min). Las valijas que mandaron adelantadas ya los esperan en el cuarto.",
       "tips": "Reservá con anticipación en SmartEX — los asientos del lado derecho de la ventana tienen vistas espectaculares durante el trayecto hacia Kioto.",
       "cost": "¥4.000–6.000 por persona",
-      "booking": "Shinkansen Nagoya → Kioto — reservá en SmartEX"
+      "booking": "Shinkansen Nagoya → Kioto — reservá en SmartEX",
+      "dur": "~2,5 h · 3 tramos"
      },
      {
       "start": "14:00",
@@ -4070,7 +4082,8 @@ window.TRIP_DATA = {
       "desc": "Un tren rápido y cómodo conecta Kyoto con Osaka en menos de 30 minutos. Mandan las valijas adelante al hotel y llegan livianos. El check-in los espera al terminar la mañana.",
       "tips": "Usá el servicio de Forward Luggage desde el hotel de Kyoto o a través del Airporter — las valijas aparecen mágicamente en la habitación de Osaka. La mayoría de los hoteles las reciben desde temprano.",
       "cost": "¥1.400–1.800 por persona (Shinkansen/JR Express)",
-      "booking": ""
+      "booking": "",
+      "dur": "~15–30 min"
      },
      {
       "start": "11:00",
@@ -4152,7 +4165,8 @@ window.TRIP_DATA = {
       "desc": "Un trayecto cómodo en tren desde Osaka directo a Nara — unos 45 minutos en el Kintetsu o JR. La mañana fresca es perfecta para salir temprano y aprovechar el día.",
       "tips": "Tomá el Kintetsu desde Namba — es más rápido y directo que el JR. Guardá el JR Pass para los tramos que lo justifiquen.",
       "cost": "¥1.000–1.200 por persona",
-      "booking": ""
+      "booking": "",
+      "dur": "~45 min"
      },
      {
       "start": "09:30",
@@ -4252,7 +4266,8 @@ window.TRIP_DATA = {
       "desc": "El Nozomi desde Shin-Osaka llega a Tokyo en unas 2,5 horas — una transición casi mágica entre dos metrópolis gigantes. Disfrutá el paisaje que va cambiando y tomate un café del kiosco del andén.",
       "tips": "Las valijas grandes van en el compartimento superior y las mochilas abajo — el viaje es suave, ideal para descansar o leer.",
       "cost": "Incluido en el JR Pass",
-      "booking": "Reservá los asientos Shin-Osaka → Tokyo por SmartEX con anticipación"
+      "booking": "Reservá los asientos Shin-Osaka → Tokyo por SmartEX con anticipación",
+      "dur": "~2:30 h"
      },
      {
       "start": "14:00",
@@ -4391,7 +4406,8 @@ window.TRIP_DATA = {
       "desc": "El Narita Express desde Shinjuku llega a Narita T1 en unos 90 minutos: asientos reservados, espacio para el equipaje grande y el paisaje urbano que va cediendo paso a los campos. El cierre que Japón se merece: ordenado, puntual y hermoso.",
       "tips": "Comprá los pasajes del N'EX con anticipación en el sitio de JR-East o en los autoservicios de la estación; tomá un tren que llegue al menos tres horas antes del vuelo.",
       "cost": "¥3.070 por persona (Shinjuku→Narita T1)",
-      "booking": ""
+      "booking": "",
+      "dur": "~90 min"
      },
      {
       "start": "09:00",

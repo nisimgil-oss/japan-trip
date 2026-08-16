@@ -193,6 +193,7 @@ a{color:var(--gold-soft)}
 .chip.book::before{content:"🎫 "}
 .chip.hl{background:var(--gold);color:#3a2c07;border:none;font-weight:700}
 .chip.hl::before{content:"★ "}
+.chip.dur{background:#dbe7f3;color:#1f4a6e;border-color:#b7cfe6;font-weight:600}
 .ev-actions{position:absolute;top:8px;inset-inline-end:8px;display:flex;gap:4px;opacity:0;transition:.15s}
 .ev-card:hover .ev-actions,.ev-card:focus-within .ev-actions{opacity:1}
 .iconbtn{border:1px solid var(--paper-edge);background:#fff8ea;color:var(--ink-soft);border-radius:8px;
