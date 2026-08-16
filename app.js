@@ -38,7 +38,7 @@
       'overview.title': '🗾 כל הטיול במבט אחד', 'restaurants.title': '🍣 מקומות מיוחדים לאכול',
       'foot': 'נבנה באהבה עבורכם ❤️ · תכנון גמיש — שנו, הוסיפו וסמנו ✓ · いってらっしゃい',
       'f.start': 'משעה', 'f.end': 'עד שעה', 'f.title': 'כותרת', 'f.type': 'סוג', 'f.area': 'אזור / מיקום', 'f.desc': 'תיאור', 'f.tips': 'טיפ', 'f.cost': 'עלות', 'f.booking': 'הזמנה מראש', 'f.note': 'הערה אישית שלכם', 'f.delete': '🗑️ מחק', 'f.cancel': 'ביטול', 'f.save': 'שמירה',
-      langToggle: '🇦🇷 Español', day: 'יום', night: 'לינה', bday: 'יום ההולדת!', addTitle: 'פעילות חדשה', editTitle: 'עריכת פעילות',
+      langToggle: '🇦🇷 Español', day: 'יום', night: 'לינה', bday: 'יום ההולדת!', tipsLabel: 'טיפים ליום', addTitle: 'פעילות חדשה', editTitle: 'עריכת פעילות',
       langWarnMsg: '✏️ שינויים ביומן (סימוני ✓, שעות, הוספה/מחיקה ועריכות) נשמרים בנפרד לעברית ולספרדית. הטאב "לסגור" (מלונות/רכבות/כרטיסים) כן משותף בין השפות.',
       langWarnShort: '💡 השינוי נשמר בגרסה העברית בלבד — לא יופיע בספרדית.',
       highlight: 'מומלץ במיוחד', empty: 'אין עדיין פעילויות ליום הזה — הוסיפו אחת ↓',
@@ -73,7 +73,7 @@
       'overview.title': '🗾 Todo el viaje de un vistazo', 'restaurants.title': '🍣 Lugares especiales para comer',
       'foot': 'Hecho con amor para ustedes ❤️ · plan flexible — cambiá, agregá y marcá ✓ · いってらっしゃい',
       'f.start': 'Desde', 'f.end': 'Hasta', 'f.title': 'Título', 'f.type': 'Tipo', 'f.area': 'Zona / lugar', 'f.desc': 'Descripción', 'f.tips': 'Tip', 'f.cost': 'Costo', 'f.booking': 'Reserva previa', 'f.note': 'Nota personal', 'f.delete': '🗑️ Borrar', 'f.cancel': 'Cancelar', 'f.save': 'Guardar',
-      langToggle: '🇮🇱 עברית', day: 'Día', night: 'Alojamiento', bday: '¡el cumpleaños!', addTitle: 'Nueva actividad', editTitle: 'Editar actividad',
+      langToggle: '🇮🇱 עברית', day: 'Día', night: 'Alojamiento', bday: '¡el cumpleaños!', tipsLabel: 'Tips del día', addTitle: 'Nueva actividad', editTitle: 'Editar actividad',
       langWarnMsg: '✏️ Los cambios del itinerario (✓, horarios, agregar/borrar y ediciones) se guardan por separado en hebreo y español. La pestaña "Por reservar" (hoteles/trenes/entradas) sí se comparte entre idiomas.',
       langWarnShort: '💡 El cambio se guarda solo en la versión en español — no aparece en hebreo.',
       highlight: 'Muy recomendado', empty: 'Todavía no hay actividades este día — agregá una ↓',
@@ -174,6 +174,8 @@
       (d.summary ? `<div class="dh-sum">${escapeHtml(d.summary)}</div>` : '') +
       (hotelName ? `<div class="dh-hotel">🛏️ ${t('night')}: <b dir="auto">${escapeHtml(hotelName)}</b>${hotelUrl ? ` <a class="dh-maplink" href="${hotelUrl}" target="_blank" rel="noopener">🗺️</a>` : ''}</div>` : '') +
       (d.logistics ? `<div class="dh-logistics" dir="auto">📦 ${escapeHtml(d.logistics[lang] || d.logistics.he)}</div>` : '') +
+      (d.cultural ? `<div class="dh-culture" dir="auto"><span class="dh-culture-ic">🏮</span><span>${escapeHtml(d.cultural)}</span></div>` : '') +
+      (d.tips && d.tips.length ? `<div class="dh-tips"><div class="dh-tips-h">💡 ${t('tipsLabel')}</div><ul class="dh-tips-list">${d.tips.map(x => `<li dir="auto">${escapeHtml(x)}</li>`).join('')}</ul></div>` : '') +
       (routeUrl ? `<div class="dh-actions"><a class="btn btn-ghost btn-sm" href="${routeUrl}" target="_blank" rel="noopener">${t('mapsDay')}</a></div>` : '') +
       `</div>`;
     const tl = $('#timeline'); tl.innerHTML = '<div class="tl-line"></div>';

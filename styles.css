@@ -388,6 +388,12 @@ a{color:var(--gold-soft)}
 .bi-note-in{margin-top:9px;width:100%;padding:8px 11px;border:1px solid var(--paper-edge);border-radius:9px;font-family:inherit;font-size:13px;background:#fff;color:var(--ink);box-sizing:border-box}
 .bi-note-in:focus{outline:none;border-color:var(--gold)}
 .dh-logistics{margin-top:7px;font-size:13px;color:#f4e3b8;background:rgba(212,175,95,.14);border:1px solid var(--gold);border-radius:9px;padding:7px 11px;line-height:1.55}
+.dh-culture{margin-top:9px;display:flex;gap:8px;font-size:13.5px;color:#f6dfe4;background:rgba(215,65,47,.13);border:1px solid rgba(232,88,66,.5);border-inline-start:3px solid var(--red-glow);border-radius:9px;padding:9px 12px;line-height:1.62}
+.dh-culture-ic{flex:none;font-size:15px;line-height:1.5}
+.dh-tips{margin-top:9px;background:rgba(66,212,244,.08);border:1px solid rgba(66,212,244,.3);border-radius:9px;padding:8px 12px}
+.dh-tips-h{font-size:12.5px;font-weight:700;color:#bfe9f5;margin-bottom:4px;letter-spacing:.02em}
+.dh-tips-list{margin:0;padding-inline-start:18px;font-size:12.8px;color:#dfeef4;line-height:1.55}
+.dh-tips-list li{margin:3px 0}
 .bk-manage{display:inline-block;margin-top:10px;font-size:12.5px;text-decoration:none;color:#fff;background:#0a5ad6;padding:5px 12px;border-radius:999px;font-family:var(--serif)}
 .bk-manage:hover{background:#084bb0}
 .bkitem.bkdone{border-inline-start:5px solid #3c9a5f}
