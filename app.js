@@ -362,6 +362,79 @@
     $$('.hpick', box).forEach(b => b.onclick = () => { const h = loadHotels(); const id = b.dataset.s, i = +b.dataset.i; if (h[id] === i) delete h[id]; else h[id] = i; saveHotels(h); renderHotels(); if (state) renderDay(); toast(t('saved')); });
   }
 
+  // ---------- trains (booking countdown) ----------
+  // Reservations open 1 month before the ride date at 10:00 JST (= 01:00 UTC).
+  const TRAIN_LEGS = [
+    { id: 'hakone', from: 'Shinjuku', to: 'Hakone-Yumoto', icon: '🚞',
+      service: { he: 'רומאנסקאר (אודקיו)', es: 'Romancecar (Odakyu)' },
+      dateLabel: { he: '24.9 · יום ההולדת 🎂', es: '24/9 · cumpleaños 🎂' },
+      dep: { he: 'יציאה ~10:00', es: 'salida ~10:00' },
+      bookUrl: 'https://www.odakyu.jp/english/romancecar/', bookName: 'Odakyu (EN)',
+      open: { y: 2026, m: 8, d: 24 }, maps: ['Shinjuku Station, Tokyo', 'Hakone-Yumoto Station'] },
+    { id: 'kyoto', from: 'Odawara', to: 'Kyoto', icon: '🚄',
+      service: { he: 'שינקנסן טוקאידו (Hikari)', es: 'Shinkansen Tokaido (Hikari)' },
+      dateLabel: { he: '25.9', es: '25/9' },
+      dep: { he: 'יציאה ~11:00', es: 'salida ~11:00' },
+      bookUrl: 'https://smart-ex.jp/en/', bookName: 'SmartEX (EN)',
+      open: { y: 2026, m: 8, d: 25 }, maps: ['Odawara Station', 'Kyoto Station'] },
+    { id: 'tokyo', from: 'Shin-Osaka', to: 'Tokyo', icon: '🚄',
+      service: { he: 'שינקנסן טוקאידו', es: 'Shinkansen Tokaido' },
+      dateLabel: { he: '30.9', es: '30/9' },
+      dep: { he: '', es: '' },
+      bookUrl: 'https://smart-ex.jp/en/', bookName: 'SmartEX (EN)',
+      open: { y: 2026, m: 8, d: 30 }, maps: ['Shin-Osaka Station', 'Tokyo Station'] },
+    { id: 'narita', from: 'Tokyo', to: 'Narita Airport T1', icon: '✈️',
+      service: { he: 'נאריטה אקספרס (N\'EX)', es: 'Narita Express (N\'EX)' },
+      dateLabel: { he: '2.10 · טיסה 12:00', es: '2/10 · vuelo 12:00' },
+      dep: { he: 'יציאה ~08:00', es: 'salida ~08:00' },
+      bookUrl: 'https://www.eki-net.com/en/jreast-train-reservation/', bookName: 'JR-EAST (EN)',
+      open: { y: 2026, m: 9, d: 2 }, maps: ['Tokyo Station', 'Narita Airport Terminal 1'] },
+  ];
+  const TRAIN_STR = {
+    he: { title: 'הזמנת רכבות', intro: 'ההזמנה נפתחת חודש לפני הנסיעה, בשעה 10:00 שעון יפן. שעון ספירה לכל קטע:',
+      times: 'בדוק זמנים', enter: 'להקליד באתר', pre: '⏳ נפתח בעוד', open: '🟢 פתוח להזמנה — אפשר לרכוש עכשיו!',
+      d: ' ימ׳', h: ' שע׳', m: ' דק׳', s: ' שנ׳' },
+    es: { title: 'Reservar trenes', intro: 'La reserva abre 1 mes antes del viaje, a las 10:00 JST. Cuenta regresiva por tramo:',
+      times: 'Ver horarios', enter: 'Cargar en el sitio', pre: '⏳ Abre en', open: '🟢 ¡Abierto — ya podés reservar!',
+      d: 'd', h: 'h', m: 'm', s: 's' },
+  };
+  let trainTimer = null;
+  const openTs = (leg) => Date.UTC(leg.open.y, leg.open.m - 1, leg.open.d, 1, 0, 0); // 10:00 JST
+  const transitUrl = (o, d) => 'https://www.google.com/maps/dir/?api=1&travelmode=transit&origin=' + encodeURIComponent(o) + '&destination=' + encodeURIComponent(d);
+  function renderTrains(body) {
+    const S = TRAIN_STR[lang];
+    const panel = document.createElement('div'); panel.className = 'panel trains';
+    panel.innerHTML = `<h2>🚄 ${S.title}</h2><div class="trains-intro" dir="auto">${escapeHtml(S.intro)}</div>` +
+      TRAIN_LEGS.map(leg => `<div class="tcard" id="leg-${leg.id}">` +
+        `<div class="tc-route" dir="ltr"><b>${escapeHtml(leg.from)}</b> <span class="tc-arrow">→</span> <b>${escapeHtml(leg.to)}</b></div>` +
+        `<div class="tc-meta" dir="auto">${leg.icon} ${escapeHtml(leg.service[lang])} · ${escapeHtml(leg.dateLabel[lang])}${leg.dep[lang] ? ' · ' + escapeHtml(leg.dep[lang]) : ''}</div>` +
+        `<div class="tc-cd" id="cd-${leg.id}"></div>` +
+        `<div class="tc-actions">` +
+          `<a class="tc-link tc-book" href="${leg.bookUrl}" target="_blank" rel="noopener">🎫 ${escapeHtml(leg.bookName)}</a>` +
+          `<a class="tc-link" href="${transitUrl(leg.maps[0], leg.maps[1])}" target="_blank" rel="noopener">🕐 ${escapeHtml(S.times)}</a>` +
+        `</div>` +
+        `<div class="tc-enter" dir="auto">${escapeHtml(S.enter)}: <span dir="ltr">${escapeHtml(leg.from)} → ${escapeHtml(leg.to)}</span> · ${escapeHtml(leg.dateLabel[lang])}</div>` +
+      `</div>`).join('');
+    body.appendChild(panel);
+    tickTrains();
+    if (trainTimer) clearInterval(trainTimer);
+    trainTimer = setInterval(tickTrains, 1000);
+  }
+  function tickTrains() {
+    const S = TRAIN_STR[lang]; const now = Date.now(); let any = false;
+    TRAIN_LEGS.forEach(leg => {
+      const el = document.getElementById('cd-' + leg.id); if (!el) return; any = true;
+      const card = document.getElementById('leg-' + leg.id);
+      const diff = openTs(leg) - now;
+      if (diff <= 0) { el.innerHTML = `<span class="cd-open">${S.open}</span>`; if (card) card.classList.add('open'); }
+      else {
+        const s = Math.floor(diff / 1000), d = Math.floor(s / 86400), h = Math.floor((s % 86400) / 3600), m = Math.floor((s % 3600) / 60), sec = s % 60;
+        el.innerHTML = `<span class="cd-pre">${S.pre} <b>${d}${S.d} ${h}${S.h} ${m}${S.m} ${sec}${S.s}</b></span>`;
+      }
+    });
+    if (!any && trainTimer) { clearInterval(trainTimer); trainTimer = null; }
+  }
+
   // ---------- prep ----------
   const DEFAULT_CHECK = {
     he: {
@@ -379,6 +452,7 @@
   const saveCheck = (c) => localStorage.setItem(LS_CHECK, JSON.stringify(c));
   function renderPrep() {
     const c = loadCheck(); const body = $('#prepBody'); body.innerHTML = '';
+    renderTrains(body);
     const groups = JSON.parse(JSON.stringify(DEFAULT_CHECK[lang]));
     const myLabel = lang === 'he' ? 'הרשימה שלי' : 'Mi lista';
     (c.custom[lang] || []).forEach(it => { (groups[myLabel] = groups[myLabel] || []).push(it); });

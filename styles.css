@@ -259,6 +259,24 @@ a{color:var(--gold-soft)}
 .addrow{display:flex;gap:8px;margin-top:12px}
 .addrow input{flex:1;padding:9px 12px;border-radius:9px;border:1px solid var(--paper-edge);background:#fffaf0;color:var(--ink);font-family:var(--sans)}
 
+/* ------------- trains booking ------------- */
+.trains .trains-intro{font-size:13px;color:var(--ink-soft);margin-bottom:12px}
+.tcard{border:1px solid var(--paper-edge);background:#fffaf0;border-radius:12px;padding:12px 14px;margin:10px 0;transition:border-color .2s,box-shadow .2s}
+.tcard.open{border-color:#2e8b57;box-shadow:0 0 0 2px rgba(46,139,87,.18)}
+.tc-route{font-family:var(--serif);font-size:16px;color:var(--ink);font-weight:700}
+.tc-arrow{color:var(--red);margin:0 5px}
+.tc-meta{font-size:13px;color:var(--ink-soft);margin:4px 0 2px}
+.tc-cd{margin:8px 0;font-size:14px;color:var(--ink);min-height:20px}
+.cd-pre b{font-variant-numeric:tabular-nums;color:var(--red-deep)}
+.cd-open{color:#2e8b57;font-weight:700}
+.tc-actions{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 6px}
+.tc-link{display:inline-flex;align-items:center;gap:5px;padding:7px 13px;border-radius:9px;border:1px solid var(--paper-edge);background:#fff;color:var(--ink);font-size:13px;font-weight:600;text-decoration:none;cursor:pointer}
+.tc-link:hover{border-color:var(--red)}
+.tc-book{background:var(--red);border-color:var(--red);color:#fff}
+.tc-book:hover{background:var(--red-deep);border-color:var(--red-deep)}
+.tc-enter{font-size:12px;color:var(--ink-soft)}
+.tc-enter span{font-weight:700;color:var(--ink)}
+
 /* ------------- modal ------------- */
 .modal{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;padding:16px;
   background:rgba(8,12,24,.62);backdrop-filter:blur(4px)}
