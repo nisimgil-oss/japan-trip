@@ -1,6 +1,6 @@
 /* data.js — Option A · booked hotels + luggage logistics per day. bilingual he/es. */
 window.TRIP_DATA = {
- "v": "bi-optA-2",
+ "v": "bi-optA-3",
  "flights": {
   "airline": "LOT Polish Airlines",
   "passenger": "Ezequiel",
@@ -128,9 +128,9 @@ window.TRIP_DATA = {
   {
    "id": "hakone-gora",
    "cover": "♨️",
-   "cityHe": "האקונה — גורה",
-   "cityEs": "Hakone — Gora",
-   "area": "Gora / Kowakien",
+   "cityHe": "האקונה",
+   "cityEs": "Hakone",
+   "area": "Hakone-Yumoto / Tonosawa",
    "datesLabel": "22 ספטמבר / 22 sept",
    "nights": 1,
    "priceUnit": "couple",
@@ -138,8 +138,8 @@ window.TRIP_DATA = {
     "2026-09-22"
    ],
    "note": {
-    "he": "לילה אחד בריוקאן עם אונסן פרטי ונוף להר פוג'י — חצי פנסיון עם ארוחת קייסקי מסורתית.",
-    "es": "Una noche en ryokan con onsen privado y vistas al Monte Fuji — media pensión con cena kaiseki tradicional."
+    "he": "לילה אחד (22.9) · נסגר: Hakone Onsen Ryokan Yaeikan.",
+    "es": "Una noche (22/9) · reservado: Hakone Onsen Ryokan Yaeikan."
    },
    "options": [
     {
@@ -895,7 +895,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "סדנה, מאבקי סומו וחנקו",
     "summary": "בוקר יוצרים — מגלגלים סושי (או מכינים ממתקי וואגאשי) בסדנה אינטימית לזוגות. אחר הצהריים ממריאים אל ריוגוקו לחוות את טורניר הסומו הגדול, ובערב מסיימים בחנקו-נאבה, מרק החלבונים האגדי של ספורט המאבק.",
-    "hotel": "⚠️ AMANEK הוזמן ל-3 לילות (צ'ק-אאוט 21.9) — הלילה הזה עדיין לא סגור. אפשר להאריך חינם עד 10.9, או להעביר את היום להאקונה.",
+    "hotel": "🏨 HOTEL AMANEK Shinjuku (✓ לילות 18–20) — הלילה (21.9) דורש הארכת ההזמנה ללילה 4 (צ'ק-אאוט 22.9) · חינם עד 10.9",
     "events": [
      {
       "start": "09:30",
@@ -961,7 +961,7 @@ window.TRIP_DATA = {
     "city": "Hakone",
     "title": "הקונה — עונת כסף, אמבט הרים",
     "summary": "יום המעבר הגדול: מזוודות ליוטו, שניכם רכבת הרומנסקאר הציורית אל עמק ההרים, ואחר הצהריים שוקעים לתוך רייוקאן עם אונסן פרטי, יוקאטה ורוטב של ירק הרי לקראת ערב קייסקי חגיגי.",
-    "hotel": "🏨 האקונה (גורה) — עדיין לא סגור · Silver Week, לסגור בדחיפות",
+    "hotel": "🏨 Hakone Onsen Ryokan Yaeikan (✓ נסגר · 22→23) · אונסן",
     "events": [
      {
       "start": "08:30",
@@ -3411,7 +3411,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "Taller, Gran Sumo y chanko",
     "summary": "La mañana arranca con un taller íntimo de sushi o dulces wagashi, perfecto para hacer en pareja. A la tarde, el Ryogoku Kokugikan los recibe para vivir el Aki Basho en vivo, y la noche cierra con el legendario chanko-nabe, el guiso proteico de los luchadores.",
-    "hotel": "⚠️ AMANEK reservado por 3 noches (check-out 21/9) — esta noche todavía no está reservada. Se puede extender gratis hasta 10/9, o pasar el día a Hakone.",
+    "hotel": "🏨 HOTEL AMANEK Shinjuku (✓ noches 18–20) — esta noche (21/9) requiere extender la reserva a 4 noches (check-out 22/9) · gratis hasta 10/9",
     "events": [
      {
       "start": "09:30",
@@ -3477,7 +3477,7 @@ window.TRIP_DATA = {
     "city": "Hakone",
     "title": "Hakone — Semana de Plata, baño entre montañas",
     "summary": "El gran día de transición: las valijas viajan solas a Kyoto mientras vos dos tomás el Romancecar panorámico hacia el valle de montaña, y a la tarde se hunden en un ryokan con onsen privado, yukatas y una kaiseki otoñal para celebrar los 40.",
-    "hotel": "🏨 Hakone (Gora) — sin reservar aún · Silver Week, reservá urgente",
+    "hotel": "🏨 Hakone Onsen Ryokan Yaeikan (✓ reservado · 22→23) · onsen",
     "events": [
      {
       "start": "08:30",
