@@ -53,7 +53,7 @@
       bookedSug: 'ההצעה שבחרתם', bookedHotelPh: 'המלון שסגרתי…', bookedRefPh: 'מס\' הזמנה / הערה (אופציונלי)', bookedDone: 'נסגר ✓',
       bookedProgress: (n, m) => `${n}/${m} נסגרו`, bookedStay: 'כניסה → יציאה', bookedCostPh: 'עלות (¥/₪)', bookedCancelLabel: 'ביטול חינם עד',
       bookedTrains: '🚄 רכבות לסגור', bookedEvents: '🎟️ כרטיסים לאירועים', bookedSalesOpen: 'מכירה נפתחת', bookedSalesOpenNow: '✓ פתוח למכירה', bookedBook: 'הזמנה',
-      bookedOpensToday: 'נפתח היום!', bookedOpensTomorrow: 'נפתח מחר', bookedOpensIn: (n) => `נפתח בעוד ${n} ימים`, bookedPax: '2 בוגרים', bookedMapLink: 'מסלול וזמנים',
+      bookedOpensToday: 'נפתח היום!', bookedOpensTomorrow: 'נפתח מחר', bookedOpensIn: (n) => `נפתח בעוד ${n} ימים`, bookedPax: '2 בוגרים', bookedMapLink: 'מסלול וזמנים', bookedItemNotePh: 'הערה חופשית…',
       hSelected: '✓ נבחר', hChoose: 'בחרו מלון זה', hPerNight: 'ללילה', hPerCouple: 'לזוג · חצי פנסיון', hBook: 'להזמנה ↗', hNights: (n) => n === 1 ? 'לילה אחד' : n + ' לילות', hStayHotel: 'המלון שנבחר', hPickHint: 'בחרו מלון בטאב ״מלונות״',
       mapsDay: '🗺️ מסלול היום במפות', mapsOpen: 'פתח במפות ↗',
       'tab.experiences': 'חוויות', 'experiences.title': '✨ עוד חוויות מיוחדות',
@@ -88,7 +88,7 @@
       bookedSug: 'La opción que elegiste', bookedHotelPh: 'El hotel que reservé…', bookedRefPh: 'N.º de reserva / nota (opcional)', bookedDone: 'Reservado ✓',
       bookedProgress: (n, m) => `${n}/${m} reservados`, bookedStay: 'Entrada → salida', bookedCostPh: 'Costo (¥/₪)', bookedCancelLabel: 'Cancelación gratis hasta',
       bookedTrains: '🚄 Trenes por reservar', bookedEvents: '🎟️ Entradas a eventos', bookedSalesOpen: 'Venta abre', bookedSalesOpenNow: '✓ Ya a la venta', bookedBook: 'Reservar',
-      bookedOpensToday: '¡Abre hoy!', bookedOpensTomorrow: 'Abre mañana', bookedOpensIn: (n) => `Abre en ${n} días`, bookedPax: '2 adultos', bookedMapLink: 'Ruta y horarios',
+      bookedOpensToday: '¡Abre hoy!', bookedOpensTomorrow: 'Abre mañana', bookedOpensIn: (n) => `Abre en ${n} días`, bookedPax: '2 adultos', bookedMapLink: 'Ruta y horarios', bookedItemNotePh: 'Nota libre…',
       hSelected: '✓ Elegido', hChoose: 'Elegir este hotel', hPerNight: 'por noche', hPerCouple: 'por pareja · media pensión', hBook: 'Reservar ↗', hNights: (n) => n === 1 ? '1 noche' : n + ' noches', hStayHotel: 'Hotel elegido', hPickHint: 'Elegí un hotel en la pestaña "Hoteles"',
       mapsDay: '🗺️ Recorrido del día en Maps', mapsOpen: 'Abrir en Maps ↗',
       'tab.experiences': 'Experiencias', 'experiences.title': '✨ Más experiencias especiales',
@@ -175,6 +175,7 @@
       `<div class="dh-title">${escapeHtml(d.title || '')}</div>` +
       (d.summary ? `<div class="dh-sum">${escapeHtml(d.summary)}</div>` : '') +
       (hotelName ? `<div class="dh-hotel">🛏️ ${t('night')}: <b dir="auto">${escapeHtml(hotelName)}</b>${escapeHtml(hotelArea)}${hotelUrl ? ` <a class="dh-maplink" href="${hotelUrl}" target="_blank" rel="noopener">🗺️</a>` : ''}${selOpt ? ` <span class="dh-picked">${t('hSelected')}</span>` : ''}</div>` : '') +
+      (d.logistics ? `<div class="dh-logistics" dir="auto">📦 ${escapeHtml(d.logistics[lang] || d.logistics.he)}</div>` : '') +
       (routeUrl ? `<div class="dh-actions"><a class="btn btn-ghost btn-sm" href="${routeUrl}" target="_blank" rel="noopener">${t('mapsDay')}</a></div>` : '') +
       `</div>`;
     const tl = $('#timeline'); tl.innerHTML = '<div class="tl-line"></div>';
@@ -750,8 +751,13 @@
         `<div class="bi-meta">` + chip +
         (mapUrl ? `<a class="bi-link ghost" href="${mapUrl}" target="_blank" rel="noopener">🗺️ ${t('bookedMapLink')}</a>` : '') +
         (item.url ? `<a class="bi-link" href="${item.url}" target="_blank" rel="noopener">${t('bookedBook')} ↗</a>` : '') +
-        `</div></div>`;
-      card.querySelector('input').addEventListener('change', (e) => {
+        `</div>` +
+        `<input class="bi-note-in" type="text" placeholder="${escapeAttr(t('bookedItemNotePh'))}" value="${escapeAttr((loadBooked()[item.id] || {}).userNote || '')}">` +
+        `</div>`;
+      card.querySelector('.bi-note-in').addEventListener('input', (e) => {
+        const b = loadBooked(); b[item.id] = Object.assign({}, b[item.id], { userNote: e.target.value }); saveBooked(b);
+      });
+      card.querySelector('.bi-check input').addEventListener('change', (e) => {
         const b = loadBooked(); b[item.id] = Object.assign({}, b[item.id], { done: e.target.checked }); saveBooked(b);
         card.classList.toggle('bkdone', e.target.checked);
         const isTrain = item.id.slice(0, 2) === 't-';

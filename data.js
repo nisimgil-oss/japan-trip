@@ -1,6 +1,6 @@
-/* data.js — bilingual (he + es-AR). Option A rebuild: shorter Tokyo, Hakone, Kiso/Nakasendo, birthday in Tsumago. */
+/* data.js — Option A · booked hotels + luggage logistics per day. bilingual he/es. */
 window.TRIP_DATA = {
- "v": "bi-optA-1",
+ "v": "bi-optA-2",
  "flights": {
   "airline": "LOT Polish Airlines",
   "passenger": "Ezequiel",
@@ -716,7 +716,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "יום 1 — נאון בטוקיו",
     "summary": "נחיתה בנריטה, רכבת-הבזק לשינג'וקו, וצלילה ישירה לחום הרחובות המוארים. הלילה הראשון ביפן נחגג עם שיפוד ועשן ואורות שלא נכבים.",
-    "hotel": "הלילה: מלון בשינג'וקו — כמה צעדים מ-Ni-chome, רובע הגאווה של טוקיו.",
+    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ נסגר · 18→21)",
     "events": [
      {
       "start": "18:25",
@@ -771,7 +771,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "טוקיו מהשוק ועד השמיים",
     "summary": "יום של חושים וצבעים: שוק טסוקיג'י, מקדש אסאקוסה, שקיעה אגדית מ-Shibuya Sky ולילה רועש ב-Ni-chome. ביום הזה טוקיו מתגלה בשלמותה.",
-    "hotel": "לינה: טוקיו — תהנו מהמיטה אחרי הלילה ב-Ni-chome",
+    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ נסגר · 18→21)",
     "events": [
      {
       "start": "08:00",
@@ -850,7 +850,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "יום המשחקים הגדול — Makuhari Messe ו-Akihabara",
     "summary": "יום שלם של גיימינג, קוספליי ואנימה — מה-Tokyo Game Show הענקי בMakuhari Messe ועד הרחובות הנוצצים של Akihabara בלילה. יום מושלם לחגוג עשורים של אהבה ופיקסלים.",
-    "hotel": "הלילה ישנים בטוקיו — קרוב לAkihabara או למרכז העיר.",
+    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ נסגר · 18→21)",
     "events": [
      {
       "start": "09:30",
@@ -895,7 +895,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "סדנה, מאבקי סומו וחנקו",
     "summary": "בוקר יוצרים — מגלגלים סושי (או מכינים ממתקי וואגאשי) בסדנה אינטימית לזוגות. אחר הצהריים ממריאים אל ריוגוקו לחוות את טורניר הסומו הגדול, ובערב מסיימים בחנקו-נאבה, מרק החלבונים האגדי של ספורט המאבק.",
-    "hotel": "הלילה: טוקיו (אותה אכסניה — מחר נוסעים להאקונה).",
+    "hotel": "⚠️ AMANEK הוזמן ל-3 לילות (צ'ק-אאוט 21.9) — הלילה הזה עדיין לא סגור. אפשר להאריך חינם עד 10.9, או להעביר את היום להאקונה.",
     "events": [
      {
       "start": "09:30",
@@ -961,7 +961,7 @@ window.TRIP_DATA = {
     "city": "Hakone",
     "title": "הקונה — עונת כסף, אמבט הרים",
     "summary": "יום המעבר הגדול: מזוודות ליוטו, שניכם רכבת הרומנסקאר הציורית אל עמק ההרים, ואחר הצהריים שוקעים לתוך רייוקאן עם אונסן פרטי, יוקאטה ורוטב של ירק הרי לקראת ערב קייסקי חגיגי.",
-    "hotel": "לילה ברייוקאן בגורה, הקונה — אונסן, נוף הרים ופינוק יפני מלא",
+    "hotel": "🏨 האקונה (גורה) — עדיין לא סגור · Silver Week, לסגור בדחיפות",
     "events": [
      {
       "start": "08:30",
@@ -1031,7 +1031,11 @@ window.TRIP_DATA = {
       "booking": "",
       "highlight": true
      }
-    ]
+    ],
+    "logistics": {
+     "he": "בבוקר העזיבה מטוקיו: שלחו את המזוודה הראשית ל-Kyoto (takkyubin, ~יום עסקים) כדי לטייל קל בהאקונה ובקיסו. נסעו עם תיק-לילה בלבד. (דורש שמלון קיוטו כבר סגור.)",
+     "es": "En la mañana que dejan Tokio: envíen la valija principal a Kioto (takkyubin, ~1 día hábil) para viajar liviano por Hakone y Kiso. Vayan solo con bolso de una noche. (Requiere el hotel de Kioto ya reservado.)"
+    }
    },
    {
     "date": "2026-09-23",
@@ -1039,7 +1043,7 @@ window.TRIP_DATA = {
     "city": "Magome",
     "title": "יום 6 — אל תוך עמק קיסו",
     "summary": "פרידה מהאקונה עם ארוחת בוקר ביפנית מסורתית, ואז מסע ארוך ומרהיב לתוך יפן האדו הכפרית — אל מגומה, עיירת הדואר הסמויה בין ההרים.",
-    "hotel": "הלילה ישנים במינשוקו משפחתי בלב מגומה — חדרים בסגנון טטמי, אורחים ספורים, ואווירה שאין לה תחליף.",
+    "hotel": "🏨 Yanagiya Iri (✓ נסגר) · וילה עם מטבח, בלי ארוחות",
     "events": [
      {
       "start": "08:00",
@@ -1117,7 +1121,7 @@ window.TRIP_DATA = {
     "birthday": true,
     "title": "יום הולדת 40 — שביל הנקאסנדו וצומאגו",
     "summary": "יום מיוחד ובלתי נשכח: הליכה היסטורית ביער שהושלמה עם כניסה לכפר אדו שנעצר בזמן — וערב יום הולדת של קייסקי ורגעים שקטים לאור פנסים.",
-    "hotel": "לינה ברובאן מסורתי בצומאגו — שנת לילה לאור נרות בין קירות עץ ואדמה של תקופת אדו.",
+    "hotel": "🏨 AKARI — Nagiso (✓ נסגר) · וילה, בלי ארוחות · 🎂 לתכנן ארוחת יום הולדת",
     "events": [
      {
       "start": "08:00",
@@ -1200,7 +1204,11 @@ window.TRIP_DATA = {
       "booking": "",
       "highlight": true
      }
-    ]
+    ],
+    "logistics": {
+     "he": "בבוקר: מסרו את תיק-הלילה במרכז המידע במגומה עד ~11:30 להעברה לצומאגו (¥1,000/תיק, מחכה ~13:00). כך הולכים את הנקאסֶנדו בלי משא.",
+     "es": "A la mañana: dejen el bolso en la oficina de turismo de Magome antes de las ~11:30 para enviarlo a Tsumago (¥1.000/bolso, llega ~13:00). Así caminan el Nakasendo sin peso."
+    }
    },
    {
     "date": "2026-09-25",
@@ -1208,7 +1216,7 @@ window.TRIP_DATA = {
     "city": "Kyoto",
     "title": "מצומאגו לקיוטו: עיר הגיישות מחכה",
     "summary": "יום של מעברים יפים — הפרידה מהכפר השקט של צומאגו ועלייה לקיוטו הדרמטית. הערב: פנסי גיון ושדרות פונטוצ'ו שמחממות את הלב.",
-    "hotel": "הלילה בקיוטו — בלב הרובע ההיסטורי, צעד אחד מגיון",
+    "hotel": "🏨 קיוטו — עדיין לא סגור",
     "events": [
      {
       "start": "08:00",
@@ -1266,7 +1274,11 @@ window.TRIP_DATA = {
       "cost": "¥4,000–9,000 לאדם",
       "booking": ""
      }
-    ]
+    ],
+    "logistics": {
+     "he": "אספו במלון בקיוטו את המזוודה הראשית שנשלחה מטוקיו.",
+     "es": "Retiren en el hotel de Kioto la valija principal enviada desde Tokio."
+    }
    },
    {
     "date": "2026-09-26",
@@ -1274,7 +1286,7 @@ window.TRIP_DATA = {
     "city": "Kyoto",
     "title": "שחר בין הטוריי — יום 9",
     "summary": "יום שלם של קיוטו במיטבה: עלייה לפנות בוקר בין אלפי שערי הטוריי הארגמניים של פושימי אינארי, ואחר כך יערות הבמבוק ואמהות הוואבי-סאבי של אראשיימה — והכל נחתם בטיול טעימות בשוק ניישיקי ובארוחת שחיטה מפנקת לשניים.",
-    "hotel": "לילה בקיוטו — מלון בית מגוריכם הקיוטואי לכל ימי הביניים.",
+    "hotel": "🏨 קיוטו — עדיין לא סגור",
     "events": [
      {
       "start": "06:45",
@@ -1363,7 +1375,7 @@ window.TRIP_DATA = {
     "city": "Kyoto",
     "title": "יום 10 — ציפוי זהב וטקס תה בקיוטו",
     "summary": "יום שלם של קיוטו בצורתה הטהורה ביותר: ביקור בביתן הזהוב עם שחר, טיול בין אבני המדרכה ההיסטוריות של הייגשימה, סדנת תה וקימונו לשניים, וערב מלכותי עם מאיקו לצד עריסת קייסקי.",
-    "hotel": "לילה בקיוטו — רוב האטרקציות ברגל או בטקסי קצר",
+    "hotel": "🏨 קיוטו — עדיין לא סגור",
     "events": [
      {
       "start": "08:30",
@@ -1441,7 +1453,7 @@ window.TRIP_DATA = {
     "city": "Osaka",
     "title": "יום 11 — אוסקה: טירות, אנימה ולילה של אוכל",
     "summary": "עוברים לאוסקה — עיר של אנרגיה, ניאון ורחובות שמריחים כמו גן עדן. יום שמשלב היסטוריה מרהיבה, שכונת האנימה האגדית ולילה של אכילה בלתי נשכחת לאורך הדוטונבורי.",
-    "hotel": "לילה באוסקה — שוכנים במלון בסמוך לנמבה או שינסאיבאשי, בלב פועם של העיר.",
+    "hotel": "🏨 Onyado Nono Namba (✓ נסגר) · אונסן טבעי · אסור קעקועים גלויים במרחצאות",
     "events": [
      {
       "start": "09:00",
@@ -1510,7 +1522,11 @@ window.TRIP_DATA = {
       "booking": "",
       "highlight": true
      }
-    ]
+    ],
+    "logistics": {
+     "he": "בבוקר: שלחו את המזוודה הראשית מקיוטו למלון באוסקה (takkyubin · Onyado Nono ✓).",
+     "es": "A la mañana: envíen la valija principal de Kioto al hotel de Osaka (takkyubin · Onyado Nono ✓)."
+    }
    },
    {
     "date": "2026-09-29",
@@ -1518,7 +1534,7 @@ window.TRIP_DATA = {
     "city": "Osaka",
     "title": "צבאים, בודהה ענק, ולילה קשת",
     "summary": "יום טיול יומי לנארה — מפגש עם צבאים מקודשים ואחד מהגדולים בבודהות היפן — ואחר כך שובה לאוסקה לחגיגת לילה גאה בדויאמה-צ'ו.",
-    "hotel": "לילה באוסקה — המלון שלכם בעיר",
+    "hotel": "🏨 Onyado Nono Namba (✓ נסגר) · אונסן טבעי · אסור קעקועים גלויים במרחצאות",
     "events": [
      {
       "start": "08:30",
@@ -1607,7 +1623,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "יום 13 — שוב טוקיו: יאנאקה הרומנטית",
     "summary": "נפרדים מאוסקה בארוחת בוקר אחרונה ויוצאים בשינקנסן לטוקיו. אחר הצהריים — שוטטות רכה בין חתולים ומקדשים ביאנאקה, ואחריה קניות בשיבויה לפני ארוחת ערב מפנקת באביסו.",
-    "hotel": "הלילה ישנים בטוקיו — המלון החדש מחכה אחרי הצ'ק-אין של הצהריים.",
+    "hotel": "🏨 טוקיו (חזרה) — עדיין לא סגור",
     "events": [
      {
       "start": "09:00",
@@ -1674,7 +1690,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "יום 14 — גיבלי, אור ופרידה בטוקיו",
     "summary": "יום הפרידה הגדול: בוקר של פלאים בגיבלי, אחר צהריים שקוע בתוך יצירת האמנות של teamLab Planets, וערב חגיגי עם אומאקאסה שמסכם עשרים שנה ויום הולדת 40 עם כוסית פרידה ב-Ni-chome. טוקיו נפרדת מכם בגדול.",
-    "hotel": "הלילה ישנים בטוקיו — מלון בסיס, הלב פועם אחרון ביפן.",
+    "hotel": "🏨 טוקיו (חזרה) — עדיין לא סגור",
     "events": [
      {
       "start": "09:30",
@@ -1742,7 +1758,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "יום 15 — להתראות, יפן",
     "summary": "הבוקר האחרון בטוקיו מגיע עם תיקים ארוזים ולב שמח. ארוחת בוקר מהירה, רכבת שחר ל-Narita, ועוד מבט אחד על שלטי הניאון לפני שהמטוס נושא אתכם חזרה הביתה עם 40 שנה שמחים ואגרת אהבה שלמה מיפן.",
-    "hotel": "הלילה לא לנים — טסים חזרה הביתה",
+    "hotel": "✈️ יום עזיבה — אין לינה",
     "events": [
      {
       "start": "06:30",
@@ -3216,7 +3232,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "Día 1 — Neón en Tokio",
     "summary": "Aterrizaje en Narita, el expreso hasta Shinjuku y una inmersión directa en el calor de las calles iluminadas. La primera noche en Japón se celebra con brochetas, humo y luces que no se apagan.",
-    "hotel": "Esta noche: hotel en Shinjuku, a pasos de Ni-chome, el barrio gay de Tokio.",
+    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ reservado · 18→21)",
     "events": [
      {
       "start": "18:25",
@@ -3271,7 +3287,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "Tokio del mercado al cielo",
     "summary": "Un día de sabores y alturas: el mercado de Tsukiji, el templo de Asakusa, una puesta de sol épica desde Shibuya Sky y la noche más intensa de Ni-chome. Así se presenta Tokio de verdad.",
-    "hotel": "Alojamiento: Tokio — disfrutá la cama después de la noche en Ni-chome",
+    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ reservado · 18→21)",
     "events": [
      {
       "start": "08:00",
@@ -3350,7 +3366,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "El gran día gamer — Makuhari Messe y Akihabara",
     "summary": "Un día entero de videojuegos, cosplay y anime: desde el monumental Tokyo Game Show en Makuhari Messe hasta las calles brillantes de Akihabara de noche. La excusa perfecta para festejar décadas de amor y píxeles.",
-    "hotel": "Esta noche dormís en Tokio — cerca de Akihabara o del centro de la ciudad.",
+    "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ reservado · 18→21)",
     "events": [
      {
       "start": "09:30",
@@ -3395,7 +3411,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "Taller, Gran Sumo y chanko",
     "summary": "La mañana arranca con un taller íntimo de sushi o dulces wagashi, perfecto para hacer en pareja. A la tarde, el Ryogoku Kokugikan los recibe para vivir el Aki Basho en vivo, y la noche cierra con el legendario chanko-nabe, el guiso proteico de los luchadores.",
-    "hotel": "Esta noche: Tokio (mismo hotel — mañana salimos para Hakone).",
+    "hotel": "⚠️ AMANEK reservado por 3 noches (check-out 21/9) — esta noche todavía no está reservada. Se puede extender gratis hasta 10/9, o pasar el día a Hakone.",
     "events": [
      {
       "start": "09:30",
@@ -3461,7 +3477,7 @@ window.TRIP_DATA = {
     "city": "Hakone",
     "title": "Hakone — Semana de Plata, baño entre montañas",
     "summary": "El gran día de transición: las valijas viajan solas a Kyoto mientras vos dos tomás el Romancecar panorámico hacia el valle de montaña, y a la tarde se hunden en un ryokan con onsen privado, yukatas y una kaiseki otoñal para celebrar los 40.",
-    "hotel": "Noche en ryokan en Gora, Hakone — onsen, vistas a la montaña y mimo japonés completo",
+    "hotel": "🏨 Hakone (Gora) — sin reservar aún · Silver Week, reservá urgente",
     "events": [
      {
       "start": "08:30",
@@ -3531,7 +3547,11 @@ window.TRIP_DATA = {
       "booking": "",
       "highlight": true
      }
-    ]
+    ],
+    "logistics": {
+     "he": "בבוקר העזיבה מטוקיו: שלחו את המזוודה הראשית ל-Kyoto (takkyubin, ~יום עסקים) כדי לטייל קל בהאקונה ובקיסו. נסעו עם תיק-לילה בלבד. (דורש שמלון קיוטו כבר סגור.)",
+     "es": "En la mañana que dejan Tokio: envíen la valija principal a Kioto (takkyubin, ~1 día hábil) para viajar liviano por Hakone y Kiso. Vayan solo con bolso de una noche. (Requiere el hotel de Kioto ya reservado.)"
+    }
    },
    {
     "date": "2026-09-23",
@@ -3539,7 +3559,7 @@ window.TRIP_DATA = {
     "city": "Magome",
     "title": "Día 6 — Adentro del Valle de Kiso",
     "summary": "Despedida de Hakone con un desayuno ryokan y un último onsen, y luego un viaje largo y cinematográfico hasta Magome, el pueblo postal de la era Edo escondido entre montañas.",
-    "hotel": "Esta noche dormimos en un minshuku familiar en el corazón de Magome — habitaciones con tatami, pocos huéspedes, y una calidez que no se encuentra en ningún hotel.",
+    "hotel": "🏨 Yanagiya Iri (✓ reservado) · villa con cocina, sin comidas",
     "events": [
      {
       "start": "08:00",
@@ -3617,7 +3637,7 @@ window.TRIP_DATA = {
     "birthday": true,
     "title": "Cumpleaños 40 — El Nakasendo y Tsumago",
     "summary": "Un día para no olvidar: una caminata histórica por el bosque que desemboca en un pueblo de la era Edo detenido en el tiempo — y una noche de kaiseki, farolitos y silencio absoluto para celebrar cuatro décadas de vida.",
-    "hotel": "Esta noche dormimos en un ryokan tradicional en Tsumago — tatami, yukata y el Edo intacto afuera de la ventana.",
+    "hotel": "🏨 AKARI — Nagiso (✓ reservado) · villa, sin comidas · 🎂 planear cena de cumpleaños",
     "events": [
      {
       "start": "08:00",
@@ -3700,7 +3720,11 @@ window.TRIP_DATA = {
       "booking": "",
       "highlight": true
      }
-    ]
+    ],
+    "logistics": {
+     "he": "בבוקר: מסרו את תיק-הלילה במרכז המידע במגומה עד ~11:30 להעברה לצומאגו (¥1,000/תיק, מחכה ~13:00). כך הולכים את הנקאסֶנדו בלי משא.",
+     "es": "A la mañana: dejen el bolso en la oficina de turismo de Magome antes de las ~11:30 para enviarlo a Tsumago (¥1.000/bolso, llega ~13:00). Así caminan el Nakasendo sin peso."
+    }
    },
    {
     "date": "2026-09-25",
@@ -3708,7 +3732,7 @@ window.TRIP_DATA = {
     "city": "Kyoto",
     "title": "De Tsumago a Kioto: la ciudad de las geishas te espera",
     "summary": "Un día de tránsitos hermosos — la despedida del pueblito sereno de Tsumago y la llegada dramática a Kioto. Por la noche: los faroles de Gion y el callejón de Pontocho que te abrazan el alma.",
-    "hotel": "Esta noche en Kioto — en el corazón del barrio histórico, a pasos de Gion",
+    "hotel": "🏨 Kioto — sin reservar aún",
     "events": [
      {
       "start": "08:00",
@@ -3766,7 +3790,11 @@ window.TRIP_DATA = {
       "cost": "¥4.000–9.000 por persona",
       "booking": ""
      }
-    ]
+    ],
+    "logistics": {
+     "he": "אספו במלון בקיוטו את המזוודה הראשית שנשלחה מטוקיו.",
+     "es": "Retiren en el hotel de Kioto la valija principal enviada desde Tokio."
+    }
    },
    {
     "date": "2026-09-26",
@@ -3774,7 +3802,7 @@ window.TRIP_DATA = {
     "city": "Kyoto",
     "title": "Amanecer entre torii — Día 9",
     "summary": "Un día entero con lo mejor de Kioto: subida al alba entre miles de torii bermejos en Fushimi Inari, el bosque de bambú y la serenidad zen de Arashiyama, y el cierre perfecto con un recorrido de degustación por el Mercado Nishiki y una cena de sukiyaki para los dos.",
-    "hotel": "Noche en Kioto — su base en el corazón de la ciudad antigua durante toda la estadía.",
+    "hotel": "🏨 Kioto — sin reservar aún",
     "events": [
      {
       "start": "06:45",
@@ -3863,7 +3891,7 @@ window.TRIP_DATA = {
     "city": "Kyoto",
     "title": "Día 10 — Oro, Kimono y Maiko en Kioto",
     "summary": "Un día completo en la Kioto más auténtica: el pabellón dorado al amanecer, las calles empedradas de Higashiyama, una ceremonia del té en kimono para los dos, y una noche de magia con una Maiko y kaiseki refinado.",
-    "hotel": "Esta noche en Kioto — la mayoría de las atracciones están a una caminata o taxi corto",
+    "hotel": "🏨 Kioto — sin reservar aún",
     "events": [
      {
       "start": "08:30",
@@ -3941,7 +3969,7 @@ window.TRIP_DATA = {
     "city": "Osaka",
     "title": "Día 11 — Osaka: castillos, anime y una noche de comida épica",
     "summary": "Se mudan a Osaka, la ciudad más sabrosa y ruidosa de Japón. Un día que mezcla historia imponente, el paraíso del anime de Nipponbashi y una noche de atracones gloriosos por el Dotonbori.",
-    "hotel": "Esta noche duermen en Osaka — el hotel está en el corazón de Namba o Shinsaibashi, rodeados de neón y olor a fritanga deliciosa.",
+    "hotel": "🏨 Onyado Nono Namba (✓ reservado) · onsen natural · sin tatuajes visibles",
     "events": [
      {
       "start": "09:00",
@@ -4010,7 +4038,11 @@ window.TRIP_DATA = {
       "booking": "",
       "highlight": true
      }
-    ]
+    ],
+    "logistics": {
+     "he": "בבוקר: שלחו את המזוודה הראשית מקיוטו למלון באוסקה (takkyubin · Onyado Nono ✓).",
+     "es": "A la mañana: envíen la valija principal de Kioto al hotel de Osaka (takkyubin · Onyado Nono ✓)."
+    }
    },
    {
     "date": "2026-09-29",
@@ -4018,7 +4050,7 @@ window.TRIP_DATA = {
     "city": "Osaka",
     "title": "Ciervos, Buda y una noche arcoíris",
     "summary": "Un día de excursión a Nara — ciervos sagrados y uno de los Budas más imponentes de Japón — y después de vuelta a Osaka para festejar en Doyama-cho, el barrio gay de la ciudad.",
-    "hotel": "Noche en Osaka — el hotel de ustedes en la ciudad",
+    "hotel": "🏨 Onyado Nono Namba (✓ reservado) · onsen natural · sin tatuajes visibles",
     "events": [
      {
       "start": "08:30",
@@ -4107,7 +4139,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "Día 13 — De vuelta a Tokyo: Yanaka eterna",
     "summary": "Se despiden de Osaka con un desayuno tranquilo y toman el Shinkansen de regreso a Tokyo. La tarde los espera con los gatos y el encanto retro de Yanaka, compras en Shibuya y una cena íntima en Ebisu para celebrar.",
-    "hotel": "Esta noche duermen en Tokyo — el nuevo hotel ya está listo después del check-in del mediodía.",
+    "hotel": "🏨 Tokio (regreso) — sin reservar aún",
     "events": [
      {
       "start": "09:00",
@@ -4174,7 +4206,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "Día 14 — Ghibli, luz y despedida en Tokio",
     "summary": "El día más emotivo del viaje: una mañana de fantasía en el Museo Ghibli, una tarde sumergidos en el arte digital de teamLab Planets y una cena de celebración con omakase que cierra con broche de oro el cumpleaños 40 de Ezequiel. Tokio se despide a lo grande.",
-    "hotel": "Esta noche dormimos en Tokio — última noche en la base, con Japón todavía en la sangre.",
+    "hotel": "🏨 Tokio (regreso) — sin reservar aún",
     "events": [
      {
       "start": "09:30",
@@ -4242,7 +4274,7 @@ window.TRIP_DATA = {
     "city": "Tokyo",
     "title": "Día 15 — Sayonara, Japón",
     "summary": "La última mañana en Tokyo llega con las valijas listas y el corazón lleno. Desayuno rápido, el tren del alba hacia Narita y una última mirada a los carteles de neón antes de que el avión los lleve de vuelta a casa con los 40 años festejados y un amor sellado en Japón.",
-    "hotel": "Esta noche no hay hotel — ¡se vuela de regreso a casa!",
+    "hotel": "✈️ Día de salida — sin alojamiento",
     "events": [
      {
       "start": "06:30",
