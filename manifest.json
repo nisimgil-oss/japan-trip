@@ -1,0 +1,15 @@
+{
+  "name": "יפן 2026 · חגיגות 40",
+  "short_name": "יפן 2026",
+  "description": "מתכנן הטיול — טוקיו · האקונה · עמק קיסו · קיוטו · אוסקה · נארה",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f1830",
+  "theme_color": "#0f1830",
+  "lang": "he",
+  "dir": "rtl",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

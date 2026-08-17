@@ -507,3 +507,44 @@ a.ev-area:hover{color:var(--red);text-decoration:underline}
 .budget-pp{font-size:13px;color:var(--ink-soft);margin-top:8px}
 .budget-sum{font-size:14px;color:#40382f;margin-top:8px;unicode-bidi:plaintext}
 .budget-note{font-size:12px;color:var(--ink-faint);margin-top:8px}
+
+/* ---- weather chip ---- */
+.dh-weather{display:inline-flex;align-items:center;gap:4px;margin-inline-start:8px;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#e8eef7;vertical-align:middle;cursor:help;unicode-bidi:plaintext}
+.dh-weather.wx-ok{background:rgba(60,180,75,.16);border-color:rgba(60,180,75,.5)}
+.dh-weather.wx-warn{background:rgba(245,130,49,.16);border-color:rgba(245,130,49,.55)}
+.dh-weather.wx-bad{background:rgba(215,65,47,.18);border-color:rgba(232,88,66,.6)}
+.wx-src{opacity:.6;font-weight:400;font-size:10.5px}
+/* ---- map spot pins ---- */
+.spot-pin span{display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;font-size:14px;box-shadow:0 1px 4px rgba(0,0,0,.4);border:2px solid #fff}
+/* ---- luggage chain ---- */
+.lug-intro{color:#dfe0e6;font-size:14px;line-height:1.6;margin:6px 0 14px}
+.lug-list{display:flex;flex-direction:column;gap:6px}
+.lug-row{display:flex;gap:11px;align-items:flex-start;padding:9px 12px;border-radius:11px;background:var(--night-1);border:1px solid var(--indigo-line)}
+.lug-row.night{background:rgba(245,130,49,.09);border-color:rgba(245,130,49,.4)}
+.lug-ic{font-size:20px;flex:none;line-height:1.4}
+.lug-day{font-weight:600;color:#eef1f6;font-size:13.5px;unicode-bidi:plaintext}
+.lug-tag{font-size:11px;color:#f5a531;font-weight:700;margin-inline-start:4px}
+.lug-badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:5px}
+.lug-badge{font-size:12px;padding:3px 8px;border-radius:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);color:#dbe6f2;unicode-bidi:plaintext}
+.lug-badge.send{background:rgba(66,99,216,.16);border-color:rgba(66,99,216,.5)}
+.lug-badge.pick{background:rgba(60,180,75,.15);border-color:rgba(60,180,75,.5)}
+.lug-badge.carry{background:rgba(212,175,95,.15);border-color:var(--gold)}
+.lug-card-title{margin:20px 0 4px;color:#f4e3b8;font-family:var(--serif)}
+.lug-card-hint{color:#c8cad2;font-size:13px;margin-bottom:10px}
+.lug-cards{display:flex;flex-wrap:wrap;gap:12px}
+.lug-card{flex:1 1 280px;background:var(--night-1);border:1px solid var(--indigo-line);border-radius:12px;padding:12px}
+.lug-card-h{font-weight:700;color:#eef1f6;margin-bottom:8px;font-size:13.5px}
+.lug-ja{white-space:pre-wrap;font-size:13px;line-height:1.7;background:#0c1426;border:1px solid var(--indigo-line);border-radius:8px;padding:9px 11px;color:#e8eef7;margin:0 0 9px;direction:ltr;text-align:left;font-family:'Noto Sans JP',sans-serif}
+.lug-copy{cursor:pointer}
+/* ---- print one day ---- */
+@media print{
+  body>*{display:none!important}
+  main.wrap{display:block!important;padding:0!important}
+  main.wrap>section{display:none!important}
+  #view-itinerary{display:block!important}
+  #view-itinerary .day-rail,#view-itinerary .tl-add,#view-itinerary .toolbar,#view-itinerary .lang-warn,.ev-actions,.ev-check,.dh-actions{display:none!important}
+  body{background:#fff!important;color:#000!important}
+  .dh-city,.dh-title,.dh-sum,.dh-hotel,.dh-logistics,.dh-culture,.dh-tips,.dh-tips-h,.dh-tips-list,.ev-title,.ev-desc,.ev-tip,.ev-time,.ev-area,.dh-culture span,.chip{color:#111!important}
+  .dh-culture,.dh-tips,.dh-logistics,.ev-card,.dh-weather,.chip{background:#fff!important;border-color:#999!important}
+  .tl-line,.ev-node{background:#bbb!important}
+}

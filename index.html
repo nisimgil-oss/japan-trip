@@ -9,7 +9,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@500;700&family=Shippori+Mincho:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="styles.css?v=20260816p">
+<link rel="stylesheet" href="styles.css?v=20260817a">
+<link rel="manifest" href="manifest.json?v=20260817a">
+<link rel="apple-touch-icon" href="icon.svg">
 </head>
 <body>
 <div class="petals" id="petals" aria-hidden="true"></div>
@@ -40,6 +42,7 @@
   <button class="tab" data-view="overview"><span>🗾</span> <span data-i18n="tab.overview">מבט־על</span></button>
   <button class="tab" data-view="map"><span>🗺️</span> <span data-i18n="tab.map">מפה</span></button>
   <button class="tab" data-view="booked"><span>🔖</span> <span data-i18n="tab.booked">לסגור</span></button>
+  <button class="tab" data-view="luggage"><span>🧳</span> <span data-i18n="tab.luggage">תיקים</span></button>
   <button class="tab" data-view="guide"><span>📖</span> <span data-i18n="tab.guide">מדריך</span></button>
   <button class="tab" data-view="food"><span>🍜</span> <span data-i18n="tab.food">אוכל</span></button>
   <button class="tab" data-view="restaurants"><span>🍣</span> <span data-i18n="tab.restaurants">מסעדות</span></button>
@@ -60,6 +63,7 @@
     </div>
     <div class="toolbar">
       <div class="grp">
+        <button class="btn btn-ghost btn-sm" id="printDayBtn" data-i18n="toolbar.printDay">🖨️ הדפס יום</button>
         <button class="btn btn-ghost btn-sm" id="exportBtn" data-i18n="toolbar.backup">⬇️ גיבוי</button>
         <button class="btn btn-ghost btn-sm" id="importBtn" data-i18n="toolbar.restore">⬆️ שחזור</button>
         <input type="file" id="importFile" accept="application/json" class="hidden">
@@ -90,6 +94,11 @@
   <!-- BOOKED — hotels-to-close tracker -->
   <section id="view-booked" class="hidden">
     <div id="bookedBody"></div>
+  </section>
+
+  <!-- LUGGAGE — takkyubin forwarding chain -->
+  <section id="view-luggage" class="hidden">
+    <div id="luggageBody"></div>
   </section>
 
   <!-- EXPERIENCES -->
@@ -162,7 +171,7 @@
 <div class="toast" id="toast"></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="data.js?v=20260816p"></script>
-<script src="app.js?v=20260816p"></script>
+<script src="data.js?v=20260817a"></script>
+<script src="app.js?v=20260817a"></script>
 </body>
 </html>

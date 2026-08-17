@@ -34,7 +34,9 @@
       'hero.japan': 'יפן', 'hero.sub': '🏮 חגיגות 40 · מסע אהבה, אוכל ותרבות 🌸',
       'hero.arrive': 'נחיתה בטוקיו 18:25', 'hero.depart': 'המראה 12:00', 'hero.cities': '🗾 טוקיו · האקונה · קיסו · קיוטו · אוסקה · נארה',
       'tab.itinerary': 'היומן', 'tab.overview': 'מבט־על', 'tab.guide': 'מדריך', 'tab.food': 'אוכל', 'tab.restaurants': 'מסעדות', 'tab.prep': 'הכנות',
-      'toolbar.addEvent': '＋ הוסף פעילות ליום הזה', 'toolbar.backup': '⬇️ גיבוי', 'toolbar.restore': '⬆️ שחזור', 'toolbar.petals': '🌸 פרחים', 'toolbar.reset': '↺ אפס תכנון',
+      'toolbar.addEvent': '＋ הוסף פעילות ליום הזה', 'toolbar.backup': '⬇️ גיבוי', 'toolbar.restore': '⬆️ שחזור', 'toolbar.petals': '🌸 פרחים', 'toolbar.reset': '↺ אפס תכנון', 'toolbar.printDay': '🖨️ הדפס יום',
+      'tab.luggage': 'תיקים', spotsAnime: '🎮 אנימה', spotsLgbt: '🏳️‍🌈 חיי לילה גאים', wxTypical: 'ממוצע עונתי', wxForecast: 'תחזית', wxRain: 'גשם', wxWind: 'רוח', wxTyphoon: '🌀 סוף ספטמבר = שיא עונת הטייפונים — עקבו אחרי התחזית ושקלו ביטוח גמיש.', wxLoading: 'טוען מזג אוויר…', wxNA: 'מזג אוויר לא זמין',
+      lugTitle: '🧳 שרשרת התיקים (takkyubin)', lugIntro: 'המזוודה הראשית נשלחת קדימה כדי לטייל קל בהאקונה ובקיסו. הימים ב-🎒 = תיק-לילה בלבד, בלי המזוודה.', lugHave: 'איתכם', lugNight: 'תיק-לילה בלבד', lugSend: 'שליחה', lugPickup: 'איסוף', lugCardTitle: '📇 כרטיס בקשה לדלפק המלון (יפנית)', lugCardHint: 'הראו את זה בקבלה כדי לשלוח מזוודה למלון הבא:', lugCopy: 'העתק', lugCopied: '✓ הועתק',
       'overview.title': '🗾 כל הטיול במבט אחד', 'restaurants.title': '🍣 מקומות מיוחדים לאכול',
       'foot': 'נבנה באהבה עבורכם ❤️ · תכנון גמיש — שנו, הוסיפו וסמנו ✓ · いってらっしゃい',
       'f.start': 'משעה', 'f.end': 'עד שעה', 'f.title': 'כותרת', 'f.type': 'סוג', 'f.area': 'אזור / מיקום', 'f.desc': 'תיאור', 'f.tips': 'טיפ', 'f.cost': 'עלות', 'f.booking': 'הזמנה מראש', 'f.note': 'הערה אישית שלכם', 'f.delete': '🗑️ מחק', 'f.cancel': 'ביטול', 'f.save': 'שמירה',
@@ -69,7 +71,9 @@
       'hero.japan': 'Japón', 'hero.sub': '🏮 Cumpleaños 40 · un viaje de amor, comida y cultura 🌸',
       'hero.arrive': 'Llegada a Tokio 18:25', 'hero.depart': 'Despegue 12:00', 'hero.cities': '🗾 Tokio · Hakone · Kiso · Kioto · Osaka · Nara',
       'tab.itinerary': 'Itinerario', 'tab.overview': 'Vista general', 'tab.guide': 'Guía', 'tab.food': 'Comida', 'tab.restaurants': 'Restaurantes', 'tab.prep': 'Preparativos',
-      'toolbar.addEvent': '＋ Agregar actividad a este día', 'toolbar.backup': '⬇️ Respaldo', 'toolbar.restore': '⬆️ Restaurar', 'toolbar.petals': '🌸 Pétalos', 'toolbar.reset': '↺ Reiniciar plan',
+      'toolbar.addEvent': '＋ Agregar actividad a este día', 'toolbar.backup': '⬇️ Respaldo', 'toolbar.restore': '⬆️ Restaurar', 'toolbar.petals': '🌸 Pétalos', 'toolbar.reset': '↺ Reiniciar plan', 'toolbar.printDay': '🖨️ Imprimir día',
+      'tab.luggage': 'Equipaje', spotsAnime: '🎮 Anime', spotsLgbt: '🏳️‍🌈 Vida gay', wxTypical: 'promedio de estación', wxForecast: 'pronóstico', wxRain: 'lluvia', wxWind: 'viento', wxTyphoon: '🌀 Fin de septiembre = pico de temporada de tifones — seguí el pronóstico y considerá un seguro flexible.', wxLoading: 'cargando clima…', wxNA: 'clima no disponible',
+      lugTitle: '🧳 Cadena de equipaje (takkyubin)', lugIntro: 'La valija principal se despacha por adelantado para viajar liviano por Hakone y Kiso. Los días con 🎒 = solo bolso de una noche, sin la valija.', lugHave: 'con ustedes', lugNight: 'solo bolso de una noche', lugSend: 'despacho', lugPickup: 'retiro', lugCardTitle: '📇 Tarjeta para la recepción del hotel (japonés)', lugCardHint: 'Mostrá esto en recepción para enviar la valija al próximo hotel:', lugCopy: 'Copiar', lugCopied: '✓ Copiado',
       'overview.title': '🗾 Todo el viaje de un vistazo', 'restaurants.title': '🍣 Lugares especiales para comer',
       'foot': 'Hecho con amor para ustedes ❤️ · plan flexible — cambiá, agregá y marcá ✓ · いってらっしゃい',
       'f.start': 'Desde', 'f.end': 'Hasta', 'f.title': 'Título', 'f.type': 'Tipo', 'f.area': 'Zona / lugar', 'f.desc': 'Descripción', 'f.tips': 'Tip', 'f.cost': 'Costo', 'f.booking': 'Reserva previa', 'f.note': 'Nota personal', 'f.delete': '🗑️ Borrar', 'f.cancel': 'Cancelar', 'f.save': 'Guardar',
@@ -169,7 +173,7 @@
     const hotelUrl = hotelName ? placeUrl(hotelName + ' ' + cityLatin(d.city)) : null;
     const routeUrl = dayRouteUrl(d);
     $('#dayHead').innerHTML =
-      `<div><div class="dh-city">${cityEmoji(d.city)} ${escapeHtml(d.city || '')} · ${dowT(d.dow)} ${fmtDate(d.date)}${d.birthday ? ' · 🎂 ' + t('bday') : ''}</div>` +
+      `<div><div class="dh-city">${cityEmoji(d.city)} ${escapeHtml(d.city || '')} · ${dowT(d.dow)} ${fmtDate(d.date)}${d.birthday ? ' · 🎂 ' + t('bday') : ''}<span class="dh-weather" id="dhWeather" title="${escapeAttr(t('wxTyphoon'))}"></span></div>` +
       `<div class="dh-title">${escapeHtml(d.title || '')}</div>` +
       (d.summary ? `<div class="dh-sum">${escapeHtml(d.summary)}</div>` : '') +
       (hotelName ? `<div class="dh-hotel">🛏️ ${t('night')}: <b dir="auto">${escapeHtml(hotelName)}</b>${hotelUrl ? ` <a class="dh-maplink" href="${hotelUrl}" target="_blank" rel="noopener">🗺️</a>` : ''}</div>` : '') +
@@ -178,6 +182,7 @@
       (d.tips && d.tips.length ? `<div class="dh-tips"><div class="dh-tips-h">💡 ${t('tipsLabel')}</div><ul class="dh-tips-list">${d.tips.map(x => `<li dir="auto">${escapeHtml(x)}</li>`).join('')}</ul></div>` : '') +
       (routeUrl ? `<div class="dh-actions"><a class="btn btn-ghost btn-sm" href="${routeUrl}" target="_blank" rel="noopener">${t('mapsDay')}</a></div>` : '') +
       `</div>`;
+    fillWeather(d);
     const tl = $('#timeline'); tl.innerHTML = '<div class="tl-line"></div>';
     const evs = sortEvents(d.events || []);
     if (!evs.length) { const e = document.createElement('div'); e.style.cssText = 'padding:20px 0 6px;color:var(--cream-faint);padding-inline-start:88px'; e.textContent = t('empty'); tl.appendChild(e); }
@@ -440,8 +445,26 @@
     const gOpts = { subdomains: ['0', '1', '2', '3'], maxZoom: 20, attribution: '© Google' };
     const gRoad = L.tileLayer('https://mt{s}.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}', gOpts).addTo(_map);
     const gSat = L.tileLayer('https://mt{s}.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}', gOpts);
-    L.control.layers({ 'מפה · Mapa': gRoad, 'לוויין · Satélite': gSat }, null, { position: 'topright' }).addTo(_map);
+    const overlays = buildSpotLayers();
+    L.control.layers({ 'מפה · Mapa': gRoad, 'לוויין · Satélite': gSat }, overlays, { position: 'topright', collapsed: false }).addTo(_map);
     return _map;
+  }
+  // curated interest layers filtered to the cities actually on the route
+  function buildSpotLayers() {
+    const cities = new Set(state.days.map(d => cityLatin(d.city)));
+    const mk = (list, emoji, hex) => {
+      const g = L.layerGroup();
+      list.filter(s => cities.has(s.city)).forEach(s => {
+        L.marker(s.ll, { icon: L.divIcon({ className: 'spot-pin', html: `<span style="background:${hex}">${emoji}</span>`, iconSize: [26, 26], iconAnchor: [13, 13] }) })
+          .bindPopup(`<b dir="auto">${escapeHtml(s.name)}</b><br><span dir="auto" style="color:#555">${escapeHtml(s[lang] || s.he || '')}</span><br><a href="https://www.google.com/maps/search/?api=1&query=${s.ll[0]},${s.ll[1]}" target="_blank" rel="noopener">🗺️ ${escapeHtml(t('mapsOpen'))}</a>`, { autoPan: false })
+          .addTo(g);
+      });
+      return g;
+    };
+    const out = {};
+    out[t('spotsAnime')] = mk(SPOTS.anime, '🎮', '#7a3ff2');
+    out[t('spotsLgbt')] = mk(SPOTS.lgbt, '🏳️‍🌈', '#e0409a');
+    return out;
   }
   function buildDayLayer(d, di) {
     const evs = sortEvents(d.events || []);
@@ -867,13 +890,14 @@
   }
 
   // ---------- views ----------
-  const VIEWS = ['itinerary', 'overview', 'map', 'booked', 'guide', 'food', 'restaurants', 'experiences', 'prep'];
+  const VIEWS = ['itinerary', 'overview', 'map', 'booked', 'luggage', 'guide', 'food', 'restaurants', 'experiences', 'prep'];
   function showView(v) {
     if (!VIEWS.includes(v)) v = 'itinerary';
     VIEWS.forEach(x => $('#view-' + x).classList.toggle('hidden', x !== v));
     $$('.tab').forEach(tb => tb.classList.toggle('active', tb.dataset.view === v));
     if (v === 'map') renderMap();
     if (v === 'booked') renderBooked();
+    if (v === 'luggage') renderLuggage();
     if (v === 'overview') renderOverview();
     if (v === 'guide') renderGuide();
     if (v === 'food') renderFood();
@@ -928,6 +952,8 @@
     $('#resetBtn').onclick = () => { if (confirm(t('confirmReset'))) { localStorage.removeItem(tripKey(lang)); initState(); curDay = 0; renderRail(); renderDay(); toast(t('resetDone')); } };
     $('#exportBtn').onclick = exportJSON; $('#importBtn').onclick = () => $('#importFile').click();
     $('#importFile').onchange = e => { if (e.target.files[0]) importJSON(e.target.files[0]); };
+    const pb = $('#printDayBtn'); if (pb) pb.onclick = () => window.print();
+    if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
     $('#langWarnX').onclick = () => { localStorage.setItem(LS_LANGWARN, '1'); $('#langWarn').hidden = true; };
     let petalsOn = loadPrefs().petals !== false; buildPetals(petalsOn);
     $('#petalsBtn').onclick = () => { petalsOn = !petalsOn; buildPetals(petalsOn); const p = loadPrefs(); p.petals = petalsOn; localStorage.setItem(LS_PREFS, JSON.stringify(p)); };
@@ -938,5 +964,106 @@
     bind(); renderCountdown(); renderRail(); renderDay(); renderLangWarn();
     if (prefs.view && prefs.view !== 'itinerary') showView(prefs.view);
   }
+  // ================= FEATURES: weather · spots · luggage =================
+  const SPOTS = {
+    anime: [
+      { name: 'Akihabara Electric Town', city: 'Tokyo', ll: [35.6984, 139.7731], he: 'ארקייד, גאצ׳פון, Mandarake ופיגורות', es: 'Arcades, gachapon, Mandarake y figuras' },
+      { name: 'Nakano Broadway', city: 'Tokyo', ll: [35.7076, 139.6657], he: 'קומות של אנימה נדירה ואספנות', es: 'Pisos de anime raro y coleccionismo' },
+      { name: 'Ghibli Museum (Mitaka)', city: 'Tokyo', ll: [35.6962, 139.5704], he: 'עולם מיאזאקי — כרטיסים ב-10 לחודש הקודם', es: 'El mundo de Miyazaki — entradas el 10 del mes previo' },
+      { name: 'Ikebukuro Otome Road', city: 'Tokyo', ll: [35.7295, 139.7169], he: 'מרכז אנימה/מנגה (דוג׳ין, קוספליי)', es: 'Meca anime/manga (doujin, cosplay)' },
+      { name: 'Pokémon Center Shibuya', city: 'Tokyo', ll: [35.6580, 139.7016], he: 'חנות הדגל של פוקימון', es: 'Tienda insignia de Pokémon' },
+      { name: 'teamLab Planets (Toyosu)', city: 'Tokyo', ll: [35.6497, 139.7906], he: 'אמנות דיגיטלית סוחפת', es: 'Arte digital inmersivo' },
+      { name: 'Den Den Town (Nipponbashi)', city: 'Osaka', ll: [34.6592, 135.5060], he: 'האקיהברה של אוסקה — גיימינג ואנימה', es: 'La Akihabara de Osaka — gaming y anime' },
+      { name: "Kyoto Int'l Manga Museum", city: 'Kyoto', ll: [35.0116, 135.7590], he: '300,000 כרכי מנגה בבית ספר לשעבר', es: '300.000 tomos de manga en una vieja escuela' },
+    ],
+    lgbt: [
+      { name: 'Shinjuku Ni-chome', city: 'Tokyo', ll: [35.6931, 139.7085], he: 'רובע הלהט״ב הגדול בטוקיו — Arty Farty, Advocates, Gold Finger, Dragon Men, Eagle', es: 'El gran barrio LGBT de Tokio — Arty Farty, Advocates, Gold Finger, Dragon Men, Eagle' },
+      { name: 'Doyama-cho', city: 'Osaka', ll: [34.7048, 135.5010], he: 'לב חיי הלילה הגאים באוסקה — FrenZy, Grand Slam', es: 'El corazón gay de Osaka — FrenZy, Grand Slam' },
+      { name: 'Kyoto — Kiyamachi scene', city: 'Kyoto', ll: [35.0040, 135.7690], he: 'סצנה קטנה סביב קיאמאצ׳י/פונטוצ׳ו (למשל Apple, Azure)', es: 'Escena chica cerca de Kiyamachi/Pontocho (Apple, Azure)' },
+    ],
+  };
+
+  // ---- weather / typhoon (Open-Meteo, no key; forecast when ≤15d, else same-date last-year as seasonal proxy) ----
+  const WX_CACHE = 'japanTrip.wx.v1';
+  const dayCoords = (d) => CITY_GEO[cityLatin(d.city)] || (d.events && d.events[0] ? geoFor(d.events[0], d.city) : null) || null;
+  async function fillWeather(d) {
+    const el = document.getElementById('dhWeather'); if (!el) return;
+    const ll = dayCoords(d); if (!ll) { el.textContent = ''; return; }
+    const key = d.date + '@' + ll[0].toFixed(2) + ',' + ll[1].toFixed(2);
+    const cache = safeParse(localStorage.getItem(WX_CACHE)) || {};
+    const paint = (w) => {
+      if (!w) { el.textContent = ''; return; }
+      el.className = 'dh-weather wx-' + w.risk;
+      el.innerHTML = `${w.icon} ${Math.round(w.tmax)}°/${Math.round(w.tmin)}° · ☔${w.rain}% · 💨${Math.round(w.wind)} <span class="wx-src">${w.typical ? t('wxTypical') : t('wxForecast')}</span>`;
+    };
+    if (cache[key]) { paint(cache[key]); return; }
+    el.className = 'dh-weather'; el.textContent = '· ' + t('wxLoading');
+    try {
+      const today = new Date(); today.setHours(0, 0, 0, 0);
+      const target = new Date(d.date + 'T00:00:00');
+      const daysUntil = Math.round((target - today) / 864e5);
+      let url, typical = false;
+      if (daysUntil >= 0 && daysUntil <= 15) {
+        url = `https://api.open-meteo.com/v1/forecast?latitude=${ll[0]}&longitude=${ll[1]}&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,wind_speed_10m_max&timezone=Asia%2FTokyo&start_date=${d.date}&end_date=${d.date}`;
+      } else {
+        typical = true;
+        const ds = (target.getFullYear() - 1) + '-' + d.date.slice(5);
+        url = `https://archive-api.open-meteo.com/v1/archive?latitude=${ll[0]}&longitude=${ll[1]}&start_date=${ds}&end_date=${ds}&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,wind_speed_10m_max&timezone=Asia%2FTokyo`;
+      }
+      const j = await (await fetch(url)).json(); const dd = j.daily;
+      if (!dd || !dd.temperature_2m_max || dd.temperature_2m_max[0] == null) { el.textContent = ''; return; }
+      const tmax = dd.temperature_2m_max[0], tmin = dd.temperature_2m_min[0];
+      const rain = typical ? Math.min(100, Math.round((dd.precipitation_sum[0] || 0) * 8)) : (dd.precipitation_probability_max ? dd.precipitation_probability_max[0] : 0);
+      const wind = dd.wind_speed_10m_max ? dd.wind_speed_10m_max[0] : 0;
+      let risk = 'ok', icon = '☀️';
+      if (rain >= 60 || wind >= 45) { risk = 'bad'; icon = '🌧️'; }
+      else if (rain >= 35 || wind >= 32) { risk = 'warn'; icon = '🌥️'; }
+      else if (rain >= 15) { icon = '⛅'; }
+      const w = { tmax, tmin, rain, wind, risk, icon, typical };
+      cache[key] = w; localStorage.setItem(WX_CACHE, JSON.stringify(cache)); paint(w);
+    } catch (e) { el.textContent = ''; }
+  }
+
+  // ---- luggage forwarding chain view ----
+  const LUG_NIGHT = new Set([4, 5, 6]); // Hakone, Magome, Nagiso — overnight bag only
+  const LUG_SEND = { 3: { he: 'שליחה: המזוודה הראשית → Candeo קיוטו (מגיע עד 25.9)', es: 'Despacho: valija principal → Candeo Kioto (llega para el 25/9)' },
+    9: { he: 'שליחה (ערב): המזוודה → Onyado Nono אוסקה (מגיע 28.9 אחה״צ)', es: 'Despacho (noche): valija → Onyado Nono Osaka (llega el 28/9 a la tarde)' } };
+  const LUG_PICK = { 7: { he: 'איסוף: המזוודה מחכה ב-Candeo קיוטו', es: 'Retiro: la valija espera en Candeo Kioto' },
+    10: { he: 'איסוף: המזוודה מגיעה ל-Onyado Nono', es: 'Retiro: la valija llega a Onyado Nono' } };
+  const LUG_CARRY = { 12: { he: 'נושאים בשינקנסן → הזמינו מושב "מטען גדול" מראש', es: 'Se lleva en el shinkansen → reservá el asiento de "equipaje grande"' } };
+  const JA_CARDS = [
+    { when: '21.9', to: 'Candeo Hotels Kyoto Karasuma Rokkaku', arrive: '9月25日', he: 'שליחה מטוקיו (AMANEK) לקיוטו', es: 'Envío de Tokio (AMANEK) a Kioto' },
+    { when: '27.9', to: 'Onyado Nono Namba, Osaka', arrive: '9月28日', he: 'שליחה מקיוטו (Candeo) לאוסקה', es: 'Envío de Kioto (Candeo) a Osaka' },
+  ];
+  function jaText(c) {
+    return '恐れ入りますが、この荷物を宅配便（ヤマト運輸）で下記のホテルへ送っていただけますか。\n宛先ホテル: ' + c.to + '\n到着希望日: ' + c.arrive + '\n宿泊者名: ____________';
+  }
+  function renderLuggage() {
+    const box = $('#luggageBody'); if (!box) return;
+    const rows = state.days.map((d, i) => {
+      const night = LUG_NIGHT.has(i);
+      const bits = [];
+      if (LUG_SEND[i]) bits.push(`<span class="lug-badge send">📤 ${escapeHtml(LUG_SEND[i][lang] || LUG_SEND[i].he)}</span>`);
+      if (LUG_PICK[i]) bits.push(`<span class="lug-badge pick">📥 ${escapeHtml(LUG_PICK[i][lang] || LUG_PICK[i].he)}</span>`);
+      if (LUG_CARRY[i]) bits.push(`<span class="lug-badge carry">🚄 ${escapeHtml(LUG_CARRY[i][lang] || LUG_CARRY[i].he)}</span>`);
+      return `<div class="lug-row${night ? ' night' : ''}"><div class="lug-ic">${night ? '🎒' : '🧳'}</div>` +
+        `<div class="lug-main"><div class="lug-day">${t('day')} ${i + 1} · ${cityEmoji(d.city)} ${escapeHtml(d.city || '')} · ${fmtDate(d.date)} ${night ? `<span class="lug-tag">${t('lugNight')}</span>` : ''}</div>` +
+        (bits.length ? `<div class="lug-badges">${bits.join('')}</div>` : '') + `</div></div>`;
+    }).join('');
+    const cards = JA_CARDS.map((c, i) => `<div class="lug-card"><div class="lug-card-h">${c.when} · ${escapeHtml(c[lang] || c.he)}</div>` +
+      `<pre class="lug-ja" id="ja${i}">${escapeHtml(jaText(c))}</pre>` +
+      `<button class="btn btn-sm btn-ghost lug-copy" data-ja="${i}">${t('lugCopy')}</button></div>`).join('');
+    box.innerHTML = `<h2 class="section-h">${t('lugTitle')}</h2>` +
+      `<div class="lug-intro">${t('lugIntro')}</div>` +
+      `<div class="lug-list">${rows}</div>` +
+      `<h3 class="lug-card-title">${t('lugCardTitle')}</h3><div class="lug-card-hint">${t('lugCardHint')}</div>` +
+      `<div class="lug-cards">${cards}</div>`;
+    $$('.lug-copy', box).forEach(b => b.onclick = () => {
+      const txt = $('#ja' + b.dataset.ja).textContent;
+      navigator.clipboard && navigator.clipboard.writeText(txt);
+      b.textContent = t('lugCopied'); setTimeout(() => b.textContent = t('lugCopy'), 1600);
+    });
+  }
+
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
 })();
