@@ -1,6 +1,6 @@
 /* data.js — Option A · booked hotels + luggage logistics per day. bilingual he/es. */
 window.TRIP_DATA = {
- "v": "bi-optA-12",
+ "v": "bi-optA-13",
  "flights": {
   "airline": "LOT Polish Airlines",
   "passenger": "Ezequiel",
@@ -785,7 +785,7 @@ window.TRIP_DATA = {
     "dow": "Sat",
     "city": "Tokyo",
     "title": "טוקיו מהשוק ועד השמיים",
-    "summary": "יום של חושים וצבעים: שוק טסוקיג'י, מקדש אסאקוסה, שקיעה אגדית מ-Shibuya Sky ולילה רועש ב-Ni-chome. ביום הזה טוקיו מתגלה בשלמותה.",
+    "summary": "יום של חושים וצבעים: שוק טסוקיג'י, מקדש אסאקוסה, טיול ערב בלב שיבויה ולילה רועש ב-Ni-chome. ביום הזה טוקיו מתגלה בשלמותה.",
     "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ נסגר · 18→22, 4 לילות)",
     "events": [
      {
@@ -818,7 +818,7 @@ window.TRIP_DATA = {
       "area": "Shinjuku",
       "title": "מנוחת הצהריים בשינג'וקו",
       "desc": "אין בושה להודות שהגוף עוד בשעון בואנוס איירס — שנת צהריים אמיתית עכשיו תהפוך את הלילה לבלתי נשכח. אפשר גם לשוטט לאט בשינג'וקו ולחוש את הקצב.",
-      "tips": "הגדירו אלארם — השקיעה ב-Shibuya Sky לא מחכה לאיש.",
+      "tips": "אל תישנו יותר מדי — הערב בשיבויה וב-Ni-chome מחכה.",
       "cost": "חינם",
       "booking": ""
      },
@@ -826,13 +826,12 @@ window.TRIP_DATA = {
       "start": "16:45",
       "end": "18:15",
       "type": "sightseeing",
-      "area": "Shibuya (Shibuya Sky)",
-      "title": "Shibuya Sky בשעת הזהב",
-      "desc": "הגג הפתוח של Shibuya Sky הוא אחד מהנופים הרומנטיים ביותר בטוקיו: ים האורות של הצומת המפורסמת בעולם, שמיים כתומים-ורודים, ואתם יחד מעל הכול. ממש שווה כל ין.",
-      "tips": "הזמינו סלוט שקיעה ספציפי — הפופולריים נגמרים שבועות מראש. לבשו שכבה — קר בגובה.",
-      "cost": "¥2,000–2,500 לאדם",
-      "booking": "יש להזמין מראש סלוט שקיעה ב-Shibuya Sky — נגמר שבועות מראש",
-      "highlight": true
+      "area": "Shibuya",
+      "title": "שיבויה — הצומת, האצ'יקו וטיול ערב",
+      "desc": "צלילה אל לב שיבויה: חציית הצומת המפורסמת בעולם, פסל האצ'יקו, Center Gai הזוהר וגג Miyashita Park לנוף שקט של השכונה בין ערביים. אנרגיה טוקיואית טהורה לפני ארוחת הערב.",
+      "tips": "לצילום הכי טוב של הצומת — הקומה השנייה של תחנת שיבויה או Mag's Park על גג Magnet by Shibuya109. הכול חינם, בלי הזמנה.",
+      "cost": "חינם",
+      "booking": ""
      },
      {
       "start": "18:30",
@@ -860,7 +859,7 @@ window.TRIP_DATA = {
     ],
     "cultural": "סנסו-ג'י אינו רק מקדש — הוא הלב הפועם של אסאקוסה מאז המאה השביעית. האגדה מספרת שדייגים מצאו בשנת 628 פסלון קטנטן של קאנון, אלת החמלה, ברשתותיהם בנהר סומידה. הפסלון נעלם ולא נראה מאז, אך המקדש נבנה סביב ּהיעדרו — עקרון יפאני עמוק שבו הדבר הקדוש ביותר הוא זה שאינו נראה לעין. עשן הקטורת מהאגן הגדול (jokoro) נחשב מרפא: יפאנים מפנפנים אותו לעבר הגוף — אל הראש לחוכמה, אל הידיים לכישרון. גם אתם — פנפנו.",
     "tips": [
-     "שיבויה סקיי בשבת של שבוע כסף: חלון ההזמנות נפתח 14 יום מראש (בסביבות 5 בספטמבר) בחצות JST — שחרור אזעקה כבר עכשיו. שקיעה בטוקיו ב-19 בספטמבר היא כ-18:00; הזמינו כניסה ל-17:00 או 17:15 לגולדן אוור מושלם. מחיר אחרי 15:00: ¥3,700 לאדם.",
+     "שיבויה בערב: חציית הצומת מרשימה ביותר אחרי רדת החשכה כשכל המסכים נדלקים. תצפית חינמית ומצוינת מגג Miyashita Park או מ-Mag's Park (Shibuya109). שקיעה ב-19 בספטמבר ~18:00 — תזמון מושלם לצאת מטסוקיג'י/אסאקוסה ולהגיע לשיבויה בין ערביים.",
      "ב-Ni-chome בשבת לילה: רוב הברים גובים 'טייבל-צ'ארג' של ¥1,000–¥1,500 הכולל שתייה ראשונה — שלמו בשמחה, זה המנהג. Advocates Bar (חוץ-בר פתוח) הוא נקודת הכינוס הבינלאומית; משם תגלו לאן ממשיכים לפי מצב רוח. אין צורך להגיע לפני 22:30.",
      "בצוקיג'י: הדוכנים הכי שווים — פרוסות טונה טרייה, טמאגויאקי על שיפוד, ויסטרייה קרם-מייל קונכייה. כרטיסי IC (Suica/Pasmo) חוסכים תור לכרטיסים בכל הנסיעות. שימו לב: רוב הדוכנים סוגרים בין 13:00–14:00, כך שהיציאה ב-10:15 בטוחה."
     ]
@@ -1789,7 +1788,7 @@ window.TRIP_DATA = {
     "dow": "Wed",
     "city": "Tokyo",
     "title": "יום 13 — שוב טוקיו: יאנאקה הרומנטית",
-    "summary": "נפרדים מאוסקה בארוחת בוקר אחרונה ויוצאים בשינקנסן לטוקיו. אחר הצהריים — שוטטות רכה בין חתולים ומקדשים ביאנאקה, ואחריה קניות בשיבויה לפני ארוחת ערב מפנקת באביסו.",
+    "summary": "נפרדים מאוסקה בארוחת בוקר אחרונה ויוצאים בשינקנסן לטוקיו. אחר הצהריים — שוטטות רכה בין חתולים ומקדשים ביאנאקה, בערב צלילה אל האמנות הדיגיטלית של teamLab Planets בטויוסו, ואז ארוחת ערב מפנקת לציון ה-40.",
     "hotel": "🏨 Tokyu Stay Shinjuku (✓ נסגר · 30→2.10) · שינג'וקו · מכונת כביסה בחדר",
     "events": [
      {
@@ -1816,8 +1815,8 @@ window.TRIP_DATA = {
       "dur": "~2:30 שעות"
      },
      {
-      "start": "14:00",
-      "end": "16:00",
+      "start": "14:45",
+      "end": "16:15",
       "type": "sightseeing",
       "area": "Yanaka (Nippori)",
       "title": "יאנאקה — שכונה בזמן עצור",
@@ -1828,23 +1827,24 @@ window.TRIP_DATA = {
       "highlight": true
      },
      {
-      "start": "16:00",
-      "end": "18:00",
-      "type": "shopping",
-      "area": "Shibuya",
-      "title": "שיבויה / הרג'וקו — קניות אחרונות",
-      "desc": "Takeshita Street להייפ והומור, Omotesando לעיצוב ואופנה, וCat Street לגאצ'ות הנסתרות. יום לפני הלפני-אחרון — זמן מושלם לציד מתנות ובוטיקים.",
-      "tips": "Tokyu Hands בשיבויה ו-Village Vanguard ב-Harajuku — אנימה, גאדג'טים ומתנות מוזרות מקסימות שלא תמצאו בשדה התעופה.",
-      "cost": "¥2,000–10,000 לאדם (לפי פיתוי)",
-      "booking": ""
+      "start": "17:30",
+      "end": "19:30",
+      "type": "experience",
+      "area": "Toyosu (teamLab Planets)",
+      "title": "teamLab Planets, Toyosu",
+      "desc": "חווית האמנות הדיגיטלית הנסחטת ביותר ביפן — ובצדק. יורדים יחפים לתוך מים, שוכבים מתחת לפרחים אינסופיים, שוקעים בין אורות שמגיבים לנגיעה. לא אמנות שצופים בה — אמנות שחיים בתוכה. הועבר לכאן מ-1.10 כדי לא לעמיס שני מוזיאונים ביום האחרון.",
+      "tips": "הזמינו כניסה ל-17:30 (אם יאנאקה נמשכת — 18:00 עדיין בטוח; כניסה אחרונה ~21:00). לבשו בגדים שאפשר לגלול מעלה (רגליים וקרסוליים נרטבים). מטויוסו ~15 דק' לגינזה או ~35 דק' לאביסו לארוחת הערב.",
+      "cost": "¥3,200–3,600 לאדם",
+      "booking": "teamLab Planets — הזמינו כרטיס עם כניסה ל-17:30 מראש",
+      "highlight": true
      },
      {
-      "start": "19:00",
-      "end": "21:00",
+      "start": "20:00",
+      "end": "21:30",
       "type": "food",
       "area": "Tokyo (Ebisu)",
       "title": "ארוחת ערב רומנטית באביסו",
-      "desc": "Ebisu ו-Meguro מציעות את שילוב הנדיר של איזאקאיה מודרנית ובסטרו טוקיואי בטיפול יד בוגרת — ברחובות הצדדים תמצאו מסעדות קטנות עם תפריטי omakase, יינות יפניים ואווירה שקטה. ארוחה לציון יום ההולדת ה-40 לפני הלילה האחרון.",
+      "desc": "Ebisu ו-Meguro מציעות את שילוב הנדיר של איזאקאיה מודרנית ובסטרו טוקיואי בטיפול יד בוגרת — ברחובות הצדדים תמצאו מסעדות קטנות עם תפריטי omakase, יינות יפניים ואווירה שקטה. ארוחה לציון יום ההולדת ה-40. טיפ: אם רוצים לחסוך נסיעה אחרי teamLab, אפשר לאכול בגינזה (~15 דק' מטויוסו) במקום אביסו.",
       "tips": "חפשו מקומות עם מושבים בבר המטבח — לראות את השף עובד זה חלק מהחוויה; הזמינו בהצגת עצמכם כצמד חוגג.",
       "cost": "¥5,000–9,000 לאדם",
       "booking": "",
@@ -1867,7 +1867,7 @@ window.TRIP_DATA = {
     "dow": "Thu",
     "city": "Tokyo",
     "title": "יום 14 — גיבלי, אור ופרידה בטוקיו",
-    "summary": "יום הפרידה הגדול: בוקר של פלאים בגיבלי, אחר צהריים שקוע בתוך יצירת האמנות של teamLab Planets, וערב חגיגי עם אומאקאסה שמסכם עשרים שנה ויום הולדת 40 עם כוסית פרידה ב-Ni-chome. טוקיו נפרדת מכם בגדול.",
+    "summary": "יום הפרידה הגדול: בוקר של פלאים בגיבלי, אחר צהריים רגוע בקיצ'יג'וג'י ופארק אינוקאשירה עם קניות אחרונות בשיבויה, וערב חגיגי עם אומאקאסה שמסכם עשרים שנה ויום הולדת 40 עם כוסית פרידה ב-Ni-chome. טוקיו נפרדת מכם בגדול.",
     "hotel": "🏨 Tokyu Stay Shinjuku (✓ נסגר · 30→2.10) · שינג'וקו · מכונת כביסה בחדר",
     "events": [
      {
@@ -1895,15 +1895,14 @@ window.TRIP_DATA = {
      },
      {
       "start": "15:00",
-      "end": "18:00",
-      "type": "experience",
-      "area": "Toyosu (teamLab Planets)",
-      "title": "teamLab Planets, Toyosu",
-      "desc": "חווית האמנות הדיגיטלית הנסחטת ביותר ביפן — ובצדק. יורדים יחפים לתוך מים, שוכבים מתחת לפרחים אינסופיים, שוקעים בין אורות שמגיבים לנגיעה. לא אמנות צופה בה — אמנות שחיים בתוכה.",
-      "tips": "לבשו בגדים שאפשר לגלול מעלה (ירגליים וקרסוליים נרטבים). פתרון נוסף: שמלה קצרה או מכנסיים קצרים.",
-      "cost": "¥3,200–3,600 לאדם",
-      "booking": "teamLab Planets — הזמינו כרטיס עם כניסה בשעה קבועה מראש",
-      "highlight": true
+      "end": "17:30",
+      "type": "shopping",
+      "area": "Shibuya / Harajuku",
+      "title": "קניות אחרונות — שיבויה והרג'וקו",
+      "desc": "מקיצ'יג'וג'י ישר בקו Inokashira לשיבויה (~15 דק'). Takeshita Street להייפ, Omotesando לעיצוב, ו-Cat Street לגאצ'ות. זמן מושלם לציד מתנות אחרון לפני ארוחת הפרידה.",
+      "tips": "Tokyu Hands ו-Loft בשיבויה, Village Vanguard ב-Harajuku — אנימה, גאדג'טים ומתנות מוזרות שלא תמצאו בשדה התעופה. שמרו מקום במזוודה.",
+      "cost": "¥2,000–10,000 לאדם (לפי פיתוי)",
+      "booking": ""
      },
      {
       "start": "19:00",
@@ -2376,9 +2375,9 @@ window.TRIP_DATA = {
        "desc": "ozashiki פרטי ב-Gion. ודאו אנגלית + maiko אמיתי/ת לעומת geiko."
       },
       {
-       "name": "teamLab / Shibuya Sky",
+       "name": "teamLab Planets",
        "sub": "2–4 שבועות מראש",
-       "desc": "כניסה בשעה קבועה, נגמר שבועות מראש. teamLab: בחרו אחד; Shibuya Sky: סלוט שקיעה."
+       "desc": "כניסה בשעה קבועה (30.9 בערב, סלוט ~17:30), נגמר שבועות מראש."
       },
       {
        "name": "USJ / Super Nintendo World",
@@ -3491,7 +3490,7 @@ window.TRIP_DATA = {
     "dow": "Sat",
     "city": "Tokyo",
     "title": "Tokio del mercado al cielo",
-    "summary": "Un día de sabores y alturas: el mercado de Tsukiji, el templo de Asakusa, una puesta de sol épica desde Shibuya Sky y la noche más intensa de Ni-chome. Así se presenta Tokio de verdad.",
+    "summary": "Un día de sabores y colores: el mercado de Tsukiji, el templo de Asakusa, un paseo al atardecer por el corazón de Shibuya y la noche más intensa de Ni-chome. Así se presenta Tokio de verdad.",
     "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ reservado · 18→22, 4 noches)",
     "events": [
      {
@@ -3524,7 +3523,7 @@ window.TRIP_DATA = {
       "area": "Shinjuku",
       "title": "Descanso del mediodía en Shinjuku",
       "desc": "No hay drama en admitir que el cuerpo sigue en horario porteño — una siesta de verdad ahora convierte la noche en algo inolvidable. También podés hacer una caminata tranquila por Shinjuku y absorber el ritmo de la ciudad.",
-      "tips": "Poné alarma — la puesta del sol en Shibuya Sky no espera a nadie.",
+      "tips": "No duerman de más — la noche en Shibuya y Ni-chome los espera.",
       "cost": "gratis",
       "booking": ""
      },
@@ -3532,13 +3531,12 @@ window.TRIP_DATA = {
       "start": "16:45",
       "end": "18:15",
       "type": "sightseeing",
-      "area": "Shibuya (Shibuya Sky)",
-      "title": "Shibuya Sky en la hora dorada",
-      "desc": "La azotea abierta de Shibuya Sky es uno de los panoramas más románticos de Tokio: el cruce más famoso del mundo bañado en naranja y rosa, y ustedes dos por encima de todo. Vale cada yen.",
-      "tips": "Reservá el slot de atardecer con anticipación — los horarios populares se agotan semanas antes. Llevá una capa, arriba hace frío.",
-      "cost": "¥2.000–2.500 por persona",
-      "booking": "Reservá con anticipación el slot de atardecer en Shibuya Sky — se agota semanas antes",
-      "highlight": true
+      "area": "Shibuya",
+      "title": "Shibuya — el cruce, Hachiko y paseo al atardecer",
+      "desc": "Inmersión en el corazón de Shibuya: cruzar el cruce más famoso del mundo, la estatua de Hachiko, el brillo de Center Gai y la terraza de Miyashita Park para una vista tranquila del barrio al anochecer. Energía tokiota pura antes de la cena.",
+      "tips": "Para la mejor foto del cruce — el segundo piso de la estación de Shibuya o el Mag's Park en la terraza de Magnet by Shibuya109. Todo gratis, sin reserva.",
+      "cost": "gratis",
+      "booking": ""
      },
      {
       "start": "18:30",
@@ -3566,7 +3564,7 @@ window.TRIP_DATA = {
     ],
     "cultural": "Senso-ji no es solo un templo: es el corazón latiente de Asakusa desde el siglo VII. La leyenda cuenta que en el año 628 unos pescadores encontraron una pequeña estatua de Kannon, la diosa de la compasión, en sus redes en el río Sumida. La estatua desapareció y nunca más se vio, pero el templo fue construido alrededor de esa ausencia — un principio japonés profundo donde lo más sagrado es aquello que no se puede ver. El humo del incensario grande (jokoro) se considera curativo: los japoneses lo dirigen hacia su cuerpo con las manos — hacia la cabeza para la sabiduría, hacia las manos para el talento. Hacé lo mismo vos también.",
     "tips": [
-     "Shibuya Sky un sábado de Silver Week: la ventana de reservas abre 14 días antes (~5/9) a medianoche JST — poné alarma ya. El atardecer del 19/9 es ~18:00; reservá 17:00 o 17:15 para la golden hour. Después de las 15:00: ¥3.700 p/persona.",
+     "Shibuya al atardecer: el cruce impresiona más de noche, cuando se encienden todas las pantallas. Mirador gratis y excelente desde la terraza de Miyashita Park o Mag's Park (Shibuya109). El atardecer del 19/9 es ~18:00 — timing ideal para salir de Tsukiji/Asakusa y llegar a Shibuya al anochecer.",
      "En Ni-chome un sábado: la mayoría de los bares cobran 'table charge' de ¥1.000–1.500 con el primer trago incluido — pagalo con gusto, es la costumbre. Advocates Bar (barra a la calle) es el punto de encuentro; no hace falta llegar antes de las 22:30.",
      "En Tsukiji: los mejores puestos — fetas de atún fresco, tamagoyaki en palito, vieiras a la crema. Las tarjetas IC (Suica/Pasmo) ahorran filas. Ojo: la mayoría cierra 13:00–14:00, así que salir 10:15 es seguro."
     ]
@@ -4495,7 +4493,7 @@ window.TRIP_DATA = {
     "dow": "Wed",
     "city": "Tokyo",
     "title": "Día 13 — De vuelta a Tokyo: Yanaka eterna",
-    "summary": "Se despiden de Osaka con un desayuno tranquilo y toman el Shinkansen de regreso a Tokyo. La tarde los espera con los gatos y el encanto retro de Yanaka, compras en Shibuya y una cena íntima en Ebisu para celebrar.",
+    "summary": "Se despiden de Osaka con un desayuno tranquilo y toman el Shinkansen de regreso a Tokyo. La tarde los espera con los gatos y el encanto retro de Yanaka, a la noche una inmersión en el arte digital de teamLab Planets en Toyosu, y luego una cena para festejar los 40.",
     "hotel": "🏨 Tokyu Stay Shinjuku (✓ reservado · 30→2.10) · Shinjuku · lavarropas en la habitación",
     "events": [
      {
@@ -4522,8 +4520,8 @@ window.TRIP_DATA = {
       "dur": "~2:30 h"
      },
      {
-      "start": "14:00",
-      "end": "16:00",
+      "start": "14:45",
+      "end": "16:15",
       "type": "sightseeing",
       "area": "Yanaka (Nippori)",
       "title": "Yanaka — el barrio que detuvo el tiempo",
@@ -4534,23 +4532,24 @@ window.TRIP_DATA = {
       "highlight": true
      },
      {
-      "start": "16:00",
-      "end": "18:00",
-      "type": "shopping",
-      "area": "Shibuya",
-      "title": "Shibuya / Harajuku — compras de penúltimo día",
-      "desc": "Takeshita Street para el hype y lo bizarro, Omotesando para diseño y moda, y Cat Street para los boliches escondidos. Es el momento perfecto para cazar regalos de último momento y explorar boutiques únicas.",
-      "tips": "Tokyu Hands en Shibuya y Village Vanguard en Harajuku — anime, gadgets y souvenirs raros y encantadores que no vas a encontrar en el aeropuerto.",
-      "cost": "¥2.000–10.000 por persona (según tentación)",
-      "booking": ""
+      "start": "17:30",
+      "end": "19:30",
+      "type": "experience",
+      "area": "Toyosu (teamLab Planets)",
+      "title": "teamLab Planets, Toyosu",
+      "desc": "La experiencia de arte digital más impactante de Japón — y con razón. Bajás descalzo al agua, te acostás bajo flores infinitas, te sumergís entre luces que responden al tacto. No es arte que se mira — es arte que se habita. Movido acá desde el 1/10 para no amontonar dos museos el último día.",
+      "tips": "Reservá la entrada de las 17:30 (si Yanaka se estira, las 18:00 sigue siendo seguro; última entrada ~21:00). Usá ropa que se pueda arremangar (piernas y tobillos se mojan). Desde Toyosu son ~15 min a Ginza o ~35 min a Ebisu para la cena.",
+      "cost": "¥3.200–3.600 por persona",
+      "booking": "teamLab Planets — reservá la entrada de las 17:30 con anticipación",
+      "highlight": true
      },
      {
-      "start": "19:00",
-      "end": "21:00",
+      "start": "20:00",
+      "end": "21:30",
       "type": "food",
       "area": "Tokyo (Ebisu)",
       "title": "Cena romántica en Ebisu",
-      "desc": "Ebisu y Meguro ofrecen esa combinación rara de izakaya moderna y bistró tokiota con mano adulta — en las calles laterales encontrás restaurantes pequeños con menús omakase, vinos japoneses y una atmósfera íntima. Una cena para festejar los 40 antes de la última noche.",
+      "desc": "Ebisu y Meguro ofrecen esa combinación rara de izakaya moderna y bistró tokiota con mano adulta — en las calles laterales encontrás restaurantes pequeños con menús omakase, vinos japoneses y una atmósfera íntima. Una cena para festejar los 40. Tip: para ahorrar viaje después de teamLab, pueden cenar en Ginza (~15 min de Toyosu) en vez de Ebisu.",
       "tips": "Buscá lugares con asientos en la barra frente a la cocina — ver al chef trabajar es parte de la experiencia; presentate como pareja en festejo para un trato especial.",
       "cost": "¥5.000–9.000 por persona",
       "booking": "",
@@ -4573,7 +4572,7 @@ window.TRIP_DATA = {
     "dow": "Thu",
     "city": "Tokyo",
     "title": "Día 14 — Ghibli, luz y despedida en Tokio",
-    "summary": "El día más emotivo del viaje: una mañana de fantasía en el Museo Ghibli, una tarde sumergidos en el arte digital de teamLab Planets y una cena de celebración con omakase que cierra con broche de oro el cumpleaños 40 de Ezequiel. Tokio se despide a lo grande.",
+    "summary": "El día más emotivo del viaje: una mañana de fantasía en el Museo Ghibli, una tarde tranquila en Kichijoji y el parque Inokashira con las últimas compras en Shibuya, y una cena de celebración con omakase que cierra con broche de oro el cumpleaños 40 de Ezequiel. Tokio se despide a lo grande.",
     "hotel": "🏨 Tokyu Stay Shinjuku (✓ reservado · 30→2.10) · Shinjuku · lavarropas en la habitación",
     "events": [
      {
@@ -4601,15 +4600,14 @@ window.TRIP_DATA = {
      },
      {
       "start": "15:00",
-      "end": "18:00",
-      "type": "experience",
-      "area": "Toyosu (teamLab Planets)",
-      "title": "teamLab Planets, Toyosu",
-      "desc": "La experiencia de arte digital más inmersiva de Japón — y con razón. Entrás descalzos al agua, te acostás bajo flores infinitas y te hundís entre luces que responden a tu toque. No es arte que mirás — es arte que habitás.",
-      "tips": "Vestite con algo que se pueda enrollar fácil (los pies y tobillos se mojan). Un vestido corto o bermudas funcionan perfecto.",
-      "cost": "¥3.200–3.600 por persona",
-      "booking": "teamLab Planets — reservá tu entrada con horario fijo de antemano",
-      "highlight": true
+      "end": "17:30",
+      "type": "shopping",
+      "area": "Shibuya / Harajuku",
+      "title": "Últimas compras — Shibuya y Harajuku",
+      "desc": "De Kichijoji directo por la línea Inokashira a Shibuya (~15 min). Takeshita Street para el hype, Omotesando para diseño y Cat Street para lo escondido. El momento perfecto para cazar los últimos regalos antes de la cena de despedida.",
+      "tips": "Tokyu Hands y Loft en Shibuya, Village Vanguard en Harajuku — anime, gadgets y souvenirs raros que no vas a encontrar en el aeropuerto. Guardá lugar en la valija.",
+      "cost": "¥2.000–10.000 por persona (según tentación)",
+      "booking": ""
      },
      {
       "start": "19:00",
@@ -5082,9 +5080,9 @@ window.TRIP_DATA = {
        "desc": "Ozashiki privado en Gion. Confirmá si hay inglés y si es maiko o geiko de verdad."
       },
       {
-       "name": "teamLab / Shibuya Sky",
+       "name": "teamLab Planets",
        "sub": "2–4 semanas antes",
-       "desc": "Acceso con horario fijo, se agotan semanas antes. teamLab: elegí UNO; Shibuya Sky: turno de atardecer."
+       "desc": "Acceso con horario fijo (30/9 a la noche, slot ~17:30), se agotan semanas antes."
       },
       {
        "name": "USJ / Super Nintendo World",
