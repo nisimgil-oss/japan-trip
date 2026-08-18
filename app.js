@@ -56,6 +56,8 @@
       bookedProgress: (n, m) => `${n}/${m} נסגרו`, bookedStay: 'כניסה → יציאה', bookedCostPh: 'עלות (¥/₪)', bookedCancelLabel: 'ביטול חינם עד',
       bookedTrains: '🚄 רכבות לסגור', bookedEvents: '🎟️ כרטיסים לאירועים', bookedSalesOpen: 'מכירה נפתחת', bookedSalesOpenNow: '✓ פתוח למכירה', bookedBook: 'הזמנה',
       bookedOpensToday: 'נפתח היום!', bookedOpensTomorrow: 'נפתח מחר', bookedOpensIn: (n) => `נפתח בעוד ${n} ימים`, bookedPax: '2 בוגרים', bookedMapLink: 'מסלול וזמנים', bookedItemNotePh: 'הערה חופשית…', bookedSalesTime: 'ב-10:00 שעון יפן (04:00 בישראל)', bookedManage: 'פתח ב-Booking.com',
+      trFrom: 'תחנת מוצא', trTo: 'תחנת הגעה', trDate: 'תאריך', trTime: 'שעה מומלצת', trSystem: 'אתר הזמנה', trTrain: 'רכבת', trCost: 'מחיר לאדם', trCopyHint: '✅ שמות התחנות תואמים בדיוק לאתר ההזמנה — אפשר להקליד/להעתיק כמו שהם.',
+      trVerdict: '💰 כרטיס-כרטיס או פס? — כרטיסים בודדים משתלמים בבירור', trVerdictBody: 'סה"כ כל הרכבות ≈ ¥43,700 לאדם (~₪810) · ¥87,300 לזוג (~₪1,620). פס JR ארצי ל-7 ימים עולה ¥50,000 לאדם ומכסה לכל היותר ~¥24,000 מהנסיעות (הנסיעות פרוסות על 15 יום, 18.9→2.10 — חלון של 7 יום לא תופס גם את קיסו וגם את אוסקה→טוקיו), לא מכסה את ה-Romancecar (רכבת פרטית) ולא Nozomi. שום פס אזורי לא מתאים ללולאה הזו. היחיד ששווה: כרטיס ה-N\'EX הלוך-חזור ¥5,000.',
       hSelected: '✓ נבחר', hChoose: 'בחרו מלון זה', hPerNight: 'ללילה', hPerCouple: 'לזוג · חצי פנסיון', hBook: 'להזמנה ↗', hNights: (n) => n === 1 ? 'לילה אחד' : n + ' לילות', hStayHotel: 'המלון שנבחר', hPickHint: 'בחרו מלון בטאב ״מלונות״',
       mapsDay: '🗺️ מסלול היום במפות', mapsOpen: 'פתח במפות ↗',
       'tab.experiences': 'חוויות', 'experiences.title': '✨ עוד חוויות מיוחדות',
@@ -93,6 +95,8 @@
       bookedProgress: (n, m) => `${n}/${m} reservados`, bookedStay: 'Entrada → salida', bookedCostPh: 'Costo (¥/₪)', bookedCancelLabel: 'Cancelación gratis hasta',
       bookedTrains: '🚄 Trenes por reservar', bookedEvents: '🎟️ Entradas a eventos', bookedSalesOpen: 'Venta abre', bookedSalesOpenNow: '✓ Ya a la venta', bookedBook: 'Reservar',
       bookedOpensToday: '¡Abre hoy!', bookedOpensTomorrow: 'Abre mañana', bookedOpensIn: (n) => `Abre en ${n} días`, bookedPax: '2 adultos', bookedMapLink: 'Ruta y horarios', bookedItemNotePh: 'Nota libre…', bookedSalesTime: 'a las 10:00 hora Japón (22:00 del día anterior en Argentina)', bookedManage: 'Abrir en Booking.com',
+      trFrom: 'Estación de salida', trTo: 'Estación de llegada', trDate: 'Fecha', trTime: 'Hora sugerida', trSystem: 'Sitio de reserva', trTrain: 'Tren', trCost: 'Precio por persona', trCopyHint: '✅ Los nombres de las estaciones coinciden con el sitio de reserva — podés escribirlos/copiarlos tal cual.',
+      trVerdict: '💰 ¿Boleto por boleto o pase? — conviene comprar boletos sueltos', trVerdictBody: 'Total de todos los trenes ≈ ¥43.700 por persona (~₪810) · ¥87.300 por pareja (~₪1.620). El JR Pass nacional de 7 días cuesta ¥50.000 por persona y cubre como mucho ~¥24.000 de los viajes (están repartidos en 15 días, 18/9→2/10 — una ventana de 7 días no agarra Kiso y Osaka→Tokio a la vez), no cubre el Romancecar (tren privado) ni el Nozomi. Ningún pase regional sirve para este circuito. El único que vale la pena: el boleto N\'EX ida y vuelta de ¥5.000.',
       hSelected: '✓ Elegido', hChoose: 'Elegir este hotel', hPerNight: 'por noche', hPerCouple: 'por pareja · media pensión', hBook: 'Reservar ↗', hNights: (n) => n === 1 ? '1 noche' : n + ' noches', hStayHotel: 'Hotel elegido', hPickHint: 'Elegí un hotel en la pestaña "Hoteles"',
       mapsDay: '🗺️ Recorrido del día en Maps', mapsOpen: 'Abrir en Maps ↗',
       'tab.experiences': 'Experiencias', 'experiences.title': '✨ Más experiencias especiales',
@@ -665,36 +669,58 @@
   const bookedFor = (id) => Object.assign({}, BOOKED[id] || {}, loadBooked()[id] || {});
   // רכבות לסגור (מושבים שמורים / כרטיסים) — לפי תאריכי המסלול. salesOpen ≈ חודש לפני הנסיעה.
   const TRAINS = [
-    { id: 't-nex-in', date: '2026-09-18', salesOpen: '2026-08-18', from: 'Narita Airport Terminal 1', to: 'Shinjuku Station', url: 'https://www.jreast.co.jp/multi/en/ticket/',
+    { id: 't-nex-in', date: '2026-09-18', salesOpen: '2026-08-18', from: 'Narita Airport Terminal 1', to: 'Shinjuku', url: 'https://www.eki-net.com/en/jr-east-train-reservation/top',
+      system: 'JR-EAST Train Reservation (Ekinet)', train: "Narita Express (N'EX)", depTime: '≈19:45–20:15 (אחרי נחיתה 18:25)',
+      cost: { he: '¥5,000 הלוך-חזור · ~₪93 (כולל את 2.10)', es: '¥5.000 ida y vuelta · ~₪93 (incluye el 2/10)' },
       title: { he: "N'EX: נריטה → שינג'וקו", es: "N'EX: Narita → Shinjuku" },
-      note: { he: "כרטיס הלוך-חזור (¥5,000, כולל את החזרה לנריטה ב-2.10) + שמירת מקום.", es: "Boleto ida y vuelta (¥5.000, incluye la vuelta a Narita el 2/10) + asiento reservado." } },
-    { id: 't-romancecar', date: '2026-09-21', salesOpen: '2026-08-21', from: 'Shinjuku Station', to: 'Hakone-Yumoto Station', url: 'https://www.odakyu.jp/english/romancecar/',
+      note: { he: "כרטיס הלוך-חזור (¥5,000, כולל את החזרה לנריטה ב-2.10) + שמירת מקום. הנחיתה ב-18:25 — קחו רכבת מ-~19:45.", es: "Boleto ida y vuelta (¥5.000, incluye la vuelta a Narita el 2/10) + asiento reservado. Aterrizaje 18:25 — tomá un tren desde ~19:45." } },
+    { id: 't-romancecar', date: '2026-09-21', salesOpen: '2026-08-21', from: 'Shinjuku', to: 'Hakone-Yumoto', url: 'https://www.web-odakyu.com/e-romancecar/?language=en',
+      urgent: { he: '🚨 הכי דחוף! נפתח 21.8 ב-10:00 יפן (04:00 בישראל) · Silver Week — נחטף בדקות. תעמידו אזעקה!', es: '🚨 ¡El más urgente! Abre 21/8 a las 10:00 Japón (04:00 Argentina) · Silver Week — se agota en minutos. ¡Poné alarma!' },
+      system: 'e-Romancecar (Odakyu / EMot)', train: 'Limited Express Romancecar', depTime: '≈09:00 (מומלץ — הכי מוקדם, שקט)',
+      cost: { he: '¥2,420 (דיגיטלי) · ~₪45 · לכיוון', es: '¥2.420 (digital) · ~₪45 · por trayecto' },
       title: { he: "Romancecar: שינג'וקו → Hakone-Yumoto", es: "Romancecar: Shinjuku → Hakone-Yumoto" },
-      note: { he: "21–22.9 לפי המסלול הסופי · מושב שמור · Silver Week — לשריין מיד.", es: "21–22/9 según el itinerario final · asiento reservado · Silver Week — reservá ya." } },
-    { id: 't-tokaido-kiso', date: '2026-09-23', salesOpen: '2026-08-23', from: 'Odawara Station', to: 'Nagoya Station', url: 'https://smart-ex.jp/en/',
+      note: { he: "מושב שמור · בחרו צד A לנוף · Silver Week — לשריין מיד ביום פתיחת המכירה.", es: "Asiento reservado · elegí lado A para la vista · Silver Week — reservá ya el día que abre la venta." } },
+    { id: 't-tokaido-kiso', date: '2026-09-23', salesOpen: '2026-08-23', from: 'Odawara', to: 'Nagoya', url: 'https://smart-ex.jp/en/',
+      urgent: { he: '🚨 דחוף · נפתח 23.8 ב-10:00 יפן · יום שוויון הסתיו (חג Silver Week) — לשריין מיד עם הפתיחה.', es: '🚨 Urgente · abre 23/8 a las 10:00 Japón · Día del Equinoccio (feriado Silver Week) — reservá al abrir.' },
+      system: 'SmartEX (Tokaido Shinkansen)', train: 'Hikari / Kodama', depTime: '≈בוקר, ~09:00–10:00 · להתחבר ל-Shinano בנגויה',
+      cost: { he: '~¥8,900 מושב שמור · ~₪165 · לכיוון', es: '~¥8.900 asiento reservado · ~₪165 · por trayecto' },
       title: { he: "שינקנסן: Odawara → Nagoya", es: "Shinkansen: Odawara → Nagoya" },
-      note: { he: "בדרך לעמק קיסו (קו Tokaido) · SmartEX.", es: "Rumbo al Valle de Kiso (línea Tokaido) · SmartEX." } },
-    { id: 't-shinano-in', date: '2026-09-23', salesOpen: '2026-08-23', from: 'Nagoya Station', to: 'Nakatsugawa Station', url: 'https://www.jr-odekake.net/en/',
+      note: { he: "⚠️ Nozomi לא עוצרת ב-Odawara — בחרו Hikari/Kodama. השאירו 15–20 דק' מעבר בנגויה ל-Shinano.", es: "⚠️ El Nozomi no para en Odawara — elegí Hikari/Kodama. Dejá 15–20 min de trasbordo en Nagoya al Shinano." } },
+    { id: 't-shinano-in', date: '2026-09-23', salesOpen: '2026-08-23', from: 'Nagoya', to: 'Nakatsugawa', url: 'https://www.eki-net.com/en/jr-east-train-reservation/top',
+      urgent: { he: '🚨 דחוף · נפתח 23.8 ב-10:00 יפן · אקספרס עם מעט מושבים + Silver Week + עומס סתיו לקיסו — לשריין מיד.', es: '🚨 Urgente · abre 23/8 a las 10:00 Japón · expreso con pocos asientos + Silver Week + otoño en Kiso — reservá ya.' },
+      system: 'e5489 / Ekinet (Ltd. Exp.)', train: 'Limited Express Shinano', depTime: '≈מיד אחרי השינקנסן (מעבר בנגויה)',
+      cost: { he: '~¥3,020 מושב שמור · ~₪56 · לכיוון', es: '~¥3.020 asiento reservado · ~₪56 · por trayecto' },
       title: { he: "Ltd.Exp. Shinano: Nagoya → Nakatsugawa", es: "Ltd.Exp. Shinano: Nagoya → Nakatsugawa" },
-      note: { he: "ואז אוטובוס למאגומה (~30 דק').", es: "Y después bus a Magome (~30 min)." } },
-    { id: 't-shinano-out', date: '2026-09-25', salesOpen: '2026-08-25', from: 'Nagiso Station', to: 'Nagoya Station', url: 'https://www.jr-odekake.net/en/',
+      note: { he: "ואז אוטובוס למאגומה (~30 דק'). מזמינים ב-e5489 (JR West) או Ekinet (JR East).", es: "Y después bus a Magome (~30 min). Se reserva en e5489 (JR West) o Ekinet (JR East)." } },
+    { id: 't-shinano-out', date: '2026-09-25', salesOpen: '2026-08-25', from: 'Nagiso', to: 'Nagoya', url: 'https://www.eki-net.com/en/jr-east-train-reservation/top',
+      system: 'e5489 / Ekinet (Ltd. Exp.)', train: 'Limited Express Shinano', depTime: '≈אחה"צ · ודאו שהרכבת עוצרת ב-Nagiso!',
+      cost: { he: '~¥3,700 מושב שמור · ~₪69 · לכיוון', es: '~¥3.700 asiento reservado · ~₪69 · por trayecto' },
       title: { he: "Ltd.Exp. Shinano: Nagiso → Nagoya", es: "Ltd.Exp. Shinano: Nagiso → Nagoya" },
-      note: { he: "מהקיסו חזרה לנגויה (אוטובוס מצומאגו ל-Nagiso).", es: "Del Kiso de vuelta a Nagoya (bus de Tsumago a Nagiso)." } },
-    { id: 't-tokaido-kyoto', date: '2026-09-25', salesOpen: '2026-08-25', from: 'Nagoya Station', to: 'Kyoto Station', url: 'https://smart-ex.jp/en/',
+      note: { he: "⚠️ רק חלק מרכבות ה-Shinano עוצרות ב-Nagiso — בדקו בעת ההזמנה! אוטובוס מצומאגו ל-Nagiso לפני כן.", es: "⚠️ Solo algunos Shinano paran en Nagiso — verificá al reservar. Bus de Tsumago a Nagiso antes." } },
+    { id: 't-tokaido-kyoto', date: '2026-09-25', salesOpen: '2026-08-25', from: 'Nagoya', to: 'Kyoto', url: 'https://smart-ex.jp/en/',
+      system: 'SmartEX (Tokaido Shinkansen)', train: 'Nozomi / Hikari', depTime: '≈מיד אחרי ה-Shinano (מעבר בנגויה)',
+      cost: { he: '~¥5,700 מושב שמור · ~₪106 · לכיוון', es: '~¥5.700 asiento reservado · ~₪106 · por trayecto' },
       title: { he: "שינקנסן: Nagoya → Kyoto", es: "Shinkansen: Nagoya → Kioto" },
-      note: { he: "קו Tokaido · SmartEX.", es: "Línea Tokaido · SmartEX." } },
-    { id: 't-osaka-tokyo', date: '2026-09-30', salesOpen: '2026-08-30', from: 'Shin-Osaka Station', to: 'Tokyo Station', url: 'https://smart-ex.jp/en/',
+      note: { he: "~35 דק' · פלטפורמות השינקנסן רחוקות מ-Shinano — תנו זמן מעבר.", es: "~35 min · los andenes del Shinkansen están lejos del Shinano — dejá tiempo de trasbordo." } },
+    { id: 't-osaka-tokyo', date: '2026-09-30', salesOpen: '2026-08-30', from: 'Shin-Osaka', to: 'Tokyo', url: 'https://smart-ex.jp/en/',
+      system: 'SmartEX (Tokaido Shinkansen)', train: 'Nozomi / Hikari', depTime: '≈בוקר 30.9 (~2:30 נסיעה)',
+      cost: { he: '~¥14,920 רגיל · ~₪277 · או Green Car ¥19,590 (~₪364)', es: '~¥14.920 ordinario · ~₪277 · o Green Car ¥19.590 (~₪364)' },
       title: { he: "שינקנסן: Shin-Osaka → Tokyo", es: "Shinkansen: Shin-Osaka → Tokio" },
-      note: { he: "חזרה לטוקיו (Nozomi/Hikari) · SmartEX.", es: "Vuelta a Tokio (Nozomi/Hikari) · SmartEX." } },
-    { id: 't-nex-out', date: '2026-10-02', salesOpen: '2026-09-02', from: 'Shinjuku Station', to: 'Narita Airport Terminal 1', url: 'https://www.jreast.co.jp/multi/en/ticket/',
+      note: { he: "חזרה לטוקיו · הזמינו מושב \"Oversized Baggage\" למזוודה מעל 160 ס\"מ · צד E לנוף פוג'י. 💺 שדרוג Green Car (מחלקה ראשונה, 2×2, שקט, מקום למזוודות) עולה עוד ~¥4,670 לאדם — שווה בקטע הארוך הזה (2.5 שעות עם מזוודות).", es: "Vuelta a Tokio · reservá asiento \"Oversized Baggage\" si la valija supera 160 cm · lado E para ver el Fuji. 💺 El upgrade a Green Car (primera clase, 2×2, silencioso, espacio para valijas) cuesta ~¥4.670 más por persona — vale la pena en este tramo largo (2,5 h con valijas)." } },
+    { id: 't-nex-out', date: '2026-10-02', salesOpen: '2026-09-02', from: 'Shinjuku', to: 'Narita Airport Terminal 1', url: 'https://www.eki-net.com/en/jr-east-train-reservation/top',
+      system: 'JR-EAST Train Reservation (Ekinet)', train: "Narita Express (N'EX)", depTime: '≈07:30–08:00 → הגעה ~09:00 (טיסה 12:00)',
+      cost: { he: '✓ כלול בכרטיס ההלוך-חזור (¥5,000)', es: '✓ Incluido en el ida y vuelta (¥5.000)' },
       title: { he: "N'EX: שינג'וקו → נריטה", es: "N'EX: Shinjuku → Narita" },
-      note: { he: "הרגל השנייה של כרטיס ההלוך-חזור · לשמור מקום לטיסה 12:00.", es: "La segunda pierna del ida y vuelta · reservá asiento para el vuelo de las 12:00." } },
+      note: { he: "הרגל השנייה של כרטיס ההלוך-חזור · לצאת מוקדם — 3 שעות לפני הטיסה (12:00).", es: "La segunda pierna del ida y vuelta · salí temprano — 3 horas antes del vuelo (12:00)." } },
   ];
   // כרטיסים לאירועים לסגור
   const EVENTS = [
     { id: 'e-sumo', date: '2026-09-28', done: true, url: 'https://www.google.com/search?q=The+Sumo+Hall+Hirakuza+Osaka',
       title: { he: "🥋 מופע סומו — Sumo Hall Hirakuza (Osaka)", es: "🥋 Show de sumo — Sumo Hall Hirakuza (Osaka)" },
       note: { he: "✓ נסגר · 28.9 בשעה 17:00 · מושב סטנדרט + בנטו + משקה · 2 מבוגרים · הזמנה PFB554612.", es: "✓ Reservado · 28/9 a las 17:00 · asiento estándar + bento + bebida · 2 adultos · reserva PFB554612." } },
+    { id: 'e-juugo', date: '2026-09-27', done: true, url: 'https://www.google.com/maps/search/Juu-go+soba+Jodoji+Sakyo-ku+Kyoto',
+      title: { he: "🍜 מסעדת סובה — Juu-go (十五) · Kyoto", es: "🍜 Restaurante de soba — Juu-go (十五) · Kioto" },
+      note: { he: "✓ נסגר (TableCheck) · 27.9 בשעה 16:00 · 2 אנשים · קורס סובה · ¥7,000 שולם מראש (¥3,500 ×2). כתובת: Kamiminamida-cho, Jodoji, Sakyo-ku, Kyoto 606-8405 · טל' 075-708-5367.", es: "✓ Reservado (TableCheck) · 27/9 a las 16:00 · 2 personas · menú de soba · ¥7.000 prepago (¥3.500 ×2). Dirección: Kamiminamida-cho, Jodoji, Sakyo-ku, Kioto 606-8405 · tel. 075-708-5367." } },
     { id: 'e-shibuyasky', date: '2026-09-19', salesOpen: '2026-08-22', url: 'https://www.shibuya-scramble-square.com/sky/',
       title: { he: "🌇 Shibuya Sky — סלוט שקיעה", es: "🌇 Shibuya Sky — slot atardecer" },
       note: { he: "סלוט השקיעה נחטף — נפתח ~4 שבועות מראש.", es: "El slot del atardecer se agota — abre ~4 semanas antes." } },
@@ -706,10 +732,10 @@
       note: { he: "כרטיס עם שעת כניסה — לקנות מראש.", es: "Entrada con horario — comprá con anticipación." } },
     { id: 'e-maiko', date: '2026-09-27', salesOpen: null, url: 'https://www.thehatanaka.co.jp/en/maiko/',
       title: { he: "🎎 ערב מאיקו / גייקו (Kyoto)", es: "🎎 Velada maiko / geiko (Kioto)" },
-      note: { he: "להזמין 2–3 חודשים מראש — אין walk-in.", es: "Reservá 2–3 meses antes — no hay walk-in." } },
+      note: { he: "בערב (מ-~18:30) — אחרי הסובה ב-Juu-go. להזמין 2–3 חודשים מראש — אין walk-in.", es: "A la noche (desde ~18:30) — después de la soba en Juu-go. Reservá 2–3 meses antes — no hay walk-in." } },
     { id: 'e-teakimono', date: '2026-09-27', salesOpen: null, url: 'https://mai-ko.com/',
       title: { he: "🍵 טקס תה + קימונו (Kyoto)", es: "🍵 Ceremonia de té + kimono (Kioto)" },
-      note: { he: "סדנת זוגות — להזמין מראש.", es: "Taller para parejas — reservá con anticipación." } },
+      note: { he: "⚠️ קבעו מוקדם (~13:30–15:30) — לפני הסובה ב-Juu-go ב-16:00. סדנת זוגות — להזמין מראש.", es: "⚠️ Reservá temprano (~13:30–15:30) — antes de la soba en Juu-go a las 16:00. Taller para parejas — reservá con anticipación." } },
     { id: 'e-workshop', date: '2026-09-21', salesOpen: null, url: 'https://www.cookly.me/tokyo/',
       title: { he: "🍣 סדנת סושי / וואגאשי (Tokyo)", es: "🍣 Taller de sushi / wagashi (Tokio)" },
       note: { he: "להזמין מראש (Airbnb Experiences / Cookly).", es: "Reservá con anticipación (Airbnb Experiences / Cookly)." } },
@@ -772,12 +798,26 @@
           chip = `<span class="bi-sales soon">🔔 ${lbl} · ${fmtDate(item.salesOpen)}${tm}</span>`; }
       }
       const mapUrl = (item.from && item.to) ? transitMapUrl(item.from, item.to) : '';
-      const card = document.createElement('div'); card.className = 'panel bkitem' + (done ? ' bkdone' : '');
+      const sheet = item.from ? (
+        `<div class="tr-sheet" dir="ltr">` +
+        `<div class="tr-row"><span class="tr-lbl">${t('trFrom')}</span><b class="tr-stn">${escapeHtml(item.from)}</b></div>` +
+        `<div class="tr-row"><span class="tr-lbl">${t('trTo')}</span><b class="tr-stn">${escapeHtml(item.to)}</b></div>` +
+        `<div class="tr-row"><span class="tr-lbl">${t('trDate')}</span><b>${fmtDate(item.date)}</b></div>` +
+        (item.depTime ? `<div class="tr-row"><span class="tr-lbl">${t('trTime')}</span><b dir="auto">${escapeHtml(item.depTime)}</b></div>` : '') +
+        (item.train ? `<div class="tr-row"><span class="tr-lbl">${t('trTrain')}</span><b>${escapeHtml(item.train)}</b></div>` : '') +
+        (item.system ? `<div class="tr-row"><span class="tr-lbl">${t('trSystem')}</span><b>${escapeHtml(item.system)}</b></div>` : '') +
+        (item.cost ? `<div class="tr-row"><span class="tr-lbl">${t('trCost')}</span><b dir="auto">${escapeHtml(item.cost[lang] || item.cost.he)}</b></div>` : '') +
+        `<div class="tr-copyhint" dir="auto">${t('trCopyHint')}</div>` +
+        `</div>`) : '';
+      const urgent = (item.urgent && !done) ? `<div class="bi-urgent" dir="auto">${escapeHtml(item.urgent[lang] || item.urgent.he)}</div>` : '';
+      const card = document.createElement('div'); card.className = 'panel bkitem' + (done ? ' bkdone' : '') + ((item.urgent && !done) ? ' bkurgent' : '');
       card.innerHTML =
         `<label class="bk-check bi-check"><input type="checkbox" ${done ? 'checked' : ''}></label>` +
         `<div class="bi-main"><div class="bi-title" dir="auto">${escapeHtml(item.title[lang] || item.title.he)}` +
         (item.date ? ` <span class="bi-date">${fmtDate(item.date)}</span>` : '') +
         (item.from ? ` <span class="bi-pax">👥 ${t('bookedPax')}</span>` : '') + `</div>` +
+        urgent +
+        sheet +
         (item.note ? `<div class="bi-note" dir="auto">${escapeHtml(item.note[lang] || item.note.he)}</div>` : '') +
         `<div class="bi-meta">` + chip +
         (mapUrl ? `<a class="bi-link ghost" href="${mapUrl}" target="_blank" rel="noopener">🗺️ ${t('bookedMapLink')}</a>` : '') +
@@ -802,6 +842,11 @@
       const h = document.createElement('div'); h.className = 'bk-section';
       h.innerHTML = `<h3 class="bk-sec-title">${t(key)} <span class="bk-sec-count" data-key="${key}">${secCount(items)}</span></h3>`;
       box.appendChild(h);
+      if (key === 'bookedTrains') {
+        const vv = document.createElement('div'); vv.className = 'tr-verdict';
+        vv.innerHTML = `<div class="tr-verdict-h" dir="auto">${t('trVerdict')}</div><div class="tr-verdict-b" dir="auto">${t('trVerdictBody')}</div>`;
+        box.appendChild(vv);
+      }
       items.forEach(i => box.appendChild(itemCard(i)));
     });
     updateBookedProg();

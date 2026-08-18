@@ -1,6 +1,6 @@
 /* data.js — Option A · booked hotels + luggage logistics per day. bilingual he/es. */
 window.TRIP_DATA = {
- "v": "bi-optA-11",
+ "v": "bi-optA-12",
  "flights": {
   "airline": "LOT Polish Airlines",
   "passenger": "Ezequiel",
@@ -1519,7 +1519,7 @@ window.TRIP_DATA = {
     "dow": "Sun",
     "city": "Kyoto",
     "title": "יום 10 — ציפוי זהב וטקס תה בקיוטו",
-    "summary": "יום שלם של קיוטו בצורתה הטהורה ביותר: ביקור בביתן הזהוב עם שחר, טיול בין אבני המדרכה ההיסטוריות של הייגשימה, סדנת תה וקימונו לשניים, וערב מלכותי עם מאיקו לצד עריסת קייסקי.",
+    "summary": "יום שלם של קיוטו בצורתה הטהורה ביותר: ביקור בביתן הזהוב עם שחר, טיול בין אבני המדרכה ההיסטוריות של הייגשימה, סדנת תה וקימונו לשניים, קורס סובה חגיגי ב-Juu-go (✓ נסגר) ליד גינקאקו-ג'י, וערב מלכותי עם מאיקו.",
     "hotel": "🏨 Candeo Hotels Kyoto Karasuma Rokkaku (✓ נסגר · 25→28) · מרכז קיוטו, 4★",
     "events": [
      {
@@ -1545,50 +1545,51 @@ window.TRIP_DATA = {
       "booking": ""
      },
      {
-      "start": "13:00",
-      "end": "14:00",
+      "start": "12:45",
+      "end": "13:30",
       "type": "food",
       "area": "Kyoto (Higashiyama)",
-      "title": "ארוחת צהריים — סובה או יודופו",
-      "desc": "הייגשימה ידועה במסעדות יודופו (טופו חם ברוטב) שמנוהלות על ידי משפחות שהתמחו בבישול מקדשים, וגם בסובה כפרי ומשביע. בחרו מסעדה קטנה עם מושבים על חצר — מאות אפשרויות, ואפילו האמצעיות מעולות.",
-      "tips": "מסעדות עם תפריט צהריים קבוע (\"teishoku\") נותנות ערך מצוין. הימנעו מהמסעדות עם עיצוב אנגלי בולט מדי בחלון — בדרך כלל למטיילים בלבד.",
-      "cost": "¥1,200–2,500 לאדם",
+      "title": "ארוחת צהריים קלה",
+      "desc": "ביס קליל בהיגאשיימה — הארוחה הגדולה של היום היא קורס הסובה ב-Juu-go ב-16:00, אז שמרו תיאבון. יודופו קטן, אונירי או מאפה מתוק עם מאצ'ה מספיקים בול.",
+      "tips": "אל תעמיסו — קורס הסובה ב-16:00 משביע. מסעדות עם עיצוב אנגלי בולט בחלון בדרך כלל למטיילים בלבד.",
+      "cost": "¥800–1,500 לאדם",
       "booking": ""
      },
      {
-      "start": "15:00",
-      "end": "17:00",
+      "start": "13:30",
+      "end": "15:30",
       "type": "experience",
       "area": "Kyoto (Gion)",
       "title": "סדנת קימונו + טקס תה — MAIKOYA גיון",
-      "desc": "קימונו מלא לשניים וטקס תה אותנטי בבית תה עתיק (נכס תרבות רשום) בגיון. הקימונו נשאר עד 18:00 לטיול בגיון. בחרו באופציה הפרטית לזוג. הזמינו מראש — סופי שבוע נחטפים.",
-      "tips": "הזמינו מראש חבילה לזוג; חלק מהמקומות מציעים צילום מקצועי כתוסף. בדקו שהסדנה מתנהלת גם באנגלית.",
+      "desc": "קימונו מלא לשניים וטקס תה אותנטי בבית תה עתיק (נכס תרבות רשום) בגיון. הוקדם לצהריים כדי להתחבר לסובה ב-16:00 בג'ודוג'י. בחרו באופציה הפרטית לזוג. הזמינו מראש — סופי שבוע נחטפים.",
+      "tips": "הזמינו מראש חבילה לזוג; בדקו שהסדנה מתנהלת גם באנגלית. סיימו עד 15:30 — משם ~20 דק' לג'ודוג'י (אוטובוס/מונית) לסובה.",
       "cost": "¥5,000–10,000 לאדם",
       "booking": "mai-ko.com — MAIKOYA Gion",
       "highlight": true
      },
      {
-      "start": "17:00",
-      "end": "19:00",
+      "start": "16:00",
+      "end": "17:30",
+      "type": "food",
+      "area": "Kyoto (Jodoji / Ginkakuji)",
+      "title": "✓ קורס סובה חגיגי — Juu-go (十五)",
+      "desc": "נסגר ושולם מראש (TableCheck) · 2 אנשים · קורס סובה ב-¥3,500 לאדם (¥7,000 סה\"כ). מסעדת סובה אינטימית בג'ודוג'י, ליד גינקאקו-ג'י (הביתן הכסוף) ושביל הפילוסוף — סובה בעבודת יד באווירה שקטה. אחרי הארוחה שווה טיול קצר בשביל הפילוסוף באור שקיעה.",
+      "tips": "כתובת: Kamiminamida-cho, Jodoji, Sakyo-ku, Kyoto 606-8405 · טל' 075-708-5367. הגיעו כמה דקות לפני 16:00 — ההזמנה מדויקת. תשלום כבר בוצע מראש.",
+      "cost": "¥7,000 לזוג (שולם מראש ✓)",
+      "booking": "TableCheck — ✓ מאושר",
+      "highlight": true
+     },
+     {
+      "start": "18:30",
+      "end": "20:30",
       "type": "culture",
       "area": "Kyoto (Gion)",
       "title": "חוויית מאיקו/גייקו — אוזשיקי בגיון",
-      "desc": "ערב מאיקו אמיתית — למשל ב-Gion Hatanaka: קאיסקי, ריקוד, משחקי אוזאשיקי וצילומים (~18:00). לא מתקיים כל ערב — אשרו תאריך והזמינו מראש. חלופה פרטית: MAIKOYA.",
+      "desc": "ערב מאיקו אמיתית — למשל ב-Gion Hatanaka: קאיסקי, ריקוד, משחקי אוזאשיקי וצילומים. כולל ארוחת ערב, אז זו ארוחת הערב של היום (הסובה ב-16:00 קלה ומרווחת מספיק). לא מתקיים כל ערב — אשרו תאריך והזמינו מראש.",
       "tips": "הזמינו הרבה מראש — חוויות אותנטיות ממש (לא \"הצגה לתיירים\") נחטפות. ניתן לבקש שמאיקו תלמד אתכם משחק מסורתי אחד מעומק.",
       "cost": "¥15,000–25,000 לאדם",
       "booking": "gionhatanaka.jp",
       "highlight": true
-     },
-     {
-      "start": "19:30",
-      "end": "21:30",
-      "type": "food",
-      "area": "Kyoto",
-      "title": "ארוחת ערב — קייסקי או טפנייאקי וואגיו",
-      "desc": "סיום ראוי ליום מלכותי: קייסקי הוא ה-omakase של קיוטו — שמונה עד שתים-עשרה מנות קטנות ומושלמות שמשקפות את עונת הסתיו המתקרבת. לחלופין, טפנייאקי עם ואגיו A5 מסתיים תמיד בחיוך רחב — הציד על הברזל ממש מולכם.",
-      "tips": "לקייסקי — הזמינו מראש ובדקו שיש תפריט צמחוני/הגבלות-מזון אם נדרש. לטפנייאקי — שתו את היין האחרון לאט; זה סיום שמגיע להתפנק בו.",
-      "cost": "¥15,000–35,000 לאדם",
-      "booking": ""
      }
     ],
     "cultural": "הביתן המוזהב — קינקאקו-ג'י — נבנה ב-1397 כווילת פרישה לשוגון אשיקאגה יושימיצו, אך הפך לאחר מותו למקדש זן בודהיסטי. שלוש קומותיו עטויות זהב אמיתי (עלי זהב על לכה), אך כל קומה משלבת סגנון אדריכלי אחר: האחת — ארמון שוין, השנייה — ביתן לוחמים, השלישייה — מקדש זן. זהו מיזוג מכוון בין מעמדות ועולמות — אחדות ביפנית שנקראת 'יוגו' (融合). מרכזי לא פחות: בריכת קיוקוצ'י שמשקפת את הביתן קוראת לעיקרון הזן של 'יוגן' — יופי עמוק שמתגלה רק בהצצה, לא בגילוי מלא.",
@@ -4224,7 +4225,7 @@ window.TRIP_DATA = {
     "dow": "Sun",
     "city": "Kyoto",
     "title": "Día 10 — Oro, Kimono y Maiko en Kioto",
-    "summary": "Un día completo en la Kioto más auténtica: el pabellón dorado al amanecer, las calles empedradas de Higashiyama, una ceremonia del té en kimono para los dos, y una noche de magia con una Maiko y kaiseki refinado.",
+    "summary": "Un día completo en la Kioto más auténtica: el pabellón dorado al amanecer, las calles empedradas de Higashiyama, una ceremonia del té en kimono para los dos, un menú de soba de celebración en Juu-go (✓ reservado) cerca de Ginkaku-ji, y una noche de magia con una Maiko.",
     "hotel": "🏨 Candeo Hotels Kyoto Karasuma Rokkaku (✓ reservado · 25→28) · centro de Kioto, 4★",
     "events": [
      {
@@ -4250,50 +4251,51 @@ window.TRIP_DATA = {
       "booking": ""
      },
      {
-      "start": "13:00",
-      "end": "14:00",
+      "start": "12:45",
+      "end": "13:30",
       "type": "food",
       "area": "Kyoto (Higashiyama)",
-      "title": "Almuerzo — soba o yudofu",
-      "desc": "Higashiyama es famosa por sus restaurantes de yudofu (tofu caliente en caldo, cocina de templo) y por el soba artesanal que calienta el cuerpo. Buscá un local pequeño con mesas en el patio interior — hay cientos de opciones y hasta los más sencillos suelen ser excelentes.",
-      "tips": "Los menús de mediodía fijos (\"teishoku\") dan muy buen valor. Evitá los lugares con la carta traducida en el vidrio de manera muy llamativa — suelen estar orientados solo a turistas.",
-      "cost": "¥1.200–2.500 por persona",
+      "title": "Almuerzo liviano",
+      "desc": "Un bocado liviano en Higashiyama — la comida grande del día es el menú de soba en Juu-go a las 16:00, así que guardá el apetito. Un yudofu chico, un onigiri o un dulce con matcha alcanzan perfecto.",
+      "tips": "No te llenes — el menú de soba de las 16:00 es abundante. Evitá los lugares con la carta traducida muy llamativa en el vidrio — suelen ser solo para turistas.",
+      "cost": "¥800–1.500 por persona",
       "booking": ""
      },
      {
-      "start": "15:00",
-      "end": "17:00",
+      "start": "13:30",
+      "end": "15:30",
       "type": "experience",
       "area": "Kyoto (Gion)",
       "title": "Taller de kimono + ceremonia del té — MAIKOYA Gion",
-      "desc": "Kimono completo para los dos y ceremonia del té auténtica en una casa de té antigua (propiedad cultural registrada) en Gion. El kimono queda hasta las 18:00 para pasear. Elegí la opción privada. Reservá con tiempo — los fines de semana se llenan.",
-      "tips": "Reservá con tiempo un paquete para pareja; varios lugares ofrecen sesión de fotos profesional como extra. Confirmá que el taller se desarrolle en inglés.",
+      "desc": "Kimono completo para los dos y ceremonia del té auténtica en una casa de té antigua (propiedad cultural registrada) en Gion. Adelantado a la tarde para conectar con la soba de las 16:00 en Jodoji. Elegí la opción privada. Reservá con tiempo — los fines de semana se llenan.",
+      "tips": "Reservá con tiempo un paquete para pareja; confirmá que el taller se desarrolle en inglés. Terminá antes de las 15:30 — desde ahí ~20 min a Jodoji (bus/taxi) para la soba.",
       "cost": "¥5.000–10.000 por persona",
       "booking": "mai-ko.com — MAIKOYA Gion",
       "highlight": true
      },
      {
-      "start": "17:00",
-      "end": "19:00",
+      "start": "16:00",
+      "end": "17:30",
+      "type": "food",
+      "area": "Kyoto (Jodoji / Ginkakuji)",
+      "title": "✓ Menú de soba de celebración — Juu-go (十五)",
+      "desc": "Reservado y pagado por adelantado (TableCheck) · 2 personas · menú de soba a ¥3.500 por persona (¥7.000 total). Restaurante de soba íntimo en Jodoji, cerca de Ginkaku-ji (el Pabellón de Plata) y el Camino del Filósofo — soba artesanal en un ambiente tranquilo. Después vale un paseo corto por el Camino del Filósofo al atardecer.",
+      "tips": "Dirección: Kamiminamida-cho, Jodoji, Sakyo-ku, Kioto 606-8405 · tel. 075-708-5367. Llegá unos minutos antes de las 16:00 — la reserva es puntual. El pago ya está hecho por adelantado.",
+      "cost": "¥7.000 por pareja (pagado por adelantado ✓)",
+      "booking": "TableCheck — ✓ confirmado",
+      "highlight": true
+     },
+     {
+      "start": "18:30",
+      "end": "20:30",
       "type": "culture",
       "area": "Kyoto (Gion)",
       "title": "Experiencia Maiko/Geiko — ozashiki en Gion",
-      "desc": "Una velada con una maiko de verdad — por ejemplo en Gion Hatanaka: kaiseki, danza, juegos de ozashiki y fotos (~18:00). No es todas las noches — confirmá fecha y reservá. Alternativa privada: MAIKOYA.",
+      "desc": "Una velada con una maiko de verdad — por ejemplo en Gion Hatanaka: kaiseki, danza, juegos de ozashiki y fotos. Incluye la cena, así que es la cena del día (la soba de las 16:00 es liviana y deja lugar de sobra). No es todas las noches — confirmá fecha y reservá.",
       "tips": "Reservá con mucha anticipación — las experiencias realmente auténticas (no el show para turistas) se agotan rápido. Podés pedir que la Maiko les enseñe un juego tradicional en profundidad.",
       "cost": "¥15.000–25.000 por persona",
       "booking": "gionhatanaka.jp",
       "highlight": true
-     },
-     {
-      "start": "19:30",
-      "end": "21:30",
-      "type": "food",
-      "area": "Kyoto",
-      "title": "Cena — kaiseki o teppanyaki wagyu",
-      "desc": "Un cierre digno de un día de reyes: el kaiseki es el omakase de Kioto — ocho a doce bocados pequeños y perfectos que reflejan la temporada otoñal que se acerca. Como alternativa, el teppanyaki con wagyu A5 termina siempre con una sonrisa enorme — la parrilla chisporrotea justo delante de ustedes.",
-      "tips": "Para kaiseki — reservá con anticipación e informá restricciones alimentarias si las tienen. Para teppanyaki — tomense el último vaso de vino con calma; este final se merece disfrutarse sin apuro.",
-      "cost": "¥15.000–35.000 por persona",
-      "booking": ""
      }
     ],
     "cultural": "El Pabellón Dorado — Kinkaku-ji — fue construido en 1397 como villa de retiro del shogun Ashikaga Yoshimitsu, y tras su muerte se convirtió en templo zen budista. Sus tres pisos están cubiertos de pan de oro real, pero cada piso combina un estilo arquitectónico distinto: el primero evoca el palacio aristocrático, el segundo el salón guerrero, el tercero el santuario zen. Esta fusión deliberada entre mundos se llama 'yugō' (融合) en japonés — unidad a través de la diferencia. Igualmente central: el estanque Kyōkochi que refleja el pabellón encarna el concepto zen de 'yūgen' — una belleza profunda que se revela solo en el reflejo, nunca por completo.",
