@@ -1,6 +1,6 @@
 /* data.js — Option A · booked hotels + luggage logistics per day. bilingual he/es. */
 window.TRIP_DATA = {
- "v": "bi-optA-14",
+ "v": "bi-optA-15",
  "flights": {
   "airline": "LOT Polish Airlines",
   "passenger": "Ezequiel",
@@ -1080,7 +1080,7 @@ window.TRIP_DATA = {
       "type": "onsen",
       "area": "Hakone-Yumoto",
       "title": "הגעה לרייוקאן — הרגע הזה מגיע",
-      "desc": "צ'ק-אין ברייוקאן בגורה: קבלת פנים עם תה ירוק ומתוקים יפניים, החלפה ליוקאטה, וטבילה ראשונה במי האונסן עם נוף ההרים. הרגישו את הלחץ מתפוגג.",
+      "desc": "צ'ק-אין ברייוקאן ביומוטו: קבלת פנים עם תה ירוק ומתוקים יפניים, החלפה ליוקאטה, וטבילה ראשונה במי האונסן עם נוף ההרים. הרגישו את הלחץ מתפוגג.",
       "tips": "השאירו את הנעליים בכניסה ועברו לסנדלי הרייוקאן (גֶּטה) — זה חלק מהחוויה. צלמו זה את זה ביוקאטה לפני שהאונסן מאדים את הפנים.",
       "cost": "כלול בלינה",
       "booking": ""
@@ -1154,8 +1154,8 @@ window.TRIP_DATA = {
       "type": "transport",
       "area": "Hakone-Yumoto עד Nagoya עד Magome",
       "title": "מסע לעמק קיסו — האקונה → מגומה",
-      "desc": "האקונה→אודוארה (~15 דק׳) · שינקנסן אודוארה→נגויה (~1:05) · Ltd.Exp שינאנו נגויה→נקאטסוגאווה (~50 דק׳) · אוטובוס→מגומה (~30 דק׳). ירידה נופית אל יפן הכפרית.",
-      "tips": "המזוודה הראשית כבר בדרך לקיוטו — נוסעים עם תיק-לילה.",
+      "desc": "האקונה→אודוארה (~15 דק׳) · שינקנסן Hikari אודוארה→נגויה (~1:05 · לא Nozomi — לא עוצר ב-Odawara) · Ltd.Exp שינאנו נגויה→נקאטסוגאווה (~50 דק׳) · אוטובוס Kita-Ena→מגומה (~30 דק׳). ירידה נופית אל יפן הכפרית.",
+      "tips": "המזוודה הראשית כבר בדרך לקיוטו — נוסעים עם תיק-לילה. בדקו מראש את שעת ה-Shinano ואת לוח אוטובוס Kita-Ena מנקאטסוגאווה — האוטובוס דליל; תנו באפר במעבר בנגויה.",
       "cost": "",
       "booking": "",
       "dur": "~3–3.5 שעות · 4 קטעים"
@@ -1329,7 +1329,7 @@ window.TRIP_DATA = {
     "cultural": "הנקאסֶנדו — 'הדרך המרכזית דרך ההרים' — היה אחד משני כבישי-המלך הגדולים של תקופת אֶדו, שחיבר אֶדו (טוקיו) עם קיוטו דרך הרים וגאיות. לאורך הדרך ניצבו עמדות-דואר (שוקו), ובכל אחת מהן בלטו שני מוסדות: ה-הוֹנְג'ין — בית המלון הרשמי לדאימיו ושליחים, שמרכיביו היו חדר פורמלי, גן ושיתוף-כבוד; וה-וואקי-הוֹנג'ין — אכסנייה משנית שפתחה את שעריה לסוחרים אמידים ולנוסעים בעלי-מעמד. בצומאגו ניתן לראות את שלושת הבניינים מהתקופה המקורית, דבר נדיר ביותר — רוב שוקות אחרות נשרפו או נהרסו. הנהר הקטן, גדרות הבמבוק, ואבני המדרכה שנשחקו בידי מיליוני צועדים לאורך מאות שנים — כולם עדים שקטים לכלל יפני עמוק: מה שנטפל בזהירות ובאהבה אינו בלה אלא מקבל עוד שכבת נשמה.",
     "tips": [
      "ה-Wakihonjin Okuya ומוזיאון ההיסטוריה של נאגיסו סגורים בכל יום חמישי ה-2 וה-4 של החודש — ה-24.9 הוא בדיוק יום חמישי ה-4 של ספטמבר. אל תסמכו על הכניסה פנימה; הכפר עצמו וסמטאות האבן תמיד פתוחים וחינמיים.",
-     "מסרו את התיקים במרכז המידע במגומה לא יאוחר מ-09:00 (הפתיחה היא 08:30). איסוף בצומאגו בין 13:00–17:00 — אל תחמיצו את חלון האיסוף אחרת תישאו את התיקים על גב.",
+     "מסרו את התיקים במרכז המידע במגומה עד ~11:30 (הפתיחה 08:30, המסירה לצומאגו עד 13:00). איסוף בצומאגו בין 13:00–17:00 — אל תחמיצו את חלון האיסוף אחרת תישאו את התיקים על גב.",
      "ארוחת הערב בנאגיסו היא נקודה עיוורת: העיירה קטנה מאוד ואין מסעדות ערב ביתיות שמובטח שיהיו פתוחות. האפשרות הבטוחה ביותר היא ארוחת צהריים/מוקדמת-ערב בצומאגו עצמה (Kongoya — סובה + גוהיי-מוצ'י בבית עץ עתיק), ורכישת מצרכים בסופרמרקט ליד תחנת נאגיסו לארוחה קלה בווילה AKARI."
     ]
    },
@@ -1539,7 +1539,7 @@ window.TRIP_DATA = {
       "area": "Kyoto (Higashiyama)",
       "title": "קיומיזו-דרה + שבילי ניינזקה וסאנינזקה",
       "desc": "קיומיזו-דרה עומדת על גבי מדרגות עץ מרהיבות עם נוף פנורמי על קיוטו — ספטמבר מתחיל לגעת בצמחייה בגוונים חמים ראשונים. מהמקדש, גלשו במורד הסמטאות המרוצפות של ניינזקה וסאנינזקה — שמורות לפלא, עם חנויות פוריות ובתי תה ישנים. זו קיוטו כפי שחלמתם עליה.",
-      "tips": "הדרך בין שתי הסמטאות קצרה ומקסימה — אל תחפזו. שימו לב לסימן המחיר לפני שאתם נכנסים לחנויות המזכרות; האיכות משתנה מאוד.",
+      "tips": "הדרך בין שתי הסמטאות קצרה ומקסימה — אל תחפזו. ⚠️ המעבר מקינקאקו-ג'י (צפון-מערב) לקיומיזו (דרום-מזרח) לוקח 50–60 דק' באוטובוס — קחו מונית (~30 דק', ~¥2,500) או צאו מקינקאקו-ג'י ב-09:45 כדי להגיע ב-10:30.",
       "cost": "¥400 לאדם (כניסה לקיומיזו-דרה)",
       "booking": ""
      },
@@ -1561,7 +1561,7 @@ window.TRIP_DATA = {
       "area": "Kyoto (Gion)",
       "title": "סדנת קימונו + טקס תה — MAIKOYA גיון",
       "desc": "קימונו מלא לשניים וטקס תה אותנטי בבית תה עתיק (נכס תרבות רשום) בגיון. הוקדם לצהריים כדי להתחבר לסובה ב-16:00 בג'ודוג'י. בחרו באופציה הפרטית לזוג. הזמינו מראש — סופי שבוע נחטפים.",
-      "tips": "הזמינו מראש חבילה לזוג; בדקו שהסדנה מתנהלת גם באנגלית. סיימו עד 15:30 — משם ~20 דק' לג'ודוג'י (אוטובוס/מונית) לסובה.",
+      "tips": "הזמינו מראש חבילה לזוג; בדקו שהסדנה מתנהלת גם באנגלית. סיימו עד 15:30 וקחו מונית לג'ודוג'י (~15 דק', ~¥1,800) — האוטובוס לוקח 25–35 דק' ואין מרווח לכיסא הסובה ששולם מראש ב-16:00.",
       "cost": "¥5,000–10,000 לאדם",
       "booking": "mai-ko.com — MAIKOYA Gion",
       "highlight": true
@@ -1764,7 +1764,7 @@ window.TRIP_DATA = {
       "booking": ""
      },
      {
-      "start": "20:30",
+      "start": "20:45",
       "end": "23:00",
       "type": "nightlife",
       "area": "Osaka (Doyama-cho)",
@@ -1804,7 +1804,7 @@ window.TRIP_DATA = {
      },
      {
       "start": "10:45",
-      "end": "13:20",
+      "end": "13:15",
       "type": "transport",
       "area": "Shin-Osaka עד Tokyo",
       "title": "שינקנסן לטוקיו — הגעה הביתה",
@@ -1944,8 +1944,8 @@ window.TRIP_DATA = {
     "hotel": "✈️ יום עזיבה — אין לינה",
     "events": [
      {
-      "start": "06:00",
-      "end": "06:45",
+      "start": "05:45",
+      "end": "06:10",
       "type": "food",
       "area": "Tokyo",
       "title": "ארוחת בוקר מהירה ואריזה אחרונה",
@@ -1955,15 +1955,15 @@ window.TRIP_DATA = {
       "booking": ""
      },
      {
-      "start": "07:00",
-      "end": "09:10",
+      "start": "06:30",
+      "end": "08:45",
       "type": "transport",
       "area": "Shinjuku עד Narita T1",
       "title": "N'EX לנמל Narita — הפרדה מ-Shinjuku",
-      "desc": "ה-Narita Express מ-Shinjuku מגיע ל-Narita T1 בכ-90 דקות — ישיבות שמורות, מרווח לכבודה גדולה, ונוף עירוני שמפנה מקום לשדות. זה הסיום שיפן ראויה לו: מסודר, בזמן, ויפה.",
-      "tips": "רכשו כרטיסי N'EX מראש דרך אתר JR-East או אוטומטים בתחנה; קחו רכבת שמגיעה לפחות שלוש שעות לפני הטיסה.",
+      "desc": "ה-Narita Express מ-Shinjuku מגיע ל-Narita T1 בכ-90 דקות (יציאה ~06:30 → הגעה ~08:45, ~3ש15 לפני הטיסה) — ישיבות שמורות, מרווח לכבודה גדולה, ונוף עירוני שמפנה מקום לשדות. סיום שיפן ראויה לו: מסודר, בזמן, ויפה.",
+      "tips": "⚠️ שריינו N'EX מוקדם — היעד ~06:30 (07:00 נותן רק ~2ש50, פחות מ-3 שעות). ה-N'EX מ-Shinjuku יוצא ~כל שעה, אז החמצה מתעכבת. גיבוי: Yamanote ל-Nippori/Ueno ואז Keisei Skyliner, או ל-Tokyo Station ואז N'EX.",
       "cost": "¥3,070 לאדם (Shinjuku→Narita T1)",
-      "booking": "",
+      "booking": "לשריין מושב N'EX ~06:30 מ-Shinjuku (הרגל השנייה של כרטיס ההלוך-חזור)",
       "dur": "~90 דק׳"
      },
      {
@@ -3785,7 +3785,7 @@ window.TRIP_DATA = {
       "type": "onsen",
       "area": "Hakone-Yumoto",
       "title": "Llegada al ryokan — este momento era para vos",
-      "desc": "Check-in en el ryokan de Gora: bienvenida con té verde y dulces japoneses, cambio a yukata, y primera inmersión en el onsen con vistas a las montañas. Sentí cómo el estrés se va disolviendo.",
+      "desc": "Check-in en el ryokan de Yumoto: bienvenida con té verde y dulces japoneses, cambio a yukata, y primera inmersión en el onsen con vistas a las montañas. Sentí cómo el estrés se va disolviendo.",
       "tips": "Dejá los zapatos en la entrada y pasate a las sandalias del ryokan (geta) — es parte de la experiencia. Sacate fotos mutuamente con el yukata antes de que el onsen te enrojezca las mejillas.",
       "cost": "Incluido en el alojamiento",
       "booking": ""
@@ -3859,8 +3859,8 @@ window.TRIP_DATA = {
       "type": "transport",
       "area": "Hakone-Yumoto עד Nagoya עד Magome",
       "title": "Viaje al Valle de Kiso — Hakone → Magome",
-      "desc": "Hakone→Odawara (~15 min) · shinkansen Odawara→Nagoya (~1:05) · Ltd.Exp Shinano Nagoya→Nakatsugawa (~50 min) · bus→Magome (~30 min). Un descenso escénico al Japón rural.",
-      "tips": "La valija principal ya va camino a Kioto — viajan con bolso de una noche.",
+      "desc": "Hakone→Odawara (~15 min) · shinkansen Hikari Odawara→Nagoya (~1:05 · no Nozomi — no para en Odawara) · Ltd.Exp Shinano Nagoya→Nakatsugawa (~50 min) · bus Kita-Ena→Magome (~30 min). Un descenso escénico al Japón rural.",
+      "tips": "La valija principal ya va camino a Kioto — viajan con bolso de una noche. Verificá de antemano el horario del Shinano y del bus Kita-Ena desde Nakatsugawa — el bus es infrecuente; dejá margen en la combinación en Nagoya.",
       "cost": "",
       "booking": "",
       "dur": "~3–3,5 h · 4 tramos"
@@ -4034,7 +4034,7 @@ window.TRIP_DATA = {
     "cultural": "El Nakasendo — 'el camino central a través de las montañas' — fue una de las dos grandes rutas imperiales del período Edo, conectando Edo (Tokio) con Kioto a través de valles y bosques de cedro. A lo largo del camino se alzaban postas (shuku), y en cada una destacaban dos instituciones: el honjin, posada oficial para daimyo y emisarios imperiales, con sala de audiencias y jardín; y el waki-honjin, posada secundaria para comerciantes acaudalados. Tsumago conserva sus tres edificios originales de esa época, algo extraordinariamente raro — la mayoría de las postas ardieron o fueron demolidas durante la modernización Meiji. Los adoquines desgastados por millones de pies a lo largo de siglos son un testimonio silencioso de un principio estético japonés profundo: lo que se cuida con amor no se gasta, sino que gana capas de alma.",
     "tips": [
      "El Wakihonjin Okuya y el museo de Nagiso cierran el 2° y 4° jueves de cada mes — el 24/9 es justo el 4° jueves. No cuentes con entrar; el pueblo y los callejones de piedra están siempre abiertos y gratis.",
-     "Dejá los bolsos en el centro de info de Magome no más tarde de las 09:00 (abre 08:30). Se retiran en Tsumago entre 13:00–17:00 — no te pierdas la ventana o los cargás al hombro.",
+     "Dejá los bolsos en el centro de info de Magome antes de las ~11:30 (abre 08:30, entrega en Tsumago hasta 13:00). Se retiran en Tsumago entre 13:00–17:00 — no te pierdas la ventana o los cargás al hombro.",
      "La cena en Nagiso es el punto ciego: el pueblo es muy chico y no hay restós de noche garantizados. Lo más seguro: almuerzo/cena temprana en Tsumago (Kongoya — soba + gohei-mochi) y comprar provisiones en el super cerca de la estación de Nagiso para la villa AKARI."
     ]
    },
@@ -4244,7 +4244,7 @@ window.TRIP_DATA = {
       "area": "Kyoto (Higashiyama)",
       "title": "Kiyomizu-dera + pendientes de Ninenzaka y Sannenzaka",
       "desc": "Kiyomizu-dera se alza sobre una plataforma de madera con vistas panorámicas a Kioto — en septiembre los primeros toques otoñales empiezan a colorearse. Desde el templo bajás por las calles adoquinadas de Ninenzaka y Sannenzaka, intactas y llenas de tiendas de artesanía y casas de té antiguas. Esto es Kioto tal como la soñaste.",
-      "tips": "El camino entre las dos calles es corto y encantador — no lo apurés. Fijate bien en los precios antes de entrar a las tiendas de souvenirs; la calidad varía muchísimo.",
+      "tips": "El camino entre las dos calles es corto y encantador — no lo apurés. ⚠️ El salto de Kinkaku-ji (NO) a Kiyomizu (SE) toma 50–60 min en bus — tomá un taxi (~30 min, ~¥2.500) o salí de Kinkaku-ji a las 09:45 para llegar a las 10:30.",
       "cost": "¥400 por persona (entrada a Kiyomizu-dera)",
       "booking": ""
      },
@@ -4266,7 +4266,7 @@ window.TRIP_DATA = {
       "area": "Kyoto (Gion)",
       "title": "Taller de kimono + ceremonia del té — MAIKOYA Gion",
       "desc": "Kimono completo para los dos y ceremonia del té auténtica en una casa de té antigua (propiedad cultural registrada) en Gion. Adelantado a la tarde para conectar con la soba de las 16:00 en Jodoji. Elegí la opción privada. Reservá con tiempo — los fines de semana se llenan.",
-      "tips": "Reservá con tiempo un paquete para pareja; confirmá que el taller se desarrolle en inglés. Terminá antes de las 15:30 — desde ahí ~20 min a Jodoji (bus/taxi) para la soba.",
+      "tips": "Reservá con tiempo un paquete para pareja; confirmá que el taller se desarrolle en inglés. Terminá antes de las 15:30 y tomá un taxi a Jodoji (~15 min, ~¥1.800) — el bus tarda 25–35 min y no hay margen para el asiento de soba ya pagado de las 16:00.",
       "cost": "¥5.000–10.000 por persona",
       "booking": "mai-ko.com — MAIKOYA Gion",
       "highlight": true
@@ -4469,7 +4469,7 @@ window.TRIP_DATA = {
       "booking": ""
      },
      {
-      "start": "20:30",
+      "start": "20:45",
       "end": "23:00",
       "type": "nightlife",
       "area": "Osaka (Doyama-cho)",
@@ -4509,7 +4509,7 @@ window.TRIP_DATA = {
      },
      {
       "start": "10:45",
-      "end": "13:20",
+      "end": "13:15",
       "type": "transport",
       "area": "Shin-Osaka עד Tokyo",
       "title": "Shinkansen a Tokyo — bienvenidos de vuelta",
@@ -4649,8 +4649,8 @@ window.TRIP_DATA = {
     "hotel": "✈️ Día de salida — sin alojamiento",
     "events": [
      {
-      "start": "06:00",
-      "end": "06:45",
+      "start": "05:45",
+      "end": "06:10",
       "type": "food",
       "area": "Tokyo",
       "title": "Desayuno rápido y últimos preparativos",
@@ -4660,15 +4660,15 @@ window.TRIP_DATA = {
       "booking": ""
      },
      {
-      "start": "07:00",
-      "end": "09:10",
+      "start": "06:30",
+      "end": "08:45",
       "type": "transport",
       "area": "Shinjuku עד Narita T1",
       "title": "N'EX a Narita — despedida de Shinjuku",
-      "desc": "El Narita Express desde Shinjuku llega a Narita T1 en unos 90 minutos: asientos reservados, espacio para el equipaje grande y el paisaje urbano que va cediendo paso a los campos. El cierre que Japón se merece: ordenado, puntual y hermoso.",
-      "tips": "Comprá los pasajes del N'EX con anticipación en el sitio de JR-East o en los autoservicios de la estación; tomá un tren que llegue al menos tres horas antes del vuelo.",
+      "desc": "El Narita Express desde Shinjuku llega a Narita T1 en unos 90 minutos (salida ~06:30 → llegada ~08:45, ~3h15 antes del vuelo): asientos reservados, espacio para el equipaje grande y el paisaje urbano que cede paso a los campos. El cierre que Japón se merece: ordenado, puntual y hermoso.",
+      "tips": "⚠️ Reservá un N'EX temprano — apuntá a ~06:30 (las 07:00 dejan solo ~2h50, menos de 3 h). El N'EX desde Shinjuku sale ~cada hora, así que perderlo cuesta caro. Backup: Yamanote a Nippori/Ueno y Keisei Skyliner, o a Tokyo Station y N'EX.",
       "cost": "¥3.070 por persona (Shinjuku→Narita T1)",
-      "booking": "",
+      "booking": "Reservar asiento N'EX ~06:30 desde Shinjuku (segunda pierna del ida y vuelta)",
       "dur": "~90 min"
      },
      {
