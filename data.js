@@ -1,6 +1,6 @@
 /* data.js — Option A · booked hotels + luggage logistics per day. bilingual he/es. */
 window.TRIP_DATA = {
- "v": "bi-optA-13",
+ "v": "bi-optA-14",
  "flights": {
   "airline": "LOT Polish Airlines",
   "passenger": "Ezequiel",
@@ -1842,9 +1842,9 @@ window.TRIP_DATA = {
       "start": "20:00",
       "end": "21:30",
       "type": "food",
-      "area": "Tokyo (Ebisu)",
-      "title": "ארוחת ערב רומנטית באביסו",
-      "desc": "Ebisu ו-Meguro מציעות את שילוב הנדיר של איזאקאיה מודרנית ובסטרו טוקיואי בטיפול יד בוגרת — ברחובות הצדדים תמצאו מסעדות קטנות עם תפריטי omakase, יינות יפניים ואווירה שקטה. ארוחה לציון יום ההולדת ה-40. טיפ: אם רוצים לחסוך נסיעה אחרי teamLab, אפשר לאכול בגינזה (~15 דק' מטויוסו) במקום אביסו.",
+      "area": "Tokyo (Ginza / Tsukiji)",
+      "title": "ארוחת ערב חגיגית — גינזה/צוקיג'י",
+      "desc": "מטויוסו ~15 דק' לגינזה (קו יוראקוצ'ו) או ~10 דק' לצוקיג'י — מסלול נקי בלי זיגזג אחרי teamLab (במקום ~35–40 דק' לאביסו). ערב חגיגי לציון ה-40: סושי משובח, קאיסקי או ביסטרו יפני אינטימי. טיפ: אם לא בא לכם שתי ארוחות בגינזה ברצף (ה-1.10 היא ארוחת הפרידה בגינזה) — צוקיג'י ליד המים קרובה עוד יותר ומצוינת.",
       "tips": "חפשו מקומות עם מושבים בבר המטבח — לראות את השף עובד זה חלק מהחוויה; הזמינו בהצגת עצמכם כצמד חוגג.",
       "cost": "¥5,000–9,000 לאדם",
       "booking": "",
@@ -4547,9 +4547,9 @@ window.TRIP_DATA = {
       "start": "20:00",
       "end": "21:30",
       "type": "food",
-      "area": "Tokyo (Ebisu)",
-      "title": "Cena romántica en Ebisu",
-      "desc": "Ebisu y Meguro ofrecen esa combinación rara de izakaya moderna y bistró tokiota con mano adulta — en las calles laterales encontrás restaurantes pequeños con menús omakase, vinos japoneses y una atmósfera íntima. Una cena para festejar los 40. Tip: para ahorrar viaje después de teamLab, pueden cenar en Ginza (~15 min de Toyosu) en vez de Ebisu.",
+      "area": "Tokyo (Ginza / Tsukiji)",
+      "title": "Cena de festejo — Ginza/Tsukiji",
+      "desc": "Desde Toyosu son ~15 min a Ginza (línea Yurakucho) o ~10 min a Tsukiji — un recorrido limpio sin zigzag después de teamLab (en vez de ~35–40 min a Ebisu). Una cena para festejar los 40: sushi de nivel, kaiseki o un bistró japonés íntimo. Tip: si no quieren dos cenas en Ginza seguidas (el 1/10 es la cena de despedida en Ginza), Tsukiji junto al agua está aún más cerca y es excelente.",
       "tips": "Buscá lugares con asientos en la barra frente a la cocina — ver al chef trabajar es parte de la experiencia; presentate como pareja en festejo para un trato especial.",
       "cost": "¥5.000–9.000 por persona",
       "booking": "",

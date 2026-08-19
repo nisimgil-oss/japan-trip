@@ -1,5 +1,5 @@
 /* יפן 2026 — service worker: offline app shell. bump CACHE on each release. */
-const CACHE = 'japan2026-v20260818b';
+const CACHE = 'japan2026-v20260819a';
 const SHELL = [
   './', './index.html', './styles.css', './app.js', './data.js', './manifest.json', './icon.svg',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
