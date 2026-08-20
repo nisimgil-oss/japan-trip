@@ -405,6 +405,12 @@ a{color:var(--gold-soft)}
 .dh-tips-h{font-size:12.5px;font-weight:700;color:#bfe9f5;margin-bottom:4px;letter-spacing:.02em}
 .dh-tips-list{margin:0;padding-inline-start:18px;font-size:12.8px;color:#dfeef4;line-height:1.55}
 .dh-tips-list li{margin:3px 0}
+.wz{margin:26px 0 10px;margin-inline-start:64px;background:linear-gradient(135deg,rgba(212,175,95,.14),rgba(34,58,94,.10));border:1px solid rgba(212,175,95,.55);border-inline-start:3px solid var(--gold);border-radius:12px;padding:14px 18px;position:relative}
+.wz::before{content:"☯";position:absolute;top:10px;inset-inline-end:14px;font-size:18px;color:var(--gold);opacity:.5}
+.wz-h{font-size:11.5px;font-weight:700;letter-spacing:.05em;color:var(--gold-soft);margin-bottom:7px;text-transform:uppercase}
+.wz-concept{font-family:var(--serif,'Frank Ruhl Libre',Georgia,serif);font-size:16.5px;font-weight:700;color:var(--gold-soft);margin-bottom:6px}
+.wz-text{font-size:13.5px;line-height:1.75;color:var(--cream)}
+@media(max-width:640px){.wz{margin-inline-start:0}}
 .bk-manage{display:inline-block;margin-top:10px;font-size:12.5px;text-decoration:none;color:#fff;background:#0a5ad6;padding:5px 12px;border-radius:999px;font-family:var(--serif)}
 .bk-manage:hover{background:#084bb0}
 .bkitem.bkdone{border-inline-start:5px solid #3c9a5f}
@@ -555,7 +561,8 @@ a.ev-area:hover{color:var(--red);text-decoration:underline}
   #view-itinerary{display:block!important}
   #view-itinerary .day-rail,#view-itinerary .tl-add,#view-itinerary .toolbar,#view-itinerary .lang-warn,.ev-actions,.ev-check,.dh-actions{display:none!important}
   body{background:#fff!important;color:#000!important}
-  .dh-city,.dh-title,.dh-sum,.dh-hotel,.dh-logistics,.dh-culture,.dh-tips,.dh-tips-h,.dh-tips-list,.ev-title,.ev-desc,.ev-tip,.ev-time,.ev-area,.dh-culture span,.chip{color:#111!important}
-  .dh-culture,.dh-tips,.dh-logistics,.ev-card,.dh-weather,.chip{background:#fff!important;border-color:#999!important}
+  .dh-city,.dh-title,.dh-sum,.dh-hotel,.dh-logistics,.dh-culture,.dh-tips,.dh-tips-h,.dh-tips-list,.ev-title,.ev-desc,.ev-tip,.ev-time,.ev-area,.dh-culture span,.chip,.wz-h,.wz-concept,.wz-text{color:#111!important}
+  .dh-culture,.dh-tips,.dh-logistics,.ev-card,.dh-weather,.chip,.wz{background:#fff!important;border-color:#999!important}
+  .wz-concept{color:#8a6100!important}
   .tl-line,.ev-node{background:#bbb!important}
 }

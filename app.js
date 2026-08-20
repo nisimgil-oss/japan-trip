@@ -40,7 +40,7 @@
       'overview.title': '🗾 כל הטיול במבט אחד', 'restaurants.title': '🍣 מקומות מיוחדים לאכול',
       'foot': 'נבנה באהבה עבורכם ❤️ · תכנון גמיש — שנו, הוסיפו וסמנו ✓ · いってらっしゃい',
       'f.start': 'משעה', 'f.end': 'עד שעה', 'f.title': 'כותרת', 'f.type': 'סוג', 'f.area': 'אזור / מיקום', 'f.desc': 'תיאור', 'f.tips': 'טיפ', 'f.cost': 'עלות', 'f.booking': 'הזמנה מראש', 'f.note': 'הערה אישית שלכם', 'f.delete': '🗑️ מחק', 'f.cancel': 'ביטול', 'f.save': 'שמירה',
-      langToggle: '🇦🇷 Español', day: 'יום', night: 'לינה', bday: 'יום ההולדת!', tipsLabel: 'טיפים ליום', addTitle: 'פעילות חדשה', editTitle: 'עריכת פעילות',
+      langToggle: '🇦🇷 Español', day: 'יום', night: 'לינה', bday: 'יום ההולדת!', tipsLabel: 'טיפים ליום', wisdomLabel: 'חוכמה יפנית להיום', addTitle: 'פעילות חדשה', editTitle: 'עריכת פעילות',
       langWarnMsg: '✏️ שינויים ביומן (סימוני ✓, שעות, הוספה/מחיקה ועריכות) נשמרים בנפרד לעברית ולספרדית. הטאב "לסגור" (מלונות/רכבות/כרטיסים) כן משותף בין השפות.',
       langWarnShort: '💡 השינוי נשמר בגרסה העברית בלבד — לא יופיע בספרדית.',
       highlight: 'מומלץ במיוחד', empty: 'אין עדיין פעילויות ליום הזה — הוסיפו אחת ↓',
@@ -79,7 +79,7 @@
       'overview.title': '🗾 Todo el viaje de un vistazo', 'restaurants.title': '🍣 Lugares especiales para comer',
       'foot': 'Hecho con amor para ustedes ❤️ · plan flexible — cambiá, agregá y marcá ✓ · いってらっしゃい',
       'f.start': 'Desde', 'f.end': 'Hasta', 'f.title': 'Título', 'f.type': 'Tipo', 'f.area': 'Zona / lugar', 'f.desc': 'Descripción', 'f.tips': 'Tip', 'f.cost': 'Costo', 'f.booking': 'Reserva previa', 'f.note': 'Nota personal', 'f.delete': '🗑️ Borrar', 'f.cancel': 'Cancelar', 'f.save': 'Guardar',
-      langToggle: '🇮🇱 עברית', day: 'Día', night: 'Alojamiento', bday: '¡el cumpleaños!', tipsLabel: 'Tips del día', addTitle: 'Nueva actividad', editTitle: 'Editar actividad',
+      langToggle: '🇮🇱 עברית', day: 'Día', night: 'Alojamiento', bday: '¡el cumpleaños!', tipsLabel: 'Tips del día', wisdomLabel: 'Sabiduría japonesa para hoy', addTitle: 'Nueva actividad', editTitle: 'Editar actividad',
       langWarnMsg: '✏️ Los cambios del itinerario (✓, horarios, agregar/borrar y ediciones) se guardan por separado en hebreo y español. La pestaña "Por reservar" (hoteles/trenes/entradas) sí se comparte entre idiomas.',
       langWarnShort: '💡 El cambio se guarda solo en la versión en español — no aparece en hebreo.',
       highlight: 'Muy recomendado', empty: 'Todavía no hay actividades este día — agregá una ↓',
@@ -171,6 +171,55 @@
   }
 
   // ---------- day view ----------
+  // חוכמה יפנית להיום — מושג רוחני/פילוסופי אחד לכל יום, תואם לרוח היום (מפתח לפי תאריך)
+  const WISDOM = {
+    '2026-09-18': { c: '初心 · Shoshin — תודעת המתחיל',
+      he: 'ברגע הראשון ביפן, לפני שההרגל והידע מכסים הכול, החושים פתוחים לרווחה. שוֹשִׁין הוא לשמר את המבט הזה גם אחרי שנעשים מומחים: להיכנס לכל סמטה, טעם וריח כאילו זו הפעם הראשונה. הלילה — פשוט תנו לעצמכם להתפעל.',
+      es: 'En el primer instante en Japón, antes de que el hábito y el saber lo cubran todo, los sentidos están abiertos de par en par. Shoshin es conservar esa mirada aun cuando ya sepamos: entrar a cada callejón, sabor y aroma como si fuera la primera vez. Esta noche, simplemente déjense asombrar.' },
+    '2026-09-19': { c: '浮世 · Ukiyo — העולם הצף',
+      he: 'במקור מונח בודהיסטי לעולם החולף, שבאדו הפך לחגיגה: אם ממילא הכול בן-חלוף, נצוף עליו בהנאה. מהשוק של הבוקר ועד הניאון של הלילה — היום הזה הוא ציור אוקיו-אה חי. אל תיאחזו; זרמו עם הזרם המנצנץ.',
+      es: 'Al principio un término budista sobre lo efímero, que en Edo se volvió celebración: si todo es pasajero, flotemos sobre ello con placer. Del mercado de la mañana al neón de la noche, este día es un ukiyo-e vivo. No se aferren; déjense llevar por la corriente que brilla.' },
+    '2026-09-20': { c: 'こだわり · Kodawari — מסירות לפרט',
+      he: 'אותה אש שמובילה שף סושי ללטש חתך אחד במשך עשור, מובילה גם את פסל הפיגורות, את מאייר האנימה ואת האספן. היום, בין הקומות של נאקאנו ואקיהברה, תראו קודאווארי בכל מדף: לא "אובססיה", אלא אהבה שאין בה קיצורי דרך.',
+      es: 'El mismo fuego que lleva a un maestro de sushi a perfeccionar un corte durante una década guía también al escultor de figuras, al dibujante de anime y al coleccionista. Hoy, entre los pisos de Nakano y Akihabara, verán kodawari en cada estante: no "obsesión", sino un amor sin atajos.' },
+    '2026-09-21': { c: '守破離 · Shu-ha-ri — שלוש מדרגות הלמידה',
+      he: 'שוּ (לשמור) — חַקו את המורה בדבקות; הָא (לשבור) — פִרצו את הכללים ברגע שהבנתם אותם; רִי (לעזוב) — צרו חופשי, כי הצורה כבר בתוככם. בסדנה היום תהיו ב"שוּ": ידיים שלומדות צורה. כך מתחיל כל אמן.',
+      es: 'Shu (guardar) — imitá al maestro con fidelidad; Ha (romper) — quebrá las reglas una vez que las entendiste; Ri (soltar) — creá libremente, porque la forma ya vive en vos. Hoy, en el taller, estarán en "Shu": manos que aprenden una forma. Así empieza todo artista.' },
+    '2026-09-22': { c: '和み · Nagomi — רוגע והרמוניה',
+      he: 'הרוגע שבו הגוף והרוח חוזרים לאיזון — לא ריקנות אלא חמימות: מים חמים, יוקאטה, ארוחת קייסקי לאט לאט. האקונה כולה מזמינה נאגומי, הרשות להאט עד שהכתפיים יורדות. היום המשימה היחידה היא לא למהר.',
+      es: 'La calma en que cuerpo y espíritu vuelven al equilibrio — no vacío, sino calidez: agua caliente, yukata, un kaiseki sin apuro. Todo Hakone invita al nagomi, el permiso de ir despacio hasta que los hombros bajan. Hoy la única tarea es no apurarse.' },
+    '2026-09-23': { c: '物の哀れ · Mono no aware — יופיו של החולף',
+      he: 'הרגישות הענוגה לכך שהכול חולף, ודווקא בכך יופיו. הסתיו הראשון על דרך הנאקאסֶנדו ויום הולדת 40 — שניהם מסמנים זמן שזורם. מונו נו אַוַארֶה אינו עצב אלא הודיה: שהרגע הזה, בגיל הזה, עם האדם הזה, קיים עכשיו — ולכן יקר מפז.',
+      es: 'La tierna sensibilidad ante lo que pasa, y que precisamente en eso reside su belleza. El primer otoño sobre el Nakasendo y los 40 años marcan, ambos, un tiempo que fluye. Mono no aware no es tristeza sino gratitud: que este instante, a esta edad, con esta persona, exista ahora — y por eso valga más que el oro.' },
+    '2026-09-24': { c: '道 · Dō — הדרך',
+      he: 'ביפן כל אמנות היא "דרך" (סָדוֹ – דרך התה, קֶנדוֹ – דרך החרב), משום שהמסע עצמו הוא התרגול, לא רק היעד. היום אתם הולכים בדרך ממש — הנאקאסֶנדו העתיקה. אל תמדדו רק כמה נשאר; כל צעד על אבני המדרכה הוא כבר ההגעה.',
+      es: 'En Japón cada arte es un "camino" (Sadō, la vía del té; Kendō, la vía de la espada), porque el trayecto mismo es la práctica, no solo el destino. Hoy caminan un camino de verdad — el antiguo Nakasendo. No midan solo cuánto falta; cada paso sobre los adoquines ya es la llegada.' },
+    '2026-09-25': { c: '幽玄 · Yūgen — יופי מרומז',
+      he: 'יופי עמוק שנרמז ואינו נחשף. לא הפריחה המלאה אלא הניצן; לא הגיישה במלואה אלא הבזק הקימונו בקצה הסמטה. גיון בין-הערביים היא יוגן טהורה: פנסים, צללים, רמזים. הלכו לאט הערב — היופי כאן מתגלה רק למי שמאט.',
+      es: 'Belleza profunda, insinuada más que revelada. No la flor abierta sino el capullo; no la geisha entera sino el destello de un kimono al fondo del callejón. Gion al anochecer es yūgen puro: faroles, sombras, indicios. Caminen despacio esta noche — aquí la belleza solo se muestra a quien aminora.' },
+    '2026-09-26': { c: '森林浴 · Shinrin-yoku — רחצה ביער',
+      he: 'לספוג את היער דרך כל החושים — לא כספורט אלא כריפוי. בין אלפי הטוריי של פושימי ובחורשת הבמבוק של ארשיאמה, עצרו לנשום. היפנים יודעים שהיער מרפא את מה שהעיר מותחת. תנו לירוק להיכנס פנימה.',
+      es: 'Absorber el bosque por todos los sentidos — no como deporte sino como cura. Entre los miles de torii de Fushimi y el bosque de bambú de Arashiyama, deténganse a respirar. Los japoneses saben que el bosque sana lo que la ciudad tensa. Dejen que el verde entre.' },
+    '2026-09-27': { c: '一期一会 · Ichigo ichie — פעם אחת, מפגש אחד',
+      he: 'עיקרון מטקס התה: המפגש הזה — האנשים, האור, טעם המאצ׳ה — לא יחזור לעולם בדיוק כך, ולכן ראוי לכל הלב. בטקס התה ובערב המאיקו היום, היו נוכחים לגמרי. אין "עוד פעם"; יש רק הפעם הזאת.',
+      es: 'Un principio de la ceremonia del té: este encuentro — las personas, la luz, el sabor del matcha — no volverá jamás exactamente así, y por eso merece todo el corazón. En la ceremonia del té y en la velada con la maiko de hoy, estén del todo presentes. No hay "otra vez"; solo esta vez.' },
+    '2026-09-28': { c: '無心 · Mushin — לב ריק',
+      he: 'לפעול מתוך שקט פנימי, בלי פטפוט המחשבות ובלי אגו. זהו סודו של מתאבק הסומו — רגע לפני ההתנגשות המוח דומם והגוף יודע. אוסקה תציף אתכם בניאון, ריחות וקולות; מוּשִׁין הוא להיות כולכם בתוך הרגע, בלי לנתח אותו.',
+      es: 'Actuar desde una quietud interior, sin la cháchara del pensamiento ni el ego. Es el secreto del luchador en el dohyō de sumo — un instante antes del choque, la mente calla y el cuerpo sabe. Osaka los inundará de neón, aromas y ruido; mushin es estar enteros dentro del momento, sin analizarlo.' },
+    '2026-09-29': { c: '共生 · Kyōsei — לחיות יחד',
+      he: 'בנארה, הצבאים הקדושים משתחווים ומהלכים בין בני האדם כאילו הגבול נמחק; בטודאיג׳י, הבודהה הענק מזכיר שכל היצורים ארוגים ברשת אחת. קְיוֹסֵיי הוא לזכור שאיננו מעל הטבע ולא מחוץ לזולת — אלא חלק מרקמה אחת חיה. גם הלילה, היו מי שאתם, בלב פתוח.',
+      es: 'En Nara los ciervos sagrados se inclinan y caminan entre las personas como si el límite se borrara; en Todai-ji, el Gran Buda recuerda que todos los seres están tejidos en una misma red. Kyōsei es recordar que no estamos por encima de la naturaleza ni fuera del otro — sino parte de un mismo tejido vivo. Esta noche también, sean quienes son, con el corazón abierto.' },
+    '2026-09-30': { c: '脱俗 · Datsuzoku — פריצה מן השגרה',
+      he: 'החופש וההפתעה שמשחררים מן המוסכמות. יאנאקה עוצרת את הזמן, ו-teamLab ממיס את הגבול בין הצופה ליצירה עד שלא ברור איפה אתם נגמרים והאור מתחיל. דָאטְסוּזוֹקוּ הוא הרגע שבו העולם הרגיל נופל ונשארת רק פליאה. הרשו לעצמכם ללכת לאיבוד בתוכו.',
+      es: 'La libertad y la sorpresa que liberan de lo convencional. Yanaka detiene el tiempo, y teamLab disuelve el límite entre quien mira y la obra hasta que ya no se sabe dónde terminan ustedes y empieza la luz. Datsuzoku es el instante en que el mundo ordinario cae y solo queda el asombro. Permítanse perderse dentro.' },
+    '2026-10-01': { c: '懐かしい · Natsukashii — געגוע חם',
+      he: 'הגעגוע החמים שבו זיכרון עולה ומחמם, בלי עצב. מוזיאון ג׳יבלי מעיר את הילד שבכם, וגם המסע כולו כבר מתחיל להפוך לזיכרון שתתגעגעו אליו. נָאטְסוּקָאשִׁי מלמד שאהבה לרגע אינה חייבת לחכות שיחלוף. הערב, בארוחת הפרידה, החזיקו את היום הזה בחום.',
+      es: 'La nostalgia cálida en que un recuerdo aflora y reconforta, sin tristeza. El Museo Ghibli despierta al niño que llevan dentro, y el viaje entero ya empieza a volverse un recuerdo que van a extrañar. Natsukashii enseña que el amor por un momento no tiene que esperar a que pase. Esta noche, en la cena de despedida, abracen este día con calidez.' },
+    '2026-10-02': { c: '余韻 · Yoin — התהודה שנשארת',
+      he: 'ההד שנשאר אחרי שהצליל כבר נדם: תהודת הפעמון, האור שאחרי השקיעה. הטיסה ממריאה, אבל יפן לא נגמרת בשער העלייה — היא ממשיכה להדהד בכם, בטעמים, בשקט, בדרך שבה תסתכלו על העולם. קחו את היוֹאִין הביתה. זה לא סוף — זה מה שממשיך לצלצל.',
+      es: 'El eco que queda cuando el sonido ya calló: la resonancia de la campana, la luz después del ocaso. El avión despega, pero Japón no termina en la puerta de embarque — sigue resonando en ustedes, en los sabores, en el silencio, en cómo mirarán el mundo. Llévense el yoin a casa. No es el final — es lo que sigue sonando.' },
+  };
+
   function renderDay() {
     const d = state.days[curDay]; if (!d) return;
     const hotelName = d.hotel || '';
@@ -191,6 +240,14 @@
     const evs = sortEvents(d.events || []);
     if (!evs.length) { const e = document.createElement('div'); e.style.cssText = 'padding:20px 0 6px;color:var(--cream-faint);padding-inline-start:88px'; e.textContent = t('empty'); tl.appendChild(e); }
     evs.forEach(e => tl.appendChild(eventEl(e)));
+    const wz = WISDOM[d.date];
+    if (wz) {
+      const el = document.createElement('div'); el.className = 'wz';
+      el.innerHTML = `<div class="wz-h">🎐 ${t('wisdomLabel')}</div>` +
+        `<div class="wz-concept" dir="auto">${escapeHtml(wz.c)}</div>` +
+        `<div class="wz-text" dir="auto">${escapeHtml(wz[lang] || wz.he)}</div>`;
+      tl.appendChild(el);
+    }
   }
 
   function eventEl(e) {
