@@ -1,5 +1,5 @@
 /* יפן 2026 — service worker: offline app shell. bump CACHE on each release. */
-const CACHE = 'japan2026-v20260820d';
+const CACHE = 'japan2026-v20260820e';
 const SHELL = [
   './', './index.html', './styles.css', './app.js', './data.js', './manifest.json', './icon.svg',
   './icon-192.png', './icon-512.png', './apple-touch-icon.png',
@@ -21,7 +21,7 @@ self.addEventListener('fetch', (e) => {
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
   // map tiles / weather API: network-first, no cache bloat
-  if (/google\.com\/vt|open-meteo\.com|prompt2bot\.com/.test(url.href)) {
+  if (/google\.com\/vt|google\.com\/maps|open-meteo\.com/.test(url.href)) {
     e.respondWith(fetch(req).catch(() => caches.match(req)));
     return;
   }

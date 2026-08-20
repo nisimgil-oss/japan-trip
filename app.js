@@ -33,10 +33,10 @@
       _title: 'יפן 2026 · חגיגות 40', dir: 'rtl',
       'hero.japan': 'יפן', 'hero.sub': '🏮 חגיגות 40 · מסע אהבה, אוכל ותרבות 🌸',
       'hero.arrive': 'נחיתה בטוקיו 18:25', 'hero.depart': 'המראה 12:00', 'hero.cities': '🗾 טוקיו · האקונה · קיסו · קיוטו · אוסקה · נארה',
-      'tab.itinerary': 'היומן', 'tab.overview': 'מבט־על', 'tab.guide': 'מדריך', 'tab.food': 'אוכל', 'tab.restaurants': 'מסעדות', 'tab.prep': 'הכנות', 'tab.agent': 'סוכן',
-      agentIntro: '🤖 שוחחו עם סוכן תיירות יפן — שאלו כל שאלה על יעדים, אוכל, תחבורה, מנהגים ותכנון בזמן אמת.',
-      agentOpen: 'פתח בחלון חדש', agentReload: '↻ טען מחדש',
-      agentNote: 'שירות חיצוני (prompt2bot) — דורש אינטרנט וייתכן שיבקש התחברות/מנוי. לא זמין במצב לא-מקוון. אם הצ׳אט לא נטען כאן, פִתחו בחלון חדש.',
+      'tab.itinerary': 'היומן', 'tab.overview': 'מבט־על', 'tab.guide': 'מדריך', 'tab.food': 'אוכל', 'tab.restaurants': 'מסעדות', 'tab.prep': 'הכנות', 'tab.places': 'המלצות',
+      placesIntro: '📍 מאות מקומות מומלצים בטוקיו — אוכל ופעילויות — על מפה אחת. הקישו על פין לשם, קטגוריה ותיאור.',
+      placesOpen: 'פתח ב-Google Maps', placesReload: '↻ טען מחדש',
+      placesNote: 'מקור: מפת "פתיתים — מדריך טוקיו" (Google My Maps ציבורית). דורש אינטרנט. תמיד כדאי לאמת פרטים ושעות ב-Google Maps.',
       'toolbar.addEvent': '＋ הוסף פעילות ליום הזה', 'toolbar.backup': '⬇️ גיבוי', 'toolbar.restore': '⬆️ שחזור', 'toolbar.petals': '🌸 פרחים', 'toolbar.reset': '↺ אפס תכנון', 'toolbar.printDay': '🖨️ הדפס יום',
       'tab.luggage': 'תיקים', spotsAnime: '🎮 אנימה', spotsLgbt: '🏳️‍🌈 חיי לילה גאים', wxTypical: 'ממוצע עונתי', wxForecast: 'תחזית', wxRain: 'גשם', wxWind: 'רוח', wxTyphoon: '🌀 סוף ספטמבר = שיא עונת הטייפונים — עקבו אחרי התחזית ושקלו ביטוח גמיש.', wxLoading: 'טוען מזג אוויר…', wxNA: 'מזג אוויר לא זמין',
       lugTitle: '🧳 שרשרת התיקים (takkyubin)', lugIntro: 'המזוודה הראשית נשלחת קדימה כדי לטייל קל בהאקונה ובקיסו. הימים ב-🎒 = תיק-לילה בלבד, בלי המזוודה.', lugHave: 'איתכם', lugNight: 'תיק-לילה בלבד', lugSend: 'שליחה', lugPickup: 'איסוף', lugCardTitle: '📇 כרטיס בקשה לדלפק המלון (יפנית)', lugCardHint: 'הראו את זה בקבלה כדי לשלוח מזוודה למלון הבא:', lugCopy: 'העתק', lugCopied: '✓ הועתק',
@@ -75,10 +75,10 @@
       _title: 'Japón 2026 · Cumple 40', dir: 'ltr',
       'hero.japan': 'Japón', 'hero.sub': '🏮 Cumpleaños 40 · un viaje de amor, comida y cultura 🌸',
       'hero.arrive': 'Llegada a Tokio 18:25', 'hero.depart': 'Despegue 12:00', 'hero.cities': '🗾 Tokio · Hakone · Kiso · Kioto · Osaka · Nara',
-      'tab.itinerary': 'Itinerario', 'tab.overview': 'Vista general', 'tab.guide': 'Guía', 'tab.food': 'Comida', 'tab.restaurants': 'Restaurantes', 'tab.prep': 'Preparativos', 'tab.agent': 'Agente',
-      agentIntro: '🤖 Chateá con un agente de turismo de Japón — preguntá lo que quieras sobre destinos, comida, transporte, costumbres y planificación en tiempo real.',
-      agentOpen: 'Abrir en ventana nueva', agentReload: '↻ Recargar',
-      agentNote: 'Servicio externo (prompt2bot) — requiere internet y puede pedir inicio de sesión/suscripción. No disponible sin conexión. Si el chat no carga acá, abrilo en ventana nueva.',
+      'tab.itinerary': 'Itinerario', 'tab.overview': 'Vista general', 'tab.guide': 'Guía', 'tab.food': 'Comida', 'tab.restaurants': 'Restaurantes', 'tab.prep': 'Preparativos', 'tab.places': 'Recomendados',
+      placesIntro: '📍 Cientos de lugares recomendados en Tokio — comida y actividades — en un mismo mapa. Tocá un pin para ver nombre, categoría y descripción.',
+      placesOpen: 'Abrir en Google Maps', placesReload: '↻ Recargar',
+      placesNote: 'Fuente: mapa "Ptitim — guía de Tokio" (Google My Maps pública). Requiere internet. Conviene verificar datos y horarios en Google Maps.',
       'toolbar.addEvent': '＋ Agregar actividad a este día', 'toolbar.backup': '⬇️ Respaldo', 'toolbar.restore': '⬆️ Restaurar', 'toolbar.petals': '🌸 Pétalos', 'toolbar.reset': '↺ Reiniciar plan', 'toolbar.printDay': '🖨️ Imprimir día',
       'tab.luggage': 'Equipaje', spotsAnime: '🎮 Anime', spotsLgbt: '🏳️‍🌈 Vida gay', wxTypical: 'promedio de estación', wxForecast: 'pronóstico', wxRain: 'lluvia', wxWind: 'viento', wxTyphoon: '🌀 Fin de septiembre = pico de temporada de tifones — seguí el pronóstico y considerá un seguro flexible.', wxLoading: 'cargando clima…', wxNA: 'clima no disponible',
       lugTitle: '🧳 Cadena de equipaje (takkyubin)', lugIntro: 'La valija principal se despacha por adelantado para viajar liviano por Hakone y Kiso. Los días con 🎒 = solo bolso de una noche, sin la valija.', lugHave: 'con ustedes', lugNight: 'solo bolso de una noche', lugSend: 'despacho', lugPickup: 'retiro', lugCardTitle: '📇 Tarjeta para la recepción del hotel (japonés)', lugCardHint: 'Mostrá esto en recepción para enviar la valija al próximo hotel:', lugCopy: 'Copiar', lugCopied: '✓ Copiado',
@@ -332,20 +332,22 @@
     det.innerHTML = `<summary><span class="gic">${sec.icon || '📌'}</span><span><span dir="auto">${escapeHtml(sec.title)}</span>${sec.intro ? `<span class="gintro" dir="auto">${escapeHtml(sec.intro)}</span>` : ''}</span></summary><div class="gbody">${md(sec.body)}${cards}</div>`;
     return det;
   }
-  // ---------- agent (external chat skill, embedded) ----------
-  const AGENT_URL = 'https://prompt2bot.com/talk-to-skill?url=https://github.com/uriva/p2b-skills/tree/main/japan-tourism';
-  let _agentInit = false;
-  function renderAgent() {
-    const box = $('#agentBody'); if (!box) return;
-    if (_agentInit) return; // build once so the chat isn't reloaded on every visit
-    _agentInit = true;
+  // ---------- places (curated Tokyo recommendations — public Google My Map) ----------
+  const PLACES_MID = '1I0o12hoecmBorcEsinQqw4nhTDG7adU';
+  const PLACES_EMBED = 'https://www.google.com/maps/d/embed?mid=' + PLACES_MID;
+  const PLACES_OPEN = 'https://www.google.com/maps/d/viewer?mid=' + PLACES_MID;
+  let _placesInit = false;
+  function renderPlaces() {
+    const box = $('#placesBody'); if (!box) return;
+    if (_placesInit) return; // build once so the map isn't reloaded on every visit
+    _placesInit = true;
     box.innerHTML =
-      `<div class="agent-bar"><div class="agent-intro" dir="auto">${t('agentIntro')}</div>` +
-      `<div class="agent-btns"><button class="btn btn-ghost btn-sm" id="agentReload">${t('agentReload')}</button>` +
-      `<a class="btn btn-ghost btn-sm" href="${AGENT_URL}" target="_blank" rel="noopener">${t('agentOpen')} ↗</a></div></div>` +
-      `<div class="agent-frame-wrap"><iframe class="agent-frame" id="agentFrame" src="${AGENT_URL}" title="Japan tourism agent" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allow="clipboard-write; microphone"></iframe></div>` +
-      `<div class="agent-note" dir="auto">ℹ️ ${t('agentNote')}</div>`;
-    $('#agentReload').onclick = () => { const f = $('#agentFrame'); if (f) f.src = f.src; };
+      `<div class="agent-bar"><div class="agent-intro" dir="auto">${t('placesIntro')}</div>` +
+      `<div class="agent-btns"><button class="btn btn-ghost btn-sm" id="placesReload">${t('placesReload')}</button>` +
+      `<a class="btn btn-ghost btn-sm" href="${PLACES_OPEN}" target="_blank" rel="noopener">${t('placesOpen')} ↗</a></div></div>` +
+      `<div class="agent-frame-wrap"><iframe class="agent-frame" id="placesFrame" src="${PLACES_EMBED}" title="Tokyo recommended places" loading="lazy"></iframe></div>` +
+      `<div class="agent-note" dir="auto">ℹ️ ${t('placesNote')}</div>`;
+    $('#placesReload').onclick = () => { const f = $('#placesFrame'); if (f) f.src = f.src; };
   }
 
   function renderGuide() {
@@ -1011,7 +1013,7 @@
   }
 
   // ---------- views ----------
-  const VIEWS = ['itinerary', 'overview', 'map', 'booked', 'luggage', 'guide', 'agent', 'food', 'restaurants', 'experiences', 'prep'];
+  const VIEWS = ['itinerary', 'overview', 'map', 'booked', 'luggage', 'guide', 'places', 'food', 'restaurants', 'experiences', 'prep'];
   function showView(v) {
     if (!VIEWS.includes(v)) v = 'itinerary';
     VIEWS.forEach(x => $('#view-' + x).classList.toggle('hidden', x !== v));
@@ -1021,7 +1023,7 @@
     if (v === 'luggage') renderLuggage();
     if (v === 'overview') renderOverview();
     if (v === 'guide') renderGuide();
-    if (v === 'agent') renderAgent();
+    if (v === 'places') renderPlaces();
     if (v === 'food') renderFood();
     if (v === 'restaurants') renderRestaurants();
     if (v === 'experiences') renderExperiences();

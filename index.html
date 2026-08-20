@@ -9,9 +9,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@500;700&family=Shippori+Mincho:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="styles.css?v=20260820d">
-<link rel="manifest" href="manifest.json?v=20260820d">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=20260820d">
+<link rel="stylesheet" href="styles.css?v=20260820e">
+<link rel="manifest" href="manifest.json?v=20260820e">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=20260820e">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -48,7 +48,7 @@
   <button class="tab" data-view="booked"><span>🔖</span> <span data-i18n="tab.booked">לסגור</span></button>
   <button class="tab" data-view="luggage"><span>🧳</span> <span data-i18n="tab.luggage">תיקים</span></button>
   <button class="tab" data-view="guide"><span>📖</span> <span data-i18n="tab.guide">מדריך</span></button>
-  <button class="tab" data-view="agent"><span>🤖</span> <span data-i18n="tab.agent">סוכן</span></button>
+  <button class="tab" data-view="places"><span>📍</span> <span data-i18n="tab.places">המלצות</span></button>
   <button class="tab" data-view="food"><span>🍜</span> <span data-i18n="tab.food">אוכל</span></button>
   <button class="tab" data-view="restaurants"><span>🍣</span> <span data-i18n="tab.restaurants">מסעדות</span></button>
   <button class="tab" data-view="experiences"><span>✨</span> <span data-i18n="tab.experiences">חוויות</span></button>
@@ -119,9 +119,9 @@
     <div class="guide-grid" id="guideBody"></div>
   </section>
 
-  <!-- AGENT — embedded external chat skill -->
-  <section id="view-agent" class="hidden">
-    <div id="agentBody"></div>
+  <!-- PLACES — embedded curated Tokyo recommendations (public Google My Map) -->
+  <section id="view-places" class="hidden">
+    <div id="placesBody"></div>
   </section>
 
   <!-- FOOD -->
@@ -181,7 +181,7 @@
 <div class="toast" id="toast"></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="data.js?v=20260820d"></script>
-<script src="app.js?v=20260820d"></script>
+<script src="data.js?v=20260820e"></script>
+<script src="app.js?v=20260820e"></script>
 </body>
 </html>
