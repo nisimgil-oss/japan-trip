@@ -1,6 +1,6 @@
 /* data.js — Option A · booked hotels + luggage logistics per day. bilingual he/es. */
 window.TRIP_DATA = {
- "v": "bi-optA-16",
+ "v": "bi-optA-17",
  "flights": {
   "airline": "LOT Polish Airlines",
   "passenger": "Ezequiel",
@@ -1692,7 +1692,7 @@ window.TRIP_DATA = {
     "dow": "Tue",
     "city": "Osaka",
     "title": "צבאים, בודהה ענק, ולילה קשת",
-    "summary": "יום טיול יומי לנארה — מפגש עם צבאים מקודשים ואחד מהגדולים בבודהות היפן — ואחר כך שובה לאוסקה לחגיגת לילה גאה בדויאמה-צ'ו.",
+    "summary": "יום טיול יומי לנארה — מפגש עם צבאים מקודשים ובודהה ענק — ובערב סיור אוכל לילי בשינסקאי (✓ נסגר) לפני חגיגת לילה גאה בדויאמה-צ'ו.",
     "hotel": "🏨 Onyado Nono Namba (✓ נסגר) · אונסן טבעי · אסור קעקועים גלויים במרחצאות",
     "events": [
      {
@@ -1742,29 +1742,30 @@ window.TRIP_DATA = {
       "booking": ""
      },
      {
-      "start": "16:00",
-      "end": "18:00",
-      "type": "rest",
-      "area": "Osaka",
-      "title": "חזרה לאוסקה ומנוחה",
-      "desc": "נסיעה חזרה לאוסקה ומנוחה חיונית לפני הלילה הגדול. תזמנו מקלחת, קפה קטן ומוזיקה שמשנה את המצב.",
-      "tips": "חזרו לא יאוחר מ-17:30 כדי שתהיה לכם שעה ורבע של נשימה אמיתית לפני היציאה לערב.",
+      "start": "15:45",
+      "end": "17:00",
+      "type": "transport",
+      "area": "Nara עד Osaka (Shinsekai)",
+      "title": "חזרה לאוסקה + רענון קצר",
+      "desc": "נסיעה חזרה מנארה לאוסקה (~45 דק') ורענון קצר לפני סיור האוכל. כוונו לתחנת Dobutsuen-mae (שינסקאי) — נקודת המפגש של הסיור.",
+      "tips": "מ-Namba לשינסקאי ~10 דק' (קו מידוסוג'י ל-Dobutsuen-mae). הגיעו לנקודת המפגש 10 דק' לפני 17:30.",
       "cost": "¥1,000–1,200 לאדם (נסיעה חזרה)",
       "booking": ""
      },
      {
-      "start": "19:00",
+      "start": "17:30",
       "end": "20:30",
       "type": "food",
-      "area": "Osaka (Namba)",
-      "title": "ערב ביקינקו או איזאקאיה — Namba",
-      "desc": "ארוחת ערב עשירה ועמוקה: ביקינקו — בשר על גריל שולחני — הוא חגיגה של ריח, עשן ונגיסות. לחלופין, איזאקאיה עם שרשרת צלחות קטנות ושאקה קרה — כל אחת אפשרות שמשתפת ומשמחת.",
-      "tips": "ב-Namba מומלצת Gyukaku לביקינקו נגיש, או חפשו איזאקאיה עם תפריט אנגלי ברחוב Dotonbori הסמוך. הזמינו מושב ליד הגריל לחוויה מלאה.",
-      "cost": "¥2,500–5,000 לאדם",
-      "booking": ""
+      "area": "Osaka (Shinsekai)",
+      "title": "✓ סיור אוכל לילי בשינסקאי — עם מדריך מקומי",
+      "desc": "✓ נסגר · 29.9 בשעה 17:30 · 2 אנשים · סיור בן ~3 שעות. מסלול בסמטאות האחוריות של שינסקאי — 5 מסעדות נסתרות ו-~10 מנות, ליד מגדל Tsutenkaku ופסל Billiken. נקודת מפגש: תחנת Dobutsuen-mae; הסיור מסתיים בדוטונבורי. זו ארוחת הערב של היום — בואו רעבים!",
+      "tips": "מפגש ב-Dobutsuen-mae (בדקו את היציאה המדויקת בשובר Klook — בדרך כלל יציאה 1 / ליד Mega Donki). המדריך מחזיק שלט. סיום בדוטונבורי — נוח להמשך ללילה.",
+      "cost": "✓ שולם · 2 אנשים",
+      "booking": "✓ נסגר — Klook · Osaka Shinsekai Night Food Tour",
+      "highlight": true
      },
      {
-      "start": "20:45",
+      "start": "21:00",
       "end": "23:00",
       "type": "nightlife",
       "area": "Osaka (Doyama-cho)",
@@ -4397,7 +4398,7 @@ window.TRIP_DATA = {
     "dow": "Tue",
     "city": "Osaka",
     "title": "Ciervos, Buda y una noche arcoíris",
-    "summary": "Un día de excursión a Nara — ciervos sagrados y uno de los Budas más imponentes de Japón — y después de vuelta a Osaka para festejar en Doyama-cho, el barrio gay de la ciudad.",
+    "summary": "Un día de excursión a Nara — ciervos sagrados y un Buda gigante — y a la noche un tour gastronómico por Shinsekai (✓ reservado) antes de festejar en Doyama-cho, el barrio gay de la ciudad.",
     "hotel": "🏨 Onyado Nono Namba (✓ reservado) · onsen natural · sin tatuajes visibles",
     "events": [
      {
@@ -4447,29 +4448,30 @@ window.TRIP_DATA = {
       "booking": ""
      },
      {
-      "start": "16:00",
-      "end": "18:00",
-      "type": "rest",
-      "area": "Osaka",
-      "title": "Regreso a Osaka y descanso",
-      "desc": "Viaje de vuelta a Osaka y un descanso que vale oro antes de la gran noche. Calculen ducha, un cafecito y música que cambie el clima.",
-      "tips": "Volvé antes de las 17:30 para tener al menos una hora de respiro real antes de salir a la noche.",
+      "start": "15:45",
+      "end": "17:00",
+      "type": "transport",
+      "area": "Nara עד Osaka (Shinsekai)",
+      "title": "Regreso a Osaka + refresco rápido",
+      "desc": "Viaje de vuelta de Nara a Osaka (~45 min) y un refresco rápido antes del tour gastronómico. Apunten a la estación Dobutsuen-mae (Shinsekai) — el punto de encuentro del tour.",
+      "tips": "De Namba a Shinsekai ~10 min (línea Midosuji hasta Dobutsuen-mae). Lleguen al punto de encuentro 10 min antes de las 17:30.",
       "cost": "¥1.000–1.200 por persona (viaje de regreso)",
       "booking": ""
      },
      {
-      "start": "19:00",
+      "start": "17:30",
       "end": "20:30",
       "type": "food",
-      "area": "Osaka (Namba)",
-      "title": "Cena de yakiniku o izakaya — Namba",
-      "desc": "Una cena intensa y festiva: el yakiniku — carne a la parrilla en la misma mesa — es todo humo, aroma y mordiscos compartidos. O bien una izakaya con una cadena interminable de platitos y sake frío — cualquiera de las dos opciones une y alegra.",
-      "tips": "En Namba recomendamos Gyukaku para un yakiniku accesible, o buscá una izakaya con menú en inglés sobre el mismo Dotonbori. Pedí mesa al lado de la parrilla para vivir la experiencia completa.",
-      "cost": "¥2.500–5.000 por persona",
-      "booking": ""
+      "area": "Osaka (Shinsekai)",
+      "title": "✓ Tour gastronómico nocturno por Shinsekai — con guía local",
+      "desc": "✓ Reservado · 29/9 a las 17:30 · 2 personas · tour de ~3 horas. Recorrido por los callejones de Shinsekai — 5 comedores escondidos y ~10 platos, junto a la torre Tsutenkaku y la estatua Billiken. Punto de encuentro: estación Dobutsuen-mae; el tour termina en Dotonbori. Es la cena de hoy — ¡vengan con hambre!",
+      "tips": "Encuentro en Dobutsuen-mae (verificá la salida exacta en el voucher de Klook — normalmente salida 1 / cerca del Mega Donki). El guía tiene un cartel. Termina en Dotonbori — cómodo para seguir la noche.",
+      "cost": "✓ pagado · 2 personas",
+      "booking": "✓ Reservado — Klook · Osaka Shinsekai Night Food Tour",
+      "highlight": true
      },
      {
-      "start": "20:45",
+      "start": "21:00",
       "end": "23:00",
       "type": "nightlife",
       "area": "Osaka (Doyama-cho)",

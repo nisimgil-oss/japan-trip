@@ -34,9 +34,9 @@
       'hero.japan': 'יפן', 'hero.sub': '🏮 חגיגות 40 · מסע אהבה, אוכל ותרבות 🌸',
       'hero.arrive': 'נחיתה בטוקיו 18:25', 'hero.depart': 'המראה 12:00', 'hero.cities': '🗾 טוקיו · האקונה · קיסו · קיוטו · אוסקה · נארה',
       'tab.itinerary': 'היומן', 'tab.overview': 'מבט־על', 'tab.guide': 'מדריך', 'tab.food': 'אוכל', 'tab.restaurants': 'מסעדות', 'tab.prep': 'הכנות', 'tab.places': 'המלצות',
-      placesIntro: '📍 מאות מקומות מומלצים בטוקיו — אוכל ופעילויות — על מפה אחת. הקישו על פין לשם, קטגוריה ותיאור.',
-      placesOpen: 'פתח ב-Google Maps', placesReload: '↻ טען מחדש',
-      placesNote: 'מקור: מפת "פתיתים — מדריך טוקיו" (Google My Maps ציבורית). דורש אינטרנט. תמיד כדאי לאמת פרטים ושעות ב-Google Maps.',
+      placesIntro: '📍 741 מקומות מומלצים בטוקיו לפי קטגוריה. סננו לפי סוג או חפשו בשם, ולחצו על נקודה לפרטים וניווט.',
+      placesOpen: 'פתח ב-Google Maps', placesSearch: 'חיפוש מקום…', placesShown: 'מציג', placesAll: 'הכול',
+      placesNote: 'מבוסס על מפת "פתיתים — מדריך טוקיו" · 741 מקומות מוטמעים מקומית באפליקציה (עובד גם לא-מקוון, פרט לרקע המפה). תמיד אמתו שעות ב-Google Maps.',
       'toolbar.addEvent': '＋ הוסף פעילות ליום הזה', 'toolbar.backup': '⬇️ גיבוי', 'toolbar.restore': '⬆️ שחזור', 'toolbar.petals': '🌸 פרחים', 'toolbar.reset': '↺ אפס תכנון', 'toolbar.printDay': '🖨️ הדפס יום',
       'tab.luggage': 'תיקים', spotsAnime: '🎮 אנימה', spotsLgbt: '🏳️‍🌈 חיי לילה גאים', wxTypical: 'ממוצע עונתי', wxForecast: 'תחזית', wxRain: 'גשם', wxWind: 'רוח', wxTyphoon: '🌀 סוף ספטמבר = שיא עונת הטייפונים — עקבו אחרי התחזית ושקלו ביטוח גמיש.', wxLoading: 'טוען מזג אוויר…', wxNA: 'מזג אוויר לא זמין',
       lugTitle: '🧳 שרשרת התיקים (takkyubin)', lugIntro: 'המזוודה הראשית נשלחת קדימה כדי לטייל קל בהאקונה ובקיסו. הימים ב-🎒 = תיק-לילה בלבד, בלי המזוודה.', lugHave: 'איתכם', lugNight: 'תיק-לילה בלבד', lugSend: 'שליחה', lugPickup: 'איסוף', lugCardTitle: '📇 כרטיס בקשה לדלפק המלון (יפנית)', lugCardHint: 'הראו את זה בקבלה כדי לשלוח מזוודה למלון הבא:', lugCopy: 'העתק', lugCopied: '✓ הועתק',
@@ -76,9 +76,9 @@
       'hero.japan': 'Japón', 'hero.sub': '🏮 Cumpleaños 40 · un viaje de amor, comida y cultura 🌸',
       'hero.arrive': 'Llegada a Tokio 18:25', 'hero.depart': 'Despegue 12:00', 'hero.cities': '🗾 Tokio · Hakone · Kiso · Kioto · Osaka · Nara',
       'tab.itinerary': 'Itinerario', 'tab.overview': 'Vista general', 'tab.guide': 'Guía', 'tab.food': 'Comida', 'tab.restaurants': 'Restaurantes', 'tab.prep': 'Preparativos', 'tab.places': 'Recomendados',
-      placesIntro: '📍 Cientos de lugares recomendados en Tokio — comida y actividades — en un mismo mapa. Tocá un pin para ver nombre, categoría y descripción.',
-      placesOpen: 'Abrir en Google Maps', placesReload: '↻ Recargar',
-      placesNote: 'Fuente: mapa "Ptitim — guía de Tokio" (Google My Maps pública). Requiere internet. Conviene verificar datos y horarios en Google Maps.',
+      placesIntro: '📍 741 lugares recomendados en Tokio por categoría. Filtrá por tipo o buscá por nombre, y tocá un punto para ver detalles y navegación.',
+      placesOpen: 'Abrir en Google Maps', placesSearch: 'Buscar lugar…', placesShown: 'Mostrando', placesAll: 'Todo',
+      placesNote: 'Basado en el mapa "Ptitim — guía de Tokio" · 741 lugares integrados localmente en la app (funciona sin conexión, salvo el fondo del mapa). Verificá siempre los horarios en Google Maps.',
       'toolbar.addEvent': '＋ Agregar actividad a este día', 'toolbar.backup': '⬇️ Respaldo', 'toolbar.restore': '⬆️ Restaurar', 'toolbar.petals': '🌸 Pétalos', 'toolbar.reset': '↺ Reiniciar plan', 'toolbar.printDay': '🖨️ Imprimir día',
       'tab.luggage': 'Equipaje', spotsAnime: '🎮 Anime', spotsLgbt: '🏳️‍🌈 Vida gay', wxTypical: 'promedio de estación', wxForecast: 'pronóstico', wxRain: 'lluvia', wxWind: 'viento', wxTyphoon: '🌀 Fin de septiembre = pico de temporada de tifones — seguí el pronóstico y considerá un seguro flexible.', wxLoading: 'cargando clima…', wxNA: 'clima no disponible',
       lugTitle: '🧳 Cadena de equipaje (takkyubin)', lugIntro: 'La valija principal se despacha por adelantado para viajar liviano por Hakone y Kiso. Los días con 🎒 = solo bolso de una noche, sin la valija.', lugHave: 'con ustedes', lugNight: 'solo bolso de una noche', lugSend: 'despacho', lugPickup: 'retiro', lugCardTitle: '📇 Tarjeta para la recepción del hotel (japonés)', lugCardHint: 'Mostrá esto en recepción para enviar la valija al próximo hotel:', lugCopy: 'Copiar', lugCopied: '✓ Copiado',
@@ -332,22 +332,54 @@
     det.innerHTML = `<summary><span class="gic">${sec.icon || '📌'}</span><span><span dir="auto">${escapeHtml(sec.title)}</span>${sec.intro ? `<span class="gintro" dir="auto">${escapeHtml(sec.intro)}</span>` : ''}</span></summary><div class="gbody">${md(sec.body)}${cards}</div>`;
     return det;
   }
-  // ---------- places (curated Tokyo recommendations — public Google My Map) ----------
-  const PLACES_MID = '1I0o12hoecmBorcEsinQqw4nhTDG7adU';
-  const PLACES_EMBED = 'https://www.google.com/maps/d/embed?mid=' + PLACES_MID;
-  const PLACES_OPEN = 'https://www.google.com/maps/d/viewer?mid=' + PLACES_MID;
-  let _placesInit = false;
+  // ---------- places (741 curated Tokyo recommendations — imported locally, native map) ----------
+  const PLACES_OPEN = 'https://www.google.com/maps/d/viewer?mid=1I0o12hoecmBorcEsinQqw4nhTDG7adU';
+  const PLACES_COLORS = ['#607d8b', '#e53935', '#fb8c00', '#8e24aa', '#6d4c41', '#00897b', '#d81b60', '#43a047', '#f9a825', '#3949ab'];
+  let _placesInit = false, _placesMap = null;
   function renderPlaces() {
     const box = $('#placesBody'); if (!box) return;
-    if (_placesInit) return; // build once so the map isn't reloaded on every visit
+    const P = window.TRIP_PLACES;
+    if (!P || !P.pts) { box.innerHTML = `<div class="agent-note" dir="auto">${t('placesNote')}</div>`; return; }
+    if (_placesInit) { setTimeout(() => _placesMap && _placesMap.invalidateSize(), 60); return; }
     _placesInit = true;
     box.innerHTML =
-      `<div class="agent-bar"><div class="agent-intro" dir="auto">${t('placesIntro')}</div>` +
-      `<div class="agent-btns"><button class="btn btn-ghost btn-sm" id="placesReload">${t('placesReload')}</button>` +
-      `<a class="btn btn-ghost btn-sm" href="${PLACES_OPEN}" target="_blank" rel="noopener">${t('placesOpen')} ↗</a></div></div>` +
-      `<div class="agent-frame-wrap"><iframe class="agent-frame" id="placesFrame" src="${PLACES_EMBED}" title="Tokyo recommended places" loading="lazy"></iframe></div>` +
-      `<div class="agent-note" dir="auto">ℹ️ ${t('placesNote')}</div>`;
-    $('#placesReload').onclick = () => { const f = $('#placesFrame'); if (f) f.src = f.src; };
+      `<div class="pl-intro" dir="auto">${t('placesIntro')}</div>` +
+      `<div class="pl-controls"><input id="plSearch" class="pl-search" type="search" placeholder="${escapeAttr(t('placesSearch'))}">` +
+      `<span class="pl-shown">${t('placesShown')} <b id="plShown">${P.pts.length}</b>/${P.pts.length}</span></div>` +
+      `<div class="pl-cats" id="plCats"></div>` +
+      `<div id="placesMap" class="pl-map"></div>` +
+      `<div class="agent-note" dir="auto">ℹ️ ${t('placesNote')} · <a href="${PLACES_OPEN}" target="_blank" rel="noopener">${t('placesOpen')} ↗</a></div>`;
+    const active = new Set(P.cats.map((_, i) => i));
+    $('#plCats').innerHTML = P.cats.map((c, i) =>
+      `<button class="pl-cat" data-i="${i}" style="--cc:${PLACES_COLORS[i]}"><span class="pl-dot"></span>${escapeHtml(c)} <span class="pl-cnt">${P.pts.filter(p => p.c === i).length}</span></button>`).join('');
+    const map = L.map('placesMap', { scrollWheelZoom: true }).setView([35.68, 139.76], 11);
+    _placesMap = map;
+    L.tileLayer('https://mt1.google.com/vt/lyrs=m&hl=' + (lang === 'he' ? 'iw' : 'en') + '&x={x}&y={y}&z={z}',
+      { maxZoom: 19, subdomains: ['mt0', 'mt1', 'mt2', 'mt3'], attribution: '© Google' }).addTo(map);
+    const layer = L.layerGroup().addTo(map);
+    const markers = P.pts.map(p => {
+      const m = L.circleMarker([p.lat, p.lng], { radius: 5, color: '#fff', weight: 1, fillColor: PLACES_COLORS[p.c] || '#e53935', fillOpacity: .92 });
+      m._p = p;
+      m.bindPopup(`<b dir="auto">${escapeHtml(p.n)}</b><br><span style="color:${PLACES_COLORS[p.c]};font-weight:600">${escapeHtml(P.cats[p.c])}</span>` +
+        (p.d ? `<br><span dir="auto">${escapeHtml(p.d)}</span>` : '') +
+        `<br><a href="https://www.google.com/maps/search/?api=1&query=${p.lat},${p.lng}" target="_blank" rel="noopener">🗺️ ${t('mapsOpen')}</a>`);
+      return m;
+    });
+    const apply = () => {
+      const q = ($('#plSearch').value || '').trim().toLowerCase();
+      layer.clearLayers(); let shown = 0;
+      markers.forEach(m => { const p = m._p;
+        if (active.has(p.c) && (!q || p.n.toLowerCase().includes(q) || (p.d && p.d.toLowerCase().includes(q)))) { layer.addLayer(m); shown++; } });
+      $('#plShown').textContent = shown;
+    };
+    $('#plCats').querySelectorAll('.pl-cat').forEach(btn => btn.onclick = () => {
+      const i = +btn.dataset.i;
+      if (active.has(i)) { active.delete(i); btn.classList.add('off'); } else { active.add(i); btn.classList.remove('off'); }
+      apply();
+    });
+    $('#plSearch').addEventListener('input', apply);
+    apply();
+    setTimeout(() => map.invalidateSize(), 60);
   }
 
   function renderGuide() {
@@ -799,6 +831,9 @@
     { id: 'e-sumo', date: '2026-09-28', done: true, url: 'https://www.google.com/search?q=The+Sumo+Hall+Hirakuza+Osaka',
       title: { he: "🥋 מופע סומו — Sumo Hall Hirakuza (Osaka)", es: "🥋 Show de sumo — Sumo Hall Hirakuza (Osaka)" },
       note: { he: "✓ נסגר · 28.9 בשעה 17:00 · מושב סטנדרט + בנטו + משקה · 2 מבוגרים · הזמנה PFB554612.", es: "✓ Reservado · 28/9 a las 17:00 · asiento estándar + bento + bebida · 2 adultos · reserva PFB554612." } },
+    { id: 'e-shinsekai', date: '2026-09-29', done: true, url: 'https://www.klook.com/en-US/activity/89990-osaka-city-backstreets-shinsekai-half-day-walking-tour-10-dishes-5-hidden-eateries/',
+      title: { he: "🍢 סיור אוכל לילי בשינסקאי (Osaka)", es: "🍢 Tour gastronómico nocturno Shinsekai (Osaka)" },
+      note: { he: "✓ נסגר (Klook) · 29.9 בשעה 17:30 · 2 אנשים · ~3 שעות · 5 מסעדות נסתרות/~10 מנות. מפגש: תחנת Dobutsuen-mae · סיום בדוטונבורי. זו ארוחת הערב.", es: "✓ Reservado (Klook) · 29/9 a las 17:30 · 2 personas · ~3 h · 5 comedores/~10 platos. Encuentro: estación Dobutsuen-mae · termina en Dotonbori. Es la cena." } },
     { id: 'e-juugo', date: '2026-09-27', done: true, url: 'https://www.google.com/maps/search/Juu-go+soba+Jodoji+Sakyo-ku+Kyoto',
       title: { he: "🍜 מסעדת סובה — Juu-go (十五) · Kyoto", es: "🍜 Restaurante de soba — Juu-go (十五) · Kioto" },
       note: { he: "✓ נסגר (TableCheck) · 27.9 בשעה 16:00 · 2 אנשים · קורס סובה · ¥7,000 שולם מראש (¥3,500 ×2). כתובת: Kamiminamida-cho, Jodoji, Sakyo-ku, Kyoto 606-8405 · טל' 075-708-5367.", es: "✓ Reservado (TableCheck) · 27/9 a las 16:00 · 2 personas · menú de soba · ¥7.000 prepago (¥3.500 ×2). Dirección: Kamiminamida-cho, Jodoji, Sakyo-ku, Kioto 606-8405 · tel. 075-708-5367." } },
