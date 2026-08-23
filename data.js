@@ -1,6 +1,6 @@
 /* data.js — Option A · booked hotels + luggage logistics per day. bilingual he/es. */
 window.TRIP_DATA = {
- "v": "bi-optA-17",
+ "v": "bi-optA-18",
  "flights": {
   "airline": "LOT Polish Airlines",
   "passenger": "Ezequiel",
@@ -1053,15 +1053,15 @@ window.TRIP_DATA = {
      },
      {
       "start": "09:00",
-      "end": "10:30",
+      "end": "10:15",
       "type": "transport",
       "area": "Shinjuku עד Hakone-Yumoto",
-      "title": "רומנסקאר — הרכבת הרומנטית של הקונה",
-      "desc": "רכבת הרומנסקאר של אודקיו מגיעה מסינג'וקו ישירות אל Hakone-Yumoto עם חלונות פנורמיים ונוף מדהים. קנו גם את Hakone Free Pass שיחסוך לכם כסף בכל התחבורה המקומית ביום הזה ולמחרת.",
-      "tips": "הרומנסקאר מתמלאת מהר בשבוע הכסף — הזמינו מושבות באתר Odakyu (odakyu.jp) מספר ימים מראש. בחרו מושבות בכיוון A לנוף הטוב ביותר.",
-      "cost": "¥2,470 רומנסקאר + ¥6,500–7,000 Hakone Free Pass לאדם",
-      "booking": "הזמנת מושבות ברומנסקאר + Hakone Free Pass — הזמינו מוקדם, שבוע הכסף עמוס",
-      "dur": "~85 דק׳"
+      "title": "✓ רומנסקאר — הרכבת הרומנטית של הקונה",
+      "desc": "✓ נסגר · יציאה 9:00 → הגעה 10:15 · מושב 6D (קרון 06) · אישור 00018. רכבת הרומנסקאר של אודקיו מסינג'וקו ישירות אל Hakone-Yumoto, חלונות פנורמיים ונוף מדהים. עדיין צריך לקנות Hakone Free Pass לתחבורה המקומית היום ומחר.",
+      "tips": "המושב שמור (6D). קנו Hakone Free Pass (2 ימים) — מכסה Tozan, כבלית, רכבל, שייט ואוטובוסים.",
+      "cost": "✓ ¥2,420 רומנסקאר (שולם) + ¥6,500–7,000 Hakone Free Pass לאדם",
+      "booking": "✓ נסגר — e-Romancecar · מושב 6D · אישור 00018",
+      "dur": "~75 דק׳"
      },
      {
       "start": "11:30",
@@ -3759,15 +3759,15 @@ window.TRIP_DATA = {
      },
      {
       "start": "09:00",
-      "end": "10:30",
+      "end": "10:15",
       "type": "transport",
       "area": "Shinjuku עד Hakone-Yumoto",
-      "title": "Romancecar — el tren romántico de Hakone",
-      "desc": "El Romancecar de Odakyu sale de Shinjuku directo a Hakone-Yumoto con ventanales panorámicos y paisajes increíbles. Comprá también el Hakone Free Pass que te ahorra plata en todo el transporte local de hoy y mañana.",
-      "tips": "El Romancecar se llena rápido en la Semana de Plata — reservá los asientos en el sitio de Odakyu (odakyu.jp) con varios días de anticipación. Elegí asientos del lado A para la mejor vista.",
-      "cost": "¥2.470 Romancecar + ¥6.500–7.000 Hakone Free Pass por persona",
-      "booking": "Reservar asientos en el Romancecar + Hakone Free Pass — reservar con anticipación, la Semana de Plata está muy concurrida",
-      "dur": "~85 min"
+      "title": "✓ Romancecar — el tren romántico de Hakone",
+      "desc": "✓ Reservado · salida 9:00 → llegada 10:15 · asiento 6D (vagón 06) · confirmación 00018. El Romancecar de Odakyu sale de Shinjuku directo a Hakone-Yumoto con ventanales panorámicos. Todavía hay que comprar el Hakone Free Pass para el transporte local de hoy y mañana.",
+      "tips": "El asiento está reservado (6D). Comprá el Hakone Free Pass (2 días) — cubre el Tozan, funicular, teleférico, crucero y colectivos.",
+      "cost": "✓ ¥2.420 Romancecar (pagado) + ¥6.500–7.000 Hakone Free Pass por persona",
+      "booking": "✓ Reservado — e-Romancecar · asiento 6D · confirmación 00018",
+      "dur": "~75 min"
      },
      {
       "start": "11:30",
