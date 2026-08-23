@@ -1,5 +1,5 @@
 /* יפן 2026 — service worker: offline app shell. bump CACHE on each release. */
-const CACHE = 'japan2026-v20260823c';
+const CACHE = 'japan2026-v20260823d';
 const SHELL = [
   './', './index.html', './styles.css', './app.js', './data.js', './places.js', './manifest.json', './icon.svg',
   './icon-192.png', './icon-512.png', './apple-touch-icon.png',

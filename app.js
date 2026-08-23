@@ -67,7 +67,9 @@
       'tab.map': 'מפה', 'map.title': '🗺️ מפת כל הימים', 'map.hint': 'כל יום במסלול צבע משלו — לחצו על יום במקרא כדי להציג/להסתיר אותו. לחצו על נקודה לפרטים.', mapAll: 'הצג הכל', mapNone: 'נקה',
       'tab.tickets': 'הכרטיסים שלי', ticketsTitle: '🎫 הכרטיסים שלי', ticketsHint: 'הרכבות והכרטיסים שכבר נסגרו — עם מושב, מס\' הזמנה והנחיית רציף. הדביקו קישור לכרטיס (Google Drive וכו\') — נשמר במכשיר שלכם בלבד, לא נדחף לקוד.',
       ticketsNone: 'עדיין לא נסגרו רכבות. סמנו רכבות כ"נסגר" בטאב "לסגור" והן יופיעו כאן.', ticketsTrains: '🚄 רכבות', ticketsEvents: '🎟️ כרטיסים לאירועים',
-      ticketsPlatform: '🚉 רציף', ticketsLinkPh: '🔗 הדביקו קישור לכרטיס (Google Drive)…', ticketsOpenLink: '🎫 פתח כרטיס', ticketsManage: 'ניהול ההזמנה ↗',
+      ticketsPlatform: '🚉 רציף', ticketsLinkPh: '🔗 הדביקו קישור לכרטיס (Google Drive)…', ticketsOpenLink: '🎫 פתח כרטיס', ticketsManage: '🔧 ניהול ההזמנה ↗',
+      ticketsResNo: 'מס׳ הזמנה', ticketsEmail: '📧 מייל ההזמנה', ticketsVaultHint: '🔐 ה-QR/PDF הרגישים אינם בדף הזה — הם בכספת Google Drive המשותפת רק לך ולעוד אחד. הדביקו בכל כרטיס את הקישור לקובץ שלו ב-Drive; הקישור נשמר במכשיר שלכם בלבד.',
+      ptMust: '🖨️ חובה לאסוף כרטיס נייר', ptQr: '📱 QR — הצג בטלפון (או הדפס)', ptDigital: '✅ דיגיטלי — אין צורך להדפיס',
       plfShinkansen: 'שער/רציפי שינקנסן נפרדים (שילוט 新幹線 כתום). הרציף המדויק מוצג על לוח התחנה ביום הנסיעה. עמדו ליד סימון הקרון הצבוע על הרצפה.',
       plfLtdexp: 'רציף רכבות רגיל (לא שינקנסן). בדקו את מספר הרציף על לוח היציאות לפי שם הרכבת והשעה. בנגויה — המעבר מרציפי השינקנסן לרציפי ה-Ltd.Exp לוקח כמה דקות.',
       plfRomance: 'הרומאנסקאר יוצא מרציפי אודקיו (Odakyu) בשינג\'וקו — צד מערב, לא רציפי JR. עקבו אחרי שילוט Odakyu / ロマンスカー.',
@@ -115,7 +117,9 @@
       'tab.map': 'Mapa', 'map.title': '🗺️ Mapa de todos los días', 'map.hint': 'Cada día tiene su propio color — tocá un día en la leyenda para mostrarlo/ocultarlo. Tocá un punto para ver detalles.', mapAll: 'Mostrar todo', mapNone: 'Limpiar',
       'tab.tickets': 'Mis boletos', ticketsTitle: '🎫 Mis boletos', ticketsHint: 'Los trenes y boletos ya reservados — con asiento, N.º de reserva e indicación de andén. Pegá el enlace al boleto (Google Drive, etc.) — se guarda solo en tu dispositivo, no en el código.',
       ticketsNone: 'Todavía no reservaste trenes. Marcá trenes como "Reservado" en la pestaña "Por reservar" y aparecerán acá.', ticketsTrains: '🚄 Trenes', ticketsEvents: '🎟️ Entradas a eventos',
-      ticketsPlatform: '🚉 Andén', ticketsLinkPh: '🔗 Pegá el enlace al boleto (Google Drive)…', ticketsOpenLink: '🎫 Abrir boleto', ticketsManage: 'Gestionar reserva ↗',
+      ticketsPlatform: '🚉 Andén', ticketsLinkPh: '🔗 Pegá el enlace al boleto (Google Drive)…', ticketsOpenLink: '🎫 Abrir boleto', ticketsManage: '🔧 Gestionar reserva ↗',
+      ticketsResNo: 'N.º de reserva', ticketsEmail: '📧 Email de la reserva', ticketsVaultHint: '🔐 Los QR/PDF sensibles no están en esta página — están en una bóveda de Google Drive compartida solo con vos y una persona más. Pegá en cada boleto el enlace a su archivo en Drive; el enlace se guarda solo en tu dispositivo.',
+      ptMust: '🖨️ Retirar boleto en papel', ptQr: '📱 QR — mostralo en el cel (o imprimí)', ptDigital: '✅ Digital — no imprimir',
       plfShinkansen: 'Los andenes del Shinkansen tienen acceso propio (cartel 新幹線 naranja). El andén exacto aparece en el tablero el día del viaje. Ubicate junto a la marca del vagón pintada en el piso.',
       plfLtdexp: 'Andén de tren común (no Shinkansen). Fijate el número de andén en el tablero de salidas según el nombre del tren y la hora. En Nagoya el trasbordo del Shinkansen a los andenes del Ltd.Exp lleva unos minutos.',
       plfRomance: 'El Romancecar sale de los andenes de Odakyu en Shinjuku — lado oeste, no los de JR. Seguí el cartel Odakyu / ロマンスカー.',
@@ -794,26 +798,30 @@
   const bookedFor = (id) => Object.assign({}, BOOKED[id] || {}, loadBooked()[id] || {});
   // רכבות לסגור (מושבים שמורים / כרטיסים) — לפי תאריכי המסלול. salesOpen ≈ חודש לפני הנסיעה.
   const TRAINS = [
-    { id: 't-nex-in', date: '2026-09-18', salesOpen: '2026-08-18', from: 'Narita Airport Terminal 1', to: 'Shinjuku', url: 'https://www.eki-net.com/en/jr-east-train-reservation/top',
-      system: 'JR-EAST Train Reservation (Ekinet)', train: "Narita Express (N'EX)", depTime: '≈19:45–20:15 (אחרי נחיתה 18:25)',
-      cost: { he: '¥5,000 הלוך-חזור · ~₪93 (כולל את 2.10)', es: '¥5.000 ida y vuelta · ~₪93 (incluye el 2/10)' },
+    { id: 't-nex-in', date: '2026-09-18', salesOpen: '2026-08-18', done: true, from: 'Narita Airport Terminal 1', to: 'Shinjuku', url: 'https://www.eki-net.com/en/jr-east-train-reservation/top',
+      system: 'JR-EAST Train Reservation (Ekinet)', train: "✓ Narita Express 52 (N'EX)", depTime: '✓ נסגר · 20:44 → 22:09',
+      print: 'must', resNo: 'E42575', emailQuery: 'from:reservation@eki-net.com 09/18',
+      cost: { he: '¥6,660 · מושב שמור · 2 מבוגרים · לכיוון', es: '¥6.660 · asiento reservado · 2 adultos · un trayecto' },
       title: { he: "N'EX: נריטה → שינג'וקו", es: "N'EX: Narita → Shinjuku" },
-      note: { he: "כרטיס הלוך-חזור (¥5,000, כולל את החזרה לנריטה ב-2.10) + שמירת מקום. הנחיתה ב-18:25 — קחו רכבת מ-~19:45.", es: "Boleto ida y vuelta (¥5.000, incluye la vuelta a Narita el 2/10) + asiento reservado. Aterrizaje 18:25 — tomá un tren desde ~19:45." } },
+      note: { he: "✓ נסגר · 18.9 · N'EX 52 · נריטה T1 20:44 → שינג'וקו 22:09 · קרון 7, מושבים 4C+4D · 2 מבוגרים · הזמנה E42575 · ¥6,660. ⚠️ חובה לאסוף כרטיס נייר במכונה (QR/קוד-איסוף) לפני העלייה — הקוד בכספת ה-Drive.", es: "✓ Reservado · 18/9 · N'EX 52 · Narita T1 20:44 → Shinjuku 22:09 · vagón 7, asientos 4C+4D · 2 adultos · reserva E42575 · ¥6.660. ⚠️ Hay que retirar el boleto de papel en la máquina (QR/código) antes de subir — el código está en la bóveda de Drive." } },
     { id: 't-romancecar', date: '2026-09-22', salesOpen: '2026-08-22', done: true, from: 'Shinjuku', to: 'Hakone-Yumoto', url: 'https://www.web-odakyu.com/e-romancecar/?language=en',
-      system: 'e-Romancecar (Odakyu / EMot)', train: 'Limited Express Romancecar', depTime: '✓ 9:00 → 10:15 (1ש15)',
-      cost: { he: '¥2,420 (דיגיטלי) · ~₪45 · לכיוון', es: '¥2.420 (digital) · ~₪45 · por trayecto' },
+      system: 'e-Romancecar (Odakyu / EMot)', train: '✓ SuperHakone 5 (EXE10)', depTime: '✓ נסגר · 9:00 → 10:15',
+      print: 'digital', resNo: '00018', emailQuery: 'e-Romancecar purchase completion',
+      cost: { he: '¥2,300 · דיגיטלי · 2 מבוגרים', es: '¥2.300 · digital · 2 adultos' },
       title: { he: "Romancecar: שינג'וקו → Hakone-Yumoto", es: "Romancecar: Shinjuku → Hakone-Yumoto" },
-      note: { he: "✓ נסגר · 22.9 · יציאה 9:00 → הגעה 10:15 · מושב 6D (קרון 06) · Standard · אישור 00018.", es: "✓ Reservado · 22/9 · salida 9:00 → llegada 10:15 · asiento 6D (vagón 06) · Standard · confirmación 00018." } },
+      note: { he: "✓ נסגר · 22.9 · SuperHakone 5 (EXE10) · שינג'וקו 9:00 → Hakone-Yumoto 10:15 · קרון 06, מושבים 6C+6D · Standard · אישור 00018 · ¥2,300. דיגיטלי — לא צריך להדפיס, אבל צריך כרטיס בסיס/Suica בנוסף.", es: "✓ Reservado · 22/9 · SuperHakone 5 (EXE10) · Shinjuku 9:00 → Hakone-Yumoto 10:15 · vagón 06, asientos 6C+6D · Standard · confirmación 00018 · ¥2.300. Digital — no hay que imprimir, pero se necesita boleto base/Suica aparte." } },
     { id: 't-tokaido-kiso', date: '2026-09-23', salesOpen: '2026-08-23', done: true, from: 'Odawara', to: 'Nagoya', url: 'https://smart-ex.jp/en/',
       system: 'SmartEX (Tokaido Shinkansen)', train: '✓ HIKARI 637 · N700 (16 קרונות)', depTime: '✓ נסגר · 10:11 → 11:19',
+      print: 'qr', resNo: '2000', emailQuery: 'from:yoyaku@expy.jp Reservation Confirmation',
       cost: { he: '¥18,600 · מושב שמור (Ordinary) · 2 מבוגרים', es: '¥18.600 · asiento reservado (Ordinary) · 2 adultos' },
       title: { he: "שינקנסן: Odawara → Nagoya", es: "Shinkansen: Odawara → Nagoya" },
       note: { he: "✓ נסגר (smartEX) · 23.9 · HIKARI 637 · אודוארה 10:11 → נגויה 11:19 · קרון 14, מושבים 14D+14E · 2 מבוגרים · הזמנה 2000 · ¥18,600. מעבר בנגויה ל-SHINANO 11 (יוצא 12:00) — 41 דק' באפר, נוח.", es: "✓ Reservado (smartEX) · 23/9 · HIKARI 637 · Odawara 10:11 → Nagoya 11:19 · vagón 14, asientos 14D+14E · 2 adultos · reserva 2000 · ¥18.600. Trasbordo en Nagoya al SHINANO 11 (sale 12:00) — 41 min de margen, cómodo." } },
-    { id: 't-shinano-in', date: '2026-09-23', salesOpen: '2026-08-23', done: true, from: 'Nagoya', to: 'Nakatsugawa', url: 'https://www.eki-net.com/en/jr-east-train-reservation/top',
-      system: 'e5489 / Ekinet (Ltd. Exp.)', train: '✓ SHINANO 11 (Ltd.Exp.)', depTime: '✓ נסגר · 12:00 → 12:48',
+    { id: 't-shinano-in', date: '2026-09-23', salesOpen: '2026-08-23', done: true, from: 'Nagoya', to: 'Nakatsugawa', url: 'https://japantravel.navitime.com/en/booking/jr/mypage/login/',
+      system: 'Japan Bullet Train (Navitime)', train: '✓ SHINANO 11 (Ltd.Exp.)', depTime: '✓ נסגר · 12:00 → 12:48',
+      print: 'must', resNo: 'SH000002016751', emailQuery: 'Japan Bullet Train SH000002016751',
       cost: { he: '¥12,585 · מושב שמור · 2 מבוגרים', es: '¥12.585 · asiento reservado · 2 adultos' },
       title: { he: "Ltd.Exp. Shinano: Nagoya → Nakatsugawa", es: "Ltd.Exp. Shinano: Nagoya → Nakatsugawa" },
-      note: { he: "✓ נסגר · 23.9 · SHINANO 11 · נגויה 12:00 → נקאטסוגאווה 12:48 · מושב שמור · 2 מבוגרים · ¥12,585. מעבר בנגויה מה-HIKARI 637 (מגיע 11:19) — 41 דק' באפר. ואז אוטובוס Kita-Ena למאגומה (~30 דק').", es: "✓ Reservado · 23/9 · SHINANO 11 · Nagoya 12:00 → Nakatsugawa 12:48 · asiento reservado · 2 adultos · ¥12.585. Trasbordo en Nagoya desde el HIKARI 637 (llega 11:19) — 41 min de margen. Después bus Kita-Ena a Magome (~30 min)." } },
+      note: { he: "✓ נסגר · 23.9 · SHINANO 11 · נגויה 12:00 → נקאטסוגאווה 12:48 · מושב שמור · 2 מבוגרים · ¥12,585. ⚠️ חובה לאסוף נייר במכונה עם QR — והמושב עדיין לא סופי, ה-QR מגיע במייל נפרד. מעבר מה-HIKARI 637 (מגיע 11:19) — 41 דק' באפר, ואז אוטובוס Kita-Ena למאגומה (~30 דק').", es: "✓ Reservado · 23/9 · SHINANO 11 · Nagoya 12:00 → Nakatsugawa 12:48 · asiento reservado · 2 adultos · ¥12.585. ⚠️ Hay que retirar el papel en la máquina con QR — y el asiento aún no es final, el QR llega en un email aparte. Trasbordo desde el HIKARI 637 (llega 11:19) — 41 min de margen, después bus Kita-Ena a Magome (~30 min)." } },
     { id: 't-shinano-out', date: '2026-09-25', salesOpen: '2026-08-25', from: 'Nagiso', to: 'Nagoya', url: 'https://www.eki-net.com/en/jr-east-train-reservation/top',
       system: 'e5489 / Ekinet (Ltd. Exp.)', train: 'Limited Express Shinano', depTime: '≈אחה"צ · ודאו שהרכבת עוצרת ב-Nagiso!',
       cost: { he: '~¥3,700 מושב שמור · ~₪69 · לכיוון', es: '~¥3.700 asiento reservado · ~₪69 · por trayecto' },
@@ -831,9 +839,9 @@
       note: { he: "חזרה לטוקיו · הזמינו מושב \"Oversized Baggage\" למזוודה מעל 160 ס\"מ · צד E לנוף פוג'י. 💺 שדרוג Green Car (מחלקה ראשונה, 2×2, שקט, מקום למזוודות) עולה עוד ~¥4,670 לאדם — שווה בקטע הארוך הזה (2.5 שעות עם מזוודות).", es: "Vuelta a Tokio · reservá asiento \"Oversized Baggage\" si la valija supera 160 cm · lado E para ver el Fuji. 💺 El upgrade a Green Car (primera clase, 2×2, silencioso, espacio para valijas) cuesta ~¥4.670 más por persona — vale la pena en este tramo largo (2,5 h con valijas)." } },
     { id: 't-nex-out', date: '2026-10-02', salesOpen: '2026-09-02', from: 'Shinjuku', to: 'Narita Airport Terminal 1', url: 'https://www.eki-net.com/en/jr-east-train-reservation/top',
       system: 'JR-EAST Train Reservation (Ekinet)', train: "Narita Express (N'EX)", depTime: '≈07:30–08:00 → הגעה ~09:00 (טיסה 12:00)',
-      cost: { he: '✓ כלול בכרטיס ההלוך-חזור (¥5,000)', es: '✓ Incluido en el ida y vuelta (¥5.000)' },
+      cost: { he: '~¥3,330 מושב שמור · לכיוון (הכניסה נסגרה בנפרד ¥6,660)', es: '~¥3.330 asiento reservado · un trayecto (la ida se reservó aparte ¥6.660)' },
       title: { he: "N'EX: שינג'וקו → נריטה", es: "N'EX: Shinjuku → Narita" },
-      note: { he: "הרגל השנייה של כרטיס ההלוך-חזור · לצאת מוקדם — 3 שעות לפני הטיסה (12:00).", es: "La segunda pierna del ida y vuelta · salí temprano — 3 horas antes del vuelo (12:00)." } },
+      note: { he: "⚠️ עדיין לא נסגר — הכניסה (18.9) נסגרה ככיוון-אחד ¥6,660, לא הלוך-חזור. יש לשריין את החזרה בנפרד ב-Ekinet. לצאת מוקדם — 3 שעות לפני הטיסה (12:00).", es: "⚠️ Todavía sin reservar — la ida (18/9) se compró como un solo trayecto ¥6.660, no ida y vuelta. Hay que reservar la vuelta aparte en Ekinet. Salí temprano — 3 horas antes del vuelo (12:00)." } },
   ];
   // כרטיסים לאירועים לסגור
   const EVENTS = [
@@ -978,9 +986,11 @@
   function renderTickets() {
     const box = $('#ticketsBody'); box.innerHTML = '';
     const intro = document.createElement('div'); intro.className = 'panel';
-    intro.innerHTML = `<h2>${t('ticketsTitle')}</h2><div class="booked-hint">${t('ticketsHint')}</div>`;
+    intro.innerHTML = `<h2>${t('ticketsTitle')}</h2><div class="booked-hint">${t('ticketsHint')}</div><div class="tk-vault" dir="auto">${t('ticketsVaultHint')}</div>`;
     box.appendChild(intro);
     const isDone = (item) => { const lb = loadBooked()[item.id] || {}; return lb.done !== undefined ? lb.done : !!item.done; };
+    const PRINT_TAG = { must: { txt: t('ptMust'), cls: 'pt-must' }, qr: { txt: t('ptQr'), cls: 'pt-qr' }, digital: { txt: t('ptDigital'), cls: 'pt-digital' } };
+    const gmailLink = (q) => 'https://mail.google.com/mail/u/0/#search/' + encodeURIComponent(q);
     const platformHint = (item) => {
       const s = (item.system || '') + (item.train || '');
       if (/Shinkansen|SmartEX/i.test(s)) return t('plfShinkansen');
@@ -998,11 +1008,14 @@
         `<div class="bi-title" dir="auto">${escapeHtml(item.title[lang] || item.title.he)}` +
         (item.date ? ` <span class="bi-date">${fmtDate(item.date)}</span>` : '') + `</div>` +
         (route ? `<div class="tk-route" dir="ltr">🚆 ${route}${item.depTime ? ' · ' + escapeHtml(cleanTime(item.depTime)) : ''}</div>` : '') +
+        (item.print && PRINT_TAG[item.print] ? `<div class="tk-print ${PRINT_TAG[item.print].cls}" dir="auto">${PRINT_TAG[item.print].txt}</div>` : '') +
         (item.note ? `<div class="bi-note" dir="auto">${escapeHtml(item.note[lang] || item.note.he)}</div>` : '') +
+        (item.resNo ? `<div class="tk-resno" dir="auto">${t('ticketsResNo')}: <b dir="ltr">${escapeHtml(item.resNo)}</b></div>` : '') +
         (item.from ? `<div class="bi-note tk-plf" dir="auto">${t('ticketsPlatform')}: ${platformHint(item)}</div>` : '') +
         `<input class="bi-note-in tk-link-in" type="url" inputmode="url" placeholder="${escapeAttr(t('ticketsLinkPh'))}" value="${escapeAttr(url)}">` +
         `<div class="bi-meta tk-actions">` +
         (url ? `<a class="bi-link tk-open" href="${escapeAttr(url)}" target="_blank" rel="noopener">${t('ticketsOpenLink')} ↗</a>` : '') +
+        (item.emailQuery ? `<a class="bi-link ghost" href="${escapeAttr(gmailLink(item.emailQuery))}" target="_blank" rel="noopener">${t('ticketsEmail')} ↗</a>` : '') +
         (item.url ? `<a class="bi-link ghost" href="${item.url}" target="_blank" rel="noopener">${t('ticketsManage')}</a>` : '') +
         `</div></div>`;
       const inp = card.querySelector('.tk-link-in');
