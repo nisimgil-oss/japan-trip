@@ -1,6 +1,6 @@
 /* data.js — Option A · booked hotels + luggage logistics per day. bilingual he/es. */
 window.TRIP_DATA = {
- "v": "bi-optA-18",
+ "v": "bi-optA-19",
  "flights": {
   "airline": "LOT Polish Airlines",
   "passenger": "Ezequiel",
@@ -1154,10 +1154,10 @@ window.TRIP_DATA = {
       "type": "transport",
       "area": "Hakone-Yumoto עד Nagoya עד Magome",
       "title": "מסע לעמק קיסו — האקונה → מגומה",
-      "desc": "האקונה→אודוארה (~15 דק׳) · שינקנסן Hikari אודוארה→נגויה (~1:05 · לא Nozomi — לא עוצר ב-Odawara) · Ltd.Exp שינאנו נגויה→נקאטסוגאווה (~50 דק׳) · אוטובוס Kita-Ena→מגומה (~30 דק׳). ירידה נופית אל יפן הכפרית.",
+      "desc": "האקונה→אודוארה (~15 דק׳) · שינקנסן HIKARI 637 אודוארה 10:11→נגויה 11:19 (לא Nozomi — עוצר ב-Odawara) · מעבר בנגויה 41 דק׳ · Ltd.Exp SHINANO 11 נגויה 12:00→נקאטסוגאווה 12:48 · אוטובוס Kita-Ena→מגומה (~30 דק׳). ירידה נופית אל יפן הכפרית.",
       "tips": "המזוודה הראשית כבר בדרך לקיוטו — נוסעים עם תיק-לילה. בדקו מראש את שעת ה-Shinano ואת לוח אוטובוס Kita-Ena מנקאטסוגאווה — האוטובוס דליל; תנו באפר במעבר בנגויה.",
       "cost": "",
-      "booking": "",
+      "booking": "✓ נסגר: שינקנסן HIKARI 637 · אודוארה 10:11→נגויה 11:19 · קרון 14 מושבים 14D/14E · הזמנה 2000 · ¥18,600 || ✓ נסגר: Ltd.Exp SHINANO 11 · נגויה 12:00→נקאטסוגאווה 12:48 · מושב שמור · ¥12,585",
       "dur": "~3–3.5 שעות · 4 קטעים"
      },
      {
@@ -3863,7 +3863,7 @@ window.TRIP_DATA = {
       "desc": "Hakone→Odawara (~15 min) · shinkansen Hikari Odawara→Nagoya (~1:05 · no Nozomi — no para en Odawara) · Ltd.Exp Shinano Nagoya→Nakatsugawa (~50 min) · bus Kita-Ena→Magome (~30 min). Un descenso escénico al Japón rural.",
       "tips": "La valija principal ya va camino a Kioto — viajan con bolso de una noche. Verificá de antemano el horario del Shinano y del bus Kita-Ena desde Nakatsugawa — el bus es infrecuente; dejá margen en la combinación en Nagoya.",
       "cost": "",
-      "booking": "",
+      "booking": "✓ Reservado: shinkansen Odawara→Nagoya · HIKARI 637 · vagón 14 (14D/14E)",
       "dur": "~3–3,5 h · 4 tramos"
      },
      {

@@ -65,6 +65,12 @@
       mapsDay: '🗺️ מסלול היום במפות', mapsOpen: 'פתח במפות ↗',
       'tab.experiences': 'חוויות', 'experiences.title': '✨ עוד חוויות מיוחדות',
       'tab.map': 'מפה', 'map.title': '🗺️ מפת כל הימים', 'map.hint': 'כל יום במסלול צבע משלו — לחצו על יום במקרא כדי להציג/להסתיר אותו. לחצו על נקודה לפרטים.', mapAll: 'הצג הכל', mapNone: 'נקה',
+      'tab.tickets': 'הכרטיסים שלי', ticketsTitle: '🎫 הכרטיסים שלי', ticketsHint: 'הרכבות והכרטיסים שכבר נסגרו — עם מושב, מס\' הזמנה והנחיית רציף. הדביקו קישור לכרטיס (Google Drive וכו\') — נשמר במכשיר שלכם בלבד, לא נדחף לקוד.',
+      ticketsNone: 'עדיין לא נסגרו רכבות. סמנו רכבות כ"נסגר" בטאב "לסגור" והן יופיעו כאן.', ticketsTrains: '🚄 רכבות', ticketsEvents: '🎟️ כרטיסים לאירועים',
+      ticketsPlatform: '🚉 רציף', ticketsLinkPh: '🔗 הדביקו קישור לכרטיס (Google Drive)…', ticketsOpenLink: '🎫 פתח כרטיס', ticketsManage: 'ניהול ההזמנה ↗',
+      plfShinkansen: 'שער/רציפי שינקנסן נפרדים (שילוט 新幹線 כתום). הרציף המדויק מוצג על לוח התחנה ביום הנסיעה. עמדו ליד סימון הקרון הצבוע על הרצפה.',
+      plfLtdexp: 'רציף רכבות רגיל (לא שינקנסן). בדקו את מספר הרציף על לוח היציאות לפי שם הרכבת והשעה. בנגויה — המעבר מרציפי השינקנסן לרציפי ה-Ltd.Exp לוקח כמה דקות.',
+      plfRomance: 'הרומאנסקאר יוצא מרציפי אודקיו (Odakyu) בשינג\'וקו — צד מערב, לא רציפי JR. עקבו אחרי שילוט Odakyu / ロマンスカー.',
       'tab.compare': 'השוואה',
       budgetTitle: '💴 כמה יעלה הטיול (בערך)', budgetTotal: 'סה״כ מוערך לזוג', budgetPerPerson: 'לאדם', budgetNote: 'הערכה בלבד — לא כולל קניות גדולות/בלת״מ. הטיסות כבר שולמו.',
       tags: { mid: 'מחיר בינוני', value: 'תמורה מעולה', splurge: 'פינוק', gayfriendly: 'גיי-פרנדלי', laundry: 'כביסה בחדר', anime: 'לחובבי אנימה', birthday: 'ליומולדת', privateonsen: 'אונסן פרטי', rooftopbath: 'אמבט על הגג', central: 'מרכזי', views: 'נוף' },
@@ -107,6 +113,12 @@
       mapsDay: '🗺️ Recorrido del día en Maps', mapsOpen: 'Abrir en Maps ↗',
       'tab.experiences': 'Experiencias', 'experiences.title': '✨ Más experiencias especiales',
       'tab.map': 'Mapa', 'map.title': '🗺️ Mapa de todos los días', 'map.hint': 'Cada día tiene su propio color — tocá un día en la leyenda para mostrarlo/ocultarlo. Tocá un punto para ver detalles.', mapAll: 'Mostrar todo', mapNone: 'Limpiar',
+      'tab.tickets': 'Mis boletos', ticketsTitle: '🎫 Mis boletos', ticketsHint: 'Los trenes y boletos ya reservados — con asiento, N.º de reserva e indicación de andén. Pegá el enlace al boleto (Google Drive, etc.) — se guarda solo en tu dispositivo, no en el código.',
+      ticketsNone: 'Todavía no reservaste trenes. Marcá trenes como "Reservado" en la pestaña "Por reservar" y aparecerán acá.', ticketsTrains: '🚄 Trenes', ticketsEvents: '🎟️ Entradas a eventos',
+      ticketsPlatform: '🚉 Andén', ticketsLinkPh: '🔗 Pegá el enlace al boleto (Google Drive)…', ticketsOpenLink: '🎫 Abrir boleto', ticketsManage: 'Gestionar reserva ↗',
+      plfShinkansen: 'Los andenes del Shinkansen tienen acceso propio (cartel 新幹線 naranja). El andén exacto aparece en el tablero el día del viaje. Ubicate junto a la marca del vagón pintada en el piso.',
+      plfLtdexp: 'Andén de tren común (no Shinkansen). Fijate el número de andén en el tablero de salidas según el nombre del tren y la hora. En Nagoya el trasbordo del Shinkansen a los andenes del Ltd.Exp lleva unos minutos.',
+      plfRomance: 'El Romancecar sale de los andenes de Odakyu en Shinjuku — lado oeste, no los de JR. Seguí el cartel Odakyu / ロマンスカー.',
       'tab.compare': 'Comparación',
       budgetTitle: '💴 Cuánto sale el viaje (aprox.)', budgetTotal: 'Total estimado (pareja)', budgetPerPerson: 'por persona', budgetNote: 'Solo una estimación — sin compras grandes/imprevistos. Los vuelos ya están pagos.',
       tags: { mid: 'gama media', value: 'buen precio', splurge: 'lujo', gayfriendly: 'gay-friendly', laundry: 'lavarropas', anime: 'para fans del anime', birthday: 'para el cumple', privateonsen: 'onsen privado', rooftopbath: 'baño en la terraza', central: 'céntrico', views: 'con vista' },
@@ -792,18 +804,16 @@
       cost: { he: '¥2,420 (דיגיטלי) · ~₪45 · לכיוון', es: '¥2.420 (digital) · ~₪45 · por trayecto' },
       title: { he: "Romancecar: שינג'וקו → Hakone-Yumoto", es: "Romancecar: Shinjuku → Hakone-Yumoto" },
       note: { he: "✓ נסגר · 22.9 · יציאה 9:00 → הגעה 10:15 · מושב 6D (קרון 06) · Standard · אישור 00018.", es: "✓ Reservado · 22/9 · salida 9:00 → llegada 10:15 · asiento 6D (vagón 06) · Standard · confirmación 00018." } },
-    { id: 't-tokaido-kiso', date: '2026-09-23', salesOpen: '2026-08-23', from: 'Odawara', to: 'Nagoya', url: 'https://smart-ex.jp/en/',
-      urgent: { he: '🚨 דחוף · נפתח 23.8 ב-10:00 יפן · יום שוויון הסתיו (חג Silver Week) — לשריין מיד עם הפתיחה.', es: '🚨 Urgente · abre 23/8 a las 10:00 Japón · Día del Equinoccio (feriado Silver Week) — reservá al abrir.' },
-      system: 'SmartEX (Tokaido Shinkansen)', train: 'Hikari / Kodama', depTime: '≈בוקר, ~09:00–10:00 · להתחבר ל-Shinano בנגויה',
-      cost: { he: '~¥8,900 מושב שמור · ~₪165 · לכיוון', es: '~¥8.900 asiento reservado · ~₪165 · por trayecto' },
+    { id: 't-tokaido-kiso', date: '2026-09-23', salesOpen: '2026-08-23', done: true, from: 'Odawara', to: 'Nagoya', url: 'https://smart-ex.jp/en/',
+      system: 'SmartEX (Tokaido Shinkansen)', train: '✓ HIKARI 637 · N700 (16 קרונות)', depTime: '✓ נסגר · 10:11 → 11:19',
+      cost: { he: '¥18,600 · מושב שמור (Ordinary) · 2 מבוגרים', es: '¥18.600 · asiento reservado (Ordinary) · 2 adultos' },
       title: { he: "שינקנסן: Odawara → Nagoya", es: "Shinkansen: Odawara → Nagoya" },
-      note: { he: "⚠️ Nozomi לא עוצרת ב-Odawara — בחרו Hikari/Kodama. השאירו 15–20 דק' מעבר בנגויה ל-Shinano.", es: "⚠️ El Nozomi no para en Odawara — elegí Hikari/Kodama. Dejá 15–20 min de trasbordo en Nagoya al Shinano." } },
-    { id: 't-shinano-in', date: '2026-09-23', salesOpen: '2026-08-23', from: 'Nagoya', to: 'Nakatsugawa', url: 'https://www.eki-net.com/en/jr-east-train-reservation/top',
-      urgent: { he: '🚨 דחוף · נפתח 23.8 ב-10:00 יפן · אקספרס עם מעט מושבים + Silver Week + עומס סתיו לקיסו — לשריין מיד.', es: '🚨 Urgente · abre 23/8 a las 10:00 Japón · expreso con pocos asientos + Silver Week + otoño en Kiso — reservá ya.' },
-      system: 'e5489 / Ekinet (Ltd. Exp.)', train: 'Limited Express Shinano', depTime: '≈מיד אחרי השינקנסן (מעבר בנגויה)',
-      cost: { he: '~¥3,020 מושב שמור · ~₪56 · לכיוון', es: '~¥3.020 asiento reservado · ~₪56 · por trayecto' },
+      note: { he: "✓ נסגר (smartEX) · 23.9 · HIKARI 637 · אודוארה 10:11 → נגויה 11:19 · קרון 14, מושבים 14D+14E · 2 מבוגרים · הזמנה 2000 · ¥18,600. מעבר בנגויה ל-SHINANO 11 (יוצא 12:00) — 41 דק' באפר, נוח.", es: "✓ Reservado (smartEX) · 23/9 · HIKARI 637 · Odawara 10:11 → Nagoya 11:19 · vagón 14, asientos 14D+14E · 2 adultos · reserva 2000 · ¥18.600. Trasbordo en Nagoya al SHINANO 11 (sale 12:00) — 41 min de margen, cómodo." } },
+    { id: 't-shinano-in', date: '2026-09-23', salesOpen: '2026-08-23', done: true, from: 'Nagoya', to: 'Nakatsugawa', url: 'https://www.eki-net.com/en/jr-east-train-reservation/top',
+      system: 'e5489 / Ekinet (Ltd. Exp.)', train: '✓ SHINANO 11 (Ltd.Exp.)', depTime: '✓ נסגר · 12:00 → 12:48',
+      cost: { he: '¥12,585 · מושב שמור · 2 מבוגרים', es: '¥12.585 · asiento reservado · 2 adultos' },
       title: { he: "Ltd.Exp. Shinano: Nagoya → Nakatsugawa", es: "Ltd.Exp. Shinano: Nagoya → Nakatsugawa" },
-      note: { he: "ואז אוטובוס למאגומה (~30 דק'). מזמינים ב-e5489 (JR West) או Ekinet (JR East).", es: "Y después bus a Magome (~30 min). Se reserva en e5489 (JR West) o Ekinet (JR East)." } },
+      note: { he: "✓ נסגר · 23.9 · SHINANO 11 · נגויה 12:00 → נקאטסוגאווה 12:48 · מושב שמור · 2 מבוגרים · ¥12,585. מעבר בנגויה מה-HIKARI 637 (מגיע 11:19) — 41 דק' באפר. ואז אוטובוס Kita-Ena למאגומה (~30 דק').", es: "✓ Reservado · 23/9 · SHINANO 11 · Nagoya 12:00 → Nakatsugawa 12:48 · asiento reservado · 2 adultos · ¥12.585. Trasbordo en Nagoya desde el HIKARI 637 (llega 11:19) — 41 min de margen. Después bus Kita-Ena a Magome (~30 min)." } },
     { id: 't-shinano-out', date: '2026-09-25', salesOpen: '2026-08-25', from: 'Nagiso', to: 'Nagoya', url: 'https://www.eki-net.com/en/jr-east-train-reservation/top',
       system: 'e5489 / Ekinet (Ltd. Exp.)', train: 'Limited Express Shinano', depTime: '≈אחה"צ · ודאו שהרכבת עוצרת ב-Nagiso!',
       cost: { he: '~¥3,700 מושב שמור · ~₪69 · לכיוון', es: '~¥3.700 asiento reservado · ~₪69 · por trayecto' },
@@ -964,6 +974,63 @@
     updateBookedProg();
   }
 
+  // ---------- my tickets ----------
+  function renderTickets() {
+    const box = $('#ticketsBody'); box.innerHTML = '';
+    const intro = document.createElement('div'); intro.className = 'panel';
+    intro.innerHTML = `<h2>${t('ticketsTitle')}</h2><div class="booked-hint">${t('ticketsHint')}</div>`;
+    box.appendChild(intro);
+    const isDone = (item) => { const lb = loadBooked()[item.id] || {}; return lb.done !== undefined ? lb.done : !!item.done; };
+    const platformHint = (item) => {
+      const s = (item.system || '') + (item.train || '');
+      if (/Shinkansen|SmartEX/i.test(s)) return t('plfShinkansen');
+      if (/Romancecar/i.test(s)) return t('plfRomance');
+      return t('plfLtdexp');
+    };
+    const cleanTime = (s) => s.replace(/^✓\s*(נסגר|Reservado)\s*·\s*/, '');
+    const ticketCard = (item) => {
+      const lb = loadBooked()[item.id] || {};
+      const url = lb.ticketUrl || '';
+      const route = (item.from && item.to) ? `${escapeHtml(item.from)} → ${escapeHtml(item.to)}` : '';
+      const card = document.createElement('div'); card.className = 'panel bkitem tkitem';
+      card.innerHTML =
+        `<div class="bi-main">` +
+        `<div class="bi-title" dir="auto">${escapeHtml(item.title[lang] || item.title.he)}` +
+        (item.date ? ` <span class="bi-date">${fmtDate(item.date)}</span>` : '') + `</div>` +
+        (route ? `<div class="tk-route" dir="ltr">🚆 ${route}${item.depTime ? ' · ' + escapeHtml(cleanTime(item.depTime)) : ''}</div>` : '') +
+        (item.note ? `<div class="bi-note" dir="auto">${escapeHtml(item.note[lang] || item.note.he)}</div>` : '') +
+        (item.from ? `<div class="bi-note tk-plf" dir="auto">${t('ticketsPlatform')}: ${platformHint(item)}</div>` : '') +
+        `<input class="bi-note-in tk-link-in" type="url" inputmode="url" placeholder="${escapeAttr(t('ticketsLinkPh'))}" value="${escapeAttr(url)}">` +
+        `<div class="bi-meta tk-actions">` +
+        (url ? `<a class="bi-link tk-open" href="${escapeAttr(url)}" target="_blank" rel="noopener">${t('ticketsOpenLink')} ↗</a>` : '') +
+        (item.url ? `<a class="bi-link ghost" href="${item.url}" target="_blank" rel="noopener">${t('ticketsManage')}</a>` : '') +
+        `</div></div>`;
+      const inp = card.querySelector('.tk-link-in');
+      const meta = card.querySelector('.tk-actions');
+      inp.addEventListener('input', (e) => {
+        const v = e.target.value.trim();
+        const b = loadBooked(); b[item.id] = Object.assign({}, b[item.id], { ticketUrl: v }); saveBooked(b);
+        let open = card.querySelector('.tk-open');
+        if (v) {
+          if (!open) { open = document.createElement('a'); open.className = 'bi-link tk-open'; open.target = '_blank'; open.rel = 'noopener'; open.textContent = t('ticketsOpenLink') + ' ↗'; meta.insertBefore(open, meta.firstChild); }
+          open.href = v;
+        } else if (open) { open.remove(); }
+      });
+      return card;
+    };
+    let any = false;
+    [['ticketsTrains', TRAINS], ['ticketsEvents', EVENTS]].forEach(([key, items]) => {
+      const done = items.filter(isDone);
+      if (!done.length) return;
+      any = true;
+      const h = document.createElement('div'); h.className = 'bk-section';
+      h.innerHTML = `<h3 class="bk-sec-title">${t(key)} <span class="bk-sec-count">${done.length}</span></h3>`;
+      box.appendChild(h);
+      done.forEach(i => box.appendChild(ticketCard(i)));
+    });
+    if (!any) { const p = document.createElement('div'); p.className = 'panel'; p.innerHTML = `<div class="booked-hint">${t('ticketsNone')}</div>`; box.appendChild(p); }
+  }
+
   // ---------- prep ----------
   const DEFAULT_CHECK = {
     he: {
@@ -1047,13 +1114,14 @@
   }
 
   // ---------- views ----------
-  const VIEWS = ['itinerary', 'overview', 'map', 'booked', 'luggage', 'guide', 'places', 'food', 'restaurants', 'experiences', 'prep'];
+  const VIEWS = ['itinerary', 'overview', 'map', 'booked', 'tickets', 'luggage', 'guide', 'places', 'food', 'restaurants', 'experiences', 'prep'];
   function showView(v) {
     if (!VIEWS.includes(v)) v = 'itinerary';
     VIEWS.forEach(x => $('#view-' + x).classList.toggle('hidden', x !== v));
     $$('.tab').forEach(tb => tb.classList.toggle('active', tb.dataset.view === v));
     if (v === 'map') renderMap();
     if (v === 'booked') renderBooked();
+    if (v === 'tickets') renderTickets();
     if (v === 'luggage') renderLuggage();
     if (v === 'overview') renderOverview();
     if (v === 'guide') renderGuide();
