@@ -1337,40 +1337,40 @@ window.TRIP_DATA = {
     "date": "2026-09-25",
     "dow": "Fri",
     "city": "Kyoto",
-    "title": "מצומאגו לקיוטו: עיר הגיישות מחכה",
-    "summary": "יום של מעברים יפים — הפרידה מהכפר השקט של צומאגו ועלייה לקיוטו הדרמטית. הערב: פנסי גיון ושדרות פונטוצ'ו שמחממות את הלב.",
+    "title": "מנאגיסו לקיוטו: רכבת הבוקר ויום קיוטו מלא",
+    "summary": "יציאה מוקדמת מנאגיסו ברכבות שסגרנו (08:09) — מגיעים לקיוטו כבר ב-10:15, יום שלם בעיר הגיישות. הערב: פנסי גיון ושדרות פונטוצ'ו שמחממות את הלב.",
     "hotel": "🏨 Candeo Hotels Kyoto Karasuma Rokkaku (✓ נסגר · 25→28) · מרכז קיוטו, 4★",
     "events": [
      {
-      "start": "08:00",
-      "end": "09:00",
+      "start": "07:00",
+      "end": "07:55",
       "type": "food",
-      "area": "Tsumago",
-      "title": "ארוחת בוקר ופרידה שקטה מצומאגו",
-      "desc": "ארוחת בוקר אחרונה בצומאגו — אולי בפנסיון שלכם או בחנות קטנה בסמטה — ואז סיבוב פרידה ברחובות האבן השקטים לפני שהרכבות לוקחות אתכם הלאה. הכפר בבוקר מוקדם שייך רק לכם.",
-      "tips": "קחו תמונה אחרונה מול הכנסייה הישנה לפני שהיום הקיצי מתעורר עם תיירים.",
-      "cost": "¥500–1,500 לאדם",
+      "area": "Nagiso",
+      "title": "ארוחת בוקר מוקדמת בווילה ויציאה לתחנת נאגיסו",
+      "desc": "מתעוררים בווילה AKARI בנאגיסו — ארוחת בוקר קלה ומהירה במטבח, ואז ~10 דק׳ לתחנת נאגיסו. הרכבת שסגרנו יוצאת מוקדם (SHINANO 2 בשעה 08:09), אז אין הפעם סיבוב פרידה מצומאגו — הכפר כבר מאחורינו.",
+      "tips": "ארזו הערב מראש — הבוקר קצר. ⚠️ אי אפשר לאסוף כרטיסים בתחנת נאגיסו; ודאו שהכרטיסים כבר בידיכם (נאספו מראש, למשל בנגויה ב-23.9).",
+      "cost": "",
       "booking": ""
      },
      {
-      "start": "09:30",
-      "end": "13:30",
+      "start": "08:09",
+      "end": "10:15",
       "type": "transport",
-      "area": "Tsumago עד Kyoto",
-      "title": "מסע חזרה: צומאגו → קיוטו",
-      "desc": "אוטובוס צומאגו→נאגיסו (~10 דק׳) · Ltd.Exp שינאנו נאגיסו→נגויה (~1:20) · שינקנסן נגויה→קיוטו (~35 דק׳). המזוודות שנשלחו מראש כבר מחכות בחדר.",
-      "tips": "הזמינו מראש ב-SmartEX — המושבים ליד החלון בצד ימין בדרך לקיוטו נותנים נוף לאורך המסע.",
-      "cost": "¥4,000–6,000 לאדם",
-      "booking": "שינקנסן נגויה → קיוטו — הזמינו ב-SmartEX",
-      "dur": "~2.5 שעות · 3 קטעים"
+      "area": "Nagiso עד Kyoto",
+      "title": "✓ מסע לקיוטו: נאגיסו → קיוטו (נסגר)",
+      "desc": "✓ נסגר (JR-WEST Online · הזמנה 46424) · Ltd.Exp SHINANO 2 נאגיסו 08:09→נגויה 09:18 (קרון 4, מושבים 2C+2D) · מעבר 23 דק׳ · שינקנסן NOZOMI 61 נגויה 09:41→קיוטו 10:15 (קרון 14, מושבים 19D+19E). כרטיס רציף אחד עד קיוטו, ¥19,020 לזוג. המזוודה הראשית כבר מחכה ב-Candeo מאז 23.9.",
+      "tips": "⚠️ אי אפשר לאסוף כרטיסים בתחנת נאגיסו — חובה לאסוף את הנייר מראש בקופת תחנה (למשל בנגויה ב-23.9) עם כרטיס האשראי וקוד 4 ספרות. במעבר בנגויה פלטפורמות השינקנסן רחוקות — 23 דק׳ מספיקות אם לא מתמהמהים.",
+      "cost": "¥19,020 לזוג (נסגר)",
+      "booking": "✓ נסגר — JR-WEST Online · הזמנה 46424 · Receipt AEE0512M",
+      "dur": "~2 שעות · 2 רכבות (מעבר בנגויה)"
      },
      {
       "start": "15:00",
       "end": "16:00",
       "type": "rest",
       "area": "Kyoto",
-      "title": "שעות מנוחה במלון",
-      "desc": "אחרי בוקר של נסיעות, הדירה שלכם בקיוטו פתוחה ומחכה. זמן לנשום, להתפנות ולהיכנס לקצב של העיר.",
+      "title": "צ׳ק-אין ורגע מנוחה במלון",
+      "desc": "הצ׳ק-אין ב-Candeo נפתח ב-15:00 — נכנסים לחדר, מתרעננים ונחים קצת אחרי היום המוקדם, לפני ערב גיון.",
       "tips": "שמרו אנרגיה — הערב ארוך ויפה.",
       "cost": "חינם",
       "booking": ""
@@ -1399,12 +1399,26 @@ window.TRIP_DATA = {
       "booking": ""
      },
      {
-      "start": "13:45",
-      "end": "14:45",
+      "start": "10:45",
+      "end": "12:00",
       "type": "food",
       "area": "Kyoto",
-      "title": "צהריים קל ליד המלון (קרסומה-רוקאקו)",
-      "desc": "הצ׳ק-אין ב-Candeo מ-15:00 — עד אז אוכלים קל בשכונת קרסומה/ניישיקי ומשאירים מזוודה בקבלה."
+      "title": "הגעה לקיוטו, השארת תיקים ב-Candeo וצהריים מוקדם",
+      "desc": "מגיעים לקיוטו כבר ב-10:15 — יורדים לתחנת קיוטו, נוסעים למלון Candeo (קרסומה-רוקאקו), משאירים את תיק-הלילה בקבלה (המזוודה הראשית כבר שם מ-23.9), וצהריים קל בשכונת קרסומה/ניישיקי.",
+      "tips": "הצ׳ק-אין הרשמי מ-15:00, אבל אפשר להשאיר תיקים ולצאת חופשי לעיר.",
+      "cost": "¥1,000–2,500 לאדם",
+      "booking": ""
+     },
+     {
+      "start": "12:15",
+      "end": "14:45",
+      "type": "sightseeing",
+      "area": "Kyoto",
+      "title": "היכרות ראשונה עם קיוטו — קרסומה וגדות נהר קאמו",
+      "desc": "היום המוקדם מעניק לכם אחר-צהריים פנוי: טיול נינוח מרכז קיוטו — סמטאות קרסומה, גדות נהר קאמו, וחנויות מאצ'ה קטנות. קצב רגוע להתאקלם בעיר לפני ערב גיון.",
+      "tips": "שומרים את שוק ניישיקי ופושימי אינארי/אראשיימה למחר (26.9) — היום רק טועמים את האווירה.",
+      "cost": "חינם",
+      "booking": ""
      }
     ],
     "logistics": {
@@ -1413,7 +1427,7 @@ window.TRIP_DATA = {
     },
     "cultural": "גיון ופונטוצ'ו הן שתי מ-חמשת ה'האנאמאצ'י' — שכונות הפרחים — של קיוטו, שבהן עדיין שורדת מסורת הגיישה (הנקראת בקיוטו 'גיאיקו', ובמשמעות 'אישה של אמנות'). האוֹצ'איה — בית התה — אינו מקום לשתות תה: הוא מועדון פרטי בלעדי שבו אורח מוזמן בלבד רשאי להיכנס לשמוע שמיסן, לצפות בריקוד, ולהתענג על אובנזאי. הדלת הסגורה והמסך הבמבוקי הן לא עיצוב — הן גבול חברתי של מאות שנים. ביסוד האסתטיקה הזאת עומד מושג ה'מָה' (間) — הרֶווַח, ההפסקה, מה שאינו אמור. גיישה שזה עתה עברה מולכם ולא הסתכלה לעיניכם לא הייתה גסה — היא שמרה על ה'מא' בינה לביניכם.",
     "tips": [
-     "חלון הזמן הצר ביותר הוא המעבר בנאגויה — פלטפורמות ה-Shinkansen רחוקות מפלטפורמות ה-Shinano Express. תנו 15–20 דקות לפחות למעבר; אם הפסדתם את הנוזומי הרצוי — הבא יוצא תוך 10–15 דקות.",
+     "המושבים שמורים לרכבות ספציפיות (SHINANO 2 ב-08:09 ו-NOZOMI 61 ב-09:41) — אל תפספסו את היציאה המוקדמת מנאגיסו. במעבר בנגויה יש 23 דקות: פלטפורמות ה-Shinkansen רחוקות מ-Shinano, אז נועו ישר. ⚠️ אי אפשר לאסוף כרטיסים בתחנת נאגיסו — אספו את הנייר מראש בקופת תחנה (למשל בנגויה ב-23.9) עם כרטיס האשראי וקוד 4 הספרות.",
      "המזוודה הגדולה מחכה אתכם ב-Candeo מאז 23.9 — ברגע שמגיעים, בקשו אותה מהקבלה גם לפני כניסה לחדר, ותוכלו להחליף בגדים בלובי לקראת ערב גיון.",
      "בגיון (רחוב הנאמיקוג'י): אין לצלם גיישות/מאיקות מקרוב, לחסום את דרכן, או לגעת בהן — קיים איסור עירוני פורמלי. צלמו מרחק מכובד."
     ]
@@ -4043,40 +4057,40 @@ window.TRIP_DATA = {
     "date": "2026-09-25",
     "dow": "Fri",
     "city": "Kyoto",
-    "title": "De Tsumago a Kioto: la ciudad de las geishas te espera",
-    "summary": "Un día de tránsitos hermosos — la despedida del pueblito sereno de Tsumago y la llegada dramática a Kioto. Por la noche: los faroles de Gion y el callejón de Pontocho que te abrazan el alma.",
+    "title": "De Nagiso a Kioto: el tren temprano y un día completo en la ciudad",
+    "summary": "Salida temprana de Nagiso en los trenes ya reservados (08:09) — llegan a Kioto a las 10:15, un día entero en la ciudad de las geishas. Por la noche: los faroles de Gion y el callejón de Pontocho que te abrazan el alma.",
     "hotel": "🏨 Candeo Hotels Kyoto Karasuma Rokkaku (✓ reservado · 25→28) · centro de Kioto, 4★",
     "events": [
      {
-      "start": "08:00",
-      "end": "09:00",
+      "start": "07:00",
+      "end": "07:55",
       "type": "food",
-      "area": "Tsumago",
-      "title": "Desayuno y última mañana tranquila en Tsumago",
-      "desc": "Último desayuno en Tsumago — quizás en tu ryokan o en alguna tiendita del callejón de piedra — y después una vuelta de despedida por las calles empedradas antes de que los trenes se los lleven. El pueblo a primera hora es solo para vos dos.",
-      "tips": "Sacate una última foto frente a la posada histórica antes de que lleguen los primeros turistas del día.",
-      "cost": "¥500–1.500 por persona",
+      "area": "Nagiso",
+      "title": "Desayuno temprano en la villa y salida a la estación de Nagiso",
+      "desc": "Se despiertan en la villa AKARI de Nagiso — desayuno liviano y rápido en la cocina, y luego ~10 min hasta la estación de Nagiso. El tren reservado sale temprano (SHINANO 2 a las 08:09), así que esta vez no hay vuelta de despedida por Tsumago — el pueblo ya quedó atrás.",
+      "tips": "Armá el bolso la noche anterior — la mañana es corta. ⚠️ El boleto no se puede retirar en la estación de Nagiso; asegurate de tenerlo ya en mano (retirado antes, ej. en Nagoya el 23/9).",
+      "cost": "",
       "booking": ""
      },
      {
-      "start": "09:30",
-      "end": "13:30",
+      "start": "08:09",
+      "end": "10:15",
       "type": "transport",
-      "area": "Tsumago עד Kyoto",
-      "title": "Viaje de regreso: Tsumago → Kioto",
-      "desc": "Bus Tsumago→Nagiso (~10 min) · Ltd.Exp Shinano Nagiso→Nagoya (~1:20) · shinkansen Nagoya→Kioto (~35 min). Las valijas que mandaron adelantadas ya los esperan en el cuarto.",
-      "tips": "Reservá con anticipación en SmartEX — los asientos del lado derecho de la ventana tienen vistas espectaculares durante el trayecto hacia Kioto.",
-      "cost": "¥4.000–6.000 por persona",
-      "booking": "Shinkansen Nagoya → Kioto — reservá en SmartEX",
-      "dur": "~2,5 h · 3 tramos"
+      "area": "Nagiso עד Kyoto",
+      "title": "✓ Viaje a Kioto: Nagiso → Kioto (reservado)",
+      "desc": "✓ Reservado (JR-WEST Online · reserva 46424) · Ltd.Exp SHINANO 2 Nagiso 08:09→Nagoya 09:18 (vagón 4, asientos 2C+2D) · trasbordo 23 min · shinkansen NOZOMI 61 Nagoya 09:41→Kioto 10:15 (vagón 14, asientos 19D+19E). Un boleto continuo hasta Kioto, ¥19.020 la pareja. La valija principal ya espera en Candeo desde el 23/9.",
+      "tips": "⚠️ El boleto no se puede retirar en la estación de Nagiso — hay que retirar el papel antes en una boletería (ej. Nagoya el 23/9) con la tarjeta de crédito y el código de 4 dígitos. En el trasbordo de Nagoya los andenes del Shinkansen están lejos — 23 min alcanzan si no se demoran.",
+      "cost": "¥19.020 la pareja (reservado)",
+      "booking": "✓ Reservado — JR-WEST Online · reserva 46424 · Receipt AEE0512M",
+      "dur": "~2 h · 2 trenes (trasbordo en Nagoya)"
      },
      {
       "start": "15:00",
       "end": "16:00",
       "type": "rest",
       "area": "Kyoto",
-      "title": "Horas de descanso en el hotel",
-      "desc": "Después de una mañana de viajes, su habitación en Kioto está abierta y esperándolos. Tiempo para respirar, desempacar y sintonizarse con el ritmo de la ciudad.",
+      "title": "Check-in y un respiro en el hotel",
+      "desc": "El check-in en Candeo abre a las 15:00 — entran a la habitación, se refrescan y descansan un rato después de la mañana temprana, antes de la noche en Gion.",
       "tips": "Guardá energía — la noche es larga y hermosa.",
       "cost": "gratis",
       "booking": ""
@@ -4105,12 +4119,26 @@ window.TRIP_DATA = {
       "booking": ""
      },
      {
-      "start": "13:45",
-      "end": "14:45",
+      "start": "10:45",
+      "end": "12:00",
       "type": "food",
       "area": "Kyoto",
-      "title": "Almuerzo liviano cerca del hotel (Karasuma-Rokkaku)",
-      "desc": "El check-in en Candeo es desde las 15:00 — hasta entonces comen algo liviano en Karasuma/Nishiki y dejan la valija en recepción."
+      "title": "Llegada a Kioto, dejar bolsos en Candeo y almuerzo temprano",
+      "desc": "Llegan a Kioto ya a las 10:15 — bajan en la estación de Kioto, van al hotel Candeo (Karasuma-Rokkaku), dejan el bolso de una noche en recepción (la valija principal ya está allí desde el 23/9) y almuerzan algo liviano en el barrio de Karasuma/Nishiki.",
+      "tips": "El check-in oficial es desde las 15:00, pero pueden dejar los bolsos y salir libres a la ciudad.",
+      "cost": "¥1.000–2.500 por persona",
+      "booking": ""
+     },
+     {
+      "start": "12:15",
+      "end": "14:45",
+      "type": "sightseeing",
+      "area": "Kyoto",
+      "title": "Primer contacto con Kioto — Karasuma y las orillas del río Kamo",
+      "desc": "La llegada temprana les regala una tarde libre: un paseo tranquilo por el centro de Kioto — los callejones de Karasuma, las orillas del río Kamo y pequeñas tiendas de matcha. Un ritmo relajado para aclimatarse a la ciudad antes de la noche en Gion.",
+      "tips": "Guardan el Mercado Nishiki y Fushimi Inari/Arashiyama para mañana (26/9) — hoy solo saborean el ambiente.",
+      "cost": "gratis",
+      "booking": ""
      }
     ],
     "logistics": {
@@ -4119,7 +4147,7 @@ window.TRIP_DATA = {
     },
     "cultural": "Gion y Pontocho son dos de los cinco 'hanamachi' — barrios de las flores — de Kioto, donde todavía sobrevive la tradición de la geisha (llamada en Kioto 'geiko', que significa 'mujer del arte'). El ochaya —la casa de té— no es un lugar para tomar té: es un club privado y exclusivo al que solo puede entrar un invitado, para escuchar shamisen, ver danzas y disfrutar de la cocina obanzai. La puerta cerrada y la cortina de bambú no son decoración: son un límite social de siglos. En el centro de esta estética está el concepto 'ma' (間) — el espacio, la pausa, lo que no se dice. La geisha que pasó frente a vos sin mirarte a los ojos no fue grosera: estaba guardando el 'ma' entre ella y vos.",
     "tips": [
-     "La ventana más justa es la combinación en Nagoya — los andenes del Shinkansen están lejos de los del Shinano. Dejá 15–20 min para el cambio; si perdés el Nozomi, el próximo sale en 10–15 min.",
+     "Los asientos están reservados para trenes específicos (SHINANO 2 a las 08:09 y NOZOMI 61 a las 09:41) — no pierdan la salida temprana de Nagiso. En el trasbordo de Nagoya hay 23 min: los andenes del Shinkansen están lejos del Shinano, así que vayan directo. ⚠️ El boleto no se puede retirar en la estación de Nagiso — retiren el papel antes en una boletería (ej. Nagoya el 23/9) con la tarjeta y el código de 4 dígitos.",
      "La valija grande te espera en Candeo desde el 23/9 — al llegar, pedila en recepción aunque el cuarto no esté listo, y cambiate en el lobby para la noche en Gion.",
      "En Gion (calle Hanamikoji): no se puede fotografiar geishas/maikos de cerca, ni bloquearles el paso, ni tocarlas — hay prohibición municipal. Fotografiá a distancia respetuosa."
     ]
