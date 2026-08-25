@@ -1498,14 +1498,25 @@ window.TRIP_DATA = {
       "booking": "לרכבת סאגאנו: קנו כרטיסים בבוקר בתחנת טרוקו-סאגא; בעונת שיא נמכרים מהר."
      },
      {
-      "start": "17:30",
-      "end": "19:30",
+      "start": "17:15",
+      "end": "18:45",
       "type": "food",
       "area": "Kyoto (Nishiki)",
       "title": "ארוחת ערב טעימות בשוק ניישיקי",
       "desc": "\"מטבחה של קיוטו\" — רחוב מקורה ורועש של 400 שנה עם דוכנים של כבישים, טופו מעושן, דגי קיוטו, ממתקים וצלחות קטנות. זו ארוחת הערב של היום: אכלו בהליכה, מדוכן לדוכן, וצברו ארוחה שלמה — יאקיטורי, טמפורה, סשימי טרי, דאשימאקי (חביתה), ומתוק לסיום.",
-      "tips": "אל תגיעו רעבים מדי מהצהריים — הטעימות מצטברות לארוחה מלאה, אז שמרו תיאבון לערב. חפשו את הדוכן של Aritsugu לסכיני מטבח מפורסמים — מתנה לבשלנים. אם רוצים לשבת בסוף, יש מסעדות קטנות בקצה השוק ובפונטוצ'ו הסמוכה.",
+      "tips": "⚠️ דוכני השוק סוגרים ~18:00 — הגיעו עד ~17:15 כדי לתפוס אותם פתוחים. אל תגיעו רעבים מדי מהצהריים. חפשו את הדוכן של Aritsugu לסכיני מטבח. את זנב הערב אפשר להמשיך בפונטוצ'ו הצמודה (2 דק' מזרחה) — יש שם מסעדות ובארים שפתוחים עד מאוחר.",
       "cost": "¥2,500–4,000 לאדם (ארוחה מטעימות)",
+      "booking": ""
+     },
+     {
+      "start": "19:00",
+      "end": "20:30",
+      "type": "sightseeing",
+      "area": "Kyoto (Pontocho / Kamogawa)",
+      "title": "ערב שקט על גדת נהר קאמו — פונטוצ'ו",
+      "desc": "סגירת יום מוקדם ורגועה (התחלתם ב-06:45!): טיול לאור פנסים בסמטת פונטוצ'ו הצרה ולאורך גדות נהר קאמו, ועצירה לקינוח — מאצ'ה, גלידה, וואראבי-מוצ'י או כוס סאקה מקומית על שפת הנהר. לא ארוחה נוספת, אלא רגע זוגי שקט לפני חזרה למלון.",
+      "tips": "בתחילת הסתיו עדיין פתוחות ה'קאוואיוקה' — מרפסות עץ מעל הנהר; אפשר לשבת לקינוח או משקה עם נוף. יום מחר (27.9) מתחיל מוקדם בקינקאקו-ג'י — לילה מוקדם עוזר.",
+      "cost": "¥800–2,000 לזוג (קינוח/משקה)",
       "booking": ""
      }
     ],
@@ -4207,14 +4218,25 @@ window.TRIP_DATA = {
       "booking": "Para el tren Sagano: comprá los boletos temprano en la estación Torokko-Saga; en temporada alta se agotan rápido."
      },
      {
-      "start": "17:30",
-      "end": "19:30",
+      "start": "17:15",
+      "end": "18:45",
       "type": "food",
       "area": "Kyoto (Nishiki)",
       "title": "Cena de degustación en el Mercado Nishiki",
       "desc": "\"La cocina de Kioto\" — un pasaje cubierto de 400 años con puestos de encurtidos, tofu ahumado, pescados locales, dulces y platitos para comer parado. Esta es la cena de hoy: caminen de puesto en puesto y armen una comida completa — yakitori, tempura, sashimi fresco, dashimaki (tortilla) y algo dulce para cerrar.",
-      "tips": "No lleguen con demasiada hambre del almuerzo — las picadas se acumulan y forman una comida completa, así que guarden apetito para la noche. Buscá el puesto Aritsugu de cuchillos japoneses. Si quieren sentarse al final, hay locales chicos en la punta del mercado y en la cercana Pontocho.",
+      "tips": "⚠️ Los puestos del mercado cierran ~18:00 — lleguen hacia las ~17:15 para encontrarlos abiertos. No lleguen con demasiada hambre del almuerzo. Buscá el puesto Aritsugu de cuchillos japoneses. La cola de la noche pueden seguirla en la cercana Pontocho (2 min al este) — hay locales y bares abiertos hasta tarde.",
       "cost": "¥2.500–4.000 por persona (comida a base de picadas)",
+      "booking": ""
+     },
+     {
+      "start": "19:00",
+      "end": "20:30",
+      "type": "sightseeing",
+      "area": "Kyoto (Pontocho / Kamogawa)",
+      "title": "Noche tranquila a la orilla del río Kamo — Pontocho",
+      "desc": "Un cierre de día temprano y relajado (¡arrancaron a las 06:45!): un paseo a la luz de los faroles por el angosto callejón de Pontocho y a lo largo de las orillas del río Kamo, con una parada para el postre — matcha, helado, warabi-mochi o una copa de sake local junto al río. No es otra comida, sino un momento tranquilo para los dos antes de volver al hotel.",
+      "tips": "A comienzos de otoño siguen abiertas las 'kawayuka' — terrazas de madera sobre el río; se pueden sentar a un postre o una copa con vista. Mañana (27/9) arranca temprano en Kinkaku-ji, así que una noche temprana viene bien.",
+      "cost": "¥800–2.000 por pareja (postre/copa)",
       "booking": ""
      }
     ],
