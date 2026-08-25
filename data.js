@@ -965,14 +965,14 @@ window.TRIP_DATA = {
       "booking": "GetYourGuide / byFood"
      },
      {
-      "start": "13:30",
-      "end": "14:30",
+      "start": "14:00",
+      "end": "14:45",
       "type": "food",
       "area": "Harajuku",
-      "title": "צהריים ב-Harajuku",
-      "desc": "אוכל צבעוני ברחוב Takeshita או ביסטרו נחמד ב-Omotesando.",
-      "tips": "",
-      "cost": "כ-¥1,500–3,000 לאדם",
+      "title": "חטיף קליל ב-Harajuku (קרפ/קפה)",
+      "desc": "אחרי סדנת הבֶּנטו/סושי (שהיא כבר ארוחת הצהריים) — רק משהו קליל: קרפ צבעוני מדוכן ברחוב Takeshita או קפה ב-Omotesando. לא ארוחה מלאה, כדי לשמור תיאבון לארוחת הערב.",
+      "tips": "יש ~30 דק' מעבר משינג׳וקו ל-Harajuku (2 תחנות ב-Yamanote) — בגלל זה החטיף מ-14:00.",
+      "cost": "כ-¥500–1,200 לאדם",
       "booking": ""
      },
      {
@@ -1064,13 +1064,13 @@ window.TRIP_DATA = {
       "dur": "~75 דק׳"
      },
      {
-      "start": "11:30",
-      "end": "14:30",
+      "start": "12:15",
+      "end": "14:15",
       "type": "sightseeing",
       "area": "Hakone Open Air Museum",
       "title": "מוזיאון הפסלים בשמיים הפתוחים (עם אמבט רגליים)",
       "desc": "פסלי הנרי מור בין ההרים + אמבט רגליים חם (ashiyu) בשטח. בוחרים מוזיאון אחד בלבד — לא גם אגם אשי, אין זמן לשניהם ב-Silver Week.",
-      "tips": "ה-Open-Air Museum כלול ב-Hakone Free Pass, כך שהכניסה חינם. אם אתם עייפים מהנסיעה, דלגו ישירות לרייוקאן — המנוחה חשובה לפני ערב האונסן.",
+      "tips": "⚠️ מיומוטו למוזיאון נוסעים ברכבת ההרים Tozan (סוויצ'בק, ~35–45 דק') — לכן ההתחלה ב-12:15 אחרי הצהריים ביומוטו. ה-Open-Air Museum כלול ב-Hakone Free Pass (כניסה חינם). בסיום, ~40 דק' חזרה במורד ה-Tozan לצ'ק-אין ברייוקאן.",
       "cost": "חינם עם Hakone Free Pass (ללא הפאס: ¥1,600 לאדם)",
       "booking": ""
      },
@@ -1150,7 +1150,7 @@ window.TRIP_DATA = {
      },
      {
       "start": "09:30",
-      "end": "13:00",
+      "end": "13:20",
       "type": "transport",
       "area": "Hakone-Yumoto עד Nagoya עד Magome",
       "title": "מסע לעמק קיסו — האקונה → מגומה",
@@ -1161,19 +1161,19 @@ window.TRIP_DATA = {
       "dur": "~3–3.5 שעות · 4 קטעים"
      },
      {
-      "start": "12:40",
-      "end": "13:30",
+      "start": "13:30",
+      "end": "14:15",
       "type": "food",
       "area": "Magome",
       "title": "צהריים במגומה — סובה וגוהיי-מוצ׳י",
-      "desc": "סובה שינשו וגוהיי-מוצ׳י (אורז צלוי ברוטב מיסו-אגוז) — הטעם של הנקאסֶנדו.",
-      "tips": "",
+      "desc": "סובה שינשו וגוהיי-מוצ׳י (אורז צלוי ברוטב מיסו-אגוז) — הטעם של הנקאסֶנדו. מגיעים למגומה רק ~13:20 (אחרי ה-Shinano + אוטובוס Kita-Ena), אז זו הארוחה הראשונה עם ההגעה.",
+      "tips": "אכלו מיד עם ההגעה — מסעדות הצהריים במגומה נגמרות מהר בשבוע הכסף. Mikazukian (סובה) או Nakaizutuya ברחוב הראשי.",
       "cost": "כ-¥1,000–1,800 לאדם",
       "booking": ""
      },
      {
-      "start": "14:00",
-      "end": "16:00",
+      "start": "14:15",
+      "end": "15:45",
       "type": "sightseeing",
       "area": "Magome",
       "title": "מגומה — עיירת אֶדו על מדרון ההר",
@@ -1184,8 +1184,8 @@ window.TRIP_DATA = {
       "highlight": true
      },
      {
-      "start": "16:00",
-      "end": "16:30",
+      "start": "16:30",
+      "end": "17:00",
       "type": "checkin",
       "area": "Magome",
       "title": "צ׳ק-אין בווילה Yanagiya Iri",
@@ -1218,12 +1218,12 @@ window.TRIP_DATA = {
       "highlight": true
      },
      {
-      "start": "16:30",
-      "end": "17:15",
+      "start": "15:45",
+      "end": "16:30",
       "type": "shopping",
       "area": "Magome",
       "title": "קניית sake וחטיפים לחגיגה",
-      "desc": "חנויות מגומה סוגרות ~17:00 — קנו sake מקומי (קיסו), ממתקים (gohei-mochi) ואולי עוגה קטנה לחגיגה בווילה."
+      "desc": "⚠️ חנויות מגומה סוגרות ~17:00 — לכן הקניות לפני הצ׳ק-אין: sake מקומי (קיסו), ממתקים (gohei-mochi) ואולי עוגה קטנה לחגיגה בווילה."
      }
     ],
     "birthday": true,
@@ -1437,7 +1437,7 @@ window.TRIP_DATA = {
     "dow": "Sat",
     "city": "Kyoto",
     "title": "שחר בין הטוריי — יום 9",
-    "summary": "יום שלם של קיוטו במיטבה: עלייה לפנות בוקר בין אלפי שערי הטוריי הארגמניים של פושימי אינארי, ואחר כך יערות הבמבוק ואמהות הוואבי-סאבי של אראשיימה — והכל נחתם בטיול טעימות בשוק ניישיקי ובארוחת שחיטה מפנקת לשניים.",
+    "summary": "יום שלם של קיוטו במיטבה: עלייה לפנות בוקר בין אלפי שערי הטוריי הארגמניים של פושימי אינארי, ואחר כך יערות הבמבוק ואמהות הוואבי-סאבי של אראשיימה — והכל נחתם בארוחת ערב טעימות בשוק ניישיקי.",
     "hotel": "🏨 Candeo Hotels Kyoto Karasuma Rokkaku (✓ נסגר · 25→28) · מרכז קיוטו, 4★",
     "events": [
      {
@@ -1464,19 +1464,19 @@ window.TRIP_DATA = {
       "booking": ""
      },
      {
-      "start": "10:30",
-      "end": "13:00",
+      "start": "11:15",
+      "end": "13:15",
       "type": "nature",
       "area": "Arashiyama",
       "title": "חורשת הבמבוק וגן טנריו-ג'י",
       "desc": "חורשת הבמבוק של אראשיימה היא אחד הנופים האיקוניים של יפן — גבעולים ענקיים מתנדנדים בשמיים ומפיקים רחש מרגיע ומסתורי. מיד לאחר מכן, גן הזן של מקדש טנריו-ג'י (UNESCO) פורש שלווה מוחלטת עם אגם בשיקוף ההרים.",
-      "tips": "הכנסו לגן הטנריו-ג'י ישר לאחר הבמבוק — המנות המשולבות הן הכי כדאיות. לפנות בוקר הגן עמוס פחות.",
+      "tips": "⚠️ המעבר מפושימי לאראשיימה חוצה את כל קיוטו — ~50–60 דק' (JR דרך תחנת קיוטו). צאו מפושימי מיד אחרי ארוחת הבוקר. הכנסו לגן טנריו-ג'י ישר אחרי הבמבוק — המנות המשולבות הכי כדאיות.",
       "cost": "¥500–1,000 לאדם (גן בלבד)",
       "booking": "",
       "highlight": true
      },
      {
-      "start": "13:00",
+      "start": "13:15",
       "end": "14:30",
       "type": "food",
       "area": "Arashiyama",
@@ -1499,25 +1499,14 @@ window.TRIP_DATA = {
      },
      {
       "start": "17:30",
-      "end": "19:00",
+      "end": "19:30",
       "type": "food",
       "area": "Kyoto (Nishiki)",
-      "title": "טעימות בשוק ניישיקי",
-      "desc": "\"מטבחה של קיוטו\" — רחוב מקורה ורועש של 400 שנה עם דוכנים של כבישים, טופו מעושן, דגי קיוטו, ממתקים וצלחות קטנות. אכלו בהליכה, גלו, נהנו מהצפיפות המבסוטת.",
-      "tips": "אל תגיעו רעבים מדי — הטעימות מצטברות לארוחה שלמה. חפשו את הדוכן של Aritsugu לסכיני מטבח מפורסמים — מתנה לבשלנים.",
-      "cost": "¥1,000–2,500 לאדם (תלוי בטעימות)",
+      "title": "ארוחת ערב טעימות בשוק ניישיקי",
+      "desc": "\"מטבחה של קיוטו\" — רחוב מקורה ורועש של 400 שנה עם דוכנים של כבישים, טופו מעושן, דגי קיוטו, ממתקים וצלחות קטנות. זו ארוחת הערב של היום: אכלו בהליכה, מדוכן לדוכן, וצברו ארוחה שלמה — יאקיטורי, טמפורה, סשימי טרי, דאשימאקי (חביתה), ומתוק לסיום.",
+      "tips": "אל תגיעו רעבים מדי מהצהריים — הטעימות מצטברות לארוחה מלאה, אז שמרו תיאבון לערב. חפשו את הדוכן של Aritsugu לסכיני מטבח מפורסמים — מתנה לבשלנים. אם רוצים לשבת בסוף, יש מסעדות קטנות בקצה השוק ובפונטוצ'ו הסמוכה.",
+      "cost": "¥2,500–4,000 לאדם (ארוחה מטעימות)",
       "booking": ""
-     },
-     {
-      "start": "19:30",
-      "end": "21:30",
-      "type": "food",
-      "area": "Kyoto",
-      "title": "ארוחת סוקיאקי או שאבו-שאבו לשניים",
-      "desc": "סיום ערב פנוק במסעדת בשר קיוטואית — סוקיאקי עם ביצה טרופה וגבעולי ירק, או שאבו-שאבו עם רטבי פונזו ושומשום. שתי חוויות טבילה שמחברות בין שניים ליד הסיר.",
-      "tips": "חפשו מסעדות עם \"Kyoto wagyu\" בסביבת גיאון או שינג'וקו-סוג'י — ההבדל באיכות הבשר ניכר. הזמנה מראש מומלצת בשישי ושבת.",
-      "cost": "¥4,000–8,000 לאדם",
-      "booking": "הזמינו שולחן מראש דרך האתר של המסעדה או Tableall — ערבי שבת עמוסים."
      }
     ],
     "cultural": "שערי הטוריי האדומים של פושימי אינארי אינם עיטור — כל אחד מהם תרומה של עסק או משפחה לאינארי אוקמי, אלת השפע, האורז והמסחר. שם התורם והתאריך חרוטים על גב כל שער, כך שאפילו בשעת השחר, כשאתם עוברים בתוך הנהר האדום-כתום אל תוך ההר, אתם בעצם צועדים דרך אלפי תפילות של בני אדם שביקשו הצלחה. שועלים — kitsune — הם שליחיו של האל: תמצאו אותם בכל פינה, לפעמים אוחזים מפתח (למחסן האורז), גלגל (לחוק הבודהיסטי) או ירקות. אם אתם רוצים לבקש משהו מאינארי, כירכרו פעמיים, מחאו כפיים פעמיים, ואז שמרו את הבקשה שקטה בלב.",
@@ -1536,24 +1525,24 @@ window.TRIP_DATA = {
     "hotel": "🏨 Candeo Hotels Kyoto Karasuma Rokkaku (✓ נסגר · 25→28) · מרכז קיוטו, 4★",
     "events": [
      {
-      "start": "08:30",
+      "start": "09:00",
       "end": "10:00",
       "type": "sightseeing",
       "area": "Kyoto (Northwest)",
       "title": "ביתן הזהב — קינקאקו-ג'י",
-      "desc": "הגעה בדיוק עם פתיחת השערים מאפשרת לכם ליהנות מהבבואה המושלמת של הביתן בבריכה לפני שההמון מגיע. אוויר הבוקר הצלול של ספטמבר הופך את הזהב לחי ומרטיט. קחו את הזמן להקיף את הגן — יש נקודות צילום שרוב התיירים מפספסים.",
-      "tips": "הגיעו ממש בשמונה וחצי — המוני התיירים מגיעים רק אחרי תשע. בסוף הסיור יש תה-עם-מתוק מסורתי בצריף קטן — שווה עצירה.",
+      "desc": "הגעה בדיוק עם פתיחת השערים (09:00) מאפשרת לכם ליהנות מהבבואה המושלמת של הביתן בבריכה לפני שההמון מגיע. אוויר הבוקר הצלול של ספטמבר הופך את הזהב לחי ומרטיט. הביתן הוא מסלול הליכה קצר — שעה מספיקה בנחת.",
+      "tips": "הגיעו ממש ל-09:00 (שעת הפתיחה) — המוני התיירים מגיעים רק אחרי כן. צאו מיד ב-10:00: המעבר לקיומיזו הוא בקצה הנגדי של העיר (ראו טיפ המונית באירוע הבא).",
       "cost": "¥500 לאדם",
       "booking": ""
      },
      {
-      "start": "10:30",
+      "start": "10:45",
       "end": "12:30",
       "type": "sightseeing",
       "area": "Kyoto (Higashiyama)",
       "title": "קיומיזו-דרה + שבילי ניינזקה וסאנינזקה",
       "desc": "קיומיזו-דרה עומדת על גבי מדרגות עץ מרהיבות עם נוף פנורמי על קיוטו — ספטמבר מתחיל לגעת בצמחייה בגוונים חמים ראשונים. מהמקדש, גלשו במורד הסמטאות המרוצפות של ניינזקה וסאנינזקה — שמורות לפלא, עם חנויות פוריות ובתי תה ישנים. זו קיוטו כפי שחלמתם עליה.",
-      "tips": "הדרך בין שתי הסמטאות קצרה ומקסימה — אל תחפזו. ⚠️ המעבר מקינקאקו-ג'י (צפון-מערב) לקיומיזו (דרום-מזרח) לוקח 50–60 דק' באוטובוס — קחו מונית (~30 דק', ~¥2,500) או צאו מקינקאקו-ג'י ב-09:45 כדי להגיע ב-10:30.",
+      "tips": "⚠️ המעבר מקינקאקו-ג'י (צפון-מערב) לקיומיזו (דרום-מזרח) חוצה את כל העיר — קחו מונית (~30–40 דק', ~¥2,500). באוטובוס זה 50–60 דק' ולא נכנס בחלון. עם יציאה ב-10:00 מקינקאקו-ג'י יש ~45 דק' באפר נוח. הדרך בין ניינזקה לסאנינזקה קצרה ומקסימה — אל תחפזו.",
       "cost": "¥400 לאדם (כניסה לקיומיזו-דרה)",
       "booking": ""
      },
@@ -1575,7 +1564,7 @@ window.TRIP_DATA = {
       "area": "Kyoto (Gion)",
       "title": "סדנת קימונו + טקס תה — MAIKOYA גיון",
       "desc": "קימונו מלא לשניים וטקס תה אותנטי בבית תה עתיק (נכס תרבות רשום) בגיון. הוקדם לצהריים כדי להתחבר לסובה ב-16:00 בג'ודוג'י. בחרו באופציה הפרטית לזוג. הזמינו מראש — סופי שבוע נחטפים.",
-      "tips": "הזמינו מראש חבילה לזוג; בדקו שהסדנה מתנהלת גם באנגלית. סיימו עד 15:30 וקחו מונית לג'ודוג'י (~15 דק', ~¥1,800) — האוטובוס לוקח 25–35 דק' ואין מרווח לכיסא הסובה ששולם מראש ב-16:00.",
+      "tips": "הזמינו מראש חבילה לזוג; בדקו שהסדנה מתנהלת גם באנגלית. ⚠️ בקשו מ-MAIKOYA לסיים את החלק הפעיל עד ~15:15 כדי שיישאר זמן להתפרק מהקימונו ולצאת עד 15:30. הזמינו מונית מראש לג'ודוג'י (~15 דק', ~¥1,800) — האוטובוס לוקח 25–35 דק' ואין מרווח לכיסא הסובה ששולם מראש ב-16:00.",
       "cost": "¥5,000–10,000 לאדם",
       "booking": "mai-ko.com — MAIKOYA Gion",
       "highlight": true
@@ -3685,14 +3674,14 @@ window.TRIP_DATA = {
       "booking": "GetYourGuide / byFood"
      },
      {
-      "start": "13:30",
-      "end": "14:30",
+      "start": "14:00",
+      "end": "14:45",
       "type": "food",
       "area": "Harajuku",
-      "title": "Almuerzo en Harajuku",
-      "desc": "Comida colorida en Takeshita o un bistró lindo en Omotesando.",
-      "tips": "",
-      "cost": "¥1.500–3.000 por persona",
+      "title": "Snack liviano en Harajuku (crepe/café)",
+      "desc": "Después del taller de bento/sushi (que ya es el almuerzo) — solo algo liviano: una crepe colorida en Takeshita o un café en Omotesando. No una comida completa, para guardar el apetito para la cena.",
+      "tips": "Hay ~30 min de traslado de Shinjuku a Harajuku (2 estaciones en la Yamanote) — por eso el snack a las 14:00.",
+      "cost": "¥500–1.200 por persona",
       "booking": ""
      },
      {
@@ -3784,13 +3773,13 @@ window.TRIP_DATA = {
       "dur": "~75 min"
      },
      {
-      "start": "11:30",
-      "end": "14:30",
+      "start": "12:15",
+      "end": "14:15",
       "type": "sightseeing",
       "area": "Hakone Open Air Museum",
       "title": "Museo al Aire Libre de Hakone (con baño de pies)",
       "desc": "Esculturas de Henry Moore entre las montañas + un baño de pies caliente (ashiyu). Elegimos un solo museo — no también el lago Ashi, no da el tiempo en Silver Week.",
-      "tips": "El Open-Air Museum está incluido en el Hakone Free Pass, así que la entrada es gratis. Si llegás cansado del viaje, salteo directo al ryokan — el descanso es importante antes de la noche de onsen.",
+      "tips": "⚠️ De Yumoto al museo se sube por el tren de montaña Tozan (switchback, ~35–45 min) — por eso el inicio a las 12:15 tras el almuerzo en Yumoto. El Open-Air Museum está incluido en el Hakone Free Pass (entrada gratis). Al terminar, ~40 min de regreso bajando el Tozan hasta el check-in del ryokan.",
       "cost": "Gratis con Hakone Free Pass (sin pase: ¥1.600 por persona)",
       "booking": ""
      },
@@ -3870,7 +3859,7 @@ window.TRIP_DATA = {
      },
      {
       "start": "09:30",
-      "end": "13:00",
+      "end": "13:20",
       "type": "transport",
       "area": "Hakone-Yumoto עד Nagoya עד Magome",
       "title": "Viaje al Valle de Kiso — Hakone → Magome",
@@ -3881,19 +3870,19 @@ window.TRIP_DATA = {
       "dur": "~3–3,5 h · 4 tramos"
      },
      {
-      "start": "12:40",
-      "end": "13:30",
+      "start": "13:30",
+      "end": "14:15",
       "type": "food",
       "area": "Magome",
       "title": "Almuerzo en Magome — soba y gohei-mochi",
-      "desc": "Soba shinshu y gohei-mochi (arroz a la brasa con miso y nueces) — el sabor del Nakasendo.",
-      "tips": "",
+      "desc": "Soba shinshu y gohei-mochi (arroz a la brasa con miso y nueces) — el sabor del Nakasendo. Recién llegan a Magome ~13:20 (tras el Shinano + bus Kita-Ena), así que es la primera comida al llegar.",
+      "tips": "Coman apenas lleguen — los restaurantes de almuerzo en Magome se agotan rápido en Silver Week. Mikazukian (soba) o Nakaizutuya en la calle principal.",
       "cost": "¥1.000–1.800 por persona",
       "booking": ""
      },
      {
-      "start": "14:00",
-      "end": "16:00",
+      "start": "14:15",
+      "end": "15:45",
       "type": "sightseeing",
       "area": "Magome",
       "title": "Magome — pueblo Edo en la ladera",
@@ -3904,8 +3893,8 @@ window.TRIP_DATA = {
       "highlight": true
      },
      {
-      "start": "16:00",
-      "end": "16:30",
+      "start": "16:30",
+      "end": "17:00",
       "type": "checkin",
       "area": "Magome",
       "title": "Check-in en la villa Yanagiya Iri",
@@ -3938,12 +3927,12 @@ window.TRIP_DATA = {
       "highlight": true
      },
      {
-      "start": "16:30",
-      "end": "17:15",
+      "start": "15:45",
+      "end": "16:30",
       "type": "shopping",
       "area": "Magome",
       "title": "Compra de sake y snacks para festejar",
-      "desc": "Las tiendas de Magome cierran ~17:00 — comprá sake local (Kiso), dulces (gohei-mochi) y quizá una torta chica para festejar en la villa."
+      "desc": "⚠️ Las tiendas de Magome cierran ~17:00 — por eso las compras antes del check-in: sake local (Kiso), dulces (gohei-mochi) y quizá una torta chica para festejar en la villa."
      }
     ],
     "birthday": true,
@@ -4157,7 +4146,7 @@ window.TRIP_DATA = {
     "dow": "Sat",
     "city": "Kyoto",
     "title": "Amanecer entre torii — Día 9",
-    "summary": "Un día entero con lo mejor de Kioto: subida al alba entre miles de torii bermejos en Fushimi Inari, el bosque de bambú y la serenidad zen de Arashiyama, y el cierre perfecto con un recorrido de degustación por el Mercado Nishiki y una cena de sukiyaki para los dos.",
+    "summary": "Un día entero con lo mejor de Kioto: subida al alba entre miles de torii bermejos en Fushimi Inari, el bosque de bambú y la serenidad zen de Arashiyama, y el cierre perfecto con una cena de degustación por el Mercado Nishiki.",
     "hotel": "🏨 Candeo Hotels Kyoto Karasuma Rokkaku (✓ reservado · 25→28) · centro de Kioto, 4★",
     "events": [
      {
@@ -4184,19 +4173,19 @@ window.TRIP_DATA = {
       "booking": ""
      },
      {
-      "start": "10:30",
-      "end": "13:00",
+      "start": "11:15",
+      "end": "13:15",
       "type": "nature",
       "area": "Arashiyama",
       "title": "Bosque de bambú y jardín zen de Tenryu-ji",
       "desc": "El bosque de bambú de Arashiyama es uno de los paisajes más hipnóticos del país — los culmos gigantes se mecen y producen un murmullo envolvente. Justo después, el jardín zen del templo Tenryu-ji (Patrimonio UNESCO) despliega una quietud absoluta con su estanque que refleja las colinas.",
-      "tips": "Entren al jardín de Tenryu-ji inmediatamente después del bambú — los tickets combinados convienen. Temprano hay mucho menos gente.",
+      "tips": "⚠️ El traslado de Fushimi a Arashiyama cruza toda Kioto — ~50–60 min (JR vía estación de Kioto). Salgan de Fushimi apenas terminen el desayuno. Entren al jardín de Tenryu-ji inmediatamente después del bambú — los tickets combinados convienen.",
       "cost": "¥500–1.000 por persona (jardín solamente)",
       "booking": "",
       "highlight": true
      },
      {
-      "start": "13:00",
+      "start": "13:15",
       "end": "14:30",
       "type": "food",
       "area": "Arashiyama",
@@ -4219,25 +4208,14 @@ window.TRIP_DATA = {
      },
      {
       "start": "17:30",
-      "end": "19:00",
+      "end": "19:30",
       "type": "food",
       "area": "Kyoto (Nishiki)",
-      "title": "Degustación en el Mercado Nishiki",
-      "desc": "\"La cocina de Kioto\" — un pasaje cubierto de 400 años con puestos de encurtidos, tofu ahumado, pescados locales, dulces y platitos para comer parado. Caminen, prueben, descúbranlo juntos y disfruten del bullicio amigable.",
-      "tips": "No lleguen con demasiada hambre — las picadas se acumulan y forman una comida completa. Buscá el puesto Aritsugu de cuchillos de cocina japoneses — un regalo ideal para quienes aman cocinar.",
-      "cost": "¥1.000–2.500 por persona (según lo que prueben)",
+      "title": "Cena de degustación en el Mercado Nishiki",
+      "desc": "\"La cocina de Kioto\" — un pasaje cubierto de 400 años con puestos de encurtidos, tofu ahumado, pescados locales, dulces y platitos para comer parado. Esta es la cena de hoy: caminen de puesto en puesto y armen una comida completa — yakitori, tempura, sashimi fresco, dashimaki (tortilla) y algo dulce para cerrar.",
+      "tips": "No lleguen con demasiada hambre del almuerzo — las picadas se acumulan y forman una comida completa, así que guarden apetito para la noche. Buscá el puesto Aritsugu de cuchillos japoneses. Si quieren sentarse al final, hay locales chicos en la punta del mercado y en la cercana Pontocho.",
+      "cost": "¥2.500–4.000 por persona (comida a base de picadas)",
       "booking": ""
-     },
-     {
-      "start": "19:30",
-      "end": "21:30",
-      "type": "food",
-      "area": "Kyoto",
-      "title": "Cena de sukiyaki o shabu-shabu para dos",
-      "desc": "El cierre perfecto del día: un restaurante de carne kiotoano donde comparten la olla caliente — sukiyaki con huevo batido y verduras, o shabu-shabu con salsas ponzu y sésamo. Una experiencia íntima donde cocinar juntos es parte de la magia.",
-      "tips": "Buscá restaurantes con \"Kyoto wagyu\" cerca de Gion o Shinkyogoku — la diferencia en la calidad de la carne se nota mucho. Los sábados a la noche es mejor reservar.",
-      "cost": "¥4.000–8.000 por persona",
-      "booking": "Reservá mesa con anticipación por la web del restaurante o por Tableall — los sábados a la noche se llenan rápido."
      }
     ],
     "cultural": "Los torii rojos de Fushimi Inari no son mera decoración — cada uno es una ofrenda de una empresa o familia a Inari Ōkami, la deidad del arroz, la prosperidad y el comercio. El nombre del donante y la fecha están grabados en la parte posterior de cada arco, así que cuando caminen por ese río naranja-rojizo hacia adentro del monte al amanecer, están cruzando literalmente a través de miles de plegarias humanas por el éxito. Los zorros — kitsune — son los mensajeros de la deidad: los van a encontrar en cada rincón, a veces sosteniendo una llave (del granero de arroz), una rueda (la ley búdica) o una planta. Si querés pedirle algo a Inari, hacé dos reverencias, aplaudí dos veces, y guardá tu deseo en silencio.",
@@ -4256,24 +4234,24 @@ window.TRIP_DATA = {
     "hotel": "🏨 Candeo Hotels Kyoto Karasuma Rokkaku (✓ reservado · 25→28) · centro de Kioto, 4★",
     "events": [
      {
-      "start": "08:30",
+      "start": "09:00",
       "end": "10:00",
       "type": "sightseeing",
       "area": "Kyoto (Northwest)",
       "title": "Kinkaku-ji — El Pabellón Dorado",
-      "desc": "Llegar exactamente con la apertura de las puertas les permite disfrutar del reflejo perfecto del pabellón en el estanque antes de que lleguen las multitudes. El aire fresco de septiembre hace que el dorado brille de una manera que no se ve en las fotos. Caminá despacio alrededor del jardín — hay ángulos que la mayoría de los turistas se pierden.",
-      "tips": "Llegá a las 8:30 en punto — las multitudes aparecen recién después de las nueve. Al final del recorrido hay un rincón con matcha y dulce tradicional que vale la pena no saltarse.",
+      "desc": "Llegar exactamente con la apertura (09:00) les permite disfrutar del reflejo perfecto del pabellón en el estanque antes de que lleguen las multitudes. El aire fresco de septiembre hace que el dorado brille de una manera que no se ve en las fotos. El pabellón es un recorrido corto — una hora alcanza con calma.",
+      "tips": "Llegá a las 09:00 en punto (hora de apertura) — las multitudes aparecen después. Salí ya a las 10:00: el traslado a Kiyomizu es al extremo opuesto de la ciudad (ver el tip del taxi en el evento siguiente).",
       "cost": "¥500 por persona",
       "booking": ""
      },
      {
-      "start": "10:30",
+      "start": "10:45",
       "end": "12:30",
       "type": "sightseeing",
       "area": "Kyoto (Higashiyama)",
       "title": "Kiyomizu-dera + pendientes de Ninenzaka y Sannenzaka",
       "desc": "Kiyomizu-dera se alza sobre una plataforma de madera con vistas panorámicas a Kioto — en septiembre los primeros toques otoñales empiezan a colorearse. Desde el templo bajás por las calles adoquinadas de Ninenzaka y Sannenzaka, intactas y llenas de tiendas de artesanía y casas de té antiguas. Esto es Kioto tal como la soñaste.",
-      "tips": "El camino entre las dos calles es corto y encantador — no lo apurés. ⚠️ El salto de Kinkaku-ji (NO) a Kiyomizu (SE) toma 50–60 min en bus — tomá un taxi (~30 min, ~¥2.500) o salí de Kinkaku-ji a las 09:45 para llegar a las 10:30.",
+      "tips": "⚠️ El salto de Kinkaku-ji (NO) a Kiyomizu (SE) cruza toda la ciudad — tomá un taxi (~30–40 min, ~¥2.500). En bus son 50–60 min y no entra en la ventana. Saliendo 10:00 de Kinkaku-ji quedan ~45 min de margen cómodo. El camino entre Ninenzaka y Sannenzaka es corto y encantador — no lo apurés.",
       "cost": "¥400 por persona (entrada a Kiyomizu-dera)",
       "booking": ""
      },
@@ -4295,7 +4273,7 @@ window.TRIP_DATA = {
       "area": "Kyoto (Gion)",
       "title": "Taller de kimono + ceremonia del té — MAIKOYA Gion",
       "desc": "Kimono completo para los dos y ceremonia del té auténtica en una casa de té antigua (propiedad cultural registrada) en Gion. Adelantado a la tarde para conectar con la soba de las 16:00 en Jodoji. Elegí la opción privada. Reservá con tiempo — los fines de semana se llenan.",
-      "tips": "Reservá con tiempo un paquete para pareja; confirmá que el taller se desarrolle en inglés. Terminá antes de las 15:30 y tomá un taxi a Jodoji (~15 min, ~¥1.800) — el bus tarda 25–35 min y no hay margen para el asiento de soba ya pagado de las 16:00.",
+      "tips": "Reservá con tiempo un paquete para pareja; confirmá que el taller se desarrolle en inglés. ⚠️ Pedí a MAIKOYA terminar la parte activa hacia las ~15:15 para tener tiempo de sacarse el kimono y salir a las 15:30. Reservá un taxi por anticipado a Jodoji (~15 min, ~¥1.800) — el bus tarda 25–35 min y no hay margen para el asiento de soba ya pagado de las 16:00.",
       "cost": "¥5.000–10.000 por persona",
       "booking": "mai-ko.com — MAIKOYA Gion",
       "highlight": true
