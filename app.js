@@ -1003,9 +1003,9 @@
     { id: 'e-teakimono', date: '2026-09-27', salesOpen: null, url: 'https://mai-ko.com/',
       title: { he: "🍵 טקס תה + קימונו (Kyoto)", es: "🍵 Ceremonia de té + kimono (Kioto)" },
       note: { he: "⚠️ קבעו מוקדם (~13:30–15:30) — לפני הסובה ב-Juu-go ב-16:00. סדנת זוגות — להזמין מראש.", es: "⚠️ Reservá temprano (~13:30–15:30) — antes de la soba en Juu-go a las 16:00. Taller para parejas — reservá con anticipación." } },
-    { id: 'e-workshop', date: '2026-09-21', salesOpen: null, url: 'https://www.cookly.me/tokyo/',
-      title: { he: "🍣 סדנת סושי / וואגאשי (Tokyo)", es: "🍣 Taller de sushi / wagashi (Tokio)" },
-      note: { he: "להזמין מראש (Airbnb Experiences / Cookly).", es: "Reservá con anticipación (Airbnb Experiences / Cookly)." } },
+    { id: 'e-workshop', date: '2026-09-21', done: true, url: 'https://www.google.com/maps/search/Baba+Ramen+Cooking+School+Minami-Aoyama+Tokyo',
+      title: { he: "🍜 סדנת ראמן — Baba Ramen Cooking School (Tokyo)", es: "🍜 Taller de ramen — Baba Ramen Cooking School (Tokio)" },
+      note: { he: "✓ נסגר · 21.9 בשעה 09:00 (4 שעות) · 2 משתתפים · ¥46,000 (שולם) · הזמנה 14166 · Baba Ramen Cooking School, Minami-Aoyama 3-2-7, Minato. הראמן שתכינו הוא ארוחת הצהריים; הגיעו ~08:45.", es: "✓ Reservado · 21/9 a las 09:00 (4 horas) · 2 participantes · ¥46.000 (pagado) · reserva 14166 · Baba Ramen Cooking School, Minami-Aoyama 3-2-7, Minato. El ramen que hagan es el almuerzo; lleguen ~08:45." } },
   ];
   function updateBookedProg() {
     const el = $('#bookedProg'); if (!el) return;

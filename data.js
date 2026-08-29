@@ -753,7 +753,7 @@ window.TRIP_DATA = {
      { "l": { "he": "מוזיאון ג'יבלי (1.10)", "es": "Museo Ghibli (1.10)" }, "low": 2000, "high": 2000, "st": "est" },
      { "l": { "he": "ערב מאיקו/גייקו קיוטו (27.9)", "es": "Velada maiko/geiko Kioto (27.9)" }, "low": 40000, "high": 50000, "st": "est" },
      { "l": { "he": "טקס תה + קימונו MAIKOYA (27.9)", "es": "Ceremonia de té + kimono MAIKOYA (27.9)" }, "low": 14000, "high": 16800, "st": "est" },
-     { "l": { "he": "סדנת סושי/וואגאשי טוקיו (21.9)", "es": "Taller de sushi/wagashi Tokio (21.9)" }, "low": 16000, "high": 24000, "st": "est" },
+     { "l": { "he": "סדנת ראמן — Baba Ramen טוקיו (21.9, שולם)", "es": "Taller de ramen — Baba Ramen Tokio (21.9, pagado)" }, "low": 46000, "high": 46000, "st": "paid" },
      { "l": { "he": "השכרת קימונו ליום בקיוטו (27.9)", "es": "Alquiler de kimono por un día en Kioto (27.9)" }, "low": 6600, "high": 11000, "st": "est" },
      { "l": { "he": "Owakudani צהריים + ביצה שחורה (22.9)", "es": "Owakudani almuerzo + huevo negro (22.9)" }, "low": 4000, "high": 5000, "st": "est" },
      { "l": { "he": "Tenzan Onsen · 2 מבוגרים (22.9)", "es": "Tenzan Onsen · 2 adultos (22.9)" }, "low": 2900, "high": 2900, "st": "est" }
@@ -1012,7 +1012,8 @@ window.TRIP_DATA = {
     "tips": [
      "חנויות Mandarake ב-Nakano Broadway נפתחות ב-12:00 — אל תבואו לפני כן. תכננו בוקר רגוע עם ארוחת בוקר מאוחרת ב-Shinjuku ואז נסעו לנאקאנו.",
      "ב-Nakano Broadway, קחו מעלית לקומה 4 ואז עבדו דרך למטה — חנויות האוסף הנדיר ביותר (כולל ה-Mandarake Cosmos) נמצאות בקומות העליונות ופחות צפופות בשעות הפתיחה.",
-     "ה-Gachapon Kaikan באקיהברה סוגר ב-19:00 בימי ראשון — אל תשמרו אותו לסוף הערב. לכו לשם בין 16:30–18:30 לפני ארוחת הערב."
+     "ה-Gachapon Kaikan באקיהברה סוגר ב-19:00 בימי ראשון — אל תשמרו אותו לסוף הערב. לכו לשם בין 16:30–18:30 לפני ארוחת הערב.",
+     "⏰ מחר (21.9) סדנת הראמן מתחילה ב-09:00 במינאמי-אאויאמה — אל תישארו הלילה עד מאוחר מדי בארקיידים, וכוונו שעון ל-~07:30. לפני היציאה מסרו את המזוודה הראשית בקבלה למשלוח לקיוטו."
     ]
    },
    {
@@ -1020,45 +1021,46 @@ window.TRIP_DATA = {
     "dow": "Mon",
     "city": "Tokyo",
     "title": "טוקיו — סדנה, Harajuku ו-Shibuya",
-    "summary": "בוקר יוצרים בסדנת בישול, אופנת קוואיי ב-Harajuku, רוגע ביער Meiji, וקניות בשיבויה — יום טוקיו אחרון לפני האקונה.",
+    "summary": "בוקר של סדנת ראמן (✓ נסגר, 09:00–13:00), אחה״צ הראג׳וקו ומייג׳י ג׳ינגו, וקניות בשיבויה — יום טוקיו אחרון לפני האקונה.",
     "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ נסגר · 18→22, 4 לילות)",
     "events": [
      {
-      "start": "11:30",
-      "end": "13:30",
+      "start": "09:00",
+      "end": "13:00",
       "type": "experience",
-      "area": "Tokyo",
-      "title": "סדנת בֶּנטו קוואאי / סושי (להזמין!)",
-      "desc": "סדנה אנימית וטעימה לזוג — בֶּנטו קוואאי בשינג׳וקו (~1.5ש׳) או הכנת סושי ליד שינג׳וקו (~2ש׳). Silver Week מתמלא ראשון — הזמינו מראש (ביטול חינם עד 24ש׳).",
-      "tips": "בואו רעבים; סינרים מסופקים.",
-      "cost": "כ-¥5,000–9,000 לאדם",
-      "booking": "GetYourGuide / byFood"
+      "area": "Minami-Aoyama, Minato",
+      "title": "✓ סדנת ראמן — Baba Ramen Cooking School",
+      "desc": "✓ נסגר · הזמנה 14166 · 09:00–13:00 (4 שעות) · 2 משתתפים · ¥46,000 (שולם). סדנת ראמן ידנית עם שפים ב-Baba Ramen Cooking School, Minami-Aoyama 3-2-7 (ליד תחנת Omotesando). מכינים נודלס, מרק ותוספות — ואוכלים את הקערה שהכנתם. זו ארוחת הצהריים.",
+      "tips": "בואו רעבים ובזמן (~08:45). מהמלון: JR Yamanote עד Harajuku + ~12 דק׳ הליכה, או מטרו עד Omotesando (יציאות A4/A5). סינרים מסופקים.",
+      "cost": "✓ ¥46,000 לזוג (שולם · הזמנה 14166)",
+      "booking": "✓ נסגר · הזמנה 14166",
+      "highlight": true
      },
      {
-      "start": "14:00",
-      "end": "14:45",
-      "type": "food",
-      "area": "Harajuku",
-      "title": "חטיף קליל ב-Harajuku (קרפ/קפה)",
-      "desc": "אחרי סדנת הבֶּנטו/סושי (שהיא כבר ארוחת הצהריים) — רק משהו קליל: קרפ צבעוני מדוכן ברחוב Takeshita או קפה ב-Omotesando. לא ארוחה מלאה, כדי לשמור תיאבון לארוחת הערב.",
-      "tips": "יש ~30 דק' מעבר משינג׳וקו ל-Harajuku (2 תחנות ב-Yamanote) — בגלל זה החטיף מ-14:00.",
-      "cost": "כ-¥500–1,200 לאדם",
+      "start": "13:15",
+      "end": "14:05",
+      "type": "sightseeing",
+      "area": "Omotesando / Aoyama",
+      "title": "אומוטסאנדו ואאויאמה (יוצאים מהסדנה)",
+      "desc": "בית הספר צמוד לאומוטסאנדו — מתחילים בשדרת האדריכלות (Prada ו-Miu Miu באאויאמה ממש ליד, Omotesando Hills של אנדו), ואולי מוזיאון Nezu השקט. משם עולים צפונה להראג׳וקו.",
+      "tips": "אחרי הראמן אין צורך בצהריים — רק קפה/קרפ קליל אם בא לכם.",
+      "cost": "חינם (Nezu אופציונלי ~¥1,400)",
       "booking": ""
      },
      {
-      "start": "09:30",
-      "end": "11:00",
+      "start": "14:05",
+      "end": "16:00",
       "type": "sightseeing",
-      "area": "Harajuku",
-      "title": "Harajuku ו-Meiji Jingu",
-      "desc": "רחוב Takeshita הצבעוני, קרפים, אופנת קוואיי, ואז רוגע ביער המקדש Meiji Jingu.",
-      "tips": "Meiji Jingu חינם ורגוע גם בשעות עמוסות.",
-      "cost": "חינם–¥1,000",
+      "area": "Harajuku / Meiji Jingu",
+      "title": "Takeshita-dori ו-Meiji Jingu",
+      "desc": "רחוב Takeshita הצבעוני (קרפים, קוואיי), ואז רוגע ביער המקדש Meiji Jingu — קיר חביות הסאקה מול היין הצרפתי, Temizuya והאולם הראשי.",
+      "tips": "⚠️ בגלל הסדנה בבוקר, מייג׳י ג׳ינגו עכשיו אחה״צ — בחג צפוף יותר, אבל 70 הקטאר של היער בולעים את הקהל. Temizuya: שמאל, ימין, פה, ידית.",
+      "cost": "חינם (Gyoen ¥500 אופציונלי)",
       "booking": "",
       "highlight": true
      },
      {
-      "start": "15:30",
+      "start": "16:00",
       "end": "18:00",
       "type": "shopping",
       "area": "Shibuya",
@@ -1093,13 +1095,13 @@ window.TRIP_DATA = {
     ],
     "cultural": "מייג'י ג'ינגו אינו מקום-תיירות — הוא אחת מנשמות המדינה. המקדש הוקדש ב-1920 לזכר הקיסר מייג'י ורעייתו שוקן, מי שהוביל את יפן מתקופת הסמוראים אל העידן המודרני. 365 עצי קמפור שתולים ידנית מכסים 70 הקטארים של היער — מתנה מ-100,000 מתנדבים מכל מחוזות יפן. בכניסה לחצר הפנימית תמצאו את ה-Temizuya: כיור אבן ובו תמריצים דמויי-ברז. הרגל זה נקרא 'misogi-harae', טהרה שמקורה באמונה השינטואיסטית שמים שוטפים לא רק לכלוך גשמי אלא גם 'kegare' — טומאה רוחנית שמצטברת מחיי היומיום. שיטוף שלוש פעמים, פה כלול — ורק אז מותר לעמוד בפני האלוהות.",
     "tips": [
-     "סדנת הבישול — הזמינו ל-Cooking Sun Tokyo (שינאנומאצ'י) או Ramen Cooking Tokyo עכשיו: קיבולת 8 אנשים ו-Silver Week = נחטף ראשון. getyourguide.com מאפשר ביטול חינם עד 24 שעות.",
-     "מייג'י ג'ינגו ב-21.9 (חג לאומי): הגיעו לפני 10:00 — היער שקט, אור בוקר מקסים בין עצי הקמפור, בלי דחיפות. ב-12:00-15:00 הצפיפות שיא. ב-Temizuya (כיור הטהרה בכניסה) שטפו ידיים בנחת — שמאל, ימין, פה, ידית — לפני הכניסה לחצר.",
+     "✓ סדנת הראמן נסגרה — Baba Ramen Cooking School, Minami-Aoyama 3-2-7 (ליד Omotesando), 09:00–13:00, הזמנה 14166, ¥46,000 לזוג. הגיעו ~08:45; זו גם ארוחת הצהריים (הראמן שתכינו).",
+     "מייג'י ג'ינגו עכשיו אחה״צ (כי הסדנה בבוקר): בחג הצפיפות בשיא ב-12:00–15:00, אבל 70 הקטאר של היער בולעים את הקהל — פשוט זרמו. ב-Temizuya שטפו ידיים בנחת — שמאל, ימין, פה, ידית — לפני הכניסה לחצר.",
      "Takeshita Street: כניסה מצד תחנת JR Harajuku (לא מהצד של אומוטסאנדו) חוסכת את הצפיפות הגרועה ביותר. הפתיחה ~10:00-11:00; צהריים ב-Harajuku = אנגוס רסטורנט (burgers), Kawaii Monster Café, או קריפ מאחד הדוכנים המקוריים ברחוב."
     ],
     "logistics": {
-     "he": "בוקר אחרון בטוקיו: שלחו את המזוודה הראשית ל-Candeo קיוטו (Yamato takkyubin) — שליחה כבר ב-21.9 נותנת מרווח לעיכובי שבוע הכסף; ודאו שהמלון שומר חבילות שמגיעות לפני הצ׳ק-אין (25.9). ממשיכים להאקונה+קיסו עם תיק-לילה בלבד.",
-     "es": "Última mañana en Tokio: despachen la valija principal a Candeo Kioto (takkyubin de Yamato) — mandarla ya el 21/9 da margen ante las demoras de Silver Week; confirmá que el hotel guarda paquetes que llegan antes del check-in (25/9). Siguen a Hakone+Kiso solo con bolso de una noche."
+     "he": "בוקר אחרון בטוקיו: לפני סדנת הראמן (09:00) מסרו את המזוודה הראשית בקבלת AMANEK למשלוח ל-Candeo קיוטו (Yamato takkyubin) — שליחה ב-21.9 נותנת מרווח לעיכובי שבוע הכסף; מגיעה לפני הצ׳ק-אין (25.9). ממשיכים להאקונה+קיסו עם תיק-לילה בלבד.",
+     "es": "Última mañana en Tokio: antes del taller de ramen (09:00) dejen la valija principal en recepción del AMANEK para despacharla al Candeo Kioto (takkyubin de Yamato) — mandarla el 21/9 da margen ante las demoras de Silver Week; llega antes del check-in (25/9). Siguen a Hakone+Kiso solo con bolso de una noche."
     }
    },
    {
@@ -3724,36 +3726,36 @@ window.TRIP_DATA = {
     "id": "harajuku-shibuya",
     "date": "2026-09-21",
     "city": "Tokyo",
-    "area": "הראג׳וקו → שיבויה",
-    "emoji": "🌳",
-    "title": "מייג׳י ג׳ינגו → הראג׳וקו → אומוטסאנדו → Cat Street → שיבויה",
-    "subtitle": "הליכה רציפה אחת ~2.5–3 ק״מ · 09:30–18:00",
-    "intro": "מהיער הקדוש ועד לב שיבויה — הליכה רציפה אחת, כולה ברגל, שהיא כשלעצמה נקודת שיא. מקדש שינטו ביער בן מאה שנה, רחוב הקוואאי הצבעוני, שדרת יוקרה עם אדריכלות של זוכי פרס פריצקר, סמטת סטריטוור מקומית, וסיום בשיבויה. 21.9 הוא חג (שבוע הכסף) — הקדימו את המקדש ו-Takeshita לפני 11:30.",
+    "area": "ראמן, הראג׳וקו ושיבויה",
+    "emoji": "🍜",
+    "title": "סדנת ראמן ✓, מייג׳י ג׳ינגו והראג׳וקו עד שיבויה",
+    "subtitle": "✓ סדנת ראמן 09:00–13:00, ואז הליכה רציפה עד שיבויה",
+    "intro": "הבוקר שמור לסדנת הראמן שהזמנתם — Baba Ramen Cooking School במינאמי-אאויאמה, 09:00–13:00, 4 שעות ידיים בבצק, ואת הראמן שתכינו אתם גם אוכלים (זו ארוחת הצהריים). בית הספר צמוד לאומוטסאנדו, אז אחה״צ זורם ישר להליכה: אומוטסאנדו → הראג׳וקו → מייג׳י ג׳ינגו → Cat Street → שיבויה. ⚠️ בגלל הסדנה, מייג׳י ג׳ינגו עובר לאחר הצהריים — 21.9 חג (שבוע הכסף) וצפוף בצהריים, אבל היער הענק בולע את הקהל; פשוט זרמו.",
     "meta": {
-     "duration": "~5–6 שעות עם עצירות",
-     "distance": "~2.5–3 ק״מ ברגל (רציף), +0.5–1 עם עקיפות",
-     "start": "תחנת JR Harajuku (בניין 2020), יציאה מערבית → שער הטוריאי הגדול",
-     "getThere": "מקבוקיצ׳ו: JR Yamanote 2 תחנות עד Harajuku (~5 דק׳)",
-     "end": "Miyashita Park / שיבויה — קניות, גג וארוחת ערב מוקדמת",
-     "cost": "מקדש מייג'י ג'ינגו חינם; גן פנימי (Gyoen) ¥500 לאדם; נזו מוזיאון אופציונלי ~¥1,400 (תערוכת אוסף) / ~¥1,600 (תערוכה מיוחדת); הכל הליכה, אז רק ¥170 בערך ל-Yamanote מקבוקיצ'ו עם Suica — בלי מוניות.",
-     "luggage": "יום סיור רגיל בטוקיו: המזוודה הגדולה כבר נשלחה היום ב-takkyubin לקנדאו קיוטו, אז יוצאים עם דייפק + כרטיס Suica בלבד ומטיילים קליל.",
-     "meal": "קרפ ברחוב Takeshita-dori (למשל Marion Crepes) ~¥600-800 לאדם לנשנוש קלאסי; לארוחה של ממש — המבורגר או פסטה בגג של Miyashita Park בסוף המסלול, ~¥1,500-2,000 לאדם."
+     "duration": "~9 שעות (סדנה 4ש' + הליכה)",
+     "distance": "~2.5–3 ק״מ ברגל אחה״צ (רציף)",
+     "start": "✓ Baba Ramen Cooking School · Minami-Aoyama 3-2-7 (ליד תחנת Omotesando)",
+     "getThere": "מהמלון בקבוקיצ׳ו: JR Yamanote עד Harajuku + ~12 דק׳ הליכה, או מטרו עד Omotesando (יציאות A4/A5, ~5 דק׳). הגיעו ~08:45 לסדנת 09:00.",
+     "end": "Miyashita Park / שיבויה — קניות וארוחת ערב, ואז Ni-chome",
+     "cost": "✓ סדנת ראמן ¥46,000 לזוג (שולם · הזמנה 14166 · הראמן = צהריים) · מייג'י ג'ינגו חינם · Gyoen ¥500 · Nezu אופציונלי ~¥1,400 · תחבורה IC ~¥170",
+     "luggage": "בוקר אחרון בטוקיו — לפני הסדנה (~08:00) השאירו את המזוודה הראשית בקבלת AMANEK למשלוח takkyubin לקנדאו קיוטו (מגיעה לפני צ׳ק-אין 25.9). מטיילים כל היום עם דייפק בלבד.",
+     "meal": "הראמן שתכינו בסדנה הוא ארוחת הצהריים (~13:00, כלול ב-¥46,000). נשנוש קרפ קליל ב-Takeshita אם בא לכם (~¥600), וארוחת ערב בשיבויה (~¥2,500–4,000 לאדם)."
     },
     "stops": [
-     { "time": "09:30", "name": "Meiji Jingu (明治神宮) — היער הקדוש", "walk": "1–2 דק׳ מהתחנה", "see": "הטוריאי הגדול (ברוש בן ~1,500 שנה); יער של ~100,000 עצים שנתרמו ונשתלו ביד מ-1920; קיר חביות הסאקה מול חביות היין הצרפתי; Temizuya, האולם הראשי, ולוחיות ema. חינם.", "why": "יער קדוש מהמאה ה-20 שתוכנן להיראות עתיק — מקדש לקיסר מייג׳י (שהוביל את יפן לעידן המודרני) ולקיסרית שוקן. המקדש הכי מבוקר ביפן בראש השנה.", "tip": "הגיעו לפני 10:00 — השביל שקט ומצולם לפני קהל החג. Temizuya: שמאל, ימין, פה, ידית. במקדש: קידה-קידה, מחיאה-מחיאה, קידה.", "map": "35.6764,139.6993" },
-     { "time": "10:45", "name": "(אופציה) Gyoen — הגן הפנימי", "walk": "בתוך היער", "see": "גן טיולים שקט: באר קיאמאסה (נקודת כוח), בית תה, בריכה וגן איריסים. ¥500.", "why": "פינה אישית ואינטימית שהתווה הקיסר לקיסרית — לעומת המקדש הציבורי הגדול.", "tip": "⚠️ ספטמבר אינו עונת האיריסים (יוני) — פשוט גן ירוק ורגוע. שווה ¥500 רק אם רוצים שקט וצילום.", "map": "35.6785,139.6995" },
-     { "time": "11:00", "name": "Takeshita-dori (竹下通り) — רחוב הקוואאי", "walk": "מול תחנת JR Harajuku", "see": "~400 מ׳ של אופנת קוואאי/לוליטה, thrift, Daiso, פורי-קורה; קרפים ב-Marion (הקרפרי הראשון ביפן, 1976) ו-Angel's Heart; צמר-גפן מתוק בקשת בענן ב-Totti Candy Factory.", "why": "ערש תרבות הקוואאי והלוליטה של טוקיו — מרקדני הרחוב של שנות ה-70 ועד גלי הגותיק-לוליטה והדקורה שהפכו את 'הראג׳וקו' למילה עולמית.", "tip": "היכנסו מצד JR (לא מצד אומוטסאנדו) והלכו דרומה. עשו זאת לפני ~11:30 — בחג מתמלא כתף-אל-כתף בצהריים.", "map": "35.6716,139.7050" },
-     { "time": "12:00", "name": "Omotesando (表参道) — השדרה המעוצבת", "walk": "5 דק׳ בקצה Takeshita", "see": "שדרת עצי זלקובה — 'השאנז-אליזה של טוקיו'. אדריכלות דגל: Omotesando Hills (טאדאו אנדו), Dior (SANAA), Tod's (טויו איטו), ובסמוך באאויאמה Prada ו-Miu Miu (הרצוג ודה מרון). מגדל Grid החדש (ינואר 2026).", "why": "אחד הריכוזים הצפופים בעולם של חנויות דגל בעיצוב זוכי פריצקר, לאורך שדרה אחת.", "tip": "חצו ~5 דק׳ דרומה לאאויאמה לראות את מגדל הזכוכית של Prada, ואז חזרו. בתי קפה ועיצוב מצוינים בסמטאות.", "map": "35.6668,139.7107" },
-     { "time": "13:00", "name": "(אופציה) מוזיאון Nezu (根津美術館)", "walk": "8 דק׳ מקצה אומוטסאנדו", "see": "אמנות יפנית ומזרח-אסייתית בבניין של קֶנגו קוּמָה + גן מסורתי שליו ובית קפה. ~¥1,300–1,400.", "why": "בית למסך 'האיריסים' של אוגטה קורין (אוצר לאומי, מוצג עונתית) וגן שמרגיש מיליון מייל מהעיר.", "tip": "פתוח ב-21.9 (כלל חג-שני; סגור במקום ביום שלישי). נקודת שקט תרבותית אם מעדיפים על קניות.", "map": "35.6626,139.7169" },
-     { "time": "13:30", "name": "Cat Street / Ura-Harajuku (キャットストリート)", "walk": "חוצים את Meiji-dori", "see": "סמטה מפותלת מעל נהר שיבויה הישן (מקורה) — סטריטוור, סניקרס, וינטג׳, בתי קפה אינדי ועיצוב.", "why": "ערש הסטריטוור היפני (סצנת Ura-Hara / BAPE של שנות ה-90). הקיצור המקומי ברגל מהראג׳וקו לשיבויה (~10–15 דק׳), שקט וקריר מהרחובות הראשיים.", "tip": "היכנסו מאומוטסאנדו והלכו דרומה — מוביל אתכם אל שיבויה/Miyashita Park. אור אחה״צ הכי יפה לצילום.", "map": "35.6660,139.7040" },
-     { "time": "15:00", "name": "שיבויה — Miyashita Park וסביבתה", "walk": "בקצה Cat Street", "see": "RAYARD Miyashita Park — פארק גג (דשא, סקייט, טיפוס), ~90 חנויות (LV לגברים, Gucci, Balenciaga), ובקומת קרקע Shibuya Yokocho. חנויות 11:00–21:00.", "why": "סמל להתחדשות שיבויה — פארק מעל קניות מעל חיי לילה. חלון 15:00–18:00 מושלם לרגיעה: נוף מהגג, קניות, וארוחת ערב מוקדמת.", "tip": "סיימו כאן לאוכל וקניות כשהקהל והניאון מתעצמים. הצומת Scramble ~5–8 דק׳ דרומה אם רוצים אותו בין ערביים.", "map": "35.6626,139.7017" }
+     { "time": "09:00", "name": "✓ סדנת ראמן — Baba Ramen Cooking School (馬場)", "walk": "Minami-Aoyama 3-2-7 · ~5 דק׳ מתחנת Omotesando", "see": "סדנת ראמן ידנית בת 4 שעות עם שפים — נודלס, מרק ותוספות, ואוכלים את הקערה שהכנתם. ¥46,000 לזוג (2), הזמנה 14166. זו גם ארוחת הצהריים.", "why": "לא רק לאכול ראמן — להבין אותו: את הקמאאגֶה, את הטארֶה, את שכבת השומן. חוויה אנימית-קולינרית מושלמת לזוג.", "tip": "בואו רעבים ובזמן (~08:45). סינרים מסופקים. אחרי הסדנה אתם כבר באומוטסאנדו — ההליכה מתחילה מכאן.", "map": "35.6668,139.7150" },
+     { "time": "13:15", "name": "Omotesando (表参道) — השדרה המעוצבת", "walk": "צמוד לבית הספר", "see": "שדרת עצי זלקובה — 'השאנז-אליזה של טוקיו'. אדריכלות דגל: Omotesando Hills (טאדאו אנדו), Dior (SANAA), Tod's (טויו איטו), ובאאויאמה Prada ו-Miu Miu (הרצוג ודה מרון). מגדל Grid החדש (2026).", "why": "אחד הריכוזים הצפופים בעולם של חנויות דגל בעיצוב זוכי פריצקר, לאורך שדרה אחת — ואתם יוצאים אליו ישר מהסדנה.", "tip": "הסדנה במינאמי-אאויאמה, אז Prada/Miu Miu ממש קרוב — התחילו בהם ואז עלו את השדרה צפונה.", "map": "35.6668,139.7107" },
+     { "time": "13:35", "name": "(אופציה) מוזיאון Nezu (根津美術館)", "walk": "5 דק׳ מהסדנה/אומוטסאנדו", "see": "אמנות יפנית ומזרח-אסייתית בבניין של קֶנגו קוּמָה + גן מסורתי שליו ובית קפה. ~¥1,300–1,400.", "why": "בית למסך 'האיריסים' של אוגטה קורין (אוצר לאומי, מוצג עונתית) וגן שמרגיש מיליון מייל מהעיר — הפוגה שקטה אחרי הסדנה.", "tip": "פתוח ב-21.9 (כלל חג-שני; סגור במקום ב-שלישי). דלגו אם מעדיפים יותר זמן להראג׳וקו.", "map": "35.6626,139.7169" },
+     { "time": "14:05", "name": "Takeshita-dori (竹下通り) — רחוב הקוואאי", "walk": "~12 דק׳ צפונה במעלה אומוטסאנדו", "see": "~400 מ׳ של אופנת קוואאי/לוליטה, thrift, Daiso, פורי-קורה; קרפים ב-Marion (הקרפרי הראשון ביפן, 1976) ו-Angel's Heart; צמר-גפן מתוק בקשת בענן ב-Totti Candy Factory.", "why": "ערש תרבות הקוואאי והלוליטה של טוקיו — מרקדני הרחוב של שנות ה-70 ועד גלי הגותיק-לוליטה והדקורה שהפכו את 'הראג׳וקו' למילה עולמית.", "tip": "היכנסו מצד JR Harajuku. בחג צפוף — אבל אתם רק עוברים לכיוון המקדש. נשנוש קרפ קליל בדרך.", "map": "35.6716,139.7050" },
+     { "time": "14:30", "name": "Meiji Jingu (明治神宮) — היער הקדוש", "walk": "5 דק׳ מ-Takeshita אל שער הטוריאי", "see": "הטוריאי הגדול (ברוש בן ~1,500 שנה); יער של ~100,000 עצים שנתרמו ונשתלו ביד מ-1920; קיר חביות הסאקה מול חביות היין הצרפתי; Temizuya, האולם הראשי, ולוחיות ema. חינם. גן פנימי (Gyoen) ¥500 אופציונלי.", "why": "יער קדוש מהמאה ה-20 שתוכנן להיראות עתיק — מקדש לקיסר מייג׳י (שהוביל את יפן לעידן המודרני) ולקיסרית שוקן. המקדש הכי מבוקר ביפן בראש השנה.", "tip": "אחה״צ בחג צפוף יותר, אבל 70 הקטאר של היער בולעים את הקהל. Temizuya: שמאל, ימין, פה, ידית. במקדש: קידה-קידה, מחיאה-מחיאה, קידה.", "map": "35.6764,139.6993" },
+     { "time": "15:45", "name": "Cat Street / Ura-Harajuku (キャットストリート)", "walk": "מ-Harajuku דרומה, חוצים Meiji-dori", "see": "סמטה מפותלת מעל נהר שיבויה הישן (מקורה) — סטריטוור, סניקרס, וינטג׳, בתי קפה אינדי ועיצוב.", "why": "ערש הסטריטוור היפני (סצנת Ura-Hara / BAPE של שנות ה-90). הקיצור המקומי ברגל מהראג׳וקו לשיבויה (~10–15 דק׳), שקט וקריר מהרחובות הראשיים.", "tip": "מוביל אתכם ישר אל שיבויה/Miyashita Park. אור אחה״צ הכי יפה לצילום.", "map": "35.6660,139.7040" },
+     { "time": "16:30", "name": "שיבויה — Miyashita Park וסביבתה", "walk": "בקצה Cat Street", "see": "RAYARD Miyashita Park — פארק גג (דשא, סקייט, טיפוס), ~90 חנויות (LV לגברים, Gucci, Balenciaga), ובקומת קרקע Shibuya Yokocho. חנויות 11:00–21:00.", "why": "סמל להתחדשות שיבויה — פארק מעל קניות מעל חיי לילה. חלון אחה״צ מושלם לרגיעה: נוף מהגג, קניות, וארוחת ערב מוקדמת לפני Ni-chome.", "tip": "סיימו כאן לאוכל וקניות כשהקהל והניאון מתעצמים. הצומת Scramble ~5–8 דק׳ דרומה אם רוצים אותו בין ערביים.", "map": "35.6626,139.7017" }
     ],
     "special": [
+     "🍜 סדנת הראמן (✓ נסגר, ¥46,000, הזמנה 14166) היא העוגן של היום — 09:00–13:00, והראמן שתכינו הוא ארוחת הצהריים.",
      "🍶 קיר חביות הסאקה מול חביות היין הצרפתי במייג׳י ג׳ינגו — סמל לפתיחת יפן למערב בימי הקיסר מייג׳י.",
      "🐈 Cat Street — הקיצור המקומי ברגל בין הראג׳וקו לשיבויה, שקט וקריר, ערש הסטריטוור היפני.",
-     "🏛️ סיור אדריכלות באומוטסאנדו: אנדו, SANAA, טויו איטו, והרצוג ודה מרון (Prada/Miu Miu באאויאמה, סטייה של 5 דק׳).",
-     "🎌 21.9 = יום כבוד הזקנה, בתוך שבוע הכסף הנדיר — קהל מקומי כבד בצהריים. הקדימו מקדש ו-Takeshita לפני 11:30.",
-     "🍓 קרפ קלאסי ב-Marion (הקרפרי הראשון ביפן, 1976) וצמר-גפן קשת בענן ב-Totti Candy Factory."
+     "🏛️ סיור אדריכלות באומוטסאנדו: אנדו, SANAA, טויו איטו, והרצוג ודה מרון (Prada/Miu Miu באאויאמה — ממש ליד הסדנה).",
+     "🎌 21.9 = יום כבוד הזקנה, בתוך שבוע הכסף — מייג׳י ג׳ינגו עכשיו אחה״צ (צפוף אך היער בולע), פשוט זרמו."
     ]
    },
    {
@@ -4532,7 +4534,8 @@ window.TRIP_DATA = {
     "tips": [
      "Las tiendas Mandarake en Nakano Broadway abren a las 12:00 — no vayan antes. Planeá una mañana tranqui con desayuno tardío en Shinjuku y después viajá a Nakano.",
      "En Nakano Broadway subí en ascensor al 4° piso y bajá caminando — las tiendas de coleccionismo más raro (incluida Mandarake Cosmos) están arriba y con menos gente al abrir.",
-     "El Gachapon Kaikan de Akihabara cierra a las 19:00 los domingos — no lo dejes para el final. Andá entre 16:30–18:30, antes de cenar."
+     "El Gachapon Kaikan de Akihabara cierra a las 19:00 los domingos — no lo dejes para el final. Andá entre 16:30–18:30, antes de cenar.",
+     "⏰ Mañana (21.9) el taller de ramen arranca 09:00 en Minami-Aoyama — no se queden hasta muy tarde en los arcades, y pongan alarma ~07:30. Antes de salir, dejen la valija principal en recepción para el envío a Kioto."
     ]
    },
    {
@@ -4540,45 +4543,46 @@ window.TRIP_DATA = {
     "dow": "Mon",
     "city": "Tokyo",
     "title": "Tokio — taller, Harajuku y Shibuya",
-    "summary": "Mañana creativa en un taller de cocina, moda kawaii en Harajuku, la calma del bosque Meiji y compras en Shibuya — último día en Tokio antes de Hakone.",
+    "summary": "Mañana de taller de ramen (✓ reservado, 09:00–13:00), a la tarde Harajuku y Meiji Jingu, y compras en Shibuya — último día en Tokio antes de Hakone.",
     "hotel": "🏨 HOTEL AMANEK Shinjuku Kabukicho · Kabukicho (✓ reservado · 18→22, 4 noches)",
     "events": [
      {
-      "start": "11:30",
-      "end": "13:30",
+      "start": "09:00",
+      "end": "13:00",
       "type": "experience",
-      "area": "Tokyo",
-      "title": "Taller de bento kawaii / sushi (¡reservar!)",
-      "desc": "Un taller animé y rico para la pareja — bento kawaii en Shinjuku (~1,5h) o hacer sushi cerca de Shinjuku (~2h). Silver Week se llena primero — reservá con tiempo (cancelación gratis hasta 24h).",
-      "tips": "Vengan con hambre; dan delantales.",
-      "cost": "¥5.000–9.000 por persona",
-      "booking": "GetYourGuide / byFood"
+      "area": "Minami-Aoyama, Minato",
+      "title": "✓ Taller de ramen — Baba Ramen Cooking School",
+      "desc": "✓ Reservado · reserva 14166 · 09:00–13:00 (4 horas) · 2 participantes · ¥46.000 (pagado). Taller de ramen a mano con chefs en Baba Ramen Cooking School, Minami-Aoyama 3-2-7 (junto a la estación Omotesando). Hacen fideos, caldo y toppings — y se comen el bowl que hicieron. Es el almuerzo.",
+      "tips": "Vengan con hambre y a tiempo (~08:45). Del hotel: JR Yamanote hasta Harajuku + ~12 min a pie, o metro hasta Omotesando (salidas A4/A5). Dan delantales.",
+      "cost": "✓ ¥46.000 la pareja (pagado · reserva 14166)",
+      "booking": "✓ Reservado · reserva 14166",
+      "highlight": true
      },
      {
-      "start": "14:00",
-      "end": "14:45",
-      "type": "food",
-      "area": "Harajuku",
-      "title": "Snack liviano en Harajuku (crepe/café)",
-      "desc": "Después del taller de bento/sushi (que ya es el almuerzo) — solo algo liviano: una crepe colorida en Takeshita o un café en Omotesando. No una comida completa, para guardar el apetito para la cena.",
-      "tips": "Hay ~30 min de traslado de Shinjuku a Harajuku (2 estaciones en la Yamanote) — por eso el snack a las 14:00.",
-      "cost": "¥500–1.200 por persona",
+      "start": "13:15",
+      "end": "14:05",
+      "type": "sightseeing",
+      "area": "Omotesando / Aoyama",
+      "title": "Omotesando y Aoyama (saliendo del taller)",
+      "desc": "La escuela está pegada a Omotesando — arrancan por la avenida de arquitectura (Prada y Miu Miu en Aoyama al lado, Omotesando Hills de Ando), y quizás el tranquilo Museo Nezu. Desde ahí suben al norte a Harajuku.",
+      "tips": "Después del ramen no hace falta almuerzo — solo un café/crepe liviano si les provoca.",
+      "cost": "Gratis (Nezu opcional ~¥1.400)",
       "booking": ""
      },
      {
-      "start": "09:30",
-      "end": "11:00",
+      "start": "14:05",
+      "end": "16:00",
       "type": "sightseeing",
-      "area": "Harajuku",
-      "title": "Harajuku y Meiji Jingu",
-      "desc": "La colorida Takeshita, crepes, moda kawaii, y después la calma del bosque del santuario Meiji Jingu.",
-      "tips": "Meiji Jingu es gratis y tranquilo aun en horas pico.",
-      "cost": "Gratis–¥1.000",
+      "area": "Harajuku / Meiji Jingu",
+      "title": "Takeshita-dori y Meiji Jingu",
+      "desc": "La colorida Takeshita (crepes, kawaii), y después la calma del bosque del santuario Meiji Jingu — la pared de barriles de sake frente al vino francés, el Temizuya y el salón principal.",
+      "tips": "⚠️ Por el taller de la mañana, Meiji Jingu ahora es a la tarde — en feriado hay más gente, pero las 70 hectáreas de bosque la absorben. Temizuya: izquierda, derecha, boca, mango.",
+      "cost": "Gratis (Gyoen ¥500 opcional)",
       "booking": "",
       "highlight": true
      },
      {
-      "start": "15:30",
+      "start": "16:00",
       "end": "18:00",
       "type": "shopping",
       "area": "Shibuya",
@@ -4613,13 +4617,13 @@ window.TRIP_DATA = {
     ],
     "cultural": "Meiji Jingu no es un sitio turístico: es una de las almas del país. El santuario fue dedicado en 1920 al Emperador Meiji y su esposa la emperatriz Shōken, quienes guiaron a Japón desde la era de los samuráis hacia la modernidad. El bosque de 70 hectáreas fue plantado a mano por 100.000 voluntarios de cada provincia del país con 365 especies de árboles de alcanfor. Antes de entrar al patio interior, vas a encontrar el Temizuya: una pileta de piedra con pequeños caños. El ritual se llama misogi-harae, purificación que viene de la creencia sintoísta de que el agua no solo limpia la suciedad física sino también el 'kegare' — la impureza espiritual que se acumula en la vida cotidiana. Tres lavados, incluyendo la boca, y recién entonces podés presentarte ante la deidad.",
     "tips": [
-     "La clase de cocina — reservá ya en Cooking Sun Tokyo (Shinanomachi) o Ramen Cooking Tokyo: capacidad 8 y Silver Week se agota primero. getyourguide.com permite cancelación gratis hasta 24 h antes.",
-     "Meiji Jingu el 21/9 (feriado): llegá antes de las 10:00 — el bosque en calma, luz de la mañana entre los alcanforeros. De 12:00 a 15:00 es el pico. En el Temizuya lavate las manos con calma — izquierda, derecha, boca, mango — antes de entrar.",
+     "✓ El taller de ramen está reservado — Baba Ramen Cooking School, Minami-Aoyama 3-2-7 (junto a Omotesando), 09:00–13:00, reserva 14166, ¥46.000 la pareja. Lleguen ~08:45; también es el almuerzo (el ramen que hagan).",
+     "Meiji Jingu ahora a la tarde (porque el taller es a la mañana): en feriado el pico es 12:00–15:00, pero las 70 hectáreas de bosque absorben la multitud — déjense llevar. En el Temizuya lavate las manos con calma — izquierda, derecha, boca, mango — antes de entrar.",
      "Takeshita Street: entrá por el lado de la estación JR Harajuku (no por Omotesando) y te ahorrás lo peor del gentío. Abre ~10:00-11:00; mediodía en Harajuku: Angus burgers, Kawaii Monster Café, o un crepe de los puestos de la calle."
     ],
     "logistics": {
-     "he": "בוקר אחרון בטוקיו: שלחו את המזוודה הראשית ל-Candeo קיוטו (Yamato takkyubin) — שליחה כבר ב-21.9 נותנת מרווח לעיכובי שבוע הכסף; ודאו שהמלון שומר חבילות שמגיעות לפני הצ׳ק-אין (25.9). ממשיכים להאקונה+קיסו עם תיק-לילה בלבד.",
-     "es": "Última mañana en Tokio: despachen la valija principal a Candeo Kioto (takkyubin de Yamato) — mandarla ya el 21/9 da margen ante las demoras de Silver Week; confirmá que el hotel guarda paquetes que llegan antes del check-in (25/9). Siguen a Hakone+Kiso solo con bolso de una noche."
+     "he": "בוקר אחרון בטוקיו: לפני סדנת הראמן (09:00) מסרו את המזוודה הראשית בקבלת AMANEK למשלוח ל-Candeo קיוטו (Yamato takkyubin) — שליחה ב-21.9 נותנת מרווח לעיכובי שבוע הכסף; מגיעה לפני הצ׳ק-אין (25.9). ממשיכים להאקונה+קיסו עם תיק-לילה בלבד.",
+     "es": "Última mañana en Tokio: antes del taller de ramen (09:00) dejen la valija principal en recepción del AMANEK para despacharla al Candeo Kioto (takkyubin de Yamato) — mandarla el 21/9 da margen ante las demoras de Silver Week; llega antes del check-in (25/9). Siguen a Hakone+Kiso solo con bolso de una noche."
     }
    },
    {
@@ -7244,36 +7248,36 @@ window.TRIP_DATA = {
     "id": "harajuku-shibuya",
     "date": "2026-09-21",
     "city": "Tokyo",
-    "area": "Harajuku → Shibuya",
-    "emoji": "🌳",
-    "title": "Meiji Jingu → Harajuku → Omotesando → Cat Street → Shibuya",
-    "subtitle": "Una caminata continua de ~2,5–3 km · 09:30–18:00",
-    "intro": "Del bosque sagrado al corazón de Shibuya — una sola caminata continua, toda a pie, que es en sí misma un punto alto. Un santuario shinto en un bosque de cien años, la calle kawaii colorida, una avenida de lujo con arquitectura de premios Pritzker, un callejón local de streetwear, y cierre en Shibuya. El 21.9 es feriado (Silver Week) — adelanten el santuario y Takeshita antes de las 11:30.",
+    "area": "Ramen, Harajuku y Shibuya",
+    "emoji": "🍜",
+    "title": "Taller de ramen ✓, Meiji Jingu y Harajuku hasta Shibuya",
+    "subtitle": "✓ Taller de ramen 09:00–13:00, y después caminata continua a Shibuya",
+    "intro": "La mañana está reservada para el taller de ramen que reservaron — Baba Ramen Cooking School en Minami-Aoyama, 09:00–13:00, 4 horas con las manos en la masa, y el ramen que hagan se lo comen ustedes (es el almuerzo). La escuela está pegada a Omotesando, así que la tarde fluye directo a la caminata: Omotesando → Harajuku → Meiji Jingu → Cat Street → Shibuya. ⚠️ Por el taller, Meiji Jingu pasa a la tarde — el 21.9 es feriado (Silver Week) y al mediodía hay gente, pero el bosque enorme absorbe la multitud; déjense llevar.",
     "meta": {
-     "duration": "~5–6 horas con paradas",
-     "distance": "~2,5–3 km a pie (continuo), +0,5–1 con desvíos",
-     "start": "Estación JR Harajuku (edificio 2020), salida oeste → gran torii",
-     "getThere": "Desde Kabukicho: JR Yamanote 2 estaciones hasta Harajuku (~5 min)",
-     "end": "Miyashita Park / Shibuya — compras, terraza y cena temprana",
-     "cost": "El santuario Meiji Jingu es gratis; el jardín interior (Gyoen) ¥500 por persona; el Museo Nezu es opcional ~¥1.400 (colección) / ~¥1.600 (muestra especial); todo es a pie, así que solo pagás ~¥170 del Yamanote desde Kabukicho con la Suica — no hace falta taxi.",
-     "luggage": "Día normal de paseo en Tokio: la valija grande ya sale hoy por takkyubin al Candeo de Kioto, así que salís con una mochila chica + la Suica y caminás liviano.",
-     "meal": "Un crepe en Takeshita-dori (por ejemplo Marion Crepes) ~¥600-800 por persona para picar algo clásico; y si querés comer en serio, una hamburguesa o pasta en la terraza de Miyashita Park al final del recorrido, ~¥1.500-2.000 por persona."
+     "duration": "~9 horas (taller 4h + caminata)",
+     "distance": "~2,5–3 km a pie a la tarde (continuo)",
+     "start": "✓ Baba Ramen Cooking School · Minami-Aoyama 3-2-7 (junto a la estación Omotesando)",
+     "getThere": "Desde el hotel en Kabukicho: JR Yamanote hasta Harajuku + ~12 min a pie, o metro hasta Omotesando (salidas A4/A5, ~5 min). Lleguen ~08:45 al taller de las 09:00.",
+     "end": "Miyashita Park / Shibuya — compras y cena, y después Ni-chome",
+     "cost": "✓ Taller de ramen ¥46.000 la pareja (pagado · reserva 14166 · el ramen = almuerzo) · Meiji Jingu gratis · Gyoen ¥500 · Nezu opcional ~¥1.400 · transporte IC ~¥170",
+     "luggage": "Última mañana en Tokio — antes del taller (~08:00) dejen la valija grande en recepción del AMANEK para el envío takkyubin al Candeo de Kioto (llega antes del check-in del 25.9). Todo el día con una mochila chica.",
+     "meal": "El ramen que hagan en el taller es el almuerzo (~13:00, incluido en los ¥46.000). Un crepe liviano en Takeshita si les provoca (~¥600), y cena en Shibuya (~¥2.500–4.000 por persona)."
     },
     "stops": [
-     { "time": "09:30", "name": "Meiji Jingu (明治神宮) — el bosque sagrado", "walk": "1–2 min de la estación", "see": "El gran torii (ciprés de ~1.500 años); un bosque de ~100.000 árboles donados y plantados a mano desde 1920; la pared de barriles de sake frente a los de vino francés; Temizuya, el salón principal, y las tablillas ema. Gratis.", "why": "Un bosque sagrado del siglo XX diseñado para parecer antiguo — santuario al emperador Meiji (que llevó a Japón a la era moderna) y a la emperatriz Shoken. El santuario más visitado de Japón en Año Nuevo.", "tip": "Llegá antes de las 10:00 — el sendero está tranquilo y fotogénico antes de la multitud del feriado. Temizuya: izquierda, derecha, boca, mango. En el santuario: reverencia-reverencia, palmada-palmada, reverencia.", "map": "35.6764,139.6993" },
-     { "time": "10:45", "name": "(opción) Gyoen — el jardín interior", "walk": "Dentro del bosque", "see": "Jardín de paseo tranquilo: el pozo de Kiyomasa (punto de poder), una casa de té, un estanque y un jardín de lirios. ¥500.", "why": "Un rincón personal e íntimo que el emperador trazó para la emperatriz — frente al gran santuario público.", "tip": "⚠️ Septiembre no es temporada de lirios (junio) — es simplemente un jardín verde y tranquilo. Vale ¥500 solo si querés calma y fotos.", "map": "35.6785,139.6995" },
-     { "time": "11:00", "name": "Takeshita-dori (竹下通り) — la calle kawaii", "walk": "Frente a la estación JR Harajuku", "see": "~400 m de moda kawaii/Lolita, thrift, Daiso, puri-kura; crepes en Marion (la primera creperie de Japón, 1976) y Angel's Heart; algodón de azúcar arcoíris en Totti Candy Factory.", "why": "Cuna de la cultura kawaii y Lolita de Tokio — de los bailarines callejeros de los 70 a las olas Gothic-Lolita y decora que hicieron de 'Harajuku' una palabra mundial.", "tip": "Entrá por el lado JR (no por Omotesando) y caminá al sur. Hacelo antes de ~11:30 — en feriado se llena hombro con hombro al mediodía.", "map": "35.6716,139.7050" },
-     { "time": "12:00", "name": "Omotesando (表参道) — la avenida de diseño", "walk": "5 min al final de Takeshita", "see": "Avenida de zelkovas — los 'Campos Elíseos de Tokio'. Arquitectura insignia: Omotesando Hills (Tadao Ando), Dior (SANAA), Tod's (Toyo Ito), y cerca en Aoyama Prada y Miu Miu (Herzog & de Meuron). La nueva Grid Tower (enero 2026).", "why": "Una de las concentraciones más densas del mundo de tiendas insignia diseñadas por laureados del Pritzker, sobre una sola avenida.", "tip": "Cruzá ~5 min al sur, a Aoyama, para ver la torre de vidrio de Prada, y después volvé. Excelentes cafés y diseño en las callecitas.", "map": "35.6668,139.7107" },
-     { "time": "13:00", "name": "(opción) Museo Nezu (根津美術館)", "walk": "8 min del final de Omotesando", "see": "Arte japonés y de Asia oriental en un edificio de Kengo Kuma + un jardín tradicional sereno y café. ~¥1.300–1.400.", "why": "Hogar del biombo 'Lirios' de Ogata Korin (tesoro nacional, exhibido por temporada) y un jardín que se siente a un millón de kilómetros de la ciudad.", "tip": "Abierto el 21.9 (regla del lunes feriado; cierra en cambio el martes). Un punto de calma cultural si preferís eso a las compras.", "map": "35.6626,139.7169" },
-     { "time": "13:30", "name": "Cat Street / Ura-Harajuku (キャットストリート)", "walk": "Cruzando Meiji-dori", "see": "Callejón sinuoso sobre el viejo río Shibuya (entubado) — streetwear, zapatillas, vintage, cafés indie y diseño.", "why": "Cuna del streetwear japonés (la escena Ura-Hara / BAPE de los 90). El atajo local a pie de Harajuku a Shibuya (~10–15 min), tranquilo y fresco frente a las calles principales.", "tip": "Entrá desde Omotesando y caminá al sur — te lleva a Shibuya/Miyashita Park. La luz de la tarde es la mejor para fotos.", "map": "35.6660,139.7040" },
-     { "time": "15:00", "name": "Shibuya — Miyashita Park y alrededores", "walk": "Al final de Cat Street", "see": "RAYARD Miyashita Park — parque en la terraza (césped, skate, escalada), ~90 tiendas (LV men's, Gucci, Balenciaga), y en planta baja Shibuya Yokocho. Tiendas 11:00–21:00.", "why": "Símbolo de la renovación de Shibuya — parque sobre compras sobre vida nocturna. La ventana 15:00–18:00 es perfecta para aflojar: vista desde la terraza, compras y cena temprana.", "tip": "Cerrá acá para comer y comprar mientras la multitud y el neón suben. El cruce Scramble está ~5–8 min al sur si lo querés al atardecer.", "map": "35.6626,139.7017" }
+     { "time": "09:00", "name": "✓ Taller de ramen — Baba Ramen Cooking School (馬場)", "walk": "Minami-Aoyama 3-2-7 · ~5 min de la estación Omotesando", "see": "Taller de ramen a mano de 4 horas con chefs — fideos, caldo y toppings, y se comen el bowl que hicieron. ¥46.000 la pareja (2), reserva 14166. También es el almuerzo.", "why": "No solo comer ramen — entenderlo: el kaeshi, el tare, la capa de grasa. Una experiencia anime-culinaria perfecta para la pareja.", "tip": "Vengan con hambre y a tiempo (~08:45). Dan delantales. Al terminar ya están en Omotesando — la caminata arranca desde acá.", "map": "35.6668,139.7150" },
+     { "time": "13:15", "name": "Omotesando (表参道) — la avenida de diseño", "walk": "Pegado a la escuela", "see": "Avenida de zelkovas — los 'Campos Elíseos de Tokio'. Arquitectura insignia: Omotesando Hills (Tadao Ando), Dior (SANAA), Tod's (Toyo Ito), y en Aoyama Prada y Miu Miu (Herzog & de Meuron). La nueva Grid Tower (2026).", "why": "Una de las concentraciones más densas del mundo de tiendas insignia de laureados del Pritzker, sobre una sola avenida — y salen a ella directo del taller.", "tip": "La escuela está en Minami-Aoyama, así que Prada/Miu Miu quedan pegados — empiecen por ahí y suban la avenida al norte.", "map": "35.6668,139.7107" },
+     { "time": "13:35", "name": "(opción) Museo Nezu (根津美術館)", "walk": "5 min de la escuela/Omotesando", "see": "Arte japonés y de Asia oriental en un edificio de Kengo Kuma + un jardín tradicional sereno y café. ~¥1.300–1.400.", "why": "Hogar del biombo 'Lirios' de Ogata Korin (tesoro nacional, exhibido por temporada) y un jardín que se siente a un millón de kilómetros — una pausa tranquila después del taller.", "tip": "Abierto el 21.9 (regla del lunes feriado; cierra en cambio el martes). Saltealo si preferís más tiempo en Harajuku.", "map": "35.6626,139.7169" },
+     { "time": "14:05", "name": "Takeshita-dori (竹下通り) — la calle kawaii", "walk": "~12 min al norte subiendo Omotesando", "see": "~400 m de moda kawaii/Lolita, thrift, Daiso, puri-kura; crepes en Marion (la primera creperie de Japón, 1976) y Angel's Heart; algodón de azúcar arcoíris en Totti Candy Factory.", "why": "Cuna de la cultura kawaii y Lolita de Tokio — de los bailarines callejeros de los 70 a las olas Gothic-Lolita y decora que hicieron de 'Harajuku' una palabra mundial.", "tip": "Entrá por el lado JR Harajuku. En feriado hay gente — pero solo la cruzan rumbo al santuario. Un crepe liviano en el camino.", "map": "35.6716,139.7050" },
+     { "time": "14:30", "name": "Meiji Jingu (明治神宮) — el bosque sagrado", "walk": "5 min de Takeshita al torii", "see": "El gran torii (ciprés de ~1.500 años); un bosque de ~100.000 árboles donados desde 1920; la pared de barriles de sake frente a los de vino francés; Temizuya, el salón principal, y las tablillas ema. Gratis. Jardín interior (Gyoen) ¥500 opcional.", "why": "Un bosque sagrado del siglo XX diseñado para parecer antiguo — santuario al emperador Meiji (que llevó a Japón a la era moderna) y a la emperatriz Shoken. El más visitado de Japón en Año Nuevo.", "tip": "A la tarde en feriado hay más gente, pero las 70 hectáreas de bosque la absorben. Temizuya: izquierda, derecha, boca, mango. En el santuario: reverencia-reverencia, palmada-palmada, reverencia.", "map": "35.6764,139.6993" },
+     { "time": "15:45", "name": "Cat Street / Ura-Harajuku (キャットストリート)", "walk": "De Harajuku al sur, cruzando Meiji-dori", "see": "Callejón sinuoso sobre el viejo río Shibuya (entubado) — streetwear, zapatillas, vintage, cafés indie y diseño.", "why": "Cuna del streetwear japonés (la escena Ura-Hara / BAPE de los 90). El atajo local a pie de Harajuku a Shibuya (~10–15 min), tranquilo y fresco frente a las calles principales.", "tip": "Te lleva directo a Shibuya/Miyashita Park. La luz de la tarde es la mejor para fotos.", "map": "35.6660,139.7040" },
+     { "time": "16:30", "name": "Shibuya — Miyashita Park y alrededores", "walk": "Al final de Cat Street", "see": "RAYARD Miyashita Park — parque en la terraza (césped, skate, escalada), ~90 tiendas (LV men's, Gucci, Balenciaga), y en planta baja Shibuya Yokocho. Tiendas 11:00–21:00.", "why": "Símbolo de la renovación de Shibuya — parque sobre compras sobre vida nocturna. La ventana de la tarde es perfecta para aflojar: vista desde la terraza, compras y cena temprana antes de Ni-chome.", "tip": "Cerrá acá para comer y comprar mientras la multitud y el neón suben. El cruce Scramble está ~5–8 min al sur si lo querés al atardecer.", "map": "35.6626,139.7017" }
     ],
     "special": [
+     "🍜 El taller de ramen (✓ reservado, ¥46.000, reserva 14166) es el ancla del día — 09:00–13:00, y el ramen que hagan es el almuerzo.",
      "🍶 La pared de barriles de sake frente a los de vino francés en Meiji Jingu — símbolo de la apertura de Japón a Occidente en tiempos del emperador Meiji.",
      "🐈 Cat Street — el atajo local a pie entre Harajuku y Shibuya, tranquilo y fresco, cuna del streetwear japonés.",
-     "🏛️ Tour de arquitectura en Omotesando: Ando, SANAA, Toyo Ito y Herzog & de Meuron (Prada/Miu Miu en Aoyama, un desvío de 5 min).",
-     "🎌 21.9 = Día del Respeto a los Mayores, dentro del raro Silver Week — mucho público local al mediodía. Adelanten santuario y Takeshita antes de las 11:30.",
-     "🍓 Crepe clásico en Marion (la primera creperie de Japón, 1976) y algodón de azúcar arcoíris en Totti Candy Factory."
+     "🏛️ Tour de arquitectura en Omotesando: Ando, SANAA, Toyo Ito y Herzog & de Meuron (Prada/Miu Miu en Aoyama — justo al lado de la escuela).",
+     "🎌 21.9 = Día del Respeto a los Mayores, dentro del Silver Week — Meiji Jingu ahora a la tarde (con gente, pero el bosque la absorbe); déjense llevar."
     ]
    },
    {
