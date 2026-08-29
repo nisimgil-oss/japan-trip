@@ -653,3 +653,22 @@ details.route[open]>summary::after{content:"−"}
 .rspecial-h{font-family:var(--serif);font-weight:700;color:var(--gold-soft);font-size:15px;margin-bottom:6px}
 .rspecial ul{margin:0;padding-inline-start:18px;display:flex;flex-direction:column;gap:7px}
 .rspecial li{font-size:13.5px;line-height:1.6;color:var(--cream-dim)}
+
+/* ===== Trip costs page (💴 Costs tab) ===== */
+.costs-note{color:var(--cream-dim);font-size:13.5px;max-width:720px;margin:2px 0 16px;line-height:1.6}
+.cost-group{margin-bottom:12px;padding:0}
+.cost-gh{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 16px;
+  border-bottom:1px solid var(--paper-edge);font-family:var(--serif);font-weight:700;font-size:16px;color:var(--ink)}
+.cost-gh .cost-sub{color:var(--red-deep);font-size:15px;white-space:nowrap}
+.cost-row{display:flex;align-items:center;gap:9px;padding:8px 16px;border-bottom:1px solid #efe7d6;font-size:14px}
+.cost-row:last-child{border-bottom:none}
+.cost-st{flex:0 0 auto;font-size:13px}
+.cost-l{flex:1;min-width:0;color:var(--ink);line-height:1.45}
+.cost-y{flex:0 0 auto;font-family:var(--serif);font-weight:700;color:var(--ink);white-space:nowrap}
+.cost-total{background:linear-gradient(180deg,var(--night-2),var(--kon));color:var(--cream);
+  border:1px solid var(--gold);text-align:center;padding:18px 20px;margin-top:16px}
+.cost-total-h{font-family:var(--serif);color:var(--gold-soft);font-size:15px;letter-spacing:1px}
+.cost-total-y{font-family:var(--serif);font-weight:700;font-size:clamp(26px,6vw,40px);color:#fff;margin:6px 0 2px}
+.cost-total-conv{font-size:clamp(15px,3.5vw,20px);color:var(--sakura-soft);font-weight:700}
+.cost-total-pp{margin-top:10px;font-size:13.5px;color:var(--cream-dim)}
+.cost-total-fx{margin-top:8px;font-size:12px;color:var(--cream-faint)}

@@ -64,6 +64,7 @@
       hSelected: '✓ נבחר', hChoose: 'בחרו מלון זה', hPerNight: 'ללילה', hPerCouple: 'לזוג · חצי פנסיון', hBook: 'להזמנה ↗', hNights: (n) => n === 1 ? 'לילה אחד' : n + ' לילות', hStayHotel: 'המלון שנבחר', hPickHint: 'בחרו מלון בטאב ״מלונות״',
       mapsDay: '🗺️ מסלול היום במפות', mapsOpen: 'פתח במפות ↗',
       'tab.routes': 'מסלולים', routesTitle: '🚶 מסלולי הליכה מפורטים', routesIntro: 'מסלול הליכה לכל אזור — לאן להתחיל, איפה ללכת, מה לראות ולמה זה מיוחד, עם תזמונים. לחצו על יום כדי לפתוח את המסלול שלו.', routeStartLabel: 'התחלה', routeGetThereLabel: 'איך מגיעים', routeEndLabel: 'סיום', routeStopsLabel: 'התחנות', routeSpecialLabel: '✨ דברים מיוחדים ומעניינים', routeTipLabel: 'טיפ', routeOpenMaps: '🗺️ כל המסלול במפות (הליכה)', routeStopMap: 'פתח נקודה במפות', dayRouteLink: '🚶 מסלול הליכה מפורט', routesEmpty: 'עדיין אין מסלול מפורט ליום הזה — בקרוב.', routeCostLabel: '💴 עלויות', routeLuggageLabel: '🧳 מזוודות', routeMealLabel: '🍽️ אוכל מומלץ',
+      'tab.costs': 'עלויות', costsTitle: '💴 עלויות הטיול', costsGrandTotal: 'סה״כ מוערך (זוג)', costsPerPerson: 'לאדם', costsPaid: 'שולם / נסגר', costsEst: 'הערכה', costEst: 'הערכה — עוד לא נסגר', costPaid: 'שולם / נסגר',
       'tab.experiences': 'חוויות', 'experiences.title': '✨ עוד חוויות מיוחדות',
       'tab.map': 'מפה', 'map.title': '🗺️ מפת כל הימים', 'map.hint': 'כל יום במסלול צבע משלו — לחצו על יום במקרא כדי להציג/להסתיר אותו. לחצו על נקודה לפרטים.', mapAll: 'הצג הכל', mapNone: 'נקה',
       'tab.tickets': 'הכרטיסים שלי', ticketsTitle: '🎫 הכרטיסים שלי', ticketsHint: 'הרכבות והכרטיסים שכבר נסגרו — עם מושב, מס\' הזמנה והנחיית רציף. הדביקו קישור לכרטיס (Google Drive וכו\') — נשמר במכשיר שלכם בלבד, לא נדחף לקוד.',
@@ -115,6 +116,7 @@
       hSelected: '✓ Elegido', hChoose: 'Elegir este hotel', hPerNight: 'por noche', hPerCouple: 'por pareja · media pensión', hBook: 'Reservar ↗', hNights: (n) => n === 1 ? '1 noche' : n + ' noches', hStayHotel: 'Hotel elegido', hPickHint: 'Elegí un hotel en la pestaña "Hoteles"',
       mapsDay: '🗺️ Recorrido del día en Maps', mapsOpen: 'Abrir en Maps ↗',
       'tab.routes': 'Recorridos', routesTitle: '🚶 Recorridos a pie detallados', routesIntro: 'Un recorrido a pie por cada zona — dónde empezar, por dónde ir, qué ver y por qué es especial, con horarios. Tocá un día para abrir su recorrido.', routeStartLabel: 'Inicio', routeGetThereLabel: 'Cómo llegar', routeEndLabel: 'Fin', routeStopsLabel: 'Las paradas', routeSpecialLabel: '✨ Cosas especiales e interesantes', routeTipLabel: 'Tip', routeOpenMaps: '🗺️ Todo el recorrido en Maps (a pie)', routeStopMap: 'Abrir punto en Maps', dayRouteLink: '🚶 Recorrido a pie detallado', routesEmpty: 'Todavía no hay recorrido detallado para este día — pronto.', routeCostLabel: '💴 Costos', routeLuggageLabel: '🧳 Equipaje', routeMealLabel: '🍽️ Comida recomendada',
+      'tab.costs': 'Costos', costsTitle: '💴 Costos del viaje', costsGrandTotal: 'Total estimado (pareja)', costsPerPerson: 'Por persona', costsPaid: 'Pagado / reservado', costsEst: 'Estimado', costEst: 'Estimado — todavía sin reservar', costPaid: 'Pagado / reservado',
       'tab.experiences': 'Experiencias', 'experiences.title': '✨ Más experiencias especiales',
       'tab.map': 'Mapa', 'map.title': '🗺️ Mapa de todos los días', 'map.hint': 'Cada día tiene su propio color — tocá un día en la leyenda para mostrarlo/ocultarlo. Tocá un punto para ver detalles.', mapAll: 'Mostrar todo', mapNone: 'Limpiar',
       'tab.tickets': 'Mis boletos', ticketsTitle: '🎫 Mis boletos', ticketsHint: 'Los trenes y boletos ya reservados — con asiento, N.º de reserva e indicación de andén. Pegá el enlace al boleto (Google Drive, etc.) — se guarda solo en tu dispositivo, no en el código.',
@@ -334,10 +336,13 @@
         `</div></div>`;
     }).join('');
     const special = (r.special && r.special.length) ? `<div class="rspecial"><div class="rspecial-h">${escapeHtml(t('routeSpecialLabel'))}</div><ul>${r.special.map(x => `<li dir="auto">${escapeHtml(x)}</li>`).join('')}</ul></div>` : '';
+    const firstMap = stopMapUrl(((r.stops || [])[0] || {}).map);
+    const lastMap = stopMapUrl(((r.stops || [])[(r.stops || []).length - 1] || {}).map);
+    const mapPin = (u) => u ? ` <a class="rstop-map" href="${u}" target="_blank" rel="noopener" title="${escapeAttr(t('routeStopMap'))}">🗺️</a>` : '';
     const metaRows = [
-      meta.start ? `<div class="rmeta-row"><span class="rmeta-k">${escapeHtml(t('routeStartLabel'))}</span><span dir="auto">${escapeHtml(meta.start)}</span></div>` : '',
+      meta.start ? `<div class="rmeta-row"><span class="rmeta-k">${escapeHtml(t('routeStartLabel'))}</span><span dir="auto">${escapeHtml(meta.start)}${mapPin(firstMap)}</span></div>` : '',
       meta.getThere ? `<div class="rmeta-row"><span class="rmeta-k">${escapeHtml(t('routeGetThereLabel'))}</span><span dir="auto">${escapeHtml(meta.getThere)}</span></div>` : '',
-      meta.end ? `<div class="rmeta-row"><span class="rmeta-k">${escapeHtml(t('routeEndLabel'))}</span><span dir="auto">${escapeHtml(meta.end)}</span></div>` : '',
+      meta.end ? `<div class="rmeta-row"><span class="rmeta-k">${escapeHtml(t('routeEndLabel'))}</span><span dir="auto">${escapeHtml(meta.end)}${mapPin(lastMap)}</span></div>` : '',
       meta.cost ? `<div class="rmeta-row"><span class="rmeta-k">${escapeHtml(t('routeCostLabel'))}</span><span dir="auto">${escapeHtml(meta.cost)}</span></div>` : '',
       meta.luggage ? `<div class="rmeta-row"><span class="rmeta-k">${escapeHtml(t('routeLuggageLabel'))}</span><span dir="auto">${escapeHtml(meta.luggage)}</span></div>` : '',
       meta.meal ? `<div class="rmeta-row"><span class="rmeta-k">${escapeHtml(t('routeMealLabel'))}</span><span dir="auto">${escapeHtml(meta.meal)}</span></div>` : ''
@@ -380,6 +385,41 @@
       el.open = true;
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, 60);
+  }
+
+  // ---------- trip costs ----------
+  const costsData = () => (window.TRIP_DATA && window.TRIP_DATA.costs) || null;
+  function renderCosts() {
+    const box = $('#costsBody'); if (!box) return;
+    const c = costsData();
+    if (!c) { box.innerHTML = `<div class="panel">${t('loading')}</div>`; return; }
+    const R = c.rates;
+    const yn = (n) => '¥' + Math.round(n).toLocaleString('en-US');
+    const usd = (n) => '$' + Math.round(n / R.jpyPerUsd).toLocaleString('en-US');
+    const ils = (n) => '₪' + Math.round(n / R.jpyPerIls).toLocaleString('en-US');
+    const rng = (lo, hi, f) => lo === hi ? f(lo) : f(lo) + '–' + f(hi);
+    const badge = (s) => s === 'est' ? '🔓' : '✅';
+    let gLow = 0, gHigh = 0;
+    let html = `<h2 class="section-h">${escapeHtml(t('costsTitle'))}</h2>` +
+      `<div class="costs-note" dir="auto">${escapeHtml((c.note[lang] || c.note.he))}</div>`;
+    (c.groups || []).forEach(g => {
+      let sLow = 0, sHigh = 0;
+      const rows = (g.items || []).map(it => {
+        sLow += it.low; sHigh += it.high;
+        return `<div class="cost-row"><span class="cost-st" title="${it.st === 'est' ? escapeAttr(t('costEst')) : escapeAttr(t('costPaid'))}">${badge(it.st)}</span>` +
+          `<span class="cost-l" dir="auto">${escapeHtml(it.l[lang] || it.l.he)}</span>` +
+          `<span class="cost-y" dir="auto">${rng(it.low, it.high, yn)}</span></div>`;
+      }).join('');
+      gLow += sLow; gHigh += sHigh;
+      html += `<div class="panel cost-group"><div class="cost-gh"><span>${g.icon} ${escapeHtml(g.title[lang] || g.title.he)}</span>` +
+        `<span class="cost-sub" dir="auto">${rng(sLow, sHigh, yn)}</span></div>${rows}</div>`;
+    });
+    html += `<div class="panel cost-total"><div class="cost-total-h">${escapeHtml(t('costsGrandTotal'))}</div>` +
+      `<div class="cost-total-y" dir="auto">${rng(gLow, gHigh, yn)}</div>` +
+      `<div class="cost-total-conv" dir="auto">${rng(gLow, gHigh, usd)} &nbsp;·&nbsp; ${rng(gLow, gHigh, ils)}</div>` +
+      `<div class="cost-total-pp" dir="auto">${escapeHtml(t('costsPerPerson'))}: ${rng(gLow / 2, gHigh / 2, yn)} · ${rng(gLow / 2, gHigh / 2, usd)} · ${rng(gLow / 2, gHigh / 2, ils)}</div>` +
+      `<div class="cost-total-fx" dir="auto">${escapeHtml(R.asOf[lang] || R.asOf.he)}</div></div>`;
+    box.innerHTML = html;
   }
 
   // ---------- CRUD ----------
@@ -1215,12 +1255,13 @@
   }
 
   // ---------- views ----------
-  const VIEWS = ['itinerary', 'routes', 'overview', 'map', 'booked', 'tickets', 'luggage', 'guide', 'places', 'food', 'restaurants', 'experiences', 'prep'];
+  const VIEWS = ['itinerary', 'routes', 'overview', 'costs', 'map', 'booked', 'tickets', 'luggage', 'guide', 'places', 'food', 'restaurants', 'experiences', 'prep'];
   function showView(v) {
     if (!VIEWS.includes(v)) v = 'itinerary';
     VIEWS.forEach(x => $('#view-' + x).classList.toggle('hidden', x !== v));
     $$('.tab').forEach(tb => tb.classList.toggle('active', tb.dataset.view === v));
     if (v === 'routes') renderRoutes();
+    if (v === 'costs') renderCosts();
     if (v === 'map') renderMap();
     if (v === 'booked') renderBooked();
     if (v === 'tickets') renderTickets();

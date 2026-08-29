@@ -9,9 +9,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@500;700&family=Shippori+Mincho:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="styles.css?v=20260829c">
-<link rel="manifest" href="manifest.json?v=20260829c">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=20260829c">
+<link rel="stylesheet" href="styles.css?v=20260829d">
+<link rel="manifest" href="manifest.json?v=20260829d">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=20260829d">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -45,6 +45,7 @@
   <button class="tab active" data-view="itinerary"><span>🗓️</span> <span data-i18n="tab.itinerary">היומן</span></button>
   <button class="tab" data-view="routes"><span>🚶</span> <span data-i18n="tab.routes">מסלולים</span></button>
   <button class="tab" data-view="overview"><span>🗾</span> <span data-i18n="tab.overview">מבט־על</span></button>
+  <button class="tab" data-view="costs"><span>💴</span> <span data-i18n="tab.costs">עלויות</span></button>
   <button class="tab" data-view="map"><span>🗺️</span> <span data-i18n="tab.map">מפה</span></button>
   <button class="tab" data-view="booked"><span>🔖</span> <span data-i18n="tab.booked">לסגור</span></button>
   <button class="tab" data-view="tickets"><span>🎫</span> <span data-i18n="tab.tickets">הכרטיסים שלי</span></button>
@@ -93,6 +94,11 @@
     <h2 class="section-h" data-i18n="overview.title">🗾 כל הטיול במבט אחד</h2>
     <div id="agenda"></div>
     <div id="budgetPanel"></div>
+  </section>
+
+  <!-- COSTS — trip cost sheet (¥ / USD / ILS) -->
+  <section id="view-costs" class="hidden">
+    <div id="costsBody"></div>
   </section>
 
   <!-- MAP — all days on one map -->
@@ -193,8 +199,8 @@
 <div class="toast" id="toast"></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="data.js?v=20260829c"></script>
-<script src="places.js?v=20260829c"></script>
-<script src="app.js?v=20260829c"></script>
+<script src="data.js?v=20260829d"></script>
+<script src="places.js?v=20260829d"></script>
+<script src="app.js?v=20260829d"></script>
 </body>
 </html>

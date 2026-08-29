@@ -708,6 +708,76 @@ window.TRIP_DATA = {
    "es": "Total estimado para la pareja por 14 noches, con los vuelos ya pagos. El rango depende sobre todo de restaurantes, experiencias y el ryokan — se puede bajar con más comida callejera y menos lujos."
   }
  },
+ "costs": {
+  "rates": { "jpyPerUsd": 159, "jpyPerIls": 53.5, "asOf": { "he": "שערים ~אוגוסט 2026 · ¥159≈$1 · ¥1,000≈₪18.7 (משתנים)", "es": "cambio ~agosto 2026 · ¥159≈US$1 · ¥1.000≈₪18,7 (fluctúa)" } },
+  "note": { "he": "כל העלויות לזוג (2 מבוגרים), ביֶן. ✅ שולם/נסגר · 🔓 הערכה. הטווח תלוי בעיקר במסעדות, חוויות והריוקאן.", "es": "Todos los costos para la pareja (2 adultos), en yenes. ✅ pagado/reservado · 🔓 estimado. El rango depende sobre todo de restaurantes, experiencias y el ryokan." },
+  "groups": [
+   {
+    "icon": "✈️", "title": { "he": "טיסות בינלאומיות", "es": "Vuelos internacionales" },
+    "items": [
+     { "l": { "he": "LOT הלוך-חזור · 2 מבוגרים (שולם)", "es": "LOT ida y vuelta · 2 adultos (pagado)" }, "low": 681300, "high": 681300, "st": "paid" }
+    ]
+   },
+   {
+    "icon": "🏨", "title": { "he": "מלונות (13 לילות)", "es": "Hoteles (13 noches)" },
+    "items": [
+     { "l": { "he": "AMANEK טוקיו · 18→22 (4 ל')", "es": "AMANEK Tokio · 18→22 (4 n.)" }, "low": 153115, "high": 153115, "st": "booked" },
+     { "l": { "he": "Yaeikan האקונה · 22→23 (קייסקי+אונסן)", "es": "Yaeikan Hakone · 22→23 (kaiseki+onsen)" }, "low": 90000, "high": 150000, "st": "est" },
+     { "l": { "he": "Yanagiya מגומה 🎂 · 23→24", "es": "Yanagiya Magome 🎂 · 23→24" }, "low": 53600, "high": 53600, "st": "booked" },
+     { "l": { "he": "AKARI נאגיסו · 24→25", "es": "AKARI Nagiso · 24→25" }, "low": 44000, "high": 44000, "st": "booked" },
+     { "l": { "he": "Candeo קיוטו · 25→28 (3 ל')", "es": "Candeo Kioto · 25→28 (3 n.)" }, "low": 74593, "high": 74593, "st": "booked" },
+     { "l": { "he": "Onyado Nono אוסקה · 28→30", "es": "Onyado Nono Osaka · 28→30" }, "low": 51699, "high": 51699, "st": "booked" },
+     { "l": { "he": "Tokyu Stay טוקיו · 30→2.10", "es": "Tokyu Stay Tokio · 30→2.10" }, "low": 77648, "high": 77648, "st": "booked" }
+    ]
+   },
+   {
+    "icon": "🚄", "title": { "he": "רכבות ופאסים", "es": "Trenes y pases" },
+    "items": [
+     { "l": { "he": "N'EX נריטה→שינג'וקו (18.9)", "es": "N'EX Narita→Shinjuku (18.9)" }, "low": 6660, "high": 6660, "st": "booked" },
+     { "l": { "he": "Romancecar שינג'וקו→האקונה (22.9)", "es": "Romancecar Shinjuku→Hakone (22.9)" }, "low": 2300, "high": 2300, "st": "booked" },
+     { "l": { "he": "HIKARI 637 אודוארה→נגויה (23.9)", "es": "HIKARI 637 Odawara→Nagoya (23.9)" }, "low": 18600, "high": 18600, "st": "booked" },
+     { "l": { "he": "SHINANO 11 נגויה→נקאטסוגאווה (23.9)", "es": "SHINANO 11 Nagoya→Nakatsugawa (23.9)" }, "low": 12585, "high": 12585, "st": "booked" },
+     { "l": { "he": "SHINANO 2 + Nozomi נאגיסו→קיוטו (25.9)", "es": "SHINANO 2 + Nozomi Nagiso→Kioto (25.9)" }, "low": 19020, "high": 19020, "st": "booked" },
+     { "l": { "he": "Hakone Free Pass · 2 מבוגרים (22.9)", "es": "Hakone Free Pass · 2 adultos (22.9)" }, "low": 14200, "high": 14200, "st": "est" },
+     { "l": { "he": "שינקנסן Shin-Osaka→טוקיו (30.9)", "es": "Shinkansen Shin-Osaka→Tokio (30.9)" }, "low": 29840, "high": 39180, "st": "est" },
+     { "l": { "he": "N'EX שינג'וקו→נריטה (2.10)", "es": "N'EX Shinjuku→Narita (2.10)" }, "low": 6660, "high": 6660, "st": "est" }
+    ]
+   },
+   {
+    "icon": "🎟️", "title": { "he": "חוויות וכרטיסים", "es": "Experiencias y entradas" },
+    "items": [
+     { "l": { "he": "מופע סומו Hirakuza אוסקה (28.9)", "es": "Show de sumo Hirakuza Osaka (28.9)" }, "low": 26400, "high": 26400, "st": "booked" },
+     { "l": { "he": "סיור אוכל שינסקאי (29.9, ארוחת ערב)", "es": "Tour gastronómico Shinsekai (29.9, cena)" }, "low": 26000, "high": 26000, "st": "booked" },
+     { "l": { "he": "teamLab Planets (30.9)", "es": "teamLab Planets (30.9)" }, "low": 7200, "high": 7200, "st": "booked" },
+     { "l": { "he": "סובה Juu-go קיוטו (27.9, שולם מראש)", "es": "Soba Juu-go Kioto (27.9, prepago)" }, "low": 7000, "high": 7000, "st": "paid" },
+     { "l": { "he": "מוזיאון ג'יבלי (1.10)", "es": "Museo Ghibli (1.10)" }, "low": 2000, "high": 2000, "st": "est" },
+     { "l": { "he": "ערב מאיקו/גייקו קיוטו (27.9)", "es": "Velada maiko/geiko Kioto (27.9)" }, "low": 40000, "high": 50000, "st": "est" },
+     { "l": { "he": "טקס תה + קימונו MAIKOYA (27.9)", "es": "Ceremonia de té + kimono MAIKOYA (27.9)" }, "low": 14000, "high": 16800, "st": "est" },
+     { "l": { "he": "סדנת סושי/וואגאשי טוקיו (21.9)", "es": "Taller de sushi/wagashi Tokio (21.9)" }, "low": 16000, "high": 24000, "st": "est" },
+     { "l": { "he": "השכרת קימונו ליום בקיוטו (27.9)", "es": "Alquiler de kimono por un día en Kioto (27.9)" }, "low": 6600, "high": 11000, "st": "est" },
+     { "l": { "he": "Owakudani צהריים + ביצה שחורה (22.9)", "es": "Owakudani almuerzo + huevo negro (22.9)" }, "low": 4000, "high": 5000, "st": "est" },
+     { "l": { "he": "Tenzan Onsen · 2 מבוגרים (22.9)", "es": "Tenzan Onsen · 2 adultos (22.9)" }, "low": 2900, "high": 2900, "st": "est" }
+    ]
+   },
+   {
+    "icon": "🍜", "title": { "he": "אוכל ושתייה (הערכה)", "es": "Comida y bebida (estimado)" },
+    "items": [
+     { "l": { "he": "~¥7,000–9,000 לאדם ליום × 2 × ~13 ימים (מלבד הארוחות המיוחדות שלמעלה)", "es": "~¥7.000–9.000 por persona por día × 2 × ~13 días (aparte de las comidas especiales de arriba)" }, "low": 182000, "high": 252000, "st": "est" }
+    ]
+   },
+   {
+    "icon": "🎉", "title": { "he": "חיי לילה, קניות ושונות", "es": "Vida nocturna, compras y varios" },
+    "items": [
+     { "l": { "he": "חיי לילה (Ni-chome ×2 + Doyama)", "es": "Vida nocturna (Ni-chome ×2 + Doyama)" }, "low": 26000, "high": 50000, "st": "est" },
+     { "l": { "he": "תחבורה מקומית (Suica/ICOCA) · 2", "es": "Transporte local (Suica/ICOCA) · 2" }, "low": 20000, "high": 24000, "st": "est" },
+     { "l": { "he": "משלוח מזוודות (takkyubin)", "es": "Envío de valijas (takkyubin)" }, "low": 4000, "high": 10000, "st": "est" },
+     { "l": { "he": "eSIM / דאטה · 2", "es": "eSIM / datos · 2" }, "low": 4000, "high": 7000, "st": "est" },
+     { "l": { "he": "קניות ומזכרות", "es": "Compras y souvenirs" }, "low": 40000, "high": 120000, "st": "est" },
+     { "l": { "he": "שונות / רזרבה", "es": "Varios / imprevistos" }, "low": 10000, "high": 25000, "st": "est" }
+    ]
+   }
+  ]
+ },
  "he": {
   "days": [
    {
@@ -4001,7 +4071,7 @@ window.TRIP_DATA = {
     "area": "דן דן טאון",
     "emoji": "🎮",
     "title": "דן דן טאון (Nipponbashi) — האקיהברה של אוסקה",
-    "subtitle": "אחה״צ · ~9 תחנות · 15:00–17:00",
+    "subtitle": "אחה״צ · ~9 תחנות · 15:00–16:45 (עזבו לסומו 17:00)",
     "intro": "מכת האוטאקו של מערב יפן — היסטורית רובע חשמל, היום אנימה, מנגה, פיגורות, רטרו-גיים ובתי קפה של משרתות. שני צירים מקבילים: Sakai-suji (החנויות הגדולות) ו-Ota Road (הרצועה האנימית הצפופה). רגוע ופחות תיירי מאקיהברה, ולעתים במחירי יד-שנייה טובים יותר. נכנסים מהצפון, יורדים ב-Sakai-suji, וחוזרים צפונה ב-Ota Road.",
     "meta": {
      "duration": "~1.5–2 שעות",
@@ -4022,7 +4092,7 @@ window.TRIP_DATA = {
      { "time": "16:30", "name": "Mandarake Grand Chaos (まんだらけ)", "walk": "אמצע Sakai-suji", "see": "אמפוריום יד-שנייה גדול — מנגה, פיגורות וינטג׳, צעצועי רטרו, סלים, דוג׳ינשי, על פני קומות.", "why": "מבוך אספנות — צעצועי שוֹווה וינטג׳, מנגה אזלת, פיגורות נדירות. התחנה הכי טובה ל'אוצר שלא ידעתם שרציתם'.", "tip": "קונים ומוכרים; תמחור הוגן-לאספן. קל לאבד כאן 45 דק׳. צילום מוגבל בחלקים.", "map": "34.6635,135.5060" },
      { "time": "16:45", "name": "רטרו-גיים ו-Surugaya", "walk": "רחובות צדדיים", "see": "Retro TV Game Revival (Famicom/Dreamcast) ו-Surugaya (משחקים/מנגה/פיגורות/כרטיסים יד-שנייה) — רוטציית מלאי שונה מ-Super Potato.", "why": "השלישייה הרטרו של Nipponbashi; שווה השוואת מחירים למחסנית שאתם מחפשים.", "tip": "מזומן. בדקו קונסולות ידניות לפני קנייה. ('A-Too' כנראה נסגר — לא אומת ל-2026.)", "map": "34.6605,135.5050" },
      { "time": "16:55", "name": "Yellow Submarine + קירות גאצ׳פון", "walk": "אזור Ota Road", "see": "Yellow Submarine (TCG/משחקי לוח: Magic, Pokémon, Yu-Gi-Oh) ומסדרונות מכונות גאצ׳פון — מאות מכונות.", "why": "הגאצ׳פון הוא מזכרת זולה וכיפית; Yellow Submarine לשחקני קלפים.", "tip": "החזיקו מטבעות ¥100/¥500. גם Lashinban ו-Surugaya בסביבה.", "map": "34.6610,135.5050" },
-     { "time": "17:05", "name": "סיום בבית קפה של משרתות (אופציונלי)", "walk": "Ota Road/Sakai-suji", "see": "בתי קפה תמטיים כמו Maidreamin, Parlante, Cocha — עצירת 30 דק׳ לפני הסומו.", "why": "קאפסטון כיפי לחוויית האוטאקו של אוסקה.", "tip": "צילום משרתות אסור. מזומן.", "map": "34.6615,135.5048" }
+     { "time": "", "name": "סיום בבית קפה של משרתות (אופציונלי)", "walk": "Ota Road/Sakai-suji", "see": "בתי קפה תמטיים כמו Maidreamin, Parlante, Cocha.", "why": "קאפסטון כיפי לחוויית האוטאקו של אוסקה.", "tip": "רק אם נשאר זמן — עזבו עד ~16:40 כדי להגיע לשערי הסומו (17:00). צילום משרתות אסור, מזומן.", "map": "34.6615,135.5048" }
     ],
     "special": [
      "🛣️ Ota Road (אוטארוד) — הרצועה האנימית האמיתית, פחות ברורה מ-Sakai-suji ושווה הליכה איטית.",
@@ -4040,30 +4110,30 @@ window.TRIP_DATA = {
     "area": "דוטונבורי ונמבה",
     "emoji": "🌃",
     "title": "דוטונבורי ונמבה — ניאון ו'קוּאִידָאוֹרֶה'",
-    "subtitle": "ערב · ~11 תחנות · 19:30–22:30",
+    "subtitle": "ערב · ~11 תחנות · 20:15–23:00 (אחרי הסומו)",
     "intro": "בירת אוכל הרחוב של יפן ברוח ה-kuidaore ('לאכול עד שתיפול'): תעלת ניאון, שלטי תלת-ממד ענקיים, ואיש ה-Glico המפורסם. אחרי הסומו — צוללים לתעלה, אוכלים takoyaki ו-kushikatsu, ובורחים לרגע לסמטת Hozenji האבנית הישנה. באוסקה מותר יותר לאכול-תוך-כדי-הליכה מאשר בקיוטו.",
     "meta": {
      "duration": "~3 שעות (אכילה וניאון)",
      "distance": "~1.5–2 ק״מ, שטוח (הרבה הלוך-חזור)",
      "start": "מתחנת Namba — צפונה אל תעלת דוטונבורי",
-     "getThere": "אחרי מופע הסומו: קו/הליכה ל-Namba (~10–15 דק׳)",
+     "getThere": "אחרי הסומו (מסתיים ~20:00): קו/הליכה ל-Namba (~10–15 דק׳)",
      "end": "צילומי ניאון אחרונים; דוטונבורי תוססת הרבה אחרי חצות (Glico דולק עד 24:00)",
      "cost": "כמעט הכל חינם: הגליקו, גשר אביסובאשי, טיילת התעלה, הוזנג'י יוקוצ'ו והמקדש (מטבע לפודו ~¥5–100). תשלום רק על מה שבוחרים: אופנוע הענק אביסו טאואר ¥1,000 (מזומן בלבד), שייט טונבורי ~¥2,000. אין צורך במונית - הכל הליכה מתחנת נאמבה.",
      "luggage": "התיישבתם היום ב-Onyado Nono נאמבה: המזוודה הגדולה נשארת נעולה במלון, יוצאים לסיבוב הלילי רק עם דייפק וכרטיס ICOCA.",
      "meal": "קרב טעימות אמיתי: טאקויאקי מהדוכנים (~¥600), קושיקאטסו ב-Kushikatsu Daruma (~¥1,500) ולסגור עם ראמן ב-Kinryu הדרקון (~¥900). כ-¥3,000–4,000 לאדם על כל הרצף."
     },
     "stops": [
-     { "time": "19:35", "name": "גשר Ebisubashi + איש ה-Glico (戎橋)", "walk": "מ-Namba צפונה בארקייד Ebisubashi-suji", "see": "עמדו על הגשר בפוזת הניצחון של איש ה-Glico, השלט מאחוריכם. חינם.", "why": "חברת Glico (יצרנית Pocky) הציבה את השלט ב-1935; הרץ מסמל 'אנרגיה ובריאות'. הגרסה הנוכחית LED — הצילום הניאוני החתום של אוסקה.", "tip": "הגשר צפוף — לצילום נקי, מצד הארקייד או מטיילת התעלה ממזרח.", "map": "34.6687,135.5013" },
-     { "time": "19:45", "name": "תעלת דוטונבורי (道頓堀)", "walk": "רדו לטיילת הנהר", "see": "מסדרון הניאון של שלטי התלת-ממד הענקיים, השתקפויות על המים ודוכני אוכל צפופים.", "why": "רוח ה-kuidaore של אוסקה בשיא הצפיפות בלילה.", "tip": "הלכו את הרצועה לכיוון אחד ואת טיילת התעלה בחזרה — שני נופים. הכי טוב אחרי חושך מלא.", "map": "34.6685,135.5030" },
-     { "time": "19:55", "name": "הסרטן הענק של Kani Doraku (かに道楽)", "walk": "מערבית ל-Ebisubashi", "see": "סרטן מכני ברוחב ~8 מ׳ עם רגליים ועיניים נעות מעל הכניסה (מ-1960). קייסקי סרטן ~¥3,000–8,000, או רק צילום.", "why": "השלט השני הכי מצולם בדוטונבורי.", "tip": "חכו רגע — הרגליים זזות לצילום דינמי.", "map": "34.6686,135.5020" },
-     { "time": "20:05", "name": "צביר ה-takoyaki — אוכלים כאן", "walk": "על הרצועה", "see": "אוסקה המציאה takoyaki (כדורי תמנון). דוכנים מאומתים: Wanaka, Kukuru, Juhachiban, Acchichi. ~¥500–700 ל-8.", "why": "הלב של אוכל הרחוב האוסקאי, נעשה מולכם.", "tip": "בוערים חמים — המרכז נמס. חכו ~דקה לפני הביס כדי לא להיכוות. אכילה בעמידה בדוכן נורמלית.", "map": "34.6688,135.5015" },
-     { "time": "20:25", "name": "Kinryu Ramen — הדרקון (金龍ラーメン)", "walk": "על הרצועה", "see": "דרקון ירוק-זהב מטפס על הבניין. ראמן טונקוצו-סויה זול ~¥800, פתוח 24 שעות, תוספות חינם.", "why": "השלט מבין ה-3 המובילים בדוטונבורי, ומוסד לילה אוסקאי אמיתי.", "tip": "מזמינים במכונת הכרטיסים בכניסה; בר התוספות החינמי הוא המהלך המקומי.", "map": "34.6686,135.5027" },
-     { "time": "20:40", "name": "Kushikatsu Daruma — המקור (串カツだるま)", "walk": "על הרצועה", "see": "Daruma ייסד את המנה ב-1929. שיפודים מטוגנים (בשר, ירק, ים) ~¥130–300, בטבילה ברוטב משותף.", "why": "המקור של kushikatsu — עם בירה קרה.", "tip": "⚠️ הכלל: אסור לטבול פעמיים ברוטב המשותף! רוצים עוד — אספו עם הכרוב החינמי. (בסניף דוטונבורי לרוב בקבוקי סחיטה אישיים.)", "map": "34.6690,135.5010" },
-     { "time": "21:00", "name": "Don Quijote + גלגל הענק (えびすタワー)", "walk": "בקצה המזרחי של התעלה", "see": "מגה-חנות צהובה על התעלה, עם גלגל ענק אליפטי (הראשון בעולם) בחזית. Donki פתוח עד מאוחר למזכרות.", "why": "צילום מואר בולט מהתעלה.", "tip": "⚠️ אמתו בערב אם הגלגל פועל (היו הפסקות תפעול). ממילא צילום יפה.", "map": "34.6691,135.5033" },
-     { "time": "21:15", "name": "Hozenji Yokocho (法善寺横丁) — סמטת אוסקה הישנה", "walk": "בלוק דרומה מהניאון", "see": "סמטת אבן מרוצפת וטחובה באורך ~80 מ׳, מוארת פנסים, עם 60+ ברים ומסעדות זעירים. מרגישה בת 200 שנה.", "why": "הפנינה הנסתרת — שקטה, קולנועית, ושם מקומיים באמת שותים ואוכלים.", "tip": "בואו כשהפנסים דולקים. אינטימי — היו מתחשבים, הרבה ברים זעירים.", "map": "34.6680,135.5025" },
-     { "time": "21:30", "name": "מקדש Hozenji + Mizukake Fudo (水掛不動)", "walk": "בתוך הסמטה", "see": "מקדש קטן עם פסל Fudo Myoo מכוסה כולו טחב ירוק — משפריצים עליו מים אחרי תפילה ('Mizukake' = מושפרץ במים). 24 שעות, חינם.", "why": "טקס לזוגות — הדמויות נחשבות למביאות מזל בזיווג ובאהבה. מושלם לכם.", "tip": "יצקו מים על הפסל (מצקות מסופקות), אחלו משאלה יחד. רגע שקט של 5 דק׳.", "map": "34.6681,135.5027" },
-     { "time": "21:45", "name": "Sennichimae Doguyasuji (千日前道具屋筋)", "walk": "מעט דרומה", "see": "ארקייד מקורה של חנויות סכיני שף, כלי מטבח ודגמי אוכל פלסטיק היפר-ריאליסטיים (מזכרות מצחיקות).", "why": "רחוב הכלים ההיסטורי — מחזיקי מפתחות סושי, מגנטי takoyaki.", "tip": "⚠️ רוב החנויות סוגרות ~18:00 — בשעה זו יהיה סגור. עברו לאווירת הארקייד; לקניות אמיתיות חזרו ביום.", "map": "34.6660,135.5040" },
-     { "time": "22:00", "name": "שייט Tonbori / Amerikamura (אופציונלי)", "walk": "מזח ליד Don Quijote / מערבה", "see": "שייט Tombori 20 דק׳ מתחת לניאון (¥2,000, אחרון 21:00 — הקדימו), או Amerikamura מערבה לנייטקאפ צעיר וגרפיטי.", "why": "מהמים או משכונת הנוער — סיום שונה לערב.", "tip": "השייט האחרון ב-21:00 — עשו מוקדם או דלגו.", "map": "34.6720,135.4985" }
+     { "time": "20:15", "name": "גשר Ebisubashi + איש ה-Glico (戎橋)", "walk": "מ-Namba צפונה בארקייד Ebisubashi-suji", "see": "עמדו על הגשר בפוזת הניצחון של איש ה-Glico, השלט מאחוריכם. חינם.", "why": "חברת Glico (יצרנית Pocky) הציבה את השלט ב-1935; הרץ מסמל 'אנרגיה ובריאות'. הגרסה הנוכחית LED — הצילום הניאוני החתום של אוסקה.", "tip": "הגשר צפוף — לצילום נקי, מצד הארקייד או מטיילת התעלה ממזרח.", "map": "34.6687,135.5013" },
+     { "time": "20:25", "name": "תעלת דוטונבורי (道頓堀)", "walk": "רדו לטיילת הנהר", "see": "מסדרון הניאון של שלטי התלת-ממד הענקיים, השתקפויות על המים ודוכני אוכל צפופים.", "why": "רוח ה-kuidaore של אוסקה בשיא הצפיפות בלילה.", "tip": "הלכו את הרצועה לכיוון אחד ואת טיילת התעלה בחזרה — שני נופים. הכי טוב אחרי חושך מלא.", "map": "34.6685,135.5030" },
+     { "time": "20:35", "name": "הסרטן הענק של Kani Doraku (かに道楽)", "walk": "מערבית ל-Ebisubashi", "see": "סרטן מכני ברוחב ~8 מ׳ עם רגליים ועיניים נעות מעל הכניסה (מ-1960). קייסקי סרטן ~¥3,000–8,000, או רק צילום.", "why": "השלט השני הכי מצולם בדוטונבורי.", "tip": "חכו רגע — הרגליים זזות לצילום דינמי.", "map": "34.6686,135.5020" },
+     { "time": "20:45", "name": "צביר ה-takoyaki — אוכלים כאן", "walk": "על הרצועה", "see": "אוסקה המציאה takoyaki (כדורי תמנון). דוכנים מאומתים: Wanaka, Kukuru, Juhachiban, Acchichi. ~¥500–700 ל-8.", "why": "הלב של אוכל הרחוב האוסקאי, נעשה מולכם.", "tip": "בוערים חמים — המרכז נמס. חכו ~דקה לפני הביס כדי לא להיכוות. אכילה בעמידה בדוכן נורמלית.", "map": "34.6688,135.5015" },
+     { "time": "21:05", "name": "Kinryu Ramen — הדרקון (金龍ラーメン)", "walk": "על הרצועה", "see": "דרקון ירוק-זהב מטפס על הבניין. ראמן טונקוצו-סויה זול ~¥800, פתוח 24 שעות, תוספות חינם.", "why": "השלט מבין ה-3 המובילים בדוטונבורי, ומוסד לילה אוסקאי אמיתי.", "tip": "מזמינים במכונת הכרטיסים בכניסה; בר התוספות החינמי הוא המהלך המקומי.", "map": "34.6686,135.5027" },
+     { "time": "21:20", "name": "Kushikatsu Daruma — המקור (串カツだるま)", "walk": "על הרצועה", "see": "Daruma ייסד את המנה ב-1929. שיפודים מטוגנים (בשר, ירק, ים) ~¥130–300, בטבילה ברוטב משותף.", "why": "המקור של kushikatsu — עם בירה קרה.", "tip": "⚠️ הכלל: אסור לטבול פעמיים ברוטב המשותף! רוצים עוד — אספו עם הכרוב החינמי. (בסניף דוטונבורי לרוב בקבוקי סחיטה אישיים.)", "map": "34.6690,135.5010" },
+     { "time": "21:40", "name": "Don Quijote + גלגל הענק (えびすタワー)", "walk": "בקצה המזרחי של התעלה", "see": "מגה-חנות צהובה על התעלה, עם גלגל ענק אליפטי (הראשון בעולם) בחזית. Donki פתוח עד מאוחר למזכרות.", "why": "צילום מואר בולט מהתעלה.", "tip": "⚠️ אמתו בערב אם הגלגל פועל (היו הפסקות תפעול). ממילא צילום יפה.", "map": "34.6691,135.5033" },
+     { "time": "21:55", "name": "Hozenji Yokocho (法善寺横丁) — סמטת אוסקה הישנה", "walk": "בלוק דרומה מהניאון", "see": "סמטת אבן מרוצפת וטחובה באורך ~80 מ׳, מוארת פנסים, עם 60+ ברים ומסעדות זעירים. מרגישה בת 200 שנה.", "why": "הפנינה הנסתרת — שקטה, קולנועית, ושם מקומיים באמת שותים ואוכלים.", "tip": "בואו כשהפנסים דולקים. אינטימי — היו מתחשבים, הרבה ברים זעירים.", "map": "34.6680,135.5025" },
+     { "time": "22:10", "name": "מקדש Hozenji + Mizukake Fudo (水掛不動)", "walk": "בתוך הסמטה", "see": "מקדש קטן עם פסל Fudo Myoo מכוסה כולו טחב ירוק — משפריצים עליו מים אחרי תפילה ('Mizukake' = מושפרץ במים). 24 שעות, חינם.", "why": "טקס לזוגות — הדמויות נחשבות למביאות מזל בזיווג ובאהבה. מושלם לכם.", "tip": "יצקו מים על הפסל (מצקות מסופקות), אחלו משאלה יחד. רגע שקט של 5 דק׳.", "map": "34.6681,135.5027" },
+     { "time": "22:25", "name": "Sennichimae Doguyasuji (千日前道具屋筋)", "walk": "מעט דרומה", "see": "ארקייד מקורה של חנויות סכיני שף, כלי מטבח ודגמי אוכל פלסטיק היפר-ריאליסטיים (מזכרות מצחיקות).", "why": "רחוב הכלים ההיסטורי — מחזיקי מפתחות סושי, מגנטי takoyaki.", "tip": "⚠️ רוב החנויות סוגרות ~18:00 — בשעה זו יהיה סגור. עברו לאווירת הארקייד; לקניות אמיתיות חזרו ביום.", "map": "34.6660,135.5040" },
+     { "time": "22:40", "name": "שייט Tonbori / Amerikamura (אופציונלי)", "walk": "מזח ליד Don Quijote / מערבה", "see": "שייט Tombori 20 דק׳ מתחת לניאון (¥2,000, אחרון 21:00 — הקדימו), או Amerikamura מערבה לנייטקאפ צעיר וגרפיטי.", "why": "מהמים או משכונת הנוער — סיום שונה לערב.", "tip": "השייט האחרון ב-21:00 — עשו מוקדם או דלגו.", "map": "34.6720,135.4985" }
     ],
     "special": [
      "🏮 Hozenji Yokocho + Mizukake Fudo — הסמטה האבנית הישנה וטקס השפרצת המים לזוגות, הפינה הרומנטית והנסתרת.",
@@ -4125,7 +4195,7 @@ window.TRIP_DATA = {
      "duration": "לילה",
      "distance": "מרוכז — דקות בין הברים",
      "start": "ליד Umeda/Higashi-Umeda, צפונית ל-Ohatsu Tenjin",
-     "getThere": "משינסקאי (סיור אוכל): ~30–40 דק׳ בקו לאומדה/Higashi-Umeda",
+     "getThere": "מדוטונבורי (סיום סיור האוכל, ~20:30): Midosuji לאומדה ~10 דק׳",
      "end": "סיום ב-Eagle Osaka או G Physique",
      "cost": "כניסה זולה: do with cafe ¥300 דמי מופע דראג (שלישי) + סטים ¥1,000–2,000; רוב הברים הקטנים ¥500–1,000 דמי מקום/משקה ראשון (~¥1,000–1,500 לבר); Eagle Osaka כניסה חינם א׳–ה׳ (cashless); רכבת משינסקאי לאומדה ~¥240 ICOCA. תקציב לילה ריאלי ~¥5,000–8,000 לאדם.",
      "luggage": "התיק הגדול נשאר נעול ב-Onyado Nono Namba כל היום (גם בטיול היום לנארה); לסיבוב הברים יוצאים קלים — רק ארנק, מזומן וכרטיס ICOCA, בלי תיק.",
@@ -7521,7 +7591,7 @@ window.TRIP_DATA = {
     "area": "Den Den Town",
     "emoji": "🎮",
     "title": "Den Den Town (Nipponbashi) — el Akihabara de Osaka",
-    "subtitle": "Tarde · ~9 paradas · 15:00–17:00",
+    "subtitle": "Tarde · ~9 paradas · 15:00–16:45 (salir para el sumo 17:00)",
     "intro": "La meca otaku del oeste de Japón — históricamente barrio eléctrico, hoy anime, manga, figuras, retro-gaming y maid cafes. Dos ejes paralelos: Sakai-suji (las tiendas grandes) y Ota Road (la franja anime más densa). Más tranquilo y menos turístico que Akihabara, y a veces con mejores precios de usado. Se entra por el norte, se baja por Sakai-suji y se vuelve al norte por Ota Road.",
     "meta": {
      "duration": "~1,5–2 horas",
@@ -7542,7 +7612,7 @@ window.TRIP_DATA = {
      { "time": "16:30", "name": "Mandarake Grand Chaos (まんだらけ)", "walk": "Mitad de Sakai-suji", "see": "Gran emporio de usado — manga, figuras vintage, juguetes retro, cels, doujinshi, por pisos.", "why": "Un laberinto de coleccionables — juguetes Showa vintage, manga agotado, figuras raras. La mejor parada para 'el coleccionable que no sabías que querías'.", "tip": "Compran y venden; precios justos-a-coleccionista. Fácil perder 45 min. Fotos restringidas en partes.", "map": "34.6635,135.5060" },
      { "time": "16:45", "name": "Retro-gaming y Surugaya", "walk": "Calles laterales", "see": "Retro TV Game Revival (Famicom/Dreamcast) y Surugaya (juegos/manga/figuras/cartas usados) — rotación de stock distinta a Super Potato.", "why": "El trío retro de Nipponbashi; vale comparar precios para ese cartucho que buscás.", "tip": "Efectivo. Probá las portátiles antes de comprar. ('A-Too' probablemente cerró — no confirmado para 2026.)", "map": "34.6605,135.5050" },
      { "time": "16:55", "name": "Yellow Submarine + paredes de gachapon", "walk": "Zona Ota Road", "see": "Yellow Submarine (TCG/juegos de mesa: Magic, Pokémon, Yu-Gi-Oh) y pasillos de máquinas de gachapon — cientos de máquinas.", "why": "El gachapon es un souvenir barato y divertido; Yellow Submarine para jugadores de cartas.", "tip": "Tené monedas de ¥100/¥500. También Lashinban y Surugaya por la zona.", "map": "34.6610,135.5050" },
-     { "time": "17:05", "name": "Cierre en un maid cafe (opcional)", "walk": "Ota Road/Sakai-suji", "see": "Cafés temáticos como Maidreamin, Parlante, Cocha — una parada de 30 min antes del sumo.", "why": "Un cierre divertido de la experiencia otaku de Osaka.", "tip": "Prohibido fotografiar a las maids. Efectivo.", "map": "34.6615,135.5048" }
+     { "time": "", "name": "Cierre en un maid cafe (opcional)", "walk": "Ota Road/Sakai-suji", "see": "Cafés temáticos como Maidreamin, Parlante, Cocha.", "why": "Un cierre divertido de la experiencia otaku de Osaka.", "tip": "Solo si queda tiempo — salgan para las ~16:40 para llegar a las puertas del sumo (17:00). Prohibido fotografiar a las maids, efectivo.", "map": "34.6615,135.5048" }
     ],
     "special": [
      "🛣️ Ota Road (Otaroad) — la franja anime de verdad, menos obvia que Sakai-suji y que vale caminar lento.",
@@ -7560,30 +7630,30 @@ window.TRIP_DATA = {
     "area": "Dotonbori y Namba",
     "emoji": "🌃",
     "title": "Dotonbori y Namba — neón y 'kuidaore'",
-    "subtitle": "Noche · ~11 paradas · 19:30–22:30",
+    "subtitle": "Noche · ~11 paradas · 20:15–23:00 (después del sumo)",
     "intro": "La capital de la comida callejera de Japón, con el espíritu kuidaore ('comer hasta caer'): un canal de neón, carteles 3D gigantes, y el famoso hombre de Glico. Después del sumo — se baja al canal, se come takoyaki y kushikatsu, y se escapan un rato al empedrado viejo callejón de Hozenji. En Osaka se acepta más comer caminando que en Kioto.",
     "meta": {
      "duration": "~3 horas (comida y neón)",
      "distance": "~1,5–2 km, plano (mucho ida y vuelta)",
      "start": "Desde la estación Namba — al norte hacia el canal Dotonbori",
-     "getThere": "Después del sumo: línea/caminata a Namba (~10–15 min)",
+     "getThere": "Después del sumo (termina ~20:00): línea/caminata a Namba (~10–15 min)",
      "end": "Últimas fotos de neón; Dotonbori sigue vivo mucho después de medianoche (Glico prendido hasta 24:00)",
      "cost": "Casi todo gratis: el Glico, el puente Ebisubashi, el canal, Hozenji Yokocho y el templo (una monedita al Fudo, ~¥5–100). Solo pagás lo que elegís: la vuelta al mundo Ebisu Tower ¥1.000 (solo efectivo) y el paseo en barco Tombori ~¥2.000. No hace falta taxi, es todo a pie desde Namba.",
      "luggage": "Hoy ya te instalaste en el Onyado Nono Namba: la valija grande queda guardada en el hotel y salís a la ronda nocturna solo con la mochilita y la tarjeta ICOCA.",
      "meal": "Una picada callejera de verdad: takoyaki de los puestos (~¥600), kushikatsu en Kushikatsu Daruma (~¥1.500) y cerrás con un ramen en Kinryu, el del dragón (~¥900). Contá unos ¥3.000–4.000 por cabeza en toda la recorrida."
     },
     "stops": [
-     { "time": "19:35", "name": "Puente Ebisubashi + el hombre de Glico (戎橋)", "walk": "De Namba al norte por la arcada Ebisubashi-suji", "see": "Parate en el puente en la pose de victoria del hombre de Glico, el cartel detrás. Gratis.", "why": "Glico (fabricante de Pocky) puso el cartel en 1935; el corredor simboliza 'energía y salud'. La versión actual es LED — la foto de neón sello de Osaka.", "tip": "El puente está lleno — para una foto limpia, desde el lado de la arcada o el paseo del canal al este.", "map": "34.6687,135.5013" },
-     { "time": "19:45", "name": "Canal Dotonbori (道頓堀)", "walk": "Bajá al paseo del río", "see": "El corredor de neón de carteles 3D gigantes, reflejos en el agua y puestos de comida apretados.", "why": "El espíritu kuidaore de Osaka en su máxima densidad de noche.", "tip": "Caminá la franja en un sentido y el paseo del canal de vuelta — dos vistas. Lo mejor con oscuridad total.", "map": "34.6685,135.5030" },
-     { "time": "19:55", "name": "El cangrejo gigante de Kani Doraku (かに道楽)", "walk": "Al oeste de Ebisubashi", "see": "Un cangrejo mecánico de ~8 m de ancho con patas y ojos que se mueven (desde 1960). Kaiseki de cangrejo ~¥3.000–8.000, o solo foto.", "why": "El segundo cartel más fotografiado de Dotonbori.", "tip": "Esperá un segundo — las patas se mueven para una foto con movimiento.", "map": "34.6686,135.5020" },
-     { "time": "20:05", "name": "El grupo de takoyaki — coman acá", "walk": "Sobre la franja", "see": "Osaka inventó el takoyaki (bolitas de pulpo). Puestos confirmados: Wanaka, Kukuru, Juhachiban, Acchichi. ~¥500–700 por 8.", "why": "El corazón de la comida callejera de Osaka, hecho frente a vos.", "tip": "Salen ardiendo — el centro está fundido. Esperá ~1 min antes del mordisco para no quemarte. Comer parado en el puesto es normal.", "map": "34.6688,135.5015" },
-     { "time": "20:25", "name": "Kinryu Ramen — el dragón (金龍ラーメン)", "walk": "Sobre la franja", "see": "Un dragón verde-dorado trepa el edificio. Ramen tonkotsu-soja barato ~¥800, abierto 24 h, toppings gratis.", "why": "Uno de los top 3 carteles de Dotonbori, y una institución nocturna de Osaka de verdad.", "tip": "Se pide en la máquina de tickets de la puerta; la barra de toppings gratis es la movida local.", "map": "34.6686,135.5027" },
-     { "time": "20:40", "name": "Kushikatsu Daruma — el original (串カツだるま)", "walk": "Sobre la franja", "see": "Daruma fundó el plato en 1929. Brochettes fritas (carne, verdura, mariscos) ~¥130–300, con salsa comunal.", "why": "El origen del kushikatsu — con una birra fría.", "tip": "⚠️ La regla: ¡no mojar dos veces en la salsa comunal! Si querés más, juntá con el repollo gratis. (En Dotonbori suele haber botellas individuales.)", "map": "34.6690,135.5010" },
-     { "time": "21:00", "name": "Don Quijote + la vuelta al mundo (えびすタワー)", "walk": "En el extremo este del canal", "see": "Megatienda amarilla sobre el canal, con una vuelta al mundo ovalada (la primera del mundo) en la fachada. Donki abre hasta tarde para souvenirs.", "why": "Una foto iluminada llamativa desde el canal.", "tip": "⚠️ Verificá a la noche si la vuelta funciona (hubo pausas operativas). Igual es linda foto.", "map": "34.6691,135.5033" },
-     { "time": "21:15", "name": "Hozenji Yokocho (法善寺横丁) — el callejón viejo de Osaka", "walk": "Una cuadra al sur del neón", "see": "Un callejón empedrado y musgoso de ~80 m, iluminado con faroles, con 60+ bares y restaurantes diminutos. Se siente de 200 años.", "why": "La joya escondida — silenciosa, cinematográfica, y donde los locales de verdad toman y comen.", "tip": "Vení con los faroles prendidos. Íntimo — sé considerado, muchos bares diminutos.", "map": "34.6680,135.5025" },
-     { "time": "21:30", "name": "Templo Hozenji + Mizukake Fudo (水掛不動)", "walk": "Dentro del callejón", "see": "Un templo chico con una estatua de Fudo Myoo totalmente cubierta de musgo verde — le tirás agua después de rezar ('Mizukake' = mojado con agua). 24 h, gratis.", "why": "Un ritual de pareja — las figuras se consideran portadoras de suerte en el emparejamiento y el amor. Perfecto para ustedes.", "tip": "Volcá agua sobre la estatua (hay cucharones), pidan un deseo juntos. Un momento tranquilo de 5 min.", "map": "34.6681,135.5027" },
-     { "time": "21:45", "name": "Sennichimae Doguyasuji (千日前道具屋筋)", "walk": "Un poco al sur", "see": "Arcada techada de cuchillerías, utensilios de cocina y muestras de comida de plástico hiperrealistas (souvenirs graciosos).", "why": "La calle histórica de utensilios — llaveros de sushi, imanes de takoyaki.", "tip": "⚠️ La mayoría cierra ~18:00 — a esta hora estará cerrado. Pasá por el ambiente de la arcada; para comprar de verdad, volvé de día.", "map": "34.6660,135.5040" },
-     { "time": "22:00", "name": "Crucero Tonbori / Amerikamura (opcional)", "walk": "Muelle junto a Don Quijote / al oeste", "see": "Crucero Tombori de 20 min bajo el neón (¥2.000, último 21:00 — adelantalo), o Amerikamura al oeste para un nightcap joven y graffiti.", "why": "Desde el agua o desde el barrio joven — un cierre distinto para la noche.", "tip": "El último crucero es a las 21:00 — hacelo temprano o saltealo.", "map": "34.6720,135.4985" }
+     { "time": "20:15", "name": "Puente Ebisubashi + el hombre de Glico (戎橋)", "walk": "De Namba al norte por la arcada Ebisubashi-suji", "see": "Parate en el puente en la pose de victoria del hombre de Glico, el cartel detrás. Gratis.", "why": "Glico (fabricante de Pocky) puso el cartel en 1935; el corredor simboliza 'energía y salud'. La versión actual es LED — la foto de neón sello de Osaka.", "tip": "El puente está lleno — para una foto limpia, desde el lado de la arcada o el paseo del canal al este.", "map": "34.6687,135.5013" },
+     { "time": "20:25", "name": "Canal Dotonbori (道頓堀)", "walk": "Bajá al paseo del río", "see": "El corredor de neón de carteles 3D gigantes, reflejos en el agua y puestos de comida apretados.", "why": "El espíritu kuidaore de Osaka en su máxima densidad de noche.", "tip": "Caminá la franja en un sentido y el paseo del canal de vuelta — dos vistas. Lo mejor con oscuridad total.", "map": "34.6685,135.5030" },
+     { "time": "20:35", "name": "El cangrejo gigante de Kani Doraku (かに道楽)", "walk": "Al oeste de Ebisubashi", "see": "Un cangrejo mecánico de ~8 m de ancho con patas y ojos que se mueven (desde 1960). Kaiseki de cangrejo ~¥3.000–8.000, o solo foto.", "why": "El segundo cartel más fotografiado de Dotonbori.", "tip": "Esperá un segundo — las patas se mueven para una foto con movimiento.", "map": "34.6686,135.5020" },
+     { "time": "20:45", "name": "El grupo de takoyaki — coman acá", "walk": "Sobre la franja", "see": "Osaka inventó el takoyaki (bolitas de pulpo). Puestos confirmados: Wanaka, Kukuru, Juhachiban, Acchichi. ~¥500–700 por 8.", "why": "El corazón de la comida callejera de Osaka, hecho frente a vos.", "tip": "Salen ardiendo — el centro está fundido. Esperá ~1 min antes del mordisco para no quemarte. Comer parado en el puesto es normal.", "map": "34.6688,135.5015" },
+     { "time": "21:05", "name": "Kinryu Ramen — el dragón (金龍ラーメン)", "walk": "Sobre la franja", "see": "Un dragón verde-dorado trepa el edificio. Ramen tonkotsu-soja barato ~¥800, abierto 24 h, toppings gratis.", "why": "Uno de los top 3 carteles de Dotonbori, y una institución nocturna de Osaka de verdad.", "tip": "Se pide en la máquina de tickets de la puerta; la barra de toppings gratis es la movida local.", "map": "34.6686,135.5027" },
+     { "time": "21:20", "name": "Kushikatsu Daruma — el original (串カツだるま)", "walk": "Sobre la franja", "see": "Daruma fundó el plato en 1929. Brochettes fritas (carne, verdura, mariscos) ~¥130–300, con salsa comunal.", "why": "El origen del kushikatsu — con una birra fría.", "tip": "⚠️ La regla: ¡no mojar dos veces en la salsa comunal! Si querés más, juntá con el repollo gratis. (En Dotonbori suele haber botellas individuales.)", "map": "34.6690,135.5010" },
+     { "time": "21:40", "name": "Don Quijote + la vuelta al mundo (えびすタワー)", "walk": "En el extremo este del canal", "see": "Megatienda amarilla sobre el canal, con una vuelta al mundo ovalada (la primera del mundo) en la fachada. Donki abre hasta tarde para souvenirs.", "why": "Una foto iluminada llamativa desde el canal.", "tip": "⚠️ Verificá a la noche si la vuelta funciona (hubo pausas operativas). Igual es linda foto.", "map": "34.6691,135.5033" },
+     { "time": "21:55", "name": "Hozenji Yokocho (法善寺横丁) — el callejón viejo de Osaka", "walk": "Una cuadra al sur del neón", "see": "Un callejón empedrado y musgoso de ~80 m, iluminado con faroles, con 60+ bares y restaurantes diminutos. Se siente de 200 años.", "why": "La joya escondida — silenciosa, cinematográfica, y donde los locales de verdad toman y comen.", "tip": "Vení con los faroles prendidos. Íntimo — sé considerado, muchos bares diminutos.", "map": "34.6680,135.5025" },
+     { "time": "22:10", "name": "Templo Hozenji + Mizukake Fudo (水掛不動)", "walk": "Dentro del callejón", "see": "Un templo chico con una estatua de Fudo Myoo totalmente cubierta de musgo verde — le tirás agua después de rezar ('Mizukake' = mojado con agua). 24 h, gratis.", "why": "Un ritual de pareja — las figuras se consideran portadoras de suerte en el emparejamiento y el amor. Perfecto para ustedes.", "tip": "Volcá agua sobre la estatua (hay cucharones), pidan un deseo juntos. Un momento tranquilo de 5 min.", "map": "34.6681,135.5027" },
+     { "time": "22:25", "name": "Sennichimae Doguyasuji (千日前道具屋筋)", "walk": "Un poco al sur", "see": "Arcada techada de cuchillerías, utensilios de cocina y muestras de comida de plástico hiperrealistas (souvenirs graciosos).", "why": "La calle histórica de utensilios — llaveros de sushi, imanes de takoyaki.", "tip": "⚠️ La mayoría cierra ~18:00 — a esta hora estará cerrado. Pasá por el ambiente de la arcada; para comprar de verdad, volvé de día.", "map": "34.6660,135.5040" },
+     { "time": "22:40", "name": "Crucero Tonbori / Amerikamura (opcional)", "walk": "Muelle junto a Don Quijote / al oeste", "see": "Crucero Tombori de 20 min bajo el neón (¥2.000, último 21:00 — adelantalo), o Amerikamura al oeste para un nightcap joven y graffiti.", "why": "Desde el agua o desde el barrio joven — un cierre distinto para la noche.", "tip": "El último crucero es a las 21:00 — hacelo temprano o saltealo.", "map": "34.6720,135.4985" }
     ],
     "special": [
      "🏮 Hozenji Yokocho + Mizukake Fudo — el callejón empedrado viejo y el ritual de tirar agua para parejas, el rincón romántico y oculto.",
@@ -7645,7 +7715,7 @@ window.TRIP_DATA = {
      "duration": "Noche",
      "distance": "Compacto — minutos entre bares",
      "start": "Junto a Umeda/Higashi-Umeda, al norte de Ohatsu Tenjin",
-     "getThere": "Desde Shinsekai (tour de comida): ~30–40 min en línea a Umeda/Higashi-Umeda",
+     "getThere": "Desde Dotonbori (fin del tour de comida, ~20:30): Midosuji a Umeda ~10 min",
      "end": "Cierre en Eagle Osaka o G Physique",
      "cost": "Entradas baratas: do with cafe ¥300 de cargo por el show drag (martes) + menús ¥1.000–2.000; la mayoría de los bares chicos ¥500–1.000 de cargo de mesa/primera consumición (~¥1.000–1.500 por bar); Eagle Osaka gratis lun–jue (cashless); tren de Shinsekai a Umeda ~¥240 con ICOCA. Presupuesto realista de la noche ~¥5.000–8.000 por persona.",
      "luggage": "La valija grande queda guardada en el Onyado Nono Namba todo el día (también durante la excursión a Nara); para el recorrido de bares salís liviano — solo billetera, efectivo y tarjeta ICOCA, sin bolso.",
