@@ -672,3 +672,12 @@ details.route[open]>summary::after{content:"−"}
 .cost-total-conv{font-size:clamp(15px,3.5vw,20px);color:var(--sakura-soft);font-weight:700}
 .cost-total-pp{margin-top:10px;font-size:13.5px;color:var(--cream-dim)}
 .cost-total-fx{margin-top:8px;font-size:12px;color:var(--cream-faint)}
+.cost-summary{padding:0;overflow:hidden}
+.cost-table-wrap{overflow-x:auto}
+.cost-table{width:100%;border-collapse:collapse;font-size:13.5px}
+.cost-table th,.cost-table td{padding:9px 12px;text-align:start;border-bottom:1px solid #efe7d6;white-space:nowrap}
+.cost-table thead th{font-family:var(--serif);color:var(--red-deep);font-size:13px;background:#fbf6ea}
+.cost-table th:not(:first-child),.cost-table td:not(:first-child){text-align:end;font-variant-numeric:tabular-nums}
+.cost-table .ct-cat{color:var(--ink);white-space:normal}
+.cost-table td:not(:first-child){font-family:var(--serif);font-weight:600;color:var(--ink)}
+.cost-table .ct-total td{border-top:2px solid var(--gold);border-bottom:none;background:#faf4e6;color:var(--red-deep);font-weight:700;font-size:14.5px}
