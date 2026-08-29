@@ -596,3 +596,60 @@ a.ev-area:hover{color:var(--red);text-decoration:underline}
   .wz-concept{color:#8a6100!important}
   .tl-line,.ev-node{background:#bbb!important}
 }
+
+/* ===== Detailed walking routes (🚶 Routes tab) ===== */
+.dh-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dh-route-btn{cursor:pointer}
+.routes-intro{color:var(--cream-dim);font-size:14px;max-width:720px;margin:2px 0 18px;line-height:1.6}
+.routes-day{margin-bottom:22px}
+.routes-day-h{font-family:var(--serif);color:var(--gold-soft);font-size:15px;letter-spacing:.5px;
+  padding:6px 2px 10px;border-bottom:1px solid var(--indigo-line);margin-bottom:12px}
+details.route{background:linear-gradient(180deg,var(--paper),var(--paper-2));color:var(--ink);
+  border-radius:var(--radius);box-shadow:var(--shadow-sm);border:1px solid var(--paper-edge);
+  overflow:hidden;margin-bottom:12px}
+details.route>summary{list-style:none;cursor:pointer;padding:14px 16px;display:flex;gap:12px;align-items:flex-start}
+details.route>summary::-webkit-details-marker{display:none}
+details.route>summary::after{content:"＋";margin-inline-start:auto;color:var(--red);font-size:24px;
+  font-family:var(--serif);line-height:1;flex:0 0 auto}
+details.route[open]>summary::after{content:"−"}
+.route-ic{font-size:24px;flex:0 0 auto;line-height:1.2}
+.route-sum{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.route-title{font-family:var(--serif);font-weight:700;font-size:18px;color:var(--ink);line-height:1.25}
+.route-subtitle{font-size:13px;color:var(--ink-soft)}
+.route-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.route-body{padding:0 16px 18px;border-top:1px solid var(--paper-edge)}
+.route-intro{color:var(--ink);font-size:14.5px;line-height:1.65;margin:14px 0}
+.rmeta{background:#fbf6ea;border:1px solid var(--paper-edge);border-radius:var(--radius-sm);
+  padding:10px 12px;margin-bottom:14px;display:flex;flex-direction:column;gap:6px}
+.rmeta-row{display:flex;gap:8px;font-size:13.5px;line-height:1.5}
+.rmeta-k{flex:0 0 auto;font-weight:700;color:var(--red-deep);min-width:74px}
+.route-actions{margin-bottom:16px}
+.route-actions .btn{background:#fff;color:var(--ink);border-color:var(--paper-edge)}
+.route-actions .btn:hover{border-color:var(--gold);background:#fffdf7}
+.rstops-h{font-family:var(--serif);font-weight:700;color:var(--red-deep);font-size:15px;margin:4px 0 10px}
+.rstops{position:relative}
+.rstop{display:flex;gap:12px;padding-bottom:16px;position:relative}
+.rstops .rstop::before{content:"";position:absolute;inset-inline-start:14px;top:30px;bottom:-2px;
+  width:2px;background:var(--paper-edge)}
+.rstop:last-child{padding-bottom:2px}
+.rstop:last-child::before{display:none}
+.rstop-n{flex:0 0 30px;width:30px;height:30px;border-radius:50%;background:var(--red);color:#fff;
+  font-family:var(--serif);font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 2px 6px rgba(215,65,47,.35);position:relative;z-index:1}
+.rstop-body{flex:1;min-width:0;padding-top:2px}
+.rstop-h{display:flex;flex-wrap:wrap;gap:6px 9px;align-items:baseline}
+.rstop-time{font-family:var(--serif);font-weight:700;color:var(--gold);font-size:13px;
+  background:#fbf3df;border:1px solid var(--paper-edge);border-radius:999px;padding:1px 9px}
+.rstop-name{font-family:var(--serif);font-weight:700;font-size:16px;color:var(--ink)}
+.rstop-map{text-decoration:none;font-size:14px}
+.rstop-walk{font-size:12.5px;color:var(--ink-soft);margin-top:3px}
+.rstop-see{font-size:14px;color:var(--ink);line-height:1.6;margin-top:5px}
+.rstop-why{font-size:13.5px;color:var(--ink);line-height:1.6;margin-top:5px;
+  background:#faf4e6;border-inline-start:3px solid var(--gold);padding:5px 10px;border-radius:0 8px 8px 0}
+.rstop-why b{color:var(--red-deep)}
+.rstop-tip{font-size:13px;color:var(--ink-soft);line-height:1.55;margin-top:5px;font-style:italic}
+.rspecial{margin-top:8px;background:#1c2b4a;color:var(--cream);border-radius:var(--radius-sm);
+  padding:12px 14px;border:1px solid var(--indigo-line)}
+.rspecial-h{font-family:var(--serif);font-weight:700;color:var(--gold-soft);font-size:15px;margin-bottom:6px}
+.rspecial ul{margin:0;padding-inline-start:18px;display:flex;flex-direction:column;gap:7px}
+.rspecial li{font-size:13.5px;line-height:1.6;color:var(--cream-dim)}

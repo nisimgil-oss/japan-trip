@@ -63,6 +63,7 @@
       trVerdict: '💰 כרטיס-כרטיס או פס? — כרטיסים בודדים משתלמים בבירור', trVerdictBody: 'סה"כ כל הרכבות ≈ ¥43,700 לאדם (~₪810) · ¥87,300 לזוג (~₪1,620). פס JR ארצי ל-7 ימים עולה ¥50,000 לאדם ומכסה לכל היותר ~¥24,000 מהנסיעות (הנסיעות פרוסות על 15 יום, 18.9→2.10 — חלון של 7 יום לא תופס גם את קיסו וגם את אוסקה→טוקיו), לא מכסה את ה-Romancecar (רכבת פרטית) ולא Nozomi. שום פס אזורי לא מתאים ללולאה הזו. היחיד ששווה: כרטיס ה-N\'EX הלוך-חזור ¥5,000.',
       hSelected: '✓ נבחר', hChoose: 'בחרו מלון זה', hPerNight: 'ללילה', hPerCouple: 'לזוג · חצי פנסיון', hBook: 'להזמנה ↗', hNights: (n) => n === 1 ? 'לילה אחד' : n + ' לילות', hStayHotel: 'המלון שנבחר', hPickHint: 'בחרו מלון בטאב ״מלונות״',
       mapsDay: '🗺️ מסלול היום במפות', mapsOpen: 'פתח במפות ↗',
+      'tab.routes': 'מסלולים', routesTitle: '🚶 מסלולי הליכה מפורטים', routesIntro: 'מסלול הליכה לכל אזור — לאן להתחיל, איפה ללכת, מה לראות ולמה זה מיוחד, עם תזמונים. לחצו על יום כדי לפתוח את המסלול שלו.', routeStartLabel: 'התחלה', routeGetThereLabel: 'איך מגיעים', routeEndLabel: 'סיום', routeStopsLabel: 'התחנות', routeSpecialLabel: '✨ דברים מיוחדים ומעניינים', routeTipLabel: 'טיפ', routeOpenMaps: '🗺️ כל המסלול במפות (הליכה)', routeStopMap: 'פתח נקודה במפות', dayRouteLink: '🚶 מסלול הליכה מפורט', routesEmpty: 'עדיין אין מסלול מפורט ליום הזה — בקרוב.',
       'tab.experiences': 'חוויות', 'experiences.title': '✨ עוד חוויות מיוחדות',
       'tab.map': 'מפה', 'map.title': '🗺️ מפת כל הימים', 'map.hint': 'כל יום במסלול צבע משלו — לחצו על יום במקרא כדי להציג/להסתיר אותו. לחצו על נקודה לפרטים.', mapAll: 'הצג הכל', mapNone: 'נקה',
       'tab.tickets': 'הכרטיסים שלי', ticketsTitle: '🎫 הכרטיסים שלי', ticketsHint: 'הרכבות והכרטיסים שכבר נסגרו — עם מושב, מס\' הזמנה והנחיית רציף. הדביקו קישור לכרטיס (Google Drive וכו\') — נשמר במכשיר שלכם בלבד, לא נדחף לקוד.',
@@ -113,6 +114,7 @@
       trVerdict: '💰 ¿Boleto por boleto o pase? — conviene comprar boletos sueltos', trVerdictBody: 'Total de todos los trenes ≈ ¥43.700 por persona (~₪810) · ¥87.300 por pareja (~₪1.620). El JR Pass nacional de 7 días cuesta ¥50.000 por persona y cubre como mucho ~¥24.000 de los viajes (están repartidos en 15 días, 18/9→2/10 — una ventana de 7 días no agarra Kiso y Osaka→Tokio a la vez), no cubre el Romancecar (tren privado) ni el Nozomi. Ningún pase regional sirve para este circuito. El único que vale la pena: el boleto N\'EX ida y vuelta de ¥5.000.',
       hSelected: '✓ Elegido', hChoose: 'Elegir este hotel', hPerNight: 'por noche', hPerCouple: 'por pareja · media pensión', hBook: 'Reservar ↗', hNights: (n) => n === 1 ? '1 noche' : n + ' noches', hStayHotel: 'Hotel elegido', hPickHint: 'Elegí un hotel en la pestaña "Hoteles"',
       mapsDay: '🗺️ Recorrido del día en Maps', mapsOpen: 'Abrir en Maps ↗',
+      'tab.routes': 'Recorridos', routesTitle: '🚶 Recorridos a pie detallados', routesIntro: 'Un recorrido a pie por cada zona — dónde empezar, por dónde ir, qué ver y por qué es especial, con horarios. Tocá un día para abrir su recorrido.', routeStartLabel: 'Inicio', routeGetThereLabel: 'Cómo llegar', routeEndLabel: 'Fin', routeStopsLabel: 'Las paradas', routeSpecialLabel: '✨ Cosas especiales e interesantes', routeTipLabel: 'Tip', routeOpenMaps: '🗺️ Todo el recorrido en Maps (a pie)', routeStopMap: 'Abrir punto en Maps', dayRouteLink: '🚶 Recorrido a pie detallado', routesEmpty: 'Todavía no hay recorrido detallado para este día — pronto.',
       'tab.experiences': 'Experiencias', 'experiences.title': '✨ Más experiencias especiales',
       'tab.map': 'Mapa', 'map.title': '🗺️ Mapa de todos los días', 'map.hint': 'Cada día tiene su propio color — tocá un día en la leyenda para mostrarlo/ocultarlo. Tocá un punto para ver detalles.', mapAll: 'Mostrar todo', mapNone: 'Limpiar',
       'tab.tickets': 'Mis boletos', ticketsTitle: '🎫 Mis boletos', ticketsHint: 'Los trenes y boletos ya reservados — con asiento, N.º de reserva e indicación de andén. Pegá el enlace al boleto (Google Drive, etc.) — se guarda solo en tu dispositivo, no en el código.',
@@ -247,6 +249,8 @@
     const hotelName = d.hotel || '';
     const hotelUrl = hotelName ? placeUrl(hotelName + ' ' + cityLatin(d.city)) : null;
     const routeUrl = dayRouteUrl(d);
+    const dayRoutes = routesFor(d.date);
+    const routeBtns = dayRoutes.map(r => `<button class="btn btn-ghost btn-sm dh-route-btn" data-route="${escapeAttr(r.id)}">${r.emoji || '🚶'} ${t('dayRouteLink')}: ${escapeHtml(r.area || '')}</button>`).join('');
     $('#dayHead').innerHTML =
       `<div><div class="dh-city">${cityEmoji(d.city)} ${escapeHtml(d.city || '')} · ${dowT(d.dow)} ${fmtDate(d.date)}${d.birthday ? ' · 🎂 ' + t('bday') : ''}<span class="dh-weather" id="dhWeather" title="${escapeAttr(t('wxTyphoon'))}"></span></div>` +
       `<div class="dh-title">${escapeHtml(d.title || '')}</div>` +
@@ -255,8 +259,9 @@
       (d.logistics ? `<div class="dh-logistics" dir="auto">📦 ${escapeHtml(d.logistics[lang] || d.logistics.he)}</div>` : '') +
       (d.cultural ? `<div class="dh-culture" dir="auto"><span class="dh-culture-ic">🏮</span><span>${escapeHtml(d.cultural)}</span></div>` : '') +
       (d.tips && d.tips.length ? `<div class="dh-tips"><div class="dh-tips-h">💡 ${t('tipsLabel')}</div><ul class="dh-tips-list">${d.tips.map(x => `<li dir="auto">${escapeHtml(x)}</li>`).join('')}</ul></div>` : '') +
-      (routeUrl ? `<div class="dh-actions"><a class="btn btn-ghost btn-sm" href="${routeUrl}" target="_blank" rel="noopener">${t('mapsDay')}</a></div>` : '') +
+      ((routeUrl || routeBtns) ? `<div class="dh-actions">${routeBtns}${routeUrl ? `<a class="btn btn-ghost btn-sm" href="${routeUrl}" target="_blank" rel="noopener">${t('mapsDay')}</a>` : ''}</div>` : '') +
       `</div>`;
+    $$('#dayHead .dh-route-btn').forEach(b => b.onclick = () => openRoute(b.dataset.route));
     fillWeather(d);
     const tl = $('#timeline'); tl.innerHTML = '<div class="tl-line"></div>';
     const evs = sortEvents(d.events || []);
@@ -294,6 +299,84 @@
     wrap.querySelector('[data-act=del]').onclick = () => { if (confirm(t('confirmDel')(e.title || ''))) deleteEvent(curDay, e.id); };
     wrap.querySelector('.ev-check input').onchange = (ev) => { e.done = ev.target.checked; save(); renderDay(); warnLangOnce(); };
     return wrap;
+  }
+
+  // ---------- detailed walking routes ----------
+  const routesData = () => (data().routes || []);
+  const routesFor = (date) => routesData().filter(r => r.date === date || (Array.isArray(r.days) && r.days.includes(date)));
+  const stopMapUrl = (m) => m ? (/^-?\d/.test(m.trim()) ? placeUrl(m.trim()) : placeUrl(m + ', Japan')) : null;
+  function routeMapUrl(r) {
+    const pts = (r.stops || []).map(s => (s.map || '').trim()).filter(Boolean);
+    if (!pts.length) return null;
+    if (pts.length === 1) return stopMapUrl(pts[0]);
+    const stops = pts.slice(0, 10), origin = stops.shift(), destination = stops.pop();
+    let u = 'https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=' + encodeURIComponent(origin) + '&destination=' + encodeURIComponent(destination);
+    const wp = stops.slice(0, 8).map(encodeURIComponent).join('%7C'); if (wp) u += '&waypoints=' + wp;
+    return u;
+  }
+  function routeCard(r, di) {
+    const det = document.createElement('details'); det.className = 'route'; det.id = 'route-' + r.id;
+    const meta = r.meta || {};
+    const chips = [];
+    if (meta.duration) chips.push(`<span class="chip dur">⏱ ${escapeHtml(meta.duration)}</span>`);
+    if (meta.distance) chips.push(`<span class="chip">📏 ${escapeHtml(meta.distance)}</span>`);
+    const mapUrl = routeMapUrl(r);
+    const stops = (r.stops || []).map((s, i) => {
+      const mu = stopMapUrl(s.map);
+      return `<div class="rstop">` +
+        `<div class="rstop-n">${i + 1}</div>` +
+        `<div class="rstop-body">` +
+        `<div class="rstop-h">${s.time ? `<span class="rstop-time">${escapeHtml(s.time)}</span>` : ''}<span class="rstop-name" dir="auto">${escapeHtml(s.name || '')}</span>${mu ? ` <a class="rstop-map" href="${mu}" target="_blank" rel="noopener" title="${escapeAttr(t('routeStopMap'))}">🗺️</a>` : ''}</div>` +
+        (s.walk ? `<div class="rstop-walk" dir="auto">🚶 ${escapeHtml(s.walk)}</div>` : '') +
+        (s.see ? `<div class="rstop-see" dir="auto">${escapeHtml(s.see)}</div>` : '') +
+        (s.why ? `<div class="rstop-why" dir="auto"><b>${escapeHtml(t('routeWhyLabel'))}:</b> ${escapeHtml(s.why)}</div>` : '') +
+        (s.tip ? `<div class="rstop-tip" dir="auto">💡 ${escapeHtml(t('routeTipLabel'))}: ${escapeHtml(s.tip)}</div>` : '') +
+        `</div></div>`;
+    }).join('');
+    const special = (r.special && r.special.length) ? `<div class="rspecial"><div class="rspecial-h">${escapeHtml(t('routeSpecialLabel'))}</div><ul>${r.special.map(x => `<li dir="auto">${escapeHtml(x)}</li>`).join('')}</ul></div>` : '';
+    const metaRows = [
+      meta.start ? `<div class="rmeta-row"><span class="rmeta-k">${escapeHtml(t('routeStartLabel'))}</span><span dir="auto">${escapeHtml(meta.start)}</span></div>` : '',
+      meta.getThere ? `<div class="rmeta-row"><span class="rmeta-k">${escapeHtml(t('routeGetThereLabel'))}</span><span dir="auto">${escapeHtml(meta.getThere)}</span></div>` : '',
+      meta.end ? `<div class="rmeta-row"><span class="rmeta-k">${escapeHtml(t('routeEndLabel'))}</span><span dir="auto">${escapeHtml(meta.end)}</span></div>` : ''
+    ].join('');
+    det.innerHTML =
+      `<summary><span class="route-ic">${r.emoji || '🚶'}</span>` +
+      `<span class="route-sum"><span class="route-title" dir="auto">${escapeHtml(r.title || r.area || '')}</span>` +
+      (r.subtitle ? `<span class="route-subtitle" dir="auto">${escapeHtml(r.subtitle)}</span>` : '') +
+      (chips.length ? `<span class="route-chips">${chips.join('')}</span>` : '') +
+      `</span></summary>` +
+      `<div class="route-body">` +
+      (r.intro ? `<p class="route-intro" dir="auto">${escapeHtml(r.intro)}</p>` : '') +
+      (metaRows ? `<div class="rmeta">${metaRows}</div>` : '') +
+      (mapUrl ? `<div class="route-actions"><a class="btn btn-ghost btn-sm" href="${mapUrl}" target="_blank" rel="noopener">${t('routeOpenMaps')}</a></div>` : '') +
+      (stops ? `<div class="rstops-h">${escapeHtml(t('routeStopsLabel'))}</div><div class="rstops">${stops}</div>` : '') +
+      special +
+      `</div>`;
+    return det;
+  }
+  function renderRoutes() {
+    const box = $('#routesBody'); if (!box) return;
+    box.innerHTML = `<h2 class="section-h">${escapeHtml(t('routesTitle'))}</h2><div class="routes-intro" dir="auto">${escapeHtml(t('routesIntro'))}</div>`;
+    const all = routesData();
+    if (!all.length) { box.innerHTML += `<div class="panel" dir="auto">${escapeHtml(t('routesEmpty'))}</div>`; return; }
+    // group by day, in itinerary order; a route with extra days shows once under its primary date
+    state.days.forEach((d, di) => {
+      const rs = all.filter(r => r.date === d.date);
+      if (!rs.length) return;
+      const grp = document.createElement('div'); grp.className = 'routes-day';
+      grp.innerHTML = `<div class="routes-day-h">${cityEmoji(d.city)} ${t('day')} ${di + 1} · ${dowT(d.dow)} ${fmtDate(d.date)} · <span dir="auto">${escapeHtml(d.city || '')}</span></div>`;
+      rs.forEach(r => grp.appendChild(routeCard(r, di)));
+      box.appendChild(grp);
+    });
+  }
+  function openRoute(id) {
+    showView('routes');
+    setTimeout(() => {
+      const el = document.getElementById('route-' + id); if (!el) return;
+      $$('#routesBody details.route').forEach(x => { if (x !== el) x.open = false; });
+      el.open = true;
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 60);
   }
 
   // ---------- CRUD ----------
@@ -1129,11 +1212,12 @@
   }
 
   // ---------- views ----------
-  const VIEWS = ['itinerary', 'overview', 'map', 'booked', 'tickets', 'luggage', 'guide', 'places', 'food', 'restaurants', 'experiences', 'prep'];
+  const VIEWS = ['itinerary', 'routes', 'overview', 'map', 'booked', 'tickets', 'luggage', 'guide', 'places', 'food', 'restaurants', 'experiences', 'prep'];
   function showView(v) {
     if (!VIEWS.includes(v)) v = 'itinerary';
     VIEWS.forEach(x => $('#view-' + x).classList.toggle('hidden', x !== v));
     $$('.tab').forEach(tb => tb.classList.toggle('active', tb.dataset.view === v));
+    if (v === 'routes') renderRoutes();
     if (v === 'map') renderMap();
     if (v === 'booked') renderBooked();
     if (v === 'tickets') renderTickets();
