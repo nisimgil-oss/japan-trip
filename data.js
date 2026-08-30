@@ -770,7 +770,7 @@ window.TRIP_DATA = {
     "items": [
      { "l": { "he": "חיי לילה (Ni-chome ×2 + Doyama)", "es": "Vida nocturna (Ni-chome ×2 + Doyama)" }, "low": 26000, "high": 50000, "st": "est" },
      { "l": { "he": "תחבורה מקומית (Suica/ICOCA) · 2", "es": "Transporte local (Suica/ICOCA) · 2" }, "low": 20000, "high": 24000, "st": "est" },
-     { "l": { "he": "משלוח מזוודות (takkyubin)", "es": "Envío de valijas (takkyubin)" }, "low": 4000, "high": 10000, "st": "est" },
+     { "l": { "he": "משלוח מזוודות (takkyubin) · 3 קטעים + תיק מגומה", "es": "Envío de valijas (takkyubin) · 3 tramos + bolso Magome" }, "low": 12000, "high": 19000, "st": "est" },
      { "l": { "he": "eSIM / דאטה · 2", "es": "eSIM / datos · 2" }, "low": 4000, "high": 7000, "st": "est" },
      { "l": { "he": "קניות ומזכרות", "es": "Compras y souvenirs" }, "low": 40000, "high": 120000, "st": "est" },
      { "l": { "he": "שונות / רזרבה", "es": "Varios / imprevistos" }, "low": 10000, "high": 25000, "st": "est" }
@@ -1871,7 +1871,11 @@ window.TRIP_DATA = {
      "הכניסה לאולם הבודהה הגדול (דאיבוצודן) עולה ¥800 לאדם ומשלמים במזומן בלבד בקופה. קנו קומבו ¥1,200 (אולם + מוזיאון) אם מעניין אתכם גם המוזיאון שממול — שווה את הכסף.",
      "קחו את קטארה Kintetsu מנמבה ישירות לנארה (36 דקות, ¥680) — הרבה יותר קרוב ומהיר מ-JR ויוצא ממש ליד המלון. אין כיסוי ל-JR Pass בקינטטסו, אבל הפרש המחיר זניח.",
      "דויאמה-צ'ו נמצא ברובע קיטה (אומדה) ולא בנמבה — קחו את הרכבת התחתית קו מידוסוג'י צפונה (7 דקות, ¥240) מתחנת נמבה לאומדה, ואז הלוך רגלי 5 דקות. FrenZy פותח ב-20:00 בלילות שלישי, ו-Grand Slam פותח ב-21:00."
-    ]
+    ],
+    "logistics": {
+     "he": "📦 לפני היציאה לנארה (עד 08:15): מוסרים את שתי המזוודות בקבלת Onyado Nono למשלוח takkyubin ל-Tokyu Stay Shinjuku (~¥2,300 למזוודה, מגיע 30.9). כותבים על השטר את השם ואת תאריך הצ׳ק-אין 30.9. הלילה האחרון באוסקה עם תיק-לילה בלבד — ממילא היום הוא נארה + סיור אוכל + דויאמה, עדיף בלי כלום. כך 30.9 מתחיל ביאנאקה ישר מהרכבת, בלי לגרור מזוודות לשינג'וקו וחזרה.",
+     "es": "📦 Antes de salir para Nara (hasta las 08:15): dejen las dos valijas en recepción del Onyado Nono para enviarlas por takkyubin al Tokyu Stay Shinjuku (~¥2.300 por valija, llega el 30/9). Anoten en la etiqueta el nombre y la fecha de check-in 30/9. La última noche en Osaka con bolso de una noche nomás — total el día es Nara + tour gastronómico + Doyama, mejor sin nada encima. Así el 30/9 arranca en Yanaka directo desde el tren, sin arrastrar valijas hasta Shinjuku y volver."
+    }
    },
    {
     "date": "2026-09-30",
@@ -1917,16 +1921,40 @@ window.TRIP_DATA = {
       "dur": "~2:27 שעות"
      },
      {
-      "start": "14:45",
-      "end": "16:15",
+      "start": "13:06",
+      "end": "13:35",
+      "type": "transport",
+      "area": "תחנת Tokyo עד Nippori",
+      "title": "ישר ליאנאקה — בלי לעבור במלון",
+      "desc": "המזוודות כבר מחכות ב-Tokyu Stay שינג'וקו (נשלחו מאוסקה ב-29.9), אז יורדים מהשינקנסן עם דייפק בלבד ועולים ישר על קו Yamanote מתחנת טוקיו לניפורי — 13 דקות, בלי החלפות. ביציאה המערבית מתחילים את המסלול.",
+      "tips": "זה החיסכון הגדול של היום: קפיצה לשינג'וקו והחזרה היו אוכלות ~שעה וחצי ודוחסות את יאנאקה. אם בכל זאת יש לכם משהו כבד — לוקרים גדולים יש בתחנת טוקיו ובניפורי (¥700–800).",
+      "cost": "¥170 לאדם (Yamanote, IC)",
+      "booking": "",
+      "dur": "~13 דק׳ + הליכה"
+     },
+     {
+      "start": "13:40",
+      "end": "16:50",
       "type": "sightseeing",
       "area": "Yanaka (Nippori)",
       "title": "יאנאקה — שכונה בזמן עצור",
-      "desc": "Yanaka היא אחת השכונות הטוקיואיות המעטות שניצלו מהפצצות ומהרס הפיתוח — קמנו Yanaka Ginza הרטרו, מקדשים שקטים וחתולים שמסתובבים כאילו העיר שלהם. הלכו לאט, צלמו, ונגעו במרקם האמיתי של טוקיו.",
-      "tips": "כניסה לבית הקברות Yanaka Cemetery חינם ושווה — עצים ענקיים, קבר Tokugawa ושקט מוחלט.",
-      "cost": "חינם (קניות לפי בחירה)",
+      "desc": "Yanaka היא אחת השכונות הטוקיואיות המעטות שניצלו מהפצצות ומהרס הפיתוח — Yanaka Ginza הרטרו, מקדשים שקטים וחתולים שמסתובבים כאילו העיר שלהם. המסלול המלא (9 תחנות, פרק 🚶 מסלולים): בית הקברות וקבר השוגון האחרון → Tenno-ji והבודהה → SCAI The Bathhouse → קפה Kayaba → Yanaka Ginza → מדרגות Yuyake Dandan → חנויות מלאכה → מקדש Nezu ומנהרת הטוריאי.",
+      "tips": "3 שעות מלאות בלי לחץ — זה בדיוק מה שהרווחנו מזה שהמזוודות נשלחו מראש. אם מתעכבים, מקדש Nezu הוא נקודת הקיצור: אפשר לוותר עליו ולצאת ישר מ-Yanaka Ginza.",
+      "cost": "חינם (אוכל וקניות לפי בחירה, ~¥1,500–2,500 לאדם)",
       "booking": "",
       "highlight": true
+     },
+     {
+      "start": "16:50",
+      "end": "18:20",
+      "type": "transport",
+      "area": "Nezu עד Toyosu",
+      "title": "מעבר לטויוסו (עם אוויר לנשימה)",
+      "desc": "מתחנת Nezu בקו Chiyoda ל-Hibiya, מעבר ל-Yurakucho ומשם ל-Toyosu, ואז ~10 דק׳ הליכה (או תחנה אחת ב-Yurikamome ל-Shin-Toyosu) — סה״כ ~45 דק׳. נשארת כשעה של אוויר: או קפה/מנוחה באזור Nezu-Ueno, או להגיע מוקדם לטויוסו ולשבת מול המים.",
+      "tips": "אל תגיעו ממש בקצה — חלון הכניסה ל-teamLab הוא 18:30–19:00 ואחריו לא מכניסים. אם נשאר זמן ורוצים למלא אותו: Ueno (אמאיוקו, הפארק) נמצא תחנה אחת מניפורי.",
+      "cost": "¥280–320 לאדם (IC)",
+      "booking": "",
+      "dur": "~45 דק׳ נסיעה"
      },
      {
       "start": "18:30",
@@ -1954,14 +1982,14 @@ window.TRIP_DATA = {
      }
     ],
     "logistics": {
-     "he": "✓ לוקחים את המזוודות בשינקנסן לטוקיו — המושבים שנסגרו (NOZOMI 358, קרון 9, 1C+1D) הם Seat with Oversized Baggage Area, כלומר מקום מובטח למזוודה גדולה מאחורי הכיסא. אין צורך ב-takkyubin (שליחה מאוסקה מגיעה רק למחרת). בטוקיו: משאירים את המזוודות ב-Tokyu Stay שינג'וקו לפני היציאה ליאנאקה.",
-     "es": "✓ Llevan las valijas en el shinkansen a Tokio — los asientos reservados (NOZOMI 358, vagón 9, 1C+1D) son Seat with Oversized Baggage Area, o sea espacio garantizado para la valija grande detrás del asiento. No hace falta takkyubin (desde Osaka llegaría recién al día siguiente). En Tokio: dejan las valijas en el Tokyu Stay Shinjuku antes de salir para Yanaka."
+     "he": "🎒 יום בלי מזוודות: הן נשלחו מאוסקה ב-29.9 בבוקר ומחכות ב-Tokyu Stay שינג'וקו. יורדים מהשינקנסן בתחנת טוקיו עם דייפק בלבד וממשיכים ישר ליאנאקה — בלי קפיצה לשינג'וקו וחזרה (חיסכון של ~שעה וחצי). מגיעים למלון רק בסוף הערב, אחרי ארוחת הערב, והמזוודות כבר שם. המושבים שהוזמנו (קרון 9, 1C+1D) הם Seat with Oversized Baggage Area — עכשיו זה פשוט מקום נוסף לרגליים ולדייפקים.",
+     "es": "🎒 Día sin valijas: se despacharon desde Osaka la mañana del 29/9 y esperan en el Tokyu Stay Shinjuku. Bajan del shinkansen en la estación de Tokio solo con el daypack y siguen directo a Yanaka — sin desvío a Shinjuku y vuelta (ahorro de ~hora y media). Llegan al hotel recién a la noche, después de la cena, y las valijas ya están ahí. Los asientos reservados (vagón 9, 1C+1D) son Seat with Oversized Baggage Area — ahora simplemente espacio de más para las piernas y los daypacks."
     },
     "cultural": "יאנאקה שורדת את הדורות לא בזכות שיקום — אלא בזכות שלא נשרפה. בעוד שטוקיו האחרת נמחתה פעמיים, בהרעידת הקרקע של 1923 ובהפצצות של 1945, יאנאקה נותרה על כנה — בתי העץ, בתי-הקברות הבודהיסטים, ורחובות הסמטאות שלה שרדו. הרעיון שעומד מאחורי שמירה זו נקרא בפי היפנים 'שיטאמאצ'י' — העיר התחתונה, מקום מגורי הסוחרים, האומנים, ואנשי העם בתקופת אדו. בניגוד לחצרות הגבוהות על הגבעות, שיטאמאצ'י שמרה על אדנות אחרת: אנושית, חמה ורועשת, שבה רוח השכונה עצמה נחשבת לדבר שצריך לשמרו.",
     "tips": [
      "✓ NOZOMI 358, קרון 9, מושבים 1C+1D (הזמנה 2002). בכיוון אוסקה→טוקיו הר פוג'י נראה בצד שמאל — טור A/B/C, כלומר הצד של מושב 1C — בערך 11:45, מיד אחרי Shin-Fuji. שימו לב ש-1C ו-1D הם משני צידי המעבר, אז מי שיושב ב-1D יצטרך לחצות לצד השני לצילום. הגיעו לרציף 10 דקות לפני היציאה — הרכבות יוצאות בדייקנות של שנייה.",
      "ביאנאקה: קנו מנצ'י-קטסו (כדורי בשר מטוגנים) חמים ישר מהמאפייה ברחוב Yanaka Ginza — אוכלים עומדים תוך כדי הליכה (תכונה מקומית שמכנים אחילוי, 'אוכל הלוך'). אל תחמיצו את מדרגות Yuyake Dandan לתמונה של הרחוב מלמעלה.",
-     "בשיבויה: Loft (7 קומות) ו-Tokyu Hands הם כתובת לציודי נסיעה, קוסמטיקה, וסובנירים ייחודיים לא מיוצאים. אם קניות האחרונות כוללות מוצרי ניגון/אנימה — ה-Village Vanguard בשיבויה מצויין."
+     "🎒 החלטת המזוודות ליום הזה: שולחים אותן מאוסקה ב-29.9 בבוקר (~¥2,300 למזוודה) ולא נוגעים בהן עד הלילה. הקפיצה לשינג'וקו להנחת מזוודות עולה ~שעה וחצי ודוחפת את יאנאקה ל-14:40 — עם חלון כניסה נוקשה ל-teamLab ב-18:30 זה הופך את אחר הצהריים למרוץ. ל-teamLab: מכנסיים שאפשר לגלול מעל הברך (הרגליים נרטבות), ואל תלבשו חצאית/מכנס קצר מדי — יש רצפות מראה."
     ]
    },
    {
@@ -4244,10 +4272,10 @@ window.TRIP_DATA = {
      "duration": "~3 שעות",
      "distance": "~3.5 ק״מ, שטוח",
      "start": "תחנת Nippori (JR Yamanote), יציאה מערבית — בקצה בית הקברות",
-     "getThere": "ה-NOZOMI 358 נוחת בתחנת טוקיו ב-13:06. ישירות ליאנאקה: Tokyo→Nippori בקו Yamanote ~13 דק׳ (בתחנה ~13:25). אם קודם מניחים מזוודות ב-Tokyu Stay שינג'וקו: Tokyo→Shinjuku ~14 דק׳, הנחה, ואז Shinjuku→Nippori ~22 דק׳ — בתחנה ~14:15.",
+     "getThere": "ה-NOZOMI 358 נוחת בתחנת טוקיו ב-13:06, והמזוודות כבר בשינג'וקו (נשלחו מאוסקה ב-29.9). משם Tokyo→Nippori בקו Yamanote ~13 דק׳, בלי החלפות — ביציאה המערבית של ניפורי ב-~13:30 והמסלול מתחיל ב-13:40. (אילו היינו נוסעים דרך המלון להניח מזוודות, היינו מגיעים לניפורי רק ב-~14:40.)",
      "end": "מקדש Nezu → תחנת Nezu (קו Chiyoda), לכיוון teamLab בטויוסו בערב",
      "cost": "רוב הרובע חינם: בית הקברות, מקדש טנו-ג'י והבודהה, SCAI (גלריה) ומקדש נזו עם מנהרת הטוריאי — כולם ללא תשלום. ההוצאה האמיתית היא אוכל: קרול ביאנאקה גינזה ~¥1,500–2,500 לאדם, וקפה קאיאבה ~¥1,500 (סנדוויץ' ביצה ¥1,000 + קפה ¥500). תחבורה ב-IC בלבד, בלי צורך במונית.",
-     "luggage": "המזוודות נסעו איתכם ב-NOZOMI 358 (קרון 9, מושבי Oversized Baggage) והגיעו לתחנת טוקיו ב-13:06. הניחו אותן ב-Tokyu Stay שינג'וקו לפני שמתחילים, וצאו ליאנאקה עם דייפאק וכרטיס IC (סויקה) בלבד — לא סוחבים כלום בסמטאות. (הצ׳ק-אין ב-15:00, אבל אפשר להשאיר מזוודות בקבלה קודם.)",
+     "luggage": "אין מזוודות היום — הן נשלחו מאוסקה ב-29.9 בבוקר ומחכות ב-Tokyu Stay שינג'וקו. יוצאים מהשינקנסן ישר ליאנאקה עם דייפק וכרטיס IC (סויקה) בלבד, ומגיעים למלון רק בסוף הערב. אם בכל זאת בחרתם לקחת את המזוודות ברכבת: לוקרים גדולים בתחנת טוקיו/ניפורי (¥700–800), או קפיצה למלון שדוחה את תחילת המסלול ל-~14:40.",
      "meal": "חובה קפה קאיאבה (Kayaba Coffee) בבית מרחץ בן מאה שנה: סנדוויץ' הביצה החם המפורסם ¥1,000 + קפה ¥500, בערך ¥1,500 לאדם. אם יש תור — נשנשו לאורך יאנאקה גינזה (מנגו יאקיטורי, קרוקטים, גלידה) ~¥1,500."
     },
     "stops": [
@@ -5405,7 +5433,11 @@ window.TRIP_DATA = {
      "La entrada al Gran Salón del Buda (Daibutsuden) cuesta ¥800 p/persona, solo efectivo en boletería. Comprá el combo ¥1.200 (salón + museo) si te interesa el museo de enfrente — vale la pena.",
      "Tomá el Kintetsu desde Namba directo a Nara (36 min, ¥680) — mucho más cerca y rápido que el JR, y sale al lado del hotel. El JR Pass no cubre Kintetsu, pero la diferencia es mínima.",
      "Doyama-cho está en Kita (Umeda), no en Namba — tomá el subte Midosuji al norte (7 min, ¥240) de Namba a Umeda, y 5 min a pie. FrenZy abre 20:00 los martes, Grand Slam a las 21:00."
-    ]
+    ],
+    "logistics": {
+     "he": "📦 לפני היציאה לנארה (עד 08:15): מוסרים את שתי המזוודות בקבלת Onyado Nono למשלוח takkyubin ל-Tokyu Stay Shinjuku (~¥2,300 למזוודה, מגיע 30.9). כותבים על השטר את השם ואת תאריך הצ׳ק-אין 30.9. הלילה האחרון באוסקה עם תיק-לילה בלבד — ממילא היום הוא נארה + סיור אוכל + דויאמה, עדיף בלי כלום. כך 30.9 מתחיל ביאנאקה ישר מהרכבת, בלי לגרור מזוודות לשינג'וקו וחזרה.",
+     "es": "📦 Antes de salir para Nara (hasta las 08:15): dejen las dos valijas en recepción del Onyado Nono para enviarlas por takkyubin al Tokyu Stay Shinjuku (~¥2.300 por valija, llega el 30/9). Anoten en la etiqueta el nombre y la fecha de check-in 30/9. La última noche en Osaka con bolso de una noche nomás — total el día es Nara + tour gastronómico + Doyama, mejor sin nada encima. Así el 30/9 arranca en Yanaka directo desde el tren, sin arrastrar valijas hasta Shinjuku y volver."
+    }
    },
    {
     "date": "2026-09-30",
@@ -5451,16 +5483,40 @@ window.TRIP_DATA = {
       "dur": "~2:27 h"
      },
      {
-      "start": "14:45",
-      "end": "16:15",
+      "start": "13:06",
+      "end": "13:35",
+      "type": "transport",
+      "area": "Estación de Tokio a Nippori",
+      "title": "Directo a Yanaka — sin pasar por el hotel",
+      "desc": "Las valijas ya esperan en el Tokyu Stay Shinjuku (despachadas desde Osaka el 29/9), así que bajan del shinkansen solo con el daypack y toman la línea Yamanote de la estación de Tokio a Nippori — 13 minutos, sin trasbordos. El recorrido arranca en la salida oeste.",
+      "tips": "Este es el gran ahorro del día: ir hasta Shinjuku y volver se comía ~hora y media y apretaba todo Yanaka. Si igual llevan algo pesado, hay lockers grandes en la estación de Tokio y en Nippori (¥700–800).",
+      "cost": "¥170 por persona (Yamanote, IC)",
+      "booking": "",
+      "dur": "~13 min + caminata"
+     },
+     {
+      "start": "13:40",
+      "end": "16:50",
       "type": "sightseeing",
       "area": "Yanaka (Nippori)",
       "title": "Yanaka — el barrio que detuvo el tiempo",
-      "desc": "Yanaka es uno de los pocos barrios de Tokyo que sobrevivió los bombardeos y la demolición modernizadora — la calle Yanaka Ginza es un paseo retro con tienditas, templos silenciosos y gatos que caminan como dueños del lugar. Caminá despacio, sacá fotos y tocá la textura real de Tokyo.",
-      "tips": "La entrada al cementerio Yanaka Cemetery es gratis y vale la pena — árboles enormes, la tumba de los Tokugawa y un silencio absoluto.",
-      "cost": "Gratis (compras a elección)",
+      "desc": "Yanaka es uno de los pocos barrios de Tokyo que sobrevivió los bombardeos y la demolición modernizadora — Yanaka Ginza es un paseo retro con tienditas, templos silenciosos y gatos que caminan como dueños del lugar. El recorrido completo (9 paradas, sección 🚶 Recorridos): el cementerio y la tumba del último shogun → Tenno-ji y el Buda → SCAI The Bathhouse → Kayaba Coffee → Yanaka Ginza → las escaleras Yuyake Dandan → tiendas de artesanía → santuario Nezu y su túnel de torii.",
+      "tips": "Tres horas completas sin apuro — eso es exactamente lo que ganamos despachando las valijas por adelantado. Si se atrasan, el santuario Nezu es el atajo: se puede saltear y salir directo desde Yanaka Ginza.",
+      "cost": "Gratis (comida y compras a elección, ~¥1.500–2.500 por persona)",
       "booking": "",
       "highlight": true
+     },
+     {
+      "start": "16:50",
+      "end": "18:20",
+      "type": "transport",
+      "area": "Nezu a Toyosu",
+      "title": "Traslado a Toyosu (con aire para respirar)",
+      "desc": "De la estación Nezu por la línea Chiyoda hasta Hibiya, trasbordo a Yurakucho y de ahí a Toyosu, después ~10 min a pie (o una parada del Yurikamome hasta Shin-Toyosu) — en total ~45 min. Queda como una hora de aire: un café o un descanso por Nezu-Ueno, o llegar temprano a Toyosu y sentarse frente al agua.",
+      "tips": "No lleguen sobre la hora — la ventana de entrada a teamLab es 18:30–19:00 y después no dejan pasar. Si sobra tiempo y lo quieren llenar: Ueno (Ameyoko, el parque) está a una parada de Nippori.",
+      "cost": "¥280–320 por persona (IC)",
+      "booking": "",
+      "dur": "~45 min de viaje"
      },
      {
       "start": "18:30",
@@ -5488,14 +5544,14 @@ window.TRIP_DATA = {
      }
     ],
     "logistics": {
-     "he": "✓ לוקחים את המזוודות בשינקנסן לטוקיו — המושבים שנסגרו (NOZOMI 358, קרון 9, 1C+1D) הם Seat with Oversized Baggage Area, כלומר מקום מובטח למזוודה גדולה מאחורי הכיסא. אין צורך ב-takkyubin (שליחה מאוסקה מגיעה רק למחרת). בטוקיו: משאירים את המזוודות ב-Tokyu Stay שינג'וקו לפני היציאה ליאנאקה.",
-     "es": "✓ Llevan las valijas en el shinkansen a Tokio — los asientos reservados (NOZOMI 358, vagón 9, 1C+1D) son Seat with Oversized Baggage Area, o sea espacio garantizado para la valija grande detrás del asiento. No hace falta takkyubin (desde Osaka llegaría recién al día siguiente). En Tokio: dejan las valijas en el Tokyu Stay Shinjuku antes de salir para Yanaka."
+     "he": "🎒 יום בלי מזוודות: הן נשלחו מאוסקה ב-29.9 בבוקר ומחכות ב-Tokyu Stay שינג'וקו. יורדים מהשינקנסן בתחנת טוקיו עם דייפק בלבד וממשיכים ישר ליאנאקה — בלי קפיצה לשינג'וקו וחזרה (חיסכון של ~שעה וחצי). מגיעים למלון רק בסוף הערב, אחרי ארוחת הערב, והמזוודות כבר שם. המושבים שהוזמנו (קרון 9, 1C+1D) הם Seat with Oversized Baggage Area — עכשיו זה פשוט מקום נוסף לרגליים ולדייפקים.",
+     "es": "🎒 Día sin valijas: se despacharon desde Osaka la mañana del 29/9 y esperan en el Tokyu Stay Shinjuku. Bajan del shinkansen en la estación de Tokio solo con el daypack y siguen directo a Yanaka — sin desvío a Shinjuku y vuelta (ahorro de ~hora y media). Llegan al hotel recién a la noche, después de la cena, y las valijas ya están ahí. Los asientos reservados (vagón 9, 1C+1D) son Seat with Oversized Baggage Area — ahora simplemente espacio de más para las piernas y los daypacks."
     },
     "cultural": "Yanaka sobrevivió a los siglos no porque la reconstruyeron, sino porque no la quemaron. Mientras el resto de Tokio fue borrado dos veces — por el terremoto de 1923 y los bombardeos de 1945 —, Yanaka permaneció intacta: sus casas de madera, sus cementerios budistas, sus callejuelas retorcidas. El concepto que subyace a todo esto se llama shitamachi — la 'ciudad baja', el barrio de los comerciantes, artesanos y gente común de la época Edo. A diferencia de los señoríos en las colinas, el shitamachi cultivaba otra nobleza: humana, cálida y ruidosa, donde el espíritu del vecindario en sí es considerado algo que vale la pena preservar.",
     "tips": [
      "✓ NOZOMI 358, vagón 9, asientos 1C+1D (reserva 2002). En sentido Osaka→Tokio el monte Fuji se ve del lado izquierdo — fila A/B/C, o sea el lado del asiento 1C — cerca de las 11:45, justo después de Shin-Fuji. Ojo que 1C y 1D quedan a cada lado del pasillo, así que el que va en 1D tiene que cruzar para la foto. Llegá al andén 10 min antes — los trenes salen puntuales al segundo.",
      "En Yanaka: comprá menchi-katsu (croquetas de carne) calientes en la calle Yanaka Ginza — se comen caminando (aruki-gui). No te pierdas la escalera Yuyake Dandan para la foto de la calle desde arriba.",
-     "En Shibuya: Loft (7 pisos) y Tokyu Hands para accesorios de viaje, cosmética y souvenirs únicos. Si buscás anime/música, el Village Vanguard de Shibuya es excelente."
+     "🎒 La decisión de equipaje del día: se despachan desde Osaka la mañana del 29/9 (~¥2.300 por valija) y no se tocan hasta la noche. El desvío a Shinjuku para dejarlas cuesta ~hora y media y corre Yanaka a las 14:40 — con la ventana rígida de teamLab a las 18:30, eso convierte la tarde en una carrera. Para teamLab: pantalón que se pueda arremangar por encima de la rodilla (se mojan las piernas), y evitá falda o short muy corto — hay pisos espejados."
     ]
    },
    {
@@ -7778,10 +7834,10 @@ window.TRIP_DATA = {
      "duration": "~3 horas",
      "distance": "~3,5 km, plano",
      "start": "Estación Nippori (JR Yamanote), salida oeste — al borde del cementerio",
-     "getThere": "El NOZOMI 358 llega a la estación de Tokio a las 13:06. Directo a Yanaka: Tokyo→Nippori en la línea Yamanote ~13 min (en la estación ~13:25). Si primero dejan las valijas en el Tokyu Stay Shinjuku: Tokyo→Shinjuku ~14 min, dejarlas, y después Shinjuku→Nippori ~22 min — en la estación ~14:15.",
+     "getThere": "El NOZOMI 358 llega a la estación de Tokio a las 13:06, y las valijas ya están en Shinjuku (despachadas desde Osaka el 29/9). De ahí Tokyo→Nippori en la línea Yamanote ~13 min, sin trasbordos — en la salida oeste de Nippori a las ~13:30 y el recorrido arranca 13:40. (Si pasáramos por el hotel a dejar valijas, llegaríamos a Nippori recién ~14:40.)",
      "end": "Santuario Nezu → estación Nezu (línea Chiyoda), rumbo a teamLab en Toyosu a la noche",
      "cost": "Casi todo el barrio es gratis: el cementerio, el templo Tenno-ji con el Gran Buda, la galería SCAI y el santuario Nezu con el túnel de torii, todo sin entrada. El gasto real es la comida: el food crawl en Yanaka Ginza ~¥1.500–2.500 por persona, y Kayaba Coffee ~¥1.500 (sándwich de huevo ¥1.000 + café ¥500). Todo con la IC, no hace falta taxi.",
-     "luggage": "Las valijas viajaron con ustedes en el NOZOMI 358 (vagón 9, asientos con Oversized Baggage Area) y llegaron a la estación de Tokio a las 13:06. Déjenlas en el Tokyu Stay Shinjuku antes de arrancar y salgan a Yanaka con un daypack y la tarjeta IC (Suica) nomás — nada de arrastrar valijas por los callejones. (El check-in es a las 15:00, pero se pueden dejar las valijas en recepción antes.)",
+     "luggage": "Hoy sin valijas — se despacharon desde Osaka la mañana del 29/9 y esperan en el Tokyu Stay Shinjuku. Del shinkansen salen directo a Yanaka con un daypack y la tarjeta IC (Suica) nomás, y llegan al hotel recién a la noche. Si igual eligen llevar las valijas en el tren: hay lockers grandes en la estación de Tokio y en Nippori (¥700–800), o el desvío al hotel que corre el inicio del recorrido a las ~14:40.",
      "meal": "Imperdible el Kayaba Coffee, en una casa de baños centenaria: el famoso sándwich de huevo tibio ¥1.000 + café ¥500, unos ¥1.500 por persona. Si hay cola, picoteá a lo largo de Yanaka Ginza (yakitori, croquetas, helado) por ~¥1.500."
     },
     "stops": [
