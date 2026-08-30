@@ -739,7 +739,7 @@ window.TRIP_DATA = {
      { "l": { "he": "SHINANO 11 נגויה→נקאטסוגאווה (23.9)", "es": "SHINANO 11 Nagoya→Nakatsugawa (23.9)" }, "low": 12585, "high": 12585, "st": "booked" },
      { "l": { "he": "SHINANO 2 + Nozomi נאגיסו→קיוטו (25.9)", "es": "SHINANO 2 + Nozomi Nagiso→Kioto (25.9)" }, "low": 19020, "high": 19020, "st": "booked" },
      { "l": { "he": "Hakone Free Pass · 2 מבוגרים (22.9)", "es": "Hakone Free Pass · 2 adultos (22.9)" }, "low": 14200, "high": 14200, "st": "est" },
-     { "l": { "he": "שינקנסן Shin-Osaka→טוקיו (30.9)", "es": "Shinkansen Shin-Osaka→Tokio (30.9)" }, "low": 29840, "high": 39180, "st": "est" },
+     { "l": { "he": "NOZOMI 358 Shin-Osaka→טוקיו (30.9)", "es": "NOZOMI 358 Shin-Osaka→Tokio (30.9)" }, "low": 33120, "high": 33120, "st": "booked" },
      { "l": { "he": "N'EX שינג'וקו→נריטה (2.10)", "es": "N'EX Shinjuku→Narita (2.10)" }, "low": 6660, "high": 6660, "st": "est" }
     ]
    },
@@ -1882,27 +1882,39 @@ window.TRIP_DATA = {
     "hotel": "🏨 Tokyu Stay Shinjuku (✓ נסגר · 30→2.10) · שינג'וקו · מכונת כביסה בחדר",
     "events": [
      {
-      "start": "09:00",
-      "end": "10:00",
+      "start": "08:30",
+      "end": "09:30",
       "type": "food",
       "area": "Osaka",
       "title": "ארוחת בוקר אחרונה באוסקה",
       "desc": "צאו לסיבוב אחרון בשכונה לפני עזיבה — קפה יפני, טוסט עם חמאה ורוטב סויה, או takoyaki מוקדם לדרך. תנו לאוסקה לסגור בטוב.",
-      "tips": "שמרו מקום בבטן לטוקיו; הצ'ק-אאוט בדרך כלל עד 11:00 אז תכננו בהתאם.",
+      "tips": "⚠️ הרכבת יוצאת מ-Shin-Osaka ב-10:39 — סיימו את הבוקר בנחת עד 09:30 ואל תגררו את הארוחה.",
       "cost": "¥800–1,500 לאדם",
       "booking": ""
      },
      {
-      "start": "10:45",
-      "end": "13:15",
+      "start": "09:30",
+      "end": "10:25",
+      "type": "transport",
+      "area": "Namba עד Shin-Osaka",
+      "title": "צ׳ק-אאוט ומעבר לתחנת Shin-Osaka",
+      "desc": "צ׳ק-אאוט מ-Onyado Nono עם המזוודות, ואז קו Midosuji מ-Namba ל-Shin-Osaka (~12 דק׳, ישיר). מגיעים לתחנה ~10:25 — מספיק זמן לבנטו לרכבת ולמצוא את רציף הטוקאידו.",
+      "tips": "קנו אקיבן (בנטו של רכבת) ומשקה בתחנה לפני העלייה — יש דוכנים מצוינים בקומת השערים של השינקנסן. עם מזוודות, קו Midosuji בשעה הזאת סביר.",
+      "cost": "¥290 לאדם (Midosuji, IC)",
+      "booking": "",
+      "dur": "~55 דק׳ כולל באפר"
+     },
+     {
+      "start": "10:39",
+      "end": "13:06",
       "type": "transport",
       "area": "Shin-Osaka עד Tokyo",
-      "title": "שינקנסן לטוקיו — הגעה הביתה",
-      "desc": "רכבת Nozomi מ-Shin-Osaka מגיעה לטוקיו תוך כ-2.5 שעות — גלו את היופי שבמעבר הזריז בין שתי מטרופולינים. תיהנו מהנוף המשתנה ומכוס קפה מהקיוסק.",
-      "tips": "שמרו את מזוודות הצד בתא העליון ואת הגב למטה — הנסיעה חלקה ונוחה לעבודה או לנמנום.",
-      "cost": "כלול ב-JR Pass",
-      "booking": "הזמינו מושבים Shin-Osaka → Tokyo ב-SmartEX מראש",
-      "dur": "~2:30 שעות"
+      "title": "✓ NOZOMI 358 לטוקיו (נסגר)",
+      "desc": "✓ נסגר · NOZOMI 358 (N700, 16 קרונות) · שין-אוסקה 10:39 → טוקיו 13:06 · קרון 9, מושבים 1C+1D · Seat with Oversized Baggage Area (מקום מובטח למזוודה גדולה) · תעריף Hayatoku-3 · הזמנה 2002 · ¥33,120 לזוג. 2.5 שעות של מעבר חלק בין שתי מטרופולינים.",
+      "tips": "⚠️ 1C ו-1D הם שני מושבי מעבר משני צידי המעבר (טור 3+2) — לא צמודים. 🗻 בכיוון אוסקה→טוקיו פוג'י נראה בצד שמאל (טור A/B/C, כלומר הצד של 1C) בערך 11:45, אחרי Shin-Fuji. עלייה: סריקת QR-Ticket, איסוף כרטיס במכונה, או שיוך כרטיס IC למושבים ואז מקרבים את הסויקה בשער.",
+      "cost": "✓ ¥33,120 לזוג (שולם · הזמנה 2002)",
+      "booking": "✓ נסגר — smartEX · NOZOMI 358 · קרון 9, מושבים 1C+1D · הזמנה 2002",
+      "dur": "~2:27 שעות"
      },
      {
       "start": "14:45",
@@ -1942,12 +1954,12 @@ window.TRIP_DATA = {
      }
     ],
     "logistics": {
-     "he": "לוקחים את המזוודות בשינקנסן לטוקיו (הזמינו מושב \"מטען גדול\" אם מזוודה מעל 160 ס\"מ). שליחת takkyubin מאוסקה מגיעה רק למחרת.",
-     "es": "Llevan las valijas en el shinkansen a Tokio (reserven asiento \"equipaje grande\" si la valija supera 160 cm). El envío takkyubin desde Osaka llega recién al día siguiente."
+     "he": "✓ לוקחים את המזוודות בשינקנסן לטוקיו — המושבים שנסגרו (NOZOMI 358, קרון 9, 1C+1D) הם Seat with Oversized Baggage Area, כלומר מקום מובטח למזוודה גדולה מאחורי הכיסא. אין צורך ב-takkyubin (שליחה מאוסקה מגיעה רק למחרת). בטוקיו: משאירים את המזוודות ב-Tokyu Stay שינג'וקו לפני היציאה ליאנאקה.",
+     "es": "✓ Llevan las valijas en el shinkansen a Tokio — los asientos reservados (NOZOMI 358, vagón 9, 1C+1D) son Seat with Oversized Baggage Area, o sea espacio garantizado para la valija grande detrás del asiento. No hace falta takkyubin (desde Osaka llegaría recién al día siguiente). En Tokio: dejan las valijas en el Tokyu Stay Shinjuku antes de salir para Yanaka."
     },
     "cultural": "יאנאקה שורדת את הדורות לא בזכות שיקום — אלא בזכות שלא נשרפה. בעוד שטוקיו האחרת נמחתה פעמיים, בהרעידת הקרקע של 1923 ובהפצצות של 1945, יאנאקה נותרה על כנה — בתי העץ, בתי-הקברות הבודהיסטים, ורחובות הסמטאות שלה שרדו. הרעיון שעומד מאחורי שמירה זו נקרא בפי היפנים 'שיטאמאצ'י' — העיר התחתונה, מקום מגורי הסוחרים, האומנים, ואנשי העם בתקופת אדו. בניגוד לחצרות הגבוהות על הגבעות, שיטאמאצ'י שמרה על אדנות אחרת: אנושית, חמה ורועשת, שבה רוח השכונה עצמה נחשבת לדבר שצריך לשמרו.",
     "tips": [
-     "בשינקנסן Nozomi: תזמנו כיסאות בצד ה-E (החלון הימני בכיוון הנסיעה) — נוף פוג'י בדרך לטוקיו נראה מצד ימין לאחר Shin-Fuji. הגיעו לרכבת לפחות 10 דקות לפני יציאה — הרכבות יוצאות בדייקנות שניה.",
+     "✓ NOZOMI 358, קרון 9, מושבים 1C+1D (הזמנה 2002). בכיוון אוסקה→טוקיו הר פוג'י נראה בצד שמאל — טור A/B/C, כלומר הצד של מושב 1C — בערך 11:45, מיד אחרי Shin-Fuji. שימו לב ש-1C ו-1D הם משני צידי המעבר, אז מי שיושב ב-1D יצטרך לחצות לצד השני לצילום. הגיעו לרציף 10 דקות לפני היציאה — הרכבות יוצאות בדייקנות של שנייה.",
      "ביאנאקה: קנו מנצ'י-קטסו (כדורי בשר מטוגנים) חמים ישר מהמאפייה ברחוב Yanaka Ginza — אוכלים עומדים תוך כדי הליכה (תכונה מקומית שמכנים אחילוי, 'אוכל הלוך'). אל תחמיצו את מדרגות Yuyake Dandan לתמונה של הרחוב מלמעלה.",
      "בשיבויה: Loft (7 קומות) ו-Tokyu Hands הם כתובת לציודי נסיעה, קוסמטיקה, וסובנירים ייחודיים לא מיוצאים. אם קניות האחרונות כוללות מוצרי ניגון/אנימה — ה-Village Vanguard בשיבויה מצויין."
     ]
@@ -4232,10 +4244,10 @@ window.TRIP_DATA = {
      "duration": "~3 שעות",
      "distance": "~3.5 ק״מ, שטוח",
      "start": "תחנת Nippori (JR Yamanote), יציאה מערבית — בקצה בית הקברות",
-     "getThere": "מהשינקנסן: Tokyo→Nippori בקו Yamanote ~10 דק׳",
+     "getThere": "ה-NOZOMI 358 נוחת בתחנת טוקיו ב-13:06. ישירות ליאנאקה: Tokyo→Nippori בקו Yamanote ~13 דק׳ (בתחנה ~13:25). אם קודם מניחים מזוודות ב-Tokyu Stay שינג'וקו: Tokyo→Shinjuku ~14 דק׳, הנחה, ואז Shinjuku→Nippori ~22 דק׳ — בתחנה ~14:15.",
      "end": "מקדש Nezu → תחנת Nezu (קו Chiyoda), לכיוון teamLab בטויוסו בערב",
      "cost": "רוב הרובע חינם: בית הקברות, מקדש טנו-ג'י והבודהה, SCAI (גלריה) ומקדש נזו עם מנהרת הטוריאי — כולם ללא תשלום. ההוצאה האמיתית היא אוכל: קרול ביאנאקה גינזה ~¥1,500–2,500 לאדם, וקפה קאיאבה ~¥1,500 (סנדוויץ' ביצה ¥1,000 + קפה ¥500). תחבורה ב-IC בלבד, בלי צורך במונית.",
-     "luggage": "היום המזוודה הראשית עדיין באוסקה (אונדו נונו נמבא) — יאנאקה זה סיור אחר הצהריים בטוקיו אחרי הגעה בשינקנסן, אז נעים עם דייפאק וכרטיס IC (סויקה) בלבד. את המזוודות הביאו בשינקנסן והשאירו בטוקיו Stay שינג'וקו לפני שהתחלתם — לא סוחבים כלום בסמטאות.",
+     "luggage": "המזוודות נסעו איתכם ב-NOZOMI 358 (קרון 9, מושבי Oversized Baggage) והגיעו לתחנת טוקיו ב-13:06. הניחו אותן ב-Tokyu Stay שינג'וקו לפני שמתחילים, וצאו ליאנאקה עם דייפאק וכרטיס IC (סויקה) בלבד — לא סוחבים כלום בסמטאות. (הצ׳ק-אין ב-15:00, אבל אפשר להשאיר מזוודות בקבלה קודם.)",
      "meal": "חובה קפה קאיאבה (Kayaba Coffee) בבית מרחץ בן מאה שנה: סנדוויץ' הביצה החם המפורסם ¥1,000 + קפה ¥500, בערך ¥1,500 לאדם. אם יש תור — נשנשו לאורך יאנאקה גינזה (מנגו יאקיטורי, קרוקטים, גלידה) ~¥1,500."
     },
     "stops": [
@@ -5404,27 +5416,39 @@ window.TRIP_DATA = {
     "hotel": "🏨 Tokyu Stay Shinjuku (✓ reservado · 30→2.10) · Shinjuku · lavarropas en la habitación",
     "events": [
      {
-      "start": "09:00",
-      "end": "10:00",
+      "start": "08:30",
+      "end": "09:30",
       "type": "food",
       "area": "Osaka",
       "title": "Último desayuno en Osaka",
       "desc": "Un último recorrido por el barrio antes de partir — café japonés, tostadas con manteca y salsa de soja, o unos takoyaki madrugadores para el camino. Que Osaka cierre con una buena despedida.",
-      "tips": "Guardá lugar en el estómago para Tokyo; el check-out suele ser hasta las 11:00 así que planificá bien los tiempos.",
+      "tips": "⚠️ El tren sale de Shin-Osaka a las 10:39 — cierren la mañana tranquilos hasta las 09:30 y no estiren el desayuno.",
       "cost": "¥800–1.500 por persona",
       "booking": ""
      },
      {
-      "start": "10:45",
-      "end": "13:15",
+      "start": "09:30",
+      "end": "10:25",
       "type": "transport",
-      "area": "Shin-Osaka עד Tokyo",
-      "title": "Shinkansen a Tokyo — bienvenidos de vuelta",
-      "desc": "El Nozomi desde Shin-Osaka llega a Tokyo en unas 2,5 horas — una transición casi mágica entre dos metrópolis gigantes. Disfrutá el paisaje que va cambiando y tomate un café del kiosco del andén.",
-      "tips": "Las valijas grandes van en el compartimento superior y las mochilas abajo — el viaje es suave, ideal para descansar o leer.",
-      "cost": "Incluido en el JR Pass",
-      "booking": "Reservá los asientos Shin-Osaka → Tokyo por SmartEX con anticipación",
-      "dur": "~2:30 h"
+      "area": "Namba a Shin-Osaka",
+      "title": "Check-out y traslado a la estación Shin-Osaka",
+      "desc": "Check-out del Onyado Nono con las valijas y después la línea Midosuji de Namba a Shin-Osaka (~12 min, directo). Llegan a la estación ~10:25 — tiempo de sobra para comprar el bento del tren y encontrar el andén del Tokaido.",
+      "tips": "Compren un ekiben (bento de tren) y bebida en la estación antes de subir — hay puestos muy buenos en el nivel de los molinetes del shinkansen. Con valijas, la Midosuji a esa hora está tranquila.",
+      "cost": "¥290 por persona (Midosuji, IC)",
+      "booking": "",
+      "dur": "~55 min con margen"
+     },
+     {
+      "start": "10:39",
+      "end": "13:06",
+      "type": "transport",
+      "area": "Shin-Osaka a Tokio",
+      "title": "✓ NOZOMI 358 a Tokio (reservado)",
+      "desc": "✓ Reservado · NOZOMI 358 (N700, 16 vagones) · Shin-Osaka 10:39 → Tokio 13:06 · vagón 9, asientos 1C+1D · Seat with Oversized Baggage Area (espacio garantizado para valija grande) · tarifa Hayatoku-3 · reserva 2002 · ¥33.120 la pareja. Dos horas y media de transición suave entre dos metrópolis.",
+      "tips": "⚠️ 1C y 1D son dos asientos de pasillo a cada lado del corredor (fila 3+2) — no están juntos. 🗻 En sentido Osaka→Tokio el Fuji se ve del lado izquierdo (fila A/B/C, o sea el lado del 1C) cerca de las 11:45, después de Shin-Fuji. Para subir: escanear el QR-Ticket, retirar el boleto en la máquina, o asociar la tarjeta IC a los asientos y pasar la Suica por el molinete.",
+      "cost": "✓ ¥33.120 la pareja (pagado · reserva 2002)",
+      "booking": "✓ Reservado — smartEX · NOZOMI 358 · vagón 9, asientos 1C+1D · reserva 2002",
+      "dur": "~2:27 h"
      },
      {
       "start": "14:45",
@@ -5464,12 +5488,12 @@ window.TRIP_DATA = {
      }
     ],
     "logistics": {
-     "he": "לוקחים את המזוודות בשינקנסן לטוקיו (הזמינו מושב \"מטען גדול\" אם מזוודה מעל 160 ס\"מ). שליחת takkyubin מאוסקה מגיעה רק למחרת.",
-     "es": "Llevan las valijas en el shinkansen a Tokio (reserven asiento \"equipaje grande\" si la valija supera 160 cm). El envío takkyubin desde Osaka llega recién al día siguiente."
+     "he": "✓ לוקחים את המזוודות בשינקנסן לטוקיו — המושבים שנסגרו (NOZOMI 358, קרון 9, 1C+1D) הם Seat with Oversized Baggage Area, כלומר מקום מובטח למזוודה גדולה מאחורי הכיסא. אין צורך ב-takkyubin (שליחה מאוסקה מגיעה רק למחרת). בטוקיו: משאירים את המזוודות ב-Tokyu Stay שינג'וקו לפני היציאה ליאנאקה.",
+     "es": "✓ Llevan las valijas en el shinkansen a Tokio — los asientos reservados (NOZOMI 358, vagón 9, 1C+1D) son Seat with Oversized Baggage Area, o sea espacio garantizado para la valija grande detrás del asiento. No hace falta takkyubin (desde Osaka llegaría recién al día siguiente). En Tokio: dejan las valijas en el Tokyu Stay Shinjuku antes de salir para Yanaka."
     },
     "cultural": "Yanaka sobrevivió a los siglos no porque la reconstruyeron, sino porque no la quemaron. Mientras el resto de Tokio fue borrado dos veces — por el terremoto de 1923 y los bombardeos de 1945 —, Yanaka permaneció intacta: sus casas de madera, sus cementerios budistas, sus callejuelas retorcidas. El concepto que subyace a todo esto se llama shitamachi — la 'ciudad baja', el barrio de los comerciantes, artesanos y gente común de la época Edo. A diferencia de los señoríos en las colinas, el shitamachi cultivaba otra nobleza: humana, cálida y ruidosa, donde el espíritu del vecindario en sí es considerado algo que vale la pena preservar.",
     "tips": [
-     "En el Shinkansen Nozomi: pedí asientos lado E (ventana derecha en sentido de marcha) — el Fuji rumbo a Tokio se ve a la derecha después de Shin-Fuji. Llegá al tren 10 min antes — salen puntuales al segundo.",
+     "✓ NOZOMI 358, vagón 9, asientos 1C+1D (reserva 2002). En sentido Osaka→Tokio el monte Fuji se ve del lado izquierdo — fila A/B/C, o sea el lado del asiento 1C — cerca de las 11:45, justo después de Shin-Fuji. Ojo que 1C y 1D quedan a cada lado del pasillo, así que el que va en 1D tiene que cruzar para la foto. Llegá al andén 10 min antes — los trenes salen puntuales al segundo.",
      "En Yanaka: comprá menchi-katsu (croquetas de carne) calientes en la calle Yanaka Ginza — se comen caminando (aruki-gui). No te pierdas la escalera Yuyake Dandan para la foto de la calle desde arriba.",
      "En Shibuya: Loft (7 pisos) y Tokyu Hands para accesorios de viaje, cosmética y souvenirs únicos. Si buscás anime/música, el Village Vanguard de Shibuya es excelente."
     ]
@@ -7754,10 +7778,10 @@ window.TRIP_DATA = {
      "duration": "~3 horas",
      "distance": "~3,5 km, plano",
      "start": "Estación Nippori (JR Yamanote), salida oeste — al borde del cementerio",
-     "getThere": "Desde el shinkansen: Tokyo→Nippori en la línea Yamanote ~10 min",
+     "getThere": "El NOZOMI 358 llega a la estación de Tokio a las 13:06. Directo a Yanaka: Tokyo→Nippori en la línea Yamanote ~13 min (en la estación ~13:25). Si primero dejan las valijas en el Tokyu Stay Shinjuku: Tokyo→Shinjuku ~14 min, dejarlas, y después Shinjuku→Nippori ~22 min — en la estación ~14:15.",
      "end": "Santuario Nezu → estación Nezu (línea Chiyoda), rumbo a teamLab en Toyosu a la noche",
      "cost": "Casi todo el barrio es gratis: el cementerio, el templo Tenno-ji con el Gran Buda, la galería SCAI y el santuario Nezu con el túnel de torii, todo sin entrada. El gasto real es la comida: el food crawl en Yanaka Ginza ~¥1.500–2.500 por persona, y Kayaba Coffee ~¥1.500 (sándwich de huevo ¥1.000 + café ¥500). Todo con la IC, no hace falta taxi.",
-     "luggage": "Hoy la valija grande ya viajó con ustedes en el shinkansen Osaka->Tokio; dejala en el Tokyu Stay Shinjuku antes de arrancar. Para Yanaka, que es un paseo de tarde, andá liviano con un daypack y la tarjeta IC (Suica) nomás — nada de arrastrar valijas por los callejones.",
+     "luggage": "Las valijas viajaron con ustedes en el NOZOMI 358 (vagón 9, asientos con Oversized Baggage Area) y llegaron a la estación de Tokio a las 13:06. Déjenlas en el Tokyu Stay Shinjuku antes de arrancar y salgan a Yanaka con un daypack y la tarjeta IC (Suica) nomás — nada de arrastrar valijas por los callejones. (El check-in es a las 15:00, pero se pueden dejar las valijas en recepción antes.)",
      "meal": "Imperdible el Kayaba Coffee, en una casa de baños centenaria: el famoso sándwich de huevo tibio ¥1.000 + café ¥500, unos ¥1.500 por persona. Si hay cola, picoteá a lo largo de Yanaka Ginza (yakitori, croquetas, helado) por ~¥1.500."
     },
     "stops": [
