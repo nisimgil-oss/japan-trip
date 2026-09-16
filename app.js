@@ -38,7 +38,7 @@
       placesOpen: 'פתח ב-Google Maps', placesSearch: 'חיפוש מקום…', placesShown: 'מציג', placesAll: 'הכול',
       placesNote: 'מבוסס על מפת "פתיתים — מדריך טוקיו" · 741 מקומות מוטמעים מקומית באפליקציה (עובד גם לא-מקוון, פרט לרקע המפה). תמיד אמתו שעות ב-Google Maps.',
       'toolbar.addEvent': '＋ הוסף פעילות ליום הזה', 'toolbar.backup': '⬇️ גיבוי', 'toolbar.restore': '⬆️ שחזור', 'toolbar.petals': '🌸 פרחים', 'toolbar.reset': '↺ אפס תכנון', 'toolbar.printDay': '🖨️ הדפס יום',
-      'tab.luggage': 'תיקים', spotsAnime: '🎮 אנימה', spotsLgbt: '🏳️‍🌈 חיי לילה גאים', wxTypical: 'ממוצע עונתי', wxForecast: 'תחזית', wxRain: 'גשם', wxWind: 'רוח', wxTyphoon: '🌀 סוף ספטמבר = שיא עונת הטייפונים — עקבו אחרי התחזית ושקלו ביטוח גמיש.', wxLoading: 'טוען מזג אוויר…', wxNA: 'מזג אוויר לא זמין',
+      'tab.luggage': 'תיקים', 'tab.rain': 'טיול בגשם', rainFixed: '🔒 סגור — לא זז', rainPlan: '☔ תוכנית גשם', rainIdeas: '💡 עוד רעיונות מקורים', spotsAnime: '🎮 אנימה', spotsLgbt: '🏳️‍🌈 חיי לילה גאים', wxTypical: 'ממוצע עונתי', wxForecast: 'תחזית', wxRain: 'גשם', wxWind: 'רוח', wxTyphoon: '🌀 סוף ספטמבר = שיא עונת הטייפונים — עקבו אחרי התחזית ושקלו ביטוח גמיש.', wxLoading: 'טוען מזג אוויר…', wxNA: 'מזג אוויר לא זמין',
       lugTitle: '🧳 שרשרת התיקים (takkyubin)', lugIntro: 'המזוודה הראשית נשלחת קדימה כדי לטייל קל בהאקונה ובקיסו. הימים ב-🎒 = תיק-לילה בלבד, בלי המזוודה.', lugHave: 'איתכם', lugNight: 'תיק-לילה בלבד', lugSend: 'שליחה', lugPickup: 'איסוף', lugCardTitle: '📇 כרטיס בקשה לדלפק המלון (יפנית)', lugCardHint: 'הראו את זה בקבלה כדי לשלוח מזוודה למלון הבא:', lugCopy: 'העתק', lugCopied: '✓ הועתק',
       'overview.title': '🗾 כל הטיול במבט אחד', 'restaurants.title': '🍣 מקומות מיוחדים לאכול',
       'foot': 'נבנה באהבה עבורכם ❤️ · תכנון גמיש — שנו, הוסיפו וסמנו ✓ · いってらっしゃい',
@@ -90,7 +90,7 @@
       placesOpen: 'Abrir en Google Maps', placesSearch: 'Buscar lugar…', placesShown: 'Mostrando', placesAll: 'Todo',
       placesNote: 'Basado en el mapa "Ptitim — guía de Tokio" · 741 lugares integrados localmente en la app (funciona sin conexión, salvo el fondo del mapa). Verificá siempre los horarios en Google Maps.',
       'toolbar.addEvent': '＋ Agregar actividad a este día', 'toolbar.backup': '⬇️ Respaldo', 'toolbar.restore': '⬆️ Restaurar', 'toolbar.petals': '🌸 Pétalos', 'toolbar.reset': '↺ Reiniciar plan', 'toolbar.printDay': '🖨️ Imprimir día',
-      'tab.luggage': 'Equipaje', spotsAnime: '🎮 Anime', spotsLgbt: '🏳️‍🌈 Vida gay', wxTypical: 'promedio de estación', wxForecast: 'pronóstico', wxRain: 'lluvia', wxWind: 'viento', wxTyphoon: '🌀 Fin de septiembre = pico de temporada de tifones — seguí el pronóstico y considerá un seguro flexible.', wxLoading: 'cargando clima…', wxNA: 'clima no disponible',
+      'tab.luggage': 'Equipaje', 'tab.rain': 'Plan lluvia', rainFixed: '🔒 Reservado — no se mueve', rainPlan: '☔ Plan con lluvia', rainIdeas: '💡 Más ideas bajo techo', spotsAnime: '🎮 Anime', spotsLgbt: '🏳️‍🌈 Vida gay', wxTypical: 'promedio de estación', wxForecast: 'pronóstico', wxRain: 'lluvia', wxWind: 'viento', wxTyphoon: '🌀 Fin de septiembre = pico de temporada de tifones — seguí el pronóstico y considerá un seguro flexible.', wxLoading: 'cargando clima…', wxNA: 'clima no disponible',
       lugTitle: '🧳 Cadena de equipaje (takkyubin)', lugIntro: 'La valija principal se despacha por adelantado para viajar liviano por Hakone y Kiso. Los días con 🎒 = solo bolso de una noche, sin la valija.', lugHave: 'con ustedes', lugNight: 'solo bolso de una noche', lugSend: 'despacho', lugPickup: 'retiro', lugCardTitle: '📇 Tarjeta para la recepción del hotel (japonés)', lugCardHint: 'Mostrá esto en recepción para enviar la valija al próximo hotel:', lugCopy: 'Copiar', lugCopied: '✓ Copiado',
       'overview.title': '🗾 Todo el viaje de un vistazo', 'restaurants.title': '🍣 Lugares especiales para comer',
       'foot': 'Hecho con amor para ustedes ❤️ · plan flexible — cambiá, agregá y marcá ✓ · いってらっしゃい',
@@ -239,8 +239,8 @@
       he: 'החופש וההפתעה שמשחררים מן המוסכמות. יאנאקה עוצרת את הזמן, ו-teamLab ממיס את הגבול בין הצופה ליצירה עד שלא ברור איפה אתם נגמרים והאור מתחיל. דָאטְסוּזוֹקוּ הוא הרגע שבו העולם הרגיל נופל ונשארת רק פליאה. הרשו לעצמכם ללכת לאיבוד בתוכו.',
       es: 'La libertad y la sorpresa que liberan de lo convencional. Yanaka detiene el tiempo, y teamLab disuelve el límite entre quien mira y la obra hasta que ya no se sabe dónde terminan ustedes y empieza la luz. Datsuzoku es el instante en que el mundo ordinario cae y solo queda el asombro. Permítanse perderse dentro.' },
     '2026-10-01': { c: '懐かしい · Natsukashii — געגוע חם',
-      he: 'הגעגוע החמים שבו זיכרון עולה ומחמם, בלי עצב. מוזיאון ג׳יבלי מעיר את הילד שבכם, וגם המסע כולו כבר מתחיל להפוך לזיכרון שתתגעגעו אליו. נָאטְסוּקָאשִׁי מלמד שאהבה לרגע אינה חייבת לחכות שיחלוף. הערב, בארוחת הפרידה, החזיקו את היום הזה בחום.',
-      es: 'La nostalgia cálida en que un recuerdo aflora y reconforta, sin tristeza. El Museo Ghibli despierta al niño que llevan dentro, y el viaje entero ya empieza a volverse un recuerdo que van a extrañar. Natsukashii enseña que el amor por un momento no tiene que esperar a que pase. Esta noche, en la cena de despedida, abracen este día con calidez.' },
+      he: 'הגעגוע החמים שבו זיכרון עולה ומחמם, בלי עצב. הרחוב של מיאזאקי בקוגאנאי ופחזנית טוטורו מעירים את הילד שבכם, וגם המסע כולו כבר מתחיל להפוך לזיכרון שתתגעגעו אליו. נָאטְסוּקָאשִׁי מלמד שאהבה לרגע אינה חייבת לחכות שיחלוף. הערב, בארוחת הפרידה, החזיקו את היום הזה בחום.',
+      es: 'La nostalgia cálida en que un recuerdo aflora y reconforta, sin tristeza. La calle de Miyazaki en Koganei y un cream puff de Totoro despiertan al niño que llevan dentro, y el viaje entero ya empieza a volverse un recuerdo que van a extrañar. Natsukashii enseña que el amor por un momento no tiene que esperar a que pase. Esta noche, en la cena de despedida, abracen este día con calidez.' },
     '2026-10-02': { c: '余韻 · Yoin — התהודה שנשארת',
       he: 'ההד שנשאר אחרי שהצליל כבר נדם: תהודת הפעמון, האור שאחרי השקיעה. הטיסה ממריאה, אבל יפן לא נגמרת בשער העלייה — היא ממשיכה להדהד בכם, בטעמים, בשקט, בדרך שבה תסתכלו על העולם. קחו את היוֹאִין הביתה. זה לא סוף — זה מה שממשיך לצלצל.',
       es: 'El eco que queda cuando el sonido ya calló: la resonancia de la campana, la luz después del ocaso. El avión despega, pero Japón no termina en la puerta de embarque — sigue resonando en ustedes, en los sabores, en el silencio, en cómo mirarán el mundo. Llévense el yoin a casa. No es el final — es lo que sigue sonando.' },
@@ -666,6 +666,8 @@
     ['ryogoku', [35.6967, 139.7933]], ['skytree', [35.7101, 139.8107]], ['oshiage', [35.7101, 139.8107]], ['sumida', [35.7100, 139.8010]],
     ['tsukishima', [35.6647, 139.7841]], ['yurakucho', [35.6749, 139.7630]], ['forum', [35.6772, 139.7630]], ['ginza', [35.6717, 139.7650]],
     ['yanaka', [35.7278, 139.7660]], ['nippori', [35.7281, 139.7708]], ['shimokita', [35.6613, 139.6680]],
+    ['musashi-koganei', [35.7013, 139.5065]], ['koganei', [35.7158, 139.5138]], ['tatemonoen', [35.7158, 139.5138]], ['open air architectural', [35.7158, 139.5138]],
+    ['ogikubo', [35.7048, 139.6199]], ['daita', [35.6600, 139.6613]], ['odaiba', [35.6190, 139.7765]], ['miraikan', [35.6190, 139.7765]],
     ['mitaka', [35.6962, 139.5704]], ['ghibli', [35.6962, 139.5704]],
     ['narita', [35.7647, 140.3863]], ['nrt', [35.7647, 140.3863]],
     ['kamakura', [35.3192, 139.5468]], ['hase', [35.3169, 139.5355]], ['komachi', [35.3210, 139.5510]], ['enoshima', [35.2996, 139.4802]],
@@ -992,9 +994,9 @@
     { id: 'e-juugo', date: '2026-09-27', done: true, url: 'https://www.google.com/maps/search/Juu-go+soba+Jodoji+Sakyo-ku+Kyoto',
       title: { he: "🍜 מסעדת סובה — Juu-go (十五) · Kyoto", es: "🍜 Restaurante de soba — Juu-go (十五) · Kioto" },
       note: { he: "✓ נסגר (TableCheck) · 27.9 בשעה 16:00 · 2 אנשים · קורס סובה · ¥7,000 שולם מראש (¥3,500 ×2). כתובת: Kamiminamida-cho, Jodoji, Sakyo-ku, Kyoto 606-8405 · טל' 075-708-5367.", es: "✓ Reservado (TableCheck) · 27/9 a las 16:00 · 2 personas · menú de soba · ¥7.000 prepago (¥3.500 ×2). Dirección: Kamiminamida-cho, Jodoji, Sakyo-ku, Kioto 606-8405 · tel. 075-708-5367." } },
-    { id: 'e-ghibli', date: '2026-10-01', salesOpen: '2026-09-10', salesTime: true, url: 'https://l-tike.com/ghibli/',
-      title: { he: "🎬 מוזיאון ג'יבלי (Mitaka)", es: "🎬 Museo Ghibli (Mitaka)" },
-      note: { he: "ה-10 לחודש הקודם בדיוק, ב-10:00 שעון יפן, ב-Lawson — נחטף בדקות.", es: "El día 10 del mes anterior exacto, 10:00 hora Japón, en Lawson — se agota en minutos." } },
+    { id: 'e-ghibli', date: '2026-10-01', salesOpen: null, url: 'https://www.sunrise-tours.jp/en/ghibli/',
+      title: { he: "🎬 מוזיאון ג'יבלי (Mitaka) — אזל · ניסיון אחרון", es: "🎬 Museo Ghibli (Mitaka) — agotado · último intento" },
+      note: { he: "⚠️ ל-1.10 אזל ב-Lawson (מכירת 10.9). ניסיון אחרון: סיור האוטובוס של JTB Sunrise Tours (הקצאת כרטיסים נפרדת — 2.5 ש' במוזיאון + צהריים + מוזיאון הבתים; ביטול 20–50% לפי מועד) או מכונת Loppi בכל Lawson ביום הנחיתה לכרטיסים שהוחזרו. ביומן 1.10 כבר שובצה חלופה (מוזיאון הבתים הפתוח אדו-טוקיו + פחזניות טוטורו) — אם משיגים, מסמנים ✓ וחוזרים לתכנית ג'יבלי 09:30.", es: "⚠️ Para el 1/10 se agotó en Lawson (venta del 10/9). Último intento: el tour en bus de JTB Sunrise Tours (cupo de entradas separado — 2,5 h en el museo + almuerzo + museo de arquitectura; cancelación 20–50% según fecha) o la máquina Loppi de cualquier Lawson el día que aterrizan, por entradas devueltas. En el itinerario del 1/10 ya hay una alternativa (museo al aire libre Edo-Tokio + cream puffs de Totoro) — si lo consiguen, marquen ✓ y vuelvan al plan Ghibli 09:30." } },
     { id: 'e-teamlab', date: '2026-09-30', done: true, url: 'https://www.teamlab.art/e/planets/',
       title: { he: "🌀 teamLab Planets (Toyosu)", es: "🌀 teamLab Planets (Toyosu)" },
       note: { he: "✓ נסגר · 30.9 · Entrance Pass · כניסה 18:30–19:00 (שעון יפן) · 2 מבוגרים.", es: "✓ Reservado · 30/9 · Entrance Pass · entrada 18:30–19:00 (hora Japón) · 2 adultos." } },
@@ -1188,7 +1190,7 @@
       'הזמנות דחופות (עכשיו!)': [
         '✓ כל 7 המלונות + מופע הסומו (Osaka Hirakuza, 28.9) — נסגרו',
         'Romancecar שינג׳וקו→האקונה (22.9) — Silver Week, לשריין',
-        'מוזיאון ג׳יבלי — 10.9 בשעה 10:00 (שעון יפן) ב-Lawson',
+        'מוזיאון ג׳יבלי — אזל ל-1.10 (מכירת 10.9). ניסיון אחרון: JTB Sunrise Tours / Loppi ב-Lawson. ביומן: מוזיאון הבתים הפתוח + טוטורו',
         "✓ מושבי שינקנסן נסגרו — כולל NOZOMI 358 שין-אוסקה→טוקיו (30.9, ¥33,120). נשאר רק N'EX חזרה לנריטה (2.10)",
         'חוויית מאיקו, סדנת תה+קימונו, סדנת סושי',
         'מסעדות: ארוחת יום ההולדת בצומאגו, ארוחת הפרידה (אומקסה/קאיסקי)',
@@ -1217,7 +1219,7 @@
       'Reservas urgentes (¡ya!)': [
         '✓ Los 7 hoteles + el show de sumo (Osaka Hirakuza, 28/9) — reservados',
         'Romancecar Shinjuku→Hakone (22/9) — Silver Week, reservá',
-        'Museo Ghibli — 10/9 a las 10:00 (hora Japón) en Lawson',
+        'Museo Ghibli — agotado para el 1/10 (venta del 10/9). Último intento: JTB Sunrise Tours / Loppi en Lawson. En el itinerario: museo al aire libre + Totoro',
         "✓ Asientos de shinkansen reservados — incluido el NOZOMI 358 Shin-Osaka→Tokio (30/9, ¥33.120). Falta solo el N'EX de vuelta a Narita (2/10)",
         'experiencia maiko, taller de té+kimono, clase de sushi',
         'Restaurantes: cena de cumpleaños en Tsumago, cena de despedida (omakase/kaiseki)',
@@ -1265,7 +1267,7 @@
   }
 
   // ---------- views ----------
-  const VIEWS = ['itinerary', 'routes', 'overview', 'costs', 'map', 'booked', 'tickets', 'luggage', 'guide', 'places', 'food', 'restaurants', 'experiences', 'prep'];
+  const VIEWS = ['itinerary', 'routes', 'rain', 'overview', 'costs', 'map', 'booked', 'tickets', 'luggage', 'guide', 'places', 'food', 'restaurants', 'experiences', 'prep'];
   function showView(v) {
     if (!VIEWS.includes(v)) v = 'itinerary';
     VIEWS.forEach(x => $('#view-' + x).classList.toggle('hidden', x !== v));
@@ -1276,6 +1278,7 @@
     if (v === 'booked') renderBooked();
     if (v === 'tickets') renderTickets();
     if (v === 'luggage') renderLuggage();
+    if (v === 'rain') renderRain();
     if (v === 'overview') renderOverview();
     if (v === 'guide') renderGuide();
     if (v === 'places') renderPlaces();
@@ -1348,7 +1351,9 @@
     anime: [
       { name: 'Akihabara Electric Town', city: 'Tokyo', ll: [35.6984, 139.7731], he: 'ארקייד, גאצ׳פון, Mandarake ופיגורות', es: 'Arcades, gachapon, Mandarake y figuras' },
       { name: 'Nakano Broadway', city: 'Tokyo', ll: [35.7076, 139.6657], he: 'קומות של אנימה נדירה ואספנות', es: 'Pisos de anime raro y coleccionismo' },
-      { name: 'Ghibli Museum (Mitaka)', city: 'Tokyo', ll: [35.6962, 139.5704], he: 'עולם מיאזאקי — כרטיסים ב-10 לחודש הקודם', es: 'El mundo de Miyazaki — entradas el 10 del mes previo' },
+      { name: 'Ghibli Museum (Mitaka)', city: 'Tokyo', ll: [35.6962, 139.5704], he: 'עולם מיאזאקי — ל-1.10 אזל; ניסיון אחרון: JTB Sunrise Tours', es: 'El mundo de Miyazaki — agotado para el 1/10; último intento: JTB Sunrise Tours' },
+      { name: 'Edo-Tokyo Open Air Architectural Museum (Koganei)', city: 'Tokyo', ll: [35.7158, 139.5138], he: 'ההשראה ל-Spirited Away — במקום ג׳יבלי (1.10)', es: 'La inspiración de El viaje de Chihiro — en lugar de Ghibli (1/10)' },
+      { name: "Shirohige's Cream Puff Factory (Daita)", city: 'Tokyo', ll: [35.6600, 139.6613], he: 'פחזניות טוטורו באישור ג׳יבלי (1.10)', es: 'Cream puffs de Totoro aprobados por Ghibli (1/10)' },
       { name: 'Ikebukuro Otome Road', city: 'Tokyo', ll: [35.7295, 139.7169], he: 'מרכז אנימה/מנגה (דוג׳ין, קוספליי)', es: 'Meca anime/manga (doujin, cosplay)' },
       { name: 'Pokémon Center Shibuya', city: 'Tokyo', ll: [35.6580, 139.7016], he: 'חנות הדגל של פוקימון', es: 'Tienda insignia de Pokémon' },
       { name: 'teamLab Planets (Toyosu)', city: 'Tokyo', ll: [35.6497, 139.7906], he: 'אמנות דיגיטלית סוחפת', es: 'Arte digital inmersivo' },
@@ -1442,6 +1447,24 @@
       navigator.clipboard && navigator.clipboard.writeText(txt);
       b.textContent = t('lugCopied'); setTimeout(() => b.textContent = t('lugCopy'), 1600);
     });
+  }
+
+  // ---- ☔ rain plan — plan B for the Tokyo days (data: TRIP_DATA.<lang>.rain) ----
+  function renderRain() {
+    const box = $('#rainBody'); if (!box) return;
+    const R = data().rain; if (!R) { box.innerHTML = `<div class="panel">${t('loading')}</div>`; return; }
+    const days = (R.days || []).map(d => {
+      const fixed = (d.fixed || []).map(f => `<span class="rain-fixed" dir="auto">${escapeHtml(f)}</span>`).join('');
+      const plan = (d.plan || []).map(p => `<div class="rain-step"><span class="rain-t">${escapeHtml(p.t)}</span><div class="rain-x" dir="auto">${md(p.x)}</div></div>`).join('');
+      const ideas = (d.ideas || []).length ? `<div class="rain-sub">${t('rainIdeas')}</div><ul class="rain-ideas">${d.ideas.map(i => `<li dir="auto">${md(i)}</li>`).join('')}</ul>` : '';
+      return `<div class="rain-day"><div class="rain-head"><span class="rain-date">${fmtDate(d.date)} · ${escapeHtml(d.dow || '')}</span><span class="rain-title" dir="auto">${escapeHtml(d.title)}</span>${d.risk ? `<span class="rain-risk" dir="auto">${escapeHtml(d.risk)}</span>` : ''}</div>` +
+        (fixed ? `<div class="rain-sub">${t('rainFixed')}</div><div class="rain-fixeds">${fixed}</div>` : '') +
+        `<div class="rain-sub">${t('rainPlan')}</div><div class="rain-steps">${plan}</div>${ideas}</div>`;
+    }).join('');
+    const block = (b, cls) => b ? `<div class="panel rain-panel ${cls}"><h2 dir="auto">${escapeHtml(b.h)}</h2><div class="rain-md" dir="auto">${md(b.body)}</div></div>` : '';
+    box.innerHTML = `<h2 class="section-h">${escapeHtml(R.title)}</h2><div class="rain-intro" dir="auto">${md(R.intro)}</div>` +
+      (R.forecast ? `<div class="rain-fc" dir="auto">🌦️ ${md(R.forecast)}</div>` : '') +
+      `<div class="rain-days">${days}</div>` + block(R.later, 'later') + block(R.miraikan, 'mira') + block(R.tips, 'tips');
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
