@@ -9,9 +9,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@500;700&family=Shippori+Mincho:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="styles.css?v=20260916a">
-<link rel="manifest" href="manifest.json?v=20260916a">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=20260916a">
+<link rel="stylesheet" href="styles.css?v=20260918a">
+<link rel="manifest" href="manifest.json?v=20260918a">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=20260918a">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -45,6 +45,7 @@
   <button class="tab active" data-view="itinerary"><span>🗓️</span> <span data-i18n="tab.itinerary">היומן</span></button>
   <button class="tab" data-view="routes"><span>🚶</span> <span data-i18n="tab.routes">מסלולים</span></button>
   <button class="tab" data-view="rain"><span>☔</span> <span data-i18n="tab.rain">טיול בגשם</span></button>
+  <button class="tab" data-view="monsoon"><span>🌀</span> <span data-i18n="tab.monsoon">אופציה מונסון</span></button>
   <button class="tab" data-view="overview"><span>🗾</span> <span data-i18n="tab.overview">מבט־על</span></button>
   <button class="tab" data-view="costs"><span>💴</span> <span data-i18n="tab.costs">עלויות</span></button>
   <button class="tab" data-view="map"><span>🗺️</span> <span data-i18n="tab.map">מפה</span></button>
@@ -92,6 +93,11 @@
   <!-- RAIN — plan B for the Tokyo days if the forecast turns wet -->
   <section id="view-rain" class="hidden">
     <div id="rainBody"></div>
+  </section>
+
+  <!-- MONSOON — full typhoon-aware replan for Tokyo/Hakone (18–22.9) -->
+  <section id="view-monsoon" class="hidden">
+    <div id="monsoonBody"></div>
   </section>
 
   <!-- OVERVIEW / AGENDA + FLIGHTS -->
@@ -205,8 +211,8 @@
 <div class="toast" id="toast"></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="data.js?v=20260916a"></script>
-<script src="places.js?v=20260916a"></script>
-<script src="app.js?v=20260916a"></script>
+<script src="data.js?v=20260918a"></script>
+<script src="places.js?v=20260918a"></script>
+<script src="app.js?v=20260918a"></script>
 </body>
 </html>

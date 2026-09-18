@@ -38,7 +38,7 @@
       placesOpen: 'פתח ב-Google Maps', placesSearch: 'חיפוש מקום…', placesShown: 'מציג', placesAll: 'הכול',
       placesNote: 'מבוסס על מפת "פתיתים — מדריך טוקיו" · 741 מקומות מוטמעים מקומית באפליקציה (עובד גם לא-מקוון, פרט לרקע המפה). תמיד אמתו שעות ב-Google Maps.',
       'toolbar.addEvent': '＋ הוסף פעילות ליום הזה', 'toolbar.backup': '⬇️ גיבוי', 'toolbar.restore': '⬆️ שחזור', 'toolbar.petals': '🌸 פרחים', 'toolbar.reset': '↺ אפס תכנון', 'toolbar.printDay': '🖨️ הדפס יום',
-      'tab.luggage': 'תיקים', 'tab.rain': 'טיול בגשם', rainFixed: '🔒 סגור — לא זז', rainPlan: '☔ תוכנית גשם', rainIdeas: '💡 עוד רעיונות מקורים', spotsAnime: '🎮 אנימה', spotsLgbt: '🏳️‍🌈 חיי לילה גאים', wxTypical: 'ממוצע עונתי', wxForecast: 'תחזית', wxRain: 'גשם', wxWind: 'רוח', wxTyphoon: '🌀 סוף ספטמבר = שיא עונת הטייפונים — עקבו אחרי התחזית ושקלו ביטוח גמיש.', wxLoading: 'טוען מזג אוויר…', wxNA: 'מזג אוויר לא זמין',
+      'tab.luggage': 'תיקים', 'tab.rain': 'טיול בגשם', 'tab.monsoon': 'אופציה מונסון', moFixed: '🔒 קבוע — לא זז', moPlan: '🌀 התוכנית', moIdeas: '💡 אם משהו משתבש', moRoutes: '🚶 מסלולים מפורטים לאופציה הזו', moLive: 'תחזית חיה', moSnap: 'תצלום תחזית', moUpdated: 'עודכן', moDayBtn: 'אופציה מונסון ליום הזה', moRainLink: '🌀 לתוכנית המלאה סביב הטייפון — אופציה מונסון', moVerdict: '🧭 השורה התחתונה', moTotal: 'סה״כ', moGust: 'משב מקס׳', moToDay: '🗓️ ליום ביומן', rainFixed: '🔒 סגור — לא זז', rainPlan: '☔ תוכנית גשם', rainIdeas: '💡 עוד רעיונות מקורים', spotsAnime: '🎮 אנימה', spotsLgbt: '🏳️‍🌈 חיי לילה גאים', wxTypical: 'ממוצע עונתי', wxForecast: 'תחזית', wxRain: 'גשם', wxWind: 'רוח', wxTyphoon: '🌀 סוף ספטמבר = שיא עונת הטייפונים — עקבו אחרי התחזית ושקלו ביטוח גמיש.', wxLoading: 'טוען מזג אוויר…', wxNA: 'מזג אוויר לא זמין',
       lugTitle: '🧳 שרשרת התיקים (takkyubin)', lugIntro: 'המזוודה הראשית נשלחת קדימה כדי לטייל קל בהאקונה ובקיסו. הימים ב-🎒 = תיק-לילה בלבד, בלי המזוודה.', lugHave: 'איתכם', lugNight: 'תיק-לילה בלבד', lugSend: 'שליחה', lugPickup: 'איסוף', lugCardTitle: '📇 כרטיס בקשה לדלפק המלון (יפנית)', lugCardHint: 'הראו את זה בקבלה כדי לשלוח מזוודה למלון הבא:', lugCopy: 'העתק', lugCopied: '✓ הועתק',
       'overview.title': '🗾 כל הטיול במבט אחד', 'restaurants.title': '🍣 מקומות מיוחדים לאכול',
       'foot': 'נבנה באהבה עבורכם ❤️ · תכנון גמיש — שנו, הוסיפו וסמנו ✓ · いってらっしゃい',
@@ -90,7 +90,7 @@
       placesOpen: 'Abrir en Google Maps', placesSearch: 'Buscar lugar…', placesShown: 'Mostrando', placesAll: 'Todo',
       placesNote: 'Basado en el mapa "Ptitim — guía de Tokio" · 741 lugares integrados localmente en la app (funciona sin conexión, salvo el fondo del mapa). Verificá siempre los horarios en Google Maps.',
       'toolbar.addEvent': '＋ Agregar actividad a este día', 'toolbar.backup': '⬇️ Respaldo', 'toolbar.restore': '⬆️ Restaurar', 'toolbar.petals': '🌸 Pétalos', 'toolbar.reset': '↺ Reiniciar plan', 'toolbar.printDay': '🖨️ Imprimir día',
-      'tab.luggage': 'Equipaje', 'tab.rain': 'Plan lluvia', rainFixed: '🔒 Reservado — no se mueve', rainPlan: '☔ Plan con lluvia', rainIdeas: '💡 Más ideas bajo techo', spotsAnime: '🎮 Anime', spotsLgbt: '🏳️‍🌈 Vida gay', wxTypical: 'promedio de estación', wxForecast: 'pronóstico', wxRain: 'lluvia', wxWind: 'viento', wxTyphoon: '🌀 Fin de septiembre = pico de temporada de tifones — seguí el pronóstico y considerá un seguro flexible.', wxLoading: 'cargando clima…', wxNA: 'clima no disponible',
+      'tab.luggage': 'Equipaje', 'tab.rain': 'Plan lluvia', 'tab.monsoon': 'Opción monzón', moFixed: '🔒 Fijo — no se mueve', moPlan: '🌀 El plan', moIdeas: '💡 Si algo falla', moRoutes: '🚶 Recorridos detallados de esta opción', moLive: 'pronóstico en vivo', moSnap: 'foto del pronóstico', moUpdated: 'actualizado', moDayBtn: 'Opción monzón para este día', moRainLink: '🌀 Plan completo alrededor del tifón — Opción monzón', moVerdict: '🧭 En resumen', moTotal: 'total', moGust: 'ráfaga máx.', moToDay: '🗓️ Al día en el itinerario', rainFixed: '🔒 Reservado — no se mueve', rainPlan: '☔ Plan con lluvia', rainIdeas: '💡 Más ideas bajo techo', spotsAnime: '🎮 Anime', spotsLgbt: '🏳️‍🌈 Vida gay', wxTypical: 'promedio de estación', wxForecast: 'pronóstico', wxRain: 'lluvia', wxWind: 'viento', wxTyphoon: '🌀 Fin de septiembre = pico de temporada de tifones — seguí el pronóstico y considerá un seguro flexible.', wxLoading: 'cargando clima…', wxNA: 'clima no disponible',
       lugTitle: '🧳 Cadena de equipaje (takkyubin)', lugIntro: 'La valija principal se despacha por adelantado para viajar liviano por Hakone y Kiso. Los días con 🎒 = solo bolso de una noche, sin la valija.', lugHave: 'con ustedes', lugNight: 'solo bolso de una noche', lugSend: 'despacho', lugPickup: 'retiro', lugCardTitle: '📇 Tarjeta para la recepción del hotel (japonés)', lugCardHint: 'Mostrá esto en recepción para enviar la valija al próximo hotel:', lugCopy: 'Copiar', lugCopied: '✓ Copiado',
       'overview.title': '🗾 Todo el viaje de un vistazo', 'restaurants.title': '🍣 Lugares especiales para comer',
       'foot': 'Hecho con amor para ustedes ❤️ · plan flexible — cambiá, agregá y marcá ✓ · いってらっしゃい',
@@ -253,6 +253,7 @@
     const routeUrl = dayRouteUrl(d);
     const dayRoutes = routesFor(d.date);
     const routeBtns = dayRoutes.map(r => `<button class="btn btn-ghost btn-sm dh-route-btn" data-route="${escapeAttr(r.id)}">${r.emoji || '🚶'} ${t('dayRouteLink')}: ${escapeHtml(r.area || '')}</button>`).join('');
+    const moBtn = monsoonHas(d.date) ? `<button class="btn btn-ghost btn-sm dh-mo-btn" data-date="${escapeAttr(d.date)}">🌀 ${t('moDayBtn')}</button>` : '';
     $('#dayHead').innerHTML =
       `<div><div class="dh-city">${cityEmoji(d.city)} ${escapeHtml(d.city || '')} · ${dowT(d.dow)} ${fmtDate(d.date)}${d.birthday ? ' · 🎂 ' + t('bday') : ''}<span class="dh-weather" id="dhWeather" title="${escapeAttr(t('wxTyphoon'))}"></span></div>` +
       `<div class="dh-title">${escapeHtml(d.title || '')}</div>` +
@@ -261,9 +262,10 @@
       (d.logistics ? `<div class="dh-logistics" dir="auto">📦 ${escapeHtml(d.logistics[lang] || d.logistics.he)}</div>` : '') +
       (d.cultural ? `<div class="dh-culture" dir="auto"><span class="dh-culture-ic">🏮</span><span>${escapeHtml(d.cultural)}</span></div>` : '') +
       (d.tips && d.tips.length ? `<div class="dh-tips"><div class="dh-tips-h">💡 ${t('tipsLabel')}</div><ul class="dh-tips-list">${d.tips.map(x => `<li dir="auto">${escapeHtml(x)}</li>`).join('')}</ul></div>` : '') +
-      ((routeUrl || routeBtns) ? `<div class="dh-actions">${routeBtns}${routeUrl ? `<a class="btn btn-ghost btn-sm" href="${routeUrl}" target="_blank" rel="noopener">${t('mapsDay')}</a>` : ''}</div>` : '') +
+      ((routeUrl || routeBtns || moBtn) ? `<div class="dh-actions">${routeBtns}${moBtn}${routeUrl ? `<a class="btn btn-ghost btn-sm" href="${routeUrl}" target="_blank" rel="noopener">${t('mapsDay')}</a>` : ''}</div>` : '') +
       `</div>`;
     $$('#dayHead .dh-route-btn').forEach(b => b.onclick = () => openRoute(b.dataset.route));
+    $$('#dayHead .dh-mo-btn').forEach(b => b.onclick = () => openMonsoonDay(b.dataset.date));
     fillWeather(d);
     const tl = $('#timeline'); tl.innerHTML = '<div class="tl-line"></div>';
     const evs = sortEvents(d.events || []);
@@ -458,12 +460,18 @@
   function md(src) {
     if (!src) return '';
     const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    const inline = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/(^|[^*])\*(?!\s)([^*]+?)\*/g, '$1<em>$2</em>').replace(/\[([^\]]+)\]\((https?:[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
-    const out = []; let inList = false; const closeList = () => { if (inList) { out.push('</ul>'); inList = false; } };
+    const inline = s => esc(s).replace(/`([^`]+)`/g, '<code>$1</code>').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/(^|[^*])\*(?!\s)([^*]+?)\*/g, '$1<em>$2</em>').replace(/\[([^\]]+)\]\((https?:[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+    const out = []; let inList = false, inTable = false; const closeList = () => { if (inList) { out.push('</ul>'); inList = false; } if (inTable) { out.push('</tbody></table></div>'); inTable = false; } };
     src.replace(/\r/g, '').split('\n').forEach(raw => {
       const line = raw.trim();
       if (!line) { closeList(); return; }
       if (/^---+$/.test(line)) { closeList(); out.push('<hr>'); return; }
+      if (/^\|.*\|$/.test(line)) {
+        const cells = line.slice(1, -1).split('|').map(c => c.trim());
+        if (cells.every(c => /^:?-{2,}:?$/.test(c))) return;
+        if (!inTable) { if (inList) { out.push('</ul>'); inList = false; } out.push('<div class="md-table-wrap"><table class="md-table"><tbody>'); inTable = true; out.push('<tr>' + cells.map(c => '<th dir="auto">' + inline(c) + '</th>').join('') + '</tr>'); return; }
+        out.push('<tr>' + cells.map(c => '<td dir="auto">' + inline(c) + '</td>').join('') + '</tr>'); return;
+      }
       let m;
       if ((m = line.match(/^###?\s+(.*)/))) { closeList(); out.push('<h3 dir="auto">' + inline(m[1]) + '</h3>'); return; }
       if ((m = line.match(/^[-*]\s+(.*)/))) { if (!inList) { out.push('<ul>'); inList = true; } out.push('<li dir="auto">' + inline(m[1]) + '</li>'); return; }
@@ -1267,7 +1275,7 @@
   }
 
   // ---------- views ----------
-  const VIEWS = ['itinerary', 'routes', 'rain', 'overview', 'costs', 'map', 'booked', 'tickets', 'luggage', 'guide', 'places', 'food', 'restaurants', 'experiences', 'prep'];
+  const VIEWS = ['itinerary', 'routes', 'rain', 'monsoon', 'overview', 'costs', 'map', 'booked', 'tickets', 'luggage', 'guide', 'places', 'food', 'restaurants', 'experiences', 'prep'];
   function showView(v) {
     if (!VIEWS.includes(v)) v = 'itinerary';
     VIEWS.forEach(x => $('#view-' + x).classList.toggle('hidden', x !== v));
@@ -1279,6 +1287,7 @@
     if (v === 'tickets') renderTickets();
     if (v === 'luggage') renderLuggage();
     if (v === 'rain') renderRain();
+    if (v === 'monsoon') renderMonsoon();
     if (v === 'overview') renderOverview();
     if (v === 'guide') renderGuide();
     if (v === 'places') renderPlaces();
@@ -1449,6 +1458,74 @@
     });
   }
 
+  // ---- 🌀 monsoon option — full typhoon-aware replan for Tokyo/Hakone (data: TRIP_DATA.<lang>.monsoon + TRIP_DATA.monsoonWx) ----
+  const monsoonData = () => data().monsoon || null;
+  const monsoonHas = (date) => !!(monsoonData() && (monsoonData().days || []).some(d => d.date === date));
+  function openMonsoonDay(date) {
+    showView('monsoon');
+    setTimeout(() => { const el = document.getElementById('mo-day-' + date); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 80);
+  }
+  function moStrip(day) {
+    const mm = (day && day.mm) || [], g = (day && day.g) || [];
+    if (!mm.length) return '';
+    const lv = (v) => v >= 20 ? 5 : v >= 8 ? 4 : v >= 2 ? 3 : v > 0 ? 2 : 1;
+    const cols = mm.map((v, i) => {
+      const h = Math.max(4, Math.min(100, Math.round(v / 30 * 100)));
+      const gust = g[i] || 0;
+      return `<span class="mo-h lv${lv(v)}" style="--h:${h}%" title="${String(i).padStart(2, '0')}:00 · ${v} mm · 💨${gust}">${gust >= 45 ? '<i class="mo-g"></i>' : ''}</span>`;
+    }).join('');
+    const total = Math.round(mm.reduce((a, b) => a + b, 0));
+    const gmax = g.length ? Math.max.apply(null, g) : 0;
+    return `<div class="mo-strip" dir="ltr">${cols}</div><div class="mo-strip-x" dir="ltr"><span>0</span><span>6</span><span>12</span><span>18</span><span>23</span></div>` +
+      `<div class="mo-strip-sum" dir="auto">☔ ${t('moTotal')} ~${total} mm · 💨 ${t('moGust')} ${gmax} km/h</div>`;
+  }
+  function renderMonsoon() {
+    const box = $('#monsoonBody'); if (!box) return;
+    const M = monsoonData(); if (!M) { box.innerHTML = `<div class="panel">${t('loading')}</div>`; return; }
+    const snap = (window.TRIP_DATA && window.TRIP_DATA.monsoonWx) || { days: {} };
+    const routeById = (id) => (M.routes || []).find(r => r.id === id);
+    const dayIndex = (date) => state.days.findIndex(d => d.date === date);
+    const days = (M.days || []).map(d => {
+      const fixed = (d.fixed || []).map(f => `<span class="rain-fixed" dir="auto">${escapeHtml(f)}</span>`).join('');
+      const plan = (d.plan || []).map(p => `<div class="rain-step"><span class="rain-t">${escapeHtml(p.t)}</span><div class="rain-x" dir="auto">${md(p.x)}</div></div>`).join('');
+      const ideas = (d.ideas || []).length ? `<div class="rain-sub">${t('moIdeas')}</div><ul class="rain-ideas">${d.ideas.map(i => `<li dir="auto">${md(i)}</li>`).join('')}</ul>` : '';
+      const rts = (d.routes || []).map(routeById).filter(Boolean);
+      const di = dayIndex(d.date);
+      const dayBtn = di >= 0 ? `<button class="btn btn-ghost btn-sm mo-today" data-di="${di}">${t('moToDay')} ${di + 1}</button>` : '';
+      return `<div class="rain-day mo-day" id="mo-day-${d.date}"><div class="rain-head"><span class="rain-date">${fmtDate(d.date)} · ${escapeHtml(d.dow || '')}</span><span class="rain-title" dir="auto">${escapeHtml(d.title)}</span>${d.risk ? `<span class="rain-risk" dir="auto">${escapeHtml(d.risk)}</span>` : ''}</div>` +
+        `<div class="mo-wx" data-date="${d.date}">${moStrip(snap.days[d.date])}</div>` +
+        (d.verdict ? `<div class="mo-verdict" dir="auto"><b>${t('moVerdict')}:</b> ${md(d.verdict)}</div>` : '') +
+        (fixed ? `<div class="rain-sub">${t('moFixed')}</div><div class="rain-fixeds">${fixed}</div>` : '') +
+        `<div class="rain-sub">${t('moPlan')}</div><div class="rain-steps">${plan}</div>${ideas}` +
+        (rts.length ? `<div class="rain-sub">${t('moRoutes')}</div><div class="mo-routes" data-date="${d.date}"></div>` : '') +
+        (dayBtn ? `<div class="mo-actions">${dayBtn}</div>` : '') + `</div>`;
+    }).join('');
+    const block = (b, cls) => b ? `<div class="panel rain-panel ${cls}"><h2 dir="auto">${escapeHtml(b.h)}</h2><div class="rain-md" dir="auto">${md(b.body)}</div></div>` : '';
+    box.innerHTML = `<h2 class="section-h">${escapeHtml(M.title)}</h2><div class="rain-intro" dir="auto">${md(M.intro)}</div>` +
+      block(M.typhoon, 'mo-typhoon') +
+      `<div class="rain-fc mo-fc" dir="auto"><span id="moWxSrc">📸 ${t('moSnap')} · ${escapeHtml(snap.asOf || '')}</span> — ${md(M.hoursNote || '')}</div>` +
+      `<div class="rain-days">${days}</div>` + block(M.checks, 'mo-checks') + block(M.tips, 'tips');
+    // route cards (reuse routeCard) inside each day
+    (M.days || []).forEach(d => {
+      const host = box.querySelector(`.mo-routes[data-date="${d.date}"]`); if (!host) return;
+      (d.routes || []).map(routeById).filter(Boolean).forEach(r => host.appendChild(routeCard(r, dayIndex(d.date))));
+    });
+    $$('.mo-today', box).forEach(b => b.onclick = () => { curDay = +b.dataset.di; showView('itinerary'); renderDay(); if (typeof renderRail === 'function') renderRail(); });
+    moLiveWx(box, snap);
+  }
+  async function moLiveWx(box, snap) {
+    try {
+      const ll = snap.ll || [35.69, 139.70];
+      const dates = (monsoonData().days || []).map(d => d.date); if (!dates.length) return;
+      const url = `https://api.open-meteo.com/v1/forecast?latitude=${ll[0]}&longitude=${ll[1]}&hourly=precipitation,wind_gusts_10m&timezone=Asia%2FTokyo&start_date=${dates[0]}&end_date=${dates[dates.length - 1]}`;
+      const j = await (await fetch(url)).json(); const h = j.hourly; if (!h || !h.time) return;
+      const days = {};
+      h.time.forEach((tm, i) => { const d = tm.slice(0, 10); (days[d] = days[d] || { mm: [], g: [] }); days[d].mm.push(+(h.precipitation[i] || 0).toFixed(1)); days[d].g.push(Math.round(h.wind_gusts_10m[i] || 0)); });
+      $$('.mo-wx', box).forEach(el => { const s = moStrip(days[el.dataset.date]); if (s) el.innerHTML = s; });
+      const src = $('#moWxSrc', box); if (src) { const n = new Date(); src.textContent = `🟢 ${t('moLive')} · ${t('moUpdated')} ${String(n.getHours()).padStart(2, '0')}:${String(n.getMinutes()).padStart(2, '0')}`; }
+    } catch (e) { /* offline → snapshot stays */ }
+  }
+
   // ---- ☔ rain plan — plan B for the Tokyo days (data: TRIP_DATA.<lang>.rain) ----
   function renderRain() {
     const box = $('#rainBody'); if (!box) return;
@@ -1462,9 +1539,10 @@
         `<div class="rain-sub">${t('rainPlan')}</div><div class="rain-steps">${plan}</div>${ideas}</div>`;
     }).join('');
     const block = (b, cls) => b ? `<div class="panel rain-panel ${cls}"><h2 dir="auto">${escapeHtml(b.h)}</h2><div class="rain-md" dir="auto">${md(b.body)}</div></div>` : '';
-    box.innerHTML = `<h2 class="section-h">${escapeHtml(R.title)}</h2><div class="rain-intro" dir="auto">${md(R.intro)}</div>` +
+    box.innerHTML = `<h2 class="section-h">${escapeHtml(R.title)}</h2>` + (data().monsoon ? `<div class="mo-banner"><button class="btn btn-sm mo-banner-btn" id="rainToMo" dir="auto">${escapeHtml(t('moRainLink'))}</button></div>` : '') + `<div class="rain-intro" dir="auto">${md(R.intro)}</div>` +
       (R.forecast ? `<div class="rain-fc" dir="auto">🌦️ ${md(R.forecast)}</div>` : '') +
       `<div class="rain-days">${days}</div>` + block(R.later, 'later') + block(R.miraikan, 'mira') + block(R.tips, 'tips');
+    const rb = $('#rainToMo'); if (rb) rb.onclick = () => showView('monsoon');
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
